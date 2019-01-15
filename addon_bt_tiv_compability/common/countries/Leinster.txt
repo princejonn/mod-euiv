@@ -1,0 +1,103 @@
+# Country name see file name.
+
+graphical_culture = westerngfx # was irishgfx # UPE compatibility
+
+color = { 48  164  51 }
+
+historical_idea_groups = {
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	gaelic_galloglaigh
+	gaelic_mercenary
+	gaelic_free_shooter
+	irish_charge
+	anglofrench_line
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+	"Caomhanach" "Conchobhair"
+	"Mac Amhalghaidh" "Mac an tSionnaigh" "Mac Cochl�in" "Mac Coibheanaigh"
+	"Mac Conshn�mha" "Mac Fhlannchaidh" "Mac Fionbhair" "Mac Giolla Phadraig"
+	"Mac Raghnaill" "Mac Tighearn�in" "Mag Eochag�in" 
+	"� hAimheirgin" "� Braoin" "� Cairbre" "� Caoindealbh�in" "� Catharnaigh"
+	"� Ceallaigh" "� Ciardha" "� Cearbhaill" "� Comhraidhe" "� Congalaig"
+	"� Cosraigh" "� Diubhgeann�in" "� Doinn" "� Donnchadha" "� Dubhghaill"
+	"� Dubhuidhe" "� Faolain" "� Fhearghaill" "� Fionnal�in" "� Finntighearn"
+	"� hAonghusa" "� Lorc�in" "� Maolmhuaidh" "� Ruairc" "� Seaghdha" "� Sean�in"
+	"� Tuathail"
+}
+
+monarch_names = {
+	"Donal #7" = 40
+	"Muchadh #3" = 40
+	"Art #1" = 40
+	"Cathaoir #0" = 40
+	"Gear�id #1" = 20
+	"Muiris #1" = 20
+	"Muireadhach #1" = 20
+	"Criomhthann #0" = 20
+	"Diarmaid #5" = 1
+	"Donnchad #5" = 1
+	"�dhamh #0" = 0
+	"Cadwgwan #0" = 0
+	"Caoimh�n #0" = 0
+	"Cinn�idigh #0" = 0
+	"Deagl�n #0" = 0
+	"Dougal #0" = 0
+	"Fionnlagh #0" = 0
+	"Garbh�n #0" = 0
+	"Lachtna #0" = 0
+	"Lorcc�n #0" = 0
+	"Mainch�n #0" = 0
+	"Math�in #0" = 0
+	"Meall�n #0" = 0
+	"Naomh�n #0" = 0
+	"Niall #0" = 0
+	"Odhr�n #0" = 0
+	"P�draig #0" = 0
+	"Quinn #0" = 0
+	"Riain #0" = 0
+	"R�oghn�n #0" = 0
+	"R�rdan #0" = 0
+	"Ruaidhr� #0" = 0
+	"Ruarc #0" = 0
+	"S�aghdh� #0" = 0
+	"Sean�n #0" = 0
+	"Sechnall #0" = 0
+	"Tighearnach #0" = 0
+	"Tuathal #0" = 0
+	"Uilliam #0" = 0
+	"Uinseann #0" = 0
+	
+	"Neassa #0" = -1
+	"Rosheen #0" = -1
+	"Siofra #0" = -1
+}
+
+ship_names = {
+	Carlow
+	Dublin
+	Kildare Kilkenny
+	Laios Longford Louth
+	Meath
+	Offaly 
+	Westmeath Wexford Wicklow
+}

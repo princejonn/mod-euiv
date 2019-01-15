@@ -1,0 +1,204 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx # was irishgfx # UPE compatibility
+
+color = { 112  150  105 }
+
+revolutionary_colors = { 10  0  6 }
+
+historical_idea_groups = {
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	gaelic_galloglaigh
+	gaelic_mercenary
+	gaelic_free_shooter
+	irish_charge
+	anglofrench_line
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Turlough #2" = 60
+	"Donal #5" = 40
+	"Muireadhach #2" = 40
+	"Conchobhar #1" = 40
+	"Feidlimidh #1" = 40
+	"Cathaoir #0" = 40
+	"Muchadh #0" = 40
+	"�ed #6" = 20
+	"Fonnchadh #3" = 20
+	"Brian #2" = 20
+	"Criomhthann #2" = 20
+	"Art #1" = 20
+	"Cathal #0" = 20
+	"Gear�id #0" = 20
+	"Muiris #0" = 20
+	"Tadhg #0" = 20
+	"Se�n #0" = 20
+	"Niall #4" = 15
+	"Einr� #0" = 15
+	"Conn #1" = 10
+	"Eoghan #1" = 10
+	"Aonghus #2" = 5
+	"Comhghall #2" = 5
+	"Maeleachlain #2" = 5
+	"Diarmaid #1" = 5
+	"Flann #1" = 5
+	"Aerdghal #0" = 0
+	"Bearach #0" = 0
+	"Cao�mhin #0" = 0
+	"Donnabhain #0" = 0
+	"E�hmh�n #0" = 0
+	"Fearghal #0" = 0
+	"Iarfhlaith #0" = 0
+	"Lorcc�n #0" = 0
+	"Math�in #0" = 0
+	"Naomh�n #0" = 0
+	"Ois�n #0" = 0
+	"P�draig #0" = 0
+	"R�ag�in #0" = 0
+	"Somhairle #0" = 0
+	
+	"Saraid #0" = -1
+	"�rfhlaith #0" = -1
+	"Fedelma #0" = -1
+}
+
+leader_names = {
+	#Irish names by Draiocht -based on historical castles and family holdings
+	"� N�ill" "mac Art�in" "mac Aonghusa" "� hAnluain" "mac Cana"
+	"Clann Eanruig" "� hEaghra" "mac Ph�il" "mac Lochlainn" "� Dochartaigh"
+	"� Cath�in" "� Donnghaile" "� h�g�in" "mac Mathghamhna" "� Raghallaigh"
+	"� Domhnaill" "mac Craith" "mac Uidhir" "� Baoighill" "mac Maonghail"
+	"� Cl�irigh" "mac Fhlannchadha" "mac Samhradhain" "� Conchubhair"
+	"� hAirt" "� Ruairc" "mac Raghnaill" "mac Diarmata" "mac Donnchadha"
+	"� Gadhra" "� Dubhda" "mac Fhirbhisigh" "� Fearghail" "� Conchubhair Donn"
+	"� Conchubhair Rua" "� Ceallaigh" "� Mainn�n" "� Domhnall�in" "� D�laigh"
+	"� M�ille" "� Flaithbheartaigh" "� Madadhan" "� S�oda" "mac Gorm�in"
+	"� De�ghaidh" "� Gr�ofa" "� Seachnasaigh" "mac na Mara" "� hUirthile"
+	"� Muirthile" "� hIarlatha" "� Gr�daigh" "mac Eochag�in" "� Donnag�in"
+	"� Faoileach�in" "� Maonaigh" "� Maolmhuaidh" "� Duinn" "� D�nlaing"
+	"� M�rdha" "mac Giolla Ph�draig" "� Faol�in" "� Cearbhaill" "mac Giolla Phoil"
+	"� Meagher" "� Meadhra" "� Cinn�ide" "� Cearnaigh" "� Tiarnaigh" "� Riagh�in"
+	"� Fogaratigh" "� Dubhuir" "� hUrthuile" "� Liath�in" "� Cathail" "� h�il�"
+	Craobhach "� Ceallach�in" "� Caoimh" "mac C�rthaigh" "� Floinn" "� Donnchadha"
+	"� Muircheartaigh" "� Chonaill" "� Laoghaire" "� hEidirsceoil" "� S�illeabh�in M�r"
+	"� S�illeabh�in Beare" "� Tuathail" "� Broin" "� hEochaidh" Caomh�nach "� Briain" 
+	"� S�aghdha" "� hAonghusa" "� Cathasaigh" "� Donnabh�in" "� hEidhin" "mac an Oirchinnigh"
+	"mac C�rthaigh M�r"
+	#Below are some okay looking names I might sort through and re-enable later. The rest of the crappy vanilla ones are cut.
+	#"Caomhanach" "Conchobhair"
+	#"Mac Amhalghaidh" "Mac an tSionnaigh" "Mac Cochl�in" "Mac Coibheanaigh"
+	#"Mac Conshn�mha" "Mac Fhlannchaidh" "Mac Fionbhair" "Mac Giolla Phadraig"
+	#"Mac Raghnaill" "Mac Tighearn�in" "Mag Eochag�in" 
+	#"� hAimheirgin" "� Braoin" "� Cairbre" "� Caoindealbh�in" "� Catharnaigh"
+	#"� Ceallaigh" "� Ciardha" "� Cearbhaill" "� Comhraidhe" "� Congalaig"
+	#"� Cosraigh" "� Diubhgeann�in" "� Doinn" "� Donnchadha" "� Dubhghaill"
+	#"� Dubhuidhe" "� Faolain" "� Fhearghaill" "� Fionnal�in" "� Finntighearn"
+	#"� hAonghusa" "� Lorc�in" "� Maolmhuaidh" "� Ruairc" "� Seaghdha" "� Sean�in"
+	#"� Tuathail"
+	#"Mac Anna" "Mac �rdghail" "Mac Artian" "Mac Cearbhaill" "Mac Dhomhnaill"
+	#"Mac Lochlainn" "Mac Mathghamha" "Mac Suibhne" "Mag Aonghusa" "Mag Uidhir"
+	#"� Banain" "� Baoghill" "� Canannain" "� Caoinnigh" "� Caiside" "� Ceallaigh"
+	#"� Cleireigh" "� Corcr�in" "� Cuileann�in" "� Cuinn" "� Duibheamhna"
+	#"� Daimh�n" "� Dochartaigh" "� Doibhilin" "� Duach�in" "� Farach�in"
+	#"� fLaithbheartaigh" "� Flaithre" "� Flannag�in" "� hAodhag�in" "� hAnluain"
+	#"� h�ignigh" "� hInneirghe" "� h�r" "� Long�in" "� Lorc�in" "� Maolag�in"
+	#"� Maold�in" "� Neill" "� Raithbheartiagh"
+	#"Mac Branain" "Mac Conraoi" "Mac Cuille" "Mac Diarmada"
+	#"Mac Donnchadha" "Mac Eochaidh" "Mac Maghnais"
+	#"� Birn" "� Breislein" "� Cadhla" "� Caithniadh"
+	#"� Cathail" "� Cearbhaill" "� C�ir�n" "� Cl�irigh"
+	#"� Coigligh" "� Concheannain" "� Conghailaigh" "� Cuana"
+	#"� Doibhilin" "� Domhnall�in" "� Dorchaidhe" "� Diubh�in"
+	#"� D�nadhaigh" "� Fionn" "� Fionnachta" "� Fionnag�in"
+	#"� Fionn�in" "� Flaithbheartach" "� Gadhra" "� hAllmhur�in"
+	#"� hEaghra" "� hUig�n" "� Leannain" "� Maold�in" "� Manachain"
+	#"� Mughr�in" "� Reachtag�in" "� Seachnasaigh" "� Tarpaigh"
+	#"� Tighearnaigh"
+}
+
+ship_names = {
+	Aoife
+	Ciara Connacht
+	Eithne Emer
+	Leinster
+	Munster
+	Niamh
+	Orla
+	Roisin
+	Ulster
+	Athlone
+	Ballina
+	Ballinrobe
+	Ballyhaunis
+	Boyle
+	Castlebar
+	Galway
+	Connemara
+	Mayo
+	Roscommon
+	Clare Cork
+	"Deas Mhuman" 
+	Kerry 
+	"Lar Mumhan" Limerick
+	Tipperary "Tuad Mhuman"
+	"Urh Mumhan"  
+	Waterford
+	Carlow
+	Dublin
+	Kildare Kilkenny
+	Laios Longford Louth
+	Meath
+	Offaly 
+	Westmeath Wexford Wicklow
+	Aedh
+	Baedan
+	Colman Cookstown 
+	Donal
+	Eocha Eogan 
+	Fergal Fergus
+	Niall
+	Omagh
+	Strabane Suibne
+} 
+
+army_names = {
+	"Slua na h�ireann" "Slua an R�" "Slua C�ad Cath" "Slua Gaisc�och" "Slua Iarthair" "Slua Oirthir" "Slua Tuaiscirt" "Slua Deiscirt"
+	"C�ad Slua" "2a Slua" "3� Slua" "4� Slua" "5� Slua" "6� Slua" "7� Slua" "8� Slua" "9� Slua" "10� Slua"
+	"11� Slua" "12� Slua" "13� Slua" "14� Slua" "15� Slua" "16� Slua" "17� Slua" "18� Slua" "19� Slua" "20� Slua"
+	"21� Slua" "22� Slua" "23� Slua" "24� Slua" "25� Slua" "26� Slua" "27� Slua" "28� Slua" "29� Slua" "30� Slua"
+	"31� Slua" "32� Slua" "33� Slua" "34� Slua" "35� Slua" "36� Slua" "37� Slua" "38� Slua" "39� Slua" "40� Slua"
+	"41� Slua" "42� Slua" "43� Slua" "44� Slua" "45� Slua" "46� Slua" "47� Slua" "48� Slua" "49� Slua" "50� Slua"
+	"51� Slua" "52� Slua" "53� Slua" "54� Slua" "55� Slua" "56� Slua" "57� Slua" "58� Slua" "59� Slua" "60� Slua"
+	"61� Slua" "62� Slua" "63� Slua" "64� Slua" "65� Slua" "66� Slua" "67� Slua" "68� Slua" "69� Slua" "70� Slua"
+	"71� Slua" "72� Slua" "73� Slua" "74� Slua" "75� Slua" "76� Slua" "77� Slua" "78� Slua" "79� Slua" "80� Slua"
+	"81� Slua" "82� Slua" "83� Slua" "84� Slua" "85� Slua" "86� Slua" "87� Slua" "88� Slua" "89� Slua" "90� Slua"
+	"91� Slua" "92� Slua" "93� Slua" "94� Slua" "95� Slua" "96� Slua" "97� Slua" "98� Slua" "99� Slua" "100� Slua"
+}	#EU4 doesn't have the mechanics to apply the grammar for dynamic variables, and the resulting mess would look very wrong to anyone who actually knows Irish, so I'm sticking with tonnes of generic names above.
+
+fleet_names = {
+	"Loingeas na h�ireann" "Loingeas M�r" "Loingeas Cogaidh" "Loingeas Taisc�ala�ochta" "Loingeas Tr�cht�la" "Loingeas Fheilim�"
+	"C�ad Loingeas" "2a Loingeas" "3� Loingeas" "4� Loingeas" "5� Loingeas" "6� Loingeas" "7� Loingeas" "8� Loingeas" "9� Loingeas" "10� Loingeas"
+	"11� Loingeas" "12� Loingeas" "13� Loingeas" "14� Loingeas" "15� Loingeas" "16� Loingeas" "17� Loingeas" "18� Loingeas" "19� Loingeas" "20� Loingeas"
+	"21� Loingeas" "22� Loingeas" "23� Loingeas" "24� Loingeas" "25� Loingeas" "26� Loingeas" "27� Loingeas" "28� Loingeas" "29� Loingeas" "30� Loingeas"
+	"31� Loingeas" "32� Loingeas" "33� Loingeas" "34� Loingeas" "35� Loingeas" "36� Loingeas" "37� Loingeas" "38� Loingeas" "39� Loingeas" "40� Loingeas"
+	"41� Loingeas" "42� Loingeas" "43� Loingeas" "44� Loingeas" "45� Loingeas" "46� Loingeas" "47� Loingeas" "48� Loingeas" "49� Loingeas" "50� Loingeas"
+}	#Same as army names, EU4 doesn't have mechanics to not butcher grammar, to the point of being worse than English, so going with generic and numbered

@@ -1,0 +1,107 @@
+# Country name see file name.
+
+graphical_culture = westerngfx # was irishgfx # UPE compatibility
+
+color = { 193  237  85 }
+
+historical_idea_groups = {
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	gaelic_galloglaigh
+	gaelic_mercenary
+	gaelic_free_shooter
+	irish_charge
+	anglofrench_line
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Feidlimidh #1" = 40
+	"�ed #16" = 20
+	"Cathal #6" = 20
+	"Turlough #3" = 20
+	"Brian #1" = 20
+	"Tadhg #4" = 10
+	"Donal #4" = 1
+	"Aindri� #0" = 0
+	"Alaois #0" = 0
+	"Alastar #0" = 0
+	"Alonghus #0" = 0
+	"Berach #0" = 0
+	"Brad�in #0" = 0
+	"Brennan #0" = 0
+	"Brody #0" = 0
+	"Br�nach #0" = 0
+	"Calbhach #0" = 0
+	"Caolan #0" = 0
+	"Carroll #0" = 0
+	"Ceallach #0" = 0
+	"Caerbhall #0" = 0
+	"Cian #0" = 0
+	"Conan #0" = 0
+	"Connor #0" = 0
+	"Diarmaid #0" = 0
+	"Dubhghall #0" = 0
+	"�amonn #0" = 0
+	"Eoghan #0" = 0
+	"Fearchar #0" = 0
+	"Fearghas #0" = 0
+	"Fionnlagh #0" = 0
+	"Flann #0" = 0
+	"Gallchobhair #0" = 0
+	"Gob�n #0" = 0
+	"Gr�daigh #0" = 0
+	"Lomm�n #0" = 0
+	"Maeleachlain #0" = 0
+	"Murchadha #0" = 0
+	"Naomh�n #0" = 0
+	"Niall #0" = 0
+	
+	"B�binn #0" = -1
+	"Fionola #0" = -1
+	"Norene #0" = -1
+}
+
+leader_names = {
+	"Mac Branain" "Mac Conraoi" "Mac Cuile" "Mac Diarmada"
+	"Mac Donnchadha" "Mac Eochaidh" "Mac Maghnais"
+	"� Birn" "� Breislein" "� Cadhla" "� Caithniadh"
+	"� Cathail" "� Cearbhaill" "� C�ir�n" "� Cl�irigh"
+	"� Coigligh" "� Concheannain" "� Conghailaigh" "� Cuana"
+	"� Doibhilin" "� Domhnall�in" "� Dorchaidhe" "� Diubh�in"
+	"� D�nadhaigh" "� Fionn" "� Fionnachta" "� Fionnag�in"
+	"� Fionn�in" "� Flaithbheartach" "� Gadhra" "� hAllmhur�in"
+	"� hEaghra" "� hUig�n" "� Leannain" "� Maold�in" "� Manachain"
+	"� Mughr�in" "� Reachtag�in" "� Seachnasaigh" "� Tarpaigh"
+	"� Tighearnaigh"
+}
+
+ship_names = {
+	Athlone
+	Ballina
+	Ballinrobe
+	Ballyhaunis
+	Boyle
+	Castlebar
+	Galway
+	Connemara
+	Mayo
+	Roscommon	
+}

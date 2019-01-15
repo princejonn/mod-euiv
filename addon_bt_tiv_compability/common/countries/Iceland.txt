@@ -1,0 +1,171 @@
+#Iceland 
+
+graphical_culture = westerngfx # norsegfx # UPE compatibility
+
+color = { 60  188  202 }
+
+historical_score = 25
+
+preferred_religion = protestant
+
+historical_idea_groups = {
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Hrafn #0" = 10
+	"Einar #0" = 10
+	"�lafur #0" = 10
+	"P�tur #0" = 10
+	"Ormur #0" = 10
+	"Ketill #0" = 10
+	"Eir�kur #0" = 10
+	"B�t�lfur #0" = 10
+	"Gr�mur #0" = 10
+	"Holti #0" = 10
+	"�var #0" = 10
+	"�rni #0" = 10
+	"Andr�s #0" = 10
+	"�orsteinn #0" = 10
+	"Smi�ur #0" = 10
+	"�orgautur #0" = 10
+	"Vigf�s #0" = 10
+	"Arnfinnur #0" = 5
+	"Helgi #0" = 5
+	"Hannes #0" = 5
+	"Loftur #0" = 5
+	"Torfi #0" = 5
+	"Hinrik #0" = 5
+	"Di�rik #0" = 5
+	"�orleifur #0" = 5
+	"S�ren #0" = 0
+	"T�li #0" = 0
+	"J�hann #0" = 0
+	"�gmundur #0" = 0
+	"Poul #0" = 0
+	"Benedikt #0" = 0
+	"Enevold #0" = 0
+	"Holger #0" = 0
+	"Bj�rn #0" = 0
+	"�sgeir #0" = 0
+	"Gudmund #0" = 0
+	"Magn�s #0" = 0
+	"Hermann #0" = 0
+	"J�n #0" = 0
+	
+	#1.16 added vanilla female names
+	"Kristina #0" = -1
+	"Ingibj�rg #0" = -1
+	"Selma #0" = -1
+	"Hallgr�m�na #0" = -1
+	"Saga #0" = -1
+	"Gunnd�s #0" = -1
+	"Inge #0" = 5
+	"Sigurd #0" = 5
+	"Gissur #0" = 0
+	"Ari #0" = 0
+	"Anders #0" = 0
+	"Ansgard #0" = 0
+	"Arvid #0" = 0
+	"Bernt #0" = 0
+	"Birger #0" = 0
+	"Bj�rn #0" = 0
+	"Daniel #0" = 0
+	"Edvard #0" = 0
+	"Eilert #0" = 0
+	"Einar #0" = 0
+	"Elias #0" = 0
+	"Esben #0" = 0
+	"Folke #0" = 0
+	"Gunnar #0" = 0
+	"Kasper #0" = 0
+	"Kennet #0" = 0
+	"Knut #0" = 0
+	"Ludvig #0" = 0
+	"Mats #0" = 0
+	"Mikael #0" = 0
+	"Nj�ld #0" = 0
+	"Njord #0" = 0
+	"Oddmund #0" = 0
+	"Peder #0" = 0
+	"Rikard #0" = 0
+	"Simon #0" = 0
+	"S�ren #0" = 0
+	"Tollak #0" = 0
+	"Torhild #0" = 0
+}
+
+leader_names = {
+	Arn�rsson �sgeirsson 
+	Benediktsson Bjarnasen Bj�rnsson 
+	Eggers Eldj�rn 
+	Hafstein Hansen Hermannsson 
+	Joh�nesson J�nsson 
+	Magn�sson 
+	Stef�nsson Steinthosson 
+	Th�rdarson Th�rhallson Thorl�ksson Thurs
+	Oddsson Ormsson ��risson �orl�ksson Sveinbjarnarson Andr�sson �orsteinsson �orgr�msson Bjarnarson
+	��r�arson G�slason Eyj�lfsson P�tursson Snorrason Sveinsson Gu�mundsson �varsson Styrsson �lafsson
+	
+	#1.16 added vanilla leader names
+	Arnesson Amundsen 
+	Bjelke Bolt 
+	Egilsson Eriksson 
+	Haraldsson 
+	Larsson Leifsson 
+	Magnusson 
+	Nansen Norheim 
+	Olavsson 
+	Sverresson Arason 
+	Torgeirsson Nikul�sson 
+	P�lsson
+}
+
+ship_names = {
+	Sk�lholt
+	H�lar
+	Skagafj�r�ur
+	K�pavogur
+	Akranes
+	�ss Vanr �lfr J�tunn
+	Sleipner Viking Frithjof Rjukan Sarpen Lougen Glommen
+	Freia Desideira Ellida Nordssthernen Nornen Nidaros �rnen
+	Thor Odin Njord Freyr Tyr Bragl Heimdall Hoder Vidar Ale Ullr Forset
+	Skorpionen Mj�lner Thrudvang
+	
+	#1.16 added vanilla ship names
+	Vattnaj�kul
+	Eyjafjallaj�kull
+	Tungnafellsj�kull
+	Eir�ksj�kull
+	Tindfjallaj�kull
+	Torfaj�kull
+	Sn�fellsj�kull
+	Langj�kull
+	Hofsj�kull
+	Drangaj�kull
+}

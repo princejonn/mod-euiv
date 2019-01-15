@@ -1,0 +1,110 @@
+# Country name see file name.
+
+graphical_culture = westerngfx # was britishgfx # UPE compatibility
+
+color = { 165  15  20 }
+
+preferred_religion = catholic
+
+historical_idea_groups = {
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	gaelic_galloglaigh
+	gaelic_mercenary
+	gaelic_free_shooter
+	irish_charge
+	anglofrench_line
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Turlough #2" = 80
+	"Conchobhar #2" = 60
+	"Tadhg #2" = 40
+	"Donnchad #7" = 20
+	"Muireadhach #1" = 20
+	"Diarmaid #3" = 1
+	"Mathghamhain #0" = 20
+	"�dhamh #0" = 0
+	"Ailill #0" = 0
+	"Br�gh #0" = 0
+	"Br�nach #0" = 0
+	"Cadwgwan #0" = 0
+	"Caoimh�n #0" = 0
+	"Cinn�idigh #0" = 0
+	"Deagl�n #0" = 0
+	"Dougal #0" = 0
+	"Fionnlagh #0" = 0
+	"Garbh�n #0" = 0
+	"Lachtna #0" = 0
+	"Lorcc�n #0" = 0
+	"Mainch�n #0" = 0
+	"Math�in #0" = 0
+	"Meall�n #0" = 0
+	"Naomh�n #0" = 0
+	"Niall #0" = 0
+	"Odhr�n #0" = 0
+	"P�draig #0" = 0
+	"Quinn #0" = 0
+	"Riain #0" = 0
+	"R�oghn�n #0" = 0
+	"R�rdan #0" = 0
+	"Ruaidhr� #0" = 0
+	"Ruarc #0" = 0
+	"S�aghdh� #0" = 0
+	"Sean�n #0" = 0
+	"Sechnall #0" = 0
+	"Tighearnach #0" = 0
+	"Tuathal #0" = 0
+	"Uilliam #0" = 0
+	"Uinseann #0" = 0
+	
+	"Aifric #0" = -1
+	"Fionola #0" = -1
+	"Raghnailt #0" = -1
+}
+
+leader_names = {
+	Fitzgerald Carew Condon Barry Supple Walsh Nugent
+	Galway Hodnett Fleming Roche Nagle Downing Hyde Terry
+	Wall Synan Lombard Stapleton "de Cogan" Barrett Fant Maunsell
+	Baggott Brown "de Lacey" Fant Burke Daly Gunning Finniter
+	Purcell Hewson Courtenay Fitzmaurice Cantillon Hussey Ferriter
+	Bunyan Mulvihill Barry Boyle "Mac Sheehy" Cotter Daly
+	"O'Hanley" "O'Casey" "O'Donovan" "O'Mahony" "O'Hynes"
+	Coppinger MacSweeney
+	"mac an Oirchinnigh"
+}	#custom by Driaocht based on historical castles and family holdings
+
+ship_names = {
+	Fitzgerald Carew Condon Barry Supple Walsh Nugent
+	Galway Hodnett Fleming Roche Nagle Downing Hyde Terry
+	Wall Synan Lombard Stapleton "de Cogan" Barrett Fant Maunsell
+	Baggott Brown "de Lacey" Fant Burke Daly Gunning Finniter
+	Purcell Hewson Courtenay Fitzmaurice Cantillon Hussey Ferriter
+	Bunyan Mulvihill Barry Boyle "Mac Sheehy" Cotter Daly
+	"O'Hanley" "O'Casey" "O'Donovan" "O'Mahony" "O'Hynes"
+	Coppinger MacSweeney
+	"mac an Oirchinnigh"
+}	#custom by Driaocht based on historical castles and family holdings
+
+army_names = {
+	"Army of $PROVINCE$" 
+}
