@@ -1,8 +1,11 @@
 name="!! BT Addon: The Idea Variation Compability Patch"
 path="mod/addon_bt_tiv_compability"
 tags={
-	"compability"
-	"patch"
+	"Addon"
+	"Beyond Typus"
+	"Idea Variation"
+	"Compability"
+	"Patch"
 }
 picture="thumb.jpg"
 remote_file_id=""

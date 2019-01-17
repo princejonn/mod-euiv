@@ -1,8 +1,11 @@
 name="!! The Idea Variation Addon: Bigger UI Compability Patch"
 path="mod/addon_tiv_biggerui_compability"
 tags={
-	"compability"
-	"patch"
+	"Addon"
+	"The Idea Variation"
+	"Bigger UI"
+	"Compability"
+	"Patch"
 }
 picture="thumb.jpg"
 remote_file_id=""

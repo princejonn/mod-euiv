@@ -1,9 +1,10 @@
 name="!! BT Addon: Arumba Shortcuts"
 path="mod/addon_bt_arumba_shortcuts"
 tags={
-	"shortcuts"
-	"addon"
-	"beyond typus"
+	"Addon"
+	"Beyond Typus"
+	"Arumba"
+	"Shortcuts"
 }
 picture="thumb.jpg"
 remote_file_id=""
