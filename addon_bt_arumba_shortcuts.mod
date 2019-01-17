@@ -7,5 +7,5 @@ tags={
 	"Shortcuts"
 }
 picture="thumb.jpg"
-remote_file_id=""
+remote_file_id="1625819816"
 supported_version="1.28.*.*"
