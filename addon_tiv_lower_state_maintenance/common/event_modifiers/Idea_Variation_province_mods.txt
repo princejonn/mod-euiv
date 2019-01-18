@@ -201,14 +201,14 @@ manufactory_mod = {
 
 
 government_lvl_1_mod = {
-	local_state_maintenance_modifier = -0.5
+	local_state_maintenance_modifier = -0.33
 	local_autonomy = -0.05
 	local_monthly_devastation = -0.05
 	picture = "government_1"
 }
 
 government_lvl_2_mod = {
-	local_state_maintenance_modifier = -0.75
+	local_state_maintenance_modifier = -0.66
 	local_missionary_strength = 0.01
 	local_autonomy = -0.1
 	local_monthly_devastation = -0.1
