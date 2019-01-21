@@ -7,14 +7,14 @@ color = { 112  150  105 }
 revolutionary_colors = { 10  0  6 }
 
 historical_idea_groups = {
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
+	maritime_ideas
+	aristocracy_ideas
+	exploration_ideas
+	trade_ideas
+	economic_ideas
+	innovativeness_ideas
+	spy_ideas
+	administrative_ideas
 }
 
 historical_units = {
@@ -42,18 +42,18 @@ monarch_names = {
 	"Feidlimidh #1" = 40
 	"Cathaoir #0" = 40
 	"Muchadh #0" = 40
-	"ï¿½ed #6" = 20
+	"Áed #6" = 20
 	"Fonnchadh #3" = 20
 	"Brian #2" = 20
 	"Criomhthann #2" = 20
 	"Art #1" = 20
 	"Cathal #0" = 20
-	"Gearï¿½id #0" = 20
+	"Gearóid #0" = 20
 	"Muiris #0" = 20
 	"Tadhg #0" = 20
-	"Seï¿½n #0" = 20
+	"Seán #0" = 20
 	"Niall #4" = 15
-	"Einrï¿½ #0" = 15
+	"Einrí #0" = 15
 	"Conn #1" = 10
 	"Eoghan #1" = 10
 	"Aonghus #2" = 5
@@ -63,76 +63,76 @@ monarch_names = {
 	"Flann #1" = 5
 	"Aerdghal #0" = 0
 	"Bearach #0" = 0
-	"Caoï¿½mhin #0" = 0
+	"Caoímhin #0" = 0
 	"Donnabhain #0" = 0
-	"Eï¿½hmhï¿½n #0" = 0
+	"Eíhmhín #0" = 0
 	"Fearghal #0" = 0
 	"Iarfhlaith #0" = 0
-	"Lorccï¿½n #0" = 0
-	"Mathï¿½in #0" = 0
-	"Naomhï¿½n #0" = 0
-	"Oisï¿½n #0" = 0
-	"Pï¿½draig #0" = 0
-	"Rï¿½agï¿½in #0" = 0
+	"Lorccán #0" = 0
+	"Mathúin #0" = 0
+	"Naomhán #0" = 0
+	"Oisín #0" = 0
+	"Pádraig #0" = 0
+	"Ríagáin #0" = 0
 	"Somhairle #0" = 0
 	
 	"Saraid #0" = -1
-	"ï¿½rfhlaith #0" = -1
+	"Órfhlaith #0" = -1
 	"Fedelma #0" = -1
 }
 
 leader_names = {
 	#Irish names by Draiocht -based on historical castles and family holdings
-	"ï¿½ Nï¿½ill" "mac Artï¿½in" "mac Aonghusa" "ï¿½ hAnluain" "mac Cana"
-	"Clann Eanruig" "ï¿½ hEaghra" "mac Phï¿½il" "mac Lochlainn" "ï¿½ Dochartaigh"
-	"ï¿½ Cathï¿½in" "ï¿½ Donnghaile" "ï¿½ hï¿½gï¿½in" "mac Mathghamhna" "ï¿½ Raghallaigh"
-	"ï¿½ Domhnaill" "mac Craith" "mac Uidhir" "ï¿½ Baoighill" "mac Maonghail"
-	"ï¿½ Clï¿½irigh" "mac Fhlannchadha" "mac Samhradhain" "ï¿½ Conchubhair"
-	"ï¿½ hAirt" "ï¿½ Ruairc" "mac Raghnaill" "mac Diarmata" "mac Donnchadha"
-	"ï¿½ Gadhra" "ï¿½ Dubhda" "mac Fhirbhisigh" "ï¿½ Fearghail" "ï¿½ Conchubhair Donn"
-	"ï¿½ Conchubhair Rua" "ï¿½ Ceallaigh" "ï¿½ Mainnï¿½n" "ï¿½ Domhnallï¿½in" "ï¿½ Dï¿½laigh"
-	"ï¿½ Mï¿½ille" "ï¿½ Flaithbheartaigh" "ï¿½ Madadhan" "ï¿½ Sï¿½oda" "mac Gormï¿½in"
-	"ï¿½ Deï¿½ghaidh" "ï¿½ Grï¿½ofa" "ï¿½ Seachnasaigh" "mac na Mara" "ï¿½ hUirthile"
-	"ï¿½ Muirthile" "ï¿½ hIarlatha" "ï¿½ Grï¿½daigh" "mac Eochagï¿½in" "ï¿½ Donnagï¿½in"
-	"ï¿½ Faoileachï¿½in" "ï¿½ Maonaigh" "ï¿½ Maolmhuaidh" "ï¿½ Duinn" "ï¿½ Dï¿½nlaing"
-	"ï¿½ Mï¿½rdha" "mac Giolla Phï¿½draig" "ï¿½ Faolï¿½in" "ï¿½ Cearbhaill" "mac Giolla Phoil"
-	"ï¿½ Meagher" "ï¿½ Meadhra" "ï¿½ Cinnï¿½ide" "ï¿½ Cearnaigh" "ï¿½ Tiarnaigh" "ï¿½ Riaghï¿½in"
-	"ï¿½ Fogaratigh" "ï¿½ Dubhuir" "ï¿½ hUrthuile" "ï¿½ Liathï¿½in" "ï¿½ Cathail" "ï¿½ hï¿½ilï¿½"
-	Craobhach "ï¿½ Ceallachï¿½in" "ï¿½ Caoimh" "mac Cï¿½rthaigh" "ï¿½ Floinn" "ï¿½ Donnchadha"
-	"ï¿½ Muircheartaigh" "ï¿½ Chonaill" "ï¿½ Laoghaire" "ï¿½ hEidirsceoil" "ï¿½ Sï¿½illeabhï¿½in Mï¿½r"
-	"ï¿½ Sï¿½illeabhï¿½in Beare" "ï¿½ Tuathail" "ï¿½ Broin" "ï¿½ hEochaidh" Caomhï¿½nach "ï¿½ Briain" 
-	"ï¿½ Sï¿½aghdha" "ï¿½ hAonghusa" "ï¿½ Cathasaigh" "ï¿½ Donnabhï¿½in" "ï¿½ hEidhin" "mac an Oirchinnigh"
-	"mac Cï¿½rthaigh Mï¿½r"
+	"Ó Néill" "mac Artáin" "mac Aonghusa" "Ó hAnluain" "mac Cana"
+	"Clann Eanruig" "Ó hEaghra" "mac Pháil" "mac Lochlainn" "Ó Dochartaigh"
+	"Ó Catháin" "Ó Donnghaile" "Ó hÁgáin" "mac Mathghamhna" "Ó Raghallaigh"
+	"Ó Domhnaill" "mac Craith" "mac Uidhir" "Ó Baoighill" "mac Maonghail"
+	"Ó Cléirigh" "mac Fhlannchadha" "mac Samhradhain" "Ó Conchubhair"
+	"Ó hAirt" "Ó Ruairc" "mac Raghnaill" "mac Diarmata" "mac Donnchadha"
+	"Ó Gadhra" "Ó Dubhda" "mac Fhirbhisigh" "Ó Fearghail" "Ó Conchubhair Donn"
+	"Ó Conchubhair Rua" "Ó Ceallaigh" "Ó Mainnín" "Ó Domhnalláin" "Ó Dálaigh"
+	"Ó Máille" "Ó Flaithbheartaigh" "Ó Madadhan" "Ó Síoda" "mac Gormáin"
+	"Ó Deághaidh" "Ó Gríofa" "Ó Seachnasaigh" "mac na Mara" "Ó hUirthile"
+	"Ó Muirthile" "Ó hIarlatha" "Ó Grádaigh" "mac Eochagáin" "Ó Donnagáin"
+	"Ó Faoileacháin" "Ó Maonaigh" "Ó Maolmhuaidh" "Ó Duinn" "Ó Dúnlaing"
+	"Ó Mórdha" "mac Giolla Phádraig" "Ó Faoláin" "Ó Cearbhaill" "mac Giolla Phoil"
+	"Ó Meagher" "Ó Meadhra" "Ó Cinnéide" "Ó Cearnaigh" "Ó Tiarnaigh" "Ó Riagháin"
+	"Ó Fogaratigh" "Ó Dubhuir" "Ó hUrthuile" "Ó Liatháin" "Ó Cathail" "Ó hÉilí"
+	Craobhach "Ó Ceallacháin" "Ó Caoimh" "mac Cárthaigh" "Ó Floinn" "Ó Donnchadha"
+	"Ó Muircheartaigh" "Ó Chonaill" "Ó Laoghaire" "Ó hEidirsceoil" "Ó Súilleabháin Mór"
+	"Ó Súilleabháin Beare" "Ó Tuathail" "Ó Broin" "Ó hEochaidh" Caomhánach "Ó Briain" 
+	"Ó Séaghdha" "Ó hAonghusa" "Ó Cathasaigh" "Ó Donnabháin" "Ó hEidhin" "mac an Oirchinnigh"
+	"mac Cárthaigh Mór"
 	#Below are some okay looking names I might sort through and re-enable later. The rest of the crappy vanilla ones are cut.
 	#"Caomhanach" "Conchobhair"
-	#"Mac Amhalghaidh" "Mac an tSionnaigh" "Mac Cochlï¿½in" "Mac Coibheanaigh"
-	#"Mac Conshnï¿½mha" "Mac Fhlannchaidh" "Mac Fionbhair" "Mac Giolla Phadraig"
-	#"Mac Raghnaill" "Mac Tighearnï¿½in" "Mag Eochagï¿½in" 
-	#"ï¿½ hAimheirgin" "ï¿½ Braoin" "ï¿½ Cairbre" "ï¿½ Caoindealbhï¿½in" "ï¿½ Catharnaigh"
-	#"ï¿½ Ceallaigh" "ï¿½ Ciardha" "ï¿½ Cearbhaill" "ï¿½ Comhraidhe" "ï¿½ Congalaig"
-	#"ï¿½ Cosraigh" "ï¿½ Diubhgeannï¿½in" "ï¿½ Doinn" "ï¿½ Donnchadha" "ï¿½ Dubhghaill"
-	#"ï¿½ Dubhuidhe" "ï¿½ Faolain" "ï¿½ Fhearghaill" "ï¿½ Fionnalï¿½in" "ï¿½ Finntighearn"
-	#"ï¿½ hAonghusa" "ï¿½ Lorcï¿½in" "ï¿½ Maolmhuaidh" "ï¿½ Ruairc" "ï¿½ Seaghdha" "ï¿½ Seanï¿½in"
-	#"ï¿½ Tuathail"
-	#"Mac Anna" "Mac ï¿½rdghail" "Mac Artian" "Mac Cearbhaill" "Mac Dhomhnaill"
+	#"Mac Amhalghaidh" "Mac an tSionnaigh" "Mac Cochláin" "Mac Coibheanaigh"
+	#"Mac Conshnámha" "Mac Fhlannchaidh" "Mac Fionbhair" "Mac Giolla Phadraig"
+	#"Mac Raghnaill" "Mac Tighearnáin" "Mag Eochagáin" 
+	#"Ó hAimheirgin" "Ó Braoin" "Ó Cairbre" "Ó Caoindealbháin" "Ó Catharnaigh"
+	#"Ó Ceallaigh" "Ó Ciardha" "Ó Cearbhaill" "Ó Comhraidhe" "Ó Congalaig"
+	#"Ó Cosraigh" "Ó Diubhgeannáin" "Ó Doinn" "Ó Donnchadha" "Ó Dubhghaill"
+	#"Ó Dubhuidhe" "Ó Faolain" "Ó Fhearghaill" "Ó Fionnaláin" "Ó Finntighearn"
+	#"Ó hAonghusa" "Ó Lorcáin" "Ó Maolmhuaidh" "Ó Ruairc" "Ó Seaghdha" "Ó Seanáin"
+	#"Ó Tuathail"
+	#"Mac Anna" "Mac Árdghail" "Mac Artian" "Mac Cearbhaill" "Mac Dhomhnaill"
 	#"Mac Lochlainn" "Mac Mathghamha" "Mac Suibhne" "Mag Aonghusa" "Mag Uidhir"
-	#"ï¿½ Banain" "ï¿½ Baoghill" "ï¿½ Canannain" "ï¿½ Caoinnigh" "ï¿½ Caiside" "ï¿½ Ceallaigh"
-	#"ï¿½ Cleireigh" "ï¿½ Corcrï¿½in" "ï¿½ Cuileannï¿½in" "ï¿½ Cuinn" "ï¿½ Duibheamhna"
-	#"ï¿½ Daimhï¿½n" "ï¿½ Dochartaigh" "ï¿½ Doibhilin" "ï¿½ Duachï¿½in" "ï¿½ Farachï¿½in"
-	#"ï¿½ fLaithbheartaigh" "ï¿½ Flaithre" "ï¿½ Flannagï¿½in" "ï¿½ hAodhagï¿½in" "ï¿½ hAnluain"
-	#"ï¿½ hï¿½ignigh" "ï¿½ hInneirghe" "ï¿½ hï¿½r" "ï¿½ Longï¿½in" "ï¿½ Lorcï¿½in" "ï¿½ Maolagï¿½in"
-	#"ï¿½ Maoldï¿½in" "ï¿½ Neill" "ï¿½ Raithbheartiagh"
+	#"Ó Banain" "Ó Baoghill" "Ó Canannain" "Ó Caoinnigh" "Ó Caiside" "Ó Ceallaigh"
+	#"Ó Cleireigh" "Ó Corcráin" "Ó Cuileannáin" "Ó Cuinn" "Ó Duibheamhna"
+	#"Ó Daimhín" "Ó Dochartaigh" "Ó Doibhilin" "Ó Duacháin" "Ó Faracháin"
+	#"Ó fLaithbheartaigh" "Ó Flaithre" "Ó Flannagáin" "Ó hAodhagáin" "Ó hAnluain"
+	#"Ó hÉignigh" "Ó hInneirghe" "Ó hÍr" "Ó Longáin" "Ó Lorcáin" "Ó Maolagáin"
+	#"Ó Maoldúin" "Ó Neill" "Ó Raithbheartiagh"
 	#"Mac Branain" "Mac Conraoi" "Mac Cuille" "Mac Diarmada"
 	#"Mac Donnchadha" "Mac Eochaidh" "Mac Maghnais"
-	#"ï¿½ Birn" "ï¿½ Breislein" "ï¿½ Cadhla" "ï¿½ Caithniadh"
-	#"ï¿½ Cathail" "ï¿½ Cearbhaill" "ï¿½ Cï¿½irï¿½n" "ï¿½ Clï¿½irigh"
-	#"ï¿½ Coigligh" "ï¿½ Concheannain" "ï¿½ Conghailaigh" "ï¿½ Cuana"
-	#"ï¿½ Doibhilin" "ï¿½ Domhnallï¿½in" "ï¿½ Dorchaidhe" "ï¿½ Diubhï¿½in"
-	#"ï¿½ Dï¿½nadhaigh" "ï¿½ Fionn" "ï¿½ Fionnachta" "ï¿½ Fionnagï¿½in"
-	#"ï¿½ Fionnï¿½in" "ï¿½ Flaithbheartach" "ï¿½ Gadhra" "ï¿½ hAllmhurï¿½in"
-	#"ï¿½ hEaghra" "ï¿½ hUigï¿½n" "ï¿½ Leannain" "ï¿½ Maoldï¿½in" "ï¿½ Manachain"
-	#"ï¿½ Mughrï¿½in" "ï¿½ Reachtagï¿½in" "ï¿½ Seachnasaigh" "ï¿½ Tarpaigh"
-	#"ï¿½ Tighearnaigh"
+	#"Ó Birn" "Ó Breislein" "Ó Cadhla" "Ó Caithniadh"
+	#"Ó Cathail" "Ó Cearbhaill" "Ó Céirín" "Ó Cléirigh"
+	#"Ó Coigligh" "Ó Concheannain" "Ó Conghailaigh" "Ó Cuana"
+	#"Ó Doibhilin" "Ó Domhnalláin" "Ó Dorchaidhe" "Ó Diubháin"
+	#"Ó Dúnadhaigh" "Ó Fionn" "Ó Fionnachta" "Ó Fionnagáin"
+	#"Ó Fionnáin" "Ó Flaithbheartach" "Ó Gadhra" "Ó hAllmhuráin"
+	#"Ó hEaghra" "Ó hUigín" "Ó Leannain" "Ó Maoldúin" "Ó Manachain"
+	#"Ó Mughráin" "Ó Reachtagáin" "Ó Seachnasaigh" "Ó Tarpaigh"
+	#"Ó Tighearnaigh"
 }
 
 ship_names = {
@@ -181,24 +181,24 @@ ship_names = {
 } 
 
 army_names = {
-	"Slua na hï¿½ireann" "Slua an Rï¿½" "Slua Cï¿½ad Cath" "Slua Gaiscï¿½och" "Slua Iarthair" "Slua Oirthir" "Slua Tuaiscirt" "Slua Deiscirt"
-	"Cï¿½ad Slua" "2a Slua" "3ï¿½ Slua" "4ï¿½ Slua" "5ï¿½ Slua" "6ï¿½ Slua" "7ï¿½ Slua" "8ï¿½ Slua" "9ï¿½ Slua" "10ï¿½ Slua"
-	"11ï¿½ Slua" "12ï¿½ Slua" "13ï¿½ Slua" "14ï¿½ Slua" "15ï¿½ Slua" "16ï¿½ Slua" "17ï¿½ Slua" "18ï¿½ Slua" "19ï¿½ Slua" "20ï¿½ Slua"
-	"21ï¿½ Slua" "22ï¿½ Slua" "23ï¿½ Slua" "24ï¿½ Slua" "25ï¿½ Slua" "26ï¿½ Slua" "27ï¿½ Slua" "28ï¿½ Slua" "29ï¿½ Slua" "30ï¿½ Slua"
-	"31ï¿½ Slua" "32ï¿½ Slua" "33ï¿½ Slua" "34ï¿½ Slua" "35ï¿½ Slua" "36ï¿½ Slua" "37ï¿½ Slua" "38ï¿½ Slua" "39ï¿½ Slua" "40ï¿½ Slua"
-	"41ï¿½ Slua" "42ï¿½ Slua" "43ï¿½ Slua" "44ï¿½ Slua" "45ï¿½ Slua" "46ï¿½ Slua" "47ï¿½ Slua" "48ï¿½ Slua" "49ï¿½ Slua" "50ï¿½ Slua"
-	"51ï¿½ Slua" "52ï¿½ Slua" "53ï¿½ Slua" "54ï¿½ Slua" "55ï¿½ Slua" "56ï¿½ Slua" "57ï¿½ Slua" "58ï¿½ Slua" "59ï¿½ Slua" "60ï¿½ Slua"
-	"61ï¿½ Slua" "62ï¿½ Slua" "63ï¿½ Slua" "64ï¿½ Slua" "65ï¿½ Slua" "66ï¿½ Slua" "67ï¿½ Slua" "68ï¿½ Slua" "69ï¿½ Slua" "70ï¿½ Slua"
-	"71ï¿½ Slua" "72ï¿½ Slua" "73ï¿½ Slua" "74ï¿½ Slua" "75ï¿½ Slua" "76ï¿½ Slua" "77ï¿½ Slua" "78ï¿½ Slua" "79ï¿½ Slua" "80ï¿½ Slua"
-	"81ï¿½ Slua" "82ï¿½ Slua" "83ï¿½ Slua" "84ï¿½ Slua" "85ï¿½ Slua" "86ï¿½ Slua" "87ï¿½ Slua" "88ï¿½ Slua" "89ï¿½ Slua" "90ï¿½ Slua"
-	"91ï¿½ Slua" "92ï¿½ Slua" "93ï¿½ Slua" "94ï¿½ Slua" "95ï¿½ Slua" "96ï¿½ Slua" "97ï¿½ Slua" "98ï¿½ Slua" "99ï¿½ Slua" "100ï¿½ Slua"
+	"Slua na hÉireann" "Slua an Rí" "Slua Céad Cath" "Slua Gaiscíoch" "Slua Iarthair" "Slua Oirthir" "Slua Tuaiscirt" "Slua Deiscirt"
+	"Céad Slua" "2a Slua" "3ú Slua" "4ú Slua" "5ú Slua" "6ú Slua" "7ú Slua" "8ú Slua" "9ú Slua" "10ú Slua"
+	"11ú Slua" "12ú Slua" "13ú Slua" "14ú Slua" "15ú Slua" "16ú Slua" "17ú Slua" "18ú Slua" "19ú Slua" "20ú Slua"
+	"21ú Slua" "22ú Slua" "23ú Slua" "24ú Slua" "25ú Slua" "26ú Slua" "27ú Slua" "28ú Slua" "29ú Slua" "30ú Slua"
+	"31ú Slua" "32ú Slua" "33ú Slua" "34ú Slua" "35ú Slua" "36ú Slua" "37ú Slua" "38ú Slua" "39ú Slua" "40ú Slua"
+	"41ú Slua" "42ú Slua" "43ú Slua" "44ú Slua" "45ú Slua" "46ú Slua" "47ú Slua" "48ú Slua" "49ú Slua" "50ú Slua"
+	"51ú Slua" "52ú Slua" "53ú Slua" "54ú Slua" "55ú Slua" "56ú Slua" "57ú Slua" "58ú Slua" "59ú Slua" "60ú Slua"
+	"61ú Slua" "62ú Slua" "63ú Slua" "64ú Slua" "65ú Slua" "66ú Slua" "67ú Slua" "68ú Slua" "69ú Slua" "70ú Slua"
+	"71ú Slua" "72ú Slua" "73ú Slua" "74ú Slua" "75ú Slua" "76ú Slua" "77ú Slua" "78ú Slua" "79ú Slua" "80ú Slua"
+	"81ú Slua" "82ú Slua" "83ú Slua" "84ú Slua" "85ú Slua" "86ú Slua" "87ú Slua" "88ú Slua" "89ú Slua" "90ú Slua"
+	"91ú Slua" "92ú Slua" "93ú Slua" "94ú Slua" "95ú Slua" "96ú Slua" "97ú Slua" "98ú Slua" "99ú Slua" "100ú Slua"
 }	#EU4 doesn't have the mechanics to apply the grammar for dynamic variables, and the resulting mess would look very wrong to anyone who actually knows Irish, so I'm sticking with tonnes of generic names above.
 
 fleet_names = {
-	"Loingeas na hï¿½ireann" "Loingeas Mï¿½r" "Loingeas Cogaidh" "Loingeas Taiscï¿½alaï¿½ochta" "Loingeas Trï¿½chtï¿½la" "Loingeas Fheilimï¿½"
-	"Cï¿½ad Loingeas" "2a Loingeas" "3ï¿½ Loingeas" "4ï¿½ Loingeas" "5ï¿½ Loingeas" "6ï¿½ Loingeas" "7ï¿½ Loingeas" "8ï¿½ Loingeas" "9ï¿½ Loingeas" "10ï¿½ Loingeas"
-	"11ï¿½ Loingeas" "12ï¿½ Loingeas" "13ï¿½ Loingeas" "14ï¿½ Loingeas" "15ï¿½ Loingeas" "16ï¿½ Loingeas" "17ï¿½ Loingeas" "18ï¿½ Loingeas" "19ï¿½ Loingeas" "20ï¿½ Loingeas"
-	"21ï¿½ Loingeas" "22ï¿½ Loingeas" "23ï¿½ Loingeas" "24ï¿½ Loingeas" "25ï¿½ Loingeas" "26ï¿½ Loingeas" "27ï¿½ Loingeas" "28ï¿½ Loingeas" "29ï¿½ Loingeas" "30ï¿½ Loingeas"
-	"31ï¿½ Loingeas" "32ï¿½ Loingeas" "33ï¿½ Loingeas" "34ï¿½ Loingeas" "35ï¿½ Loingeas" "36ï¿½ Loingeas" "37ï¿½ Loingeas" "38ï¿½ Loingeas" "39ï¿½ Loingeas" "40ï¿½ Loingeas"
-	"41ï¿½ Loingeas" "42ï¿½ Loingeas" "43ï¿½ Loingeas" "44ï¿½ Loingeas" "45ï¿½ Loingeas" "46ï¿½ Loingeas" "47ï¿½ Loingeas" "48ï¿½ Loingeas" "49ï¿½ Loingeas" "50ï¿½ Loingeas"
+	"Loingeas na hÉireann" "Loingeas Mór" "Loingeas Cogaidh" "Loingeas Taiscéalaíochta" "Loingeas Tráchtála" "Loingeas Fheilimí"
+	"Céad Loingeas" "2a Loingeas" "3ú Loingeas" "4ú Loingeas" "5ú Loingeas" "6ú Loingeas" "7ú Loingeas" "8ú Loingeas" "9ú Loingeas" "10ú Loingeas"
+	"11ú Loingeas" "12ú Loingeas" "13ú Loingeas" "14ú Loingeas" "15ú Loingeas" "16ú Loingeas" "17ú Loingeas" "18ú Loingeas" "19ú Loingeas" "20ú Loingeas"
+	"21ú Loingeas" "22ú Loingeas" "23ú Loingeas" "24ú Loingeas" "25ú Loingeas" "26ú Loingeas" "27ú Loingeas" "28ú Loingeas" "29ú Loingeas" "30ú Loingeas"
+	"31ú Loingeas" "32ú Loingeas" "33ú Loingeas" "34ú Loingeas" "35ú Loingeas" "36ú Loingeas" "37ú Loingeas" "38ú Loingeas" "39ú Loingeas" "40ú Loingeas"
+	"41ú Loingeas" "42ú Loingeas" "43ú Loingeas" "44ú Loingeas" "45ú Loingeas" "46ú Loingeas" "47ú Loingeas" "48ú Loingeas" "49ú Loingeas" "50ú Loingeas"
 }	#Same as army names, EU4 doesn't have mechanics to not butcher grammar, to the point of being worse than English, so going with generic and numbered

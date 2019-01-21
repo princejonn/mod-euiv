@@ -5,15 +5,15 @@ graphical_culture = westerngfx # was hannovergfx # UPE compatibility
 color = { 72 194 212 } #Old BtP colour - 136  0  21
 
 historical_idea_groups = {
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-}
+	religious_ideas
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	innovativeness_ideas
+	economic_ideas
+	spy_ideas
+	diplomatic_ideas
+}	#Using vanilla
 
 historical_units = {
 	western_medieval_infantry
@@ -70,7 +70,7 @@ monarch_names = {
 	"Denis #0" = 0
 	"Gerfried #0" = 0
 	"Gottfried #0" = 0
-	"Gï¿½nther #0" = 0
+	"Günther #0" = 0
 	"Helmut #0" = 0
 	"Herbert #0" = 0
 	"Ignatz #0" = 0
@@ -107,27 +107,27 @@ leader_names = {
 	Carl
 	Frese
 	Giesebert
-	Kï¿½ster
+	Köster
 	Nann
 	Rachel
 	Reimers
 	Russe
 	Swyn
 	Wiben
-	"von Hochwï¿½hrden"
+	"von Hochwöhrden"
 	"von Wiemerstedt"
 }	#Draiocht merged BtP & Vanilla names
 
 ship_names = {
-	Dithmarschen Heide Bï¿½sum Marne Burg
+	Dithmarschen Heide Büsum Marne Burg
 	Dahme
-	Grï¿½mtz Grossenbrode
+	Grömtz Grossenbrode
 	Kiel Kellenhusen
 	Neustadt
 	Ostsee 
 	Scharbeutz Sierksdorf
 	Wedel
-	"Telse von Hochwï¿½hrden"
+	"Telse von Hochwöhrden"
 }	#Draiocht merged BtP & Vanilla names
 
 army_names = {

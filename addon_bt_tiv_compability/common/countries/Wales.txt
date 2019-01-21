@@ -5,14 +5,14 @@ graphical_culture = westerngfx
 color = { 2  171  57 }			#Welsh Flag colour
 
 historical_idea_groups = {
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
+	maritime_ideas
+	aristocracy_ideas
+	trade_ideas
+	economic_ideas
+	religious_ideas
+	innovativeness_ideas
+	offensive_ideas
+	defensive_ideas
 }
 
 historical_units = {
@@ -110,5 +110,5 @@ ship_names = {
 	Penfro Powys "Preiddeu Annwn" Pryderi Pwyll
 	Rhiannon
 	Taff Teifi Teirnon Tywi
-	"Ynys Mï¿½n"
+	"Ynys Môn"
 }

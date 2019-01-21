@@ -7,14 +7,14 @@ color = { 140  40  50 }
 preferred_religion = catholic
 
 historical_idea_groups = {
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
+	maritime_ideas
+	aristocracy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	innovativeness_ideas
+	offensive_ideas
 }
 
 historical_units = {
@@ -35,50 +35,23 @@ historical_units = {
 }
 
 monarch_names = {
-	"Thomas #0" = 20
-	"Gerald #0" = 40
-	"Art #0" = 5
+	"Gerald #2" = 60
+	"Maurice #2" = 40
+	"Thomas #1" = 40
+	"John #2" = 40
+	"Richard #2" = 20
 	"Henry #0" = 20
-	"John #0" = 5
-	"Maurice #0" = 5
-	"William #0" = 5
-	"George #0" = 5
-	"Wentworth #0" = 5
-	"Robert #0" = 5
+	"William #0" = 20
+	"George #0" = 20
+	"Wentworth #0" = 1
+	"Robert #0" = 1
 	"James #0" = 0
 	"Lettice #0" = 0
 	"Edward #0" = 0
-	"Cinn�idigh #0" = 0
-	"Deagl�n #0" = 0
-	"Dougal #0" = 0
-	"Fionnlagh #0" = 0
-	"Garbh�n #0" = 0
-	"Lachtna #0" = 0
-	"Lorcc�n #0" = 0
-	"Mainch�n #0" = 0
-	"Math�in #0" = 0
-	"Meall�n #0" = 0
-	"Naomh�n #0" = 0
-	"Niall #0" = 0
-	"Odhr�n #0" = 0
-	"P�draig #0" = 0
-	"Quinn #0" = 0
-	"Riain #0" = 0
-	"R�oghn�n #0" = 0
-	"R�rdan #0" = 0
-	"Ruaidhr� #0" = 0
-	"Ruarc #0" = 0
-	"S�aghdh� #0" = 0
-	"Sean�n #0" = 0
-	"Sechnall #0" = 0
-	"Tighearnach #0" = 0
-	"Tuathal #0" = 0
-	"Uilliam #0" = 0
-	"Uinseann #0" = 0
+	"Augustus #0" = 0
 	
-	"Neassa #0" = -1
-	"Rosheen #0" = -1
-	"Siofra #0" = -1
+	"Catherine #0" = -1
+	"Mary #0" = -1
 }
 
 leader_names = {
@@ -91,11 +64,14 @@ leader_names = {
 }	#custom by Driaocht based on historical castles and family holdings
 
 ship_names = {
-	Carlow
-	Dublin
-	Kildare Kilkenny
-	Laios Longford Louth
-	Meath
-	Offaly
-	Westmeath Wexford Wicklow
+	Fitzgerald Bigod "le Gros" "de Lacey" Hartpole Riddlesford Talbot Eustace
+	"de Vesey" "de Clare" "de Bigarz" Bermingham "d'Arcy" Costello Reynell
+	Sherlock Nugent "de Taghmon" Tuite Tyrrell Lowe Dalton Dillon "de Ginkel"
+	Mortimer Plunkett Haynes Bellew "de Verdon" White Taaffe Bagnall "de Gray"
+	Rushe "de Courcey" Nesbitt "de Braose" Fitzhenry Mitchell Jordan Sely
+	"de Courcey" Audley White Mandeville Brown Savage Walsh Butler
+}	#custom by Driaocht based on historical castles and family holdings
+
+army_names = {
+	"Army of $PROVINCE$" 
 }

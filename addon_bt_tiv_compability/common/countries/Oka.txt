@@ -5,14 +5,14 @@ graphical_culture = easterngfx # russiangfx # UPE compatibility
 color = { 37  128  174 }
 
 historical_idea_groups = {
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	quality_ideas
 }
 
 historical_units = {
@@ -35,16 +35,19 @@ historical_units = {
 }
 
 monarch_names = {
-	"Yuri #0" = 40
-	"Semyon #0" = 20
-	"Mikhail #0" = 20
-	"Sergey #0" = 20
-	"Roman #0" = 10
-	"Mstislav #0" = 10
-	"Svyatoslav #0" = 10
-	"Titus #0" = 10
-	"Vasily #0" = 10
-	"Grigory #0" = 10
+	"Mikhail #2" = 20
+	"Aleksandr #1" = 20
+	"Boris #0" = 20
+	"Yuriy #0" = 20
+	"Yaroslav #2" = 5
+	"Dmitriy #1" = 5
+	"Ivan #1" = 5
+	"Konstantin #1" = 5
+	"Svyatoslav #1" = 5
+	"Akim #0" = 0
+	"Anastas #0" = 0
+	"Anton #0" = 0
+	"Arseniy #0" = 0
 	"Bogdan #0" = 0
 	"Daniil #0" = 0
 	"David #0" = 0
@@ -54,7 +57,6 @@ monarch_names = {
 	"Kirill #0" = 0
 	"Lavrentiy #0" = 0
 	"Lazar #0" = 0
-	"Leonid #0" = 0
 	"Leonti #0" = 0
 	"Luka #0" = 0
 	"Makariy #0" = 0
@@ -66,15 +68,14 @@ monarch_names = {
 	"Nikolai #0" = 0
 	"Nikon #0" = 0
 	"Pyotr #0" = 0
-	"Valeriy #0" = 0
+	"Roman #0" = 0
 	"Veniamin #0" = 0
 	"Vlad #0" = 0
 	"Vsevolod #0" = 0
 	"Yaromir #0" = 0
 	"Yevgeniy #0" = 0
 	"Zinoviy #0" = 0
-	"Zakhar #0" = 0
-
+	
 	"Serafima #0" = -1
 	"Viktoriya #0" = -1
 	

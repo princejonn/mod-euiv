@@ -40,7 +40,7 @@ estate_burghers =
 	start_territory_weight = 10
 	
 	# Min autonomy in estate provinces
-	min_autonomy = 0
+	min_autonomy = 25
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
 	autonomy_does_not_affect = local_production_efficiency
@@ -54,22 +54,12 @@ estate_burghers =
 		trade_efficiency = 0.2
 		#development_cost = -0.1			#BTAddOn removed - estates rebalancing
 		republican_tradition = 0.5			#BTAddOn new - estates rebalancing
-		rat_1_4_gilde_influence = 0.1
-		rat_2_4_gilde_influence = 0.1
-		rat_3_4_gilde_influence = 0.1
-		rat_1_5_trader_influence = 0.1
-		rat_2_5_trader_influence = 0.1 
-		rat_3_5_trader_influence = 0.1 		
+		global_trade_goods_size_modifier = 0.1
 	}
 	country_modifier_neutral = {
 		#trade_efficiency = 0.2			#BTAddOn removed - estates rebalancing
 		production_efficiency = 0.1			#BTAddOn new - estates rebalancing
-		rat_1_4_gilde_influence = 0.2
-		rat_2_4_gilde_influence = 0.2
-		rat_3_4_gilde_influence = 0.2
-		rat_1_5_trader_influence = 0.2
-		rat_2_5_trader_influence = 0.2
-		rat_3_5_trader_influence = 0.2
+		global_trade_goods_size_modifier = 0.05
 	}	
 	country_modifier_angry = {
 		production_efficiency = -0.2			#BTAddOn new - estates rebalancing
@@ -77,24 +67,23 @@ estate_burghers =
 		#development_cost = 0.1			#BTAddOn removed - estates rebalancing
 		republican_tradition = -0.5			#BTAddOn new - estates rebalancing
 		stability_cost_modifier = 0.33			#BTAddOn new - estates rebalancing
-		rat_1_4_gilde_influence = 0.33
-		rat_2_4_gilde_influence = 0.33
-		rat_3_4_gilde_influence = 0.33
-		rat_1_5_trader_influence = 0.33
-		rat_2_5_trader_influence = 0.33
-		rat_3_5_trader_influence = 0.33
+		global_trade_goods_size_modifier = -0.1
 	}
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
+		local_autonomy = -0.1
+		local_production_efficiency = 0.15
 		#trade_goods_size_modifier = 0.1			#BTAddOn removed - estates rebalancing
 		local_development_cost = -0.10			#BTAddOn new - estates rebalancing
 		province_trade_power_modifier = 0.25			#BTAddOn changed from 0.5 - estates rebalancing (was way too overpowered)
 	}
 	province_modifier_neutral = {
+		local_autonomy = 0.1
 		local_development_cost = -0.05
 	}		
 	province_modifier_angry = {
+		local_autonomy = 0.2
 		local_unrest = 5
 		local_development_cost = 0.10			#BTAddOn new - estates rebalancing
 		province_trade_power_modifier = -0.25			#BTAddOn new - estates rebalancing
@@ -287,7 +276,7 @@ estate_burghers =
 		loyalty = -10
 	}
 	#End of Beyond Typus Specials
-
+	
 	#Custom Names
 	custom_name = {
 		desc = estate_bourgeoisie
@@ -374,7 +363,7 @@ estate_burghers =
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 30
-			}
+			}				
 		}
 		
 		effect = {
@@ -466,11 +455,11 @@ estate_burghers =
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 30
-			}
+			}	
 			estate_influence = {
 				estate = estate_burghers
 				influence = 25
-			}
+			}			
 		}
 		
 		effect = {
@@ -595,29 +584,11 @@ estate_burghers =
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					monthly_income = 25
-				}
-				define_advisor = {
-					type = master_of_mint
-					skill = 3
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
-			}
-			if = {
-				limit = { NOT = { monthly_income = 25 } }
-				define_advisor = {
-					type = master_of_mint
-					skill = 2
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
+			#Beyond Typus Misc Addon now using Dub's excellent cleaned up scripted effect, rather than giant wall of vanilla code. Credit to Dub
+			create_estate_advisor_effect = {
+				ADVISORTYPE = master_of_mint
+				ESTATE = estate_burghers
+				EVENTTARGET = burgher_estate_province
 			}
 			add_estate_influence_modifier = {
 				estate = estate_burghers
@@ -625,7 +596,6 @@ estate_burghers =
 				influence = 15
 				duration = 10950
 			}
-			reduce_loyal_without_burg = yes
 		}
 		
 		ai_will_do = {
@@ -648,62 +618,15 @@ estate_burghers =
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 30
-			}
+			}	
 			estate_influence = {
 				estate = estate_burghers
 				influence = 40
-			}
+			}			
 		}
 		
 		effect = {
-			if = {
-				limit = { 
-					navy_tradition = 100
-				}
-				create_admiral = { tradition = 100 }
-			}
-			if = {
-				limit = { 
-					navy_tradition = 90
-					NOT = { navy_tradition = 100 }
-				}
-				create_admiral = { tradition = 90 }
-			}
-			if = {
-				limit = { 
-					navy_tradition = 80
-					NOT = { navy_tradition = 90 }
-				}
-				create_admiral = { tradition = 80 }
-			}
-			if = {
-				limit = { 
-					navy_tradition = 70
-					NOT = { navy_tradition = 80 }
-				}
-				create_admiral = { tradition = 70 }
-			}
-			if = {
-				limit = { 
-					navy_tradition = 60
-					NOT = { navy_tradition = 70 }
-				}
-				create_admiral = { tradition = 60 }
-			}
-			if = {
-				limit = { 
-					navy_tradition = 50
-					NOT = { navy_tradition = 60 }
-				}
-				create_admiral = { tradition = 50 }
-			}
-			if = {
-				limit = { 
-					navy_tradition = 0
-					NOT = { navy_tradition = 50 }
-				}
-				create_admiral = { tradition = 40 }
-			}
+			create_admiral = { tradition = 40 }
 			add_estate_influence_modifier = {
 				estate = estate_burghers
 				desc = EST_VAL_GRANTED_ADMIRALSHIP
@@ -733,11 +656,11 @@ estate_burghers =
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 30
-			}
+			}	
 			estate_influence = {
 				estate = estate_burghers
 				influence = 40
-			}
+			}			
 		}
 		
 		effect = {
@@ -775,7 +698,7 @@ estate_burghers =
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 30
-			}
+			}	
 			estate_influence = {
 				estate = estate_burghers
 				influence = 40
@@ -858,598 +781,4 @@ estate_burghers =
 			factor = 0
 		}
 	}
-	
-##########################################################################
-####### Idea Variation Estate Start
-##########################################################################
-
-
-#############################################
-####### Influence/Loyalty Modifiers
-#############################################
-
-influence_modifier = {
-		desc = estate_influ_14
-		trigger = {
-			has_reform = monarchy_tier_7_3
-		}		
-		influence = 10
-	}
-	
-influence_modifier = {
-		desc = estate_influ_14
-		trigger = {
-			has_reform = republic_tier_8_3
-		}		
-		influence = 10
-	}
-
-influence_modifier = {
-		desc = estate_influ_14
-		trigger = {
-			has_reform = theocracy_tier_5_3
-		}		
-		influence = 10
-	}	
-	
-loyalty_modifier = {
-		desc = estate_influ_14
-		trigger = {
-			has_reform = monarchy_tier_7_3
-		}
-		loyalty = 100
-	}	
-	
-loyalty_modifier = {
-		desc = estate_influ_14
-		trigger = {
-			has_reform = republic_tier_8_3
-		}
-		loyalty = 100
-	}	
-
-loyalty_modifier = {
-		desc = estate_influ_14
-		trigger = {
-			has_reform = theocracy_tier_5_3
-		}
-		loyalty = 100
-	}		
-
-#############################################
-####### Interactions 
-#############################################
-
-#############################################
-####### Galleys
-#############################################
-
-interaction = {
-		name = "Burg_14"
-		icon = 18
-		
-		years_between_use = 30
-		
-		potential = {
-			NOT = { has_disaster = estate_church_disaster }
-			NOT = { has_disaster = estate_nobility_disaster }
-			num_of_ports = 1
-			primitives = no
-		}
-		
-		trigger = {
-			estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 33
-			}
-			num_of_ports = 10
-			any_owned_province = {
-				has_port = yes
-				has_estate = estate_burghers
-			}
-		}
-		
-		effect = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -33
-			}		
-			ships_scaled_to_fl_galley = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-
-#############################################
-####### Government Interaction 
-#############################################
-
-interaction = {
-		name = "Burg_1"
-		icon = 17
-		
-		years_between_use = 20
-		
-		trigger = {
-			has_idea = republik4
-		}
-		
-		effect = {
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = Burg_1_influ
-				influence = 20
-				duration = 7300
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-		}
-		
-		ai_will_do = {
-			factor = 10
-					
-		}
-	}
-
-
-#############################################
-####### Limit Influence 
-#############################################
-
-	interaction = {
-		name = "Burg_2"
-		icon = 24
-		
-		years_between_use = 10
-		
-		trigger = {
-			has_advisor = yes
-		}
-		
-		effect = {
-			random_list = {
-			33 = { remove_advisor_by_category = ADM }
-			34 = { remove_advisor_by_category = DIP }
-			33 = { remove_advisor_by_category = MIL }
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_1
-				influence = -10
-				duration = 7300
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-
-#############################################
-####### Execute Important Person
-#############################################
-
-	interaction = {
-		name = "Burg_3"
-		icon = 20
-		
-		years_between_use = 15
-		
-		trigger = {
-			stability = -2
-		}
-		
-		effect = {
-			add_stability = -1
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -20
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_2
-				influence = -20
-				duration = 7300
-			}
-			reduce_loyal_without_burg = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Display Legitimacy
-#############################################
-
-	interaction = {
-		name = "Burg_4"
-		icon = 1
-		
-		years_between_use = 10
-		
-		trigger = {
-			OR = {
-			legitimacy = 50
-			republican_tradition = 50
-			devotion = 50
-			}
-		}
-		
-		effect = {
-			add_legitimacy = -10
-			add_republican_tradition = -10
-			add_devotion = -10	
-			add_horde_unity = -10
-			add_meritocracy = -10
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Display Prestige
-#############################################
-
-	interaction = {
-		name = "Burg_5"
-		icon = 31
-		
-		years_between_use = 10
-		
-		trigger = {
-			prestige = 0
-		}
-		
-		effect = {
-			add_prestige = -10
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Make Promises
-#############################################
-
-	interaction = {
-		name = "Burg_6"
-		icon = 17
-		
-		years_between_use = 10
-		
-		trigger = {
-			always = yes
-		}
-		
-		effect = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 5
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_5
-				influence = 10
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-	
-#############################################
-####### Finance a Project
-#############################################
-
-	interaction = {
-		name = "Burg_7"
-		icon = 38
-		
-		years_between_use = 10
-		
-		trigger = {
-			always = yes
-		}
-		
-		effect = {
-			add_years_of_income = -0.75
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-			reduce_loyal_without_burg = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Grant a Favour
-#############################################
-
-	interaction = {
-		name = "Burg_8"
-		icon = 25
-		
-		years_between_use = 20
-		
-		trigger = {
-			always = yes
-		}
-		
-		effect = {
-			random_list = {
-			33 = { add_adm_power = -50 }
-			34 = { add_dip_power = -50 }
-			33 = { add_mil_power = -50 }
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_7
-				influence = 15
-				duration = 7300
-			}
-			reduce_loyal_without_burg = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Underline Privileges
-#############################################
-
-	interaction = {
-		name = "Burg_9"
-		icon = 17
-		
-		years_between_use = 10
-		
-		trigger = {
-			OR = {
-			has_reform = monarchy_tier_7_3
-			has_reform = republic_tier_8_3
-			has_reform = theocracy_tier_5_3
-			}
-		}
-		
-		effect = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_8
-				influence = 10
-				duration = 7300
-			}
-			reduce_loyal_without_burg = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Recruit Minister
-#############################################
-
-	interaction = {
-		name = "Burg_10"
-		icon = 10
-		
-		years_between_use = 15
-		
-		trigger = {
-			always = yes
-		}
-		
-		effect = {
-			if = {
-				limit = {
-					monthly_income = 25
-				}
-				define_advisor = {
-					type = naval_reformer
-					skill = 3
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
-			}
-			if = {
-				limit = { NOT = { monthly_income = 25 } }
-				define_advisor = {
-					type = naval_reformer
-					skill = 2
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
-			}
-			
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_24
-				influence = 15
-				duration = 7300
-			}
-			reduce_loyal_without_burg = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-
-
-#############################################
-####### Recruit from their Domain
-#############################################
-
-	interaction = {
-		name = "Burg_12"
-		icon = 12
-		
-		years_between_use = 15
-		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = tooltip_own_province_estate_3
-				any_owned_province = {
-					has_estate = estate_burghers
-				}
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "idea_variation_estate_3"
-				duration = 3650
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_9
-				influence = -10
-				duration = 7300
-			}
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-#############################################
-####### Confiscation of Lands
-#############################################
-
-	interaction = {
-		name = "Burg_13"
-		icon = 24
-		
-		years_between_use = 25
-		
-		trigger = {
-			always = yes
-		}
-		
-		effect = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -20
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_25
-				influence = -25
-				duration = 7300
-			}
-			reduce_loyal_without_burg = yes
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}	
-
-#############################################
-####### Ask for Reform Support
-#############################################
-
-	interaction = {
-		name = "Burg_15"
-		icon = 17
-		
-		years_between_use = 15
-		
-		trigger = {
-			NOT = { has_country_modifier = idea_variation_estate_13 }
-		}
-		
-		effect = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = estate_influ_26
-				influence = 10
-				duration = 7300
-			}
-			reduce_loyal_without_burg = yes
-			
-			add_country_modifier = {
-				name = "idea_variation_estate_13"
-				duration = 1825
-			}
-			
-		}
-		
-		ai_will_do = {
-			factor = 0
-					
-		}
-	}
-
-##########################################################################
-####### Idea Variation End
-##########################################################################
-	
-	
 }

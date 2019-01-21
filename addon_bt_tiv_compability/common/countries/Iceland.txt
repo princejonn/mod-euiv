@@ -4,19 +4,15 @@ graphical_culture = westerngfx # norsegfx # UPE compatibility
 
 color = { 60  188  202 }
 
-historical_score = 25
-
-preferred_religion = protestant
-
 historical_idea_groups = {
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
+	maritime_ideas
+	administrative_ideas
+	trade_ideas
+	defensive_ideas
+	plutocracy_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
 }
 
 historical_units = {
@@ -39,97 +35,64 @@ historical_units = {
 monarch_names = {
 	"Hrafn #0" = 10
 	"Einar #0" = 10
-	"ï¿½lafur #0" = 10
-	"Pï¿½tur #0" = 10
+	"Ólafur #0" = 10
+	"Pétur #0" = 10
 	"Ormur #0" = 10
 	"Ketill #0" = 10
-	"Eirï¿½kur #0" = 10
-	"Bï¿½tï¿½lfur #0" = 10
-	"Grï¿½mur #0" = 10
+	"Eiríkur #0" = 10
+	"Bótólfur #0" = 10
+	"Grímur #0" = 10
 	"Holti #0" = 10
-	"ï¿½var #0" = 10
-	"ï¿½rni #0" = 10
-	"Andrï¿½s #0" = 10
-	"ï¿½orsteinn #0" = 10
-	"Smiï¿½ur #0" = 10
-	"ï¿½orgautur #0" = 10
-	"Vigfï¿½s #0" = 10
+	"Ívar #0" = 10
+	"Árni #0" = 10
+	"Andrés #0" = 10
+	"Þorsteinn #0" = 10
+	"Smiður #0" = 10
+	"Þorgautur #0" = 10
+	"Vigfús #0" = 10
 	"Arnfinnur #0" = 5
 	"Helgi #0" = 5
 	"Hannes #0" = 5
 	"Loftur #0" = 5
 	"Torfi #0" = 5
 	"Hinrik #0" = 5
-	"Diï¿½rik #0" = 5
-	"ï¿½orleifur #0" = 5
-	"Sï¿½ren #0" = 0
-	"Tï¿½li #0" = 0
-	"Jï¿½hann #0" = 0
-	"ï¿½gmundur #0" = 0
+	"Diðrik #0" = 5
+	"Þorleifur #0" = 5
+	"Søren #0" = 0
+	"Týli #0" = 0
+	"Jóhann #0" = 0
+	"Ögmundur #0" = 0
 	"Poul #0" = 0
 	"Benedikt #0" = 0
 	"Enevold #0" = 0
 	"Holger #0" = 0
-	"Bjï¿½rn #0" = 0
-	"ï¿½sgeir #0" = 0
+	"Björn #0" = 0
+	"Ásgeir #0" = 0
 	"Gudmund #0" = 0
-	"Magnï¿½s #0" = 0
+	"Magnús #0" = 0
 	"Hermann #0" = 0
-	"Jï¿½n #0" = 0
+	"Jón #0" = 0
 	
 	#1.16 added vanilla female names
 	"Kristina #0" = -1
-	"Ingibjï¿½rg #0" = -1
+	"Ingibjörg #0" = -1
 	"Selma #0" = -1
-	"Hallgrï¿½mï¿½na #0" = -1
+	"Hallgrímína #0" = -1
 	"Saga #0" = -1
-	"Gunndï¿½s #0" = -1
-	"Inge #0" = 5
-	"Sigurd #0" = 5
-	"Gissur #0" = 0
-	"Ari #0" = 0
-	"Anders #0" = 0
-	"Ansgard #0" = 0
-	"Arvid #0" = 0
-	"Bernt #0" = 0
-	"Birger #0" = 0
-	"Bjï¿½rn #0" = 0
-	"Daniel #0" = 0
-	"Edvard #0" = 0
-	"Eilert #0" = 0
-	"Einar #0" = 0
-	"Elias #0" = 0
-	"Esben #0" = 0
-	"Folke #0" = 0
-	"Gunnar #0" = 0
-	"Kasper #0" = 0
-	"Kennet #0" = 0
-	"Knut #0" = 0
-	"Ludvig #0" = 0
-	"Mats #0" = 0
-	"Mikael #0" = 0
-	"Njï¿½ld #0" = 0
-	"Njord #0" = 0
-	"Oddmund #0" = 0
-	"Peder #0" = 0
-	"Rikard #0" = 0
-	"Simon #0" = 0
-	"Sï¿½ren #0" = 0
-	"Tollak #0" = 0
-	"Torhild #0" = 0
+	"Gunndís #0" = -1
 }
 
 leader_names = {
-	Arnï¿½rsson ï¿½sgeirsson 
-	Benediktsson Bjarnasen Bjï¿½rnsson 
-	Eggers Eldjï¿½rn 
+	Arnórsson Ásgeirsson 
+	Benediktsson Bjarnasen Björnsson 
+	Eggers Eldjárn 
 	Hafstein Hansen Hermannsson 
-	Johï¿½nesson Jï¿½nsson 
-	Magnï¿½sson 
-	Stefï¿½nsson Steinthosson 
-	Thï¿½rdarson Thï¿½rhallson Thorlï¿½ksson Thurs
-	Oddsson Ormsson ï¿½ï¿½risson ï¿½orlï¿½ksson Sveinbjarnarson Andrï¿½sson ï¿½orsteinsson ï¿½orgrï¿½msson Bjarnarson
-	ï¿½ï¿½rï¿½arson Gï¿½slason Eyjï¿½lfsson Pï¿½tursson Snorrason Sveinsson Guï¿½mundsson ï¿½varsson Styrsson ï¿½lafsson
+	Johánesson Jónsson 
+	Magnússon 
+	Stefánsson Steinthosson 
+	Thórdarson Thórhallson Thorláksson Thurs
+	Oddsson Ormsson Þórisson Þorláksson Sveinbjarnarson Andrésson Þorsteinsson Þorgrímsson Bjarnarson
+	Þórðarson Gíslason Eyjólfsson Pétursson Snorrason Sveinsson Guðmundsson Ívarsson Styrsson Ólafsson
 	
 	#1.16 added vanilla leader names
 	Arnesson Amundsen 
@@ -141,31 +104,31 @@ leader_names = {
 	Nansen Norheim 
 	Olavsson 
 	Sverresson Arason 
-	Torgeirsson Nikulï¿½sson 
-	Pï¿½lsson
+	Torgeirsson Nikulásson 
+	Pálsson
 }
 
 ship_names = {
-	Skï¿½lholt
-	Hï¿½lar
-	Skagafjï¿½rï¿½ur
-	Kï¿½pavogur
+	Skálholt
+	Hólar
+	Skagafjörður
+	Kópavogur
 	Akranes
-	ï¿½ss Vanr ï¿½lfr Jï¿½tunn
+	Áss Vanr Álfr Jötunn
 	Sleipner Viking Frithjof Rjukan Sarpen Lougen Glommen
-	Freia Desideira Ellida Nordssthernen Nornen Nidaros ï¿½rnen
+	Freia Desideira Ellida Nordssthernen Nornen Nidaros Ørnen
 	Thor Odin Njord Freyr Tyr Bragl Heimdall Hoder Vidar Ale Ullr Forset
-	Skorpionen Mjï¿½lner Thrudvang
+	Skorpionen Mjølner Thrudvang
 	
 	#1.16 added vanilla ship names
-	Vattnajï¿½kul
-	Eyjafjallajï¿½kull
-	Tungnafellsjï¿½kull
-	Eirï¿½ksjï¿½kull
-	Tindfjallajï¿½kull
-	Torfajï¿½kull
-	Snï¿½fellsjï¿½kull
-	Langjï¿½kull
-	Hofsjï¿½kull
-	Drangajï¿½kull
+	Vattnajökul
+	Eyjafjallajökull
+	Tungnafellsjökull
+	Eiríksjökull
+	Tindfjallajökull
+	Torfajökull
+	Snæfellsjökull
+	Langjökull
+	Hofsjökull
+	Drangajökull
 }
