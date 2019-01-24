@@ -45,7 +45,7 @@ country_event = {
 		change_price = {
 			trade_goods = slaves
 			key = TRIANGLE_TRADE
-			value = 0.5
+			value = 0.8			#BTAddOn changed from 0.5 - Now goes 2.5-4.5-2 (Vanilla was 2-3-2.2)
 			duration = -1
 		}
 		add_years_of_income  = 0.25
@@ -108,7 +108,7 @@ country_event = {
 	}
 }
 
-#Johann Friedrich Böttger
+#Johann Friedrich Bï¿½ttger
 country_event = {
 	id = prices.3
 	title = prices.3.t
@@ -231,7 +231,7 @@ country_event = {
 		change_price = {
 			trade_goods = coffee
 			key = COFFEE_BOOM
-			value = 0.5
+			value = 0.25			#BTAddOn changed from 0.5 - Now goes 3 - 3.75 - 2.7 (Vanilla was 3 - 4.5 - 3.3)
 			duration = -1
 		}
 		add_years_of_income  = 0.25
@@ -450,13 +450,13 @@ country_event = {
 		change_price = {
 			trade_goods = tea
 			key = TEA_AND_SUGAR
-			value = 0.25
+			value = 0.4			#BTAddOn changed from 0.25 - Now goes 2.5-3-4 (Vanilla was 2-2.5-3)
 			duration = -1
 		}
 		change_price = {
 			trade_goods = sugar
 			key = TEA_AND_SUGAR
-			value = 0.25
+			value = 0.2			#BTAddOn changed from 0.25 - Now goes 3-3.6-4.8 (Vanilla was 3-4.5-5.25)
 			duration = -1
 		}
 		add_years_of_income  = 0.25
@@ -515,7 +515,7 @@ country_event = {
 		change_price = {
 			trade_goods = spices
 			key = SPICE_TRADE
-			value = 0.5
+			value = 0.25			#BTAddOn changed from 0.5 - Now goes 4-5-3 (Vanilla was 3-4.5-3.3)
 			duration = -1
 		}
 		add_years_of_income  = 0.25
@@ -549,7 +549,7 @@ country_event = {
 		change_price = {
 			trade_goods = slaves
 			key = ABOLITIONISM
-			value = -0.4
+			value = -1.0			#BTAddOn changed from -0.4 - Now goes 2.5-4.5-2 (Vanilla was 2-3-2.2)
 			duration = -1
 		}
 		add_prestige = 10
@@ -588,13 +588,13 @@ country_event = {
 		change_price = {
 			trade_goods = grain
 			key = HUAYNAPUTINA
-			value = -0.75
+			value = -0.6			#BTAddOn changed from -0.75 - Now goes 2.5 - 1 - 2.5 - 1.875 - 2.5 - 2 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 2)
 			duration = 730
 		}
 		change_price = {
 			trade_goods = wine
 			key = HUAYNAPUTINA
-			value = -0.75
+			value = -0.8			#BTAddOn changed from -0.75 - Now goes 2.5 - 0.5 - 2.5 - 1 - 2.5 - 3.5 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 3.125)
 			duration = 730
 		}
 	}
@@ -629,37 +629,38 @@ country_event = {
 		change_price = {
 			trade_goods = grain #Agriculture is having a hard time coping.
 			key = LITTLE_ICE_AGE
-			value = -0.25
+			value = -0.3			#BTAddOn changed from -0.25 - Now goes 2.5 - 1 - 2.5 - 1.75 - 2.5 - 2 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 2)
 			duration = 3650
 		}
 		change_price = {
 			trade_goods = livestock #Agriculture is having a hard time coping.
 			key = LITTLE_ICE_AGE
-			value = -0.25
+			value = -0.1			#BTAddOn changed from -0.25 - Now goes 2 - 1.8 - 2 - 2.5 - 3 (Vanilla was 2 - 1.5 - 2 - 2.2 - 2.7 - 3.4)
 			duration = 3650
 		}
 		change_price = {
 			trade_goods = wine #Spoiled by the cold
 			key = LITTLE_ICE_AGE
-			value = -0.25
+			value = -0.6			#BTAddOn changed from -0.25 - Now goes 2.5 - 0.5 - 2.5 - 1 - 2.5 - 3.5 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 3.125)
 			duration = 3650
 		}
-		change_price = {
-			trade_goods = fish #Fishing fleets are having a hard time to coping.
-			key = LITTLE_ICE_AGE
-			value = -0.25
-			duration = 3650
-		}
+		#BTAddOn removed - fish often becomes the only available source of food during a little ice age, as vegetation dies and causes a cascade effect on land. Doesn't make sense to reduce fish prices. Besides, people can fish in the Arctic (in fact, it is often better fishing there than in the south).
+		#change_price = {
+		#	trade_goods = fish #Fishing fleets are having a hard time to coping.
+		#	key = LITTLE_ICE_AGE
+		#	value = -0.25
+		#	duration = 3650
+		#}
 		change_price = {
 			trade_goods = salt	#Food Preservation.
 			key = LITTLE_ICE_AGE
-			value = 0.25
+			value = 0.5			#BTAddOn changed from 0.25 - Now goes 4 - 6 - 4 - 5 - 6 - 5 (Vanilla was 3 - 3.75 - 3 - 3.3 - 4.05 - 3.3)
 			duration = 3650
 		}
 		change_price = {
 			trade_goods = fur #Increased demand due to colder climate.
 			key = LITTLE_ICE_AGE
-			value = 0.25
+			value = 0.6			#BTAddOn changed from 0.25 - Now goes 2.5 - 4 - 2.5 - 2.75 - 3.5 - 4.5 - 3.5 (Vanilla was 2 - 2.5 - 2 - 2.7 - 3.5 - 4 - 3.5)
 			duration = 3650
 		}
 	}
@@ -692,13 +693,13 @@ country_event = {
 		change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
-			value = 0.25
+			value = 0.4			#BTAddOn changed from 0.25 - Now goes 2.5 - 0.5 - 2.5 - 1 - 2.5 - 3.5 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 3.125)
 			duration = -1
 		}
 		change_price = {
 			trade_goods = glass
 			key = WINE_CORKS
-			value = 0.15
+			value = 0.1			#BTAddOn changed from 0.15 - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
 			duration = -1
 		}
 	}
@@ -773,7 +774,7 @@ country_event = {
 		change_price = {
 			trade_goods = wool
 			key = REGULATED_UNIFORMS
-			value = 0.1
+			value = 0.05			#BTAddOn changed from 0.1 - Now goes 3 - 2.7 - 2.1 - 2.25 - 3 (Vanilla was 2.5 - 2.25 - 1.75 - 2 - 2.6125)
 			duration = -1
 		}
 		change_price = {
@@ -822,13 +823,19 @@ country_event = {
 		change_price = {
 			trade_goods = salt
 			key = GREAT_FISHERIES
-			value = 0.1
+			value = 0.25			#BTAddOn changed from 3 - Now goes 4 - 6 - 4 - 5 - 6 - 5 (Vanilla was 3 - 3.75 - 3 - 3.3 - 4.05 - 3.3)
 			duration = -1
 		}
-		newfoundland_area = {
-			add_permanent_province_modifier = {
-				name = "grand_bank_fisheries"
-				duration = -1
+		if = {
+			limit = { has_global_flag = beyond_typus_mod_enabled }	#Only if BT is enabled.
+			avalon_area = { add_base_production = 2 }
+			else = {	#For non BT games.
+				newfoundland_area = {
+					add_permanent_province_modifier = {
+						name = "grand_bank_fisheries"
+						duration = -1
+					}
+				}	#BT already had this modifier before Paradox added it, and it is present from the beginning.
 			}
 		}
 	}
@@ -887,7 +894,7 @@ country_event = {
 		change_price = {
 			trade_goods = cotton
 			key = CALICOES
-			value = 0.45
+			value = 0.4			#BTAddOn changed from 0.45 - Now goes 2.5-3.5-4 (Vanilla was 3-4.35-4.95)
 			duration = -1
 		}
 	}
@@ -921,7 +928,7 @@ country_event = {
 		change_price = {
 			trade_goods = fur
 			key = DEPLETION_OF_EUROPEAN_BEAVER
-			value = 0.4
+			value = 0.3			#BTAddOn changed from 0.4 - Now goes 2.5 - 4 - 2.5 - 2.75 - 3.5 - 4.5 - 3.5 (Vanilla was 2 - 2.5 - 2 - 2.7 - 3.5 - 4 - 3.5)
 			duration = -1
 		}
 	}
@@ -965,7 +972,7 @@ country_event = {
 		change_price = {
 			trade_goods = fur
 			key = FELT_HATS
-			value = 0.35
+			value = 0.1			#BTAddOn changed from 0.35 - Now goes 2.5 - 4 - 2.5 - 2.75 - 3.5 - 4.5 - 3.5 (Vanilla was 2 - 2.5 - 2 - 2.7 - 3.5 - 4 - 3.5)
 			duration = -1
 		}
 	}
@@ -997,21 +1004,23 @@ country_event = {
 		change_price = {
 			trade_goods = naval_supplies
 			key = PERMANENT_NAVIES
-			value = 0.5
+			value = 0.4			#BTAddOn changed from 0.5 - Now goes 2.5-3.5 (Vanilla was 2-3)
 			duration = -1
 		}
-		change_price = {
-			trade_goods = glass
-			key = PERMANENT_NAVIES
-			value = 0.15
-			duration = -1
-		}
-		change_price = {
-			trade_goods = livestock
-			key = PERMANENT_NAVIES
-			value = 0.10
-			duration = -1
-		}
+		#BTAddOn cut - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
+		#change_price = {
+		#	trade_goods = glass
+		#	key = PERMANENT_NAVIES
+		#	value = 0.15
+		#	duration = -1
+		#}
+		#BTAddOn cut - Now goes 2 - 1.8 - 2 - 2.5 - 3 (Vanilla was 2 - 1.5 - 2 - 2.2 - 2.7 - 3.4)
+		#change_price = {
+		#	trade_goods = livestock
+		#	key = PERMANENT_NAVIES
+		#	value = 0.10
+		#	duration = -1
+		#}
 	}
 }
 
@@ -1076,13 +1085,13 @@ country_event = {
 		change_price = {
 			trade_goods = tea
 			key = JAPANESE_TEA_CULTURE
-			value = 0.25
+			value = 0.2			#BTAddOn changed from 0.25 - Now goes 2.5-3-4 (Vanilla was 2-2.5-3)
 			duration = -1
 		}
 		change_price = {
 			trade_goods = incense
 			key = JAPANESE_TEA_CULTURE
-			value = 0.10
+			value = 0.05			#BTAddOn changed from -0.25 - Now goes 4 - 4.2 - 3.8 - 5 (Vanilla was 2.5 - 2.75 - 2.35 - 3.225)
 			duration = -1
 		}
 	}
@@ -1121,7 +1130,7 @@ country_event = {
 		change_price = {
 			trade_goods = spices
 			key = DECLINE_OF_SPICE_TRADE
-			value = -0.4
+			value = -0.5			#BTAddOn changed from -0.4 - Now goes 4-5-3 (Vanilla was 3-4.5-3.3)
 			duration = -1
 		}
 	}
@@ -1174,7 +1183,7 @@ country_event = {
 		change_price = {
 			trade_goods = sugar
 			key = POPULARIZATION_OF_SUGAR
-			value = 0.5
+			value = 0.4			#BTAddOn changed from 0.5 - Now goes 3-3.6-4.8 (Vanilla was 3-4.5-5.25)
 			duration = -1
 		}
 	}
@@ -1375,7 +1384,7 @@ country_event = {
 		change_price = {
 			trade_goods = tropical_wood
 			key = VENEERING
-			value = 0.5
+			value = 0.4			#BTAddOn changed from 0.35 - Now goes 2.5-3.5 (Vanilla was 2-2.7)
 			duration = -1
 		}
 	}
@@ -1407,7 +1416,7 @@ country_event = {
 		change_price = {
 			trade_goods = ivory
 			key = IVORY_SHORTAGE
-			value = 0.25
+			value = 0.5			#BTAddOn changed from 0.25 - Now goes 3-4.5 (Vanilla was 4-5)
 			duration = -1
 		}
 	}
@@ -1486,7 +1495,7 @@ country_event = {
 		change_price = {
 			trade_goods = cocoa
 			key = HOT_CHOCOLATE
-			value = 0.35
+			value = 0.4			#BTAddOn changed from 0.35 - Now goes 3-4.2 (Vanilla was 4-5.4)
 			duration = -1
 		}
 	}
@@ -1588,7 +1597,7 @@ country_event = {
 		change_price = {
 			trade_goods = coffee
 			key = JAVA_COFFEE
-			value = -0.4
+			value = -0.35			#BTAddOn changed from -0.4 - Now goes 3 - 3.75 - 2.7 (Vanilla was 3 - 4.5 - 3.3)
 			duration = -1
 		}
 		387 = {
@@ -1648,6 +1657,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		NOT = { has_global_flag = beyond_typus_mod_enabled }	#Only if BT is not enabled.
 		NOT = { has_global_flag = printing_paper_prices_rise }
 		has_institution = printing_press
 		any_owned_province = {
@@ -1734,6 +1744,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		NOT = { has_global_flag = beyond_typus_mod_enabled }	#Only if BT is not enabled.
 		NOT = { has_global_flag = hollender_beater_flag }
 		has_institution = manufactories
 		any_owned_province = {
@@ -1905,6 +1916,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		NOT = { has_global_flag = beyond_typus_mod_enabled }	#Only if BT is not enabled.
 		NOT = { has_global_flag = paper_in_bureaucracies }
 		adm_tech = 6
 		has_institution = feudalism
@@ -1958,6 +1970,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		NOT = { has_global_flag = beyond_typus_mod_enabled }	#Only if BT is not enabled.
 		NOT = { has_global_flag = popular_literacy }
 		has_institution = enlightenment
 		OR = {
@@ -2174,7 +2187,7 @@ country_event = {
 		change_price = {
 			trade_goods = gems
 			key = FACETING
-			value = 0.25
+			value = 0.2			#BTAddOn changed from 0.25 - Now goes 5 - 6 - 4.5 (Vanilla was 4 - 5 - 3)
 			duration = -1
 		}
 	}
@@ -2227,7 +2240,7 @@ country_event = {
 		change_price = {
 			trade_goods = gems
 			key = BRAZILIAN_DIAMONDS
-			value = -0.5
+			value = -0.3			#BTAddOn changed from -0.5 - Now goes 5 - 6 - 4.5 (Vanilla was 4 - 5 - 3)
 			duration = -1
 		}
 	}
@@ -2273,7 +2286,7 @@ country_event = {
 		change_price = {
 			trade_goods = incense
 			key = REFORMED_REJECTION_OF_INCENSE
-			value = -0.25
+			value = -0.1			#BTAddOn changed from -0.25 - Now goes 4 - 4.2 - 3.8 - 5 (Vanilla was 2.5 - 2.75 - 2.35 - 3.225)
 			duration = -1
 		}
 	}
@@ -2375,7 +2388,7 @@ country_event = {
 		change_price = {
 			trade_goods = incense
 			key = GROWTH_OF_PERFUME_BUSINESS
-			value = 0.35
+			value = 0.3			#BTAddOn changed from 0.35 - Now goes 4 - 4.2 - 3.8 - 5 (Vanilla was 2.5 - 2.75 - 2.35 - 3.225)
 			duration = -1
 		}
 	}
@@ -2413,13 +2426,13 @@ country_event = {
 		change_price = {
 			trade_goods = livestock
 			key = SELECTIVE_BREEDING
-			value = 0.35
+			value = 0.25			#BTAddOn changed from 0.35 - Now goes 2 - 1.8 - 2 - 2.5 - 3 (Vanilla was 2 - 1.5 - 2 - 2.2 - 2.7 - 3.4)
 			duration = -1
 		}
 		change_price = {
 			trade_goods = wool
 			key = SELECTIVE_BREEDING
-			value = 0.35
+			value = 0.25			#BTAddOn changed from 0.35 - Now goes 3 - 2.7 - 2.1 - 2.25 - 3 (Vanilla was 2.5 - 2.25 - 1.75 - 2 - 2.6125)
 			duration = -1
 		}
 		random_owned_province = {
@@ -2459,7 +2472,7 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = BOHEMIAN_GLASS
-			value = 0.25
+			value = 0.2			#BTAddOn changed from 0.25 - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
 			duration = -1
 		}
 		1771 = {
@@ -2501,7 +2514,7 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = MODERN_OPTICS
-			value = 0.25
+			value = 0.4			#BTAddOn changed from 0.25 - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
 			duration = -1
 		}
 	}
@@ -2569,7 +2582,7 @@ country_event = {
 		change_price = {
 			trade_goods = glass
 			key = LEAD_CRYSTAL
-			value = -0.65
+			value = -0.5			#BTAddOn changed from -0.65 - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
 			duration = -1
 		}
 	}

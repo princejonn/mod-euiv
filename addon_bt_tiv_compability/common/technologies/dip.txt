@@ -4,6 +4,8 @@ monarch_power = DIP
 ahead_of_time = {
 	trade_efficiency = 0.2
 	yearly_corruption = -0.05
+	diplomatic_reputation = 1			#BTAddOn new
+	spy_offence = 0.25			#BTAddOn new
 }
 
 # Pre-era techs
@@ -12,7 +14,7 @@ technology = {
 	year = 1350
 	
 	naval_morale			=	2.0
-	range					=	60
+	range					=	20			#BTAddOn changed from 60
 	may_fabricate_claims = yes
 
 }
@@ -72,6 +74,7 @@ technology = {
 	year = 1466
 	
 	naval_maintenance		=	0.1	
+	range					=	40			#BTAddOn new - an intermediate range between 3 and 7
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	may_slander_merchants = yes
@@ -119,7 +122,7 @@ technology = {
 	year = 1518
 	
 	naval_maintenance		= 	0.1
-	range					=	50
+	range					=	75			#BTAddOn changed from 50
 	may_corrupt_officials = yes
 	enable = carrack
 	enable = caravel
@@ -142,7 +145,7 @@ technology = {
 	# Tech 11
 	year = 1544
 	
-	range					= 	100
+	#range					= 	100			#BTAddOn removed - moves to tach 13
 
 	wharf = yes
 	navymanpower_lvl_2 = yes
@@ -165,6 +168,7 @@ technology = {
 	# Tech 13
 	year = 1570
 	
+	range					= 	100			#BTAddOn new - replacing the tech 11 one
 	trade_efficiency 		= 	0.02
 	enable = brig	
 	may_sabotage_reputation = yes
@@ -187,7 +191,7 @@ technology = {
 	year = 1596
 	
 	naval_maintenance		= 	0.1
-	range					=	50
+	#range					=	50			#BTAddOn removed
 	global_colonial_growth  = 	15
 	
 	enable = galleon
@@ -211,7 +215,7 @@ technology = {
 	year = 1622
 	
 	trade_range				=	20
-	range					=	50
+	range					=	100			#BTAddOn changed from 50
 	
 	trade_lvl_3 = yes
 	#trade_depot = yes 
@@ -290,7 +294,7 @@ technology = {
 	
 	navalbase_lvl_2 = yes
 	global_colonial_growth  = 	25	
-	range					=	150
+	#range					=	150			#BTAddOn removed
 	allow_client_states = yes		
 	
 	
@@ -326,7 +330,7 @@ technology = {
 	# Tech 26
 	year = 1745
 	
-	range					=	200
+	range					=	250			#BTAddOn changed from 200
 	global_colonial_growth  = 	25
 	num_accepted_cultures = 1
 	

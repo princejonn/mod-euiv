@@ -3,6 +3,7 @@ monarch_power = ADM
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
 	production_efficiency = 0.2
+	global_unrest = -2			#BTAddOn new
 	yearly_corruption = -0.05
 }
 
@@ -54,8 +55,8 @@ technology = {
 	production_efficiency	=	0.02
 	may_support_rebels = yes
 
-	 infrastructure_lvl_1 = yes
-	 
+	infrastructure_lvl_1 = yes
+
 }
 
 technology = {
@@ -68,6 +69,7 @@ technology = {
 	terrain_woodland = yes
 	terrain_hills = yes
 	allowed_idea_groups = 2
+	max_states = 3
 	
 }
 
@@ -118,9 +120,9 @@ technology = {
 	year = 1518
 	production_lvl_2 = yes
 	#The Scythe
-		production_efficiency	=	0.02
+    production_efficiency	=	0.02
 	
-
+	administrative_efficiency = 0.1
 }
 
 technology = {
@@ -154,7 +156,7 @@ technology = {
 	year = 1570
 	
 	#Improved Drainage
-		production_efficiency	=	0.02
+    production_efficiency	=	0.02
 }
 
 technology = {
