@@ -78,34 +78,37 @@ feudalism = {
 					}
 				}
 			}
-			culture = persian
-			culture = azerbaijani
-			culture = kurdish
-			culture = armenian
-			culture = mazandarani
-			culture = turkish
-			culture = omani_culture
-			culture = yemeni_culture
-			culture = swahili
-			culture = manchu
-			culture = hejazi_arabic
-			culture = khaliji_arabic
-			culture_group = byzantine
-			culture_group = dravidian
-			culture_group = east_asian
-			culture_group = east_slavic
-			culture_group = eastern_aryan
-			culture_group = japanese_g
-			culture_group = korean_g
-			culture_group = scandinavian
-			culture_group = west_slavic
-			culture_group = western_aryan
-			province_id = 383
-			province_id = 412
-			province_id = 2327
-			province_id = 2329
-			province_id = 2331
-			province_id = 2999
+			AND = {
+				owner = { is_playing_custom_nation = no }
+				OR = {
+					culture = persian
+					culture = azerbaijani
+					culture = kurdish
+					culture = armenian
+					culture = mazandarani
+					culture = turkish
+					culture = omani_culture
+					culture = yemeni_culture
+					culture = swahili
+					culture = manchu
+					culture_group = byzantine
+					culture_group = dravidian
+					culture_group = east_asian
+					culture_group = east_slavic
+					culture_group = eastern_aryan
+					culture_group = japanese_g
+					culture_group = korean_g
+					culture_group = scandinavian
+					culture_group = west_slavic
+					culture_group = western_aryan
+					province_id = 383
+					province_id = 412
+					province_id = 2327
+					province_id = 2329
+					province_id = 2331
+					province_id = 2999
+				}
+			}
 			AND = {
 				region = horn_of_africa_region
 				owner = { NOT = { has_reform = tribal_federation } }
