@@ -4391,10 +4391,10 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				NOT = { has_building = trade_depot }
-				NOT = { has_building = stock_exchange }
+				NOT = { has_building = trade_lvl_2 }
+				NOT = { has_building = trade_lvl_3 }
 			}			#BTAddOn new - this cleans up UI by making only one or two spread factors show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
-			has_building = marketplace
+			has_building = trade_lvl_1
 		}
 		modifier = {
 			factor = 0.1
@@ -4402,11 +4402,11 @@ global_trade = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				OR = {
-					has_building = marketplace
-					has_building = trade_depot
+					has_building = trade_lvl_1
+					has_building = trade_lvl_2
 				}
 			}			#BTAddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
-			has_building = trade_depot
+			has_building = trade_lvl_2
 		}
 		modifier = {
 			factor = 0.3			#BTAddOn changed from 1.0. Want CoT to be the most important for this institution, rather than buildings and TP, so lowering the bonus here.
@@ -4414,11 +4414,11 @@ global_trade = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				OR = {
-					has_building = trade_depot
-					has_building = stock_exchange
+					has_building = trade_lvl_2
+					has_building = trade_lvl_3
 				}
 			}			#BTAddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
-			has_building = stock_exchange
+			has_building = trade_lvl_3
 		}
 		##########################################################################################################################################################################################################################################################
 		#BTAddOn Note - removing trade power factors for global trade spread entirely. They are messy, complicated, don't encourage proper spread, and are redundant as most major factors in tp (CoT/buildings) also spread global trade themselves, estuaries lose out, but oh well. Leaving this here in case I reconsider.
