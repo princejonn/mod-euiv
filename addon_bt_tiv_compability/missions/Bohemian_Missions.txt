@@ -6,13 +6,13 @@ boh_hussite_group = {
 		tag = BOH
 	}
 	has_country_shield = yes
-	
+
 	boh_hussite_one = {
 		icon = mission_hands_praying
 		required_missions = {  }
 		position = 1
 		completed_by = 1457.1.1
-		
+
 		trigger = {
 			if = {
 				limit = {
@@ -33,7 +33,7 @@ boh_hussite_group = {
 				}
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = {
 				name = "boh_hussite_revolt"
@@ -48,13 +48,13 @@ boh_hussite_group = {
 			}
 		}
 	}
-	
+
 	boh_integrate_silesia = {
 		icon = mission_have_two_subjects
 		required_missions = { boh_hussite_one }
 		position = 5
 		completed_by = 1457.1.1
-		
+
 		provinces_to_highlight = {
 			OR = {
 				area = silesia_area
@@ -62,7 +62,7 @@ boh_hussite_group = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		
+
 		trigger = {
 			NOT = { has_country_modifier = boh_hussite_revolt }
 			silesia_area = {
@@ -74,7 +74,7 @@ boh_hussite_group = {
 				owned_by = ROOT
 			}
 		}
-		
+
 		effect = {
 			wielkopolska_area = {
 				limit = {
@@ -85,24 +85,24 @@ boh_hussite_group = {
 			}
 		}
 	}
-	
+
 	boh_prem_conquest = {
 		icon = mission_unite_home_region
 		required_missions = { boh_integrate_silesia }
 		position = 6
-		
+
 		provinces_to_highlight = {
 			area = wielkopolska_area
 			NOT = { owned_by = ROOT }
 		}
-		
+
 		trigger = {
 			wielkopolska_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
-		
+
 		effect = {
 			pomerelia_area = {
 				limit = {
@@ -113,24 +113,24 @@ boh_hussite_group = {
 			}
 		}
 	}
-	
+
 	boh_prem_conquest_two = {
 		icon = mission_cannons_firing
 		required_missions = { boh_prem_conquest }
 		position = 7
-		
+
 		provinces_to_highlight = {
 			area = pomerelia_area
 			NOT = { owned_by = ROOT }
 		}
-		
+
 		trigger = {
 			pomerelia_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
-		
+
 		effect = {
 			add_adm_power = 100
 			add_country_modifier = {
@@ -149,20 +149,20 @@ boh_development_group = {
 		tag = BOH
 	}
 	has_country_shield = yes
-	
+
 	boh_development_one = {
 		icon = mission_have_manufactories
 		required_missions = { boh_integrate_silesia }
 		position = 6
 		completed_by = 1720.1.1
-		
+
 		trigger = {
 			capital_scope = {
 				has_building = taxation_lvl_3
 				has_building = government_lvl_5
 			}
 		}
-		
+
 		effect = {
 			if = {
 				limit = {
@@ -198,4 +198,3 @@ boh_development_group = {
 	}
 }
 
-	

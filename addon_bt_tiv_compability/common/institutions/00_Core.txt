@@ -8,14 +8,14 @@
 # It checks for adjacent provinces or provinces one seazone away.
 # Friendly is defined as at positive relations or owned by the same country that owns the province.
 
-#Beyond Typus Addon Note - 
+#Beyond Typus Addon Note -
 #Please note that if adding any new tech groups, they will require entries in each institution's embracement speed header, I'd recommend searching 'BT South American Tech Spreads' and adding new entries to the bottom of the list.
 #In general, changes are to speed up spread where there have been many new provinces, slow spread in areas that are getting way too much tech in the new system, and use force potential more often, to clean things up for countries who can never obtain the various region specific bonuses
-#Note BT adds many new provinces to overhauled areas, but also lowers the average development of those provinces (Tags have the same total dev spread over more provinces). As institutions spread from province to province scaled to dev, this means without changes, institution spread will be markedly slower 
+#Note BT adds many new provinces to overhauled areas, but also lowers the average development of those provinces (Tags have the same total dev spread over more provinces). As institutions spread from province to province scaled to dev, this means without changes, institution spread will be markedly slower
 #than in vanilla. This is the justification for speeding up spreads.
 
 #One of the largest and most drastic changes here is halving the AI factor for embracement, making the AI wait until the price is lower (i.e. institution has spread to more provinces) before embracing. The logic follows.
-#Vanilla system (at least with BT dev, not sure about vanilla) has countries embracing new institutions immediately once one, two, or rarely three provinces embrace the institution, even for large-ish countries like Spain, England, and Austria. This will hopefully encourage countries to wait until it has spread 
+#Vanilla system (at least with BT dev, not sure about vanilla) has countries embracing new institutions immediately once one, two, or rarely three provinces embrace the institution, even for large-ish countries like Spain, England, and Austria. This will hopefully encourage countries to wait until it has spread
 #a bit more. Ideally, I'd like to see countries embrace when between 1/4 and 1/2 of their provinces already accept the institution, not every single province, and not just their one richest city, but a moderate portion of the nation.
 
 #Tech group list for reference below. As/if I add new groups I'll try to add them here as well.
@@ -40,8 +40,8 @@
 #south_american	-	original penalty was 250 percent more than western, or 28.571 percent of 100 compared to western	-	now generally 40 percent of western (-60 percent)
 
 #######################################
-# Feudalism.  
-# 
+# Feudalism.
+#
 # Most in the old world start with it.
 #######################################
 
@@ -78,37 +78,34 @@ feudalism = {
 					}
 				}
 			}
-			AND = {
-				owner = { is_playing_custom_nation = no }
-				OR = {
-					culture = persian
-					culture = azerbaijani
-					culture = kurdish
-					culture = armenian
-					culture = mazandarani
-					culture = turkish
-					culture = omani_culture
-					culture = yemeni_culture
-					culture = swahili
-					culture = manchu
-					culture_group = byzantine
-					culture_group = dravidian
-					culture_group = east_asian
-					culture_group = east_slavic
-					culture_group = eastern_aryan
-					culture_group = japanese_g
-					culture_group = korean_g
-					culture_group = scandinavian
-					culture_group = west_slavic
-					culture_group = western_aryan
-					province_id = 383
-					province_id = 412
-					province_id = 2327
-					province_id = 2329
-					province_id = 2331
-					province_id = 2999
-				}
-			}
+			culture = persian
+			culture = azerbaijani
+			culture = kurdish
+			culture = armenian
+			culture = mazandarani
+			culture = turkish
+			culture = omani_culture
+			culture = yemeni_culture
+			culture = swahili
+			culture = manchu
+			culture = hejazi_arabic
+			culture = khaliji_arabic
+			culture_group = byzantine
+			culture_group = dravidian
+			culture_group = east_asian
+			culture_group = east_slavic
+			culture_group = eastern_aryan
+			culture_group = japanese_g
+			culture_group = korean_g
+			culture_group = scandinavian
+			culture_group = west_slavic
+			culture_group = western_aryan
+			province_id = 383
+			province_id = 412
+			province_id = 2327
+			province_id = 2329
+			province_id = 2331
+			province_id = 2999
 			AND = {
 				region = horn_of_africa_region
 				owner = { NOT = { has_reform = tribal_federation } }
@@ -146,7 +143,7 @@ feudalism = {
 			is_year = 1700
 		}
 	}
-	
+
 	# no need for events, as its there from the start.
 	#can_start = {	is_year = 1000	}
 	#start_chance = 100
@@ -678,7 +675,7 @@ feudalism = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = CAPITAL_IN_OLD_WORLD_FEUDAL
-			
+
 				is_capital = yes
 				NOT = { continent = north_america }
 				NOT = { continent = south_america }
@@ -719,10 +716,10 @@ feudalism = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -771,7 +768,7 @@ feudalism = {
 
 #######################################
 # Renaissance
-# 
+#
 # Flows from italy
 #######################################
 
@@ -803,7 +800,7 @@ renaissance = {
 					area = emilia_area
 				}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
-			
+
 			AND = {
 				is_year = 1455
 				OR = {
@@ -811,7 +808,7 @@ renaissance = {
 					region = low_countries_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1460
 				OR = {
@@ -822,7 +819,7 @@ renaissance = {
 					region = british_isles_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1465
 				OR = {
@@ -832,7 +829,7 @@ renaissance = {
 					region = poland_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1470
 				OR = {
@@ -842,13 +839,13 @@ renaissance = {
 					region = russia_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1475
 				continent = europe
 				NOT = { owner = { technology_group = nomad_group } }
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1500
 				OR = {
@@ -856,7 +853,7 @@ renaissance = {
 					owner = { technology_group = high_american }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1525
 				OR = {
@@ -864,7 +861,7 @@ renaissance = {
 					owner = { technology_group = ottoman }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1550
 				OR = {
@@ -872,7 +869,7 @@ renaissance = {
 					owner = { technology_group = east_african }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1575
 				OR = {
@@ -880,7 +877,7 @@ renaissance = {
 					owner = { technology_group = chinese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1600
 				OR = {
@@ -888,14 +885,14 @@ renaissance = {
 					owner = { technology_group = sub_saharan }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1660
 				owner = {
 					technology_group = nomad_group
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1720
 				OR = {
@@ -907,7 +904,7 @@ renaissance = {
 			is_year = 1780
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1450
 		custom_trigger_tooltip = {
@@ -943,20 +940,20 @@ renaissance = {
 	start_chance = 10		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
 	#BTMiscAddonNote - All else being equal and without player interference, likely possiblities to start Renaissance with the new limitations above are - Genoa, Milan, Parma, Verona, Venice, Bologna, Lucca, Romagna, Florence, or Siena.
 	#BTMiscAddonNote - Piedmont, Cremona, Treviso, Mantua, or Ferrara also possible with a minimal dev increase from 1444 start.
-	
-	on_start = institution_events.2
-	
-	
-	
 
-	
-	
+	on_start = institution_events.2
+
+
+
+
+
+
 	can_embrace = {
 		owner = { has_institution = feudalism }
 	}
 
 
-	
+
 	embracement_speed = {
 		#modifier = {
 		#	scale = yes
@@ -1512,7 +1509,7 @@ renaissance = {
 			}
 		}
 		#Half strength later start very high dev only for Asia, after all, who says Asia never had a renaissance? =p Seriously though, this is mainly for gameplay. We want Asia well behind Europe, but not TOO far behind. If Asia can get the renaissance, then it can stay competitive-ish even if no European colonisers
-		#establish treaty ports, and will also boost the rich inland areas like Dehli and more remote areas like Kyoto and Peking. Asia will still be missing the printing press until Europeans spread it, but all other institutions can be obtained organically, albeit with slightly more effort than in Europe and perhaps a 
+		#establish treaty ports, and will also boost the rich inland areas like Dehli and more remote areas like Kyoto and Peking. Asia will still be missing the printing press until Europeans spread it, but all other institutions can be obtained organically, albeit with slightly more effort than in Europe and perhaps a
 		#moderate delay for manufacturing. Depending on tests, might even have to add a post-1650 dev based printing press growth in Asia. Africa gets left out mainly because they will often get colonial borders very early, but also because its much lower population density and development limited growth potential.
 		modifier = {
 			factor = 0.01
@@ -1693,10 +1690,10 @@ renaissance = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -1746,7 +1743,7 @@ renaissance = {
 
 #######################################
 # New World
-# 
+#
 # Colonising is good.. mkay.-.
 #######################################
 new_world_i = {
@@ -1765,7 +1762,7 @@ new_world_i = {
 
 	history = {
 		OR = {
-		
+
 			AND = {
 				is_year = 1500
 				OR = {
@@ -1780,7 +1777,7 @@ new_world_i = {
 					}
 				}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
-			
+
 			AND = {
 				is_year = 1505
 				OR = {
@@ -1797,7 +1794,7 @@ new_world_i = {
 					}
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1510
 				OR = {
@@ -1813,7 +1810,7 @@ new_world_i = {
 					}
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1515
 				OR = {
@@ -1821,7 +1818,7 @@ new_world_i = {
 					region = low_countries_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1520
 				OR = {
@@ -1832,7 +1829,7 @@ new_world_i = {
 					region = baltic_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1525
 				OR = {
@@ -1848,12 +1845,12 @@ new_world_i = {
 				is_year = 1550
 				owner = { technology_group = western }	#Note this includes colonies and overseas
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1575
 				owner = { technology_group = eastern }	#Note this includes colonies, overseas and Siberian holdings
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1600
 				OR = {
@@ -1872,7 +1869,7 @@ new_world_i = {
 					owner = { technology_group = east_african }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1675
 				OR = {
@@ -1880,7 +1877,7 @@ new_world_i = {
 					owner = { technology_group = chinese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1700
 				OR = {
@@ -1888,14 +1885,14 @@ new_world_i = {
 					owner = { technology_group = sub_saharan }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1730
 				owner = {
 					technology_group = nomad_group
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1760
 				OR = {
@@ -1906,7 +1903,7 @@ new_world_i = {
 			is_year = 1790
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1500
 		custom_trigger_tooltip = {
@@ -1981,24 +1978,24 @@ new_world_i = {
 		#}
 	}
 	start_chance = 25		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
-	
+
 	#BTAddOn Notes
 	#With all changes considered, most likely candidates are Sevilla, Lisbon, Porto, whatever is the Spanish capital, London, Dublin, Bordeaux, Porto, Lothian, Paris, Bergen, or Antwerp when owned by a country with at least one provinces in the New World (making the first 3 Iberian options the most likely)
 	#I wouldn't go so far as to say this is 'ideal' but it seems okay for now.
-	
-	on_start = institution_events.3
-	
-	
-	
 
-	
-	
+	on_start = institution_events.3
+
+
+
+
+
+
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
 
 
-	
+
 	embracement_speed = {
 	#	modifier = {
 	#		factor = 1.2
@@ -2009,7 +2006,7 @@ new_world_i = {
 	#				new_world_i = 100
 	#			}
 	#		}
-	#		
+	#
 	#	}
 	#	modifier = {
 	#		factor = 0.5
@@ -2668,10 +2665,10 @@ new_world_i = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -2750,7 +2747,7 @@ printing_press = {
 				development = 28
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1555
 				OR = {
@@ -2762,7 +2759,7 @@ printing_press = {
 				development = 24
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1560
 				OR = {
@@ -2776,7 +2773,7 @@ printing_press = {
 				development = 20
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1565
 				OR = {
@@ -2792,7 +2789,7 @@ printing_press = {
 				development = 16
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1570
 				OR = {
@@ -2813,7 +2810,7 @@ printing_press = {
 				development = 12
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1575
 				OR = {
@@ -2835,7 +2832,7 @@ printing_press = {
 				development = 8
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1600
 				continent = europe
@@ -2853,7 +2850,7 @@ printing_press = {
 					owner = { technology_group = high_american }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1650
 				OR = {
@@ -2861,7 +2858,7 @@ printing_press = {
 					owner = { technology_group = ottoman }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1700
 				OR = {
@@ -2869,7 +2866,7 @@ printing_press = {
 					owner = { technology_group = east_african }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
+
 			AND = {
 				is_year = 1750
 				OR = {
@@ -2879,7 +2876,7 @@ printing_press = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1550
 		custom_trigger_tooltip = {
@@ -2906,18 +2903,18 @@ printing_press = {
 		}
 	}
 	start_chance = 10		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
-	
-	
+
+
 	on_start = institution_events.4
-	
-	
+
+
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
 
-	
+
 	embracement_speed = {
-	
+
 		#modifier = {
 		#	factor = 0.6
 		#	scale = yes
@@ -2928,7 +2925,7 @@ printing_press = {
 		#		}
 		#	}
 		#}
-		
+
 		#modifier = {
 		#	factor = 0.2
 		#	scale = yes
@@ -2947,7 +2944,7 @@ printing_press = {
 		#		}
 		#	}
 		#}
-		
+
 		#########################################################################
 		###Start of BT Tech group specific spread modifiers - printing_press
 		#########################################################################
@@ -3389,7 +3386,7 @@ printing_press = {
 		#######################################################################
 		###End of BT Tech group specific spread modifiers - printing_press
 		#######################################################################
-		#BTAddOn note. So in vanilla Lappland (which happens to likely be Protestant) gets flat (no scaling) factor 3 to the printing press, while Paris, Rome, Milan, Venice, Sevilla, Cosntantinople, Moscow, Genoa, and Koeln get scaled factor 0.05.... mkay.... Starting to see what the min-maxers are talking about 
+		#BTAddOn note. So in vanilla Lappland (which happens to likely be Protestant) gets flat (no scaling) factor 3 to the printing press, while Paris, Rome, Milan, Venice, Sevilla, Cosntantinople, Moscow, Genoa, and Koeln get scaled factor 0.05.... mkay.... Starting to see what the min-maxers are talking about
 		#when they joke about the Protestant master faith... Rebalancing secondary spreads drastically.
 		modifier = {
 			factor = 0.06
@@ -3561,10 +3558,10 @@ printing_press = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -3769,7 +3766,7 @@ global_trade = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1600
 		#is_island = no			#BTAddOn removed. Unneccessary detail
@@ -3793,19 +3790,19 @@ global_trade = {
 				owner = { has_institution = new_world_i }			#BTAddOn new - I want to make sure some 3rd world minor can't rush to fulfill these specific requirements and get the the newest institution in the middle of nowhere, skipping all others.
 				is_year = 1625			#BTAddOn new - Just in the case of some oddity where a trade giant has no access to institutions. If after 25 years the country still dominates trade, let it have it, colonialism or not. Not requiring the printing press seems a bit draconian, as much of Europe may not even have it yet.
 			}
-		}	
+		}
 	}				#BTAddOn note. Note that this is the first institution which can plausibly hit outside of Europe without massive player intervention, so be warned, if Europe doesn't get its ---- together it loses out, as it should be. Still spreads from CoTs, though.
 	start_chance = 35		#in 100 for when a province can_start			#BTAddOn change from 25. All the others are 5, why delay this one. Suspense or to allow a player to boost their trade node perhaps... cheeeap =p ..... oh... higher means better chance. Mouth meet foot.
-	
-	
+
+
 	on_start = institution_events.5
-	
-	
+
+
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
 
-	
+
 	embracement_speed = {
 		#These are normally at the top... just the normal province to province spread, replaced by tech group system above
 		#modifier = {
@@ -3819,11 +3816,11 @@ global_trade = {
 		#		has_port = no
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		
+
 		#modifier = {
 		#	factor = 0.5
 		#	scale = yes
@@ -3835,7 +3832,7 @@ global_trade = {
 		#		has_port = yes
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
@@ -4391,8 +4388,10 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
+				NOT = { has_building = trade_lvl_1 }
 				NOT = { has_building = trade_lvl_2 }
 				NOT = { has_building = trade_lvl_3 }
+				NOT = { has_building = trade_lvl_4 }
 			}			#BTAddOn new - this cleans up UI by making only one or two spread factors show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
 			has_building = trade_lvl_1
 		}
@@ -4404,6 +4403,8 @@ global_trade = {
 				OR = {
 					has_building = trade_lvl_1
 					has_building = trade_lvl_2
+					has_building = trade_lvl_3
+					has_building = trade_lvl_4
 				}
 			}			#BTAddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
 			has_building = trade_lvl_2
@@ -4414,11 +4415,27 @@ global_trade = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				OR = {
+					has_building = trade_lvl_1
 					has_building = trade_lvl_2
 					has_building = trade_lvl_3
+					has_building = trade_lvl_4
 				}
 			}			#BTAddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
 			has_building = trade_lvl_3
+		}
+		modifier = {
+			factor = 0.5			#BTAddOn changed from 1.0. Want CoT to be the most important for this institution, rather than buildings and TP, so lowering the bonus here.
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				OR = {
+					has_building = trade_lvl_1
+					has_building = trade_lvl_2
+					has_building = trade_lvl_3
+					has_building = trade_lvl_4
+				}
+			}			#BTAddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
+			has_building = trade_lvl_4
 		}
 		##########################################################################################################################################################################################################################################################
 		#BTAddOn Note - removing trade power factors for global trade spread entirely. They are messy, complicated, don't encourage proper spread, and are redundant as most major factors in tp (CoT/buildings) also spread global trade themselves, estuaries lose out, but oh well. Leaving this here in case I reconsider.
@@ -4437,7 +4454,7 @@ global_trade = {
 		#	}
 		#}
 		#modifier = {
-		#	factor = 0.05 #Not Scaled			#BTAddOn changed from 0.8 (total 1.2) It is scaled now. 
+		#	factor = 0.05 #Not Scaled			#BTAddOn changed from 0.8 (total 1.2) It is scaled now.
 		#	scale = yes
 		#	force_potential = yes	# Hide the this modifier when potential is false
 		#	potential = {
@@ -4488,7 +4505,7 @@ global_trade = {
 		#		province_trade_power = 60			#BTAddOn new tier for super high trade power provinces (usually requires a CoT and an estuary, a GCoT, or some obscene mercantalism and dev, but it is very possible.)
 		#	}
 		#}
-		#BTAddOn note - spread from a CoT will depend on other embraced institutions. Spread is /4 for no printing, and impossible without colonialism. If a society can't even travel to colonise, it can't develop bonds, stocks, and international trading mechanisms for commerce a world away, no matter how 
+		#BTAddOn note - spread from a CoT will depend on other embraced institutions. Spread is /4 for no printing, and impossible without colonialism. If a society can't even travel to colonise, it can't develop bonds, stocks, and international trading mechanisms for commerce a world away, no matter how
 		#important a local trading centre it might be.
 		modifier = {
 			factor = 0.3			#BTAddOn changed from 0.5. - Colonialism only version
@@ -4560,7 +4577,7 @@ global_trade = {
 				has_estate = estate_burghers
 			}
 		}
-		
+
 		#These are normally at the top... just the normal province to province spread, replaced by tech group system above
 		#modifier = {
 		#	factor = 0.25
@@ -4573,11 +4590,11 @@ global_trade = {
 		#		has_port = no
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		
+
 		#modifier = {
 		#	factor = 0.5
 		#	scale = yes
@@ -4589,11 +4606,11 @@ global_trade = {
 		#		has_port = yes
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		
+
 		modifier = {
 			factor = 0.6			#Reduced by 80 percent from original 5.0, like all previous levels. It was contributing to overly fast tech spread in native tags. Also historically, colonies were extensions of their parent country, and conducted relatively little organised international trade (at a federal/governmental level, I should specify). If they tried, it caused a rather large incident, because it would enrich the colonial parent's rivals. Note this is a somewhat simplified explanation and ignores a few notable cases... but whatever, this works for gameplay and matches the other institutions.
 			scale = yes
@@ -4615,7 +4632,7 @@ global_trade = {
 				}
 			}
 		}
-		
+
 		#modifier = {
 		#	factor = 0.5
 		#	printing_press = 100
@@ -4650,10 +4667,10 @@ global_trade = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -4921,7 +4938,7 @@ manufactories = {
 			}
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1650
 		custom_trigger_tooltip = {
@@ -4958,16 +4975,16 @@ manufactories = {
 		}			#This should be automatic already, but I'm not actually sure it is... anyhow, I want to make sure some nothing 3rd world minor without any other institutions can't rush to fulfill these specific requirements and get the the newest institution in the middle of nowhere, skipping all the others.
 	}
 	start_chance = 5		#in 100 for when a province can_start			#BTAddOn changed from 10 - I actually don't mind this one being delayed a bit, and there should be dozens of candidates in pretty much any game.
-	
-	
+
+
 	on_start = institution_events.6
-	
-	
+
+
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
 
-	
+
 	embracement_speed = {
 		#modifier = {
 		#	factor = 0.35
@@ -5629,10 +5646,10 @@ manufactories = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -5741,7 +5758,7 @@ enlightenment = {
 			}
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1700
 		#BTAddOn notes - completed overhauled requirements and UI display here. It IS possible for the enlightenment to be delayed until a country can fulfill the requirements, this is intentional, there is 50 years for someone to meet the criteria
@@ -5793,7 +5810,7 @@ enlightenment = {
 		#		tooltip = tooltip_has_seat_in_parliament
 		#		has_seat_in_parliament = yes
 		#	}
-		#	has_building = government_lvl_5
+		#	has_building = university
 		#	AND = {
 		#		continent = europe
 		#		development = 20
@@ -5803,20 +5820,20 @@ enlightenment = {
 		#			DIP = 5
 		#		}
 		#	}
-		#	
+		#
 		#}
 	}
 	start_chance = 5		#in 100 for when a province can_start			#BTAddOn changed from 10 - I actually don't mind this one being delayed a bit, it is the last one and shouldn't average before 1720s
-	
-	
+
+
 	on_start = institution_events.7
-	
-	
+
+
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
 
-	
+
 	embracement_speed = {
 		#modifier = {
 		#	factor = 0.1
@@ -6571,10 +6588,10 @@ enlightenment = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes

@@ -1,6 +1,6 @@
 #Beyond Typus Note -
 #Unfortunately, it appears there is no way to modify the new gov system without overriding it, an odd and somewhat disappointing choice of Paradox's end, to be honest.
-#I'll try to document the file well and keep things as organised as possible, but any submods or addons wanting to add their own content will be forced to update 
+#I'll try to document the file well and keep things as organised as possible, but any submods or addons wanting to add their own content will be forced to update
 #fresh each BT update as far as I can tell, sadly. I'm afraid the matter appears to be completely out of my hands, but if you have a suggestion to improve cross compatibility, please do share.
 # -This file contains new reforms at the bottom.
 
@@ -180,7 +180,7 @@ pirate_republic_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	can_form_trade_league = no
-	
+
 	nation_designer_trigger = {
 		has_dlc = "Golden Century"
 		capital_scope = {
@@ -191,26 +191,26 @@ pirate_republic_reform = {
 			}
 		}
 	}
-	
+
 	potential = {
 		has_reform = pirate_republic_reform
 		has_dlc = "Golden Century"
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	duration = 4
-	
+
 	custom_attributes = {
 		locked_government_type = yes
 		force_admiral_leader = yes
 	}
-	
+
 }
 
 noble_elite_reform = {
@@ -242,9 +242,6 @@ presidential_despot_reform = {
 	potential = {
 		has_reform = presidential_despot_reform
 	}
-    trigger = {
-        NOT = { republican_tradition = 50 }
-    }
 	valid_for_nation_designer = no
 	legacy_equivalent = republican_dictatorship
 
@@ -257,6 +254,7 @@ presidential_despot_reform = {
 	effect = {
 		add_stability = -2
 	}
+
 
 	custom_attributes = {
 		locked_government_type = yes
@@ -781,7 +779,7 @@ cossacks_reform = {
 		}
 	}
 
-	custom_attributes = {
+	custom_attributes = {   ### üüü
 		enables_monarchie_idea_group = no
 		enables_republik_idea_group = yes
 		enables_diktatur_idea_group = no
@@ -1112,7 +1110,7 @@ universal_suffrage_reform = {
 pirates_become_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
-	
+
 	potential = {
 		has_reform = pirate_republic_reform
 	}

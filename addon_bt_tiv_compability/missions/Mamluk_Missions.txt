@@ -6,7 +6,7 @@ mam_south_missions = {
 		tag = MAM
 	}
 	has_country_shield = yes
-	
+
 	mam_holy_cities = {
 		icon = mission_mosque
 		required_missions = {  }
@@ -124,7 +124,7 @@ mam_north_missions = {
 		tag = MAM
 	}
 	has_country_shield = yes
-	
+
 	mam_alexandria_trade = {
 		icon = mission_arabian_fort
 		required_missions = {  }

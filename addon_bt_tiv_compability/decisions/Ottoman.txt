@@ -193,10 +193,6 @@ country_decisions = {
 		potential = {
 			has_disaster = janissary_decadence
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
 		}
 		allow = {
 			has_disaster = janissary_decadence
@@ -209,7 +205,6 @@ country_decisions = {
 			}
 		}
 		effect = {
-			set_country_flag = NO_JANISSARIES
 			if = {
 				limit = {
 					has_country_modifier = tur_janissary

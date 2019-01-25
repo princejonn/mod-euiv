@@ -113,14 +113,6 @@ polish_missions_main_slot = {
 			annex_mazovia_provinces = yes
 			NOT = {
 				owned_by = ROOT
-				OR = {
-					has_building = navyforcelimit_lvl_1
-					has_building = navyforcelimit_lvl_3
-				}
-				OR = {
-					has_building = navymanpower_lvl_1
-					has_building = navymanpower_lvl_3
-				}
 			}
 		}
 		trigger = {
@@ -129,8 +121,6 @@ polish_missions_main_slot = {
 				PROVINCES=annex_mazovia_provinces
 				OWNER_TYPE=owned_by
 			}
-			naval_forcelimit = 20
-			navy_size_percentage = 0.5
 		}
 		effect = {
 			# a strong modifier
