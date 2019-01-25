@@ -75,7 +75,7 @@ sco_rb_adm_missions = {
 		icon = mission_rb_the_education_acts
 		required_missions = { sco_religious_unity }
 		trigger = {
-			university = 3
+			government_lvl_5 = 3
 		}
 		effect = {
 			add_country_modifier = {

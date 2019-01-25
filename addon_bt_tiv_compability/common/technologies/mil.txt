@@ -130,8 +130,6 @@ technology = {
 	enable = chinese_footsoldier
 	enable = japanese_footsoldier
 	enable = ha_reformed_xantican_warrior
-	#Byz_resurgence added Renovatio Imperii units
-	enable = eastern_guard
 
 	combat_width = 2
 }
@@ -213,9 +211,6 @@ technology = {
 	enable = asian_arquebusier
 	enable = steppe_raiders
 	enable = ha_xiuhtecuhtli_soldier
-	#Byz_resurgence added Renovatio Imperii units
-	enable = eastern_raiders
-	enable = varangian_infantry
 
 	military_tactics 	= 	0.25
 	combat_width = 1
@@ -296,8 +291,6 @@ technology = {
 	enable = ethiopian_mountain_warfare
 	enable = steppe_footmen
 	enable = ha_xiuhtecuhtlian_infantry
-	#Byz_resurgence added Renovatio Imperii units
-	enable = balanced_eastern_musketeers
 }
 
 technology = {
@@ -453,9 +446,6 @@ technology = {
 	enable = south_american_swarm
 	enable = steppe_infantry
 	enable = high_american_swarm
-	#Byz_resurgence added Renovatio Imperii units
-	enable = reformed_eastern_tercio
-	enable = themata_infantry
 }
 
 technology = {
@@ -501,8 +491,6 @@ technology = {
 
 	enable = polish_winged_hussar
 	enable = muscovite_cossack
-	#Byz_resurgence added Renovatio Imperii units
-	enable = palatine_cavalry
 
 	enable = coehorn_mortar
 }
@@ -545,9 +533,6 @@ technology = {
 	enable = steppe_cavalry
 	enable = ha_foreign_influenced_infantry
 	enable = high_american_dragoon
-	#Byz_resurgence added Renovatio Imperii units
-	enable = hajduk_infantry
-	enable = scholarian_infantry
 }
 
 technology = {
@@ -612,10 +597,6 @@ technology = {
 	enable = eastern_skirmisher
 	enable = steppe_rifles
 	enable = ha_reformed_influenced_infantry
-	#Byz_resurgence added Renovatio Imperii units
-	enable = reformed_petrine_infantry
-	enable = reformed_varangian_infantry
-	enable = reformed_palatine_cavalry
 
 	combat_width = 2
 }
@@ -656,8 +637,6 @@ technology = {
 	enable = french_impulse
 	enable = british_square
 	enable = steppe_uhlans
-	#Byz_resurgence added Renovatio Imperii units
-	enable = palatine_lancers
 }
 
 technology = {
@@ -696,9 +675,6 @@ technology = {
 	enable = reformed_westernized_incan
 	enable = reformed_steppe_rifles
 	enable = ha_reformed_xoloti
-	#Byz_resurgence added Renovatio Imperii units
-	enable = eastern_square_infantry
-	enable = reformed_scholarian_infantry
 }
 
 technology = {

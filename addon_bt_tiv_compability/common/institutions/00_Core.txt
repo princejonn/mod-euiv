@@ -5747,7 +5747,7 @@ enlightenment = {
 		#BTAddOn notes - completed overhauled requirements and UI display here. It IS possible for the enlightenment to be delayed until a country can fulfill the requirements, this is intentional, there is 50 years for someone to meet the criteria
 		#Also note tech to build Unis will likely be reached at least 80-85 years before this, so there should be plenty of Unis around, especially in western Europe with new ai factors in building file.
 		OR = {
-			has_building = university
+			has_building = government_lvl_5
 			custom_trigger_tooltip = {
 				tooltip = tooltip_bt_add_new_instituiton_details_o
 				development = 32
@@ -5793,7 +5793,7 @@ enlightenment = {
 		#		tooltip = tooltip_has_seat_in_parliament
 		#		has_seat_in_parliament = yes
 		#	}
-		#	has_building = university
+		#	has_building = government_lvl_5
 		#	AND = {
 		#		continent = europe
 		#		development = 20
@@ -6290,7 +6290,7 @@ enlightenment = {
 		modifier = {
 			factor = 0.2			#BTAddOn change from 5.0, also now scaled. Greenland with a university is still Greenland, and Paris without a university is still Paris.
 			scale = yes			#BTAddOn new - now scaled like most others
-			has_building = university
+			has_building = government_lvl_5
 		}
 		#BTAddOn note - I know, ra ra for democracy and all that, but simply having representation at a federal level doesn't automatically mean that the people are 'englightened'
 		#modifier = {
