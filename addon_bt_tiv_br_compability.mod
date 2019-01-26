@@ -9,5 +9,5 @@ tags={
 	"Patch"
 }
 picture="thumb.jpg"
-remote_file_id=""
+remote_file_id="1635546921"
 supported_version="1.28.*.*"
