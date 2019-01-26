@@ -1,0 +1,15 @@
+name="!! BT Addon: TIV + BR + Misc + BoP Compability Patch"
+path="mod/addon_bt_tiv_br_misc_bop_compability"
+tags={
+	"Addon"
+	"Beyond Typus"
+	"Idea Variation"
+	"Byzantium Resurgence"
+	"Miscellanea"
+	"Balance of Power"
+	"Compability"
+	"Patch"
+}
+picture="thumb.jpg"
+remote_file_id="1635457803"
+supported_version="1.28.*.*"
