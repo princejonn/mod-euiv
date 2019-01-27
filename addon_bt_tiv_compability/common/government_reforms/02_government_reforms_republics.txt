@@ -251,11 +251,6 @@ presidential_despot_reform = {
 		land_morale = 0.1
 	}
 
-	effect = {
-		add_stability = -2
-	}
-
-
 	custom_attributes = {
 		locked_government_type = yes
 		enables_monarchie_idea_group = no
