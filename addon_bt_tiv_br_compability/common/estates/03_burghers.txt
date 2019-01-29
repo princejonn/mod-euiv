@@ -12,13 +12,13 @@ estate_burghers =
 		NOT = { has_estate = estate_vaisyas }
 		NOT = { has_estate = estate_jains }
 		NOT = { has_reform = pirate_republic_reform }
-		NOT = { government = native }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = merchants_reform }
+		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = revolutionary_republic_reform }
 		NOT = { has_reform = cossacks_reform }
+		NOT = { government = native }
+		NOT = { has_reform = siberian_tribe }
 		OR = {
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
@@ -40,17 +40,20 @@ estate_burghers =
 	start_territory_weight = 10
 	
 	# Min autonomy in estate provinces
-	min_autonomy = 0
+	min_autonomy = 25
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
-	#autonomy_does_not_affect = local_production_efficiency
-	#autonomy_does_not_affect = province_trade_power_modifier
-	#autonomy_does_not_affect = naval_forcelimit_modifier
-	#autonomy_does_not_affect = local_sailors_modifier
+	autonomy_does_not_affect = local_production_efficiency
+	autonomy_does_not_affect = province_trade_power_modifier
+	autonomy_does_not_affect = naval_forcelimit_modifier
+	autonomy_does_not_affect = local_sailors_modifier
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.2			#BTAddOn new - estates rebalancing
+		trade_efficiency = 0.2
+		#development_cost = -0.1			#BTAddOn removed - estates rebalancing
+		republican_tradition = 0.5			#BTAddOn new - estates rebalancing
 		rat_1_4_gilde_influence = 0.1
 		rat_2_4_gilde_influence = 0.1
 		rat_3_4_gilde_influence = 0.1
@@ -59,7 +62,8 @@ estate_burghers =
 		rat_3_5_trader_influence = 0.1 		
 	}
 	country_modifier_neutral = {
-		global_trade_goods_size_modifier = 0.05
+		#trade_efficiency = 0.2			#BTAddOn removed - estates rebalancing
+		production_efficiency = 0.1			#BTAddOn new - estates rebalancing
 		rat_1_4_gilde_influence = 0.2
 		rat_2_4_gilde_influence = 0.2
 		rat_3_4_gilde_influence = 0.2
@@ -68,8 +72,11 @@ estate_burghers =
 		rat_3_5_trader_influence = 0.2
 	}	
 	country_modifier_angry = {
-		global_trade_goods_size_modifier = -0.1
-		stability_cost_modifier = 0.33
+		production_efficiency = -0.2			#BTAddOn new - estates rebalancing
+		trade_efficiency = -0.2			#BTAddOn changed from -0.1 - estates rebalancing
+		#development_cost = 0.1			#BTAddOn removed - estates rebalancing
+		republican_tradition = -0.5			#BTAddOn new - estates rebalancing
+		stability_cost_modifier = 0.33			#BTAddOn new - estates rebalancing
 		rat_1_4_gilde_influence = 0.33
 		rat_2_4_gilde_influence = 0.33
 		rat_3_4_gilde_influence = 0.33
@@ -80,16 +87,17 @@ estate_burghers =
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
-		local_production_efficiency = 0.15
-		province_trade_power_modifier = 0.5
-		local_autonomy = -0.1
+		#trade_goods_size_modifier = 0.1			#BTAddOn removed - estates rebalancing
+		local_development_cost = -0.10			#BTAddOn new - estates rebalancing
+		province_trade_power_modifier = 0.25			#BTAddOn changed from 0.5 - estates rebalancing (was way too overpowered)
 	}
 	province_modifier_neutral = {
-		local_autonomy = 0.1
+		local_development_cost = -0.05
 	}		
 	province_modifier_angry = {
 		local_unrest = 5
-		local_autonomy = 0.2
+		local_development_cost = 0.10			#BTAddOn new - estates rebalancing
+		province_trade_power_modifier = -0.25			#BTAddOn new - estates rebalancing
 	}	
 	
 	# Influence modifiers
@@ -268,6 +276,18 @@ estate_burghers =
 		loyalty = 5
 	}
 	
+	#Beyond Typus Specials
+	loyalty_modifier = {
+		desc = EST_LOW_MANDATE_BT
+		trigger = {
+			is_emperor_of_china = yes
+			has_dlc = "Mandate of Heaven"
+			NOT = { imperial_mandate = 25 }
+		}
+		loyalty = -10
+	}
+	#End of Beyond Typus Specials
+
 	#Custom Names
 	custom_name = {
 		desc = estate_bourgeoisie
@@ -358,7 +378,10 @@ estate_burghers =
 		}
 		
 		trigger = {
-			always = yes			
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 30
+			}
 		}
 		
 		effect = {
@@ -447,7 +470,14 @@ estate_burghers =
 		}
 		
 		trigger = {		
-			always = yes	
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 30
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 25
+			}
 		}
 		
 		effect = {
@@ -565,33 +595,18 @@ estate_burghers =
 		}
 		
 		trigger = {
-			always = yes
+			estate_influence = {
+				estate = estate_burghers
+				influence = 40
+			}
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					monthly_income = 25
-				}
-				define_advisor = {
-					type = master_of_mint
-					skill = 3
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
-			}
-			if = {
-				limit = { NOT = { monthly_income = 25 } }
-				define_advisor = {
-					type = master_of_mint
-					skill = 2
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
+			#Beyond Typus Misc Addon now using Dub's excellent cleaned up scripted effect, rather than giant wall of vanilla code. Credit to Dub
+			create_estate_advisor_effect = {
+				ADVISORTYPE = master_of_mint
+				ESTATE = estate_burghers
+				EVENTTARGET = burgher_estate_province
 			}
 			add_estate_influence_modifier = {
 				estate = estate_burghers
@@ -599,7 +614,6 @@ estate_burghers =
 				influence = 15
 				duration = 10950
 			}
-			reduce_loyal_without_burg = yes
 		}
 		
 		ai_will_do = {
@@ -619,7 +633,14 @@ estate_burghers =
 		}
 		
 		trigger = {
-			always = yes
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 30
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 40
+			}
 		}
 		
 		effect = {
@@ -697,7 +718,14 @@ estate_burghers =
 		}
 		
 		trigger = {
-			always = yes
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 30
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 40
+			}
 		}
 		
 		effect = {
@@ -734,7 +762,11 @@ estate_burghers =
 		trigger = {
 			estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 33
+				loyalty = 30
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 40
 			}
 			num_of_ports = 10
 			any_owned_province = {
@@ -743,12 +775,71 @@ estate_burghers =
 			}
 		}
 		
-		effect = {
+		effect = {			#BTAddOn changed this effect - spreading out construction a bit
 			add_estate_loyalty = {
 				estate = estate_burghers
-				loyalty = -33
-			}		
-			ships_scaled_to_fl_heavy = yes
+				loyalty = -15
+			}
+			random_owned_province = {
+				limit = {
+					has_estate = estate_burghers
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 1
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_estate = estate_burghers
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 1
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_estate = estate_burghers
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 1
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_estate = estate_burghers
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 1
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_estate = estate_burghers
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 1
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
 		}
 		
 		ai_will_do = {

@@ -1,9 +1,11 @@
 monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
-# no bonus for MIL currently
-# ahead_of_time = {
-# }
+ahead_of_time = {
+	army_tradition_decay = -0.03			#BTAddOn new
+	drill_decay_modifier = -0.03			#BTAddOn new
+	#military_tactics 	= 	0.20			#BTAddOn new, but cut again as it didn't work.
+}
 
 # Pre-era techs
 technology = {
@@ -12,18 +14,19 @@ technology = {
 	
 	sprite_level = 1
 
-	infantry_fire		= 	0.25
-	infantry_shock 		= 	0.20	
-	cavalry_shock  		= 	0.8	
-	land_morale 		= 	2.0
+	infantry_fire		= 	0.5			#BTAddOn changed from 0.25 - Part of tech shock and fire overhaul
+	infantry_shock 		= 	0.75				#BTAddOn changed from 0.20 - Part of tech shock and fire overhaul
+	cavalry_shock  		= 	1.8				#BTAddOn changed from 0.8 - Part of tech shock and fire overhaul
+	cavalry_fire		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
+	land_morale 		= 	3.0			#BTAddOn changed from 2.0, increasing base morale
 }
 
 technology = {
 	# Tech 1
 	year = 1390
 	
-	infantry_shock		= 	0.1
-	infantry_fire 		= 	0.1
+	#infantry_shock		= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
+	#infantry_fire 		= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
 	
 	fort_15th = yes
 	
@@ -70,7 +73,7 @@ technology = {
 	year = 1420
 	
 	infantry_shock		= 	0.2
-	cavalry_shock		= 	0.2
+	cavalry_shock		= 	0.4			#BTAddOn changed from 0.2 - Part of tech shock and fire overhaul
 	
 	combat_width = 5
 }
@@ -91,6 +94,8 @@ technology = {
 	#Pike Square
 	fortress_keep = yes
 
+	infantry_shock		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
+
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
 }
@@ -100,9 +105,9 @@ technology = {
 	year = 1466
 	
 	#Standardised Pikes
-	supply_limit 		= 	0.5
-	infantry_shock		= 	0.15
-	cavalry_shock		= 	0.2
+	supply_limit 		= 	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
+	#infantry_shock		= 	0.15			#BTAddOn removed - Part of tech shock and fire overhaul
+	cavalry_shock		= 	0.4
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -140,8 +145,8 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.30
-	infantry_fire 		= 	0.20
+	#infantry_shock		= 	0.30			#BTAddOn removed - Part of tech shock and fire overhaul
+	infantry_fire 		= 	0.30			#BTAddOn changed from 0.20 - Part of tech shock and fire overhaul
 	
 	
 	manpower_lvl_1 = yes
@@ -171,8 +176,8 @@ technology = {
 	
 	fortress_barracks = yes
 	#The limber
-	artillery_fire 		= 	1
-	artillery_shock 	=	0.05
+	artillery_fire 		= 	1.6			#BTAddOn changed from 1 - Part of tech shock and fire overhaul
+	artillery_shock 	=	0.2			#BTAddOn changed from 0.05 - Part of tech shock and fire overhaul
 	military_tactics 	= 	0.25
 	enable = large_cast_bronze_mortar 
 	enable = houfnice
@@ -183,8 +188,9 @@ technology = {
 	year = 1505
 	
 	#Pike and Shot
-	infantry_fire		= 	0.25
-	cavalry_shock		=	0.8
+	#infantry_fire		= 	0.25			#BTAddOn removed - Part of tech shock and fire overhaul
+	infantry_shock		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
+	cavalry_shock		=	0.40			#BTAddOn changed from 0.8 - Part of tech shock and fire overhaul
 
 	forcelimit_lvl_1 = yes
 	#regimental_camp = yes
@@ -196,7 +202,9 @@ technology = {
 	year = 1518
 	
 	#Ditch
-	
+	infantry_fire		= 	0.30			#BTAddOn new - Part of tech shock and fire overhaul
+	artillery_fire 		= 	0.60			#BTAddOn new - Part of tech shock and fire overhaul
+
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
 	enable = ottoman_janissary	
@@ -222,7 +230,8 @@ technology = {
 	
 	#Reiter
 	maneuver_value 		= 	0.25
-	cavalry_fire		= 	0.25
+	cavalry_fire		= 	0.2			#BTAddOn new - Part of tech shock and fire overhaul
+
 	enable = hungarian_hussar
 	enable = ottoman_spahi		
 	enable = culverin		
@@ -251,9 +260,11 @@ technology = {
 	year = 1544
 	
 	#Matchlock Musket
-	infantry_shock		= 	0.20
-	infantry_fire		= 	0.25
-	cavalry_fire		= 	0.5
+	#infantry_shock		= 	0.20			#BTAddOn removed - Part of tech shock and fire overhaul
+	#cavalry_fire		= 	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
+	infantry_fire		= 	0.30			#BTAddOn new - Part of tech shock and fire overhaul
+	cavalry_shock		= 	0.40			#BTAddOn new - Part of tech shock and fire overhaul
+	artillery_fire 		= 	0.60			#BTAddOn new - Part of tech shock and fire overhaul
 
 	fortress_towers = yes
 	weapons = yes
@@ -270,7 +281,7 @@ technology = {
 	#Spanish Square
 	sprite_level = 2
 	
-	supply_limit 		= 	0.5
+	supply_limit 		= 	0.3			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
 	military_tactics	=	0.25
 
 	enable = tofongchis_musketeer		
@@ -297,8 +308,8 @@ technology = {
 	year = 1570
 	
 	#Trunnions
-	artillery_shock 	= 	0.1
-	artillery_fire 		= 	0.4
+	artillery_shock 	= 	0.2			#BTAddOn changed from 0.1 - Part of tech shock and fire overhaul
+	artillery_fire 		= 	0.70			#BTAddOn changed from 0.4 - Part of tech shock and fire overhaul
 	
 	enable = small_cast_iron_bombard
 	enable = large_cast_iron_bombard
@@ -310,9 +321,9 @@ technology = {
 	
 	#Star Bastions
 	fort_16th = yes
-	
-	infantry_fire		=	0.3
-	cavalry_fire		= 	0.5
+	#infantry_fire		=	0.3			#BTAddOn removed - Part of tech shock and fire overhaul
+	artillery_fire 		= 	0.70			#BTAddOn new - Part of tech shock and fire overhaul
+	cavalry_shock		= 	0.40			#BTAddOn new - Part of tech shock and fire overhaul
 	
 	enable = african_hussar
 	enable = french_caracolle 
@@ -342,7 +353,7 @@ technology = {
 	year = 1596
 	
 	#Maurician Infantry
-	land_morale 		=	1.0
+	land_morale 		=	0.5			#BTAddOn changed from 1.0, increasing base morale
 	military_tactics	=	0.25
 	
 
@@ -366,9 +377,9 @@ technology = {
 	year = 1609
 	
 	#Standardisation of Calibre
-	artillery_shock 	= 	0.1
-	artillery_fire 		= 	1.0	
-	
+	#artillery_shock 	= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
+	artillery_fire 		= 	0.70			#BTAddOn changed from 1.0 - Part of tech shock and fire overhaul
+
 	fortress_artillery = yes
 
 	#training_fields = yes
@@ -382,11 +393,12 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	1.0
-	supply_limit		= 	0.5	
+	#cavalry_shock		=	1.0			#BTAddOn removed - Part of tech shock and fire overhaul
+	infantry_fire		=	0.30			#BTAddOn new - Part of tech shock and fire overhaul
+	supply_limit		= 	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
 	
-	 manpower_lvl_3 = yes
-	
+	manpower_lvl_3 = yes
+
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
 	enable = african_swarm
@@ -398,6 +410,8 @@ technology = {
 	
 	#Carbine
 	maneuver_value 		= 	0.25
+	cavalry_shock		= 	0.40			#BTAddOn new - Part of tech shock and fire overhaul
+	cavalry_fire		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
 
 		
 	enable = swedish_gallop	
@@ -419,7 +433,8 @@ technology = {
 	
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
-	supply_limit		=	0.5
+	supply_limit		=	0.3			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
+	infantry_fire		=	0.30			#BTAddOn new - Part of tech shock and fire overhaul
 
 	fort_17th = yes
 
@@ -451,7 +466,9 @@ technology = {
 	
 	#Killing Grounds
 	
-	infantry_fire		= 	0.5
+	#infantry_fire		= 	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
+	artillery_fire 		= 	0.70			#BTAddOn new - Part of tech shock and fire overhaul
+
 	forcelimit_lvl_3 = yes	
 	enable = swivel_cannon		
 
@@ -466,7 +483,7 @@ technology = {
 	sprite_level = 3
 	military_tactics 	= 	0.25
 	
-	infantry_shock 		=	0.5
+	infantry_shock 		=	0.20			#BTAddOn changed from 0.5 - Part of tech shock and fire overhaul
 }
 
 technology = {
@@ -474,9 +491,10 @@ technology = {
 	year = 1687
 	
 	#Cartridge	(1620)?)
-	cavalry_fire		=	0.5
-	artillery_shock 	=	0.1
-	artillery_fire		=	2.0
+	#cavalry_fire		=	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
+	#artillery_shock 	=	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
+	artillery_fire		=	0.7			#BTAddOn changed from 2.0 - Part of tech shock and fire overhaul
+	infantry_fire		= 	0.3			#BTAddOn new - Part of tech shock and fire overhaul
 	
 	combat_width = 2
 	
@@ -499,7 +517,8 @@ technology = {
 	
 	fortress_wall = yes
 	
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.4			#BTAddOn changed from 1.0 - Part of tech shock and fire overhaul
+	cavalry_fire		=	0.2			#BTAddOn new - Part of tech shock and fire overhaul
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
@@ -549,9 +568,8 @@ technology = {
 	year = 1730
 	
 	#Metallurgy
-	artillery_shock 	=	0.1
-	artillery_fire		=	2.0
-	
+	artillery_shock 	=	0.2			#BTAddOn changed from 0.1 - Part of tech shock and fire overhaul
+	artillery_fire		=	0.7			#BTAddOn changed from 2.0 - Part of tech shock and fire overhaul
 	
 	enable = royal_mortar	
 }
@@ -563,7 +581,8 @@ technology = {
 	#Light Infantry Companies
 	sprite_level = 4
 
-	land_morale			=	1.0
+	infantry_fire		= 	0.4			#BTAddOn new - Part of tech shock and fire overhaul
+	land_morale			=	0.5			#BTAddOn changed from 1.0, increasing base morale
 	
 	fortress_supply = yes
 	
@@ -607,8 +626,9 @@ technology = {
 	year = 1760
 	
 	#Bayonet
-	supply_limit		=	0.5
-	infantry_fire		= 	0.5	
+	supply_limit		=	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
+	#infantry_fire		= 	0.4			#BTAddOn removed - Part of tech shock and fire overhaul
+	infantry_shock		= 	0.3			#BTAddOn new - Part of tech shock and fire overhaul
 }
 
 technology = {
@@ -617,8 +637,8 @@ technology = {
 	
 	#Cuirassier
 	maneuver_value 		= 	0.25
-	infantry_shock		=	0.5	
-	cavalry_fire		= 	0.25
+	#infantry_shock		=	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
+	cavalry_shock		=	0.4			#BTAddOn new - Part of tech shock and fire overhaul
 	
 	enable = african_cuirassier
 	enable = russian_cuirassier	
@@ -646,7 +666,8 @@ technology = {
 	year = 1790
 	
 	#Defense in Depth
-		
+	artillery_fire		=	0.7			#BTAddOn new - Part of tech shock and fire overhaul
+
 	enable = flying_battery  
 }
 
@@ -660,7 +681,8 @@ technology = {
 	military_tactics	=	0.25
 	land_morale			=	1.0
 	maneuver_value = 0.25
-	
+	infantry_shock		=	0.3			#BTAddOn new - Part of tech shock and fire overhaul
+
 	enable = russian_mass
 	enable = mixed_order_infantry	
 	enable = prussian_drill		
@@ -685,9 +707,10 @@ technology = {
 	year = 1820
 	
 	#Rifle
-	cavalry_shock		=	1.0
-	infantry_fire		=	1.0
-	supply_limit		=	0.5
+	#cavalry_shock		=	1.0			#BTAddOn removed - Part of tech shock and fire overhaul
+	cavalry_fire		=	0.2			#BTAddOn new - Part of tech shock and fire overhaul
+	infantry_fire		=	0.4			#BTAddOn changed from 1.0 - Part of tech shock and fire overhaul
+	supply_limit		=	0.3			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
 }
 
 technology = {
@@ -696,6 +719,6 @@ technology = {
 	
 	#Field Howitzer
 	military_tactics	=	0.25
-	artillery_shock		=	0.1
-	artillery_fire		=	2.0	
+	#artillery_shock		=	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
+	artillery_fire		=	0.7			#BTAddOn changed from 1.0 - Part of tech shock and fire overhaul
 }

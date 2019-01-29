@@ -2,7 +2,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_estates_icons"
 		texturefile = "gfx//interface//estates_icons.dds"
-		noOfFrames = 13
+		noOfFrames = 14
 		loadType = "INGAME"
 	}
 	
@@ -24,7 +24,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_estates_interactions"
 		texturefile = "gfx//interface//estates_icons.dds"
-		noOfFrames = 6
+		noOfFrames = 14
 	}	
 	
 	spriteType = {
@@ -80,7 +80,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_estate_interactions"
 		texturefile = "gfx//interface//estate_interactions_strip.dds"
-		noOfFrames = 39
+		noOfFrames = 42
 		loadType = "INGAME"
 	}	
 	

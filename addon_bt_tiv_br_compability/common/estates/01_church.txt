@@ -19,17 +19,13 @@ estate_church =
 			NOT = { has_estate = estate_brahmins }
 		}
 		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_reform = merchants_reform }
+		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { government = native }
 		NOT = { has_reform = revolutionary_republic_reform }
-		OR = {
-			NOT = { tag = USA }
-			government = theocracy
-		}
 		OR = {
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
@@ -51,52 +47,62 @@ estate_church =
 	start_territory_weight = 25
 	
 	# Min autonomy in estate provinces
-	min_autonomy = 0
+	min_autonomy = 25
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
-	#autonomy_does_not_affect = local_tax_modifier
+	autonomy_does_not_affect = local_tax_modifier
 
 	# These scale with loyalty & power
-	
 	country_modifier_happy = {
-		papal_influence = 1
-		church_power_modifier = 0.25
+		tolerance_own = 2			#BTAddOn new - estates rebalancing
+		global_tax_modifier = 0.2
+		papal_influence = 1.0
+		devotion = 1.0			#BTAddOn changed from 0.5 - estates rebalancing
+		church_power_modifier = 0.2			#BTAddOn changed from 0.1 - estates rebalancing
 		monthly_fervor_increase = 1
-		missionary_maintenance_cost = -0.2
+		#stability_cost_modifier = -0.1			#BTAddOn removed - estates rebalancing
 		rat_1_2_klerus_influence = 0.1
 		rat_2_2_klerus_influence = 0.1 
 		rat_3_2_klerus_influence = 0.1 
 	}
 	country_modifier_neutral = {
-		missionary_maintenance_cost = -0.05
+		tolerance_own = 1			#BTAddOn new - estates rebalancing
+		#global_tax_modifier = 0.2			#BTAddOn removed - estates rebalancing
 		rat_1_2_klerus_influence = 0.2
 		rat_2_2_klerus_influence = 0.2
 		rat_3_2_klerus_influence = 0.2
 	}	
 	country_modifier_angry = {
-		stability_cost_modifier = 0.33
+		tolerance_own = -2			#BTAddOn new - estates rebalancing
+		global_tax_modifier = -0.2
 		papal_influence = -1
-		church_power_modifier = -0.25
+		devotion = -1.0			#BTAddOn changed from -0.5 - estates rebalancing
+		church_power_modifier = -0.2			#BTAddOn changed from -0.25 - estates rebalancing
 		monthly_fervor_increase = -1
-		missionary_maintenance_cost = 0.2
+		stability_cost_modifier = 0.33			#BTAddOn changed from 0.1 - estates rebalancing
 		rat_1_2_klerus_influence = 0.33
 		rat_2_2_klerus_influence = 0.33
 		rat_3_2_klerus_influence = 0.33
-	}	
+	}
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
 		local_missionary_strength = 0.02
 		local_missionary_maintenance_cost = -0.25
-		local_autonomy = -0.1
+		local_tax_modifier = 0.1
+		#local_unrest = -2			#BTAddOn removed - estates rebalancing
 	}
 	province_modifier_neutral = {
-		local_autonomy = 0.1
+		local_missionary_strength = 0.01			#BTAddOn new - estates rebalancing
+		local_missionary_maintenance_cost = -0.10
+		#local_unrest = -2			#BTAddOn removed - estates rebalancing
 	}	
 	province_modifier_angry = {
 		local_unrest = 5
-		local_autonomy = 0.2
-	}	
+		local_missionary_strength = -0.02			#BTAddOn new - estates rebalancing
+		local_missionary_maintenance_cost = 0.25			#BTAddOn new - estates rebalancing
+		local_tax_modifier = -0.1
+	}
 	
 	# Influence modifiers
 	base_influence = 20
@@ -291,7 +297,17 @@ estate_church =
 		}
 		loyalty = 10
 	}
-	#BT Idea set boni
+
+	#Beyond Typus Specials
+	loyalty_modifier = {
+		desc = EST_LOW_MANDATE_BT
+		trigger = {
+			is_emperor_of_china = yes
+			has_dlc = "Mandate of Heaven"
+			NOT = { imperial_mandate = 25 }
+		}
+		loyalty = -10
+	}
 	loyalty_modifier = {
 		desc = EST_VAL_RAV_CITY_OF_CHURCHES
 		trigger = {
@@ -308,7 +324,8 @@ estate_church =
 		}
 		loyalty = 10
 	}
-	
+	#End of Beyond Typus Specials
+
 	custom_name = {
 		desc = estate_monasteries
 		trigger = {
@@ -403,9 +420,7 @@ estate_church =
 		}	
 		value = 10		
 	}		
-	
-	
-	
+
 	# Special interactions
 	interaction = {
 		name = "DEMAND_SUPPORT_CHURCH"
@@ -563,7 +578,6 @@ estate_church =
 				estate = estate_church
 				loyalty = 15
 			}
-			reduce_loyal_without_chur = yes	
 		}
 	
 		ai_will_do = {
@@ -596,33 +610,18 @@ estate_church =
 		years_between_use = 30
 		
 		trigger = {
-			always = yes
+			estate_influence = {
+				estate = estate_church
+				influence = 40
+			}
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					monthly_income = 25
-				}
-				define_advisor = {
-					type = theologian
-					skill = 3
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
-			}
-			if = {
-				limit = { NOT = { monthly_income = 25 } }
-				define_advisor = {
-					type = theologian
-					skill = 2
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
+			#Beyond Typus Misc Addon now using Dub's excellent cleaned up scripted effect, rather than giant wall of vanilla code. Credit to Dub
+			create_estate_advisor_effect = {
+				ADVISORTYPE = theologian
+				ESTATE = estate_church
+				EVENTTARGET = church_estate_province
 			}
 			add_estate_influence_modifier = {
 				estate = estate_church
@@ -630,7 +629,6 @@ estate_church =
 				influence = 15
 				duration = 10950
 			}
-			reduce_loyal_without_chur = yes			
 		}
 		
 		ai_will_do = {
@@ -649,33 +647,18 @@ estate_church =
 		years_between_use = 30
 		
 		trigger = {
-			always = yes
+			estate_influence = {
+				estate = estate_church
+				influence = 40
+			}
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					monthly_income = 25
-				}
-				define_advisor = {
-					type = inquisitor
-					skill = 3
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
-			}
-			if = {
-				limit = { NOT = { monthly_income = 25 } }
-				define_advisor = {
-					type = inquisitor
-					skill = 2
-					culture = event_target:estate_estate_province
-					religion = event_target:estate_estate_province
-					location = event_target:estate_estate_province
-					cost_multiplier = 0.5
-				}
+			#Beyond Typus Misc Addon now using Dub's excellent cleaned up scripted effect, rather than giant wall of vanilla code. Credit to Dub
+			create_estate_advisor_effect = {
+				ADVISORTYPE = inquisitor
+				ESTATE = estate_church
+				EVENTTARGET = church_estate_province
 			}
 			add_estate_influence_modifier = {
 				estate = estate_church
@@ -683,7 +666,13 @@ estate_church =
 				influence = 10
 				duration = 10950
 			}
-			reduce_loyal_without_chur = yes
+			if = {
+				limit = { has_estate = estate_dhimmi }
+				add_estate_loyalty = {
+					estate = estate_dhimmi
+					loyalty = -15
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -703,7 +692,10 @@ estate_church =
 		}
 		
 		trigger = {
-			always = yes
+			estate_influence = {
+				estate = estate_church
+				influence = 40
+			}
 		}
 		
 		effect = {
@@ -737,7 +729,10 @@ estate_church =
 		}
 		
 		trigger = {
-			always = yes
+			estate_influence = {
+				estate = estate_church
+				influence = 40
+			}
 		}
 		
 		effect = {
