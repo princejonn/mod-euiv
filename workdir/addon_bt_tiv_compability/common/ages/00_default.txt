@@ -500,7 +500,8 @@ age_of_absolutism = {
 		}
 
 		obj_universities = {
-			government_lvl_5  = 5
+			#government_lvl_5 = 5
+			university  = 5
 		}
 
 		obj_large_forcelimit = {
