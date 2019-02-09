@@ -63,9 +63,8 @@ technology = { #Temples
 	# Tech 4
 	year = 1453
 	# Temple
-	#temple = yes
+	temple = yes
 	max_states = 3
-	taxation_lvl_1 = yes
 	terrain_land = yes
 	terrain_woodland = yes
 	terrain_hills = yes
@@ -89,18 +88,17 @@ technology = { #National Ideas
 technology = { #Workshop
 	# Tech 6
 	year = 1479
-	government_lvl_1 = yes
-	production_lvl_1 = yes
 	
 	#Workshop
 	farm_estate = yes
-	#workshop = yes
+	courthouse = yes
+	workshop = yes
 }
 
 technology = { #Renaissance Thought
 	# Tech 7
 	year = 1492
-	government_lvl_5 = yes # University
+	university = yes # University
 	#Noble Republic
 	allowed_idea_groups = 4
 }
