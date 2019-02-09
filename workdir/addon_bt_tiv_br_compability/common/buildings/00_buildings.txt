@@ -30,12 +30,10 @@
 
 
 fort_15th = {
-	cost = 300			#BTAddOn changed from original 200. Castles were way too cheap to build but also too expensive to maintain in BT. Note upkeep is controlled in defines and is generated based on fort level, I believe with reduced fort levels the vanilla .5 per month per level is fine
+	cost = 200
 	time = 30
 	modifier = {
-		fort_level = 1			#BTAddOn changed from original 2. Fort levels are just ridiculous in vanilla and require far too many cannons, especially at later levels. After some testing, I'm content with my new 1-2-3-5 system.
-		local_unrest = -0.5			#BTAddOn new. The days of controling a region by building a castle there were largely over by the later EU4 period, but I really like the concept of forts establishing a permanent military presence, much like friendly troops in the province reduce unrest. Also want another bonus to justify cost
-		local_defensiveness = 0.1			#BTAddOn new. The point of weakening forts isn't to speed up the game, or make conquest easier or faster, but rather to reduce how mandatory cannons and obscenely large armies are for sieges. Local defensiveness slows things back down after reducing fort levels.
+		fort_level = 2
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -66,47 +64,7 @@ fort_15th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		#BT Addon New factors, range 57 percent to 216.5625 percent
-		modifier = {
-			factor = 1.5
-			FROM = { is_march = yes }
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 0.95
-			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.05
-			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.1
-			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { technology_group = western }			#Partly for gameplay, but Europe became insanely fortified during this period
-		}
-		#Note Eastern, Ottoman, Muslim, East African, Indian, and Chinese tech groups receive no penalty nor bonus
-		modifier = {
-			factor = 0.75
-			FROM = {			#Partly for gameplay, but these techs didn't really have the castle-every-100-meters thing going on for the most part
-				OR = {
-					technology_group = central_african
-					technology_group = nomad_group
-					technology_group = sub_saharan
-					technology_group = north_american
-					technology_group = mesoamerican
-					technology_group = south_american
-					technology_group = andean
-				}
-			}
-		}
-	}
+	} 
 }
 
 
@@ -116,13 +74,11 @@ fort_15th = {
 
 
 fort_16th = {
-	cost = 600			#BTAddOn changed from original 400
-	time = 36			#BTAddOn changed from original 30. Increasing build time of later forts by 6 months, 12 months, and 24 months
+	cost = 400
+	time = 30
 	make_obsolete = fort_15th
 	modifier = {
-		fort_level = 2			#BTAddOn changed from 4
-		local_unrest = -1.0			#BTAddOn new
-		local_defensiveness = 0.3			#BTAddOn new
+		fort_level = 4
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -154,47 +110,7 @@ fort_16th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		#BT Addon New factors, range 51 percent to 216.5625 percent
-		modifier = {
-			factor = 1.5
-			FROM = { is_march = yes }
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 0.95
-			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.05
-			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.1
-			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { technology_group = western }			#Partly for gameplay, but Europe became insanely fortified during this period
-		}
-		#Note Eastern, Ottoman, Muslim, East African, Indian, and Chinese tech groups receive no penalty nor bonus
-		modifier = {
-			factor = 0.67
-			FROM = {			#Partly for gameplay, but these techs didn't really have the castle-every-100-meters thing going on for the most part
-				OR = {
-					technology_group = central_african
-					technology_group = nomad_group
-					technology_group = sub_saharan
-					technology_group = north_american
-					technology_group = mesoamerican
-					technology_group = south_american
-					technology_group = andean
-				}
-			}
-		}
-	}
+	} 
 }
 
 ################################################
@@ -204,15 +120,13 @@ fort_16th = {
 
 
 fort_17th = {
-	cost = 900			#BTAddOn changed from original 600
-	time = 48			#BTAddOn changed from original 30. Increasing build time of later forts by 6 months, 12 months, and 24 months
+	cost = 600
+	time = 30
 	
 	make_obsolete = fort_16th
 	
 	modifier = {
-		fort_level = 3			#BTAddOn changed from 6
-		local_unrest = -1.5			#BTAddOn new
-		local_defensiveness = 0.6			#BTAddOn new
+		fort_level = 6
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -244,47 +158,7 @@ fort_17th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		#BT Addon New factors, range 38 percent to 216.5625 percent
-		modifier = {
-			factor = 1.5
-			FROM = { is_march = yes }
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 0.95
-			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.05
-			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.1
-			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { technology_group = western }			#Partly for gameplay, but Europe became insanely fortified during this period
-		}
-		#Note Eastern, Ottoman, Muslim, East African, Indian, and Chinese tech groups receive no penalty nor bonus
-		modifier = {
-			factor = 0.5
-			FROM = {			#Partly for gameplay, but these techs didn't really have the castle-every-100-meters thing going on for the most part
-				OR = {
-					technology_group = central_african
-					technology_group = nomad_group
-					technology_group = sub_saharan
-					technology_group = north_american
-					technology_group = mesoamerican
-					technology_group = south_american
-					technology_group = andean
-				}
-			}
-		}
-	}
+	} 
 }
 
 
@@ -295,16 +169,14 @@ fort_17th = {
 
 
 fort_18th = {
-	cost = 1200			#BTAddOn changed from original 800
-	time = 72			#BTAddOn changed from original 30. Increasing build time of later forts by 6 months (to 3y), then 12 more months (to 4y), and then 24 more months (to 6y)
+	cost = 800
+	time = 30
 	
 	
 	make_obsolete = fort_17th
 	
 	modifier = {
-		fort_level = 5			#BTAddOn changed from 8
-		local_unrest = -2.0			#BTAddOn new
-		local_defensiveness = 1.0			#BTAddOn new
+		fort_level = 8
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -336,66 +208,24 @@ fort_18th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		#BT Addon New factors, range 25 percent to 216.5625 percent
-		modifier = {
-			factor = 1.5
-			FROM = { is_march = yes }
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 0.95
-			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.05
-			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.1
-			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building forts
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { technology_group = western }			#Partly for gameplay, but Europe became insanely fortified during this period
-		}
-		#Note Eastern, Ottoman, Muslim, East African, Indian, and Chinese tech groups receive no penalty nor bonus
-		modifier = {
-			factor = 0.33
-			FROM = {			#Partly for gameplay, but these techs didn't really have the castle-every-100-meters thing going on for the most part
-				OR = {
-					technology_group = central_african
-					technology_group = nomad_group
-					technology_group = sub_saharan
-					technology_group = north_american
-					technology_group = mesoamerican
-					technology_group = south_american
-					technology_group = andean
-				}
-			}
-		}
-	}
+	} 
 }
 
 ################################################
 # Manufactories
 ################################################
-#BTAddOn Notes - While I appreciate the attempt to make these buildings more useful in high autonomy distant regions, I must say I can't quite agree that a flat boost to trade good size is ideal. Historically, manufacturing advancements occured in the heartland of nations, not in remote fringe outposts, and I can't
-#quite agree that a trading company, or a wharf, or whathaveyou, would be increase production equally in some remote arctic or tropical outpost than in a rich, centralised core area. As a result, I'm switching the flat plus 1 to a plus 100 percent. This change will result in no change in provinces with roughly 5 prod,
-#but will mean 1/1/1 provinces recieve roughly 80 percent less effect, and very rich provinces like Paris will see as much as a 200 or even 300 percent greater effect. This will see some massive increases in high dev provinces with valuable trade goods, and also dramatically reduce income from remote low dev colonies.
-#This is intentional.... especially with manufacturing buildings spreading the new institutions, we want these to be like other buildings... best in rich cored states, not something to spam in high autonomy 1/1/1 territories to get rich. Note that provincial bonuses become rather mammoth with this change (Sweden's
-#Great Copper Mountain could reach well in excess of 15-20 goods produced, to the tune of some 200-300 ducats yearly production income from the one province. As a result, I'll likely reduce the provincial bonuses slightly.) This may seem to complicate matters, but I think it solves more problems than it creates.
-#Also introducing some building specific flavour bonuses and adjusting build times for balancing and enjoyability. AI factors also adjusted, mostly stealing from my university AI overhaul, in order to slow down (but not stop) non western techs, while accounting for extraordinary non western powers.
 
 manufactory = {
 	cost = 500
-	time = 36			#BTAddOn changed from 60. 5 year construction times are way out of line with all other buildings, and quite unneccessary, I think. Reducing this to comparable with other buildings.
-	modifier = { }
+	time = 60
+	modifier = {
+		trade_goods_size = 1.0
+		local_state_maintenance_modifier = 0.75
+		local_development_cost = 0.05
+	}
+	
+	
 }
-
-#If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
 
 wharf = {
 	manufactory = {
@@ -403,97 +233,60 @@ wharf = {
 		fish
 		salt
 	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		naval_forcelimit = 1			#BTAddOn new - Just a fun little new bonus
-	}
 	onmap = yes
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
+	}
 
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
 	ai_will_do = {
-		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses. Note vanilla was 1750, but considering this building had the same effect as other manufacturies and they all have factors of 1, I assumed this was a vanilla oversight.
-		#BT Addon removed a bunch of modifiers for the same reason as directly above.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
+		factor = 1750
+		
+		modifier = { 
 			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
+			NOT = { base_production = 6 }
+		}
+		modifier = { 
 			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			base_production = 10
 		}
 		modifier = {
 			factor = 1.5
-			owner = { navy_size_percentage = 0.9 }
+			base_production = 15
+		}
+		modifier = { 
+			factor = 5
+			OR = {
+				has_province_modifier = skanemarket
+				has_province_modifier = comet_ore_modifier
+				has_province_modifier = paradise_modifier
+			}
 		}
 		modifier = {
+			NOT = { num_free_building_slots = 3 }
 			factor = 1.5
-			FROM = { navy_tradition = 50 }
-		}
-		modifier = {
-			factor = 1.1
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_production = 12
 		}
 	}
 }
@@ -503,97 +296,38 @@ weapons = {
 		copper
 		iron
 	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		land_forcelimit = 0.5			#BTAddOn new - Just a fun little new bonus
+	onmap = yes	
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
 	}
-	onmap = yes
 
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
+	
+	
 	ai_will_do = {
-		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.5
-			owner = { army_size_percentage = 0.9 }
-		}
-		modifier = {
-			factor = 1.5
-			FROM = { army_tradition = 50 }
-		}
-		modifier = {
-			factor = 1.1
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_production = 12
-		}
+		factor = 1
 	}
 }
 
@@ -603,103 +337,37 @@ textile = {
 		cloth
 		silk
 		dyes
-		bt_trade_good_books
-	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		local_tax_modifier = 0.25			#BTAddOn new - Just a fun little new bonus
 	}
 	onmap = yes
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
+	}
 
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
 	ai_will_do = {
-		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.1
-			base_tax = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_tax = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_tax = 12
-		}
-		modifier = {
-			factor = 1.1
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_production = 12
-		}
+		factor = 1
 	}
 }
 
@@ -712,89 +380,36 @@ plantations = {
 		tea
 		cocoa
 	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		local_production_efficiency = 0.25			#BTAddOn new - Just a fun little new bonus
-	}
 	onmap = yes
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
+	}
 
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
 	ai_will_do = {
-		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.15
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.3
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.6
-			base_production = 12
-		}
+		factor = 1
 	}
 }
 
@@ -806,105 +421,36 @@ tradecompany = {
 		fur
 		incense
 	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		province_trade_power_modifier = 0.5			#BTAddOn new - Just a fun little new bonus
-	}
 	onmap = yes
 
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
+	}
+
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
 	ai_will_do = {
-		factor = 7			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = trade_ideas }
-		}
-		modifier = {
-			factor = 1.1
-			province_trade_power = 5			#Note trade power 5 is 21 dev non coastal with 0 autonomy, starting mercantalism, and no estate. OR 9 dev coastal with 40 mercantalism, 0 autonomy, burgher estate, max tech, and trade national ideas, OR some combination of the two.
-		}
-		modifier = {
-			factor = 1.2
-			province_trade_power = 8			#Note 8 trade power is between 31 dev and 14 dev (or 3 dev for CoTs), depending on modifiers, estates, mercantalism, autonomy etc.
-		}
-		modifier = {
-			factor = 1.4
-			province_trade_power = 12			#Note 12 trade power is between
-		}
-		modifier = {
-			factor = 1.1
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_production = 12
-		}
+		factor = 1
 	}
 }
 
@@ -913,94 +459,39 @@ farm_estate = {
 		grain
 		livestock
 		wine
-		bt_trade_good_beer
-	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		local_production_efficiency = 0.25			#BTAddOn new - Just a fun little new bonus
 	}
 	onmap = yes
-
-	ai_will_do = {
-		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
 				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
 				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.15
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.3
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.6
-			base_production = 12
 		}
 	}
-}
 
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
 
 mills = {
 	manufactory = {
@@ -1010,101 +501,36 @@ mills = {
 		glass
 		chinaware
 	}
-	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		local_tax_modifier = 0.25			#BTAddOn new - Just a fun little new bonus
-	}
 	onmap = yes
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
+	}
 
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
 	ai_will_do = {
-		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.1
-			base_tax = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_tax = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_tax = 12
-		}
-		modifier = {
-			factor = 1.1
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.2
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.4
-			base_production = 12
-		}
+		factor = 1
 	}
 }
 
@@ -1118,88 +544,39 @@ furnace = {
 	}
 
 	modifier = {
-		trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
-		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
-		global_trade_goods_size_modifier = 0.03			#BTAddOn changed from 0.05. This was just too huge, especially with all the new provinces.
+		global_trade_goods_size_modifier = 0.05 #National Bonus
 	}
+	
+	on_built = {
+		ROOT = {
+			if = {
+			limit = {
+				has_global_flag = no_building_state_maintenance
+			}
+			add_province_modifier = {
+					name = "manufactory_mod"
+					duration = -1
+					hidden = yes
+				}
+				}
+		}
+	}
+
+	on_destroyed = {
+		ROOT = {
+			if = {
+			limit = {
+				has_province_modifier = "manufactory_mod"
+			}
+			remove_province_modifier = "manufactory_mod"
+				}
+		}
+	}
+	
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	ai_will_do = {
-		factor = 9			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
-		#BT Addon New factors, range 2 percent to about 425 percent
-		modifier = {
-			factor = 0.9
-			FROM = { technology_group = eastern }
-		}	#Minor penalty for eastern tech
-		modifier = {
-			factor = 0.6
-			FROM = {
-				OR = {
-					technology_group = ottoman
-					technology_group = muslim
-				}
-			}
-		}	#Lesser penalty for non european medium-high tech groups.
-		modifier = {
-			factor = 0.4
-			FROM = {
-				OR = {
-					technology_group = indian
-					technology_group = east_african
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = central_african
-					technology_group = nomad_group
-				}
-			}
-		}	#Penalty for medium-low tech groups
-		modifier = {
-			factor = 0.2
-			FROM = {
-				OR = {
-					technology_group = mesoamerican
-					technology_group = andean
-					technology_group = north_american
-					technology_group = south_american
-					#Any other future new world cultures should be added here
-				}
-			}
-		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
-		modifier = {
-			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
-			}
-		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above.
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = entrepreneur_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { ruler_has_personality = industrious_personality }
-		}
-		modifier = {
-			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
-		}
-		modifier = {
-			factor = 1.15
-			base_production = 4
-		}
-		modifier = {
-			factor = 1.3
-			base_production = 8
-		}
-		modifier = {
-			factor = 1.6
-			base_production = 12
-		}
+		factor = 1
 	}
 }

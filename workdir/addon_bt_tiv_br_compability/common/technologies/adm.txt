@@ -56,14 +56,15 @@ technology = { #Medieval Administration
 	may_support_rebels = yes
 
 	 infrastructure_lvl_1 = yes
-	 
-}
 
+}
+ 
 technology = { #Temples
 	# Tech 4
 	year = 1453
 	# Temple
 	temple = yes
+	#taxation_lvl_1 = yes
 	max_states = 3
 	terrain_land = yes
 	terrain_woodland = yes
@@ -75,23 +76,24 @@ technology = { #Temples
 technology = { #National Ideas
 	# Tech 5
 	year = 1466
-	 
+
 	terrain_desert = yes
 	terrain_art = yes
 	terrain_coastal = yes
 	terrain_swamp = yes
-	terrain_jungle = yes	
+	terrain_jungle = yes
 	allowed_idea_groups = 3
-	production_efficiency	 =	0.02
+	production_efficiency	=	0.02
 }
 
 technology = { #Workshop
 	# Tech 6
 	year = 1479
-	
+	#government_lvl_1 = yes
+	#production_lvl_1 = yes
+
 	#Workshop
 	farm_estate = yes
-	courthouse = yes
 	workshop = yes
 }
 
@@ -108,8 +110,9 @@ technology = { #Courthouse
 	infrastructure_lvl_2 = yes
 	year = 1505
 	allowed_idea_groups = 5
-	max_states = 3
+	max_states = 4
 	#courthouse = yes
+
 }
 
 technology = { #The Scythe
@@ -117,15 +120,16 @@ technology = { #The Scythe
 	year = 1518
 	production_lvl_2 = yes
 	#The Scythe
-	production_efficiency 	=	0.02
-
+		production_efficiency	=	0.02
+	
 	administrative_efficiency = 0.1
 }
 
 technology = { #Modern Theocracy
 	# Tech 10
 	year = 1531
-	government_lvl_2 = yes
+	#government_lvl_2 = yes
+	town_hall = yes
 	allowed_idea_groups = 6
 	theocratic_government = yes
 }
@@ -146,7 +150,6 @@ technology = { #Early Modern Administration
 	max_states = 4
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	max_states = 3
 }
 
 technology = { #Improved Drainage
@@ -154,13 +157,14 @@ technology = { #Improved Drainage
 	year = 1570
 	
 	#Improved Drainage
-	production_efficiency 	=	0.02
+		production_efficiency	=	0.02
 }
 
 technology = { #Scientific Experimentation
 	# Tech 14
 	year = 1583
-	taxation_lvl_3 = yes
+	#taxation_lvl_3 = yes
+	cathedral = yes
 	plantations = yes
 	allowed_idea_groups	= 8
 }
@@ -179,7 +183,9 @@ technology = { #Metallurgy
 	government_lvl_3 = yes
 	mills = yes
 	allowed_idea_groups = 9
-	production_efficiency 	=	0.02
+	production_efficiency	=	0.02
+
+
 }
 
 technology = { #University
@@ -207,6 +213,7 @@ technology = { #Cathedral
 	taxation_lvl_4 = yes
 	#Cathedral
 	#cathedral = yes
+
 }
 
 technology = { #Absolute Rulership
@@ -215,22 +222,23 @@ technology = { #Absolute Rulership
 	government_lvl_4 = yes
 	allowed_idea_groups = 11
 	republican_dictatorship = yes
-	max_states = 5
+	max_states = 6
 }
 
 technology = { #Land Clearance
 	# Tech 21
 	year = 1674
-
-	#Land Clearance
-	production_efficiency 	=	0.02
 	furnace = yes
+	#Land Clearance
+	production_efficiency	=	0.02
+
 }
 
 technology = { #The Constitution
 	# Tech 22
 	year = 1687
-	production_lvl_4 = yes
+	#production_lvl_4 = yes
+	counting_house = yes
 	allowed_idea_groups = 12
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
@@ -250,7 +258,7 @@ technology = { #Bonds and Tontines
 	# Tech 24
 	year = 1715
 	allowed_idea_groups = 13
-	#counting_house = yes  
+	#counting_house = yes
 	max_states = 5
 }
 
@@ -259,7 +267,7 @@ technology = { #Improved Production
 	year = 1730
 	
 	#Improved Farm Animals
-	production_efficiency 	=	0.02
+	production_efficiency	=	0.02
 }
 
 technology = { #Separation of Powers
@@ -275,7 +283,7 @@ technology = { #Modern Bureaucracy
 
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1	
-	max_states = 5
+	max_states = 8
 }
 
 technology = { #Rotherham Plough
@@ -283,7 +291,7 @@ technology = { #Rotherham Plough
 	year = 1775
 	allowed_idea_groups = 15
 	#Rotherham Plough
-	production_efficiency 	=	0.02
+	production_efficiency	=	0.02
 }
 
 technology = { #Rights of Man
@@ -300,7 +308,7 @@ technology = { #Advanced Production
 	year = 1805
 	
 	#Improved Draft Animals
-	production_efficiency 	=	0.02
+	production_efficiency	=	0.02
 }
 
 technology = { #Revolutionary Ideals
@@ -309,7 +317,7 @@ technology = { #Revolutionary Ideals
 	
 	revolutionary_republic = yes
 	revolutionary_empire = yes
-	max_states = 5
+	max_states = 9
 }
 
 technology = { #Four Field Rotation
@@ -317,5 +325,5 @@ technology = { #Four Field Rotation
 	year = 1835
 	
 	#Four field rotation
-	production_efficiency 	=	0.02
+	production_efficiency	=	0.02
 }

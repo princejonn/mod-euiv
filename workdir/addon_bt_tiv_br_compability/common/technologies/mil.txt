@@ -2,8 +2,8 @@ monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
-	army_tradition_decay = -0.03			#BTAddOn new
-	drill_decay_modifier = -0.03			#BTAddOn new
+	fire_damage = 0.05			#BTAddOn new
+	shock_damage = 0.05			#BTAddOn new
 	#military_tactics 	= 	0.20			#BTAddOn new, but cut again as it didn't work.
 }
 
@@ -90,10 +90,11 @@ technology = {
 technology = {
 	# Tech 4
 	year = 1453
-	
-	#Pike Square
+
 	fortress_keep = yes
 
+	#Pike Square
+	
 	infantry_shock		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
 
 	land_morale = 	0.5
@@ -150,7 +151,7 @@ technology = {
 	
 	
 	manpower_lvl_1 = yes
-	
+
 	#barracks = yes
 
 
@@ -204,7 +205,7 @@ technology = {
 	#Ditch
 	infantry_fire		= 	0.30			#BTAddOn new - Part of tech shock and fire overhaul
 	artillery_fire 		= 	0.60			#BTAddOn new - Part of tech shock and fire overhaul
-
+	
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
 	enable = ottoman_janissary	
@@ -276,8 +277,8 @@ technology = {
 	# Tech 12
 	year = 1557
 	
-	manpower_lvl_2 = yes
-	
+	#manpower_lvl_2 = yes
+	barracks = yes
 	#Spanish Square
 	sprite_level = 2
 	
@@ -357,8 +358,9 @@ technology = {
 	military_tactics	=	0.25
 	
 
-	forcelimit_lvl_2 = yes
-	
+	#forcelimit_lvl_2 = yes
+	regimental_camp = yes
+
 	enable = irish_charge 
 	enable = dutch_maurician	
 	enable = afsharid_reformed_infantry	
@@ -380,6 +382,7 @@ technology = {
 	#artillery_shock 	= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
 	artillery_fire 		= 	0.70			#BTAddOn changed from 1.0 - Part of tech shock and fire overhaul
 
+
 	fortress_artillery = yes
 
 	#training_fields = yes
@@ -397,9 +400,9 @@ technology = {
 	infantry_fire		=	0.30			#BTAddOn new - Part of tech shock and fire overhaul
 	supply_limit		= 	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
 	
-	manpower_lvl_3 = yes
-
-	enable = maharathan_cavalry		
+	 #manpower_lvl_3 = yes
+	training_fields = yes
+	enable = maharathan_cavalry
 	enable = manchu_banner		
 	enable = african_swarm
 }
@@ -468,8 +471,8 @@ technology = {
 	
 	#infantry_fire		= 	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
 	artillery_fire 		= 	0.70			#BTAddOn new - Part of tech shock and fire overhaul
-
-	forcelimit_lvl_3 = yes	
+    #forcelimit_lvl_3 = yes
+    conscription_center = yes
 	enable = swivel_cannon		
 
 	combat_width = 2
@@ -514,9 +517,8 @@ technology = {
 	year = 1700
 	
 	#Light Cavalry
-	
+
 	fortress_wall = yes
-	
 	cavalry_shock		=	0.4			#BTAddOn changed from 1.0 - Part of tech shock and fire overhaul
 	cavalry_fire		=	0.2			#BTAddOn new - Part of tech shock and fire overhaul
 	military_tactics 	= 	0.25
@@ -583,9 +585,9 @@ technology = {
 
 	infantry_fire		= 	0.4			#BTAddOn new - Part of tech shock and fire overhaul
 	land_morale			=	0.5			#BTAddOn changed from 1.0, increasing base morale
-	
+
 	fortress_supply = yes
-	
+
 	enable = austrian_white_coat	
 	enable = french_bluecoat	
 	enable = british_redcoat	
@@ -667,7 +669,7 @@ technology = {
 	
 	#Defense in Depth
 	artillery_fire		=	0.7			#BTAddOn new - Part of tech shock and fire overhaul
-
+		
 	enable = flying_battery  
 }
 
@@ -682,7 +684,7 @@ technology = {
 	land_morale			=	1.0
 	maneuver_value = 0.25
 	infantry_shock		=	0.3			#BTAddOn new - Part of tech shock and fire overhaul
-
+	
 	enable = russian_mass
 	enable = mixed_order_infantry	
 	enable = prussian_drill		

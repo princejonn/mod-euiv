@@ -51,7 +51,7 @@ technology = {
 	range					= 	100
 	trade_efficiency 		= 	0.02
 	global_colonial_growth	= 	15
-
+	
 	enable = early_carrack
 
 
@@ -62,8 +62,10 @@ technology = {
 	year = 1453
 		
 	trade_range	= 10
-	#marketplace = yes 
-	trade_lvl_1 = yes
+	marketplace = yes
+	#trade_lvl_1 = yes
+	
+	
 }
 
 technology = {
@@ -80,9 +82,10 @@ technology = {
 	# Tech 6
 	year = 1479
 	
-	navymanpower_lvl_1 = yes
-	navyforcelimit_lvl_1 = yes
-	#dock = yes
+	#navymanpower_lvl_1 = yes
+	#navyforcelimit_lvl_1 = yes
+	shipyard = yes
+	dock = yes
 	may_steal_maps = yes
 
 }
@@ -94,7 +97,7 @@ technology = {
 	navalbase_lvl_1 = yes
 	naval_morale			=	0.3
 	range					= 	115
-
+	
 }
 
 technology  = {
@@ -102,9 +105,9 @@ technology  = {
 	year = 1505
 	
 	trade_lvl_2 = yes
-	#shipyard = yes	
+	#shipyard = yes
 	num_accepted_cultures = 1
-	
+
 	trade_range				=	10
 	naval_morale			=	0.2
 
@@ -116,7 +119,7 @@ technology = {
 	
 	naval_maintenance		= 	0.1
 	range					=	75			#BTAddOn changed from 50
-
+	
 	enable = carrack
 	enable = caravel
 	may_study_technology = yes
@@ -127,7 +130,7 @@ technology = {
 	# Tech 10
 	year = 1531
 	
-	trade_efficiency 		= 	0.02
+	trade_efficiency		= 	0.02
 	trade_range				=	20
 	global_colonial_growth  = 	10
 	enable = flute
@@ -143,6 +146,7 @@ technology = {
 	wharf = yes
 	navymanpower_lvl_2 = yes
 	navyforcelimit_lvl_2 = yes
+
 }
 
 technology = {
@@ -205,8 +209,8 @@ technology = {
 	trade_range				=	20
 	range					=	100			#BTAddOn changed from 50
 	
-	trade_lvl_3 = yes
-	#trade_depot = yes 
+	#trade_lvl_3 = yes
+	trade_depot = yes 
 
 
 	enable = merchantman
@@ -230,10 +234,10 @@ technology = {
 	naval_maintenance		= 	0.1	
 	#range					=	50			#BTAddOn removed
 	
-	navymanpower_lvl_3 = yes
-	navyforcelimit_lvl_3 = yes
-	
-	#grand_shipyard = yes 
+	#navymanpower_lvl_3 = yes
+	#navyforcelimit_lvl_3 = yes
+	drydock = yes
+	grand_shipyard = yes
 	
 	
 	enable = wargalleon
@@ -248,7 +252,6 @@ technology = {
 	trade_range				=	20
 	num_accepted_cultures = 1
 	
-
 }
 
 technology = {
@@ -268,8 +271,8 @@ technology = {
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1
 	
-	trade_lvl_4 = yes
-	#stock_exchange = yes
+	#trade_lvl_4 = yes
+	stock_exchange = yes
 
 	reduced_naval_attrition = yes
 	enable = twodecker
@@ -281,7 +284,7 @@ technology = {
 	year = 1700
 	
 	navalbase_lvl_2 = yes
-	global_colonial_growth  = 	25	
+	global_colonial_growth  = 	25
 	#range					=	150			#BTAddOn removed
 	allow_client_states = yes		
 
@@ -294,7 +297,7 @@ technology = {
 	year = 1715
 	
 	
-	#drydock = yes 
+	#drydock = yes
 
 	
 	trade_efficiency 		= 	0.02

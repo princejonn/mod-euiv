@@ -339,6 +339,14 @@ estate_nobles =
 		loyalty = 10
 	}
 	#End of Beyond Typus Specials
+	#BR added loyalty modifiers from reforms
+	loyalty_modifier = {
+		desc = EST_VAL_PRONOIAR
+		trigger = {
+			has_reform = pronoiar_reform
+		}
+		loyalty = -20
+	}
 
 	#Alternative naming of estates
 	custom_name = {
