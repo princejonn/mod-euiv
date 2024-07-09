@@ -1,0 +1,2475 @@
+namespace = born_under_a_star
+country_event = {
+	id = born_under_a_star.1
+	title = born_under_a_star.1.t
+	desc = born_under_a_star.1.d
+	picture = NEW_HEIR_eventPicture
+	trigger = {
+		government = monarchy
+		NOT = {
+			has_government_attribute = has_harem_events
+		}
+		NOT = {
+			has_reform = mamluk_government
+		}
+		NOT = {
+			has_reform = elective_monarchy
+		}
+		NOT = {
+			has_reform = polish_elective_monarchy
+		}
+		is_lesser_in_union = no
+		has_heir = no
+		has_regency = no
+		OR = {
+			NOT = {
+				has_dlc = "Rights of Man"
+			}
+			has_consort = yes
+		}
+		has_government_attribute = heir
+		NOT = {
+			religion_group = pagan
+		}
+	}
+	mean_time_to_happen = {
+		months = 3000
+	}
+	## Christian
+	option = {
+		name = born_under_a_star.1.christian_a
+		trigger = {
+			religion_group = christian
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Victoria"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.christian_b
+		trigger = {
+			religion_group = christian
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Leah"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.christian_c
+		trigger = {
+			religion_group = christian
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Aria"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Dharmic
+	option = {
+		name = born_under_a_star.1.dharmic_a
+		trigger = {
+			religion_group = dharmic
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Arundhati"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.dharmic_b
+		trigger = {
+			religion_group = dharmic
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Lakshmi"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.dharmic_c
+		trigger = {
+			religion_group = dharmic
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Rajni"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Eastern
+	option = {
+		name = born_under_a_star.1.eastern_a
+		trigger = {
+			religion_group = eastern
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Amaterasu"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.eastern_b
+		trigger = {
+			religion_group = eastern
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Izanami"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.eastern_c
+		trigger = {
+			religion_group = eastern
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Xiulan"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Jewish
+	option = {
+		name = born_under_a_star.1.jewish_a
+		trigger = {
+			religion_group = jewish_group
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Ayelet"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.jewish_b
+		trigger = {
+			religion_group = jewish_group
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Batel"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.jewish_c
+		trigger = {
+			religion_group = jewish_group
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Malka"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Muslim
+	option = {
+		name = born_under_a_star.1.muslim_a
+		trigger = {
+			religion_group = muslim
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Aliyah"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.muslim_b
+		trigger = {
+			religion_group = muslim
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Malika"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.muslim_c
+		trigger = {
+			religion_group = muslim
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Arwa"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Zoroastrian
+	option = {
+		name = born_under_a_star.1.zoroastrian_a
+		trigger = {
+			religion_group = zoroastrian_group
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Khurshid"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.zoroastrian_b
+		trigger = {
+			religion_group = zoroastrian_group
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Haurvatat"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.zoroastrian_c
+		trigger = {
+			religion_group = zoroastrian_group
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Tahmina"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Animism
+	option = {
+		name = born_under_a_star.1.animism_a
+		trigger = {
+			religion = animism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Mawu"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.animism_b
+		trigger = {
+			religion = animism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Yemoja"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.animism_c
+		trigger = {
+			religion = animism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Oshun"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Inti
+	option = {
+		name = born_under_a_star.1.inti_a
+		trigger = {
+			religion = inti
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Cavillace"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.inti_b
+		trigger = {
+			religion = inti
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Pachamama"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.inti_c
+		trigger = {
+			religion = inti
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Ch'aska"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Mesoamerican
+	option = {
+		name = born_under_a_star.1.mesoamerican_a
+		trigger = {
+			religion = mesoamerican_religion
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Ix Chel"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.mesoamerican_b
+		trigger = {
+			religion = mesoamerican_religion
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Akna"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.mesoamerican_c
+		trigger = {
+			religion = mesoamerican_religion
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Ixkik"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Nahuatl
+	option = {
+		name = born_under_a_star.1.nahuatl_a
+		trigger = {
+			religion = nahuatl
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Xochiquetzal"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.nahuatl_b
+		trigger = {
+			religion = nahuatl
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Coatlicue"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.nahuatl_c
+		trigger = {
+			religion = nahuatl
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Tlazolteotl"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Norse
+	option = {
+		name = born_under_a_star.1.norse_a
+		trigger = {
+			religion = norse_pagan_reformed
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Idunn"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.norse_b
+		trigger = {
+			religion = norse_pagan_reformed
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Frigg"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.norse_c
+		trigger = {
+			religion = norse_pagan_reformed
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Freyja"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Shamanism
+	option = {
+		name = born_under_a_star.1.shamanism_a
+		trigger = {
+			religion = shamanism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Aiyyhyt"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.shamanism_b
+		trigger = {
+			religion = shamanism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Asibikaashi"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.shamanism_c
+		trigger = {
+			religion = shamanism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Sachamama"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Tengri
+	option = {
+		name = born_under_a_star.1.tengri_a
+		trigger = {
+			religion = tengri_pagan_reformed
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Umay"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.tengri_b
+		trigger = {
+			religion = tengri_pagan_reformed
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Eje"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.tengri_c
+		trigger = {
+			religion = tengri_pagan_reformed
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Alasha"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Totemism
+	option = {
+		name = born_under_a_star.1.totemism_a
+		trigger = {
+			religion = totemism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Kunapipi"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.totemism_b
+		trigger = {
+			religion = totemism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Nomkhubulwane"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.totemism_c
+		trigger = {
+			religion = totemism
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Hina"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Byzantium
+	option = {
+		name = born_under_a_star.1.byz_a
+		trigger = {
+			tag = BYZ
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Theodora"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.byz_b
+		trigger = {
+			tag = BYZ
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Irene"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.byz_c
+		trigger = {
+			tag = BYZ
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Zoe"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## England
+	option = {
+		name = born_under_a_star.1.eng_a
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Elizabeth"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.eng_b
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Victoria"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.eng_c
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Anne"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Germany / Prussia
+	option = {
+		name = born_under_a_star.1.ger_a
+		trigger = {
+			OR = {
+				tag = GER
+				tag = PRU
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Sophia Charlotte"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.ger_b
+		trigger = {
+			OR = {
+				tag = GER
+				tag = PRU
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Augusta Victoria"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.ger_c
+		trigger = {
+			OR = {
+				tag = GER
+				tag = PRU
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Louise"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Habsburg (Austria/Hungary)
+	option = {
+		name = born_under_a_star.1.hab_a
+		trigger = {
+			OR = {
+				tag = AUH
+				tag = HAB
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Maria Theresa"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.hab_b
+		trigger = {
+			OR = {
+				tag = AUH
+				tag = HAB
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Elisabeth"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.hab_c
+		trigger = {
+			OR = {
+				tag = AUH
+				tag = HAB
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Maria Antonia"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Roman Empire
+	option = {
+		name = born_under_a_star.1.rom_a
+		trigger = {
+			OR = {
+				tag = ROM
+				tag = HLR
+				tag = LAE
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Julia Augusta"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.rom_b
+		trigger = {
+			OR = {
+				tag = ROM
+				tag = HLR
+				tag = LAE
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Cornelia"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.rom_c
+		trigger = {
+			OR = {
+				tag = ROM
+				tag = HLR
+				tag = LAE
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Helena"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	## Sweden
+	option = {
+		name = born_under_a_star.1.swe_a
+		trigger = {
+			tag = SWE
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Victoria"
+			claim = 100
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.swe_b
+		trigger = {
+			tag = SWE
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Kristina"
+			claim = 100
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star.1.swe_c
+		trigger = {
+			tag = SWE
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Ulrika Eleonora"
+			claim = 100
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+	##
+	## Fallback
+	##
+	option = {
+		name = born_under_a_star.1.fallback
+		trigger = {
+			NOT = {
+				religion_group = christian
+			}
+			NOT = {
+				religion_group = dharmic
+			}
+			NOT = {
+				religion_group = eastern
+			}
+			NOT = {
+				religion_group = jewish_group
+			}
+			NOT = {
+				religion_group = muslim
+			}
+			NOT = {
+				religion_group = zoroastrian_group
+			}
+			NOT = {
+				religion = animism
+			}
+			NOT = {
+				religion = inti
+			}
+			NOT = {
+				religion = mesoamerican_religion
+			}
+			NOT = {
+				religion = nahuatl
+			}
+			NOT = {
+				religion = norse_pagan_reformed
+			}
+			NOT = {
+				religion = shamanism
+			}
+			NOT = {
+				religion = tengri_pagan_reformed
+			}
+			NOT = {
+				religion = totemism
+			}
+			NOT = {
+				tag = SWE
+			}
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			NOT = {
+				tag = AUH
+			}
+			NOT = {
+				tag = HAB
+			}
+			NOT = {
+				tag = GER
+			}
+			NOT = {
+				tag = PRU
+			}
+			NOT = {
+				tag = BYZ
+			}
+			NOT = {
+				tag = HLR
+			}
+			NOT = {
+				tag = LAE
+			}
+			NOT = {
+				tag = ROM
+			}
+		}
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Leah"
+			claim = 100
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+	}
+}

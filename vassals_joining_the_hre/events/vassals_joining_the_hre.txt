@@ -1,0 +1,70 @@
+namespace = vassals_joining_the_hre
+country_event = {
+	id = vassals_joining_the_hre.1
+	title = vassals_joining_the_hre.1.t
+	desc = vassals_joining_the_hre.1.d
+	picture = HRE_eventPicture
+	trigger = {
+		is_part_of_hre = yes
+		is_emperor = yes
+		imperial_influence = 10
+		any_subject_country = {
+			is_part_of_hre = no
+			is_vassal = yes
+			NOT = {
+				total_development = 800
+			}
+			has_opinion = {
+				who = FROM
+				value = 100
+			}
+			OR = {
+				any_neighbor_country = {
+					is_part_of_hre = yes
+				}
+				capital_scope = {
+					is_island = yes
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	immediate = {
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_part_of_hre = no
+					is_vassal = yes
+					NOT = {
+						total_development = 800
+					}
+					has_opinion = {
+						who = FROM
+						value = 100
+					}
+					OR = {
+						any_neighbor_country = {
+							is_part_of_hre = yes
+						}
+						capital_scope = {
+							is_island = yes
+						}
+					}
+				}
+				set_in_empire = yes
+				every_province = {
+					limit = {
+						is_part_of_hre = no
+						owned_by = FROM
+					}
+					set_in_empire = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = vassals_joining_the_hre.1.a
+	}
+}

@@ -1,0 +1,16 @@
+With this mod, you will be able to have your vassals join the HRE! Every so often, an event will fire that will make one of your vassals into a HRE prince instead. This is intended to be a balanced way of adding more princes to your vassal swarm through diplomacy.
+
+Requirements for the event to trigger:
+[list]
+    [*] You need to be emperor
+    [*] You need to have at least 10 Imperial Authority
+    [*] Your vassal must be outside the HRE
+    [*] Your vassal must have less than 800 total development
+    [*] Your vassal must have 100 opinion of you
+    [*] Your vassal must have a neighbour country that is already in the HRE - or be an island nation
+[/list]
+
+Mean time to happen: 6 months.
+
+[i]If you want to cheat your way to this event, all you need to do is open the console and type in:
+[b]event vassals_joining_the_hre.1[/b][/i]
