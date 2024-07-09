@@ -1,0 +1,28 @@
+namespace = burgundian_succession
+country_event = {
+	id = burgundian_succession.1
+	fire_only_once = yes
+	trigger = {
+		tag = BUR
+		has_country_modifier = burgundian_succession_crisis
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+		is_year = 1455
+		was_player = no
+		has_ruler = "Charles"
+		dynasty = "de Bourgogne"
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	immediate = {
+		hidden_effect = {
+			kill_ruler = yes
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
