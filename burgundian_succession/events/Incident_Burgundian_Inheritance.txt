@@ -341,11 +341,11 @@ country_event = {
 			modifier = {
 				factor = 999
 				emperor = {
-					was_player = yes
+					ai = no
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 999
 				has_opinion = {
 					who = emperor
 					value = 100
@@ -361,7 +361,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 99
 				alliance_with = emperor
 			}
 			modifier = {
@@ -396,9 +396,9 @@ country_event = {
 		every_subject_country = {
 			limit = {
 				ai = yes
-				NOT = {
-					tag = NEV
-				}
+				# NOT = {
+				# 	tag = NEV
+				# }
 				capital_scope = {
 					OR = {
 						region = france_region
@@ -469,7 +469,7 @@ country_event = {
 			modifier = {
 				factor = 999
 				event_target:bur_strongest_ally = {
-					was_player = yes
+					ai = no
 				}
 			}
 			modifier = {
@@ -603,7 +603,7 @@ country_event = {
 			modifier = {
 				factor = 999
 				FRA = {
-					was_player = yes
+					ai = no
 				}
 			}
 			modifier = {

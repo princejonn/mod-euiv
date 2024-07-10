@@ -17,6 +17,8 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+			kill_heir = {
+			}
 			kill_ruler = yes
 		}
 	}
