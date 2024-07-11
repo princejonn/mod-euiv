@@ -83,3 +83,88 @@
   born_under_a_star.1.swe_c:0 "I shall name her Ulrika Eleonora"
 
   born_under_a_star.1.fallback:0 "I shall name her Leah"
+
+  born_under_a_star.2.t:0 "Born under a Star"
+  born_under_a_star.2.d:0 "The thread of fate is fickle, and balances on the razor's edge between the sublime and the eternal. Fickle, are the vagaries of destiny. Jupiter ascendant, and the moon is in the seventh house. Who he is, I do not know, but the stars foretell that a man born to a royal house on this day, shall one day be the ruler of a mighty kingdom.' Thus the astrologer spoke. Today, the Queen gave birth to a child."
+
+  born_under_a_star.2.christian_a:0 "I shall name him Victor"
+  born_under_a_star.2.christian_b:0 "I shall name him Leo"
+  born_under_a_star.2.christian_c:0 "I shall name him Alexander"
+
+  born_under_a_star.2.dharmic_a:0 "I shall name him Ashoka"
+  born_under_a_star.2.dharmic_b:0 "I shall name him Chandragupta"
+  born_under_a_star.2.dharmic_c:0 "I shall name him Rajendra"
+
+  born_under_a_star.2.eastern_a:0 "I shall name him Oda"
+  born_under_a_star.2.eastern_b:0 "I shall name him Tokugawa"
+  born_under_a_star.2.eastern_c:0 "I shall name him Qianlong"
+
+  born_under_a_star.2.jewish_a:0 "I shall name him David"
+  born_under_a_star.2.jewish_b:0 "I shall name him Eli"
+  born_under_a_star.2.jewish_c:0 "I shall name him Solomon"
+
+  born_under_a_star.2.muslim_a:0 "I shall name him Saladin"
+  born_under_a_star.2.muslim_b:0 "I shall name him Suleiman"
+  born_under_a_star.2.muslim_c:0 "I shall name him Akbar"
+
+  born_under_a_star.2.zoroastrian_a:0 "I shall name him Ardashir"
+  born_under_a_star.2.zoroastrian_b:0 "I shall name him Farrokh"
+  born_under_a_star.2.zoroastrian_c:0 "I shall name him Rostam"
+
+  born_under_a_star.2.animism_a:0 "I shall name him Shaka"
+  born_under_a_star.2.animism_b:0 "I shall name him Kamehameha"
+  born_under_a_star.2.animism_c:0 "I shall name him Cetshwayo"
+
+  born_under_a_star.2.inti_a:0 "I shall name him Pachacuti"
+  born_under_a_star.2.inti_b:0 "I shall name him Tupac"
+  born_under_a_star.2.inti_c:0 "I shall name him Atahualpa"
+
+  born_under_a_star.2.mesoamerican_a:0 "I shall name him Chak Tok Ich'aak"
+  born_under_a_star.2.mesoamerican_b:0 "I shall name him Siyaj Chan K'awiil"
+  born_under_a_star.2.mesoamerican_c:0 "I shall name him Yik'in Chan K'awiil"
+
+  born_under_a_star.2.nahuatl_a:0 "I shall name him Cuauhtemoc"
+  born_under_a_star.2.nahuatl_b:0 "I shall name him Nezahualcoyotl"
+  born_under_a_star.2.nahuatl_c:0 "I shall name him Cuitlahuac"
+
+  born_under_a_star.2.norse_a:0 "I shall name him Ragnar"
+  born_under_a_star.2.norse_b:0 "I shall name him Harald"
+  born_under_a_star.2.norse_c:0 "I shall name him Sune"
+
+  born_under_a_star.2.shamanism_a:0 "I shall name him Sitting Bull"
+  born_under_a_star.2.shamanism_b:0 "I shall name him Crazy Horse"
+  born_under_a_star.2.shamanism_c:0 "I shall name him Tecumseh"
+
+  born_under_a_star.2.tengri_a:0 "I shall name him Genghis"
+  born_under_a_star.2.tengri_b:0 "I shall name him Kublai"
+  born_under_a_star.2.tengri_c:0 "I shall name him Subutai"
+
+  born_under_a_star.2.totemism_a:0 "I shall name him Powhatan"
+  born_under_a_star.2.totemism_b:0 "I shall name him Pontiac"
+  born_under_a_star.2.totemism_c:0 "I shall name him Geronimo"
+
+  born_under_a_star.2.byz_a:0 "I shall name him Constantine"
+  born_under_a_star.2.byz_b:0 "I shall name him Justinian"
+  born_under_a_star.2.byz_c:0 "I shall name him Heraclius"
+
+  born_under_a_star.2.eng_a:0 "I shall name him Edward"
+  born_under_a_star.2.eng_b:0 "I shall name him Henry"
+  born_under_a_star.2.eng_c:0 "I shall name him Richard"
+
+  born_under_a_star.2.ger_a:0 "I shall name him Frederick"
+  born_under_a_star.2.ger_b:0 "I shall name him Wilhelm"
+  born_under_a_star.2.ger_c:0 "I shall name him Otto"
+
+  born_under_a_star.2.hab_a:0 "I shall name him Charles"
+  born_under_a_star.2.hab_b:0 "I shall name him Ferdinand"
+  born_under_a_star.2.hab_c:0 "I shall name him Leopold"
+
+  born_under_a_star.2.rom_a:0 "I shall name him Augustus"
+  born_under_a_star.2.rom_b:0 "I shall name him Marcus"
+  born_under_a_star.2.rom_c:0 "I shall name him Gaius Julius"
+
+  born_under_a_star.2.swe_a:0 "I shall name him Gustav"
+  born_under_a_star.2.swe_b:0 "I shall name him Karl"
+  born_under_a_star.2.swe_c:0 "I shall name him Johan"
+
+  born_under_a_star.2.fallback:0 "I shall name him Alexander"

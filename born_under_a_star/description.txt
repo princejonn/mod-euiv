@@ -1,6 +1,6 @@
 Many of us probably have fond memories when the [b]Lux Stella[/b] event triggers in our campaigns. Finally - a worthy heir!
 
-This mod introduces the [b]Born under a Star[/b] event. It's similar to [b]Lux Stella[/b], only with women. Hooray!
+This mod introduces the [b]Born under a Star[/b] event. It's similar to [b]Lux Stella[/b], only with women. Hooray! I've also expanded upon the event for male heirs and given it a wider range of names.
 
 [i]If you want to cheat your way to this event, all you need to do is open the console and type in:
-[b]event born_under_a_star.1[/b][/i]
+[b]event born_under_a_star.1[/b] for a female heir and [b]event born_under_a_star.2[/b] for a male heir[/i]
