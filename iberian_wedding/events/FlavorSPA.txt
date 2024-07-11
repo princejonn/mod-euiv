@@ -2619,13 +2619,13 @@ country_event = {
 			dynasty = HAB
 		}
 		FRA = {
-			is_rival = HAB
+			# is_rival = HAB
 			is_rival = ROOT
 		}
 		NOT = {
 			OR = {
-				is_rival = HAB
-				war_with = HAB
+				# is_rival = HAB
+				# war_with = HAB
 				HAB = {
 					is_rival = SPA
 				}

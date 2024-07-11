@@ -519,25 +519,25 @@ country_event = {
 		}
 		custom_tooltip = marry_strong_ally_tt
 		#Absorb subjects
-		if = {
-			limit = {
-				NEV = {
-					is_subject_of = ROOT
-				}
-				FRA = {
-					exists = yes
-				}
-			}
-			FRA = {
-				vassalize = NEV
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		NEV = {
+		# 			is_subject_of = ROOT
+		# 		}
+		# 		FRA = {
+		# 			exists = yes
+		# 		}
+		# 	}
+		# 	FRA = {
+		# 		vassalize = NEV
+		# 	}
+		# }
 		every_subject_country = {
 			limit = {
 				ai = yes
-				NOT = {
-					tag = NEV
-				}
+				# NOT = {
+				# 	tag = NEV
+				# }
 				capital_scope = {
 					OR = {
 						region = france_region
