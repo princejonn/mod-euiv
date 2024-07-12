@@ -1,0 +1,46 @@
+namespace = hre_pu_event
+# Byzantium
+country_event = {
+	id = hre_pu_event.1
+	title = hre_pu_event.1.t
+	desc = hre_pu_event.1.d
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		has_dlc = "Emperor"
+		tag = HAB
+		is_subject = no
+		ai = no
+		emperor = {
+			tag = HAB
+		}
+		is_year = 1445
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	immediate = {
+		emperor = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 600
+				target = BYZ
+			}
+		}
+	}
+	option = {
+		name = hre_pu_event.1.o
+		ai_chance = {
+			factor = 10
+		}
+		tooltip = {
+			emperor = {
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 600
+					target = BYZ
+				}
+			}
+		}
+	}
+}
