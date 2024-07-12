@@ -383,7 +383,8 @@ country_event = {
 			junior_union_with = ARA
 		}
 		NOT = {
-			is_year = 1500
+			## Modded to happen earlier if possible
+			is_year = 1450
 		}
 	}
 	mean_time_to_happen = {
