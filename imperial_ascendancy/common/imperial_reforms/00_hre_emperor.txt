@@ -276,7 +276,15 @@ emperor_erbkaisertum = {
 				hre_religion_locked = no
 				hre_religion_treaty = no
 			}
-			set_hre_religion_treaty = yes
+			emperor = {
+				country_event = {
+					id = select_hre_religion.1
+					days = 15
+				}
+				tooltip = {
+					set_hre_religion_treaty = yes
+				}
+			}
 		}
 		hre_inheritable = yes
 	}

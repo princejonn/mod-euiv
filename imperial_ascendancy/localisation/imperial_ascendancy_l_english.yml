@@ -1,0 +1,12 @@
+﻿l_english:
+  select_hre_religion.2.t:0 "Erbkaisertum Diet"
+  select_hre_religion.2.d:0 "The Treaty of Westphalia has been signed. The Imperial Parliament has convened in a Diet to proclaim Catholicism to be the sole confessional faith of the Holy Roman Empire. Electors who follow a different confession will be stripped of their privileges, and the Emperor is given broad authority to enforce religious unity within the Empire."
+  select_hre_religion.2.o:0 "A.E.I.O.U."
+
+  select_hre_religion.3.t:0 "Erbkaisertum Diet"
+  select_hre_religion.3.d:0 "The Treaty of Westphalia has been signed. The Imperial Parliament has convened in a Diet to proclaim Protestantism to be the sole confessional faith of the Holy Roman Empire. Electors who follow a different confession will be stripped of their privileges, and the Emperor is given broad authority to enforce religious unity within the Empire."
+  select_hre_religion.3.o:0 "A.E.I.O.U."
+
+  select_hre_religion.4.t:0 "Erbkaisertum Diet"
+  select_hre_religion.4.d:0 "The Treaty of Westphalia has been signed. The Imperial Parliament has convened in a Diet to proclaim Religious Peace to be the law of the land. The Empire will remain divided between Catholics and Protestants, and the Emperor is given broad authority to enforce religious unity within the Empire."
+  select_hre_religion.4.o:0 "A.E.I.O.U."
