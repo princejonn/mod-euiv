@@ -1,15 +1,13 @@
 namespace = vassals_joining_the_hre
 country_event = {
 	id = vassals_joining_the_hre.1
-	title = vassals_joining_the_hre.1.t
-	desc = vassals_joining_the_hre.1.d
-	picture = HRE_eventPicture
+	hidden = yes
 	trigger = {
 		is_part_of_hre = yes
 		is_emperor = yes
 		imperial_influence = 10
+		ai = no
 		any_subject_country = {
-			is_part_of_hre = no
 			is_vassal = yes
 			NOT = {
 				total_development = 800
@@ -17,6 +15,9 @@ country_event = {
 			has_opinion = {
 				who = FROM
 				value = 100
+			}
+			any_province = {
+				is_part_of_hre = no
 			}
 			OR = {
 				any_neighbor_country = {
@@ -29,16 +30,15 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 	immediate = {
 		hidden_effect = {
 			emperor = {
-				add_imperial_influence = 5
+				add_imperial_influence = 1
 			}
 			random_subject_country = {
 				limit = {
-					is_part_of_hre = no
 					is_vassal = yes
 					NOT = {
 						total_development = 800
@@ -46,6 +46,9 @@ country_event = {
 					has_opinion = {
 						who = FROM
 						value = 100
+					}
+					any_province = {
+						is_part_of_hre = no
 					}
 					OR = {
 						any_neighbor_country = {
@@ -57,10 +60,14 @@ country_event = {
 					}
 				}
 				set_in_empire = yes
-				every_province = {
+				random_province = {
 					limit = {
-						is_part_of_hre = no
 						owned_by = FROM
+						is_core = FROM
+						is_part_of_hre = no
+						any_neighbor_province = {
+							is_part_of_hre = yes
+						}
 					}
 					set_in_empire = yes
 				}
@@ -68,6 +75,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = vassals_joining_the_hre.1.a
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
