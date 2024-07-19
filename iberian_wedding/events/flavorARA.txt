@@ -383,8 +383,8 @@ country_event = {
 			junior_union_with = ARA
 		}
 		NOT = {
-			## Modded to happen earlier if possible
-			is_year = 1450
+			## Modded to happen later if possible
+			is_year = 1550
 		}
 	}
 	mean_time_to_happen = {
@@ -402,6 +402,13 @@ country_event = {
 				CAS = {
 					exists = yes
 					ai = yes
+				}
+				factor = 999
+			}
+			modifier = {
+				BYZ = {
+					exists = yes
+					ai = no
 				}
 				factor = 999
 			}
@@ -431,7 +438,7 @@ country_event = {
 		}
 		add_legitimacy = -25
 		NAP = {
-			add_liberty_desire = 25
+			add_liberty_desire = 5
 		}
 	}
 }
