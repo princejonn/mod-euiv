@@ -7,13 +7,13 @@ country_event = {
 		has_country_modifier = burgundian_succession_crisis
 		is_free_or_tributary_trigger = yes
 		government = monarchy
-		is_year = 1455
+		is_year = 1473
 		ai = yes
 		has_ruler = "Charles"
 		dynasty = "de Bourgogne"
 	}
 	mean_time_to_happen = {
-		months = 6
+		months = 24
 	}
 	immediate = {
 		hidden_effect = {
