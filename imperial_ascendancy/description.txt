@@ -1,3 +1,11 @@
 So you want to play as Austria and have a good time as the HRE, but some of the events and triggers are just not going your way?
 
 This mod will make some small adjustments in your favour, and make certain events much more likely to trigger.
+
+[list]
+  [*] Increase the amount of free cities from 12 to 15 so that you can add 3 more of your liking when the game starts.
+  [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
+  [*] You will get an event for a Personal Union casus belli on Milan as player Austria.
+  [*] You will get an event for a Personal Union casus belli on Byzantium as player Austria.
+  [*] When you click Erbkaisertum, you will be allowed to select if you want to enforce your Catholicism (or protestantism), or if you wish to enact religious peace.
+[/list]

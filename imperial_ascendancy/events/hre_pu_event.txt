@@ -2,8 +2,8 @@ namespace = hre_pu_event
 # Byzantium
 country_event = {
 	id = hre_pu_event.1
-	title = hre_pu_event.1.t
-	desc = hre_pu_event.1.d
+	title = hre_pu_event.1.title
+	desc = hre_pu_event.1.desc
 	picture = BYZ_BYZANTINE_EAGLE_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -29,7 +29,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hre_pu_event.1.o
+		name = hre_pu_event.1.a
 		ai_chance = {
 			factor = 10
 		}
