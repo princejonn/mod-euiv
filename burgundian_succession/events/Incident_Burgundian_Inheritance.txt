@@ -151,6 +151,26 @@ country_event = {
 		name = "incidents_bur_inheritance.1.a"
 		ai_chance = {
 			factor = 1
+			## Modded
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						has_saved_event_target = bur_strongest_ally
+						event_target:bur_strongest_ally = {
+							ai = no
+						}
+					}
+					emperor = {
+						exists = yes
+						ai = no
+					}
+					FRA = {
+						exists = yes
+						ai = no
+					}
+				}
+			}
 			modifier = {
 				factor = 5
 				is_great_power = yes
@@ -273,6 +293,26 @@ country_event = {
 		name = "incidents_bur_inheritance.1.b"
 		ai_chance = {
 			factor = 1
+			## Modded
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						has_saved_event_target = bur_strongest_ally
+						event_target:bur_strongest_ally = {
+							ai = no
+						}
+					}
+					emperor = {
+						exists = yes
+						ai = no
+					}
+					FRA = {
+						exists = yes
+						ai = no
+					}
+				}
+			}
 			modifier = {
 				factor = 1.2
 				army_strength = {
@@ -339,13 +379,14 @@ country_event = {
 			factor = 10
 			## Modded
 			modifier = {
-				factor = 999
+				factor = 1000
 				emperor = {
 					ai = no
 				}
 			}
+			## Modded
 			modifier = {
-				factor = 999
+				factor = 1000
 				has_opinion = {
 					who = emperor
 					value = 100
@@ -467,7 +508,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				factor = 999
+				factor = 1000
 				event_target:bur_strongest_ally = {
 					ai = no
 				}
@@ -601,7 +642,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				factor = 999
+				factor = 1000
 				FRA = {
 					ai = no
 				}
