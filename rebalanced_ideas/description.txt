@@ -1,0 +1,9 @@
+The basic ideas in EUIV are pretty well balanced imho. However, there are a few details that need tweaking to be great.
+
+In this mod I aim to rebalance the ideas and have them make slightly more sense. Changes below:
+
+[list]
+  [*] Add another pronoiar to Administrative ideas.
+  [*] Add another diplomatic relation slot to Diplomatic ideas.
+  [*] Allow AI subjects to take Exploration ideas, so that they start expanding their (or your) colonnial empire.
+[/list]

@@ -507,7 +507,7 @@ diplomatic_ideas = {
 		dip_advisor_cost = -0.25
 	}
 	cabinet = {
-		diplomatic_upkeep = 1
+		diplomatic_upkeep = 2
 	}
 	benign_diplomats = {
 		improve_relation_modifier = 0.25
@@ -963,8 +963,9 @@ exploration_ideas = {
 			primitives = yes
 		}
 		modifier = {
-			factor = 0
-			current_age = age_of_revolutions			#too late
+			## Modified
+			factor = 0.5
+			current_age = age_of_revolutions
 		}
 		modifier = {
 			factor = 0
@@ -1042,10 +1043,12 @@ exploration_ideas = {
 			factor = 0.1
 			capital_scope = {
 				NOT = {
-					region = france_region
-					region = iberia_region
-					region = british_isles_region
-					region = low_countries_region
+					OR = {
+						region = france_region
+						region = iberia_region
+						region = british_isles_region
+						region = low_countries_region
+					}
 				}
 			}
 			NOT = {
@@ -1084,7 +1087,7 @@ exploration_ideas = {
 			num_of_ports = 15
 		}
 		modifier = {
-			factor = 2
+			factor = 10
 			num_of_ports = 20
 		}
 		modifier = {
@@ -1096,13 +1099,21 @@ exploration_ideas = {
 			}
 		}
 		modifier = {
-			factor = 10
+			## Modified
+			factor = 20
 			OR = {
 				tag = GBR
 				tag = NED
 				tag = ENG
 				tag = FRA
 				tag = KUR
+			}
+		}
+		modifier = {
+			## Modified
+			factor = 20
+			OR = {
+				tag = SWE
 			}
 		}
 	}
@@ -1314,7 +1325,7 @@ quantity_ideas = {
 	category = MIL
 	bonus = {
 		land_forcelimit_modifier = 0.33
-		num_of_pronoiars = 2
+		num_of_pronoiars = 1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
@@ -1467,9 +1478,11 @@ expansion_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = muslim
+				}
 			}
 		}
 	}

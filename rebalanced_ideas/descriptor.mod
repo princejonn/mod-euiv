@@ -1,8 +1,8 @@
-name="Unlock Subject Ideas"
+name="Rebalanced Ideas"
 tags={
-	"events"
+	"balance"
 }
 picture="thumbnail.png"
-version="2"
+version="3"
 supported_version="v1.37.2.0"
 remote_file_id="3292664765"

@@ -1,9 +1,9 @@
-name="Unlock Subject Ideas"
+name="Rebalanced Ideas"
 tags={
-	"events"
+	"balance"
 }
 picture="thumbnail.png"
-version="2"
+version="3"
 supported_version="v1.37.2.0"
-path="/Users/jonn/Documents/Paradox Interactive/Europa Universalis IV/mod/unlock_subject_ideas"
+path="/Users/jonn/Documents/Paradox Interactive/Europa Universalis IV/mod/rebalanced_ideas"
 remote_file_id="3292664765"
