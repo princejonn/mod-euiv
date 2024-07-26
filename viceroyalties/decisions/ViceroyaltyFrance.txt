@@ -1,0 +1,30 @@
+country_decisions = {
+	## France
+	create_viceroyalty_france = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = france
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = france
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = FRA
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = france
+				NEWTAG = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

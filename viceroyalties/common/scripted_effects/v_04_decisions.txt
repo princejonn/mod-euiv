@@ -1,0 +1,12 @@
+viceroyalty_effect = {
+	hidden_effect = {
+		create_viceroyalty_for_new_subject = {
+			SECTOR = $SECTOR$
+			OVERLORD = ROOT
+			SUBJECT = $NEWTAG$
+		}
+	}
+	add_adm_power = -120
+	add_dip_power = 120
+	add_prestige = 10
+}

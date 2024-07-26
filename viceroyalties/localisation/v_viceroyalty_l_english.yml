@@ -1,0 +1,31 @@
+﻿l_english:
+  # government_names
+  VICEROYALTY: "Viceroyalty"
+  VICEROYALTY_LEADER: "Viceroy"
+ 
+  # new_diplomatic_actions
+  establish_viceroyalty_from_vassal_title: "Establish Viceroyalty"
+  establish_viceroyalty_from_vassal_desc: "Make your vassal [From.GetName] to a §YViceroyalty§!."
+  establish_viceroyalty_from_vassal_tooltip: "Make your vassal [From.GetName] to a §YViceroyalty§!.\n"
+
+  # opinion_modifiers
+  is_viceroyalty: "Viceroyalty"
+
+  # static_modifiers
+  viceroyalty_overlord_small: "Viceroyalty"
+  viceroyalty_overlord_medium: "Viceroyalty"
+  viceroyalty_overlord_large: "Viceroyalty"
+  viceroyalty_subject: "Viceroyalty"
+
+  # subject_types
+  viceroyalty: "Viceroyalty"
+  viceroyalty_title: "Viceroyalty"
+  viceroyalty_title_plural: "Viceroyalties"
+  viceroyalty_is_our: "§Y$NAME$§! is our Viceroyalty."
+  viceroyalty_long_desc: "A Viceroyalty is a subject that is granted a large degree of autonomy, but is still ultimately loyal to its parent country."
+  viceroyalty_no_overlord_dow: "You cannot declare war on your own Viceroyalty."
+  viceroyalty_overlord_title: "Overlord"
+
+  # tooltips
+  TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL: "Vassal must own at least half provinces in the region"
+  TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_IN_SECTOR: "You must own at least half provinces in the region"

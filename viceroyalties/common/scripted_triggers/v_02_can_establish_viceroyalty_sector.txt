@@ -1,0 +1,305 @@
+# can_establish_viceroyalty_xxx = {
+# 	can_establish_viceroyalty_fn = {
+# 		SECTOR = xxx
+# 		AMOUNT = 0		# total: 0
+# 	}
+# }
+#
+## Anatolia
+can_establish_viceroyalty_eretna = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = eretna
+		AMOUNT = 7		# total: 12
+	}
+}
+
+can_establish_viceroyalty_turkey = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = turkey
+		AMOUNT = 15		# total: 28
+	}
+}
+
+can_establish_viceroyalty_trebizond = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = trebizond
+		AMOUNT = 6		# total: 11
+	}
+}
+
+## Armenia
+can_establish_viceroyalty_armenia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = armenia
+		AMOUNT = 15		# total: 28
+	}
+}
+
+## Balkans
+can_establish_viceroyalty_dalmatia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = dalmatia
+		AMOUNT = 12		# total: 23
+	}
+}
+
+can_establish_viceroyalty_greece = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = greece
+		AMOUNT = 19		# total: 37
+	}
+}
+
+## Baltic
+can_establish_viceroyalty_estonia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = estonia
+		AMOUNT = 3		# total: 4
+	}
+}
+
+can_establish_viceroyalty_latvia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = latvia
+		AMOUNT = 4		# total: 6
+	}
+}
+
+can_establish_viceroyalty_lithuania = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = lithuania
+		AMOUNT = 5		# total: 9
+	}
+}
+
+## Britain
+can_establish_viceroyalty_england = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = england
+		AMOUNT = 14		# total: 26
+	}
+}
+
+can_establish_viceroyalty_ireland = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = ireland
+		AMOUNT = 7		# total: 13
+	}
+}
+
+can_establish_viceroyalty_scotland = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = scotland
+		AMOUNT = 7		# total: 13
+	}
+}
+
+can_establish_viceroyalty_wales = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = wales
+		AMOUNT = 3		# total: 4
+	}
+}
+
+## Carpathia
+can_establish_viceroyalty_hungary = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = hungary
+		AMOUNT = 9		# total: 16
+	}
+}
+
+can_establish_viceroyalty_romania = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = romania
+		AMOUNT = 9		# total: 17
+	}
+}
+
+## Egypt
+can_establish_viceroyalty_egypt = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = egypt
+		AMOUNT = 14		# total: 27
+	}
+}
+
+## France
+can_establish_viceroyalty_france = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = france
+		AMOUNT = 32		# total: 62
+	}
+}
+
+## Germany
+can_establish_viceroyalty_austria = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = austria
+		AMOUNT = 7		# total: 12
+	}
+}
+
+can_establish_viceroyalty_bohemia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = bohemia
+		AMOUNT = 6		# total: 11
+	}
+}
+
+can_establish_viceroyalty_germany = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = germany
+		AMOUNT = 42		# total: 82
+	}
+}
+
+can_establish_viceroyalty_prussia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = prussia
+		AMOUNT = 16		# total: 30
+	}
+}
+
+can_establish_viceroyalty_switzerland = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = switzerland
+		AMOUNT = 6		# total: 10
+	}
+}
+
+## Iberia
+can_establish_viceroyalty_portugal = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = portugal
+		AMOUNT = 6		# total: 10
+	}
+}
+
+can_establish_viceroyalty_spain = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = spain
+		AMOUNT = 26		# total: 50
+	}
+}
+
+## Italy
+can_establish_viceroyalty_italy = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = italy
+		AMOUNT = 28		# total: 55
+	}
+}
+
+## Maghreb
+can_establish_viceroyalty_algiers = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = algiers
+		AMOUNT = 11		# total: 20
+	}
+}
+
+can_establish_viceroyalty_morocco = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = morocco
+		AMOUNT = 12		# total: 23
+	}
+}
+
+can_establish_viceroyalty_tunisia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = tunisia
+		AMOUNT = 14		# total: 16
+	}
+}
+
+## Mashriq
+can_establish_viceroyalty_syria = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = syria
+		AMOUNT = 12		# total: 22
+	}
+}
+
+## Netherlands
+can_establish_viceroyalty_netherlands = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = netherlands
+		AMOUNT = 12		# total: 22
+	}
+}
+
+## Persia
+can_establish_viceroyalty_persia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = persia
+		AMOUNT = 29		# total: 56
+	}
+}
+
+## Poland
+can_establish_viceroyalty_poland = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = poland
+		AMOUNT = 17		# total: 33
+	}
+}
+
+## Ruthenia
+can_establish_viceroyalty_kiev = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = kiev
+		AMOUNT = 14		# total: 27
+	}
+}
+
+can_establish_viceroyalty_smolensk = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = smolensk
+		AMOUNT = 8		# total: 15
+	}
+}
+
+## Russia
+can_establish_viceroyalty_russia = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = russia
+		AMOUNT = 29		# total: 57
+	}
+}
+
+## Scandinavia
+can_establish_viceroyalty_denmark = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = denmark
+		AMOUNT = 5		# total: 9
+	}
+}
+
+can_establish_viceroyalty_finland = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = finland
+		AMOUNT = 7		# total: 13
+	}
+}
+
+can_establish_viceroyalty_iceland = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = iceland
+		AMOUNT = 2		# total: 2
+	}
+}
+
+can_establish_viceroyalty_norway = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = norway
+		AMOUNT = 6		# total: 10
+	}
+}
+
+can_establish_viceroyalty_sweden = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = sweden
+		AMOUNT = 12		# total: 23
+	}
+}

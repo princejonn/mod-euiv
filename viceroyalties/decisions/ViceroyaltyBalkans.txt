@@ -1,0 +1,58 @@
+country_decisions = {
+	## Dalmatia
+	create_viceroyalty_dalmatia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = dalmatia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = dalmatia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = DAL
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = dalmatia
+				NEWTAG = DAL
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Greece
+	create_viceroyalty_greece = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = greece
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = greece
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = GRE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = greece
+				NEWTAG = GRE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

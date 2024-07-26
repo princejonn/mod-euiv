@@ -1,0 +1,30 @@
+country_decisions = {
+	## Persia
+	create_viceroyalty_persia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = persia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = persia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = PER
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = persia
+				NEWTAG = PER
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,58 @@
+country_decisions = {
+	## Hungary
+	create_viceroyalty_hungary = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = hungary
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = hungary
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = HUN
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = hungary
+				NEWTAG = HUN
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Romania
+	create_viceroyalty_romania = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = romania
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = romania
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = RMN
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = romania
+				NEWTAG = RMN
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

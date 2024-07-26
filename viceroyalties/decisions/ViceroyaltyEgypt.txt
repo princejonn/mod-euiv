@@ -1,0 +1,30 @@
+country_decisions = {
+	## Egypt
+	create_viceroyalty_egypt = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = egypt
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = egypt
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = EGY
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = egypt
+				NEWTAG = EGY
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

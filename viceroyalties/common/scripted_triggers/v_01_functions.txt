@@ -1,0 +1,24 @@
+can_establish_viceroyalty_fn = {
+	OR = {
+		AND = {
+			is_subject = no
+			capital_scope = {
+				is_province_in_$SECTOR$ = no
+			}
+			num_of_owned_provinces_with = {
+				value = $AMOUNT$
+				is_province_in_$SECTOR$ = yes
+			}
+		}
+		AND = {
+			is_subject = yes
+			capital_scope = {
+				is_province_in_$SECTOR$ = yes
+			}
+			num_of_owned_provinces_with = {
+				value = $AMOUNT$
+				is_province_in_$SECTOR$ = yes
+			}
+		}
+	}
+}

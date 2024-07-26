@@ -1,0 +1,30 @@
+country_decisions = {
+	## Italy
+	create_viceroyalty_italy = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = italy
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = italy
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = ITA
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = italy
+				NEWTAG = ITA
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,86 @@
+country_decisions = {
+	## Algiers
+	create_viceroyalty_algiers = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = algiers
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = algiers
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = ALG
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = algiers
+				NEWTAG = ALG
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Morocco
+	create_viceroyalty_morocco = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = morocco
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = morocco
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = MOR
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = morocco
+				NEWTAG = MOR
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Tunisia
+	create_viceroyalty_tunisia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = tunisia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = tunisia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = TUN
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = tunisia
+				NEWTAG = TUN
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

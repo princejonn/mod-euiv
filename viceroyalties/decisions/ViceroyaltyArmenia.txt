@@ -1,0 +1,30 @@
+country_decisions = {
+	## Armenia
+	create_viceroyalty_armenia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = armenia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = armenia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = ARM
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = armenia
+				NEWTAG = ARM
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

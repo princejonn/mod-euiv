@@ -1,0 +1,114 @@
+country_decisions = {
+	## England
+	create_viceroyalty_england = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = england
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = england
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = ENG
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = england
+				NEWTAG = ENG
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Ireland
+	create_viceroyalty_ireland = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = ireland
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = ireland
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = IRE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = ireland
+				NEWTAG = IRE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Scotland
+	create_viceroyalty_scotland = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = scotland
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = scotland
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = SCO
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = scotland
+				NEWTAG = SCO
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Wales
+	create_viceroyalty_wales = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = wales
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = wales
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = WLS
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = wales
+				NEWTAG = WLS
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

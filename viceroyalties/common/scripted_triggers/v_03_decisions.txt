@@ -1,0 +1,19 @@
+viceroyalty_decision_potential = {
+	ai = no
+	is_subject = no
+	technology_group = western
+	can_establish_viceroyalty_$SECTOR$ = yes
+}
+
+viceroyalty_decision_highlight = {
+	is_province_in_$SECTOR$ = yes
+	owned_by = ROOT
+}
+
+viceroyalty_decision_allow = {
+	adm_tech = 10
+	adm_power = 120
+	NOT = {
+		exists = $NEWTAG$
+	}
+}

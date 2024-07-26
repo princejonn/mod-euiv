@@ -1,0 +1,26 @@
+viceroyalty_overlord_small = {
+	global_trade_power = 0.05
+	land_forcelimit = 2
+	naval_forcelimit = 2
+}
+
+viceroyalty_overlord_medium = {
+	global_trade_power = 0.05
+	land_forcelimit = 6
+	naval_forcelimit = 6
+}
+
+viceroyalty_overlord_large = {
+	merchants = 1
+	global_colonial_growth = 10
+	global_trade_power = 0.1
+	land_forcelimit = 10
+	naval_forcelimit = 10
+}
+
+viceroyalty_subject = {
+	development_cost = -0.15
+	global_tax_income = -3
+	land_forcelimit = 1
+	naval_forcelimit = 1
+}

@@ -1,0 +1,3 @@
+is_viceroyalty = {
+	opinion = 50
+}

@@ -1,0 +1,142 @@
+country_decisions = {
+	## Denmark
+	create_viceroyalty_denmark = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = denmark
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = denmark
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = DAN
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = denmark
+				NEWTAG = DAN
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Finland
+	create_viceroyalty_finland = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = finland
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = finland
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = FIN
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = finland
+				NEWTAG = FIN
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Iceland
+	create_viceroyalty_iceland = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = iceland
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = iceland
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = ICE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = iceland
+				NEWTAG = ICE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Norway
+	create_viceroyalty_norway = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = norway
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = norway
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = NOR
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = norway
+				NEWTAG = NOR
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Sweden
+	create_viceroyalty_sweden = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = sweden
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = sweden
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = SWE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = sweden
+				NEWTAG = SWE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,30 @@
+country_decisions = {
+	## Russia
+	create_viceroyalty_russia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = russia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = russia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = RUS
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = russia
+				NEWTAG = RUS
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

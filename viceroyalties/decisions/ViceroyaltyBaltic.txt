@@ -1,0 +1,86 @@
+country_decisions = {
+	## Estonia
+	create_viceroyalty_estonia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = estonia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = estonia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = EST
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = estonia
+				NEWTAG = EST
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Latvia
+	create_viceroyalty_latvia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = latvia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = latvia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = LTG
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = latvia
+				NEWTAG = LTG
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Lithuania
+	create_viceroyalty_lithuania = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = lithuania
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = lithuania
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = LIT
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = lithuania
+				NEWTAG = LIT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

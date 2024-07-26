@@ -1,0 +1,86 @@
+country_decisions = {
+	## Eretna
+	create_viceroyalty_eretna = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = eretna
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = eretna
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = ERE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = eretna
+				NEWTAG = ERE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Turkey
+	create_viceroyalty_turkey = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = turkey
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = turkey
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = TUR
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = turkey
+				NEWTAG = TUR
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Trebizond
+	create_viceroyalty_trebizond = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = trebizond
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = trebizond
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = TRE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = trebizond
+				NEWTAG = TRE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

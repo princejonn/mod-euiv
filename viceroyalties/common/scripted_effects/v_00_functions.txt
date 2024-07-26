@@ -1,0 +1,96 @@
+cede_all_provinces_in_sector_fn = {
+	$OVERLORD$ = {
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = yes
+				is_core = $OVERLORD$
+			}
+			remove_core = $OVERLORD$
+			add_permanent_claim = $SUBJECT$
+			add_core = $SUBJECT$
+			cede_province = $SUBJECT$
+		}
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = yes
+				NOT = {
+					is_core = $OVERLORD$
+				}
+			}
+			remove_core = $OVERLORD$
+			cede_province = $SUBJECT$
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of_type_with_overlord = {
+					who = $OVERLORD$
+					type = vassal
+				}
+			}
+			every_owned_province = {
+				limit = {
+					is_province_in_$SECTOR$ = yes
+					is_core = THIS
+				}
+				add_permanent_claim = $SUBJECT$
+				add_core = $SUBJECT$
+				cede_province = $SUBJECT$
+			}
+			every_owned_province = {
+				limit = {
+					is_province_in_$SECTOR$ = yes
+					NOT = {
+						is_core = THIS
+					}
+				}
+				cede_province = $SUBJECT$
+			}
+		}
+	}
+	$SUBJECT$ = {
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = no
+				is_core = $SUBJECT$
+			}
+			remove_core = $SUBJECT$
+			add_core = $OVERLORD$
+			cede_province = $OVERLORD$
+		}
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = no
+				NOT = {
+					is_core = $SUBJECT$
+				}
+			}
+			remove_core = $SUBJECT$
+			cede_province = $OVERLORD$
+		}
+	}
+}
+
+change_subject_tag_fn = {
+	if = {
+		limit = {
+			$NEWTAG$ = {
+				exists = no
+			}
+		}
+		$SUBJECT$ = {
+			change_tag = $NEWTAG$
+		}
+	}
+}
+
+cede_all_provinces_to_subject_fn = {
+	cede_all_provinces_in_sector_fn = {
+		SECTOR = $SECTOR$
+		OVERLORD = $OVERLORD$
+		SUBJECT = $SUBJECT$
+	}
+	change_subject_tag_fn = {
+		NEWTAG = $NEWTAG$
+		SUBJECT = $SUBJECT$
+	}
+}

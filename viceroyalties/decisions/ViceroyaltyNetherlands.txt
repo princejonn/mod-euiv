@@ -1,0 +1,30 @@
+country_decisions = {
+	## Netherlands
+	create_viceroyalty_netherlands = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = netherlands
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = netherlands
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = NED
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = netherlands
+				NEWTAG = NED
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

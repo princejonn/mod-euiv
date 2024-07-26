@@ -1,0 +1,142 @@
+country_decisions = {
+	## Austria
+	create_viceroyalty_austria = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = austria
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = austria
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = HAB
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = austria
+				NEWTAG = HAB
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Bohemia
+	create_viceroyalty_bohemia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = bohemia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = bohemia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = BOH
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = bohemia
+				NEWTAG = BOH
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Germany
+	create_viceroyalty_germany = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = germany
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = germany
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = GER
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = germany
+				NEWTAG = GER
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Prussia
+	create_viceroyalty_prussia = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = prussia
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = prussia
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = PRU
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = prussia
+				NEWTAG = PRU
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Switzerland
+	create_viceroyalty_switzerland = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = switzerland
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = switzerland
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = SWI
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = switzerland
+				NEWTAG = SWI
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

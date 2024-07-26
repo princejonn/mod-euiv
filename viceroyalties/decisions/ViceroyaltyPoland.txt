@@ -1,0 +1,30 @@
+country_decisions = {
+	## Poland
+	create_viceroyalty_poland = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = poland
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = poland
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = POL
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = poland
+				NEWTAG = POL
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

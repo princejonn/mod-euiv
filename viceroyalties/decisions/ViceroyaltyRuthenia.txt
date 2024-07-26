@@ -1,0 +1,58 @@
+country_decisions = {
+	## Kiev
+	create_viceroyalty_kiev = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = kiev
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = kiev
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = KIE
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = kiev
+				NEWTAG = KIE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Smolensk
+	create_viceroyalty_smolensk = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = smolensk
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = smolensk
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				NEWTAG = SMO
+			}
+		}
+		effect = {
+			viceroyalty_effect = {
+				SECTOR = smolensk
+				NEWTAG = SMO
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

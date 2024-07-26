@@ -1,0 +1,463 @@
+## Anatolia
+is_province_in_eretna = {
+	OR = {
+		area = cukurova_area
+		area = karaman_area
+		area = rum_area
+	}
+	# 12
+}
+
+is_province_in_turkey = {
+	OR = {
+		area = ankara_area
+		area = aydin_area
+		area = germiyan_area
+		area = hudavendigar_area
+		area = kastamonu_area		# Karadeniz
+	}
+	# 28
+}
+
+is_province_in_trebizond = {
+	OR = {
+		area = dulkadir_area
+		area = erzurum_area
+		area = north_kurdistan_area
+	}
+	# 11
+}
+
+## Armenia
+is_province_in_armenia = {
+	region = caucasia_region
+	# 28
+}
+
+## Balkans
+is_province_in_dalmatia = {
+	OR = {
+		area = bosnia_area
+		area = carinthia_area
+		area = croatia_area
+		area = east_adriatic_coast_area
+		area = rascia_area
+		area = serbia_area
+	}
+	# 23
+}
+
+is_province_in_greece = {
+	OR = {
+		area = aegean_archipelago_area
+		area = albania_area
+		area = bulgaria_area
+		area = macedonia_area
+		area = morea_area
+		area = northern_greece_area
+		area = silistria_area
+		area = thrace_area
+	}
+	# 37
+}
+
+## Baltic
+is_province_in_estonia = {
+	OR = {
+		area = estonia_ingria_area
+		province_id = 35		# Ösel
+	}
+	# 4
+}
+
+is_province_in_latvia = {
+	AND = {
+		OR = {
+			area = livonia_area
+			area = curonia_area
+		}
+		NOT = {
+			province_id = 35			# Ösel
+		}
+	}
+	# 6
+}
+
+is_province_in_lithuania = {
+	OR = {
+		area = lithuania_area		# Aukstaitija
+		area = samogitia_area
+		province_id = 40		# Memel
+	}
+	# 9
+}
+
+## Britain
+is_province_in_england = {
+	OR = {
+		area = east_anglia_area
+		area = east_midlands_area
+		area = home_counties_area
+		area = scottish_marches_area
+		area = wessex_area
+		area = west_midlands_area
+		area = yorkshire_area
+	}
+	# 26
+}
+
+is_province_in_ireland = {
+	OR = {
+		area = connacht_area
+		area = leinster_area
+		area = munster_area
+		area = ulster_area
+	}
+	# 13
+}
+
+is_province_in_scotland = {
+	OR = {
+		area = highlands_area
+		area = kingdom_of_the_isles_area
+		area = lowlands_area
+	}
+	# 13
+}
+
+is_province_in_wales = {
+	area = wales_area
+	# 4
+}
+
+## Carpathia
+is_province_in_hungary = {
+	OR = {
+		area = slovakia_area
+		area = transdanubia_area
+		area = alfold_area
+		area = slavonia_area
+	}
+	# 16
+}
+
+is_province_in_romania = {
+	OR = {
+		area = moldavia_area
+		area = southern_transylvania_area
+		area = transylvania_area
+		area = wallachia_area
+	}
+	# 17
+}
+
+## Egypt
+is_province_in_egypt = {
+	OR = {
+		region = egypt_region
+		province_id = 356		# Bangazi
+		province_id = 357		# Darnah
+	}
+	# 27
+}
+
+## France
+is_province_in_france = {
+	region = france_region
+	# 62
+}
+
+## Germany
+is_province_in_austria = {
+	OR = {
+		area = austria_proper_area
+		area = inner_austria_area
+		area = tirol_area
+	}
+	# 12
+}
+
+is_province_in_bohemia = {
+	OR = {
+		area = bohemia_area
+		area = erzgebirge_area
+		area = moravia_area
+	}
+	# 11
+}
+
+is_province_in_germany = {
+	AND = {
+		OR = {
+			area = alsace_area
+			area = braunschweig_area
+			area = east_bavaria_area
+			area = franconia_area			# Lower Franconia
+			area = hesse_area
+			area = lower_bavaria_area
+			area = lower_rhineland_area
+			area = lower_saxony_area
+			area = lower_swabia_area			# West Swabia
+			area = mecklenburg_area
+			area = north_rhine_area
+			area = north_westphalia_area
+			area = northern_saxony_area			# Saxony-Altmark
+			area = palatinate_area
+			area = thuringia_area
+			area = upper_bavaria_area
+			area = upper_franconia_area
+			area = upper_rhineland_area			# Baden
+			area = upper_swabia_area			# East Swabia
+			area = vorpommern_area
+			area = weser_area
+			area = westphalia_area			# South Westphalia
+			province_id = 4141			# Dithmarschen
+			province_id = 1775			# Holstein
+		}
+	}
+	# 82
+}
+
+is_province_in_prussia = {
+	AND = {
+		OR = {
+			area = east_prussia_area
+			area = hinter_pommern_area
+			area = lusatia_area
+			area = mittelmark_area
+			area = neumark_area
+			area = silesia_area
+			area = south_saxony_area
+			area = west_prussia_area
+		}
+		NOT = {
+			province_id = 40			# Memel
+		}
+	}
+	# 30
+}
+
+is_province_in_switzerland = {
+	OR = {
+		area = romandie_area
+		area = switzerland_area
+	}
+	# 10
+}
+
+## Iberia
+is_province_in_portugal = {
+	OR = {
+		area = alentejo_area
+		area = beieras_area
+	}
+	# 10
+}
+
+is_province_in_spain = {
+	OR = {
+		area = aragon_area
+		area = asturias_area
+		area = baleares_area
+		area = basque_country
+		area = castille_area
+		area = catalonia_area
+		area = extremadura_area
+		area = galicia_area
+		area = leon_area
+		area = lower_andalucia_area
+		area = toledo_area
+		area = upper_andalucia_area
+		area = valencia_area
+	}
+	# 50
+}
+
+## Italy
+is_province_in_italy = {
+	region = italy_region
+	# 55
+}
+
+## Maghreb
+is_province_in_algiers = {
+	OR = {
+		area = algiers_area
+		area = barbary_coast_area
+		area = hautes_plaines_area
+		area = kabylia_area
+		area = north_saharan_area
+		area = ouled_nail_area
+	}
+	# 20
+}
+
+is_province_in_morocco = {
+	OR = {
+		area = marrekesh_area
+		area = northern_morocco_area
+		area = southern_morocco_area
+		area = sus_area
+		area = tafilalt_area
+		area = western_morocco_area
+	}
+	# 23
+}
+
+is_province_in_tunisia = {
+	OR = {
+		area = djerba_area
+		area = tunisia_area
+		area = tripolitania_area
+		area = fezzan_area
+	}
+	# 16
+}
+
+## Mashriq
+is_province_in_syria = {
+	OR = {
+		area = al_jazira_area
+		area = aleppo_area
+		area = palestine_area
+		area = syria_area
+		area = syrian_desert_area
+		area = trans_jordan_area
+		province_id = 407		# Rakka
+		province_id = 2314		# Rahba
+	}
+	# 22
+}
+
+## Netherlands
+is_province_in_netherlands = {
+	region = low_countries_region
+	# 22
+}
+
+## Persia
+is_province_in_persia = {
+	OR = {
+		region = persia_region
+		area = iraq_arabi_area
+		area = basra_area
+	}
+	# 56
+}
+
+## Poland
+is_province_in_poland = {
+	OR = {
+		area = central_poland_area
+		area = kuyavia_area
+		area = malopolska_area
+		area = mazovia_area
+		area = podlasie_area
+		area = red_ruthenia_area
+		area = sandomierz_area
+		area = volhynia_area
+		area = wielkopolska_area
+	}
+	# 33
+}
+
+## Ruthenia
+is_province_in_kiev = {
+	OR = {
+		area = chernigov_area
+		area = crimea_area
+		area = east_dniepr_area
+		area = podolia_volhynia_area
+		area = sloboda_ukraine_area
+		area = west_dniepr_area
+		area = yedisan_area
+		area = zaporizhia_area
+	}
+	# 27
+}
+
+is_province_in_smolensk = {
+	OR = {
+		area = minsk_area
+		area = pripyat_area
+		area = smolensk_area
+		area = white_ruthenia_area
+	}
+	# 15
+}
+
+## Russia
+is_province_in_russia = {
+	OR = {
+		region = russia_region
+		region = ural_region
+		region = west_siberia_region
+		region = east_siberia_region
+		area = azov_area
+		area = lower_don_area
+		area = astrakhan_area
+	}
+	NOT = {
+		OR = {
+			province_id = 30			# Viborg
+			province_id = 4124			# Karelia
+		}
+	}
+	# 57
+}
+
+## Scandinavia
+is_province_in_denmark = {
+	OR = {
+		area = denmark_area
+		area = jutland_area
+		province_id = 13		# Schleswig
+	}
+	# 9
+}
+
+is_province_in_finland = {
+	OR = {
+		area = bothnia_area
+		area = finland_area
+		area = laponia_area
+		province_id = 30		# Viborg
+		province_id = 4124		# Karelia
+	}
+	# 13
+}
+
+is_province_in_iceland = {
+	OR = {
+		province_id = 370		# Reykjavik
+		province_id = 371		# Akureyri
+	}
+	# 2
+}
+
+is_province_in_norway = {
+	AND = {
+		OR = {
+			area = eastern_norway
+			area = northern_norway
+			area = western_norway
+		}
+		NOT = {
+			province_id = 10			# Jemtland
+		}
+	}
+	# 10
+}
+
+is_province_in_sweden = {
+	OR = {
+		area = gotaland_area
+		area = norrland_area
+		area = ostra_svealand_area
+		area = skaneland_area
+		area = svealand_area
+		area = vastra_gotaland_area
+		province_id = 10		# Jemtland
+	}
+	# 23
+}

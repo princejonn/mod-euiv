@@ -1,0 +1,61 @@
+default_viceroyalty = {
+	rank = {
+		1 = VICEROYALTY
+		2 = VICEROYALTY
+		3 = VICEROYALTY
+	}
+	ruler_male = {
+		1 = VICEROYALTY_LEADER
+		2 = VICEROYALTY_LEADER
+		3 = VICEROYALTY_LEADER
+	}
+	ruler_female = {
+		1 = VICEROYALTY_LEADER
+		2 = VICEROYALTY_LEADER
+		3 = VICEROYALTY_LEADER
+	}
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+	trigger = {
+		is_subject_of_type = viceroyalty
+	}
+}
+
+viceroyalty = {
+	rank = {
+		1 = VICEROYALTY
+		2 = VICEROYALTY
+		3 = VICEROYALTY
+	}
+	ruler_male = {
+		1 = VICEROYALTY_LEADER
+		2 = VICEROYALTY_LEADER
+		3 = VICEROYALTY_LEADER
+	}
+	ruler_female = {
+		1 = VICEROYALTY_LEADER
+		2 = VICEROYALTY_LEADER
+		3 = VICEROYALTY_LEADER
+	}
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+	trigger = {
+		is_subject_of_type = viceroyalty
+	}
+}

@@ -1,0 +1,59 @@
+establish_viceroyalty_from_vassal = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		adm_tech = 10
+		technology_group = western
+		FROM = {
+			is_subject_of_type_with_overlord = {
+				who = ROOT
+				type = vassal
+			}
+			capital_scope = {
+				is_province_in_viceroyalty_region = yes
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			truce_with = FROM
+		}
+		custom_trigger_tooltip = {
+			tooltip = TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL
+			FROM = {
+				can_establish_viceroyalty = yes
+			}
+		}
+		FROM = {
+			is_at_war = no
+			is_march = no
+			# years_in_vassalage_under = {
+			# 	who = ROOT
+			# 	years = 25
+			# }
+			# NOT = {
+			# 	liberty_desire = 25
+			# }
+			# has_opinion = {
+			# 	who = ROOT
+			# 	value = 200
+			# }
+			NOT = {
+				FROM = {
+					development_of_overlord_fraction = 0.5
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_viceroyalty_from_existing_subject = {
+			OVERLORD = ROOT
+			OWNER = FROM
+			SUBJECT = FROM
+		}
+	}
+	ai_will_do = {
+		ai = no
+	}
+}
