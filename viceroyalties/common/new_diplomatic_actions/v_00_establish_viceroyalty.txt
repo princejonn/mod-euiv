@@ -28,17 +28,17 @@ establish_viceroyalty_from_vassal = {
 		FROM = {
 			is_at_war = no
 			is_march = no
-			# years_in_vassalage_under = {
-			# 	who = ROOT
-			# 	years = 25
-			# }
-			# NOT = {
-			# 	liberty_desire = 25
-			# }
-			# has_opinion = {
-			# 	who = ROOT
-			# 	value = 200
-			# }
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 25
+			}
+			NOT = {
+				liberty_desire = 25
+			}
+			has_opinion = {
+				who = ROOT
+				value = 200
+			}
 			NOT = {
 				FROM = {
 					development_of_overlord_fraction = 0.5
