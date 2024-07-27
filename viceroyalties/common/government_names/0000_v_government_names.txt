@@ -15,14 +15,14 @@ default_viceroyalty = {
 		3 = VICEROYALTY_LEADER
 	}
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		1 = VICEROYALTY_HEIR
+		2 = VICEROYALTY_HEIR
+		3 = VICEROYALTY_HEIR
 	}
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = VICEROYALTY_HEIR
+		2 = VICEROYALTY_HEIR
+		3 = VICEROYALTY_HEIR
 	}
 	trigger = {
 		is_subject_of_type = viceroyalty
@@ -46,14 +46,14 @@ viceroyalty = {
 		3 = VICEROYALTY_LEADER
 	}
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		1 = VICEROYALTY_HEIR
+		2 = VICEROYALTY_HEIR
+		3 = VICEROYALTY_HEIR
 	}
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = VICEROYALTY_HEIR
+		2 = VICEROYALTY_HEIR
+		3 = VICEROYALTY_HEIR
 	}
 	trigger = {
 		is_subject_of_type = viceroyalty

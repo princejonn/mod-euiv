@@ -14,13 +14,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = ENG
+				SUBJECT = ENG
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = england
-				NEWTAG = ENG
+				SUBJECT = ENG
 			}
 		}
 		ai_will_do = {
@@ -42,13 +43,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = IRE
+				SUBJECT = IRE
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = ireland
-				NEWTAG = IRE
+				SUBJECT = IRE
 			}
 		}
 		ai_will_do = {
@@ -70,13 +72,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = SCO
+				SUBJECT = SCO
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = scotland
-				NEWTAG = SCO
+				SUBJECT = SCO
 			}
 		}
 		ai_will_do = {
@@ -98,13 +101,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = WLS
+				SUBJECT = WLS
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = wales
-				NEWTAG = WLS
+				SUBJECT = WLS
 			}
 		}
 		ai_will_do = {

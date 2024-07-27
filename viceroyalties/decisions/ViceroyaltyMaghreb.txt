@@ -14,13 +14,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = ALG
+				SUBJECT = ALG
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = algiers
-				NEWTAG = ALG
+				SUBJECT = ALG
 			}
 		}
 		ai_will_do = {
@@ -42,13 +43,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = MOR
+				SUBJECT = MOR
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = morocco
-				NEWTAG = MOR
+				SUBJECT = MOR
 			}
 		}
 		ai_will_do = {
@@ -70,13 +72,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = TUN
+				SUBJECT = TUN
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = tunisia
-				NEWTAG = TUN
+				SUBJECT = TUN
 			}
 		}
 		ai_will_do = {

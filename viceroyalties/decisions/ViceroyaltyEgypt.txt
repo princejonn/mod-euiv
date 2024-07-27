@@ -14,13 +14,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = EGY
+				SUBJECT = EGY
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = egypt
-				NEWTAG = EGY
+				SUBJECT = EGY
 			}
 		}
 		ai_will_do = {

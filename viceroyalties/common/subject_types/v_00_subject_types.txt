@@ -31,7 +31,7 @@ viceroyalty = {
 	pays_overlord = 0.33
 	sailors_to_overlord = 0.33
 	# Restoration Casus Belli:
-	restoration_cb = cb_restore_personal_union
+	restoration_cb = cb_restore_viceroyalty
 	# Interactions (Continuous):
 	divert_trade = yes
 	scutage = yes
@@ -48,22 +48,7 @@ viceroyalty = {
 	# Modifiers (Overlord):
 	modifier_overlord = clear
 	modifier_overlord = {
-		trigger = {
-			num_of_cities = 1
-			NOT = {
-				num_of_cities = 10
-			}
-		}
-		modifier = viceroyalty_overlord_small
-	}
-	modifier_overlord = {
-		trigger = {
-			num_of_cities = 10
-			NOT = {
-				num_of_cities = 20
-			}
-		}
-		modifier = viceroyalty_overlord_medium
+		modifier = viceroyalty_overlord
 	}
 	modifier_overlord = {
 		trigger = {
@@ -83,6 +68,12 @@ viceroyalty = {
 	modifier_subject = clear
 	modifier_subject = {
 		modifier = viceroyalty_subject
+	}
+	modifier_overlord = {
+		trigger = {
+			num_of_cities = 20
+		}
+		modifier = viceroyalty_subject_large
 	}
 	modifier_subject = {
 		modifier = subject_tax_modifier

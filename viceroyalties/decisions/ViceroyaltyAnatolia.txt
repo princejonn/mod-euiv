@@ -14,13 +14,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = ERE
+				SUBJECT = ERE
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = eretna
-				NEWTAG = ERE
+				SUBJECT = ERE
 			}
 		}
 		ai_will_do = {
@@ -42,13 +43,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = TUR
+				SUBJECT = TUR
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = turkey
-				NEWTAG = TUR
+				SUBJECT = TUR
 			}
 		}
 		ai_will_do = {
@@ -70,13 +72,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = TRE
+				SUBJECT = TRE
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = trebizond
-				NEWTAG = TRE
+				SUBJECT = TRE
 			}
 		}
 		ai_will_do = {

@@ -1,0 +1,25 @@
+viceroyalty_decision_effect = {
+	hidden_effect = {
+		# Cede Provinces
+		cede_all_provinces_in_sector_fn = {
+			SECTOR = $SECTOR$
+			OVERLORD = $OVERLORD$
+			SUBJECT = $SUBJECT$
+		}
+		# Change Government
+		change_subject_government_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+		}
+	}
+	# Create Subject
+	create_subject = {
+		subject = $SUBJECT$
+		subject_type = viceroyalty
+		keep_liberty_desire = yes
+	}
+	# Power and Prestige
+	add_adm_power = -120
+	add_dip_power = 120
+	add_prestige = 10
+}

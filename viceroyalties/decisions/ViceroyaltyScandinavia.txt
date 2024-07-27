@@ -14,13 +14,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = DAN
+				SUBJECT = DAN
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = denmark
-				NEWTAG = DAN
+				SUBJECT = DAN
 			}
 		}
 		ai_will_do = {
@@ -42,13 +43,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = FIN
+				SUBJECT = FIN
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = finland
-				NEWTAG = FIN
+				SUBJECT = FIN
 			}
 		}
 		ai_will_do = {
@@ -70,13 +72,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = ICE
+				SUBJECT = ICE
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = iceland
-				NEWTAG = ICE
+				SUBJECT = ICE
 			}
 		}
 		ai_will_do = {
@@ -98,13 +101,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = NOR
+				SUBJECT = NOR
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = norway
-				NEWTAG = NOR
+				SUBJECT = NOR
 			}
 		}
 		ai_will_do = {
@@ -126,13 +130,14 @@ country_decisions = {
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				NEWTAG = SWE
+				SUBJECT = SWE
 			}
 		}
 		effect = {
-			viceroyalty_effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
 				SECTOR = sweden
-				NEWTAG = SWE
+				SUBJECT = SWE
 			}
 		}
 		ai_will_do = {

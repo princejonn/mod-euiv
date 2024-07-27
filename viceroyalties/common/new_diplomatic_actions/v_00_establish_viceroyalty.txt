@@ -10,7 +10,7 @@ establish_viceroyalty_from_vassal = {
 				type = vassal
 			}
 			capital_scope = {
-				is_province_in_viceroyalty_region = yes
+				is_province_in_sector = yes
 			}
 		}
 	}
