@@ -1,27 +1,27 @@
 country_decisions = {
-	## Turkey
-	create_viceroyalty_turkey = {
+	## India
+	create_viceroyalty_hindustan = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = turkey
+				SECTOR = hindustan
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = turkey
+				SECTOR = hindustan
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = TUR
+				SUBJECT = HIN
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = turkey
-				SUBJECT = TUR
+				SECTOR = hindustan
+				SUBJECT = HIN
 			}
 		}
 		ai_will_do = {

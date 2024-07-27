@@ -6,24 +6,18 @@
 # }
 #
 ## Anatolia
-can_establish_viceroyalty_eretna = {
-	can_establish_viceroyalty_fn = {
-		SECTOR = eretna
-		AMOUNT = 7		# total: 12
-	}
-}
-
 can_establish_viceroyalty_turkey = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = turkey
-		AMOUNT = 15		# total: 28
+		AMOUNT = 20		# total: 51
 	}
 }
 
-can_establish_viceroyalty_trebizond = {
+## Arabia
+can_establish_viceroyalty_arabia = {
 	can_establish_viceroyalty_fn = {
-		SECTOR = trebizond
-		AMOUNT = 6		# total: 11
+		SECTOR = arabia
+		AMOUNT = 20		# total: 59
 	}
 }
 
@@ -128,7 +122,7 @@ can_establish_viceroyalty_egypt = {
 can_establish_viceroyalty_france = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = france
-		AMOUNT = 32		# total: 62
+		AMOUNT = 20		# total: 62
 	}
 }
 
@@ -150,7 +144,7 @@ can_establish_viceroyalty_bohemia = {
 can_establish_viceroyalty_germany = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = germany
-		AMOUNT = 42		# total: 82
+		AMOUNT = 20		# total: 82
 	}
 }
 
@@ -179,7 +173,23 @@ can_establish_viceroyalty_portugal = {
 can_establish_viceroyalty_spain = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = spain
-		AMOUNT = 26		# total: 50
+		AMOUNT = 20		# total: 50
+	}
+}
+
+## India
+can_establish_viceroyalty_hindustan = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = hindustan
+		AMOUNT = 20		# total: ??
+	}
+}
+
+## Indochina
+can_establish_viceroyalty_siam = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = siam
+		AMOUNT = 20		# total: ??
 	}
 }
 
@@ -187,7 +197,7 @@ can_establish_viceroyalty_spain = {
 can_establish_viceroyalty_italy = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = italy
-		AMOUNT = 28		# total: 55
+		AMOUNT = 20		# total: 55
 	}
 }
 
@@ -213,6 +223,14 @@ can_establish_viceroyalty_tunisia = {
 	}
 }
 
+## Malaya
+can_establish_viceroyalty_malaya = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = malaya
+		AMOUNT = 20		# total: ??
+	}
+}
+
 ## Mashriq
 can_establish_viceroyalty_syria = {
 	can_establish_viceroyalty_fn = {
@@ -233,7 +251,7 @@ can_establish_viceroyalty_netherlands = {
 can_establish_viceroyalty_persia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = persia
-		AMOUNT = 29		# total: 56
+		AMOUNT = 20		# total: 56
 	}
 }
 
@@ -264,7 +282,7 @@ can_establish_viceroyalty_smolensk = {
 can_establish_viceroyalty_russia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = russia
-		AMOUNT = 29		# total: 57
+		AMOUNT = 20		# total: 57
 	}
 }
 

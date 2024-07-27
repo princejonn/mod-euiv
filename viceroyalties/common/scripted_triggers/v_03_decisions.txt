@@ -1,5 +1,6 @@
 viceroyalty_decision_potential = {
 	ai = no
+	is_great_power = yes
 	is_subject = no
 	technology_group = western
 	can_establish_viceroyalty_$SECTOR$ = yes

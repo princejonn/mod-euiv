@@ -1,0 +1,235 @@
+cede_province_to_viceroyalty = {
+	## Anatolia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = turkey
+		SUBJECT = TUR
+	}
+	## Arabia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = arabia
+		SUBJECT = ARB
+	}
+	## Armenia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = armenia
+		SUBJECT = ARM
+	}
+	## Balkans
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = dalmatia
+		SUBJECT = DAL
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = greece
+		SUBJECT = GRE
+	}
+	## Baltic
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = estonia
+		SUBJECT = EST
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = latvia
+		SUBJECT = LTG
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = lithuania
+		SUBJECT = LIT
+	}
+	## Britain
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = england
+		SUBJECT = ENG
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = ireland
+		SUBJECT = IRE
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = scotland
+		SUBJECT = SCT
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = wales
+		SUBJECT = WLS
+	}
+	## Carpathia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = hungary
+		SUBJECT = HUN
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = romania
+		SUBJECT = RMN
+	}
+	## Egypt
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = egypt
+		SUBJECT = EGY
+	}
+	## France
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = france
+		SUBJECT = FRA
+	}
+	## Germany
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = austria
+		SUBJECT = AUS
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = bohemia
+		SUBJECT = BOH
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = germany
+		SUBJECT = GER
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = prussia
+		SUBJECT = PRU
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = switzerland
+		SUBJECT = SWI
+	}
+	## Iberia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = portugal
+		SUBJECT = POR
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = spain
+		SUBJECT = SPA
+	}
+	## India
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = hindustan
+		SUBJECT = HIN
+	}
+	## Indochina
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = siam
+		SUBJECT = SIA
+	}
+	## Italy
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = italy
+		SUBJECT = ITA
+	}
+	## Maghreb
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = algeria
+		SUBJECT = ALG
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = morocco
+		SUBJECT = MOR
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = tunisia
+		SUBJECT = TUN
+	}
+	## Malaya
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = malaya
+		SUBJECT = MLY
+	}
+	## Mashriq
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = syria
+		SUBJECT = SYR
+	}
+	## Netherlands
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = netherlands
+		SUBJECT = NED
+	}
+	## Persia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = persia
+		SUBJECT = PER
+	}
+	## Poland
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = poland
+		SUBJECT = POL
+	}
+	## Russia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = russia
+		SUBJECT = RUS
+	}
+	## Ruthenia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = kiev
+		SUBJECT = KIE
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = smolensk
+		SUBJECT = SMO
+	}
+	## Scandinavia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = denmark
+		SUBJECT = DEN
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = finland
+		SUBJECT = FIN
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = iceland
+		SUBJECT = ICE
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = norway
+		SUBJECT = NOR
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = sweden
+		SUBJECT = SWE
+	}
+}

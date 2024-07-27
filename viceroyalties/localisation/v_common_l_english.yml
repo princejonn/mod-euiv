@@ -8,14 +8,6 @@
   VICEROYALTY_LEADER: "Viceroy"
   VICEROYALTY_HEIR: "Captain General"
 
-  # new_diplomatic_actions
-  establish_viceroyalty_from_vassal_title: "Establish Viceroyalty"
-  establish_viceroyalty_from_vassal_desc: "Make your vassal [From.GetName] to a §YViceroyalty§!."
-  establish_viceroyalty_from_vassal_tooltip: "Make your vassal [From.GetName] to a §YViceroyalty§!.\n"
-
-  # new_diplomatic_actions # toolitps
-  TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL: "Vassal must own at least half provinces in the region"
-
   # opinion_modifiers
   is_viceroyalty: "Viceroyalty"
 

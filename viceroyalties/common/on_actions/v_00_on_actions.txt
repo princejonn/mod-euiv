@@ -1,0 +1,14 @@
+# ROOT = province, FROM = old owner
+on_province_owner_change = {
+	# cede provinces to viceroyalties in their regions
+	cede_province_to_viceroyalty = {
+		PROVINCE = ROOT
+	}
+}
+
+on_colony_finished = {
+	# cede provinces to viceroyalties in their regions
+	cede_province_to_viceroyalty = {
+		PROVINCE = ROOT
+	}
+}

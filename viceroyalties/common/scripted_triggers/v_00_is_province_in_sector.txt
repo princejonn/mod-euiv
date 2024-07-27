@@ -1,31 +1,25 @@
 ## Anatolia
-is_province_in_eretna = {
-	OR = {
-		area = cukurova_area
-		area = karaman_area
-		area = rum_area
-	}
-	# 12
-}
-
 is_province_in_turkey = {
 	OR = {
 		area = ankara_area
 		area = aydin_area
-		area = germiyan_area
-		area = hudavendigar_area
-		area = kastamonu_area		# Karadeniz
-	}
-	# 28
-}
-
-is_province_in_trebizond = {
-	OR = {
+		area = cukurova_area
 		area = dulkadir_area
 		area = erzurum_area
+		area = germiyan_area
+		area = hudavendigar_area
+		area = karaman_area
+		area = kastamonu_area		# Karadeniz
 		area = north_kurdistan_area
+		area = rum_area
 	}
-	# 11
+	# 51
+}
+
+## Arabia
+is_province_in_arabia = {
+	region = arabia_region
+	# 59
 }
 
 ## Armenia
@@ -273,6 +267,25 @@ is_province_in_spain = {
 	# 50
 }
 
+## India
+is_province_in_hindustan = {
+	OR = {
+		superregion = india_superregion
+		area = makran_area
+		area = kalat_area
+		area = arakan_area
+	}
+	# 97
+}
+
+## Indochina
+is_province_in_siam = {
+	OR = {
+		region = indo_china_region
+	}
+	# ??
+}
+
 ## Italy
 is_province_in_italy = {
 	region = italy_region
@@ -312,6 +325,12 @@ is_province_in_tunisia = {
 		area = fezzan_area
 	}
 	# 16
+}
+
+## Malaya
+is_province_in_malaya = {
+	region = malaya_region
+	# ??
 }
 
 ## Mashriq

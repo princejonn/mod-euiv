@@ -3,6 +3,7 @@ cede_all_provinces_in_sector_fn = {
 		every_owned_province = {
 			limit = {
 				is_province_in_$SECTOR$ = yes
+				is_owned_by_trade_company = no
 				is_core = $OVERLORD$
 			}
 			remove_core = $OVERLORD$
@@ -13,38 +14,13 @@ cede_all_provinces_in_sector_fn = {
 		every_owned_province = {
 			limit = {
 				is_province_in_$SECTOR$ = yes
+				is_owned_by_trade_company = no
 				NOT = {
 					is_core = $OVERLORD$
 				}
 			}
 			remove_core = $OVERLORD$
 			cede_province = $SUBJECT$
-		}
-		every_subject_country = {
-			limit = {
-				is_subject_of_type_with_overlord = {
-					who = $OVERLORD$
-					type = vassal
-				}
-			}
-			every_owned_province = {
-				limit = {
-					is_province_in_$SECTOR$ = yes
-					is_core = THIS
-				}
-				add_permanent_claim = $SUBJECT$
-				add_core = $SUBJECT$
-				cede_province = $SUBJECT$
-			}
-			every_owned_province = {
-				limit = {
-					is_province_in_$SECTOR$ = yes
-					NOT = {
-						is_core = THIS
-					}
-				}
-				cede_province = $SUBJECT$
-			}
 		}
 	}
 	$SUBJECT$ = {
@@ -70,6 +46,23 @@ cede_all_provinces_in_sector_fn = {
 	}
 }
 
+cede_province_to_viceroyalty_fn = {
+	if = {
+		limit = {
+			$PROVINCE$ = {
+				is_province_in_$SECTOR$ = yes
+			}
+			$SUBJECT$ = {
+				exists = yes
+				is_subject_of_type = viceroyalty
+			}
+		}
+		$PROVINCE$ = {
+			cede_province = $SUBJECT$
+		}
+	}
+}
+
 change_subject_tag_fn = {
 	if = {
 		limit = {
@@ -80,18 +73,6 @@ change_subject_tag_fn = {
 		$SUBJECT$ = {
 			change_tag = $NEWTAG$
 		}
-	}
-}
-
-cede_all_provinces_to_subject_fn = {
-	cede_all_provinces_in_sector_fn = {
-		SECTOR = $SECTOR$
-		OVERLORD = $OVERLORD$
-		SUBJECT = $SUBJECT$
-	}
-	change_subject_tag_fn = {
-		NEWTAG = $NEWTAG$
-		SUBJECT = $SUBJECT$
 	}
 }
 
