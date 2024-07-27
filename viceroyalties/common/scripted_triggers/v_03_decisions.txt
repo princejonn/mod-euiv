@@ -11,8 +11,9 @@ viceroyalty_decision_highlight = {
 }
 
 viceroyalty_decision_allow = {
-	adm_tech = 10
 	adm_power = 120
+	adm_tech = 10
+	is_at_war = no
 	NOT = {
 		exists = $SUBJECT$
 	}
