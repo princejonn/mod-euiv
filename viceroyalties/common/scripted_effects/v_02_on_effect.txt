@@ -82,6 +82,12 @@ cede_province_to_viceroyalty = {
 		SECTOR = romania
 		SUBJECT = RMN
 	}
+	## China
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = china
+		SUBJECT = QNG
+	}
 	## East Indies
 	cede_province_to_viceroyalty_fn = {
 		PROVINCE = ROOT
@@ -165,6 +171,18 @@ cede_province_to_viceroyalty = {
 		SECTOR = italy
 		SUBJECT = ITA
 	}
+	## Japan
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = japan
+		SUBJECT = JAP
+	}
+	## Korea
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = korea
+		SUBJECT = KOR
+	}
 	## Maghreb
 	cede_province_to_viceroyalty_fn = {
 		PROVINCE = ROOT
@@ -187,11 +205,23 @@ cede_province_to_viceroyalty = {
 		SECTOR = malaya
 		SUBJECT = MSA
 	}
+	## Manchuria
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = manchuria
+		SUBJECT = MCH
+	}
 	## Mashriq
 	cede_province_to_viceroyalty_fn = {
 		PROVINCE = ROOT
 		SECTOR = syria
 		SUBJECT = SYR
+	}
+	## Mongolia
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = mongolia
+		SUBJECT = MGE
 	}
 	## Netherlands
 	cede_province_to_viceroyalty_fn = {
@@ -253,5 +283,11 @@ cede_province_to_viceroyalty = {
 		PROVINCE = ROOT
 		SECTOR = sweden
 		SUBJECT = SWE
+	}
+	## Tibet
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = tibet
+		SUBJECT = TIB
 	}
 }

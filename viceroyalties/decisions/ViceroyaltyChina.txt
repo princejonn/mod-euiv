@@ -1,0 +1,31 @@
+country_decisions = {
+	## China
+	create_viceroyalty_china = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = china
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = china
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				SUBJECT = QNG
+			}
+		}
+		effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
+				SECTOR = china
+				SUBJECT = QNG
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

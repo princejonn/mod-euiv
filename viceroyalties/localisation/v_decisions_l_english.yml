@@ -52,6 +52,10 @@
   create_viceroyalty_romania_title: "Create Viceroyalty of Romania"
   create_viceroyalty_romania_desc: "We have established dominance over Romania, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
+  # China
+  create_viceroyalty_china_title: "Create Viceroyalty of China"
+  create_viceroyalty_china_desc: "We have established dominance over China, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
   # East Indies
   create_viceroyalty_eastindies_title: "Create Viceroyalty of East Indies"
   create_viceroyalty_eastindies_desc: "We have established dominance over East Indies, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
@@ -101,6 +105,14 @@
   create_viceroyalty_siam_title: "Create Viceroyalty of Siam"
   create_viceroyalty_siam_desc: "We have established dominance over Siam, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
+  # Japan
+  create_viceroyalty_japan_title: "Create Viceroyalty of Japan"
+  create_viceroyalty_japan_desc: "We have established dominance over Japan, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
+  # Korea
+  create_viceroyalty_korea_title: "Create Viceroyalty of Korea"
+  create_viceroyalty_korea_desc: "We have established dominance over Korea, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
   # Italy
   create_viceroyalty_italy_title: "Create Viceroyalty of Italy"
   create_viceroyalty_italy_desc: "We have established dominance over Italy, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
@@ -119,9 +131,17 @@
   create_viceroyalty_malaya_title: "Create Viceroyalty of Malaya"
   create_viceroyalty_malaya_desc: "We have established dominance over Malaya, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
+  # Manchuria
+  create_viceroyalty_manchuria_title: "Create Viceroyalty of Manchuria"
+  create_viceroyalty_manchuria_desc: "We have established dominance over Manchuria, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
   # Mashriq
   create_viceroyalty_syria_title: "Create Viceroyalty of Syria"
   create_viceroyalty_syria_desc: "We have established dominance over Syria, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
+  # Mongolia
+  create_viceroyalty_mongolia_title: "Create Viceroyalty of Mongolia"
+  create_viceroyalty_mongolia_desc: "We have established dominance over Mongolia, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
   # Netherlands
   create_viceroyalty_netherlands_title: "Create Viceroyalty of Netherlands"
@@ -161,3 +181,7 @@
 
   create_viceroyalty_sweden_title: "Create Viceroyalty of Sweden"
   create_viceroyalty_sweden_desc: "We have established dominance over Sweden, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
+  # Tibet
+  create_viceroyalty_tibet_title: "Create Viceroyalty of Tibet"
+  create_viceroyalty_tibet_desc: "We have established dominance over Tibet, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."

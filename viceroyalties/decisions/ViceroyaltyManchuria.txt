@@ -1,0 +1,31 @@
+country_decisions = {
+	## Manchuria
+	create_viceroyalty_manchuria = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = manchuria
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = manchuria
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				SUBJECT = MCH
+			}
+		}
+		effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
+				SECTOR = manchuria
+				SUBJECT = MCH
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -6,7 +6,7 @@ viceroyalty = {
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
 	# Properties:
 	annex_cost_per_development = 2
-	base_liberty_desire = -50
+	base_liberty_desire = -25
 	can_be_integrated = yes
 	can_have_subjects_of_other_types = yes
 	can_release_in_peace = no

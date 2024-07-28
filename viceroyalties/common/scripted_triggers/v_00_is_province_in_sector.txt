@@ -159,6 +159,12 @@ is_province_in_romania = {
 	# 17
 }
 
+## China
+is_province_in_china = {
+	superregion = china_superregion
+	# 107
+}
+
 ## East Indies
 is_province_in_eastindies = {
 	OR = {
@@ -362,6 +368,18 @@ is_province_in_italy = {
 	# 57
 }
 
+## Japan
+is_province_in_japan = {
+	region = japan_region
+	# 48
+}
+
+## Korea
+is_province_in_korea = {
+	region = korea_region
+	# 20
+}
+
 ## Maghreb
 is_province_in_algiers = {
 	OR = {
@@ -408,6 +426,12 @@ is_province_in_malaya = {
 	# 14
 }
 
+## Manchuria
+is_province_in_manchuria = {
+	region = manchuria_region
+	# 46
+}
+
 ## Mashriq
 is_province_in_syria = {
 	OR = {
@@ -421,6 +445,12 @@ is_province_in_syria = {
 		province_id = 2314		# Rahba
 	}
 	# 22
+}
+
+## Mongolia
+is_province_in_mongolia = {
+	region = mongolia_region
+	# 63
 }
 
 ## Netherlands
@@ -564,4 +594,10 @@ is_province_in_sweden = {
 		province_id = 10		# Jemtland
 	}
 	# 23
+}
+
+## Tibet
+is_province_in_tibet = {
+	region = tibet_region
+	# 24
 }

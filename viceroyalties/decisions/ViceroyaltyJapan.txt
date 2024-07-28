@@ -1,0 +1,31 @@
+country_decisions = {
+	## Japan
+	create_viceroyalty_japan = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = japan
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = japan
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				SUBJECT = JAP
+			}
+		}
+		effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
+				SECTOR = japan
+				SUBJECT = JAP
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
