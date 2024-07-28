@@ -5,5 +5,7 @@ In this mod I aim to rebalance the ideas and have them make slightly more sense.
 [list]
   [*] Add another pronoiar to Administrative ideas.
   [*] Add another diplomatic relation slot to Diplomatic ideas.
+  [*] Add 12 idea slots and reduced idea cost to 250 to keep the total idea cost at 22'500 power.
+  [*] Add 7 maximum allowed policies to accommodate more idea slots.
   [*] Allow AI subjects to take Exploration ideas, so that they start expanding their (or your) colonnial empire.
 [/list]

@@ -1,0 +1,10 @@
+I'm kind of a sucker for having subjects. They are fun to play around with, and add some depth to the gameplay. It's fun to use them in wars, and it's fun to see them grow. But I feel like they are a bit underwhelming. They are not as powerful as they should be, and they are not as fun to play around with as they could be.
+
+In this mod I'm aiming to fix and rebalance a couple of things that deal with subjects.
+
+[list]
+  [*] Add a new subject type: Viceroyalty. Establish a subject with a military ruler: Viceroy. It does not take up a diplomatic slot. You have full subject interaction ability. It will act much like a colonnial nation in that it will steal land from you when you conquer new provinces in its sector.
+  [*] Add two levels to Personal Union: Incorporated and Consolidated where more diplomatic options and cheaper annexation cost is the price for your hard labour. You will need Diplomatic technology 10 to Incorporate a union, and you will need 15 to Consolidate a union.
+  [*] South Africa is now a colonnial region.
+  [*] Subjects are now allowed to form new nations when they are eligible to do so.
+[/list]
