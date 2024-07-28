@@ -3,32 +3,77 @@
   cb_restore_viceroyalty: "Restoration of Viceroyalty"
   cb_restore_viceroyalty_desc: "They broke off from our Viceroyalty."
 
+  # colonial regions
+  COLONIAL_CAPE_Cape_Colony: "Cape Colony"
+  COLONIAL_CAPE_Cape_Colony_ADJ: "Cape Colonial"
+  COLONIAL_CAPE_Kaapkolonie: "Kaapkolonie"
+  COLONIAL_CAPE_Kaapkolonie_ADJ: "Kaapkolonial"
+  COLONIAL_CAPE_Colonie_du_Cap: "Colonie du Cap"
+  COLONIAL_CAPE_Colonie_du_Cap_ADJ: "Coloniale du Cap"
+  COLONIAL_CAPE_Kapkolonie: "Kapkolonie"
+  COLONIAL_CAPE_Kapkolonie_ADJ: "Kapkolonial"
+  COLONIAL_CAPE_Colonia_del_Capo: "Colonia del Capo"
+  COLONIAL_CAPE_Colonia_del_Capo_ADJ: "Colonia del Capo"
+  COLONIAL_CAPE_Colonia_de_Cabo: "Colónia de Cabo"
+  COLONIAL_CAPE_Colonia_de_Cabo_ADJ: "Colónia de Cabo"
+  COLONIAL_CAPE_Colonia_do_Cabo: "Colónia do Cabo"
+  COLONIAL_CAPE_Colonia_do_Cabo_ADJ: "Colónia do Cabo"
+
   # government names
   VICEROYALTY: "Viceroyalty"
   VICEROYALTY_LEADER: "Viceroy"
   VICEROYALTY_HEIR: "Captain General"
 
+  # new diplomatic actions
+  convert_to_incorporated_personal_union_title: "Incorporate Union"
+  convert_to_incorporated_personal_union_desc: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
+  convert_to_incorporated_personal_union_tooltip: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
+  convert_to_incorporated_personal_union_cooldown_flag: "Convert to Incorporated Subject Cooldown"
+
+  convert_to_consolidated_personal_union_title: "Consolidate Union"
+  convert_to_consolidated_personal_union_desc: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
+  convert_to_consolidated_personal_union_tooltip: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
+  convert_to_consolidated_personal_union_cooldown_flag: "Convert to Consolidated Subject Cooldown"
+
   # opinion modifiers
+  is_incorporated_personal_union: "Incorporated Personal Union"
+  is_consolidated_personal_union: "Consolidated Personal Union"
   is_viceroyalty: "Viceroyalty"
+
+  # scripted triggers
+  viceroyalty_decision_cooldown_flag: "Establish Viceroyalty Cooldown"
+  inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
+  inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
 
   # static modifiers
   viceroyalty_overlord: "Viceroyalty Overlord"
   viceroyalty_overlord_large: "Large Viceroyalty Overlord"
   viceroyalty_overlord_regional: "Regional Viceroyalty Overlord"
   viceroyalty_overlord_continental: "Continental Viceroyalty Overlord"
+
   viceroyalty_subject: "Viceroyalty Subject"
   viceroyalty_subject_large: "Large Viceroyalty Subject"
   viceroyalty_subject_regional: "Regional Viceroyalty Subject"
   viceroyalty_subject_continental: "Continental Viceroyalty Subject"
-  
+
   # subject types
+  incorporated_personal_union: "Incorporated Personal Union"
+  incorporated_personal_union_title: "Incorporated Personal Union"
+  incorporated_personal_union_title_plural: "Incorporated Personal Unions"
+  incorporated_personal_union_is_our: "$NAME|Y$ is an Incorporated Personal Union of us"
+  incorporated_personal_union_long_desc: "Incorporated Personal Unions are easier to annex and cost no Diplomatic Relations."
+
+  consolidated_personal_union: "Consolidated Personal Union"
+  consolidated_personal_union_title: "Consolidated Personal Union"
+  consolidated_personal_union_title_plural: "Consolidated Personal Unions"
+  consolidated_personal_union_is_our: "$NAME|Y$ is an Consolidated Personal Union of us"
+  consolidated_personal_union_long_desc: "Consolidated Personal Unions are easier to annex and cost no Diplomatic Relations."
+
   viceroyalty: "Viceroyalty"
   viceroyalty_title: "Viceroyalty"
   viceroyalty_title_plural: "Viceroyalties"
   viceroyalty_is_our: "§Y$NAME$§! is our Viceroyalty."
   viceroyalty_long_desc: "A Viceroyalty is a subject that is granted a large degree of autonomy, but is still ultimately loyal to its parent country."
-  viceroyalty_no_overlord_dow: "You cannot declare war on your own Viceroyalty."
-  viceroyalty_overlord_title: "Overlord"
 
   # wargoal types
   take_capital_viceroyalty: "Take the capital"

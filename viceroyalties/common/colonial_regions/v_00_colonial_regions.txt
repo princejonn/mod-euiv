@@ -1,0 +1,115 @@
+colonial_cape = {
+	color = {
+		220
+		130
+		51
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	provinces = {
+		# butua_area
+		1185
+		1188
+		1189
+		# cape_of_good_hope_area
+		833
+		1175
+		1177
+		1179
+		1180
+		# limpopo_area
+		789
+		1181
+		1182
+		1800
+		# quelimane_area
+		1183
+		1186
+		1192
+		# south_african_plateau_area
+		1176
+		1178
+		2856
+		2880
+		2864
+		# transvaal_area
+		4781
+		4782
+		4783
+		4784
+		# zimbabwe_area
+		1184
+		2950
+		2951
+		2952
+	}
+	# Specific
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_CAPE_Cape_Colony"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_CAPE_Kaapkolonie"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_CAPE_Colonie_du_Cap"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_CAPE_Kapkolonie"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			primary_culture = portugese
+		}
+		name = "COLONIAL_CAPE_Colonia_del_Capo"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_CAPE_Colonia_de_Cabo"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_CAPE_Colonia_do_Cabo"
+	}
+	names = {
+		name = "COLONIAL_CAPE_Cape_Colony"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}

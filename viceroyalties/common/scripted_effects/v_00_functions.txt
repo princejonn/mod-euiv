@@ -23,10 +23,11 @@ cede_all_provinces_in_sector_fn = {
 	}
 }
 
+# ROOT = province
 cede_province_to_viceroyalty_fn = {
 	if = {
 		limit = {
-			$PROVINCE$ = {
+			ROOT = {
 				is_province_in_$SECTOR$ = yes
 			}
 			$SUBJECT$ = {
@@ -34,7 +35,7 @@ cede_province_to_viceroyalty_fn = {
 				is_subject_of_type = viceroyalty
 			}
 		}
-		$PROVINCE$ = {
+		ROOT = {
 			cede_province = $SUBJECT$
 		}
 	}

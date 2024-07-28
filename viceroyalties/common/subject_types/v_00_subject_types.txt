@@ -1,3 +1,39 @@
+incorporated_personal_union = {
+	copy_from = personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	annex_cost_per_development = 6
+	base_liberty_desire = -5
+	takes_diplo_slot = no
+	# Interactions (Continuous):
+	subsidize_armies = yes
+	# Opinion:
+	overlord_opinion_modifier = is_incorporated_personal_union
+	subject_opinion_modifier = is_incorporated_personal_union
+}
+
+consolidated_personal_union = {
+	copy_from = incorporated_personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	annex_cost_per_development = 4
+	base_liberty_desire = -10
+	can_union_break = no
+	# Interactions (Continuous):
+	send_officers = yes
+	# Interactions (Immediate):
+	send_additional_troops = yes
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_personal_union
+	subject_opinion_modifier = is_consolidated_personal_union
+}
+
 viceroyalty = {
 	copy_from = default
 	# Graphics:
@@ -14,7 +50,6 @@ viceroyalty = {
 	cities_required_for_bonuses = 20
 	extend_trading_range = yes
 	gets_help_with_rebels = yes
-	# has_overlords_ruler = yes
 	has_power_projection = no
 	liberty_desire_development_ratio = 0.1
 	liberty_desire_negative_prestige = 2

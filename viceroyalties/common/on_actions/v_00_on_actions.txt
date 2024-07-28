@@ -1,14 +1,15 @@
-# ROOT = province, FROM = old owner
-on_province_owner_change = {
-	# cede provinces to viceroyalties in their regions
-	cede_province_to_viceroyalty = {
-		PROVINCE = ROOT
-	}
+# ROOT = province
+on_colony_finished = {
+	cede_province_to_viceroyalty = yes
 }
 
-on_colony_finished = {
-	# cede provinces to viceroyalties in their regions
-	cede_province_to_viceroyalty = {
-		PROVINCE = ROOT
-	}
+# ROOT = province, FROM = old owner
+on_province_owner_change = {
+	cede_province_to_viceroyalty = yes
+}
+
+# ROOT = country
+on_monarch_death = {
+	on_monarch_death_incorporated_union_effect = yes
+	on_monarch_death_consolidated_union_effect = yes
 }
