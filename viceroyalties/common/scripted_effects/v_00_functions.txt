@@ -63,19 +63,6 @@ cede_province_to_viceroyalty_fn = {
 	}
 }
 
-change_subject_tag_fn = {
-	if = {
-		limit = {
-			$NEWTAG$ = {
-				exists = no
-			}
-		}
-		$SUBJECT$ = {
-			change_tag = $NEWTAG$
-		}
-	}
-}
-
 change_subject_government_fn = {
 	$SUBJECT$ = {
 		# Set Government
@@ -90,5 +77,11 @@ change_subject_government_fn = {
 		add_dip_power = 250
 		add_mil_power = 250
 		add_prestige = 10
+	}
+}
+
+change_subject_name_fn = {
+	$SUBJECT$ = {
+		override_country_name = viceroyalty_name_$SECTOR$
 	}
 }

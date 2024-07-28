@@ -12,6 +12,11 @@ viceroyalty_decision_effect = {
 			OVERLORD = $OVERLORD$
 		}
 	}
+	# Change Name
+	change_subject_name_fn = {
+		SUBJECT = $SUBJECT$
+		SECTOR = $SECTOR$
+	}
 	# Create Subject
 	create_subject = {
 		subject = $SUBJECT$
@@ -19,7 +24,7 @@ viceroyalty_decision_effect = {
 		keep_liberty_desire = yes
 	}
 	# Power and Prestige
-	add_adm_power = -120
-	add_dip_power = 120
-	add_prestige = 10
+	add_adm_power = -300
+	add_dip_power = -300
+	add_prestige = 20
 }
