@@ -1,4 +1,4 @@
-name="Viceroyalties"
+name="Rebalanced Subjects"
 tags={
 	"balance"
 }
