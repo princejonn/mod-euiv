@@ -1,27 +1,27 @@
 country_decisions = {
-	## India
-	create_viceroyalty_india = {
+	## Burma
+	create_viceroyalty_burma = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = india
+				SECTOR = burma
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = india
+				SECTOR = burma
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = HIN
+				SUBJECT = KAL
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = india
-				SUBJECT = HIN
+				SECTOR = burma
+				SUBJECT = KAL
 			}
 		}
 		ai_will_do = {

@@ -1,56 +1,56 @@
 country_decisions = {
-	## Indochina
-	create_viceroyalty_indochina = {
+	## Eastindies
+	create_viceroyalty_eastindies = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = indochina
+				SECTOR = eastindies
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = indochina
+				SECTOR = eastindies
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = DAI
+				SUBJECT = BEI
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = indochina
-				SUBJECT = DAI
+				SECTOR = eastindies
+				SUBJECT = BEI
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	## Siam
-	create_viceroyalty_siam = {
+	## Philippines
+	create_viceroyalty_philippines = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = siam
+				SECTOR = philippines
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = siam
+				SECTOR = philippines
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = SIA
+				SUBJECT = MNA
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = siam
-				SUBJECT = SIA
+				SECTOR = philippines
+				SUBJECT = MNA
 			}
 		}
 		ai_will_do = {

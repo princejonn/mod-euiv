@@ -95,6 +95,14 @@ can_establish_viceroyalty_wales = {
 	}
 }
 
+## Burma
+can_establish_viceroyalty_burma = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = burma
+		AMOUNT = 12		# total: 23
+	}
+}
+
 ## Carpathia
 can_establish_viceroyalty_hungary = {
 	can_establish_viceroyalty_fn = {
@@ -107,6 +115,21 @@ can_establish_viceroyalty_romania = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = romania
 		AMOUNT = 9		# total: 17
+	}
+}
+
+## Eastindies
+can_establish_viceroyalty_eastindies = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = eastindies
+		AMOUNT = 20		# total: ??
+	}
+}
+
+can_establish_viceroyalty_philippines = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = philippines
+		AMOUNT = 10		# total: ??
 	}
 }
 
@@ -178,14 +201,21 @@ can_establish_viceroyalty_spain = {
 }
 
 ## India
-can_establish_viceroyalty_hindustan = {
+can_establish_viceroyalty_india = {
 	can_establish_viceroyalty_fn = {
-		SECTOR = hindustan
+		SECTOR = india
 		AMOUNT = 20		# total: ??
 	}
 }
 
 ## Indochina
+can_establish_viceroyalty_indochina = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = indochina
+		AMOUNT = 20		# total: ??
+	}
+}
+
 can_establish_viceroyalty_siam = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = siam
@@ -227,7 +257,7 @@ can_establish_viceroyalty_tunisia = {
 can_establish_viceroyalty_malaya = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = malaya
-		AMOUNT = 20		# total: ??
+		AMOUNT = 8		# total: 14
 	}
 }
 

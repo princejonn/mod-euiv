@@ -13,7 +13,7 @@ is_province_in_turkey = {
 		area = north_kurdistan_area
 		area = rum_area
 	}
-	# 51
+	# 43
 }
 
 ## Arabia
@@ -25,7 +25,7 @@ is_province_in_arabia = {
 ## Armenia
 is_province_in_armenia = {
 	region = caucasia_region
-	# 28
+	# 27
 }
 
 ## Balkans
@@ -38,7 +38,7 @@ is_province_in_dalmatia = {
 		area = rascia_area
 		area = serbia_area
 	}
-	# 23
+	# 26
 }
 
 is_province_in_greece = {
@@ -124,6 +124,20 @@ is_province_in_wales = {
 	# 4
 }
 
+## Burma
+is_province_in_burma = {
+	OR = {
+		area = central_burma_area
+		area = chindwin_area
+		area = kachin_area
+		area = karenni_area
+		area = lower_burma_area
+		area = shan_hill_area
+		area = upper_burma_area
+	}
+	# 29
+}
+
 ## Carpathia
 is_province_in_hungary = {
 	OR = {
@@ -132,7 +146,7 @@ is_province_in_hungary = {
 		area = alfold_area
 		area = slavonia_area
 	}
-	# 16
+	# 18
 }
 
 is_province_in_romania = {
@@ -145,6 +159,41 @@ is_province_in_romania = {
 	# 17
 }
 
+## East Indies
+is_province_in_eastindies = {
+	OR = {
+		region = indonesia_region
+		## malaya
+		area = batak_area
+		area = central_sumatra_area
+		area = indian_ocean_islands_area
+		area = jambi_area
+		area = minangkabau_area
+		area = north_sumatra_area
+		area = south_sumatra_area
+		## moluccas
+		area = makassar_area
+		area = molluca_area
+		area = south_sulawesi_area
+		area = spice_islands_area
+		area = sulawesi_area
+		area = timor_area
+	}
+	# 73
+}
+
+is_province_in_philippines = {
+	OR = {
+		area = luzon_area
+		area = southern_luzon_area
+		area = palawan_area
+		area = visayas_area
+		area = mindanao_area
+		area = west_mindanao_area
+	}
+	# 13
+}
+
 ## Egypt
 is_province_in_egypt = {
 	OR = {
@@ -152,13 +201,13 @@ is_province_in_egypt = {
 		province_id = 356		# Bangazi
 		province_id = 357		# Darnah
 	}
-	# 27
+	# 29
 }
 
 ## France
 is_province_in_france = {
 	region = france_region
-	# 62
+	# 66
 }
 
 ## Germany
@@ -168,7 +217,7 @@ is_province_in_austria = {
 		area = inner_austria_area
 		area = tirol_area
 	}
-	# 12
+	# 14
 }
 
 is_province_in_bohemia = {
@@ -209,7 +258,7 @@ is_province_in_germany = {
 			province_id = 1775			# Holstein
 		}
 	}
-	# 82
+	# 86
 }
 
 is_province_in_prussia = {
@@ -264,32 +313,53 @@ is_province_in_spain = {
 		area = upper_andalucia_area
 		area = valencia_area
 	}
-	# 50
+	# 52
 }
 
 ## India
-is_province_in_hindustan = {
+is_province_in_india = {
 	OR = {
 		superregion = india_superregion
 		area = makran_area
 		area = kalat_area
 		area = arakan_area
 	}
-	# 97
+	# 266
 }
 
 ## Indochina
+is_province_in_indochina = {
+	OR = {
+		area = angkor_area
+		area = cambodia_area
+		area = champa_area
+		area = champasak_area
+		area = mekong_area
+		area = north_laos_area
+		area = red_river_delta_area
+		area = tay_nguyen_area
+		area = vientiane_area
+		area = vietnam_area
+	}
+	# 45
+}
+
 is_province_in_siam = {
 	OR = {
-		region = indo_china_region
+		area = central_thai_area
+		area = khorat_area
+		area = north_tenasserim_area
+		area = northern_thai_area
+		area = sukhothai_area
+		area = tenasserim_area
 	}
-	# ??
+	# 27
 }
 
 ## Italy
 is_province_in_italy = {
 	region = italy_region
-	# 55
+	# 57
 }
 
 ## Maghreb
@@ -324,13 +394,18 @@ is_province_in_tunisia = {
 		area = tripolitania_area
 		area = fezzan_area
 	}
-	# 16
+	# 15
 }
 
 ## Malaya
 is_province_in_malaya = {
-	region = malaya_region
-	# ??
+	OR = {
+		area = johor_area
+		area = malacca_area
+		area = malaya_area
+		area = north_malaya_area
+	}
+	# 14
 }
 
 ## Mashriq
@@ -358,10 +433,20 @@ is_province_in_netherlands = {
 is_province_in_persia = {
 	OR = {
 		region = persia_region
-		area = iraq_arabi_area
+		# khorasan
+		area = balkh_area
+		area = birjand_area
+		area = ghor_area
+		area = herat_area
+		area = kabulistan_area
+		area = mashhad_area
+		area = merv_area
+		area = sistan_area
+		# mashriq
 		area = basra_area
+		area = iraq_arabi_area
 	}
-	# 56
+	# 89
 }
 
 ## Poland
@@ -422,7 +507,7 @@ is_province_in_russia = {
 			province_id = 4124			# Karelia
 		}
 	}
-	# 57
+	# 124
 }
 
 ## Scandinavia
