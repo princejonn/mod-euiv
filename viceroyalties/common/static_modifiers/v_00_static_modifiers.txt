@@ -13,6 +13,24 @@ viceroyalty_overlord_large = {
 	naval_forcelimit = 4
 }
 
+viceroyalty_overlord_regional = {
+	colonists = 1
+	global_colonial_growth = 20
+	global_trade_power = 0.05
+	land_forcelimit = 4
+	merchants = 1
+	naval_forcelimit = 4
+}
+
+viceroyalty_overlord_continental = {
+	colonists = 1
+	global_colonial_growth = 20
+	global_trade_power = 0.05
+	land_forcelimit = 4
+	merchants = 1
+	naval_forcelimit = 4
+}
+
 viceroyalty_subject = {
 	development_cost = -0.05
 	global_tax_income = -4
@@ -23,6 +41,18 @@ viceroyalty_subject = {
 viceroyalty_subject_large = {
 	development_cost = -0.1
 	global_tax_income = -2
+	land_forcelimit = 2
+	naval_forcelimit = 4
+}
+
+viceroyalty_subject_regional = {
+	global_tax_income = 2
+	land_forcelimit = 2
+	naval_forcelimit = 4
+}
+
+viceroyalty_subject_continental = {
+	global_tax_income = 2
 	land_forcelimit = 2
 	naval_forcelimit = 4
 }

@@ -12,14 +12,14 @@
   is_viceroyalty: "Viceroyalty"
 
   # static modifiers
-  viceroyalty_overlord: "Viceroyalty"
-  viceroyalty_overlord_small: "Viceroyalty"
-  viceroyalty_overlord_medium: "Viceroyalty"
-  viceroyalty_overlord_large: "Viceroyalty"
-  viceroyalty_subject: "Viceroyalty"
-  viceroyalty_subject_small: "Viceroyalty"
-  viceroyalty_subject_medium: "Viceroyalty"
-  viceroyalty_subject_large: "Viceroyalty"
+  viceroyalty_overlord: "Viceroyalty Overlord"
+  viceroyalty_overlord_large: "Large Viceroyalty Overlord"
+  viceroyalty_overlord_regional: "Regional Viceroyalty Overlord"
+  viceroyalty_overlord_continental: "Continental Viceroyalty Overlord"
+  viceroyalty_subject: "Viceroyalty Subject"
+  viceroyalty_subject_large: "Large Viceroyalty Subject"
+  viceroyalty_subject_regional: "Regional Viceroyalty Subject"
+  viceroyalty_subject_continental: "Continental Viceroyalty Subject"
   
   # subject types
   viceroyalty: "Viceroyalty"

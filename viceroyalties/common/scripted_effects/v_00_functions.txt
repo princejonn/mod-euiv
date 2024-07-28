@@ -3,7 +3,6 @@ cede_all_provinces_in_sector_fn = {
 		every_owned_province = {
 			limit = {
 				is_province_in_$SECTOR$ = yes
-				is_owned_by_trade_company = no
 				is_core = $OVERLORD$
 			}
 			remove_core = $OVERLORD$
@@ -14,34 +13,12 @@ cede_all_provinces_in_sector_fn = {
 		every_owned_province = {
 			limit = {
 				is_province_in_$SECTOR$ = yes
-				is_owned_by_trade_company = no
 				NOT = {
 					is_core = $OVERLORD$
 				}
 			}
 			remove_core = $OVERLORD$
 			cede_province = $SUBJECT$
-		}
-	}
-	$SUBJECT$ = {
-		every_owned_province = {
-			limit = {
-				is_province_in_$SECTOR$ = no
-				is_core = $SUBJECT$
-			}
-			remove_core = $SUBJECT$
-			add_core = $OVERLORD$
-			cede_province = $OVERLORD$
-		}
-		every_owned_province = {
-			limit = {
-				is_province_in_$SECTOR$ = no
-				NOT = {
-					is_core = $SUBJECT$
-				}
-			}
-			remove_core = $SUBJECT$
-			cede_province = $OVERLORD$
 		}
 	}
 }
