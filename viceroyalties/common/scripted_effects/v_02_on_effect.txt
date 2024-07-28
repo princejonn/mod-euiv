@@ -151,8 +151,23 @@ cede_province_to_viceroyalty = {
 	## India
 	cede_province_to_viceroyalty_fn = {
 		PROVINCE = ROOT
-		SECTOR = india
-		SUBJECT = HIN
+		SECTOR = bengal
+		SUBJECT = BNG
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = delhi
+		SUBJECT = DLH
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = mysore
+		SUBJECT = MYS
+	}
+	cede_province_to_viceroyalty_fn = {
+		PROVINCE = ROOT
+		SECTOR = punjab
+		SUBJECT = PUN
 	}
 	## Indochina
 	cede_province_to_viceroyalty_fn = {

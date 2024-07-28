@@ -1,27 +1,111 @@
 country_decisions = {
 	## India
-	create_viceroyalty_india = {
+	create_viceroyalty_bengal = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = india
+				SECTOR = bengal
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = india
+				SECTOR = bengal
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = HIN
+				SUBJECT = BNG
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = india
-				SUBJECT = HIN
+				SECTOR = bengal
+				SUBJECT = BNG
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	create_viceroyalty_delhi = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = delhi
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = delhi
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				SUBJECT = DLH
+			}
+		}
+		effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
+				SECTOR = delhi
+				SUBJECT = DLH
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	create_viceroyalty_mysore = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = mysore
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = mysore
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				SUBJECT = MYS
+			}
+		}
+		effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
+				SECTOR = mysore
+				SUBJECT = MYS
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	create_viceroyalty_punjab = {
+		major = yes
+		potential = {
+			viceroyalty_decision_potential = {
+				SECTOR = punjab
+			}
+		}
+		provinces_to_highlight = {
+			viceroyalty_decision_highlight = {
+				SECTOR = punjab
+			}
+		}
+		allow = {
+			viceroyalty_decision_allow = {
+				SUBJECT = PUN
+			}
+		}
+		effect = {
+			viceroyalty_decision_effect = {
+				OVERLORD = ROOT
+				SECTOR = punjab
+				SUBJECT = PUN
 			}
 		}
 		ai_will_do = {

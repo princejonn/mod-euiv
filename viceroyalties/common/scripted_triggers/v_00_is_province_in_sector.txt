@@ -323,14 +323,36 @@ is_province_in_spain = {
 }
 
 ## India
-is_province_in_india = {
+is_province_in_bengal = {
 	OR = {
-		superregion = india_superregion
-		area = makran_area
-		area = kalat_area
+		region = bengal_region
 		area = arakan_area
 	}
-	# 266
+	# xx
+}
+
+is_province_in_delhi = {
+	OR = {
+		region = hindusthan_region
+	}
+	# 74
+}
+
+is_province_in_mysore = {
+	OR = {
+		region = deccan_region
+		region = coromandel_region
+	}
+	# 85
+}
+
+is_province_in_punjab = {
+	OR = {
+		region = west_india_region
+		area = makran_area
+		area = kalat_area
+	}
+	# 57
 }
 
 ## Indochina

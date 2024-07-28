@@ -95,8 +95,17 @@
   create_viceroyalty_spain_desc: "We have established dominance over Spain, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
   # India
-  create_viceroyalty_india_title: "Create Viceroyalty of India"
-  create_viceroyalty_india_desc: "We have established dominance over India, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+  create_viceroyalty_bengal_title: "Create Viceroyalty of Bengal"
+  create_viceroyalty_bengal_desc: "We have established dominance over India, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
+  create_viceroyalty_delhi_title: "Create Viceroyalty of Delhi"
+  create_viceroyalty_delhi_desc: "We have established dominance over India, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
+  create_viceroyalty_mysore_title: "Create Viceroyalty of Mysore"
+  create_viceroyalty_mysore_desc: "We have established dominance over India, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
+
+  create_viceroyalty_punjab_title: "Create Viceroyalty of Punjab"
+  create_viceroyalty_punjab_desc: "We have established dominance over India, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
   # Indochina
   create_viceroyalty_indochina_title: "Create Viceroyalty of Indochina"

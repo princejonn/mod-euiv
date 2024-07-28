@@ -202,10 +202,31 @@ can_establish_viceroyalty_spain = {
 }
 
 ## India
-can_establish_viceroyalty_india = {
+can_establish_viceroyalty_bengal = {
 	can_establish_viceroyalty_fn = {
-		SECTOR = india
-		AMOUNT = 20		# total: 266
+		SECTOR = bengal
+		AMOUNT = 20		# total: 50
+	}
+}
+
+can_establish_viceroyalty_delhi = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = delhi
+		AMOUNT = 20		# total: 74
+	}
+}
+
+can_establish_viceroyalty_mysore = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = mysore
+		AMOUNT = 20		# total: 85
+	}
+}
+
+can_establish_viceroyalty_punjab = {
+	can_establish_viceroyalty_fn = {
+		SECTOR = punjab
+		AMOUNT = 20		# total: 57
 	}
 }
 
