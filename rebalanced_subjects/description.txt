@@ -54,10 +54,19 @@ I wanted to create a path where you slowly move the integration process forward 
 [/list]
 
 [h2]Incorporated Vassals[/h2]
-I wanted to create a path where you slowly move the integration process forward for your Personal Union. I used the Incorporation basline from the Austria Mission Tree and continued down the path.
+I'm enabling incorporated vassals via diplomatic influence locked behind technology and subject approval.
 
 [list]
   [*] You need to have admin tech: 12 (Early Modern Administration).
   [*] You access this feature from the Diplomatic window under: Influence.
   [*] You can only do this once every year.
+[/list]
+
+[h2]Forming Unions with Vassals[/h2]
+I'm enabling a way to form a personal union with your vassal via diplomatic influence locked behind technology and subject approval.
+
+[list]
+  [*] You need to have admin tech: 12 (Early Modern Administration).
+  [*] You access this feature from the Diplomatic window under: Influence.
+  [*] You can only do this once every three years.
 [/list]

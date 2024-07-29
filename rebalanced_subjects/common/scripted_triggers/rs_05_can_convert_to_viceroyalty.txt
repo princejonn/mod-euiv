@@ -8,8 +8,11 @@ can_convert_to_viceroyalty_fn = {
 			value = $AMOUNT$
 			is_province_in_$SECTOR$ = yes
 		}
-		NOT = {
-			exists = $NEW_TAG$
+		OR = {
+			NOT = {
+				exists = $NEW_TAG$
+			}
+			tag = $NEW_TAG$
 		}
 	}
 }

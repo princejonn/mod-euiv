@@ -11,9 +11,31 @@ incorporated_personal_union = {
 	takes_diplo_slot = no
 	# Interactions (Continuous):
 	subsidize_armies = yes
+	# Interactions (Immediate):
+	seize_territory = yes
 	# Opinion:
 	overlord_opinion_modifier = is_incorporated_personal_union
 	subject_opinion_modifier = is_incorporated_personal_union
+}
+
+consolidated_personal_union = {
+	copy_from = incorporated_personal_union
+	count = personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	annex_cost_per_development = 4
+	base_liberty_desire = -10
+	can_union_break = no
+	# Interactions (Continuous):
+	send_officers = yes
+	# Interactions (Immediate):
+	send_additional_troops = yes
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_personal_union
+	subject_opinion_modifier = is_consolidated_personal_union
 }
 
 incorporated_vassal = {
@@ -38,26 +60,6 @@ incorporated_vassal = {
 	# Opinion:
 	overlord_opinion_modifier = is_incorporated_vassal
 	subject_opinion_modifier = is_incorporated_vassal
-}
-
-consolidated_personal_union = {
-	copy_from = incorporated_personal_union
-	count = personal_union
-	# Graphics:
-	sprite = GFX_icon_integrated_personal_union_subject_type
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
-	# Properties:
-	annex_cost_per_development = 4
-	base_liberty_desire = -10
-	can_union_break = no
-	# Interactions (Continuous):
-	send_officers = yes
-	# Interactions (Immediate):
-	send_additional_troops = yes
-	# Opinion:
-	overlord_opinion_modifier = is_consolidated_personal_union
-	subject_opinion_modifier = is_consolidated_personal_union
 }
 
 viceroyalty = {

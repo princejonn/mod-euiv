@@ -37,6 +37,10 @@
   convert_to_incorporated_vassal_desc: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
   convert_to_incorporated_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
 
+  convert_vassal_to_personal_union_title: "Form Union"
+  convert_vassal_to_personal_union_desc: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
+  convert_vassal_to_personal_union_tooltip: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
+
   convert_to_viceroyalty_title: "Establish Viceroyalty"
   convert_to_viceroyalty_desc: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
   convert_to_viceroyalty_tooltip: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
@@ -56,6 +60,7 @@
   inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
   inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
   convert_to_incorporated_vassal_cooldown_flag: "Convert to Incorporated Vassal Cooldown"
+  convert_vassal_to_personal_union_cooldown_flag: "Convert Vassal to Personal Union Cooldown"
   establish_viceroyalty_cooldown_flag: "Establish Viceroyalty Cooldown"
 
   # static modifiers
