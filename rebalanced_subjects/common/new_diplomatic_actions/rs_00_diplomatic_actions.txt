@@ -161,7 +161,7 @@ convert_to_viceroyalty = {
 				type = vassal
 			}
 			capital_scope = {
-				is_province_in_sector_global = yes
+				is_province_in_sector_switch = yes
 			}
 		}
 	}
@@ -184,7 +184,7 @@ convert_to_viceroyalty = {
 		custom_trigger_tooltip = {
 			tooltip = TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL
 			FROM = {
-				can_convert_to_viceroyalty_global = yes
+				can_convert_to_viceroyalty_switch = yes
 			}
 		}
 		FROM = {
@@ -205,7 +205,7 @@ convert_to_viceroyalty = {
 	}
 	on_accept = {
 		# Convert Subject
-		convert_subject_to_viceroyalty = {
+		convert_subject_to_viceroyalty_switch = {
 			OVERLORD = ROOT
 			SUBJECT = FROM
 		}

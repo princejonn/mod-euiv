@@ -1,4 +1,4 @@
-convert_subject_to_viceroyalty = {
+convert_subject_to_viceroyalty_switch = {
 	## Anatolia
 	if = {
 		limit = {
