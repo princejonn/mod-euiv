@@ -148,6 +148,7 @@ technology = {
 		new_world_i = 0.3
 	}
 	theocratic_government = yes
+	allowed_idea_groups = 4
 }
 
 technology = {
@@ -176,7 +177,7 @@ technology = {
 	administrative_republic = yes
 	governing_capacity = 100
 	state_house = yes
-	allowed_idea_groups = 4
+	allowed_idea_groups = 5
 }
 
 technology = {
@@ -204,7 +205,7 @@ technology = {
 		printing_press = 0.3
 	}
 	plantations = yes
-	allowed_idea_groups = 5
+	allowed_idea_groups = 6
 }
 
 technology = {
@@ -219,7 +220,6 @@ technology = {
 	}
 	may_force_march = yes
 	soldier_households = yes
-	allowed_idea_groups = 6
 }
 
 technology = {
