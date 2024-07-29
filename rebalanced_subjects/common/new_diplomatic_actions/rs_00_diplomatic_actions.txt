@@ -14,19 +14,19 @@ convert_to_incorporated_personal_union = {
 	is_allowed = {
 		dip_power = 100
 		is_at_war = no
-		FROM = {
-			is_at_war = no
-		}
+		has_regency = no
+		has_heir = yes
 		NOT = {
 			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
 		}
 		FROM = {
 			NOT = {
 				truce_with = ROOT
 			}
 		}
-		has_regency = no
-		has_heir = yes
 		FROM = {
 			years_in_union_under = {
 				who = ROOT
@@ -90,19 +90,19 @@ convert_to_consolidated_personal_union = {
 	is_allowed = {
 		dip_power = 100
 		is_at_war = no
-		FROM = {
-			is_at_war = no
-		}
+		has_regency = no
+		has_heir = yes
 		NOT = {
 			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
 		}
 		FROM = {
 			NOT = {
 				truce_with = ROOT
 			}
 		}
-		has_regency = no
-		has_heir = yes
 		FROM = {
 			years_in_union_under = {
 				who = ROOT
@@ -169,15 +169,6 @@ convert_to_viceroyalty = {
 		adm_power = 300
 		dip_power = 300
 		is_at_war = no
-		OR = {
-			NOT = {
-				has_country_flag = establish_viceroyalty_cooldown_flag
-			}
-			had_country_flag = {
-				flag = establish_viceroyalty_cooldown_flag
-				days = 730
-			}
-		}
 		NOT = {
 			truce_with = FROM
 		}
@@ -189,17 +180,34 @@ convert_to_viceroyalty = {
 		}
 		FROM = {
 			is_at_war = no
+		}
+		FROM = {
 			is_march = no
+		}
+		FROM = {
 			years_in_vassalage_under = {
 				who = ROOT
 				years = 25
 			}
+		}
+		FROM = {
 			NOT = {
 				liberty_desire = 25
 			}
+		}
+		FROM = {
 			has_opinion = {
 				who = ROOT
 				value = 190
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = establish_viceroyalty_cooldown_flag
+			}
+			had_country_flag = {
+				flag = establish_viceroyalty_cooldown_flag
+				days = 730
 			}
 		}
 	}
