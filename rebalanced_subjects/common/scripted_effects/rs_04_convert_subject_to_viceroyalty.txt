@@ -1,37 +1,40 @@
-viceroyalty_decision_effect = {
+convert_subject_to_viceroyalty_fn = {
 	hidden_effect = {
+		# Change Tag
+		change_subject_tag_fn = {
+			SUBJECT = $SUBJECT$
+			NEW_TAG = $NEW_TAG$
+		}
 		# Cede Provinces
 		cede_all_owned_provinces_in_sector_fn = {
 			SECTOR = $SECTOR$
 			OWNER = $OVERLORD$
-			RECEIVER = $SUBJECT$
+			RECEIVER = $NEW_TAG$
+		}
+		cede_all_owned_provinces_outside_sector_fn = {
+			SECTOR = $SECTOR$
+			OWNER = $NEW_TAG$
+			RECEIVER = $OVERLORD$
 		}
 		# Permanent Claims
 		add_permanent_claims_in_sector_fn = {
 			SECTOR = $SECTOR$
-			OWNER = $SUBJECT$
+			OWNER = $NEW_TAG$
 		}
 		# Change Government
 		change_subject_government_fn = {
-			SUBJECT = $SUBJECT$
+			SUBJECT = $NEW_TAG$
 			OVERLORD = $OVERLORD$
 		}
 		# Change Name
 		change_subject_name_fn = {
-			SUBJECT = $SUBJECT$
+			SUBJECT = $NEW_TAG$
 			SECTOR = $SECTOR$
 		}
 	}
 	# Create Subject
 	create_subject = {
-		subject = $SUBJECT$
+		subject = $NEW_TAG$
 		subject_type = viceroyalty
 	}
-	# Power and Prestige
-	add_adm_power = -300
-	add_dip_power = -300
-	add_prestige = 20
-	# Flags
-	clr_country_flag = establish_viceroyalty_cooldown_flag
-	set_country_flag = establish_viceroyalty_cooldown_flag
 }

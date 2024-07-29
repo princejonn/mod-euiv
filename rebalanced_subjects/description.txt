@@ -14,9 +14,12 @@ I felt like something was missing somewhere between full annexation and personal
 
 [list]
   [*] You establish viceroyalties in a sector once you've reached a province ownership threshold. Depending on the sector size, this can be: 5, 10, or 20.
-  [*] You need to be in the western technology group and have admin tech: 10.
-  [*] The decision costs 300 admin power and 300 diplomatic power. You can only establish a Viceroyalty once every 2 years (It takes time and effort to establish one).
-  [*] Viceroyalties will take ownership of all provinces in the sector it is established in. If you conquer more land in the sector, it will go to the Viceroyalty.
+  [*] You need to be in the western technology group.
+  [*] You need to have admin tech: 10.
+  [*] The decision costs 300 admin power and 300 diplomatic power.
+  [*] You can only establish a Viceroyalty once every 2 years (It takes time and effort to establish one).
+  [*] Viceroyalties will take ownership of all provinces in the sector it is established in.
+  [*] If you conquer more land in the sector, it will go to the Viceroyalty.
   [*] It does not take up a diplomatic slot.
   [*] It will have much lower liberty desire than unions or vassals.
   [*] Viceroyalties cannot be inherited. You are already the owner.
@@ -26,6 +29,18 @@ I felt like something was missing somewhere between full annexation and personal
 
 [h3]Sector[/h3]
 A sector is a group of provinces that are loosely connected to in game regions and areas, or somewhat related to countries. I've basically just played around with what felt reasonable as well as what a colonial empire might have done.
+
+[h3]Establish Diplomatically[/h3]
+If you already have a vassal that owns a vast majority of the required provinces (all but 2 are required), you can establish a viceroyalty from that vassal as long as the conditions are met.
+
+[list]
+  [*] You need to be in the western technology group.
+  [*] You need to have diplomatic tech: 10.
+  [*] The decision costs 300 admin power and 300 diplomatic power.
+  [*] You can only establish a Viceroyalty once every 2 years (It takes time and effort to establish one).
+  [*] Your subject will take ownership of all provinces in the sector that you own.
+  [*] Your subject will cede all provinces outside the sector back to you.
+[/list]
 
 [h2]Incorporated and Consolidated Personal Unions[/h2]
 I wanted to create a path where you slowly move the integration process forward for your Personal Union. I used the Incorporation basline from the Austria Mission Tree and continued down the path.

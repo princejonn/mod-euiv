@@ -1,0 +1,748 @@
+convert_subject_to_viceroyalty = {
+	## Anatolia
+	if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_turkey = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = TUR
+			SECTOR = turkey
+		}
+	}
+	## Arabia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_arabia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = ARB
+			SECTOR = arabia
+		}
+	}
+	## Armenia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_armenia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = ARM
+			SECTOR = armenia
+		}
+	}
+	## Balkans
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_dalmatia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = DAL
+			SECTOR = dalmatia
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_greece = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = GRE
+			SECTOR = greece
+		}
+	}
+	## Baltic
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_estonia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = EST
+			SECTOR = estonia
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_latvia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = LTG
+			SECTOR = latvia
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_lithuania = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = LIT
+			SECTOR = lithuania
+		}
+	}
+	## Britain
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_england = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = ENG
+			SECTOR = england
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_ireland = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = IRE
+			SECTOR = ireland
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_scotland = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SCT
+			SECTOR = scotland
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_wales = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = WLS
+			SECTOR = wales
+		}
+	}
+	## Burma
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_burma = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = KAL
+			SECTOR = burma
+		}
+	}
+	## Carpathia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_hungary = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = HUN
+			SECTOR = hungary
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_romania = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = RMN
+			SECTOR = romania
+		}
+	}
+	## China
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_china = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = QNG
+			SECTOR = china
+		}
+	}
+	## East Indies
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_eastindies = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = BEI
+			SECTOR = eastindies
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_philippines = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = MNA
+			SECTOR = philippines
+		}
+	}
+	## Egypt
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_egypt = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = EGY
+			SECTOR = egypt
+		}
+	}
+	## France
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_france = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = FRA
+			SECTOR = france
+		}
+	}
+	## Germany
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_austria = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = AUS
+			SECTOR = austria
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_bohemia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = BOH
+			SECTOR = bohemia
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_germany = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = GER
+			SECTOR = germany
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_prussia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = PRU
+			SECTOR = prussia
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_switzerland = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SWI
+			SECTOR = switzerland
+		}
+	}
+	## Iberia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_portugal = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = POR
+			SECTOR = portugal
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_spain = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SPA
+			SECTOR = spain
+		}
+	}
+	## India
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_bengal = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = BNG
+			SECTOR = bengal
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_delhi = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = DLH
+			SECTOR = delhi
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_mysore = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = MYS
+			SECTOR = mysore
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_punjab = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = PUN
+			SECTOR = punjab
+		}
+	}
+	## Indochina
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_indochina = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = DAI
+			SECTOR = indochina
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_siam = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SIA
+			SECTOR = siam
+		}
+	}
+	## Italy
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_italy = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = ITA
+			SECTOR = italy
+		}
+	}
+	## Japan
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_japan = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = JAP
+			SECTOR = japan
+		}
+	}
+	## Korea
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_korea = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = KOR
+			SECTOR = korea
+		}
+	}
+	## Maghreb
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_algiers = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = ALG
+			SECTOR = algiers
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_morocco = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = MOR
+			SECTOR = morocco
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_tunisia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = TUN
+			SECTOR = tunisia
+		}
+	}
+	## Malaya
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_malaya = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = MSA
+			SECTOR = malaya
+		}
+	}
+	## Manchuria
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_manchuria = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = MCH
+			SECTOR = manchuria
+		}
+	}
+	## Mashriq
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_syria = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SYR
+			SECTOR = syria
+		}
+	}
+	## Mongolia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_mongolia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = MGE
+			SECTOR = mongolia
+		}
+	}
+	## Netherlands
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_netherlands = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = NED
+			SECTOR = netherlands
+		}
+	}
+	## Persia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_persia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = PER
+			SECTOR = persia
+		}
+	}
+	## Poland
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_poland = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = POL
+			SECTOR = poland
+		}
+	}
+	## Ruthenia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_kiev = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = RUS
+			SECTOR = kiev
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_smolensk = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = KIE
+			SECTOR = smolensk
+		}
+	}
+	## Russia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_russia = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SMO
+			SECTOR = russia
+		}
+	}
+	## Scandinavia
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_denmark = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = DEN
+			SECTOR = denmark
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_finland = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = FIN
+			SECTOR = finland
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_iceland = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = ICE
+			SECTOR = iceland
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_norway = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = NOR
+			SECTOR = norway
+		}
+	}
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_sweden = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = SWE
+			SECTOR = sweden
+		}
+	}
+	## Tibet
+	else_if = {
+		limit = {
+			$SUBJECT$ = {
+				can_convert_to_viceroyalty_tibet = yes
+			}
+		}
+		convert_subject_to_viceroyalty_fn = {
+			SUBJECT = $SUBJECT$
+			OVERLORD = $OVERLORD$
+			NEW_TAG = TIB
+			SECTOR = tibet
+		}
+	}
+}

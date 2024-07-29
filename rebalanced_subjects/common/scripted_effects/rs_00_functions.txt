@@ -1,24 +1,58 @@
-cede_all_provinces_in_sector_fn = {
-	$OVERLORD$ = {
+cede_all_owned_provinces_in_sector_fn = {
+	$OWNER$ = {
 		every_owned_province = {
 			limit = {
 				is_province_in_$SECTOR$ = yes
-				is_core = $OVERLORD$
+				is_core = $OWNER$
 			}
-			remove_core = $OVERLORD$
-			add_permanent_claim = $SUBJECT$
-			add_core = $SUBJECT$
-			cede_province = $SUBJECT$
+			remove_core = $OWNER$
+			add_core = $RECEIVER$
+			cede_province = $RECEIVER$
 		}
 		every_owned_province = {
 			limit = {
 				is_province_in_$SECTOR$ = yes
 				NOT = {
-					is_core = $OVERLORD$
+					is_core = $OWNER$
 				}
 			}
-			remove_core = $OVERLORD$
-			cede_province = $SUBJECT$
+			remove_core = $OWNER$
+			cede_province = $RECEIVER$
+		}
+	}
+}
+
+cede_all_owned_provinces_outside_sector_fn = {
+	$OWNER$ = {
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = no
+				is_core = $OWNER$
+			}
+			remove_core = $OWNER$
+			add_core = $RECEIVER$
+			cede_province = $RECEIVER$
+		}
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = no
+				NOT = {
+					is_core = $OWNER$
+				}
+			}
+			remove_core = $OWNER$
+			cede_province = $RECEIVER$
+		}
+	}
+}
+
+add_permanent_claims_in_sector_fn = {
+	$OWNER$ = {
+		every_owned_province = {
+			limit = {
+				is_province_in_$SECTOR$ = yes
+			}
+			add_permanent_claim = $OWNER$
 		}
 	}
 }
@@ -61,5 +95,12 @@ change_subject_government_fn = {
 change_subject_name_fn = {
 	$SUBJECT$ = {
 		override_country_name = viceroyalty_name_$SECTOR$
+	}
+}
+
+change_subject_tag_fn = {
+	$SUBJECT$ = {
+		change_tag = $NEW_TAG$
+		on_change_tag_effect = yes
 	}
 }

@@ -20,10 +20,10 @@ viceroyalty_decision_allow = {
 	}
 	OR = {
 		NOT = {
-			has_country_flag = viceroyalty_decision_cooldown_flag
+			has_country_flag = establish_viceroyalty_cooldown_flag
 		}
 		had_country_flag = {
-			flag = viceroyalty_decision_cooldown_flag
+			flag = establish_viceroyalty_cooldown_flag
 			days = 730
 		}
 	}

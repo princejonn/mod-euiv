@@ -28,22 +28,29 @@
   convert_to_incorporated_personal_union_title: "Incorporate Union"
   convert_to_incorporated_personal_union_desc: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
   convert_to_incorporated_personal_union_tooltip: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
-  convert_to_incorporated_personal_union_cooldown_flag: "Convert to Incorporated Subject Cooldown"
-
+  
   convert_to_consolidated_personal_union_title: "Consolidate Union"
   convert_to_consolidated_personal_union_desc: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
   convert_to_consolidated_personal_union_tooltip: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
-  convert_to_consolidated_personal_union_cooldown_flag: "Convert to Consolidated Subject Cooldown"
+
+  convert_to_viceroyalty_title: "Establish Viceroyalty"
+  convert_to_viceroyalty_desc: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you."
+  convert_to_viceroyalty_tooltip: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you."
+
+  # tooltips
+  TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL: "Vassal does not own enough provinces in the sector to be converted to a Viceroyalty."
 
   # opinion modifiers
   is_incorporated_personal_union: "Incorporated Personal Union"
   is_consolidated_personal_union: "Consolidated Personal Union"
   is_viceroyalty: "Viceroyalty"
 
-  # scripted triggers
-  viceroyalty_decision_cooldown_flag: "Establish Viceroyalty Cooldown"
+  # cooldown flags
+  convert_to_incorporated_personal_union_cooldown_flag: "Convert to Incorporated Subject Cooldown"
+  convert_to_consolidated_personal_union_cooldown_flag: "Convert to Consolidated Subject Cooldown"
   inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
   inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
+  establish_viceroyalty_cooldown_flag: "Establish Viceroyalty Cooldown"
 
   # static modifiers
   viceroyalty_overlord: "Viceroyalty Overlord"
