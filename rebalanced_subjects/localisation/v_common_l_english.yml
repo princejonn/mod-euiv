@@ -30,16 +30,16 @@
   convert_to_incorporated_personal_union_tooltip: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
   
   convert_to_consolidated_personal_union_title: "Consolidate Union"
-  convert_to_consolidated_personal_union_desc: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
-  convert_to_consolidated_personal_union_tooltip: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate and make them cost no Diplomatic Relations."
+  convert_to_consolidated_personal_union_desc: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
+  convert_to_consolidated_personal_union_tooltip: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
 
   convert_to_incorporated_vassal_title: "Incorporate Vassal"
-  convert_to_incorporated_vassal_desc: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate."
-  convert_to_incorporated_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate."
+  convert_to_incorporated_vassal_desc: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
+  convert_to_incorporated_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
 
   convert_to_viceroyalty_title: "Establish Viceroyalty"
-  convert_to_viceroyalty_desc: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you."
-  convert_to_viceroyalty_tooltip: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you."
+  convert_to_viceroyalty_desc: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
+  convert_to_viceroyalty_tooltip: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
 
   # tooltips
   TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL: "Vassal does not own enough provinces in the sector to be converted to a Viceroyalty."
@@ -47,6 +47,7 @@
   # opinion modifiers
   is_incorporated_personal_union: "Incorporated Personal Union"
   is_consolidated_personal_union: "Consolidated Personal Union"
+  is_incorporated_vassal: "Incorporated Vassal"
   is_viceroyalty: "Viceroyalty"
 
   # cooldown flags

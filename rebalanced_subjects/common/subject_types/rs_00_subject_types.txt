@@ -1,5 +1,6 @@
 incorporated_personal_union = {
 	copy_from = personal_union
+	count = personal_union
 	# Graphics:
 	sprite = GFX_icon_integrated_personal_union_subject_type
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
@@ -15,8 +16,33 @@ incorporated_personal_union = {
 	subject_opinion_modifier = is_incorporated_personal_union
 }
 
+incorporated_vassal = {
+	copy_from = vassal
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_incorporated_vassal_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
+	# Properties:
+	annex_cost_per_development = 6
+	takes_diplo_slot = no
+	# Modifiers
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = base_incorporated_vassal_cost
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_incorporated_vassal
+	subject_opinion_modifier = is_incorporated_vassal
+}
+
 consolidated_personal_union = {
 	copy_from = incorporated_personal_union
+	count = personal_union
 	# Graphics:
 	sprite = GFX_icon_integrated_personal_union_subject_type
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
