@@ -161,7 +161,6 @@ technology = {
 	}
 	#Textile Manufactory
 	textile = yes
-	allowed_idea_groups = 4
 }
 
 technology = {
@@ -177,6 +176,7 @@ technology = {
 	administrative_republic = yes
 	governing_capacity = 100
 	state_house = yes
+	allowed_idea_groups = 4
 }
 
 technology = {
@@ -191,7 +191,6 @@ technology = {
 	}
 	#Improved Drainage
 	production_efficiency = 0.02
-	allowed_idea_groups = 5
 }
 
 technology = {
@@ -205,6 +204,7 @@ technology = {
 		printing_press = 0.3
 	}
 	plantations = yes
+	allowed_idea_groups = 5
 }
 
 technology = {
@@ -265,6 +265,7 @@ technology = {
 		printing_press = 0.5
 		global_trade = 0.3
 	}
+	allowed_idea_groups = 8
 }
 
 technology = {
@@ -280,7 +281,6 @@ technology = {
 	}
 	#Cathedral
 	cathedral = yes
-	allowed_idea_groups = 8
 }
 
 technology = {
@@ -296,6 +296,7 @@ technology = {
 	}
 	republican_dictatorship = yes
 	governing_capacity = 250
+	allowed_idea_groups = 9
 }
 
 technology = {
@@ -313,7 +314,6 @@ technology = {
 	#Land Clearance
 	production_efficiency = 0.02
 	furnace = yes
-	allowed_idea_groups = 9
 }
 
 technology = {
