@@ -1,5 +1,6 @@
 viceroyalty_decision_potential = {
 	ai = no
+	adm_tech = 12	#Early Modern Administration
 	is_subject = no
 	technology_group = western
 	can_establish_viceroyalty_$SECTOR$ = yes
@@ -13,7 +14,6 @@ viceroyalty_decision_highlight = {
 viceroyalty_decision_allow = {
 	adm_power = 300
 	dip_power = 300
-	adm_tech = 10
 	is_at_war = no
 	NOT = {
 		exists = $SUBJECT$

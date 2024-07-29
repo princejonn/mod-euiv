@@ -1,0 +1,70 @@
+convert_to_incorporated_vassal = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		adm_tech = 12		#Early Modern Administration
+		can_have_incorporated_vassals = no		# If this is yes then they have access to the vanilla tech
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		dip_power = 100
+		is_at_war = no
+		has_regency = no
+		has_heir = yes
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+			}
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = convert_to_incorporated_vassal_cooldown_flag
+			}
+			had_country_flag = {
+				flag = convert_to_incorporated_vassal_cooldown_flag
+				days = 365
+			}
+		}
+	}
+	on_accept = {
+		add_dip_power = -100
+		create_subject = {
+			subject_type = incorporated_vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		clr_country_flag = convert_to_incorporated_vassal_cooldown_flag
+		set_country_flag = convert_to_incorporated_vassal_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

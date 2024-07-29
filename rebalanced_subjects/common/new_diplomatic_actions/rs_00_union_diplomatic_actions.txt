@@ -2,7 +2,7 @@ convert_to_incorporated_personal_union = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		dip_tech = 10
+		adm_tech = 12		#Early Modern Administration
 		NOT = {
 			tag = HAB
 		}
@@ -75,7 +75,7 @@ convert_to_consolidated_personal_union = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		dip_tech = 15
+		adm_tech = 18		#National Sovereignty
 		OR = {
 			FROM = {
 				is_subject_of = ROOT
@@ -141,89 +141,6 @@ convert_to_consolidated_personal_union = {
 		set_country_flag = convert_subject_to_consolidated_subject_cooldown_flag
 	}
 	on_decline = {
-	}
-	ai_will_do = {
-		always = no
-	}
-}
-
-convert_to_viceroyalty = {
-	category = influence
-	require_acceptance = no
-	is_visible = {
-		dip_tech = 10
-		ai = no
-		is_subject = no
-		technology_group = western
-		FROM = {
-			is_subject_of_type_with_overlord = {
-				who = ROOT
-				type = vassal
-			}
-			capital_scope = {
-				is_province_in_sector_switch = yes
-			}
-		}
-	}
-	is_allowed = {
-		adm_power = 300
-		dip_power = 300
-		is_at_war = no
-		NOT = {
-			truce_with = FROM
-		}
-		custom_trigger_tooltip = {
-			tooltip = TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL
-			FROM = {
-				can_convert_to_viceroyalty_switch = yes
-			}
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			is_march = no
-		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 25
-			}
-		}
-		FROM = {
-			NOT = {
-				liberty_desire = 25
-			}
-		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 190
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = establish_viceroyalty_cooldown_flag
-			}
-			had_country_flag = {
-				flag = establish_viceroyalty_cooldown_flag
-				days = 730
-			}
-		}
-	}
-	on_accept = {
-		# Convert Subject
-		convert_subject_to_viceroyalty_switch = {
-			OVERLORD = ROOT
-			SUBJECT = FROM
-		}
-		# Power and Prestige
-		add_adm_power = -300
-		add_dip_power = -300
-		add_prestige = 20
-		# Flags
-		clr_country_flag = establish_viceroyalty_cooldown_flag
-		set_country_flag = establish_viceroyalty_cooldown_flag
 	}
 	ai_will_do = {
 		always = no

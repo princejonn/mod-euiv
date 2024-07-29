@@ -36,5 +36,6 @@ convert_subject_to_viceroyalty_fn = {
 	create_subject = {
 		subject = $NEW_TAG$
 		subject_type = viceroyalty
+		keep_liberty_desire = yes
 	}
 }
