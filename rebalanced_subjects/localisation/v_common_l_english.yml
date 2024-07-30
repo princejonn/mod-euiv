@@ -39,13 +39,14 @@
   is_viceroyalty: "Viceroyalty"
 
   # cooldown flags
-  convert_to_incorporated_personal_union_cooldown_flag: "Convert to Incorporated Subject Cooldown"
-  convert_to_consolidated_personal_union_cooldown_flag: "Convert to Consolidated Subject Cooldown"
+  convert_to_incorporated_personal_union_cooldown_flag: "Converted a Union to Incorporated Union"
+  convert_to_consolidated_personal_union_cooldown_flag: "Converted a Union to Consolidated Union"
   inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
   inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
-  convert_to_incorporated_vassal_cooldown_flag: "Convert to Incorporated Vassal Cooldown"
-  convert_vassal_to_personal_union_cooldown_flag: "Convert Vassal to Personal Union Cooldown"
-  establish_viceroyalty_cooldown_flag: "Establish Viceroyalty Cooldown"
+  convert_to_incorporated_vassal_cooldown_flag: "Converted a Vassal to Incorporated Vassal"
+  convert_vassal_to_personal_union_cooldown_flag: "Converted a Vassal to Personal Union"
+  establish_viceroyalty_cooldown_flag: "Established a Viceroyalty"
+  administrative_reorganisation_cooldown_flag: "Administrative Reorganisation"
 
   # static modifiers
   viceroyalty_overlord: "Viceroyalty Overlord"
