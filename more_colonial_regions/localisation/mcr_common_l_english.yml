@@ -1,4 +1,32 @@
 ﻿l_english:
+  # colonial regions
+  colonial_cape: "Colonial Cape"
+  short_colonial_cape: "Cape"
+  colonial_congo: "Colonial Congo"
+  short_colonial_congo: "Congo"
+  colonial_guinea: "Colonial Guinea"
+  short_colonial_guinea: "Guinea"
+  colonial_madagascar: "Colonial Madagascar"
+  short_colonial_madagascar: "Madagascar"
+  colonial_mocambique: "Colonial Mocambique"
+  short_colonial_mocambique: "Mocambique"
+  colonial_niger: "Colonial Niger"
+  short_colonial_niger: "Niger"
+  colonial_somalia: "Colonial Somalia"
+  short_colonial_somalia: "Somalia"
+  colonial_tanzania: "Colonial Tanzania"
+  short_colonial_tanzania: "Tanzania"
+  colonial_zimbabwe: "Colonial Zimbabwe"
+  short_colonial_zimbabwe: "Zimbabwe"
+  colonial_borneo: "Colonial Borneo"
+  short_colonial_borneo: "Borneo"
+  colonial_indonesia: "Colonial Indonesia"
+  short_colonial_indonesia: "Indonesia"
+  colonial_malaya: "Colonial Malaya"
+  short_colonial_malaya: "Malaya"
+  colonial_philippines: "Colonial Philippines"
+  short_colonial_philippines: "Philippines"
+
   ## Africa
 
   # Cape
@@ -90,6 +118,24 @@
   COLONIAL_MOCAMBIQUE_portugese_ADJ: "Moçambique Colonial"
   COLONIAL_MOCAMBIQUE_scandinavian: "Mosambik Handelskompaniet"
   COLONIAL_MOCAMBIQUE_scandinavian_ADJ: "Mosambik Kolonial"
+
+  # Niger
+  COLONIAL_NIGER_british: "Royal Niger Company"
+  COLONIAL_NIGER_british_ADJ: "Niger Colonial"
+  COLONIAL_NIGER_dutch: "Koninklijke Niger Compagnie"
+  COLONIAL_NIGER_dutch_ADJ: "Niger Koloniale"
+  COLONIAL_NIGER_french: "Compagnie Royale du Niger"
+  COLONIAL_NIGER_french_ADJ: "Niger Coloniale"
+  COLONIAL_NIGER_germanic: "Königliche Niger Handelsgesellschaft"
+  COLONIAL_NIGER_germanic_ADJ: "Niger Kolonial"
+  COLONIAL_NIGER_iberian: "Compañía Real del Níger"
+  COLONIAL_NIGER_iberian_ADJ: "Níger Colonial"
+  COLONIAL_NIGER_latin: "Compagnia Reale del Niger"
+  COLONIAL_NIGER_latin_ADJ: "Niger Coloniale"
+  COLONIAL_NIGER_portugese: "Companhia Real do Níger"
+  COLONIAL_NIGER_portugese_ADJ: "Níger Colonial"
+  COLONIAL_NIGER_scandinavian: "Kungliga Niger Kompaniet"
+  COLONIAL_NIGER_scandinavian_ADJ: "Niger Kolonial"
  
   # Somalia
   COLONIAL_SOMALIA_british: "British Somaliland Company"

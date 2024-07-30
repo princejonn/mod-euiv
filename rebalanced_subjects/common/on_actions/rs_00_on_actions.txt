@@ -3,7 +3,7 @@ on_colony_finished = {
 	cede_province_to_viceroyalty = yes
 }
 
-# ROOT = province, FROM = old owner
+# ROOT = province, FROM = previous owner
 on_province_owner_change = {
 	cede_province_to_viceroyalty = yes
 }

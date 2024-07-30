@@ -336,6 +336,10 @@ colonial_malaya = {
 		623
 		2678
 		2679
+		# tenasserim_area
+		593
+		2390
+		2391
 	}
 	# Names
 	names = {

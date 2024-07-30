@@ -21,3 +21,5 @@ Since these were historically trade company regions, I have chosen to give defau
   [*] Malaya
   [*] Philippines
 [/list]
+
+[h2]
