@@ -752,6 +752,7 @@ estate_nobles_french_strong_duchies = {
 				## Added by Rebalanced Subjects
 				is_subject_of_type = incorporated_personal_union
 				is_subject_of_type = consolidated_personal_union
+				is_subject_of_type = sovereign_personal_union
 			}
 			capital_scope = {
 				region = france_region
@@ -777,6 +778,7 @@ estate_nobles_french_strong_duchies = {
 						## Added by Rebalanced Subjects
 						is_subject_of_type = incorporated_personal_union
 						is_subject_of_type = consolidated_personal_union
+						is_subject_of_type = sovereign_personal_union
 					}
 				}
 			}
@@ -1355,6 +1357,7 @@ estate_nobles_strong_duchies = {
 				## Added by Rebalanced Subjects
 				is_subject_of_type = incorporated_personal_union
 				is_subject_of_type = consolidated_personal_union
+				is_subject_of_type = sovereign_personal_union
 			}
 		}
 		NOT = {
@@ -1378,6 +1381,7 @@ estate_nobles_strong_duchies = {
 						## Added by Rebalanced Subjects
 						is_subject_of_type = incorporated_personal_union
 						is_subject_of_type = consolidated_personal_union
+						is_subject_of_type = sovereign_personal_union
 					}
 				}
 			}
@@ -1760,6 +1764,7 @@ estate_nobles_better_integration = {
 				## Added by Rebalanced Subjects
 				is_subject_of_type = incorporated_personal_union
 				is_subject_of_type = consolidated_personal_union
+				is_subject_of_type = sovereign_personal_union
 			}
 		}
 	}

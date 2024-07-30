@@ -16,7 +16,7 @@ I felt like something was missing somewhere between full annexation and personal
 [list]
   [*] You establish viceroyalties in a sector once you've reached a province ownership threshold. Depending on the sector size, this can be: 5, 10, or 20.
   [*] You need to be in the western technology group.
-  [*] You need to have admin tech: 12 (Early Modern Administration).
+  [*] You need to have admin tech: 20 (Absolute Rulership).
   [*] The decision costs 300 admin power and 300 diplomatic power.
   [*] You can only establish a Viceroyalty once every 2 years (It takes time and effort to establish one).
   [*] Viceroyalties will take ownership of all provinces in the sector it is established in.
@@ -35,9 +35,6 @@ A sector is a group of provinces that are loosely connected to in game regions a
 If you already have a vassal that owns a vast majority of the required provinces (all but 2 are required), you can establish a viceroyalty from that vassal as long as the conditions are met.
 
 [list]
-  [*] You need to be in the western technology group.
-  [*] The decision costs 300 admin power and 300 diplomatic power.
-  [*] You can only establish a Viceroyalty once every 2 years (It takes time and effort to establish one).
   [*] Your subject will take ownership of all provinces in the sector that you own.
   [*] Your subject will cede all provinces outside the sector back to you.
 [/list]
@@ -52,6 +49,9 @@ I wanted to create a path where you slowly move the integration process forward 
   [*] Consolidated Personal Unions can be created from Incorporated Personal Unions. For this you will need diplomatic tech 15.
   [*] Incorporated and Consolidated Personal Unions have a greater chance of being inherited on monarch death, but it can only happen every 5 years to reduce cheesing.
 [/list]
+
+[h2]Sovereign Personal Unions[/h2]
+These are unions that are very loyal and cannot be broken, but they can also not be inherited. You are granting your union lot of autonomy and promising them that they will remain a separate country. If you break this promise, your subject will be very unhappy.
 
 [h2]Incorporated Vassals[/h2]
 I'm enabling incorporated vassals via diplomatic influence locked behind technology and subject approval.

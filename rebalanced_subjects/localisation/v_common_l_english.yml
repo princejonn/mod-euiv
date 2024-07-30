@@ -17,6 +17,10 @@
   convert_to_consolidated_personal_union_desc: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
   convert_to_consolidated_personal_union_tooltip: "Convert [From.GetName] to an Consolidated Personal Union, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
 
+  convert_to_sovereign_personal_union_title: "Bestow Sovereignty"
+  convert_to_sovereign_personal_union_desc: "Convert [From.GetName] to a Sovereign Personal Union, which are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
+  convert_to_sovereign_personal_union_tooltip: "Convert [From.GetName] to a Sovereign Personal Union, which are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
+
   convert_to_incorporated_vassal_title: "Incorporate Vassal"
   convert_to_incorporated_vassal_desc: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
   convert_to_incorporated_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
@@ -35,18 +39,21 @@
   # opinion modifiers
   is_incorporated_personal_union: "Incorporated Personal Union"
   is_consolidated_personal_union: "Consolidated Personal Union"
+  is_sovereign_personal_union: "Sovereign Vassal"
   is_incorporated_vassal: "Incorporated Vassal"
   is_viceroyalty: "Viceroyalty"
+  sovereignty_broken: "Sovereignty Broken"
 
   # cooldown flags
-  convert_to_incorporated_personal_union_cooldown_flag: "Converted a Union to Incorporated Union"
+  administrative_reorganisation_cooldown_flag: "Administrative Reorganisation"
   convert_to_consolidated_personal_union_cooldown_flag: "Converted a Union to Consolidated Union"
-  inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
-  inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
+  convert_to_incorporated_personal_union_cooldown_flag: "Converted a Union to Incorporated Union"
   convert_to_incorporated_vassal_cooldown_flag: "Converted a Vassal to Incorporated Vassal"
+  convert_to_sovereign_personal_union_cooldown_flag: "Converted a Union to Sovereign Union"
   convert_vassal_to_personal_union_cooldown_flag: "Converted a Vassal to Personal Union"
   establish_viceroyalty_cooldown_flag: "Established a Viceroyalty"
-  administrative_reorganisation_cooldown_flag: "Administrative Reorganisation"
+  inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
+  inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
 
   # static modifiers
   viceroyalty_overlord: "Viceroyalty Overlord"
@@ -64,13 +71,19 @@
   incorporated_personal_union_title: "Incorporated Personal Union"
   incorporated_personal_union_title_plural: "Incorporated Personal Unions"
   incorporated_personal_union_is_our: "$NAME|Y$ is an Incorporated Personal Union of us"
-  incorporated_personal_union_long_desc: "Incorporated Personal Unions are easier to annex and cost no Diplomatic Relations."
+  incorporated_personal_union_long_desc: "Incorporated Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
 
   consolidated_personal_union: "Consolidated Personal Union"
   consolidated_personal_union_title: "Consolidated Personal Union"
   consolidated_personal_union_title_plural: "Consolidated Personal Unions"
   consolidated_personal_union_is_our: "$NAME|Y$ is an Consolidated Personal Union of us"
-  consolidated_personal_union_long_desc: "Consolidated Personal Unions are easier to annex and cost no Diplomatic Relations."
+  consolidated_personal_union_long_desc: "Consolidated Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
+
+  sovereign_personal_union: "Sovereign Personal Union"
+  sovereign_personal_union_title: "Sovereign Personal Union"
+  sovereign_personal_union_title_plural: "Sovereign Personal Unions"
+  sovereign_personal_union_is_our: "$NAME|Y$ is a Sovereign Personal Union of us"
+  sovereign_personal_union_long_desc: "Sovereign Personal Unions are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
 
   viceroyalty: "Viceroyalty"
   viceroyalty_title: "Viceroyalty"

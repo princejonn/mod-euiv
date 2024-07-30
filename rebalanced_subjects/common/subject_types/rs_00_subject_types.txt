@@ -38,6 +38,27 @@ consolidated_personal_union = {
 	subject_opinion_modifier = is_consolidated_personal_union
 }
 
+sovereign_personal_union = {
+	copy_from = personal_union
+	count = personal_union
+	# Graphics:
+	sprite = GFX_court_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+	diplomacy_subject_sprite = GFX_diplomacy_inunion
+	# Properties:
+	base_liberty_desire = -25
+	can_be_annexed = no
+	can_be_integrated = no
+	can_union_break = no
+	disable_inheritance = yes
+	takes_diplo_slot = no
+	# Interactions (Continuous):
+	subsidize_armies = yes
+	# Opinion:
+	overlord_opinion_modifier = is_sovereign_personal_union
+	subject_opinion_modifier = is_sovereign_personal_union
+}
+
 incorporated_vassal = {
 	copy_from = vassal
 	count = vassal
