@@ -1,8 +1,8 @@
 colonial_cape = {
 	color = {
-		220
-		130
-		51
+		55
+		108
+		158
 	}
 	# Random New World
 	tax_income = 0

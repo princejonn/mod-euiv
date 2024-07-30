@@ -3,6 +3,6 @@ tags={
 	"balance"
 }
 picture="thumbnail.png"
-version="1"
+version="2"
 supported_version="v1.37.2.0"
 remote_file_id="3299622122"

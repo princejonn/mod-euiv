@@ -1,0 +1,520 @@
+colonial_borneo = {
+	color = {
+		41
+		89
+		174
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# banjar_area
+		639
+		2707
+		4800
+		4801
+		2708
+		# brunei_area
+		636
+		2704
+		2705
+		4805
+		4806
+		# kalimantan_area
+		640
+		2706
+		4802
+		4803
+		4804
+		# kutai_area
+		638
+		2712
+		4799
+		2711
+		2710
+		# sabah_area
+		2709
+		637
+		2703
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_BORNEO_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_BORNEO_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_BORNEO_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_BORNEO_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_BORNEO_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_BORNEO_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_BORNEO_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_BORNEO_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_BORNEO_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_indonesia = {
+	color = {
+		201
+		28
+		54
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# banten_area
+		624
+		630
+		2687
+		4790
+		# central_java_area
+		626
+		2689
+		2690
+		4792
+		# east_java_area
+		627
+		2691
+		4794
+		# lesser_sunda_islands_area
+		631
+		632
+		634
+		2693
+		# makassar_area
+		4797
+		4798
+		4795
+		641
+		# molluca_area
+		645
+		2717
+		646
+		647
+		# south_sulawesi_area
+		642
+		2715
+		2716
+		4796
+		# spice_islands_area
+		648
+		649
+		650
+		# sulawesi_area
+		643
+		644
+		2713
+		2714
+		4845
+		# surabaya_area
+		629
+		4793
+		628
+		2692
+		# timor_area
+		633
+		635
+		2695
+		2696
+		2725
+		# west_java_area
+		2688
+		625
+		4791
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_INDONESIA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_INDONESIA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_INDONESIA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_INDONESIA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_INDONESIA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_INDONESIA_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_INDONESIA_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_INDONESIA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_INDONESIA_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_malaya = {
+	color = {
+		80
+		10
+		165
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# batak_area
+		619
+		4811
+		2684
+		2682
+		# central_sumatra_area
+		620
+		2675
+		618
+		4810
+		# indian_ocean_islands_area
+		574
+		1101
+		1248
+		1998
+		1999
+		# jambi_area
+		2677
+		659
+		2676
+		4816
+		# johor_area
+		597
+		2686
+		4815
+		# malacca_area
+		595
+		596
+		2392
+		# malaya_area
+		598
+		599
+		2393
+		4814
+		# minangkabau_area
+		2680
+		2681
+		2683
+		4817
+		4818
+		# north_malaya_area
+		594
+		2394
+		4812
+		4813
+		# north_sumatra_area
+		617
+		2673
+		2685
+		2674
+		4809
+		# south_sumatra_area
+		621
+		622
+		623
+		2678
+		2679
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_MALAYA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_MALAYA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_MALAYA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_MALAYA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_MALAYA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_MALAYA_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_MALAYA_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_MALAYA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_MALAYA_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_philippines = {
+	color = {
+		56
+		32
+		120
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# luzon_area
+		657
+		658
+		2698
+		4348
+		# mindanao_area
+		2701
+		2702
+		4355
+		# palawan_area
+		651
+		655
+		4356
+		# southern_luzon_area
+		656
+		2697
+		2699
+		4349
+		4350
+		# visayas_area
+		654
+		2700
+		4351
+		4352
+		4353
+		# west_mindanao_area
+		652
+		653
+		4354
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_PHILIPPINES_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_PHILIPPINES_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_PHILIPPINES_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_PHILIPPINES_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_PHILIPPINES_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_PHILIPPINES_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_PHILIPPINES_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_PHILIPPINES_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_PHILIPPINES_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}

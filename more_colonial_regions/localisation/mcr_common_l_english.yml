@@ -1,5 +1,7 @@
 ﻿l_english:
-  # cape
+  ## Africa
+
+  # Cape
   COLONIAL_CAPE_british: "Cape Colony"
   COLONIAL_CAPE_british_ADJ: "Cape Colonial"
   COLONIAL_CAPE_dutch: "Kaapkolonie"
@@ -17,7 +19,7 @@
   COLONIAL_CAPE_scandinavian: "Kapkolonin"
   COLONIAL_CAPE_scandinavian_ADJ: "Kapkolonial"
 
-  # congo
+  # Congo
   COLONIAL_CONGO_british: "Royal Congo Trading Company"
   COLONIAL_CONGO_british_ADJ: "Congo Colonial"
   COLONIAL_CONGO_dutch: "Verenigde Congo Compagnie"
@@ -35,7 +37,7 @@
   COLONIAL_CONGO_scandinavian: "Kungliga Kongo Handelskompaniet"
   COLONIAL_CONGO_scandinavian_ADJ: "Kongo Kolonial"
  
-  # guinea
+  # Guinea
   COLONIAL_GUINEA_british: "Royal Guinea Trading Company"
   COLONIAL_GUINEA_british_ADJ: "Guinea Colonial"
   COLONIAL_GUINEA_dutch: "Koninklijke Guinee Compagnie"
@@ -53,7 +55,7 @@
   COLONIAL_GUINEA_scandinavian: "Kungliga Guinea Handelskompaniet"
   COLONIAL_GUINEA_scandinavian_ADJ: "Guinea Kolonial"
 
-  # madagascar
+  # Madagascar
   COLONIAL_MADAGASCAR_british: "Madagascar Chartered Company"
   COLONIAL_MADAGASCAR_british_ADJ: "Madagascar Colonial"
   COLONIAL_MADAGASCAR_dutch: "MadaKompanie"
@@ -71,7 +73,7 @@
   COLONIAL_MADAGASCAR_scandinavian: "Madagaskar Handelskompaniet"
   COLONIAL_MADAGASCAR_scandinavian_ADJ: "Madagaskar Kolonial"
  
-  # mozambique
+  # Mozambique
   COLONIAL_MOCAMBIQUE_british: "British Mozambique Company"
   COLONIAL_MOCAMBIQUE_british_ADJ: "Mozambique Colonial"
   COLONIAL_MOCAMBIQUE_dutch: "Mozambique Handelmaatschappij"
@@ -89,7 +91,7 @@
   COLONIAL_MOCAMBIQUE_scandinavian: "Mosambik Handelskompaniet"
   COLONIAL_MOCAMBIQUE_scandinavian_ADJ: "Mosambik Kolonial"
  
-  # somalia
+  # Somalia
   COLONIAL_SOMALIA_british: "British Somaliland Company"
   COLONIAL_SOMALIA_british_ADJ: "Somalia Colonial"
   COLONIAL_SOMALIA_dutch: "Somalische Handel Compagnie"
@@ -107,7 +109,7 @@
   COLONIAL_SOMALIA_scandinavian: "Somalia Handelskompaniet"
   COLONIAL_SOMALIA_scandinavian_ADJ: "Somalia Kolonial"
  
-  # tanzania
+  # Tanzania
   COLONIAL_TANZANIA_british: "Royal Tanzania Trading Company"
   COLONIAL_TANZANIA_british_ADJ: "Tanzania Colonial"
   COLONIAL_TANZANIA_dutch: "Tanzania Handelsmaatschappij"
@@ -125,7 +127,7 @@
   COLONIAL_TANZANIA_scandinavian: "Tanzania Handelskompaniet"
   COLONIAL_TANZANIA_scandinavian_ADJ: "Tanzania Kolonial"
   
-  # zimbabwe
+  # Zimbabwe
   COLONIAL_ZIMBABWE_british: "Rhodesia Chartered Company"
   COLONIAL_ZIMBABWE_british_ADJ: "Zimbabwe Colonial"
   COLONIAL_ZIMBABWE_dutch: "Rhodesia Compagnie"
@@ -142,3 +144,77 @@
   COLONIAL_ZIMBABWE_portugese_ADJ: "Rodésia Colonial"
   COLONIAL_ZIMBABWE_scandinavian: "Rhodesia Handelskompaniet"
   COLONIAL_ZIMBABWE_scandinavian_ADJ: "Rhodesia Kolonial"
+
+  ## East Indies
+
+  # Borneo
+  COLONIAL_BORNEO_british: "North Borneo Chartered Company"
+  COLONIAL_BORNEO_british_ADJ: "Borneo Colonial"
+  COLONIAL_BORNEO_dutch: "Koninklijke Borneo Compagnie"
+  COLONIAL_BORNEO_dutch_ADJ: "Borneo Koloniale"
+  COLONIAL_BORNEO_french: "Compagnie Royale de Bornéo"
+  COLONIAL_BORNEO_french_ADJ: "Bornéo Coloniale"
+  COLONIAL_BORNEO_germanic: "Königliche Borneo Handelsgesellschaft"
+  COLONIAL_BORNEO_germanic_ADJ: "Borneo Kolonial"
+  COLONIAL_BORNEO_iberian: "Compañía Real de Borneo"
+  COLONIAL_BORNEO_iberian_ADJ: "Borneo Colonial"
+  COLONIAL_BORNEO_latin: "Compagnia Reale del Borneo"
+  COLONIAL_BORNEO_latin_ADJ: "Borneo Coloniale"
+  COLONIAL_BORNEO_portugese: "Companhia Real de Bornéu"
+  COLONIAL_BORNEO_portugese_ADJ: "Bornéu Colonial"
+  COLONIAL_BORNEO_scandinavian: "Kungliga Borneo Kompaniet"
+  COLONIAL_BORNEO_scandinavian_ADJ: "Borneo Kolonial"
+
+  # Indonesia
+  COLONIAL_INDONESIA_british: "Royal Indonesian Trading Company"
+  COLONIAL_INDONESIA_british_ADJ: "Indonesia Colonial"
+  COLONIAL_INDONESIA_dutch: "Vereenigde Oost-Indische Compagnie"
+  COLONIAL_INDONESIA_dutch_ADJ: "Oost-Indische Koloniale"
+  COLONIAL_INDONESIA_french: "Compagnie Royale des Indes orientales"
+  COLONIAL_INDONESIA_french_ADJ: "Indes orientales Coloniale"
+  COLONIAL_INDONESIA_germanic: "Königliche Indonesien Handelsgesellschaft"
+  COLONIAL_INDONESIA_germanic_ADJ: "Indonesien Kolonial"
+  COLONIAL_INDONESIA_iberian: "Compañía Real de Indonesia"
+  COLONIAL_INDONESIA_iberian_ADJ: "Indonesia Colonial"
+  COLONIAL_INDONESIA_latin: "Compagnia Reale dell'Indonesia"
+  COLONIAL_INDONESIA_latin_ADJ: "Indonesia Coloniale"
+  COLONIAL_INDONESIA_portugese: "Companhia Real da Indonésia"
+  COLONIAL_INDONESIA_portugese_ADJ: "Indonésia Colonial"
+  COLONIAL_INDONESIA_scandinavian: "Kungliga Indonesiska Kompaniet"
+  COLONIAL_INDONESIA_scandinavian_ADJ: "Indonesiska Kolonial"
+
+  # Malaya
+  COLONIAL_MALAYA_british: "British Malaya Company"
+  COLONIAL_MALAYA_british_ADJ: "Malaya Colonial"
+  COLONIAL_MALAYA_dutch: "Koninklijke Malaya Compagnie"
+  COLONIAL_MALAYA_dutch_ADJ: "Malaya Koloniale"
+  COLONIAL_MALAYA_french: "Compagnie Royale de Malaisie"
+  COLONIAL_MALAYA_french_ADJ: "Malaisie Coloniale"
+  COLONIAL_MALAYA_germanic: "Königliche Malaya Handelsgesellschaft"
+  COLONIAL_MALAYA_germanic_ADJ: "Malaya Kolonial"
+  COLONIAL_MALAYA_iberian: "Compañía Real de Malaya"
+  COLONIAL_MALAYA_iberian_ADJ: "Malaya Colonial"
+  COLONIAL_MALAYA_latin: "Compagnia Reale della Malaya"
+  COLONIAL_MALAYA_latin_ADJ: "Malaya Coloniale"
+  COLONIAL_MALAYA_portugese: "Companhia Real da Malásia"
+  COLONIAL_MALAYA_portugese_ADJ: "Malásia Colonial"
+  COLONIAL_MALAYA_scandinavian: "Kungliga Malaya Kompaniet"
+  COLONIAL_MALAYA_scandinavian_ADJ: "Malaya Kolonial"
+
+  # Philippines
+  COLONIAL_PHILIPPINES_british: "British Philippines Company"
+  COLONIAL_PHILIPPINES_british_ADJ: "Philippines Colonial"
+  COLONIAL_PHILIPPINES_dutch: "Koninklijke Filippijnen Compagnie"
+  COLONIAL_PHILIPPINES_dutch_ADJ: "Filippijnen Koloniale"
+  COLONIAL_PHILIPPINES_french: "Compagnie Royale des Philippines"
+  COLONIAL_PHILIPPINES_french_ADJ: "Philippines Coloniale"
+  COLONIAL_PHILIPPINES_germanic: "Königliche Philippinen Handelsgesellschaft"
+  COLONIAL_PHILIPPINES_germanic_ADJ: "Philippinen Kolonial"
+  COLONIAL_PHILIPPINES_iberian: "Compañía Real de Filipinas"
+  COLONIAL_PHILIPPINES_iberian_ADJ: "Filipinas Colonial"
+  COLONIAL_PHILIPPINES_latin: "Compagnia Reale delle Filippine"
+  COLONIAL_PHILIPPINES_latin_ADJ: "Filippine Coloniale"
+  COLONIAL_PHILIPPINES_portugese: "Companhia Real das Filipinas"
+  COLONIAL_PHILIPPINES_portugese_ADJ: "Filipinas Colonial"
+  COLONIAL_PHILIPPINES_scandinavian: "Kungliga Filippinska Kompaniet"
+  COLONIAL_PHILIPPINES_scandinavian_ADJ: "Filippinska Kolonial"

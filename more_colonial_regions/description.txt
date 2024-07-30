@@ -2,7 +2,7 @@ I like the mechanic of colonial subjects more than I like the trade company subj
 
 Since these were historically trade company regions, I have chosen to give default names that reflect this.
 
-[h2]New Colonial Regions[/h2]
+[h2]New Colonial Regions: Africa[/h2]
 [list]
   [*] Cape (of Good Hope)
   [*] Congo
@@ -12,4 +12,12 @@ Since these were historically trade company regions, I have chosen to give defau
   [*] Somalia
   [*] Tanzania
   [*] Zimbabwe
+[/list]
+
+[h2]New Colonial Regions: East Indies[/h2]
+[list]
+  [*] Borneo
+  [*] Indonesia
+  [*] Malaya
+  [*] Philippines
 [/list]
