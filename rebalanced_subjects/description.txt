@@ -74,9 +74,7 @@ I'm enabling a way to form a personal union with your vassal via diplomatic infl
 [h2]The Future[/h2]
 
 [list]
-  [*] (_) Add more colonial regions since colonies have Private Enterprise types. Colonies are more fun than Trade Companies.
-  [*] (_) Allow for colonies to establish viceroyalties, like vassals.
-  [*] (_) Add viceroyalties to the americas.
+  [*] (_) Allow for colonies to establish viceroyalties, like vassals?
+  [*] (_) Add viceroyalties to the americas?
   [*] (_) Add a EIC/VOC tag for player, and not just for britain/netherlands?
-  [*] (_) Should Viceroyalties have permanent claims on sectors?
 [/list]

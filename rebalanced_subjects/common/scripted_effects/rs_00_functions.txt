@@ -17,6 +17,7 @@ cede_all_owned_provinces_in_sector_fn = {
 				}
 			}
 			remove_core = $OWNER$
+			add_core = $RECEIVER$
 			cede_province = $RECEIVER$
 		}
 	}
@@ -47,13 +48,11 @@ cede_all_owned_provinces_outside_sector_fn = {
 }
 
 add_permanent_claims_in_sector_fn = {
-	$OWNER$ = {
-		every_owned_province = {
-			limit = {
-				is_province_in_$SECTOR$ = yes
-			}
-			add_permanent_claim = $OWNER$
+	every_province = {
+		limit = {
+			is_province_in_$SECTOR$ = yes
 		}
+		add_permanent_claim = $OWNER$
 	}
 }
 
@@ -63,6 +62,9 @@ cede_province_to_viceroyalty_fn = {
 		limit = {
 			ROOT = {
 				is_province_in_$SECTOR$ = yes
+				owner = {
+					has_subject_of_type = viceroyalty
+				}
 			}
 			$SUBJECT$ = {
 				exists = yes
