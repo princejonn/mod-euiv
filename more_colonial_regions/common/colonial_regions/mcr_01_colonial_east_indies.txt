@@ -5,19 +5,18 @@ colonial_borneo = {
 		174
 	}
 	# Random New World
-	tax_income = 0
-	native_size = 10
+	tax_income = 1
+	native_size = 1
 	native_ferocity = 1
-	native_hostileness = 3
+	native_hostileness = 1
 	trade_goods = {
-		fish = 10
-		naval_supplies = 10
+		grain = 1
 	}
 	culture = {
-		khoisan = 10
+		swedish = 1
 	}
 	religion = {
-		animism = 10
+		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -120,19 +119,18 @@ colonial_indonesia = {
 		54
 	}
 	# Random New World
-	tax_income = 0
-	native_size = 10
+	tax_income = 1
+	native_size = 1
 	native_ferocity = 1
-	native_hostileness = 3
+	native_hostileness = 1
 	trade_goods = {
-		fish = 10
-		naval_supplies = 10
+		grain = 1
 	}
 	culture = {
-		khoisan = 10
+		swedish = 1
 	}
 	religion = {
-		animism = 10
+		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -266,19 +264,18 @@ colonial_malaya = {
 		165
 	}
 	# Random New World
-	tax_income = 0
-	native_size = 10
+	tax_income = 1
+	native_size = 1
 	native_ferocity = 1
-	native_hostileness = 3
+	native_hostileness = 1
 	trade_goods = {
-		fish = 10
-		naval_supplies = 10
+		grain = 1
 	}
 	culture = {
-		khoisan = 10
+		swedish = 1
 	}
 	religion = {
-		animism = 10
+		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -410,19 +407,18 @@ colonial_philippines = {
 		120
 	}
 	# Random New World
-	tax_income = 0
-	native_size = 10
+	tax_income = 1
+	native_size = 1
 	native_ferocity = 1
-	native_hostileness = 3
+	native_hostileness = 1
 	trade_goods = {
-		fish = 10
-		naval_supplies = 10
+		grain = 1
 	}
 	culture = {
-		khoisan = 10
+		swedish = 1
 	}
 	religion = {
-		animism = 10
+		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
