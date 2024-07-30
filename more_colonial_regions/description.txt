@@ -1,0 +1,15 @@
+I like the mechanic of colonial subjects more than I like the trade company subjects. Luckily the base game now includes a fitting colony type. So with this mod we're going to add a lot more colonial regions to the game.
+
+Since these were historically trade company regions, I have chosen to give default names that reflect this.
+
+[h2]New Colonial Regions[/h2]
+[list]
+  [*] Cape (of Good Hope)
+  [*] Congo
+  [*] Guinea
+  [*] Madagascar
+  [*] Mocambique
+  [*] Somalia
+  [*] Tanzania
+  [*] Zimbabwe
+[/list]

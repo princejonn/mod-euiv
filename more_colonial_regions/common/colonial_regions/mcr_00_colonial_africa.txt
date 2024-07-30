@@ -1,0 +1,1008 @@
+colonial_cape = {
+	color = {
+		220
+		130
+		51
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# cape_of_good_hope_area
+		833
+		1175
+		1177
+		1179
+		1180
+		# limpopo_area
+		789
+		1181
+		1182
+		1800
+		# south_african_plateau_area
+		1176
+		1178
+		2856
+		2880
+		2864
+		# transvaal_area
+		4781
+		4782
+		4783
+		4784
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_CAPE_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_CAPE_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_CAPE_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_CAPE_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_CAPE_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_CAPE_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_CAPE_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_CAPE_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_CAPE_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_congo = {
+	color = {
+		199
+		160
+		139
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# coastal_kongo
+		1166
+		1168
+		4078
+		4079
+		4080
+		# kongo_area
+		798
+		1169
+		1170
+		1901
+		2949
+		# angola_namibia_area
+		1167
+		1171
+		1172
+		# matamba_area
+		2948
+		4082
+		4084
+		# lower_kasai
+		4081
+		4085
+		4086
+		4088
+		# kasai_area
+		4083
+		4087
+		4091
+		4092
+		4093
+		# chokwe_area
+		4094
+		4095
+		4107
+		# sankuru_area
+		4089
+		4090
+		4096
+		# luba_area
+		4097
+		4099
+		4105
+		4109
+		# katanga_area (Shaba)
+		4098
+		4100
+		4101
+		4103
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_CONGO_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_CONGO_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_CONGO_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_CONGO_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_CONGO_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_CONGO_latin"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			primary_culture = portugese
+		}
+		name = "COLONIAL_CONGO_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_CONGO_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_CAPE_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_guinea = {
+	color = {
+		230
+		231
+		62
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# adamawa_plateau_area
+		1161
+		1162
+		1249
+		2285
+		# atacora_oueme_area
+		1140
+		1143
+		2291
+		2292
+		2295
+		# benin_area
+		1147
+		2289
+		2290
+		2294
+		# bornu_area
+		1157
+		1160
+		2282
+		2283
+		2284
+		# dendi_area
+		1142
+		2268
+		2269
+		2270
+		# guinea_coast_area
+		1118
+		1119
+		2241
+		2242
+		# gulf_of_guinea_area
+		1151
+		1163
+		1164
+		1165
+		# hausa_area
+		1155
+		2280
+		2281
+		# kanem_area
+		1158
+		1159
+		2286
+		2287
+		2288
+		# katsina_area
+		1148
+		1149
+		2279
+		# kong_area
+		1122
+		1125
+		2252
+		2253
+		# lower_niger_area
+		1144
+		1145
+		1146
+		1152
+		1153
+		# lower_volta_area
+		1138
+		2254
+		2255
+		2256
+		2267
+		# niger_bend_area
+		1132
+		1133
+		2260
+		2262
+		2264
+		# upper_volta_area
+		1135
+		1136
+		1137
+		2265
+		2266
+		# west_africa_coast_area
+		1126
+		1139
+		1141
+		2257
+		2258
+		# zazzau_area
+		1150
+		1154
+		2278
+		2293
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_GUINEA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_GUINEA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_GUINEA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_GUINEA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_GUINEA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_GUINEA_latin"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			primary_culture = portugese
+		}
+		name = "COLONIAL_GUINEA_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_GUINEA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_CAPE_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_madagascar = {
+	color = {
+		187
+		96
+		193
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# betsimasaraka_area
+		4021
+		4024
+		4025
+		# madagascar_highlands_area
+		1792
+		4023
+		4027
+		# sakalava_area
+		1193
+		1194
+		4022
+		4031
+		4032
+		# southern_madagascar
+		4026
+		4028
+		4029
+		4030
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_MADAGASCAR_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_MADAGASCAR_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_MADAGASCAR_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_MADAGASCAR_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_MADAGASCAR_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_MADAGASCAR_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_MADAGASCAR_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_MADAGASCAR_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_MADAGASCAR_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_mocambique = {
+	color = {
+		169
+		34
+		34
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# central_swahili_coast_area
+		1196
+		1198
+		# mozambique_area
+		788
+		1195
+		4049
+		# ngonde_area
+		4041
+		4044
+		4045
+		# ruvuma_area
+		4036
+		4037
+		4043
+		4042
+		# shire_area
+		4038
+		4039
+		4040
+		# uticulo_makuana_area
+		4034
+		4035
+		4048
+		# upper_zambezi_area
+		4046
+		4047
+		4050
+		# zambia_area
+		4104
+		4108
+		# katanga_area (Shaba)
+		4102
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_MOCAMBIQUE_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_MOCAMBIQUE_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_MOCAMBIQUE_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_MOCAMBIQUE_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_MOCAMBIQUE_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_MOCAMBIQUE_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_MOCAMBIQUE_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_MOCAMBIQUE_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_MOCAMBIQUE_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_somalia = {
+	color = {
+		230
+		240
+		255
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# ajuuran_area
+		2776
+		2780
+		2781
+		2785
+		# jubba_area
+		2777
+		4051
+		4052
+		# majarteen_area
+		1206
+		2024
+		2783
+		2784
+		2788
+		# mogadishu_area
+		1205
+		2775
+		2782
+		2794
+		2795
+		# northern_swahili_coast_area
+		1204
+		2774
+		2796
+		# ogaden_area
+		1207
+		1208
+		1210
+		2778
+		2779
+		# somaliland_area
+		1209
+		2786
+		2789
+		2792
+		2790
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_SOMALIA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_SOMALIA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_SOMALIA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_SOMALIA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_SOMALIA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_SOMALIA_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_SOMALIA_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_SOMALIA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_SOMALIA_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_tanzania = {
+	color = {
+		199
+		160
+		239
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# buha_area
+		4070
+		4071
+		4072
+		4076
+		4077
+		# bunyoro_area
+		4065
+		4074
+		4075
+		# buzinza_area
+		4059
+		4061
+		4063
+		# central_swahili_coast_area
+		1197
+		1199
+		# kenya_area
+		1273
+		1925
+		4053
+		4054
+		4060
+		# mombasa_area
+		1200
+		1202
+		1203
+		# rwanda_area
+		4067
+		4068
+		4069
+		# tanzania_area
+		4055
+		4056
+		4057
+		4058
+		4073
+		# uganda_area
+		4062
+		4064
+		4066
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_TANZANIA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_TANZANIA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_TANZANIA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_TANZANIA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_TANZANIA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_TANZANIA_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_TANZANIA_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_TANZANIA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_TANZANIA_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_zimbabwe = {
+	color = {
+		255
+		211
+		0
+	}
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+	culture = {
+		khoisan = 10
+	}
+	religion = {
+		animism = 10
+	}
+	# Provinces
+	provinces = {
+		# butua_area
+		1185
+		1188
+		1189
+		# quelimane_area
+		1183
+		1186
+		1192
+		# zimbabwe_area
+		1184
+		2950
+		2951
+		2952
+		# lower_zambezi_area
+		1187
+		1190
+		1191
+		# zambia_area
+		4106
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_ZIMBABWE_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_ZIMBABWE_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_ZIMBABWE_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_ZIMBABWE_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_ZIMBABWE_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_ZIMBABWE_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_ZIMBABWE_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_ZIMBABWE_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_ZIMBABWE_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}

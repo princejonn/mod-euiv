@@ -3,22 +3,6 @@
   cb_restore_viceroyalty: "Restoration of Viceroyalty"
   cb_restore_viceroyalty_desc: "They broke off from our Viceroyalty."
 
-  # colonial regions
-  COLONIAL_CAPE_Cape_Colony: "Cape Colony"
-  COLONIAL_CAPE_Cape_Colony_ADJ: "Cape Colonial"
-  COLONIAL_CAPE_Kaapkolonie: "Kaapkolonie"
-  COLONIAL_CAPE_Kaapkolonie_ADJ: "Kaapkolonial"
-  COLONIAL_CAPE_Colonie_du_Cap: "Colonie du Cap"
-  COLONIAL_CAPE_Colonie_du_Cap_ADJ: "Coloniale du Cap"
-  COLONIAL_CAPE_Kapkolonie: "Kapkolonie"
-  COLONIAL_CAPE_Kapkolonie_ADJ: "Kapkolonial"
-  COLONIAL_CAPE_Colonia_del_Capo: "Colonia del Capo"
-  COLONIAL_CAPE_Colonia_del_Capo_ADJ: "Colonia del Capo"
-  COLONIAL_CAPE_Colonia_de_Cabo: "Colónia de Cabo"
-  COLONIAL_CAPE_Colonia_de_Cabo_ADJ: "Colónia de Cabo"
-  COLONIAL_CAPE_Colonia_do_Cabo: "Colónia do Cabo"
-  COLONIAL_CAPE_Colonia_do_Cabo_ADJ: "Colónia do Cabo"
-
   # government names
   VICEROYALTY: "Viceroyalty"
   VICEROYALTY_LEADER: "Viceroy"
