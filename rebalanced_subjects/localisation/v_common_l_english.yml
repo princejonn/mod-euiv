@@ -29,7 +29,7 @@
   convert_vassal_to_personal_union_desc: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
   convert_vassal_to_personal_union_tooltip: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
 
-  convert_vassal_to_sovereign_personal_union: "Form Sovereign Union"
+  convert_vassal_to_sovereign_personal_union_title: "Form Sovereign Union"
   convert_vassal_to_sovereign_personal_union_desc: "Convert [From.GetName] to a Sovereign Personal Union, which are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
   convert_vassal_to_sovereign_personal_union_tooltip: "Convert [From.GetName] to a Sovereign Personal Union, which are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
 
