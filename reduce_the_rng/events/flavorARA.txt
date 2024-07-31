@@ -399,18 +399,25 @@ country_event = {
 			## Modified to be in favour of the player
 			factor = 1
 			modifier = {
-				CAS = {
-					exists = yes
-					ai = yes
+				AND = {
+					CAS = {
+						ai = yes
+					}
+					SPA = {
+						ai = yes
+					}
+					HAB = {
+						ai = yes
+					}
 				}
-				factor = 999
+				factor = 1000
 			}
 			modifier = {
 				BYZ = {
 					exists = yes
 					ai = no
 				}
-				factor = 999
+				factor = 1000
 			}
 		}
 		custom_tooltip = flavor_ara7_naples_goes_free
@@ -429,11 +436,18 @@ country_event = {
 			## Modified to be in favour of the player
 			factor = 1
 			modifier = {
-				CAS = {
-					exists = yes
-					ai = no
+				OR = {
+					CAS = {
+						ai = no
+					}
+					SPA = {
+						ai = no
+					}
+					HAB = {
+						ai = no
+					}
 				}
-				factor = 999
+				factor = 1000
 			}
 		}
 		add_legitimacy = -25

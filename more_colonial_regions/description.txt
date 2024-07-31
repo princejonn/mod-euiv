@@ -9,6 +9,7 @@ Since these were historically trade company regions, I have chosen to give defau
   [*] Guinea
   [*] Madagascar
   [*] Mocambique
+  [*] Niger
   [*] Somalia
   [*] Tanzania
   [*] Zimbabwe

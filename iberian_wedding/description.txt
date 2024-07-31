@@ -1,3 +1,0 @@
-Much like the Burgundian Inheritance, the Iberian Wedding can be a fickle beast. If the AI selects the "wrong" options, you can sit there and click the load savegame button over and over again. So let's make our preferred outcome a bit more likely.
-
-This mod tips the scales in favour of Aragon pushing to keep the Naples union if Castille is a player, and to discard the union if Castille is not a player. It will furthermore make the Iberian Wedding more likely to happen, and it will make the AI more likely to bind their dynasty to Aragon.

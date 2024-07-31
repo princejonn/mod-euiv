@@ -1,5 +1,0 @@
-Did you spend 1 hour creating new games so that you could ensure that the Burgundian Succession Crisis is triggered? Did you also reload your save 10 times to have the crisis pan out in your favour? You're in luck!
-
-This mod tips the scales in favour of the Burgundian Succession Crisis event firing in favour of the player as long as the previous requirements are still met. What it means is that if you're playing the Emperor, France, or if you're the strongest ally, the AI is almost ensured to pick you for the succession.
-
-It also adds a new event that pretty much ensures that the burgundian succession occurs by killing Charles de Bourgogne at some point in the year 1473-1477. It will only trigger if Charles is still the ruler, and it will not trigger if you're the one playing Burgundy.

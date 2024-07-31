@@ -1,12 +1,29 @@
-So you want to play as Austria and have a good time as the HRE, but some of the events and triggers are just not going your way?
+So you want to play as the HRE, but there are a few things that just don't feel right? I feel it too. This mod aims to make the HRE a bit more fun and (sometimes) challenging to play!
 
-This mod will make some small adjustments in your favour, and make certain events much more likely to trigger.
-
+[h2]Features[/h2]
 [list]
-  [*] Increase the amount of free cities from 12 to 15 so that you can add 3 more of your liking when the game starts.
-  [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
-  [*] You will get an event for a Personal Union casus belli on Milan as player Austria.
-  [*] You will get an event for a Personal Union casus belli on Byzantium as player Austria.
-  [*] You will more likely get the Personal Union over Hungary through the event.
+  [*] You get a larger authority penalty for provinces outside HRE control (from 0.005 to 0.02). You're going to want to start bringing everyone into the fold as soon as possible.
+  [*] Revoking a reform has a higher cost (from 50 to 75).
+  [*] The amount of princes required in the HRE to keep authority has been changed (from 25 to 20).
+  [*] You will gain a bit more authority from each prince (from 0.075 to 0.1).
+  [*] Larger vassals are more inclined to join the HRE (from 200 dev cap to 400).
+  [*] Lack of electors hit your authority harder (from 0.1 to 0.3).
+  [*] Increase the amount of free cities (from 12 to 15). You can add 3 more of your liking when the game starts.
   [*] When you click Erbkaisertum, you will be allowed to select if you want to enforce your Catholicism (or protestantism), or if you wish to enact religious peace.
+  [*] Vassals join the HRE more consistently.
+  [*] You will get an event for a Personal Union casus belli on Byzantium as player Austria (Feels like it makes sense for your ambitions to restore the Eastern Roman Empire).
+[/list]
+
+[h3]Vassals joining the HRE[/h3]
+The base game has a trigger that allows vassals to join the HRE, but sometimes it doesn't fire correctly (imo), so I've created a new event that will definitely fire if you meet the requirements.
+
+[h4]Requirements[/h4]
+[list]
+    [*] You need to be emperor.
+    [*] You need to have at least 10 Imperial Authority.
+    [*] Your vassal must be outside the HRE.
+    [*] Your vassal must have less than 800 total development.
+    [*] Your vassal must have 190 opinion of you.
+    [*] Your vassal must have a neighbour country that is already in the HRE - or be an island nation.
+    [*] Mean time to happen: 12 months.
 [/list]

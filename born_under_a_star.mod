@@ -3,7 +3,7 @@ tags={
 	"events"
 }
 picture="thumbnail.png"
-version="4"
+version="v1.0.0"
 supported_version="v1.37.2.0"
 path="/Users/jonn/Documents/Paradox Interactive/Europa Universalis IV/mod/born_under_a_star"
 remote_file_id="2133403091"

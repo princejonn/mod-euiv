@@ -1,0 +1,12 @@
+Did you also spend a lot of time looking at the loading screen because the RNG event didn't go your way? Let's reduce that a bit, shall we?
+
+[h2]Features[/h2]
+[list]
+  [*] The Burgundian Succession event will fire a lot more consistently.
+  [*] The Burgundian Succession will much more likely be in the favour of the player, as long as all other requirements are met.
+  [*] Aragon will more likely inherit Naples if Aragon, Castille, or Spain is a player.
+  [*] The Iberian Wedding event will fire a lot more consistently and in favour of the player.
+  [*] Austria and France will more consistently get the Personal Union CB on Milan (without having to wait for the Ambrosian Republic).
+	[*] Austria will more consistently get the Personal Union over Hungary for free as long as Austria or Castille is a player.
+  [*] Poland will be more likely to pick the Jagiellon Personal Union if you're playing as Austria or Sweden, and less likely to pick when you're playing as Brandenburg or the Teutonic Order.
+[/list]

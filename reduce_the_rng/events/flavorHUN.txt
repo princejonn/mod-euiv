@@ -243,14 +243,24 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 0
-				HAB = {
-					ai = no
+				OR = {
+					CAS = {
+						ai = no
+					}
+					HAB = {
+						ai = no
+					}
 				}
 			}
 			modifier = {
-				factor = 100
-				HAB = {
-					ai = yes
+				factor = 1000
+				AND = {
+					CAS = {
+						ai = yes
+					}
+					HAB = {
+						ai = yes
+					}
 				}
 			}
 		}
@@ -316,23 +326,21 @@ country_event = {
 		ai_chance = {
 			factor = 25
 			modifier = {
-				factor = 999
-				HAB = {
-					ai = no
+				factor = 1000
+				OR = {
+					CAS = {
+						ai = no
+					}
+					HAB = {
+						ai = no
+					}
 				}
 			}
 		}
 		add_stability_or_adm_power = yes
-		HUN = {
-			if = {
-				limit = {
-					senior_union_with = CRO
-				}
-				inherit = CRO
-			}
-		}
 		HAB = {
 			create_union = HUN
+			create_union = CRO
 			hidden_effect = {
 				country_event = {
 					id = flavor_hun.3
@@ -356,8 +364,13 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 0
-				HAB = {
-					ai = no
+				OR = {
+					CAS = {
+						ai = no
+					}
+					HAB = {
+						ai = no
+					}
 				}
 			}
 			modifier = {
@@ -516,9 +529,14 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 999
-				HAB = {
-					ai = no
+				factor = 1000
+				OR = {
+					CAS = {
+						ai = no
+					}
+					HAB = {
+						ai = no
+					}
 				}
 			}
 		}
@@ -528,16 +546,9 @@ country_event = {
 		}
 		add_stability_or_adm_power = yes
 		kill_ruler = yes
-		HUN = {
-			if = {
-				limit = {
-					senior_union_with = CRO
-				}
-				inherit = CRO
-			}
-		}
 		HAB = {
 			create_union = HUN
+			create_union = CRO
 			hidden_effect = {
 				country_event = {
 					id = flavor_hun.3

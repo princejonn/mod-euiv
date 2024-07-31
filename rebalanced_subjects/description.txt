@@ -4,10 +4,12 @@ In this mod I'm aiming to fix and rebalance a couple of things that deal with su
 
 [list]
   [*] Viceroyalty (see below)
-  [*] Incorporated and Consolidated Personal Unions (see below)
+  [*] Incorporated Personal Unions (see below)
+  [*] Consolidated Personal Unions (see below)
+  [*] Sovereign Personal Unions (see below)
   [*] Incorporated Vassals (see below)
-  [*] South Africa is now a colonial region.
   [*] Subjects are now allowed to use the decisions to form new nations when they are eligible to do so.
+  [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
 [/list]
 
 [h2]Viceroyalty[/h2]
