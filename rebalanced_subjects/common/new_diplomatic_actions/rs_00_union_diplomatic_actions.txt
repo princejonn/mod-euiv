@@ -65,7 +65,7 @@ convert_to_incorporated_personal_union = {
 			}
 			had_country_flag = {
 				flag = administrative_reorganisation_cooldown_flag
-				days = 180
+				days = 90
 			}
 		}
 	}
@@ -167,7 +167,7 @@ convert_to_consolidated_personal_union = {
 			}
 			had_country_flag = {
 				flag = administrative_reorganisation_cooldown_flag
-				days = 180
+				days = 90
 			}
 		}
 	}
@@ -258,7 +258,7 @@ convert_to_sovereign_personal_union = {
 			}
 			had_country_flag = {
 				flag = administrative_reorganisation_cooldown_flag
-				days = 180
+				days = 90
 			}
 		}
 	}

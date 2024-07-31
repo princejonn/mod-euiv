@@ -29,6 +29,10 @@
   convert_vassal_to_personal_union_desc: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
   convert_vassal_to_personal_union_tooltip: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
 
+  convert_vassal_to_sovereign_personal_union: "Form Sovereign Union"
+  convert_vassal_to_sovereign_personal_union_desc: "Convert [From.GetName] to a Sovereign Personal Union, which are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
+  convert_vassal_to_sovereign_personal_union_tooltip: "Convert [From.GetName] to a Sovereign Personal Union, which are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
+
   convert_to_viceroyalty_title: "Establish Viceroyalty"
   convert_to_viceroyalty_desc: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
   convert_to_viceroyalty_tooltip: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
