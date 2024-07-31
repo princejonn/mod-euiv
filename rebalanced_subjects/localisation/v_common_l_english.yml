@@ -49,12 +49,6 @@
   sovereignty_broken: "Sovereignty Broken"
 
   # cooldown flags
-  administrative_reorganisation_cooldown_flag: "Administrative Reorganisation"
-  convert_to_consolidated_personal_union_cooldown_flag: "Converted a Union to Consolidated Union"
-  convert_to_incorporated_personal_union_cooldown_flag: "Converted a Union to Incorporated Union"
-  convert_to_incorporated_vassal_cooldown_flag: "Converted a Vassal to Incorporated Vassal"
-  convert_to_sovereign_personal_union_cooldown_flag: "Converted a Union to Sovereign Union"
-  convert_vassal_to_personal_union_cooldown_flag: "Converted a Vassal to Personal Union"
   establish_viceroyalty_cooldown_flag: "Established a Viceroyalty"
   inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
   inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"

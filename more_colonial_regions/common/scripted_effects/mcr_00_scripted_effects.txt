@@ -14,7 +14,6 @@ change_colonial_province_ownership_to_overlord = {
 			limit = {
 				ROOT = {
 					is_in_capital_area = no
-					is_city = yes
 					owner = {
 						ai = yes
 						OR = {

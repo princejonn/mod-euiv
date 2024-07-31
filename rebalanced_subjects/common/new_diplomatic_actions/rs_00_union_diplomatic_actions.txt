@@ -18,7 +18,7 @@ convert_to_incorporated_personal_union = {
 		}
 	}
 	is_allowed = {
-		dip_power = 100
+		dip_power = 50
 		is_at_war = no
 		has_regency = no
 		has_heir = yes
@@ -50,27 +50,9 @@ convert_to_incorporated_personal_union = {
 				liberty_desire = 50
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = convert_to_incorporated_personal_union_cooldown_flag
-			}
-			had_country_flag = {
-				flag = convert_to_incorporated_personal_union_cooldown_flag
-				days = 1095
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = administrative_reorganisation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = administrative_reorganisation_cooldown_flag
-				days = 90
-			}
-		}
 	}
 	on_accept = {
-		add_dip_power = -100
+		add_dip_power = -50
 		create_subject = {
 			subject_type = incorporated_personal_union
 			subject = FROM
@@ -91,10 +73,6 @@ convert_to_incorporated_personal_union = {
 				}
 			}
 		}
-		clr_country_flag = convert_to_incorporated_personal_union_cooldown_flag
-		set_country_flag = convert_to_incorporated_personal_union_cooldown_flag
-		clr_country_flag = administrative_reorganisation_cooldown_flag
-		set_country_flag = administrative_reorganisation_cooldown_flag
 	}
 	on_decline = {
 	}
@@ -120,7 +98,7 @@ convert_to_consolidated_personal_union = {
 		}
 	}
 	is_allowed = {
-		dip_power = 100
+		dip_power = 50
 		is_at_war = no
 		has_regency = no
 		has_heir = yes
@@ -152,36 +130,14 @@ convert_to_consolidated_personal_union = {
 				liberty_desire = 25
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = convert_subject_to_consolidated_subject_cooldown_flag
-			}
-			had_country_flag = {
-				flag = convert_subject_to_consolidated_subject_cooldown_flag
-				days = 1825
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = administrative_reorganisation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = administrative_reorganisation_cooldown_flag
-				days = 90
-			}
-		}
 	}
 	on_accept = {
-		add_dip_power = -100
+		add_dip_power = -50
 		create_subject = {
 			subject_type = consolidated_personal_union
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		clr_country_flag = convert_subject_to_consolidated_subject_cooldown_flag
-		set_country_flag = convert_subject_to_consolidated_subject_cooldown_flag
-		clr_country_flag = administrative_reorganisation_cooldown_flag
-		set_country_flag = administrative_reorganisation_cooldown_flag
 	}
 	on_decline = {
 	}
@@ -211,7 +167,7 @@ convert_to_sovereign_personal_union = {
 		}
 	}
 	is_allowed = {
-		dip_power = 100
+		dip_power = 50
 		is_at_war = no
 		has_regency = no
 		has_heir = yes
@@ -243,36 +199,14 @@ convert_to_sovereign_personal_union = {
 				liberty_desire = 75
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = convert_to_sovereign_personal_union_cooldown_flag
-			}
-			had_country_flag = {
-				flag = convert_to_sovereign_personal_union_cooldown_flag
-				days = 365
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = administrative_reorganisation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = administrative_reorganisation_cooldown_flag
-				days = 90
-			}
-		}
 	}
 	on_accept = {
-		add_dip_power = -100
+		add_dip_power = -50
 		create_subject = {
 			subject_type = sovereign_personal_union
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		clr_country_flag = convert_to_sovereign_personal_union_cooldown_flag
-		set_country_flag = convert_to_sovereign_personal_union_cooldown_flag
-		clr_country_flag = administrative_reorganisation_cooldown_flag
-		set_country_flag = administrative_reorganisation_cooldown_flag
 	}
 	on_decline = {
 	}
