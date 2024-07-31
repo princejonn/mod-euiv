@@ -56,11 +56,11 @@ add_permanent_claims_in_sector_fn = {
 	}
 }
 
-# ROOT = province
-cede_province_to_viceroyalty_fn = {
+cede_province_to_viceroyalty_subject_fn = {
 	if = {
 		limit = {
-			ROOT = {
+			$PROVINCE$ = {
+				is_in_capital_area = no
 				is_province_in_$SECTOR$ = yes
 				owner = {
 					has_subject_of_type = viceroyalty
@@ -68,12 +68,60 @@ cede_province_to_viceroyalty_fn = {
 			}
 			$SUBJECT$ = {
 				exists = yes
+				ai = yes
 				is_subject_of_type = viceroyalty
 			}
 		}
-		ROOT = {
+		$PROVINCE$ = {
 			cede_province = $SUBJECT$
 		}
+	}
+}
+
+cede_province_to_viceroyalty_overlord_fn = {
+	if = {
+		limit = {
+			$PROVINCE$ = {
+				is_in_capital_area = no
+				owner = {
+					ai = yes
+					is_subject_of_type = viceroyalty
+				}
+			}
+		}
+		owner = {
+			save_event_target_as = owner_tag
+			overlord = {
+				save_event_target_as = province_owner_overlord
+			}
+		}
+		if = {
+			limit = {
+				$PROVINCE$ = {
+					is_province_in_$SECTOR$ = no
+				}
+			}
+			$PROVINCE$ = {
+				add_claim = event_target:province_owner_overlord
+				cede_province = event_target:province_owner_overlord
+				remove_claim = event_target:owner_tag
+				remove_core = event_target:owner_tag
+			}
+		}
+	}
+}
+
+# ROOT = province
+manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
+		PROVINCE = ROOT
+		SECTOR = $SECTOR$
+		SUBJECT = $SUBJECT$
+	}
+	cede_province_to_viceroyalty_overlord_fn = {
+		PROVINCE = ROOT
+		SECTOR = $SECTOR$
+		SUBJECT = $SUBJECT$
 	}
 }
 
