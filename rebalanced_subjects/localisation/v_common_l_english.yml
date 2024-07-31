@@ -70,19 +70,19 @@
   incorporated_personal_union: "Incorporated Personal Union"
   incorporated_personal_union_title: "Incorporated Personal Union"
   incorporated_personal_union_title_plural: "Incorporated Personal Unions"
-  incorporated_personal_union_is_our: "$NAME|Y$ is an Incorporated Personal Union of us"
+  incorporated_personal_union_is_our: "$NAME|Y$ is ruled by us in a Incorporated Personal Union."
   incorporated_personal_union_long_desc: "Incorporated Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
 
   consolidated_personal_union: "Consolidated Personal Union"
   consolidated_personal_union_title: "Consolidated Personal Union"
   consolidated_personal_union_title_plural: "Consolidated Personal Unions"
-  consolidated_personal_union_is_our: "$NAME|Y$ is an Consolidated Personal Union of us"
+  consolidated_personal_union_is_our: "$NAME|Y$ is ruled by us in a Consolidated Personal Union."
   consolidated_personal_union_long_desc: "Consolidated Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
 
   sovereign_personal_union: "Sovereign Personal Union"
   sovereign_personal_union_title: "Sovereign Personal Union"
   sovereign_personal_union_title_plural: "Sovereign Personal Unions"
-  sovereign_personal_union_is_our: "$NAME|Y$ is a Sovereign Personal Union of us"
+  sovereign_personal_union_is_our: "$NAME|Y$ is ruled by us in a Sovereign Personal Union."
   sovereign_personal_union_long_desc: "Sovereign Personal Unions are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
 
   viceroyalty: "Viceroyalty"

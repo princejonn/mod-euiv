@@ -2,57 +2,51 @@
 change_colonial_province_ownership_to_overlord = {
 	if = {
 		limit = {
-			ROOT = {
-				is_in_capital_area = no
-				owner = {
-					ai = yes
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-						is_subject_of_type = european_colony
-					}
-				}
+			NOT = {
+				has_province_flag = ceding_province_auto_flag
+			}
+			NOT = {
+				has_province_flag = ceded_province_auto_flag
 			}
 		}
-		owner = {
-			save_event_target_as = owner_tag
-			capital_scope = {
-				save_event_target_as = owner_capital
-			}
-			overlord = {
-				save_event_target_as = province_owner_overlord
-			}
-			#
-			# This is pretty unnecessary, but let's save it for now
-			#
-			# every_owned_province = {
-			# 	limit = {
-			# 		NOT = {
-			# 			colonial_region = event_target:owner_capital
-			# 		}
-			# 	}
-			# 	cede_province = event_target:province_owner_overlord
-			# 	add_core = event_target:province_owner_overlord
-			# 	remove_claim = event_target:owner_tag
-			# 	remove_core = event_target:owner_tag
-			# }
-		}
+		set_province_flag = ceding_province_auto_flag
 		if = {
 			limit = {
 				ROOT = {
-					NOT = {
-						colonial_region = event_target:owner_capital
+					is_in_capital_area = no
+					is_city = yes
+					owner = {
+						ai = yes
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+							is_subject_of_type = european_colony
+						}
 					}
+					NOT = {
+						colonial_region = event_target:province_owner_capital
+					}
+				}
+			}
+			owner = {
+				save_event_target_as = province_owner
+				capital_scope = {
+					save_event_target_as = province_owner_capital
+				}
+				overlord = {
+					save_event_target_as = province_owner_overlord
 				}
 			}
 			ROOT = {
 				cede_province = event_target:province_owner_overlord
 				add_core = event_target:province_owner_overlord
-				remove_claim = event_target:owner_tag
-				remove_core = event_target:owner_tag
+				remove_claim = event_target:province_owner
+				remove_core = event_target:province_owner
+				set_province_flag = ceded_province_auto_flag
 			}
 		}
+		clr_province_flag = ceding_province_auto_flag
 	}
 }

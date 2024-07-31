@@ -6,13 +6,15 @@ convert_to_incorporated_personal_union = {
 		NOT = {
 			tag = HAB
 		}
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = personal_union
-		}
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = sovereign_personal_union
+		OR = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = personal_union
+			}
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = sovereign_personal_union
+			}
 		}
 	}
 	is_allowed = {
@@ -193,17 +195,19 @@ convert_to_sovereign_personal_union = {
 	require_acceptance = no
 	is_visible = {
 		adm_tech = 12		#Early Modern Administration
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = personal_union
-		}
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = incorporated_personal_union
-		}
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = consolidated_personal_union
+		OR = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = personal_union
+			}
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = incorporated_personal_union
+			}
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = consolidated_personal_union
+			}
 		}
 	}
 	is_allowed = {

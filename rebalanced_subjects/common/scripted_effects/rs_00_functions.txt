@@ -56,72 +56,93 @@ add_permanent_claims_in_sector_fn = {
 	}
 }
 
+# ROOT = province
 cede_province_to_viceroyalty_subject_fn = {
 	if = {
 		limit = {
-			$PROVINCE$ = {
-				is_in_capital_area = no
-				is_province_in_$SECTOR$ = yes
-				owner = {
-					has_subject_of_type = viceroyalty
+			NOT = {
+				has_province_flag = ceding_province_auto_flag
+			}
+			NOT = {
+				has_province_flag = ceded_province_auto_flag
+			}
+		}
+		set_province_flag = ceding_province_auto_flag
+		if = {
+			limit = {
+				ROOT = {
+					is_in_capital_area = no
+					is_city = yes
+					is_province_in_$SECTOR$ = yes
+					owner = {
+						has_subject_of_type = viceroyalty
+					}
 				}
-			}
-			$SUBJECT$ = {
-				exists = yes
-				ai = yes
-				is_subject_of_type = viceroyalty
-			}
-		}
-		$PROVINCE$ = {
-			cede_province = $SUBJECT$
-		}
-	}
-}
-
-cede_province_to_viceroyalty_overlord_fn = {
-	if = {
-		limit = {
-			$PROVINCE$ = {
-				is_in_capital_area = no
-				owner = {
+				$SUBJECT$ = {
+					exists = yes
 					ai = yes
 					is_subject_of_type = viceroyalty
 				}
 			}
+			ROOT = {
+				cede_province = $SUBJECT$
+				set_province_flag = ceded_province_auto_flag
+			}
 		}
+		clr_province_flag = ceding_province_auto_flag
+	}
+}
+
+# ROOT = province
+cede_province_to_viceroyalty_overlord_fn = {
+	if = {
+		limit = {
+			NOT = {
+				has_province_flag = ceding_province_auto_flag
+			}
+			NOT = {
+				has_province_flag = ceded_province_auto_flag
+			}
+		}
+		set_province_flag = ceding_province_auto_flag
 		owner = {
-			save_event_target_as = owner_tag
+			save_event_target_as = province_owner
 			overlord = {
 				save_event_target_as = province_owner_overlord
 			}
 		}
 		if = {
 			limit = {
-				$PROVINCE$ = {
+				ROOT = {
 					is_province_in_$SECTOR$ = no
+					is_in_capital_area = no
+					is_city = yes
+					owner = {
+						ai = yes
+						is_subject_of_type = viceroyalty
+					}
 				}
 			}
-			$PROVINCE$ = {
+			ROOT = {
 				add_claim = event_target:province_owner_overlord
 				cede_province = event_target:province_owner_overlord
-				remove_claim = event_target:owner_tag
-				remove_core = event_target:owner_tag
+				remove_claim = event_target:province_owner
+				remove_core = event_target:province_owner
+				set_province_flag = ceded_province_auto_flag
 			}
 		}
+		clr_province_flag = ceding_province_auto_flag
 	}
 }
 
 # ROOT = province
 manage_viceroyalty_provinces = {
 	cede_province_to_viceroyalty_subject_fn = {
-		PROVINCE = ROOT
 		SECTOR = $SECTOR$
 		SUBJECT = $SUBJECT$
 	}
 	cede_province_to_viceroyalty_overlord_fn = {
-		PROVINCE = ROOT
 		SECTOR = $SECTOR$
-		SUBJECT = $SUBJECT$
 	}
 }
 
