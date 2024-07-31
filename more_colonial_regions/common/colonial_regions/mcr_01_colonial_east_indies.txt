@@ -4,20 +4,6 @@ colonial_borneo = {
 		89
 		174
 	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
-	}
 	# Provinces
 	provinces = {
 		# banjar_area
@@ -100,6 +86,21 @@ colonial_borneo = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_BORNEO_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_BORNEO_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_BORNEO_scandinavian"
@@ -117,20 +118,6 @@ colonial_indonesia = {
 		201
 		28
 		54
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -245,6 +232,21 @@ colonial_indonesia = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_INDONESIA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_INDONESIA_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_INDONESIA_scandinavian"
@@ -262,20 +264,6 @@ colonial_malaya = {
 		80
 		10
 		165
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -392,6 +380,21 @@ colonial_malaya = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_MALAYA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_MALAYA_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_MALAYA_scandinavian"
@@ -409,20 +412,6 @@ colonial_philippines = {
 		56
 		32
 		120
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -504,6 +493,21 @@ colonial_philippines = {
 			primary_culture = portugese
 		}
 		name = "COLONIAL_PHILIPPINES_portugese"
+	}
+	names = {
+		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_PHILIPPINES_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_PHILIPPINES_korean"
 	}
 	names = {
 		trigger = {

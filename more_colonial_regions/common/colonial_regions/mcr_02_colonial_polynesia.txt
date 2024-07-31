@@ -1,0 +1,285 @@
+colonial_australia = {
+	color = {
+		126
+		20
+		20
+	}
+	provinces = {
+		# eastern_australia_area
+		1091
+		1092
+		4855
+		4856
+		# illawara_area
+		1090
+		4857
+		4858
+		4859
+		4860
+		# murray_river_area
+		1086
+		2735
+		2736
+		4862
+		# north_queensland_area
+		1094
+		2733
+		4850
+		1093
+		# northern_australia_area
+		2730
+		2731
+		2732
+		4848
+		4849
+		# papua_area
+		1237
+		2719
+		2720
+		2721
+		2722
+		# pilbara_area
+		2726
+		4865
+		4866
+		4867
+		# south_queensland_area
+		4851
+		4852
+		4853
+		4854
+		# southern_australia_area
+		1087
+		1088
+		2734
+		4861
+		1089
+		# tasmania_area
+		1085
+		4868
+		4869
+		# top_end_area
+		2728
+		2729
+		4846
+		4847
+		# vogelkop_area
+		1245
+		2718
+		2723
+		2724
+		# western_australia_area
+		1084
+		2727
+		4863
+		4864
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_AUSTRALIA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_AUSTRALIA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_AUSTRALIA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_AUSTRALIA_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_AUSTRALIA_portugese"
+	}
+	names = {
+		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_AUSTRALIA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_korean"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_AUSTRALIA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_AUSTRALIA_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_polynesia = {
+	color = {
+		255
+		135
+		80
+	}
+	# Provinces
+	provinces = {
+		# eastern_polynesia_area
+		1244
+		1987
+		1988
+		# fiji_area
+		1242
+		4937
+		4938
+		# melanesia_area
+		1236
+		1238
+		1239
+		1986
+		# micronesia_area
+		1241
+		1991
+		1993
+		1994
+		# northern_polynesia_area
+		1240
+		1997
+		4934
+		4935
+		4936
+		# polynesia_area
+		1243
+		1989
+		1990
+		1992
+		# te_ika_a_maui_hauauru_area
+		1106
+		1107
+		2739
+		# te_ika_a_maui_waho_area
+		1108
+		2737
+		4939
+		# te_waipounamu_area
+		1109
+		1246
+		2738
+		# west_micronesia_area
+		1235
+		1995
+		1996
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_POLYNESIA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_POLYNESIA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_POLYNESIA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_POLYNESIA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_POLYNESIA_iberian"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_POLYNESIA_latin"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+		}
+		name = "COLONIAL_POLYNESIA_portugese"
+	}
+	names = {
+		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_POLYNESIA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_POLYNESIA_korean"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_POLYNESIA_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_POLYNESIA_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}

@@ -6,10 +6,11 @@ Since these were historically trade company regions, I have chosen to give defau
 [list]
   [*] Cape (of Good Hope)
   [*] Congo
+  [*] Ethiopia
   [*] Guinea
   [*] Madagascar
   [*] Mocambique
-  [*] Niger
+  [*] Nigeria
   [*] Somalia
   [*] Tanzania
   [*] Zimbabwe
@@ -23,4 +24,8 @@ Since these were historically trade company regions, I have chosen to give defau
   [*] Philippines
 [/list]
 
-[h2]
+[h2]New Colonial Regions: Pacific Islands[/h2]
+[list]
+  [*] Australia
+  [*] Polynesia
+[/list]

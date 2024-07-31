@@ -1754,61 +1754,6 @@ trade_company_alexandria = {
 	}
 }
 
-trade_company_katsina = {
-	color = {
-		215
-		56
-		56
-	}
-	provinces = {
-		1144
-		1146
-		1162
-		1145
-		1152
-		1153
-		1150
-		1154
-		1155
-		1156
-		1157
-		1158
-		1160
-		1161
-		1249
-		1149
-		1148
-		2273
-		2272
-		2274
-		2275
-		2276
-		2277
-		2278
-		2279
-		2280
-		2281
-		2282
-		2283
-		2284
-		2285
-		2286
-		2287
-		2288
-		2293
-		2475
-		1159
-	}
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_KATSINA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_KATSINA_African_Trade_Company"
-	}
-}
-
 trade_company_kiev = {
 	color = {
 		41
@@ -2858,49 +2803,5 @@ trade_company_lahore = {
 	}
 	names = {
 		name = "TRADE_COMPANY_LAHORE_Asia_Trade_Company"
-	}
-}
-
-trade_company_polynesia = {
-	color = {
-		220
-		138
-		57
-	}
-	provinces = {
-		1238
-		1242
-		1244
-		1989
-		1243
-		1990
-		1992
-		1240
-		1997
-		1235
-		1995
-		1996
-		1241
-		1991
-		1993
-		1994
-		1988
-		1986
-		1236
-		1987
-		1239
-		4934
-		4935
-		4936
-		4937
-		4938
-	}
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_POLYNESIA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_POLYNESIA_Oceania_Trade_Company"
 	}
 }

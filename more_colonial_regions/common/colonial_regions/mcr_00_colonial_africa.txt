@@ -4,20 +4,6 @@ colonial_cape = {
 		108
 		158
 	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
-	}
 	# Provinces
 	provinces = {
 		# cape_of_good_hope_area
@@ -111,20 +97,6 @@ colonial_congo = {
 		199
 		160
 		139
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -230,9 +202,179 @@ colonial_congo = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_CONGO_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_CONGO_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_CONGO_scandinavian"
+	}
+	names = {
+		name = "COLONIAL_CAPE_british"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_ethiopia = {
+	color = {
+		56
+		120
+		191
+	}
+	# Provinces
+	provinces = {
+		# aussa_area
+		1215
+		2764
+		2765
+		2768
+		# central_ethiopia_area
+		1214
+		1223
+		1224
+		2769
+		2772
+		# damot_area
+		2762
+		2763
+		2770
+		# darfur_central_sahara_area
+		774
+		1219
+		2801
+		2802
+		2932
+		# dongola_area
+		1220
+		1228
+		1229
+		# hadiya_area
+		1218
+		2756
+		2760
+		# ifat_area
+		1211
+		1212
+		2773
+		2793
+		# kurdufan_area
+		1216
+		1221
+		2800
+		# red_sea_coast_area
+		1230
+		1232
+		2324
+		2787
+		# sennar_area
+		1217
+		2799
+		4033
+		# shewa_area
+		1213
+		2761
+		2791
+		# southern_ethiopia_area
+		2757
+		2758
+		2759
+		4158
+		# tigray_area
+		1227
+		2766
+		2767
+		2771
+		# upper_nubia_area 
+		1222
+		1226
+		1225
+		2797
+		2798
+	}
+	# Names
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_ETHIOPIA_british"
+	}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "COLONIAL_ETHIOPIA_dutch"
+	}
+	names = {
+		trigger = {
+			culture_group = french
+		}
+		name = "COLONIAL_ETHIOPIA_french"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_ETHIOPIA_germanic"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			NOT = {
+				primary_culture = portugese
+			}
+		}
+		name = "COLONIAL_ETHIOPIA_iberian"
+	}
+	names = {
+		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_ETHIOPIA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_ETHIOPIA_korean"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_ETHIOPIA_latin"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			primary_culture = portugese
+		}
+		name = "COLONIAL_ETHIOPIA_portugese"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_ETHIOPIA_scandinavian"
 	}
 	names = {
 		name = "COLONIAL_CAPE_british"
@@ -247,20 +389,6 @@ colonial_guinea = {
 		230
 		231
 		62
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -401,6 +529,21 @@ colonial_guinea = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_GUINEA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_GUINEA_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_GUINEA_scandinavian"
@@ -418,20 +561,6 @@ colonial_madagascar = {
 		187
 		96
 		193
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -506,6 +635,21 @@ colonial_madagascar = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_MADAGASCAR_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_MADAGASCAR_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_MADAGASCAR_scandinavian"
@@ -523,20 +667,6 @@ colonial_mocambique = {
 		169
 		34
 		34
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -625,6 +755,21 @@ colonial_mocambique = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_MOCAMBIQUE_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_MOCAMBIQUE_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_MOCAMBIQUE_scandinavian"
@@ -639,23 +784,9 @@ colonial_mocambique = {
 
 colonial_niger = {
 	color = {
-		230
-		231
-		62
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
+		215
+		56
+		56
 	}
 	# Provinces
 	provinces = {
@@ -768,6 +899,21 @@ colonial_niger = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_NIGER_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_NIGER_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_NIGER_scandinavian"
@@ -785,20 +931,6 @@ colonial_somalia = {
 		230
 		240
 		255
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -891,6 +1023,21 @@ colonial_somalia = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_SOMALIA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_SOMALIA_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_SOMALIA_scandinavian"
@@ -908,20 +1055,6 @@ colonial_tanzania = {
 		199
 		160
 		239
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -1018,6 +1151,21 @@ colonial_tanzania = {
 	}
 	names = {
 		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_TANZANIA_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_TANZANIA_korean"
+	}
+	names = {
+		trigger = {
 			culture_group = scandinavian
 		}
 		name = "COLONIAL_TANZANIA_scandinavian"
@@ -1035,20 +1183,6 @@ colonial_zimbabwe = {
 		255
 		211
 		0
-	}
-	# Random New World
-	tax_income = 1
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	trade_goods = {
-		grain = 1
-	}
-	culture = {
-		swedish = 1
-	}
-	religion = {
-		norse_pagan_reformed = 1
 	}
 	# Provinces
 	provinces = {
@@ -1120,6 +1254,21 @@ colonial_zimbabwe = {
 			primary_culture = portugese
 		}
 		name = "COLONIAL_ZIMBABWE_portugese"
+	}
+	names = {
+		trigger = {
+			primary_culture = japanese
+		}
+		name = "COLONIAL_ZIMBABWE_japanese"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_ZIMBABWE_korean"
 	}
 	names = {
 		trigger = {
