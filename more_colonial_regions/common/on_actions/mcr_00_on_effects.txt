@@ -1,9 +1,0 @@
-# ROOT = province
-on_colony_finished = {
-	change_colonial_province_ownership_to_overlord = yes
-}
-
-# ROOT = province, FROM = previous owner
-on_province_owner_change = {
-	change_colonial_province_ownership_to_overlord = yes
-}

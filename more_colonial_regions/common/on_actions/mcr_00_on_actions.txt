@@ -1,0 +1,3 @@
+on_yearly_pulse = {
+	cede_non_colonial_provinces_to_overlord = yes
+}

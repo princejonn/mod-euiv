@@ -1056,8 +1056,12 @@ exploration_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0.5
-			tag = ARA
+			factor = 0.1
+			OR = {
+				tag = ARA
+				tag = MAM
+				tag = TUR
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -1091,28 +1095,23 @@ exploration_ideas = {
 			num_of_ports = 20
 		}
 		modifier = {
+			## Modified
 			factor = 1000
 			OR = {
-				tag = POR
 				tag = CAS
+				tag = NED
+				tag = POR
 				tag = SPA
 			}
 		}
 		modifier = {
 			## Modified
-			factor = 20
+			factor = 100
 			OR = {
-				tag = GBR
-				tag = NED
 				tag = ENG
 				tag = FRA
+				tag = GBR
 				tag = KUR
-			}
-		}
-		modifier = {
-			## Modified
-			factor = 20
-			OR = {
 				tag = SWE
 			}
 		}
@@ -1483,6 +1482,15 @@ expansion_ideas = {
 					technology_group = eastern
 					technology_group = muslim
 				}
+			}
+		}
+		# Modified
+		modifier = {
+			factor = 0.1
+			OR = {
+				tag = ARA
+				tag = MAM
+				tag = TUR
 			}
 		}
 	}

@@ -60,36 +60,23 @@ add_permanent_claims_in_sector_fn = {
 cede_province_to_viceroyalty_subject_fn = {
 	if = {
 		limit = {
-			NOT = {
-				has_province_flag = ceding_province_auto_flag
-			}
-			NOT = {
-				has_province_flag = ceded_province_auto_flag
-			}
-		}
-		set_province_flag = ceding_province_auto_flag
-		if = {
-			limit = {
-				ROOT = {
-					is_in_capital_area = no
-					is_city = yes
-					is_province_in_$SECTOR$ = yes
-					owner = {
-						has_subject_of_type = viceroyalty
-					}
-				}
-				$SUBJECT$ = {
-					exists = yes
-					ai = yes
-					is_subject_of_type = viceroyalty
-				}
-			}
 			ROOT = {
-				cede_province = $SUBJECT$
-				set_province_flag = ceded_province_auto_flag
+				is_in_capital_area = no
+				is_city = yes
+				is_province_in_$SECTOR$ = yes
+				owner = {
+					has_subject_of_type = viceroyalty
+				}
+			}
+			$SUBJECT$ = {
+				exists = yes
+				ai = yes
+				is_subject_of_type = viceroyalty
 			}
 		}
-		clr_province_flag = ceding_province_auto_flag
+		ROOT = {
+			cede_province = $SUBJECT$
+		}
 	}
 }
 
