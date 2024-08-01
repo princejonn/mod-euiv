@@ -1,44 +1,43 @@
-# ROOT = province, FROM = country (previous owner)
-cede_non_colonial_province_to_overlord = {
-	if = {
-		limit = {
-			is_city = yes
-			owner = {
-				ai = yes
-				OR = {
-					is_subject_of_type = colony
-					is_subject_of_type = crown_colony
-					is_subject_of_type = private_enterprise
-					is_subject_of_type = self_governing_colony
-					is_subject_of_type = european_colony
-				}
-			}
-		}
-		owner = {
-			capital_scope = {
-				save_event_target_as = province_owner_capital
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					colonial_region = event_target:province_owner_capital
-				}
-			}
-			owner = {
-				save_event_target_as = province_owner
-				overlord = {
-					save_event_target_as = province_owner_overlord
-				}
-			}
-			remove_claim = event_target:province_owner
-			remove_core = event_target:province_owner
-			add_core = event_target:province_owner_overlord
-			cede_province = event_target:province_owner_overlord
-		}
-	}
-}
-
+# # ROOT = province, FROM = country (previous owner)
+# cede_non_colonial_province_to_overlord = {
+# 	if = {
+# 		limit = {
+# 			is_city = yes
+# 			owner = {
+# 				ai = yes
+# 				OR = {
+# 					is_subject_of_type = colony
+# 					is_subject_of_type = crown_colony
+# 					is_subject_of_type = private_enterprise
+# 					is_subject_of_type = self_governing_colony
+# 					is_subject_of_type = european_colony
+# 				}
+# 			}
+# 		}
+# 		owner = {
+# 			capital_scope = {
+# 				save_event_target_as = province_owner_capital
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					colonial_region = event_target:province_owner_capital
+# 				}
+# 			}
+# 			owner = {
+# 				save_event_target_as = province_owner
+# 				overlord = {
+# 					save_event_target_as = province_owner_overlord
+# 				}
+# 			}
+# 			remove_claim = event_target:province_owner
+# 			remove_core = event_target:province_owner
+# 			add_core = event_target:province_owner_overlord
+# 			cede_province = event_target:province_owner_overlord
+# 		}
+# 	}
+# }
 cede_non_colonial_provinces_to_overlord = {
 	every_country = {
 		limit = {
