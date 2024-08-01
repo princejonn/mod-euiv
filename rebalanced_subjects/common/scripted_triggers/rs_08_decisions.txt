@@ -1,6 +1,6 @@
 viceroyalty_decision_potential = {
 	ai = no
-	# adm_tech = 20	#Absolute Rulership
+	adm_tech = 15	#Military Administration
 	is_subject = no
 	technology_group = western
 	can_establish_viceroyalty_$SECTOR$ = yes
@@ -12,19 +12,19 @@ viceroyalty_decision_highlight = {
 }
 
 viceroyalty_decision_allow = {
-	# adm_power = 75
-	# dip_power = 75
-	# is_at_war = no
+	adm_power = 75
+	dip_power = 75
+	is_at_war = no
 	NOT = {
 		exists = $SUBJECT$
 	}
-	# OR = {
-	# 	NOT = {
-	# 		has_country_flag = establish_viceroyalty_cooldown_flag
-	# 	}
-	# 	had_country_flag = {
-	# 		flag = establish_viceroyalty_cooldown_flag
-	# 		days = 365
-	# 	}
-	# }
+	OR = {
+		NOT = {
+			has_country_flag = establish_viceroyalty_cooldown_flag
+		}
+		had_country_flag = {
+			flag = establish_viceroyalty_cooldown_flag
+			days = 365
+		}
+	}
 }
