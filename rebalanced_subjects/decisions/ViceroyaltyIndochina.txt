@@ -28,33 +28,4 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	## Siam
-	create_viceroyalty_siam = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = siam
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = siam
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = SIA
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = siam
-				SUBJECT = SIA
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }

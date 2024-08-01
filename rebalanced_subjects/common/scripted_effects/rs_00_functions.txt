@@ -93,59 +93,6 @@ cede_province_to_viceroyalty_subject_fn = {
 	}
 }
 
-# ROOT = province
-cede_province_to_viceroyalty_overlord_fn = {
-	if = {
-		limit = {
-			NOT = {
-				has_province_flag = ceding_province_auto_flag
-			}
-			NOT = {
-				has_province_flag = ceded_province_auto_flag
-			}
-		}
-		set_province_flag = ceding_province_auto_flag
-		owner = {
-			save_event_target_as = province_owner
-			overlord = {
-				save_event_target_as = province_owner_overlord
-			}
-		}
-		if = {
-			limit = {
-				ROOT = {
-					is_province_in_$SECTOR$ = no
-					is_in_capital_area = no
-					is_city = yes
-					owner = {
-						ai = yes
-						is_subject_of_type = viceroyalty
-					}
-				}
-			}
-			ROOT = {
-				add_claim = event_target:province_owner_overlord
-				cede_province = event_target:province_owner_overlord
-				remove_claim = event_target:province_owner
-				remove_core = event_target:province_owner
-				set_province_flag = ceded_province_auto_flag
-			}
-		}
-		clr_province_flag = ceding_province_auto_flag
-	}
-}
-
-# ROOT = province
-manage_viceroyalty_provinces = {
-	cede_province_to_viceroyalty_subject_fn = {
-		SECTOR = $SECTOR$
-		SUBJECT = $SUBJECT$
-	}
-	cede_province_to_viceroyalty_overlord_fn = {
-		SECTOR = $SECTOR$
-	}
-}
-
 change_subject_government_fn = {
 	$SUBJECT$ = {
 		# Set Government

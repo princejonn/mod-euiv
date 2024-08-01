@@ -1,27 +1,27 @@
 country_decisions = {
-	## Britain
-	create_viceroyalty_britain = {
+	## Siam
+	create_viceroyalty_siam = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = britain
+				SECTOR = siam
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = britain
+				SECTOR = siam
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = GBR
+				SUBJECT = SIA
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = britain
-				SUBJECT = GBR
+				SECTOR = siam
+				SUBJECT = SIA
 			}
 		}
 		ai_will_do = {

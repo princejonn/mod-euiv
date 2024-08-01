@@ -1,13 +1,3 @@
-## Anatolia
-can_convert_to_viceroyalty_turkey = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = turkey
-		NEW_TAG = TUR
-		AMOUNT = 30		# total: 43
-	}
-}
-
-## Arabia
 can_convert_to_viceroyalty_arabia = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = arabia
@@ -16,7 +6,6 @@ can_convert_to_viceroyalty_arabia = {
 	}
 }
 
-## Armenia
 can_convert_to_viceroyalty_armenia = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = armenia
@@ -25,49 +14,6 @@ can_convert_to_viceroyalty_armenia = {
 	}
 }
 
-## Balkans
-can_convert_to_viceroyalty_dalmatia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = dalmatia
-		NEW_TAG = DAL
-		AMOUNT = 15		# total: 26
-	}
-}
-
-can_convert_to_viceroyalty_greece = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = greece
-		NEW_TAG = GRE
-		AMOUNT = 25		# total: 37
-	}
-}
-
-## Baltic
-can_convert_to_viceroyalty_estonia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = estonia
-		NEW_TAG = EST
-		AMOUNT = 4		# total: 4
-	}
-}
-
-can_convert_to_viceroyalty_latvia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = latvia
-		NEW_TAG = LTG
-		AMOUNT = 6		# total: 6
-	}
-}
-
-can_convert_to_viceroyalty_lithuania = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = lithuania
-		NEW_TAG = LIT
-		AMOUNT = 9		# total: 9
-	}
-}
-
-## Britain
 can_convert_to_viceroyalty_britain = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = britain
@@ -76,41 +22,22 @@ can_convert_to_viceroyalty_britain = {
 	}
 }
 
-can_convert_to_viceroyalty_ireland = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = ireland
-		NEW_TAG = IRE
-		AMOUNT = 10		# total: 13
-	}
-}
-
-## Burma
 can_convert_to_viceroyalty_burma = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = burma
 		NEW_TAG = KAL
-		AMOUNT = 20		# total: 29
+		AMOUNT = 25		# total: 32
 	}
 }
 
-## Carpathia
-can_convert_to_viceroyalty_hungary = {
+can_convert_to_viceroyalty_carpathia = {
 	can_convert_to_viceroyalty_fn = {
-		SECTOR = hungary
-		NEW_TAG = HUN
-		AMOUNT = 10		# total: 18
-	}
-}
-
-can_convert_to_viceroyalty_romania = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = romania
+		SECTOR = carpathia
 		NEW_TAG = RMN
-		AMOUNT = 10		# total: 17
+		AMOUNT = 30		# total: 40
 	}
 }
 
-## China
 can_convert_to_viceroyalty_china = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = china
@@ -119,24 +46,14 @@ can_convert_to_viceroyalty_china = {
 	}
 }
 
-## East Indies
-can_convert_to_viceroyalty_eastindies = {
+can_convert_to_viceroyalty_dalmatia = {
 	can_convert_to_viceroyalty_fn = {
-		SECTOR = eastindies
-		NEW_TAG = BEI
-		AMOUNT = 50		# total: 73
+		SECTOR = dalmatia
+		NEW_TAG = DAL
+		AMOUNT = 15		# total: 26
 	}
 }
 
-can_convert_to_viceroyalty_philippines = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = philippines
-		NEW_TAG = MNA
-		AMOUNT = 10		# total: 13
-	}
-}
-
-## Egypt
 can_convert_to_viceroyalty_egypt = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = egypt
@@ -145,7 +62,6 @@ can_convert_to_viceroyalty_egypt = {
 	}
 }
 
-## France
 can_convert_to_viceroyalty_france = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = france
@@ -154,269 +70,19 @@ can_convert_to_viceroyalty_france = {
 	}
 }
 
-## Germany
-can_convert_to_viceroyalty_austria = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = austria
-		NEW_TAG = AUS
-		AMOUNT = 10		# total: 14
-	}
-}
-
-can_convert_to_viceroyalty_bohemia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = bohemia
-		NEW_TAG = BOH
-		AMOUNT = 10		# total: 11
-	}
-}
-
 can_convert_to_viceroyalty_germany = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = germany
 		NEW_TAG = GER
-		AMOUNT = 60		# total: 86
+		AMOUNT = 100		# total: 140
 	}
 }
 
-can_convert_to_viceroyalty_prussia = {
+can_convert_to_viceroyalty_greece = {
 	can_convert_to_viceroyalty_fn = {
-		SECTOR = prussia
-		NEW_TAG = PRU
-		AMOUNT = 20		# total: 30
-	}
-}
-
-can_convert_to_viceroyalty_switzerland = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = switzerland
-		NEW_TAG = SWI
-		AMOUNT = 10		# total: 10
-	}
-}
-
-## Iberia
-can_convert_to_viceroyalty_portugal = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = portugal
-		NEW_TAG = POR
-		AMOUNT = 10		# total: 10
-	}
-}
-
-can_convert_to_viceroyalty_spain = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = spain
-		NEW_TAG = SPA
-		AMOUNT = 35		# total: 52
-	}
-}
-
-## India
-can_convert_to_viceroyalty_bengal = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = bengal
-		NEW_TAG = BNG
-		AMOUNT = 35		# total: 50
-	}
-}
-
-can_convert_to_viceroyalty_delhi = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = delhi
-		NEW_TAG = DLH
-		AMOUNT = 55		# total: 74
-	}
-}
-
-can_convert_to_viceroyalty_mysore = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = mysore
-		NEW_TAG = MYS
-		AMOUNT = 60		# total: 85
-	}
-}
-
-can_convert_to_viceroyalty_punjab = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = punjab
-		NEW_TAG = PUN
-		AMOUNT = 40		# total: 57
-	}
-}
-
-## Indochina
-can_convert_to_viceroyalty_indochina = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = indochina
-		NEW_TAG = DAI
-		AMOUNT = 30		# total: 45
-	}
-}
-
-can_convert_to_viceroyalty_siam = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = siam
-		NEW_TAG = SIA
-		AMOUNT = 20		# total: 27
-	}
-}
-
-## Italy
-can_convert_to_viceroyalty_italy = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = italy
-		NEW_TAG = ITA
-		AMOUNT = 40		# total: 57
-	}
-}
-
-## Japan
-can_convert_to_viceroyalty_japan = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = japan
-		NEW_TAG = JAP
-		AMOUNT = 35		# total: 48
-	}
-}
-
-## Korea
-can_convert_to_viceroyalty_korea = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = korea
-		NEW_TAG = KOR
-		AMOUNT = 15		# total: 20
-	}
-}
-
-## Maghreb
-can_convert_to_viceroyalty_algiers = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = algiers
-		NEW_TAG = ALG
-		AMOUNT = 15		# total: 20
-	}
-}
-
-can_convert_to_viceroyalty_morocco = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = morocco
-		NEW_TAG = MOR
-		AMOUNT = 15		# total: 23
-	}
-}
-
-can_convert_to_viceroyalty_tunisia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = tunisia
-		NEW_TAG = TUN
-		AMOUNT = 10		# total: 15
-	}
-}
-
-## Malaya
-can_convert_to_viceroyalty_malaya = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = malaya
-		NEW_TAG = MSA
-		AMOUNT = 10		# total: 14
-	}
-}
-
-## Manchuria
-can_convert_to_viceroyalty_manchuria = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = manchuria
-		NEW_TAG = MCH
-		AMOUNT = 30		# total: 46
-	}
-}
-
-## Mashriq
-can_convert_to_viceroyalty_syria = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = syria
-		NEW_TAG = SYR
-		AMOUNT = 15		# total: 22
-	}
-}
-
-## Mongolia
-can_convert_to_viceroyalty_mongolia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = mongolia
-		NEW_TAG = MGE
-		AMOUNT = 45		# total: 63
-	}
-}
-
-## Netherlands
-can_convert_to_viceroyalty_netherlands = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = netherlands
-		NEW_TAG = NED
-		AMOUNT = 15		# total: 22
-	}
-}
-
-## Persia
-can_convert_to_viceroyalty_persia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = persia
-		NEW_TAG = PER
-		AMOUNT = 65		# total: 89
-	}
-}
-
-## Poland
-can_convert_to_viceroyalty_poland = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = poland
-		NEW_TAG = POL
-		AMOUNT = 20		# total: 33
-	}
-}
-
-## Ruthenia
-can_convert_to_viceroyalty_kiev = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = kiev
-		NEW_TAG = RUS
-		AMOUNT = 20		# total: 27
-	}
-}
-
-can_convert_to_viceroyalty_smolensk = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = smolensk
-		NEW_TAG = KIE
-		AMOUNT = 10		# total: 15
-	}
-}
-
-## Russia
-can_convert_to_viceroyalty_russia = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = russia
-		NEW_TAG = SMO
-		AMOUNT = 40		# total: 57
-	}
-}
-
-## Scandinavia
-can_convert_to_viceroyalty_denmark = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = denmark
-		NEW_TAG = DEN
-		AMOUNT = 9		# total: 9
-	}
-}
-
-can_convert_to_viceroyalty_finland = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = finland
-		NEW_TAG = FIN
-		AMOUNT = 10		# total: 13
+		SECTOR = greece
+		NEW_TAG = GRE
+		AMOUNT = 25		# total: 32
 	}
 }
 
@@ -428,27 +94,186 @@ can_convert_to_viceroyalty_iceland = {
 	}
 }
 
-can_convert_to_viceroyalty_norway = {
+can_convert_to_viceroyalty_india = {
 	can_convert_to_viceroyalty_fn = {
-		SECTOR = norway
-		NEW_TAG = NOR
+		SECTOR = india
+		NEW_TAG = HIN
+		AMOUNT = 190		# total: 255
+	}
+}
+
+can_convert_to_viceroyalty_indochina = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = indochina
+		NEW_TAG = DAI
+		AMOUNT = 30		# total: 45
+	}
+}
+
+can_convert_to_viceroyalty_ireland = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = ireland
+		NEW_TAG = IRE
+		AMOUNT = 10		# total: 13
+	}
+}
+
+can_convert_to_viceroyalty_italy = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = italy
+		NEW_TAG = ITA
+		AMOUNT = 40		# total: 57
+	}
+}
+
+can_convert_to_viceroyalty_japan = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = japan
+		NEW_TAG = JAP
+		AMOUNT = 35		# total: 48
+	}
+}
+
+can_convert_to_viceroyalty_kiev = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = kiev
+		NEW_TAG = KIE
+		AMOUNT = 20		# total: 27
+	}
+}
+
+can_convert_to_viceroyalty_korea = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = korea
+		NEW_TAG = KOR
+		AMOUNT = 15		# total: 20
+	}
+}
+
+can_convert_to_viceroyalty_livonia = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = livonia
+		NEW_TAG = LIV
+		AMOUNT = 20		# total: 26
+	}
+}
+
+can_convert_to_viceroyalty_maghreb = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = maghreb
+		NEW_TAG = ALG
+		AMOUNT = 45		# total: 58
+	}
+}
+
+can_convert_to_viceroyalty_manchuria = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = manchuria
+		NEW_TAG = MCH
+		AMOUNT = 30		# total: 46
+	}
+}
+
+can_convert_to_viceroyalty_mongolia = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = mongolia
+		NEW_TAG = MGE
+		AMOUNT = 45		# total: 63
+	}
+}
+
+can_convert_to_viceroyalty_netherlands = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = netherlands
+		NEW_TAG = NED
+		AMOUNT = 15		# total: 22
+	}
+}
+
+can_convert_to_viceroyalty_persia = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = persia
+		NEW_TAG = PER
+		AMOUNT = 70		# total: 97
+	}
+}
+
+can_convert_to_viceroyalty_poland = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = poland
+		NEW_TAG = POL
+		AMOUNT = 20		# total: 33
+	}
+}
+
+can_convert_to_viceroyalty_portugal = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = portugal
+		NEW_TAG = POR
 		AMOUNT = 10		# total: 10
 	}
 }
 
-can_convert_to_viceroyalty_sweden = {
+can_convert_to_viceroyalty_russia = {
 	can_convert_to_viceroyalty_fn = {
-		SECTOR = sweden
-		NEW_TAG = SWE
-		AMOUNT = 15		# total: 23
+		SECTOR = russia
+		NEW_TAG = RUS
+		AMOUNT = 40		# total: 57
 	}
 }
 
-## Tibet
+can_convert_to_viceroyalty_scandinavia = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = scandinavia
+		NEW_TAG = SWE
+		AMOUNT = 9		# total: 9
+	}
+}
+
+can_convert_to_viceroyalty_siam = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = siam
+		NEW_TAG = SIA
+		AMOUNT = 20		# total: 27
+	}
+}
+
+can_convert_to_viceroyalty_spain = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = spain
+		NEW_TAG = SPA
+		AMOUNT = 35		# total: 52
+	}
+}
+
+can_convert_to_viceroyalty_syria = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = syria
+		NEW_TAG = SYR
+		AMOUNT = 15		# total: 22
+	}
+}
+
 can_convert_to_viceroyalty_tibet = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = tibet
 		NEW_TAG = TIB
 		AMOUNT = 15		# total: 24
+	}
+}
+
+can_convert_to_viceroyalty_transcaspia = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = transcaspia
+		NEW_TAG = KZH
+		AMOUNT = 1		# total: 65
+	}
+}
+
+can_convert_to_viceroyalty_turkey = {
+	can_convert_to_viceroyalty_fn = {
+		SECTOR = turkey
+		NEW_TAG = TUR
+		AMOUNT = 30		# total: 43
 	}
 }

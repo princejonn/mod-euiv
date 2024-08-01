@@ -1,245 +1,142 @@
 cede_province_to_viceroyalty = {
-	## Anatolia
-	manage_viceroyalty_provinces = {
-		SECTOR = turkey
-		SUBJECT = TUR
-	}
-	## Arabia
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = arabia
 		SUBJECT = ARB
 	}
-	## Armenia
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = armenia
 		SUBJECT = ARM
 	}
-	## Balkans
-	manage_viceroyalty_provinces = {
-		SECTOR = dalmatia
-		SUBJECT = DAL
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = greece
-		SUBJECT = GRE
-	}
-	## Baltic
-	manage_viceroyalty_provinces = {
-		SECTOR = estonia
-		SUBJECT = EST
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = latvia
-		SUBJECT = LTG
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = lithuania
-		SUBJECT = LIT
-	}
-	## Britain
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = britain
 		SUBJECT = GBR
 	}
-	manage_viceroyalty_provinces = {
-		SECTOR = ireland
-		SUBJECT = IRE
-	}
-	## Burma
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = burma
 		SUBJECT = KAL
 	}
-	## Carpathia
-	manage_viceroyalty_provinces = {
-		SECTOR = hungary
-		SUBJECT = HUN
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = romania
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = carpathia
 		SUBJECT = RMN
 	}
-	## China
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = china
 		SUBJECT = QNG
 	}
-	## East Indies
-	manage_viceroyalty_provinces = {
-		SECTOR = eastindies
-		SUBJECT = BEI
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = dalmatia
+		SUBJECT = DAL
 	}
-	manage_viceroyalty_provinces = {
-		SECTOR = philippines
-		SUBJECT = MNA
-	}
-	## Egypt
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = egypt
 		SUBJECT = EGY
 	}
-	## France
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = france
 		SUBJECT = FRA
 	}
-	## Germany
-	manage_viceroyalty_provinces = {
-		SECTOR = austria
-		SUBJECT = AUS
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = bohemia
-		SUBJECT = BOH
-	}
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = germany
 		SUBJECT = GER
 	}
-	manage_viceroyalty_provinces = {
-		SECTOR = prussia
-		SUBJECT = PRU
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = greece
+		SUBJECT = GRE
 	}
-	manage_viceroyalty_provinces = {
-		SECTOR = switzerland
-		SUBJECT = SWI
-	}
-	## Iberia
-	manage_viceroyalty_provinces = {
-		SECTOR = portugal
-		SUBJECT = POR
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = spain
-		SUBJECT = SPA
-	}
-	## India
-	manage_viceroyalty_provinces = {
-		SECTOR = bengal
-		SUBJECT = BNG
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = delhi
-		SUBJECT = DLH
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = mysore
-		SUBJECT = MYS
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = punjab
-		SUBJECT = PUN
-	}
-	## Indochina
-	manage_viceroyalty_provinces = {
-		SECTOR = indochina
-		SUBJECT = DAI
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = siam
-		SUBJECT = SIA
-	}
-	## Italy
-	manage_viceroyalty_provinces = {
-		SECTOR = italy
-		SUBJECT = ITA
-	}
-	## Japan
-	manage_viceroyalty_provinces = {
-		SECTOR = japan
-		SUBJECT = JAP
-	}
-	## Korea
-	manage_viceroyalty_provinces = {
-		SECTOR = korea
-		SUBJECT = KOR
-	}
-	## Maghreb
-	manage_viceroyalty_provinces = {
-		SECTOR = algeria
-		SUBJECT = ALG
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = morocco
-		SUBJECT = MOR
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = tunisia
-		SUBJECT = TUN
-	}
-	## Malaya
-	manage_viceroyalty_provinces = {
-		SECTOR = malaya
-		SUBJECT = MSA
-	}
-	## Manchuria
-	manage_viceroyalty_provinces = {
-		SECTOR = manchuria
-		SUBJECT = MCH
-	}
-	## Mashriq
-	manage_viceroyalty_provinces = {
-		SECTOR = syria
-		SUBJECT = SYR
-	}
-	## Mongolia
-	manage_viceroyalty_provinces = {
-		SECTOR = mongolia
-		SUBJECT = MGE
-	}
-	## Netherlands
-	manage_viceroyalty_provinces = {
-		SECTOR = netherlands
-		SUBJECT = NED
-	}
-	## Persia
-	manage_viceroyalty_provinces = {
-		SECTOR = persia
-		SUBJECT = PER
-	}
-	## Poland
-	manage_viceroyalty_provinces = {
-		SECTOR = poland
-		SUBJECT = POL
-	}
-	## Russia
-	manage_viceroyalty_provinces = {
-		SECTOR = russia
-		SUBJECT = RUS
-	}
-	## Ruthenia
-	manage_viceroyalty_provinces = {
-		SECTOR = kiev
-		SUBJECT = KIE
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = smolensk
-		SUBJECT = SMO
-	}
-	## Scandinavia
-	manage_viceroyalty_provinces = {
-		SECTOR = denmark
-		SUBJECT = DEN
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = finland
-		SUBJECT = FIN
-	}
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = iceland
 		SUBJECT = ICE
 	}
-	manage_viceroyalty_provinces = {
-		SECTOR = norway
-		SUBJECT = NOR
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = india
+		SUBJECT = HIN
 	}
-	manage_viceroyalty_provinces = {
-		SECTOR = sweden
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = indochina
+		SUBJECT = DAI
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = ireland
+		SUBJECT = IRE
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = italy
+		SUBJECT = ITA
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = japan
+		SUBJECT = JAP
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = kiev
+		SUBJECT = KIE
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = korea
+		SUBJECT = KOR
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = livonia
+		SUBJECT = LIV
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = maghreb
+		SUBJECT = ALG
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = manchuria
+		SUBJECT = MCH
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = mongolia
+		SUBJECT = MGE
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = netherlands
+		SUBJECT = NED
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = persia
+		SUBJECT = PER
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = poland
+		SUBJECT = POL
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = portugal
+		SUBJECT = POR
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = russia
+		SUBJECT = RUS
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = scandinavia
 		SUBJECT = SWE
 	}
-	## Tibet
-	manage_viceroyalty_provinces = {
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = siam
+		SUBJECT = SIA
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = spain
+		SUBJECT = SPA
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = syria
+		SUBJECT = SYR
+	}
+	cede_province_to_viceroyalty_subject_fn = {
 		SECTOR = tibet
 		SUBJECT = TIB
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = transcaspia
+		SUBJECT = KZH
+	}
+	cede_province_to_viceroyalty_subject_fn = {
+		SECTOR = turkey
+		SUBJECT = TUR
 	}
 }

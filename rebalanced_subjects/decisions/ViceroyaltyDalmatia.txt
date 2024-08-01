@@ -1,27 +1,27 @@
 country_decisions = {
-	## Britain
-	create_viceroyalty_britain = {
+	## Dalmatia
+	create_viceroyalty_dalmatia = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = britain
+				SECTOR = dalmatia
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = britain
+				SECTOR = dalmatia
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = GBR
+				SUBJECT = DAL
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = britain
-				SUBJECT = GBR
+				SECTOR = dalmatia
+				SUBJECT = DAL
 			}
 		}
 		ai_will_do = {

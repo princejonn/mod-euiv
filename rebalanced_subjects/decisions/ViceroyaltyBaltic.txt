@@ -1,85 +1,27 @@
 country_decisions = {
-	## Estonia
-	create_viceroyalty_estonia = {
+	## Livonia
+	create_viceroyalty_livonia = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = estonia
+				SECTOR = livonia
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = estonia
+				SECTOR = livonia
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = EST
+				SUBJECT = LIV
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = estonia
-				SUBJECT = EST
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Latvia
-	create_viceroyalty_latvia = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = latvia
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = latvia
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = LTG
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = latvia
-				SUBJECT = LTG
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Lithuania
-	create_viceroyalty_lithuania = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = lithuania
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = lithuania
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = LIT
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = lithuania
-				SUBJECT = LIT
+				SECTOR = livonia
+				SUBJECT = LIV
 			}
 		}
 		ai_will_do = {

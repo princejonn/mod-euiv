@@ -28,33 +28,4 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	## Smolensk
-	create_viceroyalty_smolensk = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = smolensk
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = smolensk
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = SMO
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = smolensk
-				SUBJECT = SMO
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }

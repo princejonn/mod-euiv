@@ -1,44 +1,15 @@
 country_decisions = {
-	## Hungary
-	create_viceroyalty_hungary = {
+	## Carpathia
+	create_viceroyalty_carpathia = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = hungary
+				SECTOR = carpathia
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = hungary
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = HUN
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = hungary
-				SUBJECT = HUN
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Romania
-	create_viceroyalty_romania = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = romania
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = romania
+				SECTOR = carpathia
 			}
 		}
 		allow = {
@@ -49,7 +20,7 @@ country_decisions = {
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = romania
+				SECTOR = carpathia
 				SUBJECT = RMN
 			}
 		}

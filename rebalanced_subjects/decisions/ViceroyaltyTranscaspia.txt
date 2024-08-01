@@ -1,27 +1,27 @@
 country_decisions = {
-	## Britain
-	create_viceroyalty_britain = {
+	## Transcaspia
+	create_viceroyalty_transcaspia = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = britain
+				SECTOR = transcaspia
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = britain
+				SECTOR = transcaspia
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = GBR
+				SUBJECT = KZH
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = britain
-				SUBJECT = GBR
+				SECTOR = transcaspia
+				SUBJECT = KZH
 			}
 		}
 		ai_will_do = {

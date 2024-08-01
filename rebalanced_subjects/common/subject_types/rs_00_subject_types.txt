@@ -148,7 +148,7 @@ viceroyalty = {
 	}
 	modifier_overlord = {
 		trigger = {
-			num_of_cities = 60
+			num_of_cities = 80
 		}
 		modifier = viceroyalty_overlord_continental
 	}

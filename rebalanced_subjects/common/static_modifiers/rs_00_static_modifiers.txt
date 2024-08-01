@@ -1,6 +1,6 @@
 viceroyalty_overlord = {
 	global_trade_power = 0.05
-	governing_capacity = 20
+	governing_capacity = 50
 	land_forcelimit = 2
 	naval_forcelimit = 2
 }
@@ -8,6 +8,7 @@ viceroyalty_overlord = {
 viceroyalty_overlord_large = {
 	global_colonial_growth = 20
 	global_trade_power = 0.05
+	governing_capacity = 100
 	land_forcelimit = 4
 	merchants = 1
 	naval_forcelimit = 4
@@ -17,17 +18,18 @@ viceroyalty_overlord_regional = {
 	colonists = 1
 	global_colonial_growth = 20
 	global_trade_power = 0.05
+	governing_capacity = 100
 	land_forcelimit = 4
 	merchants = 1
 	naval_forcelimit = 4
 }
 
 viceroyalty_overlord_continental = {
-	colonists = 1
 	global_colonial_growth = 20
 	global_trade_power = 0.05
+	governing_capacity = 200
 	land_forcelimit = 4
-	merchants = 1
+	merchants = 2
 	naval_forcelimit = 4
 }
 

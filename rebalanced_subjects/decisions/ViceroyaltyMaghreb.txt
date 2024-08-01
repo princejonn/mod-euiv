@@ -1,15 +1,15 @@
 country_decisions = {
-	## Algiers
-	create_viceroyalty_algiers = {
+	## Maghreb
+	create_viceroyalty_maghreb = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = algiers
+				SECTOR = maghreb
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = algiers
+				SECTOR = maghreb
 			}
 		}
 		allow = {
@@ -20,66 +20,8 @@ country_decisions = {
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = algiers
+				SECTOR = maghreb
 				SUBJECT = ALG
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Morocco
-	create_viceroyalty_morocco = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = morocco
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = morocco
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = MOR
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = morocco
-				SUBJECT = MOR
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Tunisia
-	create_viceroyalty_tunisia = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = tunisia
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = tunisia
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = TUN
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = tunisia
-				SUBJECT = TUN
 			}
 		}
 		ai_will_do = {

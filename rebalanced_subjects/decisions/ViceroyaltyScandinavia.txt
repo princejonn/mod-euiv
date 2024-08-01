@@ -1,131 +1,15 @@
 country_decisions = {
-	## Denmark
-	create_viceroyalty_denmark = {
+	## Scandinavia
+	create_viceroyalty_scandinavia = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = denmark
+				SECTOR = scandinavia
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = denmark
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = DAN
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = denmark
-				SUBJECT = DAN
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Finland
-	create_viceroyalty_finland = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = finland
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = finland
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = FIN
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = finland
-				SUBJECT = FIN
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Iceland
-	create_viceroyalty_iceland = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = iceland
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = iceland
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = ICE
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = iceland
-				SUBJECT = ICE
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Norway
-	create_viceroyalty_norway = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = norway
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = norway
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = NOR
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = norway
-				SUBJECT = NOR
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Sweden
-	create_viceroyalty_sweden = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = sweden
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = sweden
+				SECTOR = scandinavia
 			}
 		}
 		allow = {
@@ -136,7 +20,7 @@ country_decisions = {
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = sweden
+				SECTOR = scandinavia
 				SUBJECT = SWE
 			}
 		}

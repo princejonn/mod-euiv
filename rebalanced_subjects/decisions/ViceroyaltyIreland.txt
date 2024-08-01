@@ -1,27 +1,27 @@
 country_decisions = {
-	## Britain
-	create_viceroyalty_britain = {
+	## Ireland
+	create_viceroyalty_ireland = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = britain
+				SECTOR = ireland
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = britain
+				SECTOR = ireland
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = GBR
+				SUBJECT = IRE
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = britain
-				SUBJECT = GBR
+				SECTOR = ireland
+				SUBJECT = IRE
 			}
 		}
 		ai_will_do = {

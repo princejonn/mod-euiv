@@ -1,27 +1,27 @@
 country_decisions = {
-	## India
-	create_viceroyalty_malaya = {
+	## Portugal
+	create_viceroyalty_portugal = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = malaya
+				SECTOR = portugal
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = malaya
+				SECTOR = portugal
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = MSA
+				SUBJECT = POR
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = malaya
-				SUBJECT = MSA
+				SECTOR = portugal
+				SUBJECT = POR
 			}
 		}
 		ai_will_do = {
