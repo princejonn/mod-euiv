@@ -1,27 +1,27 @@
 country_decisions = {
-	## England
-	create_viceroyalty_england = {
+	## Britain
+	create_viceroyalty_britain = {
 		major = yes
 		potential = {
 			viceroyalty_decision_potential = {
-				SECTOR = england
+				SECTOR = britain
 			}
 		}
 		provinces_to_highlight = {
 			viceroyalty_decision_highlight = {
-				SECTOR = england
+				SECTOR = britain
 			}
 		}
 		allow = {
 			viceroyalty_decision_allow = {
-				SUBJECT = ENG
+				SUBJECT = GBR
 			}
 		}
 		effect = {
 			viceroyalty_decision_effect = {
 				OVERLORD = ROOT
-				SECTOR = england
-				SUBJECT = ENG
+				SECTOR = britain
+				SUBJECT = GBR
 			}
 		}
 		ai_will_do = {
@@ -51,64 +51,6 @@ country_decisions = {
 				OVERLORD = ROOT
 				SECTOR = ireland
 				SUBJECT = IRE
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Scotland
-	create_viceroyalty_scotland = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = scotland
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = scotland
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = SCO
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = scotland
-				SUBJECT = SCO
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	## Wales
-	create_viceroyalty_wales = {
-		major = yes
-		potential = {
-			viceroyalty_decision_potential = {
-				SECTOR = wales
-			}
-		}
-		provinces_to_highlight = {
-			viceroyalty_decision_highlight = {
-				SECTOR = wales
-			}
-		}
-		allow = {
-			viceroyalty_decision_allow = {
-				SUBJECT = WLS
-			}
-		}
-		effect = {
-			viceroyalty_decision_effect = {
-				OVERLORD = ROOT
-				SECTOR = wales
-				SUBJECT = WLS
 			}
 		}
 		ai_will_do = {

@@ -7,9 +7,11 @@ is_free_or_union_vassal_tributary_trigger = {
 			is_subject_of_type = consolidated_personal_union
 			is_subject_of_type = cultural_sphere_of_influence_subject
 			is_subject_of_type = incorporated_personal_union
+			is_subject_of_type = incorporated_vassal
 			is_subject_of_type = integrated_personal_union
 			is_subject_of_type = march
 			is_subject_of_type = personal_union
+			is_subject_of_type = sovereign_personal_union
 			is_subject_of_type = tributary_state
 			is_subject_of_type = vassal
 		}

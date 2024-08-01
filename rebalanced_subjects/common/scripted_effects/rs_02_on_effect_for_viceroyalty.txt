@@ -38,20 +38,12 @@ cede_province_to_viceroyalty = {
 	}
 	## Britain
 	manage_viceroyalty_provinces = {
-		SECTOR = england
-		SUBJECT = ENG
+		SECTOR = britain
+		SUBJECT = GBR
 	}
 	manage_viceroyalty_provinces = {
 		SECTOR = ireland
 		SUBJECT = IRE
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = scotland
-		SUBJECT = SCT
-	}
-	manage_viceroyalty_provinces = {
-		SECTOR = wales
-		SUBJECT = WLS
 	}
 	## Burma
 	manage_viceroyalty_provinces = {

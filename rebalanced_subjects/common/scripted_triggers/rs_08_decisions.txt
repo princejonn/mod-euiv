@@ -12,8 +12,8 @@ viceroyalty_decision_highlight = {
 }
 
 viceroyalty_decision_allow = {
-	adm_power = 300
-	dip_power = 300
+	adm_power = 75
+	dip_power = 75
 	is_at_war = no
 	NOT = {
 		exists = $SUBJECT$
@@ -24,16 +24,7 @@ viceroyalty_decision_allow = {
 		}
 		had_country_flag = {
 			flag = establish_viceroyalty_cooldown_flag
-			days = 730
-		}
-	}
-	OR = {
-		NOT = {
-			has_country_flag = administrative_reorganisation_cooldown_flag
-		}
-		had_country_flag = {
-			flag = administrative_reorganisation_cooldown_flag
-			days = 90
+			days = 365
 		}
 	}
 }

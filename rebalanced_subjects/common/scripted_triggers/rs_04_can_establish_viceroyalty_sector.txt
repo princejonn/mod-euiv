@@ -60,10 +60,10 @@ can_establish_viceroyalty_lithuania = {
 }
 
 ## Britain
-can_establish_viceroyalty_england = {
+can_establish_viceroyalty_britain = {
 	can_establish_viceroyalty_fn = {
-		SECTOR = england
-		AMOUNT = 15		# total: 26
+		SECTOR = britain
+		AMOUNT = 20		# total: 43
 	}
 }
 
@@ -71,20 +71,6 @@ can_establish_viceroyalty_ireland = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = ireland
 		AMOUNT = 10		# total: 13
-	}
-}
-
-can_establish_viceroyalty_scotland = {
-	can_establish_viceroyalty_fn = {
-		SECTOR = scotland
-		AMOUNT = 10		# total: 13
-	}
-}
-
-can_establish_viceroyalty_wales = {
-	can_establish_viceroyalty_fn = {
-		SECTOR = wales
-		AMOUNT = 4		# total: 4
 	}
 }
 
