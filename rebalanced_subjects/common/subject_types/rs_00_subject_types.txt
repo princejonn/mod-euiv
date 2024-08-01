@@ -67,17 +67,8 @@ incorporated_vassal = {
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
 	# Properties:
-	annex_cost_per_development = 6
+	annex_cost_per_development = 5
 	takes_diplo_slot = no
-	# Modifiers
-	modifier_overlord = {
-		trigger = {
-			NOT = {
-				has_country_flag = free_incorporated_vassal
-			}
-		}
-		modifier = base_incorporated_vassal_cost
-	}
 	# Opinion:
 	overlord_opinion_modifier = is_incorporated_vassal
 	subject_opinion_modifier = is_incorporated_vassal
