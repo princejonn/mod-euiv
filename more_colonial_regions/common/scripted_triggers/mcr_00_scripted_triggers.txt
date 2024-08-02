@@ -1,5 +1,5 @@
 # ROOT = province
-is_in_colonial_region = {
+in_colonial_region = {
 	OR = {
 		# base game
 		colonial_region = colonial_alaska
@@ -37,51 +37,33 @@ is_in_colonial_region = {
 }
 
 # ROOT = country
-is_colonial_country = {
-	AND = {
-		ai = yes
-		OR = {
-			is_subject_of_type = colony
-			is_subject_of_type = crown_colony
-			is_subject_of_type = private_enterprise
-			is_subject_of_type = self_governing_colony
-			is_subject_of_type = european_colony
+is_small_country = {
+	NOT = {
+		num_of_owned_provinces_with = {
+			value = 15
+			is_city = yes
 		}
 	}
 }
 
 # ROOT = country
-is_small_colonial_country = {
-	AND = {
-		ai = yes
-		OR = {
-			is_subject_of_type = colony
-			is_subject_of_type = crown_colony
-			is_subject_of_type = private_enterprise
-			is_subject_of_type = self_governing_colony
-			is_subject_of_type = european_colony
-		}
-		NOT = {
-			num_of_owned_provinces_with = {
-				value = 15
-				is_city = yes
-			}
-		}
+is_colonial_subject = {
+	OR = {
+		is_subject_of_type = colony
+		is_subject_of_type = crown_colony
+		is_subject_of_type = private_enterprise
+		is_subject_of_type = self_governing_colony
+		is_subject_of_type = european_colony
 	}
 }
 
 # ROOT = country
-is_country_with_colonial_subjects = {
-	AND = {
-		capital_scope = {
-			is_in_colonial_region = no
-		}
-		OR = {
-			has_subject_of_type = colony
-			has_subject_of_type = crown_colony
-			has_subject_of_type = private_enterprise
-			has_subject_of_type = self_governing_colony
-			has_subject_of_type = european_colony
-		}
+has_colonial_subjects = {
+	OR = {
+		has_subject_of_type = colony
+		has_subject_of_type = crown_colony
+		has_subject_of_type = private_enterprise
+		has_subject_of_type = self_governing_colony
+		has_subject_of_type = european_colony
 	}
 }
