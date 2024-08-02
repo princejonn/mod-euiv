@@ -1,0 +1,3 @@
+﻿l_english:
+  enable_colonial_merging_title: "ENABLE: Automatic colonial merging"
+  enable_colonial_merging_desc: "All subjects with fewer than §Y5§! provinces in colonial regions will automatically cede these to their overlord.\n\nAll subjects with colonial nations with fewer than §Y15§! provinces will automatically merge them with their overlord's colonial nations."

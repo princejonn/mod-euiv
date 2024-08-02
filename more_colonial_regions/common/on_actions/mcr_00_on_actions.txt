@@ -1,6 +1,6 @@
 on_yearly_pulse = {
 	cede_non_colonial_provinces_to_overlord = yes
-	cede_colonial_nations_to_overlord = yes
+	cede_small_colonial_nations_to_overlord = yes
 }
 
 # # ROOT = province, FROM = country (previous owner)

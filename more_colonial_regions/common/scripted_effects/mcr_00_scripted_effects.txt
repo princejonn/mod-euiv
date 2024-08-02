@@ -38,17 +38,11 @@
 # 		}
 # 	}
 # }
+#
 cede_non_colonial_provinces_to_overlord = {
 	every_country = {
 		limit = {
-			ai = yes
-			OR = {
-				is_subject_of_type = colony
-				is_subject_of_type = crown_colony
-				is_subject_of_type = private_enterprise
-				is_subject_of_type = self_governing_colony
-				is_subject_of_type = european_colony
-			}
+			is_colonial_country = yes
 		}
 		save_event_target_as = province_owner
 		overlord = {
@@ -69,42 +63,44 @@ cede_non_colonial_provinces_to_overlord = {
 	}
 }
 
-cede_colonial_nations_to_overlord = {
-	every_country = {
+cede_small_colonial_nations_to_overlord = {
+	if = {
 		limit = {
-			ai = yes
-			is_subject = yes
-			OR = {
-				has_subject_of_type = colony
-				has_subject_of_type = crown_colony
-				has_subject_of_type = private_enterprise
-				has_subject_of_type = self_governing_colony
-				has_subject_of_type = european_colony
-			}
+			has_global_flag = enabled_colonial_merging_global_flag
 		}
-		overlord = {
-			save_event_target_as = province_owner_overlord
-		}
-		every_subject_country = {
+		every_country = {
 			limit = {
 				ai = yes
-				OR = {
-					is_subject_of_type = colony
-					is_subject_of_type = crown_colony
-					is_subject_of_type = private_enterprise
-					is_subject_of_type = self_governing_colony
-					is_subject_of_type = european_colony
-				}
+				is_subject = yes
+				is_country_with_colonial_subjects = yes
 			}
-			save_event_target_as = province_owner
+			overlord = {
+				save_event_target_as = province_owner_overlord
+			}
 			every_owned_province = {
 				limit = {
 					is_city = yes
+					is_in_colonial_region = yes
 				}
 				remove_claim = event_target:province_owner
 				remove_core = event_target:province_owner
 				add_core = event_target:province_owner_overlord
 				cede_province = event_target:province_owner_overlord
+			}
+			every_subject_country = {
+				limit = {
+					is_small_colonial_country = yes
+				}
+				save_event_target_as = province_owner
+				every_owned_province = {
+					limit = {
+						is_city = yes
+					}
+					remove_claim = event_target:province_owner
+					remove_core = event_target:province_owner
+					add_core = event_target:province_owner_overlord
+					cede_province = event_target:province_owner_overlord
+				}
 			}
 		}
 	}

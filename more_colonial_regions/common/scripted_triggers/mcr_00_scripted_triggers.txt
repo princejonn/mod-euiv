@@ -1,0 +1,87 @@
+# ROOT = province
+is_in_colonial_region = {
+	OR = {
+		# base game
+		colonial_region = colonial_alaska
+		colonial_region = colonial_canada
+		colonial_region = colonial_eastern_america
+		colonial_region = colonial_louisiana
+		colonial_region = colonial_california
+		colonial_region = colonial_mexico
+		colonial_region = colonial_the_carribean
+		colonial_region = colonial_colombia
+		colonial_region = colonial_peru
+		colonial_region = colonial_la_plata
+		colonial_region = colonial_brazil
+		# colonial_region = colonial_australia # modded in polynesia
+		## new in africa
+		colonial_region = colonial_cape
+		colonial_region = colonial_congo
+		colonial_region = colonial_ethiopia
+		colonial_region = colonial_guinea
+		colonial_region = colonial_madagascar
+		colonial_region = colonial_mocambique
+		colonial_region = colonial_niger
+		colonial_region = colonial_somalia
+		colonial_region = colonial_tanzania
+		colonial_region = colonial_zimbabwe
+		## new in east indies
+		colonial_region = colonial_borneo
+		colonial_region = colonial_indonesia
+		colonial_region = colonial_malaya
+		colonial_region = colonial_philippines
+		## new in polynesia
+		colonial_region = colonial_australia
+		colonial_region = colonial_polynesia
+	}
+}
+
+# ROOT = country
+is_colonial_country = {
+	AND = {
+		ai = yes
+		OR = {
+			is_subject_of_type = colony
+			is_subject_of_type = crown_colony
+			is_subject_of_type = private_enterprise
+			is_subject_of_type = self_governing_colony
+			is_subject_of_type = european_colony
+		}
+	}
+}
+
+# ROOT = country
+is_small_colonial_country = {
+	AND = {
+		ai = yes
+		OR = {
+			is_subject_of_type = colony
+			is_subject_of_type = crown_colony
+			is_subject_of_type = private_enterprise
+			is_subject_of_type = self_governing_colony
+			is_subject_of_type = european_colony
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 15
+				is_city = yes
+			}
+		}
+	}
+}
+
+# ROOT = country
+is_country_with_colonial_subjects = {
+	AND = {
+		capital_scope = {
+			is_in_colonial_region = no
+		}
+		OR = {
+			has_subject_of_type = colony
+			has_subject_of_type = crown_colony
+			has_subject_of_type = private_enterprise
+			has_subject_of_type = self_governing_colony
+			has_subject_of_type = european_colony
+		}
+	}
+}

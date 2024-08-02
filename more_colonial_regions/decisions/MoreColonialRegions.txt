@@ -1,0 +1,22 @@
+country_decisions = {
+	enable_colonial_merging = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = enabled_colonial_merging_global_flag
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			hidden_effect = {
+				set_global_flag = enabled_colonial_merging_global_flag
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
