@@ -12,6 +12,7 @@ incorporated_personal_union = {
 	relative_power_class = 1
 	takes_diplo_slot = no
 	# Interactions (Continuous):
+	divert_trade = yes
 	subsidize_armies = yes
 	# Interactions (Immediate):
 	seize_territory = yes
@@ -35,7 +36,6 @@ consolidated_personal_union = {
 	# Interactions (Continuous):
 	send_officers = yes
 	# Interactions (Immediate):
-	seize_territory = yes
 	send_additional_troops = yes
 	# Opinion:
 	overlord_opinion_modifier = is_consolidated_personal_union
@@ -59,7 +59,14 @@ sovereign_personal_union = {
 	relative_power_class = 1
 	takes_diplo_slot = no
 	# Interactions (Continuous):
+	divert_trade = yes
+	send_officers = yes
 	subsidize_armies = yes
+	# Interactions (Immediate):
+	enforce_culture = yes
+	press_sailors = yes
+	send_additional_troops = yes
+	siphon_income = yes
 	# Opinion:
 	overlord_opinion_modifier = is_sovereign_personal_union
 	subject_opinion_modifier = is_sovereign_personal_union
