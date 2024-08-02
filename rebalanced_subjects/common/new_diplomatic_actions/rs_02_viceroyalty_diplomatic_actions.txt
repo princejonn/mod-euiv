@@ -16,6 +16,18 @@ convert_to_viceroyalty = {
 					who = ROOT
 					type = incorporated_vassal
 				}
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = consolidated_vassal
+				}
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = incorporated_personal_union
+				}
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = consolidated_personal_union
+				}
 			}
 			capital_scope = {
 				is_province_in_sector_switch = yes
@@ -23,8 +35,6 @@ convert_to_viceroyalty = {
 		}
 	}
 	is_allowed = {
-		adm_power = 75
-		dip_power = 75
 		is_at_war = no
 		NOT = {
 			truce_with = FROM
@@ -80,8 +90,6 @@ convert_to_viceroyalty = {
 			SUBJECT = FROM
 		}
 		# Power and Prestige
-		add_adm_power = -75
-		add_dip_power = -75
 		add_prestige = 20
 		# Flags
 		clr_country_flag = establish_viceroyalty_cooldown_flag

@@ -1,25 +1,32 @@
+# personal unions
 is_incorporated_personal_union = {
-	opinion = 25
+	opinion = 20
 }
 
 is_consolidated_personal_union = {
-	opinion = 50
+	opinion = 40
 }
 
 is_sovereign_personal_union = {
-	opinion = 75
-}
-
-is_incorporated_vassal = {
-	opinion = 25
-}
-
-is_viceroyalty = {
-	opinion = 50
+	opinion = 60
 }
 
 sovereignty_broken = {
 	opinion = -100
 	yearly_decay = 5
 	min = -100
+}
+
+# vassals
+is_incorporated_vassal = {
+	opinion = 20
+}
+
+is_consolidated_vassal = {
+	opinion = 40
+}
+
+# viceroyalties
+is_viceroyalty = {
+	opinion = 60
 }

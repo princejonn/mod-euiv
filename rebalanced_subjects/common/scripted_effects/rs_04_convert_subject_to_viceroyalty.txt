@@ -34,8 +34,15 @@ convert_subject_to_viceroyalty_fn = {
 	}
 	# Create Subject
 	create_subject = {
-		subject = $NEW_TAG$
 		subject_type = viceroyalty
+		subject = $NEW_TAG$
 		keep_liberty_desire = yes
+	}
+	$NEW_TAG$ = {
+		capital_scope = {
+			add_unrest = 1
+		}
+		add_liberty_desire = 10
+		add_stability = -1
 	}
 }

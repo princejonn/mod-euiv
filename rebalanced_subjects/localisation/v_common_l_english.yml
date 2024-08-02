@@ -23,7 +23,11 @@
 
   convert_to_incorporated_vassal_title: "Incorporate Vassal"
   convert_to_incorporated_vassal_desc: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
-  convert_to_incorporated_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
+  convert_to_incorporated_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal. They are easier to Diplomatically Annex, cost no §YDiplomatic Slot§!, but also reduce overlord's §YGoverning Capacity§!."
+
+  convert_to_consolidated_vassal_title: "Consolidate Vassal"
+  convert_to_consolidated_vassal_desc: "Convert [From.GetName] to an Consolidated Vassal, which will make them easier to Integrate. They do not cost a §YDiplomatic Slot§!."
+  convert_to_consolidated_vassal_tooltip: "Convert [From.GetName] to an Consolidated Vassal. They are easier to Diplomatically Annex, cost no §YDiplomatic Slot§!, but also reduce overlord's §YGoverning Capacity§!."
 
   convert_vassal_to_personal_union_title: "Form Union"
   convert_vassal_to_personal_union_desc: "Convert [From.GetName] to a Personal Union. Our nations will be united under one ruler."
@@ -45,6 +49,7 @@
   is_consolidated_personal_union: "Consolidated Personal Union"
   is_sovereign_personal_union: "Sovereign Vassal"
   is_incorporated_vassal: "Incorporated Vassal"
+  is_consolidated_vassal: "Consolidated Vassal"
   is_viceroyalty: "Viceroyalty"
   sovereignty_broken: "Sovereignty Broken"
 
@@ -83,6 +88,18 @@
   sovereign_personal_union_is_our: "$NAME|Y$ is ruled by us in a Sovereign Personal Union."
   sovereign_personal_union_long_desc: "Sovereign Personal Unions are very loyal, cost no §YDiplomatic Slot§!, but cannot be integrated or inherited."
 
+  incorporated_vassal: "Incorporated Vassal"
+  incorporated_vassal_title: "Incorporated Vassal"
+  incorporated_vassal_title_plural: "Incorporated Vassals"
+  incorporated_vassal_is_our: "$NAME|Y$ is our Incorporated Vassal"
+  incorporated_vassal_long_desc: "An Incorporated Vassal must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of his income to his overlord. They are easier to Diplomatically Annex, cost no §YDiplomatic Slot§!, but also reduce overlord's §YGoverning Capacity§!."
+
+  consolidated_vassal: "Consolidated Vassal"
+  consolidated_vassal_title: "Consolidated Vassal"
+  consolidated_vassal_title_plural: "Consolidated Vassals"
+  consolidated_vassal_is_our: "$NAME|Y$ is our Consolidated Vassal"
+  consolidated_vassal_long_desc: "An Consolidated Vassal must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of his income to his overlord. They are easier to Diplomatically Annex, cost no §YDiplomatic Slot§!, but also reduce overlord's §YGoverning Capacity§!."
+
   viceroyalty: "Viceroyalty"
   viceroyalty_title: "Viceroyalty"
   viceroyalty_title_plural: "Viceroyalties"
@@ -99,13 +116,11 @@
   # overridden country names
   viceroyalty_name_arabia: "Viceroyalty of Arabia"
   viceroyalty_name_armenia: "Viceroyalty of Armenia"
-  viceroyalty_name_bengal: "Viceroyalty of Bengal"
   viceroyalty_name_britain: "Viceroyalty of Britain"
   viceroyalty_name_burma: "Viceroyalty of Burma"
   viceroyalty_name_carpathia: "Viceroyalty of Carpathia"
   viceroyalty_name_china: "Viceroyalty of China"
   viceroyalty_name_dalmatia: "Viceroyalty of Dalmatia"
-  viceroyalty_name_delhi: "Viceroyalty of Delhi"
   viceroyalty_name_egypt: "Viceroyalty of Egypt"
   viceroyalty_name_france: "Viceroyalty of France"
   viceroyalty_name_germany: "Viceroyalty of Germany"
@@ -120,14 +135,12 @@
   viceroyalty_name_korea: "Viceroyalty of Korea"
   viceroyalty_name_livonia: "Viceroyalty of Livonia"
   viceroyalty_name_maghreb: "Viceroyalty of Maghreb"
-  viceroyalty_name_malaya: "Viceroyalty of Malaya"
   viceroyalty_name_manchuria: "Viceroyalty of Manchuria"
   viceroyalty_name_mongolia: "Viceroyalty of Mongolia"
   viceroyalty_name_netherlands: "Viceroyalty of Netherlands"
   viceroyalty_name_persia: "Viceroyalty of Persia"
   viceroyalty_name_poland: "Viceroyalty of Poland"
   viceroyalty_name_portugal: "Viceroyalty of Portugal"
-  viceroyalty_name_punjab: "Viceroyalty of Punjab"
   viceroyalty_name_russia: "Viceroyalty of Russia"
   viceroyalty_name_scandinavia: "Viceroyalty of Scandinavia"
   viceroyalty_name_siam: "Viceroyalty of Siam"

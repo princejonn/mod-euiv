@@ -1,0 +1,66 @@
+incorporated_personal_union = {
+	copy_from = personal_union
+	count = personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	annex_cost_per_development = 6
+	base_liberty_desire = -5
+	liberty_desire_negative_prestige = 0.75
+	relative_power_class = 1
+	takes_diplo_slot = no
+	# Interactions (Continuous):
+	subsidize_armies = yes
+	# Interactions (Immediate):
+	seize_territory = yes
+	# Opinion:
+	overlord_opinion_modifier = is_incorporated_personal_union
+	subject_opinion_modifier = is_incorporated_personal_union
+}
+
+consolidated_personal_union = {
+	copy_from = incorporated_personal_union
+	count = personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	annex_cost_per_development = 4
+	base_liberty_desire = -10
+	can_union_break = no
+	liberty_desire_negative_prestige = 0.5
+	# Interactions (Continuous):
+	send_officers = yes
+	# Interactions (Immediate):
+	seize_territory = yes
+	send_additional_troops = yes
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_personal_union
+	subject_opinion_modifier = is_consolidated_personal_union
+}
+
+sovereign_personal_union = {
+	copy_from = personal_union
+	count = personal_union
+	# Graphics:
+	sprite = GFX_court_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+	diplomacy_subject_sprite = GFX_diplomacy_inunion
+	# Properties:
+	base_liberty_desire = -25
+	can_be_annexed = no
+	can_be_integrated = no
+	can_union_break = no
+	disable_inheritance = yes
+	liberty_desire_negative_prestige = 0.25
+	relative_power_class = 1
+	takes_diplo_slot = no
+	# Interactions (Continuous):
+	subsidize_armies = yes
+	# Opinion:
+	overlord_opinion_modifier = is_sovereign_personal_union
+	subject_opinion_modifier = is_sovereign_personal_union
+}

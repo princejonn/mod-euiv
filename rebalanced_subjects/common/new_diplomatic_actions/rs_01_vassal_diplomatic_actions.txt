@@ -10,7 +10,6 @@ convert_to_incorporated_vassal = {
 		}
 	}
 	is_allowed = {
-		dip_power = 25
 		is_at_war = no
 		has_regency = no
 		has_heir = yes
@@ -44,11 +43,81 @@ convert_to_incorporated_vassal = {
 		}
 	}
 	on_accept = {
-		add_dip_power = -25
 		create_subject = {
 			subject_type = incorporated_vassal
 			subject = FROM
 			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 1
+			}
+			add_liberty_desire = 5
+			add_stability = -1
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+convert_to_consolidated_vassal = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		adm_tech = 12		#Early Modern Administration
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = incorporated_vassal
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		has_heir = yes
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 15
+			}
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = consolidated_vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 1
+			}
+			add_liberty_desire = 5
+			add_stability = -1
 		}
 	}
 	on_decline = {
@@ -72,10 +141,13 @@ convert_vassal_to_personal_union = {
 				is_subject_of = ROOT
 				is_subject_of_type = incorporated_vassal
 			}
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = consolidated_vassal
+			}
 		}
 	}
 	is_allowed = {
-		dip_power = 25
 		is_at_war = no
 		has_regency = no
 		has_heir = yes
@@ -112,11 +184,48 @@ convert_vassal_to_personal_union = {
 		}
 	}
 	on_accept = {
-		add_dip_power = -25
-		create_subject = {
-			subject_type = personal_union
-			subject = FROM
-			keep_liberty_desire = yes
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = vassal
+				}
+			}
+			create_subject = {
+				subject_type = personal_union
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = incorporated_vassal
+				}
+			}
+			create_subject = {
+				subject_type = incorporated_personal_union
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = consolidated_vassal
+				}
+			}
+			create_subject = {
+				subject_type = consolidated_personal_union
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 1
+			}
+			add_liberty_desire = 5
+			add_stability = -1
 		}
 	}
 	on_decline = {
@@ -140,10 +249,13 @@ convert_vassal_to_sovereign_personal_union = {
 				is_subject_of = ROOT
 				is_subject_of_type = incorporated_vassal
 			}
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = consolidated_vassal
+			}
 		}
 	}
 	is_allowed = {
-		dip_power = 25
 		is_at_war = no
 		has_regency = no
 		has_heir = yes
@@ -180,11 +292,15 @@ convert_vassal_to_sovereign_personal_union = {
 		}
 	}
 	on_accept = {
-		add_dip_power = -25
-		create_subject = {
-			subject_type = sovereign_personal_union
-			subject = FROM
-			keep_liberty_desire = yes
+		FROM = {
+			change_subject_type = {
+				subject_type = sovereign_personal_union
+			}
+			capital_scope = {
+				add_unrest = 1
+			}
+			add_liberty_desire = -10
+			add_stability = -1
 		}
 	}
 	on_decline = {

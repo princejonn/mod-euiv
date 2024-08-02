@@ -1,3 +1,13 @@
+# vassals
+incorporated_vassal_governing_capacity_cost = {
+	governing_capacity = -50
+}
+
+consolidated_vassal_governing_capacity_cost = {
+	governing_capacity = -20
+}
+
+# viceroyalties
 viceroyalty_overlord = {
 	global_trade_power = 0.05
 	governing_capacity = 50
