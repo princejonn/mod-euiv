@@ -145,19 +145,6 @@ convert_subject_to_viceroyalty_switch = {
 	else_if = {
 		limit = {
 			$SUBJECT$ = {
-				can_convert_to_viceroyalty_iceland = yes
-			}
-		}
-		convert_subject_to_viceroyalty_fn = {
-			SUBJECT = $SUBJECT$
-			OVERLORD = $OVERLORD$
-			NEW_TAG = ICE
-			SECTOR = iceland
-		}
-	}
-	else_if = {
-		limit = {
-			$SUBJECT$ = {
 				can_convert_to_viceroyalty_india = yes
 			}
 		}

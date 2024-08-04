@@ -128,13 +128,6 @@ is_province_in_greece = {
 	}
 }
 
-is_province_in_iceland = {
-	OR = {
-		province_id = 370		# Reykjavik
-		province_id = 371		# Akureyri
-	}
-}
-
 is_province_in_india = {
 	superregion = india_superregion
 }
@@ -298,6 +291,8 @@ is_province_in_scandinavia = {
 		area = svealand_area
 		area = vastra_gotaland_area
 		area = western_norway
+		province_id = 370		# Reykjavik
+		province_id = 371		# Akureyri
 	}
 }
 

@@ -41,6 +41,10 @@
   convert_to_viceroyalty_desc: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
   convert_to_viceroyalty_tooltip: "Convert [From.GetName] to a Viceroyalty, which will grant them a large degree of autonomy, but they will still be ultimately loyal to you. They do not cost a §YDiplomatic Slot§!."
 
+  revoke_viceroyalty_title: "Revoke Viceroyalty"
+  revoke_viceroyalty_desc: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
+  revoke_viceroyalty_tooltip: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
+
   # tooltips
   TOOLTIP_CANNOT_ESTABLISH_VICEROYALTY_FROM_VASSAL: "Vassal does not own enough provinces in the sector to be converted to a Viceroyalty."
 
@@ -52,11 +56,13 @@
   is_consolidated_vassal: "Consolidated Vassal"
   is_viceroyalty: "Viceroyalty"
   sovereignty_broken: "Sovereignty Broken"
+  viceroyalty_broken: "Viceroyalty Revoked"
 
   # cooldown flags
   establish_viceroyalty_cooldown_flag: "Established a Viceroyalty"
   inherit_consolidated_personal_union_cooldown_flag: "Inherited Consolidated Personal Union Cooldown"
   inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
+  revoke_viceroyalty_cooldown_flag: "Revoked a Viceroyalty"
 
   # static modifiers
   viceroyalty_overlord: "Viceroyalty Overlord"

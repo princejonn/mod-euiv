@@ -28,7 +28,8 @@ viceroyalty_decision_effect = {
 		subject_type = viceroyalty
 	}
 	# Power and Prestige
-	add_adm_power = -75
-	add_dip_power = -75
 	add_prestige = 10
+	# Flags
+	set_country_flag = establish_viceroyalty_cooldown_flag
+	set_global_flag = viceroyalties_exist_flag
 }

@@ -11,7 +11,6 @@ can_convert_to_viceroyalty_switch = {
 		can_convert_to_viceroyalty_france = yes
 		can_convert_to_viceroyalty_germany = yes
 		can_convert_to_viceroyalty_greece = yes
-		can_convert_to_viceroyalty_iceland = yes
 		can_convert_to_viceroyalty_india = yes
 		can_convert_to_viceroyalty_indochina = yes
 		can_convert_to_viceroyalty_ireland = yes

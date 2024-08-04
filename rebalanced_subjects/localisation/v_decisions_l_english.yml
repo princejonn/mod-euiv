@@ -1,4 +1,7 @@
 ﻿l_english:
+  enable_viceroyalties_title: "ENABLE: Viceroyalties"
+  enable_viceroyalties_desc: "Viceroyalty subjects are a new type of subject that can be created by decision. They are basically an autonomous extension of your country."
+
   create_viceroyalty_arabia_title: "Establish Viceroyalty of Arabia"
   create_viceroyalty_arabia_desc: "We have established dominance over Arabia, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
@@ -37,9 +40,6 @@
 
   create_viceroyalty_greece_title: "Establish Viceroyalty of Greece"
   create_viceroyalty_greece_desc: "We have established dominance over Greece, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
-
-  create_viceroyalty_iceland_title: "Establish Viceroyalty of Iceland"
-  create_viceroyalty_iceland_desc: "We have established dominance over Iceland, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
 
   create_viceroyalty_indochina_title: "Establish Viceroyalty of Indochina"
   create_viceroyalty_indochina_desc: "We have established dominance over Indochina, but we face the wrath of other countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."

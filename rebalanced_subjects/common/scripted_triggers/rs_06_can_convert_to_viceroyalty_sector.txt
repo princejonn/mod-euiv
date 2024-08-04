@@ -86,14 +86,6 @@ can_convert_to_viceroyalty_greece = {
 	}
 }
 
-can_convert_to_viceroyalty_iceland = {
-	can_convert_to_viceroyalty_fn = {
-		SECTOR = iceland
-		NEW_TAG = ICE
-		AMOUNT = 2		# total: 2
-	}
-}
-
 can_convert_to_viceroyalty_india = {
 	can_convert_to_viceroyalty_fn = {
 		SECTOR = india

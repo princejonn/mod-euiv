@@ -31,6 +31,7 @@ consolidated_vassal = {
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
 	# Properties:
 	annex_cost_per_development = 4
+	relative_power_class = 1
 	# Modifiers (Overlord):
 	modifier_overlord = {
 		trigger = {

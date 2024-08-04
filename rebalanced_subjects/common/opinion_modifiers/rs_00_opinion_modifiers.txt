@@ -17,6 +17,12 @@ sovereignty_broken = {
 	min = -100
 }
 
+viceroyalty_broken = {
+	opinion = -100
+	yearly_decay = 5
+	min = -100
+}
+
 # vassals
 is_incorporated_vassal = {
 	opinion = 20

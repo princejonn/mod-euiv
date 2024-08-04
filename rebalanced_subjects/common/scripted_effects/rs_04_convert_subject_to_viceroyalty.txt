@@ -45,4 +45,6 @@ convert_subject_to_viceroyalty_fn = {
 		add_liberty_desire = 10
 		add_stability = -1
 	}
+	# Flags
+	set_global_flag = viceroyalties_exist_flag
 }

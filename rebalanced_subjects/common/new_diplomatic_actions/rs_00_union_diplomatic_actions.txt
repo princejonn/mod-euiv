@@ -73,7 +73,7 @@ convert_to_incorporated_personal_union = {
 			FROM = {
 				add_liberty_desire = 50
 				add_opinion = {
-					who = THIS
+					who = ROOT
 					modifier = sovereignty_broken
 				}
 			}

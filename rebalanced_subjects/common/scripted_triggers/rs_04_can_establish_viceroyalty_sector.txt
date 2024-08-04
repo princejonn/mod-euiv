@@ -75,13 +75,6 @@ can_establish_viceroyalty_greece = {
 	}
 }
 
-can_establish_viceroyalty_iceland = {
-	can_establish_viceroyalty_fn = {
-		SECTOR = iceland
-		AMOUNT = 2		# total: 2
-	}
-}
-
 can_establish_viceroyalty_india = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = india

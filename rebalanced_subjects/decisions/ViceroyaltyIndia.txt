@@ -28,4 +28,30 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	# # Revoke
+	# revoke_viceroyalty_india = {
+	# 	potential = {
+	# 		HIN = {
+	# 			is_subject_of_type = viceroyalty
+	# 		}
+	# 	}
+	# 	provinces_to_highlight = {
+	# 		owned_by = HIN
+	# 	}
+	# 	allow = {
+	# 		is_at_war = no
+	# 	}
+	# 	effect = {
+	# 		every_province = {
+	# 			limit = {
+	# 				owned_by = HIN
+	# 			}
+	# 			cede_province = ROOT
+	# 			add_core = ROOT
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# }
 }

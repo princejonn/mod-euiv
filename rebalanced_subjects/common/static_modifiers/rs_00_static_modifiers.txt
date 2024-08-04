@@ -4,13 +4,13 @@ incorporated_vassal_governing_capacity_cost = {
 }
 
 consolidated_vassal_governing_capacity_cost = {
-	governing_capacity = -20
+	governing_capacity = -25
 }
 
 # viceroyalties
 viceroyalty_overlord = {
 	global_trade_power = 0.05
-	governing_capacity = 50
+	governing_capacity = -25
 	land_forcelimit = 2
 	naval_forcelimit = 2
 }
@@ -18,34 +18,33 @@ viceroyalty_overlord = {
 viceroyalty_overlord_large = {
 	global_colonial_growth = 20
 	global_trade_power = 0.05
-	governing_capacity = 100
+	governing_capacity = -25
 	land_forcelimit = 4
-	merchants = 1
 	naval_forcelimit = 4
 }
 
 viceroyalty_overlord_regional = {
-	colonists = 1
 	global_colonial_growth = 20
 	global_trade_power = 0.05
-	governing_capacity = 100
+	governing_capacity = -25
 	land_forcelimit = 4
 	merchants = 1
 	naval_forcelimit = 4
 }
 
 viceroyalty_overlord_continental = {
+	colonists = 1
 	global_colonial_growth = 20
 	global_trade_power = 0.05
-	governing_capacity = 200
+	governing_capacity = -25
 	land_forcelimit = 4
-	merchants = 2
 	naval_forcelimit = 4
 }
 
 viceroyalty_subject = {
 	development_cost = -0.05
 	global_tax_income = -4
+	governing_capacity = 50
 	land_forcelimit = -2
 	naval_forcelimit = -4
 }
@@ -53,18 +52,21 @@ viceroyalty_subject = {
 viceroyalty_subject_large = {
 	development_cost = -0.1
 	global_tax_income = -2
+	governing_capacity = 50
 	land_forcelimit = 2
 	naval_forcelimit = 4
 }
 
 viceroyalty_subject_regional = {
 	global_tax_income = 2
+	governing_capacity = 50
 	land_forcelimit = 2
 	naval_forcelimit = 4
 }
 
 viceroyalty_subject_continental = {
 	global_tax_income = 2
+	governing_capacity = 50
 	land_forcelimit = 2
 	naval_forcelimit = 4
 }

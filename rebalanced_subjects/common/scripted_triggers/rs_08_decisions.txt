@@ -1,4 +1,5 @@
 viceroyalty_decision_potential = {
+	has_global_flag = enabled_viceroyalties_global_flag
 	ai = no
 	adm_tech = 15	#Military Administration
 	is_subject = no
@@ -12,8 +13,6 @@ viceroyalty_decision_highlight = {
 }
 
 viceroyalty_decision_allow = {
-	adm_power = 75
-	dip_power = 75
 	is_at_war = no
 	NOT = {
 		exists = $SUBJECT$
@@ -24,7 +23,7 @@ viceroyalty_decision_allow = {
 		}
 		had_country_flag = {
 			flag = establish_viceroyalty_cooldown_flag
-			days = 365
+			days = 730
 		}
 	}
 }

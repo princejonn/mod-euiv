@@ -11,7 +11,6 @@ is_province_in_sector_switch = {
 		is_province_in_france = yes
 		is_province_in_germany = yes
 		is_province_in_greece = yes
-		is_province_in_iceland = yes
 		is_province_in_indochina = yes
 		is_province_in_ireland = yes
 		is_province_in_italy = yes

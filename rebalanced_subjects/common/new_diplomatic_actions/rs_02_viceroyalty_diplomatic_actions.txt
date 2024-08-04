@@ -2,6 +2,7 @@ convert_to_viceroyalty = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		has_global_flag = enabled_viceroyalties_global_flag
 		adm_tech = 15		#Military Administration
 		ai = no
 		is_subject = no
@@ -94,6 +95,66 @@ convert_to_viceroyalty = {
 		# Flags
 		clr_country_flag = establish_viceroyalty_cooldown_flag
 		set_country_flag = establish_viceroyalty_cooldown_flag
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_viceroyalty = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		adm_tech = 15		#Military Administration
+		ai = no
+		is_subject = no
+		FROM = {
+			is_subject_of_type_with_overlord = {
+				who = ROOT
+				type = viceroyalty
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = revoke_viceroyalty_cooldown_flag
+			}
+			had_country_flag = {
+				flag = revoke_viceroyalty_cooldown_flag
+				days = 3650
+			}
+		}
+	}
+	on_accept = {
+		# Cede provinces
+		set_global_flag = revoking_viceroyalty_flag
+		inherit = FROM
+		clr_global_flag = viceroyalties_exist_flag
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = viceroyalty
+			}
+			set_global_flag = viceroyalties_exist_flag
+			add_opinion = {
+				who = ROOT
+				modifier = viceroyalty_broken
+			}
+		}
+		# Flags
+		clr_global_flag = revoking_viceroyalty_flag
+		clr_country_flag = revoke_viceroyalty_cooldown_flag
+		set_country_flag = revoke_viceroyalty_cooldown_flag
 	}
 	ai_will_do = {
 		always = no
