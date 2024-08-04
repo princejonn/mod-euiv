@@ -244,10 +244,13 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
+					HAB = {
+						ai = no
+					}
 					CAS = {
 						ai = no
 					}
-					HAB = {
+					SPA = {
 						ai = no
 					}
 				}
@@ -255,10 +258,13 @@ country_event = {
 			modifier = {
 				factor = 1000
 				AND = {
+					HAB = {
+						ai = yes
+					}
 					CAS = {
 						ai = yes
 					}
-					HAB = {
+					SPA = {
 						ai = yes
 					}
 				}
@@ -328,10 +334,13 @@ country_event = {
 			modifier = {
 				factor = 1000
 				OR = {
+					HAB = {
+						ai = no
+					}
 					CAS = {
 						ai = no
 					}
-					HAB = {
+					SPA = {
 						ai = no
 					}
 				}
@@ -532,6 +541,9 @@ country_event = {
 				factor = 1000
 				OR = {
 					CAS = {
+						ai = no
+					}
+					SPA = {
 						ai = no
 					}
 					HAB = {
@@ -2155,6 +2167,20 @@ country_event = {
 		name = flavor_hun.25.b
 		ai_chance = {
 			factor = 0
+			modifier = {
+				factor = 1000
+				OR = {
+					HAB = {
+						ai = no
+					}
+					CAS = {
+						ai = no
+					}
+					SPA = {
+						ai = no
+					}
+				}
+			}
 		}
 		every_owned_province = {
 			limit = {
