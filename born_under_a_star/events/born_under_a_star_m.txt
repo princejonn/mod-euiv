@@ -56,10 +56,7 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					OR = {
-						tag = BYZ
-						tag = GRE
-					}
+					culture_group = byzantine
 				}
 				country_event = {
 					id = born_under_a_star_m.202
@@ -67,11 +64,7 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					OR = {
-						tag = ENG
-						tag = GBR
-						tag = SCO
-					}
+					culture_group = british
 				}
 				country_event = {
 					id = born_under_a_star_m.203
@@ -79,13 +72,7 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					OR = {
-						tag = BRA
-						tag = GER
-						tag = PRU
-						tag = SAX
-						tag = TEU
-					}
+					culture_group = germanic
 				}
 				country_event = {
 					id = born_under_a_star_m.204
@@ -93,16 +80,7 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					OR = {
-						tag = GEN
-						tag = ITA
-						tag = LAE
-						tag = LAN
-						tag = MLO
-						tag = NAP
-						tag = ROM
-						tag = VEN
-					}
+					culture_group = latin
 				}
 				country_event = {
 					id = born_under_a_star_m.205
@@ -118,15 +96,18 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					OR = {
-						tag = BUR
-						tag = FRA
-						tag = ORL
-						tag = PRO
-					}
+					culture_group = french
 				}
 				country_event = {
 					id = born_under_a_star_m.207
+				}
+			}
+			else_if = {
+				limit = {
+					culture_group = iberian
+				}
+				country_event = {
+					id = born_under_a_star_m.208
 				}
 			}
 			else_if = {
@@ -1296,6 +1277,56 @@ country_event = {
 			female = yes
 			dynasty = ROOT
 			name = "Napoleon"
+			claim = 100
+			block_disinherit = yes
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+	}
+}
+
+#
+# Iberia
+#
+country_event = {
+	id = born_under_a_star_m.208
+	title = born_under_a_star_m.title
+	desc = born_under_a_star_m.desc
+	picture = NEW_HEIR_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = born_under_a_star_m.208.a
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Charles"
+			claim = 100
+			block_disinherit = yes
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star_m.208.b
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Philip"
+			claim = 100
+			block_disinherit = yes
+			adm = 5
+			dip = 6
+			mil = 5
+		}
+	}
+	option = {
+		name = born_under_a_star_m.208.c
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			name = "Ferdinand"
 			claim = 100
 			block_disinherit = yes
 			adm = 5
