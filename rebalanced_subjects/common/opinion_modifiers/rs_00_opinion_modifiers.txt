@@ -1,38 +1,57 @@
-# personal unions
-is_incorporated_personal_union = {
-	opinion = 20
-}
-
-is_consolidated_personal_union = {
-	opinion = 40
-}
-
-is_sovereign_personal_union = {
+# Vassal
+is_incorporated_vassal = {
 	opinion = 60
 }
 
-sovereignty_broken = {
-	opinion = -100
-	yearly_decay = 5
-	min = -100
-}
-
-viceroyalty_broken = {
-	opinion = -100
-	yearly_decay = 5
-	min = -100
-}
-
-# vassals
-is_incorporated_vassal = {
+# Personal Union
+in_incorporated_union = {
 	opinion = 20
 }
 
-is_consolidated_vassal = {
+# Fief
+is_fief = {
+	opinion = 60
+}
+
+is_incorporated_fief = {
+	opinion = 80
+}
+
+broke_fief = {
+	opinion = -50
+	yearly_decay = 3
+}
+
+# Protectorate
+is_protectorate = {
+	opinion = 60
+}
+
+is_incorporated_protectorate = {
+	opinion = 80
+}
+
+broke_protectorate = {
+	opinion = -50
+	yearly_decay = 3
+}
+
+# Client State
+is_client_state = {
+	opinion = 20
+}
+
+is_incorporated_client_state = {
 	opinion = 40
 }
 
-# viceroyalties
+# Viceroyalty
 is_viceroyalty = {
 	opinion = 60
+}
+
+broke_viceroyalty = {
+	opinion = -50
+	yearly_decay = 5
+	min = -100
 }

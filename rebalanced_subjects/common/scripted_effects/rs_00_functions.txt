@@ -23,30 +23,6 @@ cede_all_owned_provinces_in_sector_fn = {
 	}
 }
 
-cede_all_owned_provinces_outside_sector_fn = {
-	$OWNER$ = {
-		every_owned_province = {
-			limit = {
-				is_province_in_$SECTOR$ = no
-				is_core = $OWNER$
-			}
-			remove_core = $OWNER$
-			add_core = $RECEIVER$
-			cede_province = $RECEIVER$
-		}
-		every_owned_province = {
-			limit = {
-				is_province_in_$SECTOR$ = no
-				NOT = {
-					is_core = $OWNER$
-				}
-			}
-			remove_core = $OWNER$
-			cede_province = $RECEIVER$
-		}
-	}
-}
-
 add_permanent_claims_in_sector_fn = {
 	every_province = {
 		limit = {

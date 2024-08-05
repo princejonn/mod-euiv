@@ -2,78 +2,47 @@ I'm kind of a sucker for having subjects. They are fun to play around with, and 
 
 In this mod I'm aiming to fix and rebalance a couple of things that deal with subjects.
 
+[h2]Features[/h2]
 [list]
-  [*] Viceroyalty (see below)
-  [*] Incorporated Personal Unions (see below)
-  [*] Consolidated Personal Unions (see below)
-  [*] Sovereign Personal Unions (see below)
-  [*] Incorporated Vassals (see below)
+  [*] Fiefs
+  [*] Protectorates
+  [*] Client States
+  [*] Viceroyalties
+  [*] Subject Incorporation
+  [*] Forming Unions with Vassals
+  [*] Allowing subjects to form new nations
   [*] Subjects are now allowed to use the decisions to form new nations when they are eligible to do so.
   [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
 [/list]
 
+[h2]Fiefdoms[/h2]
+New subject type that is a subset of vassals, only with heavy requirements on being small. This is to simulate the small fiefdoms that were common in the middle ages.
+
+[h2]Protectorates[/h2]
+New subject type that is a subset of vassals, kind of like the opposite of marches. They have a weak military presence, so they instead have a strong economic potency.
+
+[h2]Client States[/h2]
+New subject type that sits somewhere between a Personal Union and a Vassal. Their primary strengh lies in being very cheap to eventually annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself.
+
 [h2]Viceroyalty[/h2]
-I felt like something was missing somewhere between full annexation and personal union. Viceroyalties seemed to fit this spot pretty well. Historically they were regions under more autonomous leadership.
+New subject type that is kind of an autonomous region. My primary idea behind this subject type was that they should be established once you're kind of finished and want to move on, leaving a subject behind that is yours in all but name. They can be fully integrated with the click of a button. You create viceroyalties from decisions.
+
+[h2]Subject Incorporation[/h2]
+I'm also adding the base game ability to further incorporate them into your realm, making them cheaper to annex, and cost no diplomatic relations. Instead they cost a little bit of governing capacity. I've "unlocked" this ability for existing subjects. All subjects retain their incorporation status, even when changing to different subject types. The following subjects are affected by these changes:
 
 [list]
-  [*] You establish viceroyalties in a sector once you've reached a province ownership threshold. Depending on the sector size, this can be: 5, 10, or 20.
-  [*] You need to be in the western technology group.
-  [*] You need to have admin tech: 20 (Absolute Rulership).
-  [*] The decision costs 75 admin power and 75 diplomatic power.
-  [*] You can only establish a Viceroyalty once every 2 years (It takes time and effort to establish one).
-  [*] Viceroyalties will take ownership of all provinces in the sector it is established in.
-  [*] If you conquer more land in the sector, it will go to the Viceroyalty.
-  [*] It does not take up a diplomatic slot.
-  [*] It will have much lower liberty desire than unions or vassals.
-  [*] Viceroyalties cannot be inherited. You are already the owner.
-  [*] You have access to (almost) all subject interactions that the game offers.
-  [*] Viceroyalties are military dictatorships.
+  [*] Vassals
+  [*] Fiefdoms
+  [*] Marches
+  [*] Protectorates
+  [*] Personal Unions
+  [*] Client States
 [/list]
 
-[h3]Sector[/h3]
-A sector is a group of provinces that are loosely connected to in game regions and areas, or somewhat related to countries. I've basically just played around with what felt reasonable as well as what a colonial empire might have done.
-
-[h3]Establish Diplomatically[/h3]
-If you already have a vassal that owns a vast majority of the required provinces (all but 2 are required), you can establish a viceroyalty from that vassal as long as the conditions are met.
-
-[list]
-  [*] Your subject will take ownership of all provinces in the sector that you own.
-  [*] Your subject will cede all provinces outside the sector back to you.
-[/list]
-
-[h2]Incorporated and Consolidated Personal Unions[/h2]
-I wanted to create a path where you slowly move the integration process forward for your Personal Union. I used the Incorporation basline from the Austria Mission Tree and continued down the path.
-
-[list]
-  [*] You need to have admin tech: 12 (Early Modern Administration) for Incorporated and 18 (National Sovereignty) for Consolidated.
-  [*] You access this feature from the Diplomatic window under: Influence.
-  [*] Consolidated Personal Unions can be created from Incorporated Personal Unions.
-  [*] Incorporated and Consolidated Personal Unions have a greater chance of being inherited on monarch death, but it can only happen every 5 years to reduce cheesing.
-[/list]
-
-[h2]Sovereign Personal Unions[/h2]
-These are unions that are very loyal and cannot be broken, but they can also not be inherited. You are granting your union lot of autonomy and promising them that they will remain a separate country. If you break this promise, your subject will be very unhappy.
-
-[h2]Incorporated Vassals[/h2]
-I'm enabling incorporated vassals via diplomatic influence locked behind technology and subject approval.
-
-[list]
-  [*] You need to have admin tech: 12 (Early Modern Administration).
-  [*] You access this feature from the Diplomatic window under: Influence.
-[/list]
+[h3]Incorporated Personal Union[/h3]
+I've added a trigger on monarch death that makes Incorporated Personal Unions more likely to be inherited as long as the normal requirements are met. It's now more of a coinflip if you get the inheritance or not.
 
 [h2]Forming Unions with Vassals[/h2]
-I'm enabling a way to form a personal union with your vassal via diplomatic influence locked behind technology and subject approval.
+There's now a path to forming a union with your vassal. You will have to form your vassal into a client state first, and after that you can form a personal union with them. It is also possible to form a client state from a personal union.
 
-[list]
-  [*] You need to have admin tech: 12 (Early Modern Administration).
-  [*] You access this feature from the Diplomatic window under: Influence.
-[/list]
-
-[h2]The Future[/h2]
-
-[list]
-  [*] (_) Allow for colonies to establish viceroyalties, like vassals?
-  [*] (_) Add viceroyalties to the americas?
-  [*] (_) Add a EIC/VOC tag for player, and not just for britain/netherlands?
-[/list]
+(this line added to stop vscode from formatting this file weirdly)

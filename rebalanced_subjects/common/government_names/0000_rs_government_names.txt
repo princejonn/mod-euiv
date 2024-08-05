@@ -1,35 +1,180 @@
-default_viceroyalty = {
+default_fief = {
 	rank = {
-		1 = VICEROYALTY
-		2 = VICEROYALTY
-		3 = VICEROYALTY
+		1 = FIEF
+		2 = FIEF
+		3 = FIEF
 	}
 	ruler_male = {
-		1 = VICEROYALTY_LEADER
-		2 = VICEROYALTY_LEADER
-		3 = VICEROYALTY_LEADER
+		1 = FIEF_MALE_LEADER
+		2 = FIEF_MALE_LEADER
+		3 = FIEF_MALE_LEADER
 	}
 	ruler_female = {
-		1 = VICEROYALTY_LEADER
-		2 = VICEROYALTY_LEADER
-		3 = VICEROYALTY_LEADER
+		1 = FIEF_FEMALE_LEADER
+		2 = FIEF_FEMALE_LEADER
+		3 = FIEF_FEMALE_LEADER
+	}
+	consort_male = {
+		1 = FIEF_CONSORT_MALE
+		2 = FIEF_CONSORT_MALE
+		3 = FIEF_CONSORT_MALE
+	}
+	consort_female = {
+		1 = FIEF_CONSORT_FEMALE
+		2 = FIEF_CONSORT_FEMALE
+		3 = FIEF_CONSORT_FEMALE
 	}
 	heir_male = {
-		1 = VICEROYALTY_HEIR
-		2 = VICEROYALTY_HEIR
-		3 = VICEROYALTY_HEIR
+		1 = FIEF_MALE_HEIR
+		2 = FIEF_MALE_HEIR
+		3 = FIEF_MALE_HEIR
 	}
 	heir_female = {
-		1 = VICEROYALTY_HEIR
-		2 = VICEROYALTY_HEIR
-		3 = VICEROYALTY_HEIR
+		1 = FIEF_FEMALE_HEIR
+		2 = FIEF_FEMALE_HEIR
+		3 = FIEF_FEMALE_HEIR
 	}
 	trigger = {
-		is_subject_of_type = viceroyalty
+		OR = {
+			is_subject_of_type = fief
+			is_subject_of_type = incorporated_fief
+		}
 	}
 }
 
-viceroyalty = {
+default_march = {
+	rank = {
+		1 = MARCH
+		2 = MARCH
+		3 = MARCH
+	}
+	ruler_male = {
+		1 = MARCH_MALE_LEADER
+		2 = MARCH_MALE_LEADER
+		3 = MARCH_MALE_LEADER
+	}
+	ruler_female = {
+		1 = MARCH_FEMALE_LEADER
+		2 = MARCH_FEMALE_LEADER
+		3 = MARCH_FEMALE_LEADER
+	}
+	consort_male = {
+		1 = MARCH_CONSORT_MALE
+		2 = MARCH_CONSORT_MALE
+		3 = MARCH_CONSORT_MALE
+	}
+	consort_female = {
+		1 = MARCH_CONSORT_FEMALE
+		2 = MARCH_CONSORT_FEMALE
+		3 = MARCH_CONSORT_FEMALE
+	}
+	heir_male = {
+		1 = MARCH_MALE_HEIR
+		2 = MARCH_MALE_HEIR
+		3 = MARCH_MALE_HEIR
+	}
+	heir_female = {
+		1 = MARCH_FEMALE_HEIR
+		2 = MARCH_FEMALE_HEIR
+		3 = MARCH_FEMALE_HEIR
+	}
+	trigger = {
+		OR = {
+			is_subject_of_type = march
+			is_subject_of_type = incorporated_march
+		}
+	}
+}
+
+default_protectorate = {
+	rank = {
+		1 = PROTECTORATE
+		2 = PROTECTORATE
+		3 = PROTECTORATE
+	}
+	ruler_male = {
+		1 = PROTECTORATE_MALE_LEADER
+		2 = PROTECTORATE_MALE_LEADER
+		3 = PROTECTORATE_MALE_LEADER
+	}
+	ruler_female = {
+		1 = PROTECTORATE_FEMALE_LEADER
+		2 = PROTECTORATE_FEMALE_LEADER
+		3 = PROTECTORATE_FEMALE_LEADER
+	}
+	consort_male = {
+		1 = PROTECTORATE_CONSORT_MALE
+		2 = PROTECTORATE_CONSORT_MALE
+		3 = PROTECTORATE_CONSORT_MALE
+	}
+	consort_female = {
+		1 = PROTECTORATE_CONSORT_FEMALE
+		2 = PROTECTORATE_CONSORT_FEMALE
+		3 = PROTECTORATE_CONSORT_FEMALE
+	}
+	heir_male = {
+		1 = PROTECTORATE_MALE_HEIR
+		2 = PROTECTORATE_MALE_HEIR
+		3 = PROTECTORATE_MALE_HEIR
+	}
+	heir_female = {
+		1 = PROTECTORATE_FEMALE_HEIR
+		2 = PROTECTORATE_FEMALE_HEIR
+		3 = PROTECTORATE_FEMALE_HEIR
+	}
+	trigger = {
+		OR = {
+			is_subject_of_type = protectorate
+			is_subject_of_type = incorporated_protectorate
+		}
+	}
+}
+
+default_client_state = {
+	rank = {
+		1 = CLIENT_STATE
+		2 = CLIENT_STATE
+		3 = CLIENT_STATE
+	}
+	ruler_male = {
+		1 = CLIENT_STATE_MALE_LEADER
+		2 = CLIENT_STATE_MALE_LEADER
+		3 = CLIENT_STATE_MALE_LEADER
+	}
+	ruler_female = {
+		1 = CLIENT_STATE_FEMALE_LEADER
+		2 = CLIENT_STATE_FEMALE_LEADER
+		3 = CLIENT_STATE_FEMALE_LEADER
+	}
+	consort_male = {
+		1 = CLIENT_STATE_CONSORT_MALE
+		2 = CLIENT_STATE_CONSORT_MALE
+		3 = CLIENT_STATE_CONSORT_MALE
+	}
+	consort_female = {
+		1 = CLIENT_STATE_CONSORT_FEMALE
+		2 = CLIENT_STATE_CONSORT_FEMALE
+		3 = CLIENT_STATE_CONSORT_FEMALE
+	}
+	heir_male = {
+		1 = CLIENT_STATE_MALE_HEIR
+		2 = CLIENT_STATE_MALE_HEIR
+		3 = CLIENT_STATE_MALE_HEIR
+	}
+	heir_female = {
+		1 = CLIENT_STATE_FEMALE_HEIR
+		2 = CLIENT_STATE_FEMALE_HEIR
+		3 = CLIENT_STATE_FEMALE_HEIR
+	}
+	trigger = {
+		OR = {
+			is_subject_of_type = client_state
+			is_subject_of_type = incorporated_client_state
+		}
+	}
+}
+
+default_viceroyalty = {
 	rank = {
 		1 = VICEROYALTY
 		2 = VICEROYALTY

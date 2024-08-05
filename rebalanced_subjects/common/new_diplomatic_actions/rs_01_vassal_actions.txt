@@ -1,0 +1,186 @@
+form_vassal_from_client_state = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+		}
+		OR = {
+			FROM = {
+				is_subject_of_type = client_state
+			}
+			FROM = {
+				is_subject_of_type = incorporated_client_state
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 25
+			}
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_type_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_type_cooldown_flag
+				days = 3650
+			}
+		}
+	}
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = client_state
+				}
+			}
+			FROM = {
+				create_subject = {
+					subject_type = vassal
+					subject = FROM
+					keep_liberty_desire = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = incorporated_client_state
+				}
+			}
+			FROM = {
+				create_subject = {
+					subject_type = incorporated_vassal
+					subject = FROM
+					keep_liberty_desire = yes
+				}
+			}
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+		set_country_flag = changed_subject_type_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+incorporate_vassal = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		OR = {
+			adm_tech = 12
+			can_have_incorporated_vassals = yes
+		}
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+			}
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_type_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_type_cooldown_flag
+				days = 3650
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_incorporation_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_incorporation_cooldown_flag
+				days = 3650
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = incorporated_vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+		set_country_flag = changed_subject_incorporation_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

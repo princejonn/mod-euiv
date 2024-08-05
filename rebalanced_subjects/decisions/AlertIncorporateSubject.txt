@@ -1,0 +1,55 @@
+country_decisions = {
+	alert_incorporate_subject = {
+		major = yes
+		potential = {
+			ai = no
+			is_at_war = no
+			has_regency = no
+			OR = {
+				adm_tech = 12
+				can_have_incorporated_vassals = yes
+			}
+			any_subject_country = {
+				OR = {
+					is_subject_of_type = vassal
+					is_subject_of_type = march
+					is_subject_of_type = fief
+					is_subject_of_type = protectorate
+					is_subject_of_type = personal_union
+					is_subject_of_type = client_state
+				}
+				is_at_war = no
+				NOT = {
+					truce_with = ROOT
+				}
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 10
+				}
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+				NOT = {
+					liberty_desire = 25
+				}
+			}
+			OR = {
+				NOT = {
+					has_country_flag = changed_subject_incorporation_cooldown_flag
+				}
+				had_country_flag = {
+					flag = changed_subject_incorporation_cooldown_flag
+					days = 3650
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,253 @@
+designate_fief = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		government = monarchy
+		FROM = {
+			is_subject_of = ROOT
+		}
+		OR = {
+			FROM = {
+				is_subject_of_type = vassal
+			}
+			FROM = {
+				is_subject_of_type = incorporated_vassal
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+		FROM = {
+			NOT = {
+				government_rank = 2
+			}
+		}
+		FROM = {
+			NOT = {
+				num_of_cities = 4
+			}
+		}
+		FROM = {
+			NOT = {
+				development_of_overlord_fraction = 0.05
+			}
+		}
+	}
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = vassal
+					}
+				}
+			}
+			create_subject = {
+				subject_type = fief
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = incorporated_vassal
+					}
+				}
+			}
+			create_subject = {
+				subject_type = incorporated_fief
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		FROM = {
+			add_liberty_desire = -10
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+incorporate_fief = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		adm_tech = 12
+		can_have_incorporated_vassals = no
+		FROM = {
+			is_subject_of_type_with_overlord = {
+				who = ROOT
+				type = fief
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+			}
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_type_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_type_cooldown_flag
+				days = 3650
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_incorporation_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_incorporation_cooldown_flag
+				days = 3650
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = incorporated_fief
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+		set_country_flag = changed_subject_incorporation_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_fief = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		OR = {
+			FROM = {
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = fief
+				}
+			}
+			FROM = {
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = incorporated_fief
+				}
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = fief
+					}
+				}
+			}
+			create_subject = {
+				subject_type = vassal
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = incorporated_fief
+					}
+				}
+			}
+			create_subject = {
+				subject_type = incorporated_vassal
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		FROM = {
+			add_liberty_desire = 10
+			add_opinion = {
+				who = ROOT
+				modifier = broke_fief
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

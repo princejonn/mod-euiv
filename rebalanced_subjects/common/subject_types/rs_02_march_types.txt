@@ -1,0 +1,91 @@
+march = {
+	copy_from = vassal
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+	# Properties:
+	base_liberty_desire = -15
+	forms_trade_companies = no
+	is_march = yes
+	liberty_desire_development_ratio = 0.05
+	liberty_desire_same_dynasty = -5
+	max_government_rank = 1
+	military_focus = 1.5
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.2
+	pays_overlord = 0
+	# Diplomatic Actions:
+	can_be_annexed = no
+	# Continuous Subject Interactions:
+	scutage = no
+	send_officers = yes
+	subsidize_armies = yes
+	# Immediate Subject Interactions:
+	fortify_march = yes
+	# Overlord Modifiers:
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = has_march_subject
+	}
+	# Subject Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = is_march_nation
+	}
+	modifier_subject = {
+		modifier = is_march_bonus
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.25
+			}
+		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+}
+
+incorporated_march = {
+	copy_from = march
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+	# Properties:
+	relative_power_class = 1
+	takes_diplo_slot = no
+	# Immediate Subject Interactions:
+	enforce_culture = yes
+	send_additional_troops = yes
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = incorporated_vassal_governing_capacity_cost
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_incorporated_vassal
+	subject_opinion_modifier = is_incorporated_vassal
+}

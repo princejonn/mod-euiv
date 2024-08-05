@@ -4,16 +4,21 @@ is_free_or_union_vassal_tributary_trigger = {
 		tooltip = is_free_or_tributary_trigger_tooltip
 		OR = {
 			is_subject = no
-			is_subject_of_type = consolidated_personal_union
 			is_subject_of_type = cultural_sphere_of_influence_subject
-			is_subject_of_type = incorporated_personal_union
-			is_subject_of_type = incorporated_vassal
-			is_subject_of_type = integrated_personal_union
+			is_subject_of_type = fief
+			is_subject_of_type = incorporated_fief
+			is_subject_of_type = client_state
+			is_subject_of_type = incorporated_client_state
 			is_subject_of_type = march
+			is_subject_of_type = incorporated_march
 			is_subject_of_type = personal_union
-			is_subject_of_type = sovereign_personal_union
+			is_subject_of_type = incorporated_personal_union
+			is_subject_of_type = integrated_personal_union
+			is_subject_of_type = protectorate
+			is_subject_of_type = incorporated_protectorate
 			is_subject_of_type = tributary_state
 			is_subject_of_type = vassal
+			is_subject_of_type = incorporated_vassal
 		}
 	}
 }

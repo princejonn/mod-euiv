@@ -1,7 +1,7 @@
 can_establish_viceroyalty_arabia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = arabia
-		AMOUNT = 20		# total: 59
+		AMOUNT = 50		# total: 59
 	}
 }
 
@@ -15,28 +15,28 @@ can_establish_viceroyalty_armenia = {
 can_establish_viceroyalty_britain = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = britain
-		AMOUNT = 20		# total: 43
+		AMOUNT = 40		# total: 43
 	}
 }
 
 can_establish_viceroyalty_burma = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = burma
-		AMOUNT = 20		# total: 32
+		AMOUNT = 30		# total: 32
 	}
 }
 
 can_establish_viceroyalty_carpathia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = carpathia
-		AMOUNT = 20		# total: 40
+		AMOUNT = 30		# total: 40
 	}
 }
 
 can_establish_viceroyalty_china = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = china
-		AMOUNT = 20		# total: 107
+		AMOUNT = 100		# total: 107
 	}
 }
 
@@ -57,35 +57,35 @@ can_establish_viceroyalty_egypt = {
 can_establish_viceroyalty_france = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = france
-		AMOUNT = 20		# total: 66
+		AMOUNT = 60		# total: 66
 	}
 }
 
 can_establish_viceroyalty_germany = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = germany
-		AMOUNT = 20		# total: 140
+		AMOUNT = 100		# total: 140
 	}
 }
 
 can_establish_viceroyalty_greece = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = greece
-		AMOUNT = 20		# total: 32
+		AMOUNT = 30		# total: 32
 	}
 }
 
 can_establish_viceroyalty_india = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = india
-		AMOUNT = 20		# total: 255
+		AMOUNT = 200		# total: 255
 	}
 }
 
 can_establish_viceroyalty_indochina = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = indochina
-		AMOUNT = 20		# total: 45
+		AMOUNT = 40		# total: 45
 	}
 }
 
@@ -99,28 +99,28 @@ can_establish_viceroyalty_ireland = {
 can_establish_viceroyalty_italy = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = italy
-		AMOUNT = 20		# total: 57
+		AMOUNT = 50		# total: 57
 	}
 }
 
 can_establish_viceroyalty_japan = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = japan
-		AMOUNT = 20		# total: 48
+		AMOUNT = 40		# total: 48
 	}
 }
 
 can_establish_viceroyalty_kiev = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = kiev
-		AMOUNT = 20		# total: 42
+		AMOUNT = 40		# total: 42
 	}
 }
 
 can_establish_viceroyalty_korea = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = korea
-		AMOUNT = 10		# total: 20
+		AMOUNT = 20		# total: 20
 	}
 }
 
@@ -134,104 +134,104 @@ can_establish_viceroyalty_livonia = {
 can_establish_viceroyalty_maghreb = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = maghreb
-		AMOUNT = 20		# total: 58
+		AMOUNT = 50		# total: 58
 	}
 }
 
 can_establish_viceroyalty_manchuria = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = manchuria
-		AMOUNT = 20		# total: 46
+		AMOUNT = 40		# total: 46
 	}
 }
 
 can_establish_viceroyalty_mongolia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = mongolia
-		AMOUNT = 20		# total: 63
+		AMOUNT = 60		# total: 63
 	}
 }
 
 can_establish_viceroyalty_netherlands = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = netherlands
-		AMOUNT = 10		# total: 22
+		AMOUNT = 20		# total: 22
 	}
 }
 
 can_establish_viceroyalty_persia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = persia
-		AMOUNT = 20		# total: 97
+		AMOUNT = 80		# total: 97
 	}
 }
 
 can_establish_viceroyalty_poland = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = poland
-		AMOUNT = 20		# total: 33
+		AMOUNT = 30		# total: 33
 	}
 }
 
 can_establish_viceroyalty_portugal = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = portugal
-		AMOUNT = 5		# total: 10
+		AMOUNT = 10		# total: 10
 	}
 }
 
 can_establish_viceroyalty_russia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = russia
-		AMOUNT = 20		# total: 86
+		AMOUNT = 80		# total: 86
 	}
 }
 
 can_establish_viceroyalty_scandinavia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = scandinavia
-		AMOUNT = 20		# total: 63
+		AMOUNT = 60		# total: 63
 	}
 }
 
 can_establish_viceroyalty_siam = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = siam
-		AMOUNT = 15		# total: 27
+		AMOUNT = 20		# total: 27
 	}
 }
 
 can_establish_viceroyalty_spain = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = spain
-		AMOUNT = 20		# total: 52
+		AMOUNT = 50		# total: 52
 	}
 }
 
 can_establish_viceroyalty_syria = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = syria
-		AMOUNT = 10		# total: 22
+		AMOUNT = 20		# total: 22
 	}
 }
 
 can_establish_viceroyalty_tibet = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = tibet
-		AMOUNT = 10		# total: 24
+		AMOUNT = 20		# total: 24
 	}
 }
 
 can_establish_viceroyalty_transcaspia = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = transcaspia
-		AMOUNT = 20		# total: 65
+		AMOUNT = 60		# total: 65
 	}
 }
 
 can_establish_viceroyalty_turkey = {
 	can_establish_viceroyalty_fn = {
 		SECTOR = turkey
-		AMOUNT = 20		# total: 43
+		AMOUNT = 40		# total: 43
 	}
 }

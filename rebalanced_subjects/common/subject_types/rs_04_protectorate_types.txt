@@ -1,0 +1,107 @@
+protectorate = {
+	copy_from = vassal
+	count = vassal
+	# Graphics:
+	sprite = GFX_subject_tributary_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
+	diplomacy_subject_sprite = GFX_diplomacy_amtributary
+	# Properties:
+	base_liberty_desire = -15
+	forcelimit_to_overlord = 1
+	forms_trade_companies = yes
+	gets_help_with_rebels = yes
+	has_power_projection = no
+	joins_overlords_wars = no
+	liberty_desire_development_ratio = 0.05
+	liberty_desire_negative_prestige = 1
+	liberty_desire_same_dynasty = -5
+	max_government_rank = 1
+	military_focus = 0
+	relative_power_class = 1
+	should_quit_wars_on_activation = yes
+	transfer_trade_if_merchant_republic = yes
+	# Overlord Properties:
+	manpower_to_overlord = 0.33
+	naval_forcelimit_to_overlord = 0.33
+	pays_overlord = 1.5
+	sailors_to_overlord = 0.33
+	# Diplomatic Actions:
+	can_be_annexed = no
+	# Continuous Subject Interactions:
+	scutage = no
+	# Immediate Subject Interactions:
+	press_sailors = yes
+	# Overlord Modifiers:
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = has_protectorate_subject
+	}
+	# Subject Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = is_protectorate_nation
+	}
+	modifier_subject = {
+		modifier = is_protectorate_bonus
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.25
+			}
+		}
+		expiration_message_overlord = PROTECTORATETOOLARGE
+		expiration_message_subject = PROTECTORATETOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = GER_extra_prov_trade_power
+		trigger = {
+			overlord = {
+				has_estate_privilege = estate_burghers_GER_customs_union
+			}
+		}
+	}
+	overlord_opinion_modifier = is_protectorate
+	subject_opinion_modifier = is_protectorate
+}
+
+incorporated_protectorate = {
+	copy_from = protectorate
+	count = vassal
+	# Graphics:
+	sprite = GFX_subject_tributary_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
+	diplomacy_subject_sprite = GFX_diplomacy_amtributary
+	# Properties:
+	liberty_desire_negative_prestige = 0.5
+	takes_diplo_slot = no
+	# Immediate Subject Interactions:
+	enforce_culture = yes
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = incorporated_vassal_governing_capacity_cost
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_incorporated_protectorate
+	subject_opinion_modifier = is_incorporated_protectorate
+}

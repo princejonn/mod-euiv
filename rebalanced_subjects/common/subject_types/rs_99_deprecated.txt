@@ -1,23 +1,13 @@
-incorporated_personal_union = {
-	copy_from = personal_union
-	count = personal_union
+consolidated_vassal = {
+	copy_from = incorporated_vassal
+	count = vassal
 	# Graphics:
-	sprite = GFX_icon_integrated_personal_union_subject_type
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	sprite = GFX_icon_incorporated_vassal_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
 	# Properties:
-	annex_cost_per_development = 6
-	base_liberty_desire = -5
-	liberty_desire_negative_prestige = 0.75
-	takes_diplo_slot = no
-	# Interactions (Continuous):
-	divert_trade = yes
-	subsidize_armies = yes
-	# Interactions (Immediate):
-	seize_territory = yes
-	# Opinion:
-	overlord_opinion_modifier = is_incorporated_personal_union
-	subject_opinion_modifier = is_incorporated_personal_union
+	annex_cost_per_development = 4
+	relative_power_class = 1
 }
 
 consolidated_personal_union = {
@@ -36,9 +26,6 @@ consolidated_personal_union = {
 	send_officers = yes
 	# Interactions (Immediate):
 	send_additional_troops = yes
-	# Opinion:
-	overlord_opinion_modifier = is_consolidated_personal_union
-	subject_opinion_modifier = is_consolidated_personal_union
 }
 
 sovereign_personal_union = {
@@ -65,7 +52,4 @@ sovereign_personal_union = {
 	press_sailors = yes
 	send_additional_troops = yes
 	siphon_income = yes
-	# Opinion:
-	overlord_opinion_modifier = is_sovereign_personal_union
-	subject_opinion_modifier = is_sovereign_personal_union
 }
