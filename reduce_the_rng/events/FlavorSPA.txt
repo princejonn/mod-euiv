@@ -114,7 +114,13 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		## Modified to be more likely
-		months = 2
+		months = 120
+		modifier = {
+			factor = 0.05
+			CAS = {
+				ai = no
+			}
+		}
 		modifier = {
 			factor = 0.1
 			OR = {

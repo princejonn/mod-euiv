@@ -7,13 +7,50 @@ country_event = {
 		has_country_modifier = burgundian_succession_crisis
 		is_free_or_tributary_trigger = yes
 		government = monarchy
-		is_year = 1473
+		is_year = 1453
 		ai = yes
 		has_ruler = "Charles"
 		dynasty = "de Bourgogne"
 	}
 	mean_time_to_happen = {
-		months = 24
+		months = 300
+		modifier = {
+			factor = 0.5
+			is_year = 1463
+		}
+		modifier = {
+			factor = 0.25
+			is_year = 1473
+		}
+		modifier = {
+			factor = 0.25
+			OR = {
+				CAS = {
+					ai = no
+					is_subject = no
+					alliance_with = BUR
+					marriage_with = BUR
+				}
+				ENG = {
+					ai = no
+					is_subject = no
+					alliance_with = BUR
+					marriage_with = BUR
+				}
+				HAB = {
+					ai = no
+					is_subject = no
+					alliance_with = BUR
+					marriage_with = BUR
+				}
+				SWE = {
+					ai = no
+					is_subject = no
+					alliance_with = BUR
+					marriage_with = BUR
+				}
+			}
+		}
 	}
 	immediate = {
 		hidden_effect = {
