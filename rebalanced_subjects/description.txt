@@ -28,15 +28,26 @@ New subject type that sits somewhere between a Personal Union and a Vassal. Thei
 New subject type that is kind of an autonomous region. My primary idea behind this subject type was that they should be established once you're kind of finished and want to move on, leaving a subject behind that is yours in all but name. They can be fully integrated with the click of a button. You create viceroyalties from decisions.
 
 [h2]Subject Incorporation[/h2]
-I'm also adding the base game ability to further incorporate them into your realm, making them cheaper to annex, and cost no diplomatic relations. Instead they cost a little bit of governing capacity. I've "unlocked" this ability for existing subjects. All subjects retain their incorporation status, even when changing to different subject types. The following subjects are affected by these changes:
+I'm also adding the base game ability to further incorporate them into your realm, making them cheaper to annex, and cost no diplomatic relations. Instead they cost a little bit of governing capacity. I've "unlocked" this ability for existing subjects. All subjects retain their incorporation status, even when changing to different subject types.
+
+[h3]Levels[/h3]
+The following incorporation levels are available:
+
+[list]
+  [*] Incorporated: Annexation cost reduced by 25%, no Diplomatic Relations cost, 50 Governing Capacity cost, 25% chance of inheritance on monarch death.
+  [*] Consolidated: Annexation cost reduced by 50%, no Diplomatic Relations cost, 100 Governing Capacity cost, 50% chance of inheritance on monarch death.
+[/list]
+
+[h3]Subject Types[/h3]
+The following subjects are affected by these changes:
 
 [list]
   [*] Vassals
   [*] Fiefdoms
   [*] Marches
   [*] Protectorates
-  [*] Personal Unions
   [*] Client States
+  [*] Personal Unions
 [/list]
 
 [h3]Incorporated Personal Union[/h3]

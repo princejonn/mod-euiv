@@ -2,15 +2,13 @@ form_personal_union_from_client_state = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		government = monarchy
 		FROM = {
 			is_subject_of = ROOT
-		}
-		OR = {
-			FROM = {
+			OR = {
 				is_subject_of_type = client_state
-			}
-			FROM = {
 				is_subject_of_type = incorporated_client_state
+				is_subject_of_type = consolidated_client_state
 			}
 		}
 	}
@@ -31,6 +29,9 @@ form_personal_union_from_client_state = {
 		}
 		FROM = {
 			marriage_with = ROOT
+		}
+		FROM = {
+			dynasty = ROOT
 		}
 		FROM = {
 			years_in_vassalage_under = {
@@ -63,10 +64,7 @@ form_personal_union_from_client_state = {
 		if = {
 			limit = {
 				FROM = {
-					is_subject_of_type_with_overlord = {
-						who = ROOT
-						type = client_state
-					}
+					is_subject_of_type = client_state
 				}
 			}
 			create_subject = {
@@ -78,14 +76,23 @@ form_personal_union_from_client_state = {
 		else_if = {
 			limit = {
 				FROM = {
-					is_subject_of_type_with_overlord = {
-						who = ROOT
-						type = incorporated_client_state
-					}
+					is_subject_of_type = incorporated_client_state
 				}
 			}
 			create_subject = {
 				subject_type = incorporated_personal_union
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = consolidated_client_state
+				}
+			}
+			create_subject = {
+				subject_type = consolidated_personal_union
 				subject = FROM
 				keep_liberty_desire = yes
 			}
@@ -116,7 +123,98 @@ incorporate_personal_union = {
 		}
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = personal_union
+			OR = {
+				is_subject_of_type = personal_union
+				is_subject_of_type = theodoro_personal_union
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		has_regency = no
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			years_in_union_under = {
+				who = ROOT
+				years = 10
+			}
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_type_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_type_cooldown_flag
+				days = 3650
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = changed_subject_incorporation_cooldown_flag
+			}
+			had_country_flag = {
+				flag = changed_subject_incorporation_cooldown_flag
+				days = 365
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = incorporated_personal_union
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+		set_country_flag = changed_subject_incorporation_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+consolidate_personal_union = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		OR = {
+			adm_tech = 12
+			has_country_flag = hab_integrated_vassals_flag
+		}
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = integrated_personal_union
+			}
 		}
 	}
 	is_allowed = {
@@ -165,13 +263,13 @@ incorporate_personal_union = {
 			}
 			had_country_flag = {
 				flag = changed_subject_incorporation_cooldown_flag
-				days = 3650
+				days = 365
 			}
 		}
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = incorporated_personal_union
+			subject_type = consolidated_personal_union
 			subject = FROM
 			keep_liberty_desire = yes
 		}
@@ -182,7 +280,34 @@ incorporate_personal_union = {
 			add_liberty_desire = 10
 			add_stability = -1
 		}
+		FROM = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+				}
+				add_core = ROOT
+			}
+		}
 		set_country_flag = changed_subject_incorporation_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+## OVERWRITE
+convert_to_core_personal_union = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		always = no
+	}
+	is_allowed = {
+		always = no
+	}
+	on_accept = {
 	}
 	on_decline = {
 	}

@@ -1,33 +1,3 @@
-consolidated_vassal = {
-	copy_from = incorporated_vassal
-	count = vassal
-	# Graphics:
-	sprite = GFX_icon_incorporated_vassal_subject_type
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
-	# Properties:
-	annex_cost_per_development = 4
-	relative_power_class = 1
-}
-
-consolidated_personal_union = {
-	copy_from = incorporated_personal_union
-	count = personal_union
-	# Graphics:
-	sprite = GFX_icon_integrated_personal_union_subject_type
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
-	# Properties:
-	annex_cost_per_development = 4
-	base_liberty_desire = -10
-	can_union_break = no
-	liberty_desire_negative_prestige = 0.5
-	# Interactions (Continuous):
-	send_officers = yes
-	# Interactions (Immediate):
-	send_additional_troops = yes
-}
-
 sovereign_personal_union = {
 	copy_from = personal_union
 	count = personal_union

@@ -1,6 +1,15 @@
 ﻿l_english:
-  alert_incorporate_subject_title: "REMINDER: You can incorporate a subject"
-  alert_incorporate_subject_desc: "You have a subject that can be incorporated. You will find the incorporation option under the §YInfluence§! tab."
+  alert_incorporate_vassal_title: "REMINDER: You can incorporate a subject"
+  alert_incorporate_vassal_desc: "You have a subject that can be incorporated. You will find the §YIncorporate§! option under the §YInfluence§! tab."
+
+  alert_consolidate_vassal_title: "REMINDER: You can consolidate a subject"
+  alert_consolidate_vassal_desc: "You have a subject that can be consolidated. You will find the §YConsolidate§! option under the §YInfluence§! tab."
+
+  alert_incorporate_union_title: "REMINDER: You can incorporate a union"
+  alert_incorporate_union_desc: "You have a union that can be incorporated. You will find the §YIncorporate§! option under the §YInfluence§! tab."
+
+  alert_consolidate_union_title: "REMINDER: You can consolidate a union"
+  alert_consolidate_union_desc: "You have a union that can be consolidated. You will find the §YConsolidate§! option under the §YInfluence§! tab."
 
   enable_viceroyalties_title: "ENABLE: Viceroyalties"
   enable_viceroyalties_desc: "Viceroyalty subjects are a new type of subject that can be created by decision. They are basically an autonomous extension of your country."

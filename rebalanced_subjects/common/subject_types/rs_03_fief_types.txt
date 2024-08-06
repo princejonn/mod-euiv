@@ -41,19 +41,15 @@ fief = {
 	modifier_overlord = {
 		modifier = has_fief_bonus
 		trigger = {
-			OR = {
-				NOT = {
-					num_of_cities = 4
-				}
-				NOT = {
-					development_of_overlord_fraction = 0.05
-				}
+			NOT = {
+				num_of_cities = 2
 			}
 		}
 		expiration_message_overlord = FIEFTOOLARGE
 		expiration_message_subject = FIEFTOOLARGEUS
 	}
 	# Subject Modifiers:
+	modifier_subject = clear
 	modifier_subject = {
 		modifier = is_fief_nation
 	}
@@ -62,7 +58,7 @@ fief = {
 		trigger = {
 			OR = {
 				NOT = {
-					num_of_cities = 4
+					num_of_cities = 2
 				}
 				NOT = {
 					development_of_overlord_fraction = 0.05
@@ -116,13 +112,8 @@ incorporated_fief = {
 	modifier_overlord = {
 		modifier = has_incorporated_fief_bonus
 		trigger = {
-			OR = {
-				NOT = {
-					num_of_cities = 4
-				}
-				NOT = {
-					development_of_overlord_fraction = 0.05
-				}
+			NOT = {
+				num_of_cities = 2
 			}
 		}
 		expiration_message_overlord = FIEFTOOLARGE
@@ -131,4 +122,29 @@ incorporated_fief = {
 	# Opinion:
 	overlord_opinion_modifier = is_incorporated_fief
 	subject_opinion_modifier = is_incorporated_fief
+}
+
+consolidated_fief = {
+	copy_from = incorporated_fief
+	count = fief
+	# Graphics:
+	sprite = GFX_icon_appanage
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+	# Properties:
+	relative_power_class = 0
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		modifier = has_consolidated_fief_bonus
+		trigger = {
+			NOT = {
+				num_of_cities = 2
+			}
+		}
+		expiration_message_overlord = FIEFTOOLARGE
+		expiration_message_subject = FIEFTOOLARGEUS
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_fief
+	subject_opinion_modifier = is_consolidated_fief
 }

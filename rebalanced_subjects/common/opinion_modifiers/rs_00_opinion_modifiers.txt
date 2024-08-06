@@ -3,9 +3,17 @@ is_incorporated_vassal = {
 	opinion = 60
 }
 
+is_consolidated_vassal = {
+	opinion = 70
+}
+
 # Personal Union
 in_incorporated_union = {
 	opinion = 20
+}
+
+is_consolidated_union = {
+	opinion = 30
 }
 
 # Fief
@@ -14,6 +22,10 @@ is_fief = {
 }
 
 is_incorporated_fief = {
+	opinion = 70
+}
+
+is_consolidated_fief = {
 	opinion = 80
 }
 
@@ -28,6 +40,10 @@ is_protectorate = {
 }
 
 is_incorporated_protectorate = {
+	opinion = 70
+}
+
+is_consolidated_protectorate = {
 	opinion = 80
 }
 
@@ -42,12 +58,16 @@ is_client_state = {
 }
 
 is_incorporated_client_state = {
+	opinion = 30
+}
+
+is_consolidated_client_state = {
 	opinion = 40
 }
 
 # Viceroyalty
 is_viceroyalty = {
-	opinion = 60
+	opinion = 75
 }
 
 broke_viceroyalty = {

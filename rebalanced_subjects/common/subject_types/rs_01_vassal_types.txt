@@ -102,3 +102,27 @@ incorporated_vassal = {
 	overlord_opinion_modifier = is_incorporated_vassal
 	subject_opinion_modifier = is_incorporated_vassal
 }
+
+consolidated_vassal = {
+	copy_from = incorporated_vassal
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_incorporated_vassal_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
+	# Properties:
+	annex_cost_per_development = 4
+	relative_power_class = 0
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = consolidated_vassal_governing_capacity_cost
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_vassal
+	subject_opinion_modifier = is_consolidated_vassal
+}

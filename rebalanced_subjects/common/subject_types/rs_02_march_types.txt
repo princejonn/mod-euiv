@@ -89,3 +89,26 @@ incorporated_march = {
 	overlord_opinion_modifier = is_incorporated_vassal
 	subject_opinion_modifier = is_incorporated_vassal
 }
+
+consolidated_march = {
+	copy_from = incorporated_march
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+	# Properties:
+	relative_power_class = 0
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = consolidated_vassal_governing_capacity_cost
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_vassal
+	subject_opinion_modifier = is_consolidated_vassal
+}

@@ -5,7 +5,7 @@ personal_union = {
 	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
 	diplomacy_subject_sprite = GFX_diplomacy_inunion
 	# Properties:
-	annex_cost_per_development = 10
+	annex_cost_per_development = 8
 	can_concentrate_development = no
 	can_have_subjects_of_other_types = yes
 	can_union_break = yes
@@ -89,4 +89,19 @@ incorporated_personal_union = {
 	# Opinion Modifiers:
 	overlord_opinion_modifier = in_incorporated_union
 	subject_opinion_modifier = in_incorporated_union
+}
+
+consolidated_personal_union = {
+	copy_from = incorporated_personal_union
+	count = personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	annex_cost_per_development = 4
+	relative_power_class = 0
+	# Opinion Modifiers:
+	overlord_opinion_modifier = in_consolidated_union
+	subject_opinion_modifier = in_consolidated_union
 }

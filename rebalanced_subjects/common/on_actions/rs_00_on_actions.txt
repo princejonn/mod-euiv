@@ -6,4 +6,5 @@ on_province_owner_change = {
 # ROOT = country
 on_monarch_death = {
 	on_monarch_death_incorporated_union_effect = yes
+	on_monarch_death_consolidated_union_effect = yes
 }

@@ -105,3 +105,26 @@ incorporated_protectorate = {
 	overlord_opinion_modifier = is_incorporated_protectorate
 	subject_opinion_modifier = is_incorporated_protectorate
 }
+
+consolidated_protectorate = {
+	copy_from = incorporated_protectorate
+	count = vassal
+	# Graphics:
+	sprite = GFX_subject_tributary_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
+	diplomacy_subject_sprite = GFX_diplomacy_amtributary
+	# Properties:
+	relative_power_class = 0
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = consolidated_vassal_governing_capacity_cost
+	}
+	# Opinion:
+	overlord_opinion_modifier = is_consolidated_protectorate
+	subject_opinion_modifier = is_consolidated_protectorate
+}

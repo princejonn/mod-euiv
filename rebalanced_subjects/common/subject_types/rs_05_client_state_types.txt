@@ -6,7 +6,7 @@ client_state = {
 	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
 	diplomacy_subject_sprite = GFX_diplomacy_areclients
 	# Properties:
-	annex_cost_per_development = 4
+	annex_cost_per_development = 6
 	can_concentrate_development = yes
 	can_have_subjects_of_other_types = yes
 	disable_inheritance = yes
@@ -26,7 +26,7 @@ client_state = {
 	sailors_to_overlord = 0.15
 	pays_overlord = 0.15
 	# Diplomatic Actions:
-	can_be_integrated = yes
+	can_be_annexed = yes
 	# Continuous Subject Interactions:
 	placate_rulers = yes
 	siphon_income = yes
@@ -85,8 +85,7 @@ incorporated_client_state = {
 	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
 	diplomacy_subject_sprite = GFX_diplomacy_areclients
 	# Properties:
-	annex_cost_per_development = 2
-	relative_power_class = 0
+	annex_cost_per_development = 4
 	takes_diplo_slot = no
 	# Continuous Subject Interactions:
 	divert_trade = yes
@@ -96,4 +95,19 @@ incorporated_client_state = {
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_incorporated_client_state
 	subject_opinion_modifier = is_incorporated_client_state
+}
+
+consolidated_client_state = {
+	copy_from = incorporated_client_state
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
+	diplomacy_subject_sprite = GFX_diplomacy_areclients
+	# Properties:
+	annex_cost_per_development = 2
+	relative_power_class = 0
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_consolidated_client_state
+	subject_opinion_modifier = is_consolidated_client_state
 }

@@ -4,13 +4,10 @@ designate_protectorate = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-		}
-		OR = {
-			FROM = {
+			OR = {
 				is_subject_of_type = vassal
-			}
-			FROM = {
 				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = consolidated_vassal
 			}
 		}
 	}
@@ -33,104 +30,47 @@ designate_protectorate = {
 		}
 		FROM = {
 			NOT = {
-				development_of_overlord_fraction = 0.5
+				development_of_overlord_fraction = 0.25
 			}
 		}
 	}
 	on_accept = {
-		create_subject = {
-			subject_type = protectorate
-			subject = FROM
-			keep_liberty_desire = yes
-		}
-		FROM = {
-			add_liberty_desire = -10
-		}
-	}
-	on_decline = {
-	}
-	ai_will_do = {
-		always = no
-	}
-}
-
-incorporate_protectorate = {
-	category = influence
-	require_acceptance = no
-	is_visible = {
-		adm_tech = 12
-		can_have_incorporated_vassals = no
-		FROM = {
-			is_subject_of_type_with_overlord = {
-				who = ROOT
-				type = protectorate
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = vassal
+				}
+			}
+			create_subject = {
+				subject_type = protectorate
+				subject = FROM
+				keep_liberty_desire = yes
 			}
 		}
-	}
-	is_allowed = {
-		is_at_war = no
-		has_regency = no
-		NOT = {
-			truce_with = FROM
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			NOT = {
-				truce_with = ROOT
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = incorporated_vassal
+				}
+			}
+			create_subject = {
+				subject_type = incorporated_protectorate
+				subject = FROM
+				keep_liberty_desire = yes
 			}
 		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 10
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = consolidated_vassal
+				}
+			}
+			create_subject = {
+				subject_type = consolidated_protectorate
+				subject = FROM
+				keep_liberty_desire = yes
 			}
 		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 190
-			}
-		}
-		FROM = {
-			NOT = {
-				liberty_desire = 25
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_incorporation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_incorporation_cooldown_flag
-				days = 3650
-			}
-		}
-	}
-	on_accept = {
-		create_subject = {
-			subject_type = incorporated_protectorate
-			subject = FROM
-			keep_liberty_desire = yes
-		}
-		FROM = {
-			capital_scope = {
-				add_unrest = 2
-			}
-			add_liberty_desire = 10
-			add_stability = -1
-		}
-		set_country_flag = changed_subject_incorporation_cooldown_flag
 	}
 	on_decline = {
 	}
@@ -143,18 +83,12 @@ revoke_protectorate = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		OR = {
-			FROM = {
-				is_subject_of_type_with_overlord = {
-					who = ROOT
-					type = protectorate
-				}
-			}
-			FROM = {
-				is_subject_of_type_with_overlord = {
-					who = ROOT
-					type = incorporated_protectorate
-				}
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = protectorate
+				is_subject_of_type = incorporated_protectorate
+				is_subject_of_type = consolidated_protectorate
 			}
 		}
 	}
@@ -174,10 +108,7 @@ revoke_protectorate = {
 		if = {
 			limit = {
 				FROM = {
-					is_subject_of_type_with_overlord = {
-						who = ROOT
-						type = protectorate
-					}
+					is_subject_of_type = protectorate
 				}
 			}
 			create_subject = {
@@ -189,10 +120,7 @@ revoke_protectorate = {
 		else_if = {
 			limit = {
 				FROM = {
-					is_subject_of_type_with_overlord = {
-						who = ROOT
-						type = incorporated_protectorate
-					}
+					is_subject_of_type = incorporated_protectorate
 				}
 			}
 			create_subject = {
@@ -201,8 +129,20 @@ revoke_protectorate = {
 				keep_liberty_desire = yes
 			}
 		}
+		else_if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = consolidated_protectorate
+				}
+			}
+			create_subject = {
+				subject_type = consolidated_vassal
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
 		FROM = {
-			add_liberty_desire = 10
+			add_liberty_desire = 25
 			add_opinion = {
 				who = ROOT
 				modifier = broke_protectorate
