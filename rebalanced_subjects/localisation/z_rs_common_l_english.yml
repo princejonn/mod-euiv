@@ -73,7 +73,6 @@
   designate_fief_title: "Designate Fief"
   designate_fief_tooltip: "Convert [From.GetName] to a Fief. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefs cannot be annexed."
   designate_fief_desc: "Convert [From.GetName] to a Fief. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefs cannot be annexed.\n\nIf the Fief has only one province, they also get bonuses, and give their overlord bonuses.\n\nDesignating [From.GetName] to a Fief §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal once revoked."
-  NUM_FIEFS_ALLOWED_TOOLTIP: "You can only have 10 Fiefdoms at a time."
 
   revoke_fief: "Revoke Fief"
   revoke_fief_title: "Revoke Fief"
@@ -114,6 +113,9 @@
   revoke_viceroyalty_title: "Revoke Viceroyalty"
   revoke_viceroyalty_tooltip: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
   revoke_viceroyalty_desc: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
+
+  # tooltips
+  NUM_FIEFS_ALLOWED_TOOLTIP: "You can only have 10 Fiefdoms at a time."
 
   # opinion modifiers
   in_incorporated_union: "Incorporated Union"

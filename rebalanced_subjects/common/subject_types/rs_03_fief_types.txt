@@ -100,10 +100,6 @@ fief = {
 incorporated_fief = {
 	copy_from = fief
 	count = fief
-	# Graphics:
-	sprite = GFX_icon_appanage
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
 	# Properties:
 	takes_diplo_slot = no
 	# Immediate Subject Interactions:
@@ -127,10 +123,6 @@ incorporated_fief = {
 consolidated_fief = {
 	copy_from = incorporated_fief
 	count = fief
-	# Graphics:
-	sprite = GFX_icon_appanage
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
 	# Properties:
 	relative_power_class = 0
 	# Modifiers (Overlord):

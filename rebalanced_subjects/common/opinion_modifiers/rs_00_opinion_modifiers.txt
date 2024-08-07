@@ -12,7 +12,7 @@ in_incorporated_union = {
 	opinion = 20
 }
 
-is_consolidated_union = {
+in_consolidated_union = {
 	opinion = 30
 }
 

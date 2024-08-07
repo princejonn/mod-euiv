@@ -13,9 +13,6 @@ revoke_viceroyalty = {
 	is_allowed = {
 		is_at_war = no
 		FROM = {
-			is_at_war = no
-		}
-		FROM = {
 			has_opinion = {
 				who = ROOT
 				value = 100

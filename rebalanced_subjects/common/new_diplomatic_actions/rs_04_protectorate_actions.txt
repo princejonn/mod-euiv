@@ -13,16 +13,6 @@ designate_protectorate = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 100
-			}
-		}
 		FROM = {
 			NOT = {
 				liberty_desire = 50
@@ -94,10 +84,6 @@ revoke_protectorate = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
-		FROM = {
-			is_at_war = no
-		}
 		FROM = {
 			NOT = {
 				liberty_desire = 50

@@ -83,10 +83,6 @@ protectorate = {
 incorporated_protectorate = {
 	copy_from = protectorate
 	count = vassal
-	# Graphics:
-	sprite = GFX_subject_tributary_state
-	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
-	diplomacy_subject_sprite = GFX_diplomacy_amtributary
 	# Properties:
 	liberty_desire_negative_prestige = 0.5
 	takes_diplo_slot = no
@@ -109,10 +105,6 @@ incorporated_protectorate = {
 consolidated_protectorate = {
 	copy_from = incorporated_protectorate
 	count = vassal
-	# Graphics:
-	sprite = GFX_subject_tributary_state
-	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
-	diplomacy_subject_sprite = GFX_diplomacy_amtributary
 	# Properties:
 	relative_power_class = 0
 	# Modifiers (Overlord):

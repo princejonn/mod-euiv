@@ -13,17 +13,8 @@ form_vassal_from_client_state = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			NOT = {
-				truce_with = ROOT
-			}
 		}
 		FROM = {
 			years_in_vassalage_under = {
@@ -126,17 +117,8 @@ incorporate_vassal = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			NOT = {
-				truce_with = ROOT
-			}
 		}
 		FROM = {
 			years_in_vassalage_under = {
@@ -269,17 +251,8 @@ consolidate_vassal = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			NOT = {
-				truce_with = ROOT
-			}
 		}
 		FROM = {
 			years_in_vassalage_under = {

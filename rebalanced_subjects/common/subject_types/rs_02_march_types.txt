@@ -66,10 +66,6 @@ march = {
 incorporated_march = {
 	copy_from = march
 	count = vassal
-	# Graphics:
-	sprite = GFX_icon_march
-	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
-	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
 	# Properties:
 	relative_power_class = 1
 	takes_diplo_slot = no
@@ -93,10 +89,6 @@ incorporated_march = {
 consolidated_march = {
 	copy_from = incorporated_march
 	count = vassal
-	# Graphics:
-	sprite = GFX_icon_march
-	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
-	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
 	# Properties:
 	relative_power_class = 0
 	# Modifiers (Overlord):

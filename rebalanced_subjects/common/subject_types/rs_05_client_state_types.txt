@@ -2,9 +2,9 @@ client_state = {
 	copy_from = default
 	count = vassal
 	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
-	diplomacy_subject_sprite = GFX_diplomacy_areclients
+	sprite = GFX_icon_cultural_sphere_of_influence_subject
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_cultural_sphere_of_influence_subject
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_cultural_sphere_of_influence_subject
 	# Properties:
 	annex_cost_per_development = 6
 	can_concentrate_development = yes
@@ -80,10 +80,6 @@ client_state = {
 incorporated_client_state = {
 	copy_from = client_state
 	count = vassal
-	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
-	diplomacy_subject_sprite = GFX_diplomacy_areclients
 	# Properties:
 	annex_cost_per_development = 4
 	takes_diplo_slot = no
@@ -100,10 +96,6 @@ incorporated_client_state = {
 consolidated_client_state = {
 	copy_from = incorporated_client_state
 	count = vassal
-	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
-	diplomacy_subject_sprite = GFX_diplomacy_areclients
 	# Properties:
 	annex_cost_per_development = 2
 	relative_power_class = 0

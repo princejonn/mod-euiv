@@ -13,17 +13,8 @@ form_client_state_from_vassal = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			NOT = {
-				truce_with = ROOT
-			}
 		}
 		FROM = {
 			years_in_vassalage_under = {
@@ -122,17 +113,8 @@ form_client_state_from_personal_union = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			NOT = {
-				truce_with = ROOT
-			}
 		}
 		FROM = {
 			years_in_union_under = {

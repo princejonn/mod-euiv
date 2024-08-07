@@ -14,7 +14,6 @@ designate_fief = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
 		custom_trigger_tooltip = {
 			tooltip = NUM_FIEFS_ALLOWED_TOOLTIP
 			NOT = {
@@ -35,20 +34,6 @@ designate_fief = {
 						value = 10
 					}
 				}
-			}
-		}
-		FROM = {
-			is_at_war = no
-		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 100
-			}
-		}
-		FROM = {
-			NOT = {
-				liberty_desire = 50
 			}
 		}
 		FROM = {
@@ -122,10 +107,6 @@ revoke_fief = {
 	}
 	is_allowed = {
 		is_at_war = no
-		has_regency = no
-		FROM = {
-			is_at_war = no
-		}
 		FROM = {
 			NOT = {
 				liberty_desire = 50
