@@ -1,0 +1,109 @@
+namespace = force_rng_events
+## PU over Milan
+country_event = {
+	id = force_rng_events.1
+	fire_only_once = yes
+	trigger = {
+		has_dlc = "Emperor"
+		tag = MLO
+		ai = yes
+		is_subject = no
+		AND = {
+			emperor = {
+				exists = yes
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		OR = {
+			emperor = {
+				ai = no
+			}
+			FRA = {
+				ai = no
+			}
+		}
+		is_year = 1444
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	immediate = {
+		MLO = {
+			kill_heir = {
+			}
+			kill_ruler = yes
+		}
+		FRA = {
+			country_event = {
+				id = ambrosian_republic.3
+			}
+		}
+		emperor = {
+			country_event = {
+				id = ambrosian_republic.4
+			}
+		}
+	}
+	option = {
+	}
+}
+
+## Neapolitan Succession
+country_event = {
+	id = force_rng_events.2
+	fire_only_once = yes
+	trigger = {
+		tag = ARA
+		ai = yes
+		NOT = {
+			has_country_flag = alfonso_died_yes_really
+		}
+		NAP = {
+			junior_union_with = ARA
+		}
+		OR = {
+			BYZ = {
+				ai = yes
+			}
+			BYZ = {
+				ai = no
+				OR = {
+					NOT = {
+						exists = EPI
+					}
+					EPI = {
+						is_subject_of = BYZ
+					}
+				}
+			}
+		}
+		is_year = 1444
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.05
+			OR = {
+				BYZ = {
+					ai = no
+				}
+				CAS = {
+					ai = no
+				}
+			}
+		}
+	}
+	immediate = {
+		ARA = {
+			kill_ruler = yes
+			country_event = {
+				id = flavor_ara.7
+				days = 14
+			}
+		}
+	}
+	option = {
+	}
+}

@@ -414,7 +414,6 @@ country_event = {
 			}
 			modifier = {
 				BYZ = {
-					exists = yes
 					ai = no
 				}
 				factor = 1000
@@ -422,6 +421,18 @@ country_event = {
 		}
 		custom_tooltip = flavor_ara7_naples_goes_free
 		hidden_effect = {
+			ARA = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = sicily_area
+							area = western_sicily_area
+						}
+					}
+					cede_province = NAP
+					add_core = NAP
+				}
+			}
 			NAP = {
 				country_event = {
 					id = flavor_ara.8

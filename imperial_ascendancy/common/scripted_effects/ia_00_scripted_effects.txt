@@ -1,0 +1,56 @@
+give_province_cores = {
+	$id$ = {
+		if = {
+			limit = {
+				NOT = {
+					is_core = $tag$
+				}
+				NOT = {
+					is_permanent_claim = $tag$
+				}
+			}
+			add_core = $tag$
+		}
+	}
+}
+
+give_area_cores = {
+	$group$ = {
+		limit = {
+			NOT = {
+				is_core = $tag$
+			}
+			NOT = {
+				is_permanent_claim = $tag$
+			}
+		}
+		add_core = $tag$
+	}
+}
+
+give_cores = {
+	[[province]
+	give_province_cores = {
+		id = $province$
+		tag = ROOT
+	}
+	]
+	[[id]
+	give_province_cores = {
+		id = $id$
+		tag = ROOT
+	}
+	]
+	[[area]
+	give_area_cores = {
+		group = $area$
+		tag = ROOT
+	}
+	]
+	[[region]
+	give_area_cores = {
+		group = $region$
+		tag = ROOT
+	}
+	]
+}
