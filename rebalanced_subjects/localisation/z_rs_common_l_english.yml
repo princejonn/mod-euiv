@@ -8,10 +8,10 @@
 
   # government names
   FIEF: "Fief"
-  FIEF_MALE_LEADER: "Duke"
-  FIEF_FEMALE_LEADER: "Duchess"
-  FIEF_CONSORT_MALE: "Duke-Consort"
-  FIEF_CONSORT_FEMALE: "Duchess"
+  FIEF_MALE_LEADER: "Earl"
+  FIEF_FEMALE_LEADER: "Countess"
+  FIEF_CONSORT_MALE: "Earl-Consort"
+  FIEF_CONSORT_FEMALE: "Countess"
   FIEF_MALE_HEIR: "Baron"
   FIEF_FEMALE_HEIR: "Baroness"
 
