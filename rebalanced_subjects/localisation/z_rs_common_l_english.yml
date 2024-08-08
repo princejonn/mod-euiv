@@ -72,7 +72,7 @@
   designate_fief: "Designate Fief"
   designate_fief_title: "Designate Fief"
   designate_fief_tooltip: "Convert [From.GetName] to a Fief. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefs cannot be annexed."
-  designate_fief_desc: "Convert [From.GetName] to a Fief. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefs cannot be annexed.\n\nIf the Fief has only one province, they also get bonuses, and give their overlord bonuses.\n\nDesignating [From.GetName] to a Fief §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal once revoked."
+  designate_fief_desc: "Convert [From.GetName] to a Fief. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefs cannot be annexed. You can only have 3 Fiefs.\n\nIf the Fief has only one province, you will get §G+25/50/75§! §YGovernment Capacity§! (depending on incorporation status).\nIf the fief has 15 development, you will get §G+1§! §YDiplomatic Reputation§!.\nIf the Fief is located in a trade node, you will get §G+5%§! §YGlobal Trade Power§!\n\nDesignating [From.GetName] to a Fief §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal once revoked."
 
   revoke_fief: "Revoke Fief"
   revoke_fief_title: "Revoke Fief"
@@ -146,11 +146,15 @@
 
   # static modifiers
   has_fief_subject: "Has Fief"
-  has_fief_bonus: "Has a Loyal Fief"
+  has_fief_num_cities_bonus: "Fief City Bonus"
+  has_fief_province_dev_bonus: "Fief Development Bonus"
+  has_fief_province_trade_bonus: "Fief Trade Bonus"
   is_fief_nation: "Is a Fief"
-  is_fief_bonus: "Is a Loyal Fief"
-  has_incorporated_fief_bonus: "Loyal Incorporated Fief"
-  has_consolidated_fief_bonus: "Loyal Consolidated Fief"
+  is_fief_num_cities_bonus: "Fief City Bonus"
+  is_fief_province_dev_bonus: "Fief Development Bonus"
+  is_fief_province_trade_bonus: "Fief Trade Bonus"
+  has_incorporated_fief_bonus: "Incorporated Fief"
+  has_consolidated_fief_bonus: "Consolidated Fief"
 
   has_vassal_subject: "Has Vassal"
   is_vassal_nation: "Is a Vassal"
@@ -194,7 +198,7 @@
   fief_title: "Fief"
   fief_title_plural: "Fiefs"
   fief_is_our: "§Y$NAME$§! is our Fief."
-  fief_long_desc: "Fiefs must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They increase the overlord's §YGoverning Capacity§!."
+  fief_long_desc: "Fiefs must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. Depending on location and size, they increase the overlord's §YGoverning Capacity§!, §YDiplomatic Reputation§!, and §YGlobal Trade Power§!."
 
   incorporated_fief: "Incorporated Fief"
   incorporated_fief_title: "Incorporated Fief"

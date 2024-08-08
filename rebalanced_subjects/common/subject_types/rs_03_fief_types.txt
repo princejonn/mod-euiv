@@ -32,6 +32,7 @@ fief = {
 	place_relative_on_throne = yes
 	sacrifice_heir = yes
 	sacrifice_ruler = yes
+	seize_territory = yes
 	# War Interactions:
 	restoration_cb = cb_disloyal_vassal
 	# Overlord Modifiers:
@@ -39,7 +40,7 @@ fief = {
 		modifier = has_fief_subject
 	}
 	modifier_overlord = {
-		modifier = has_fief_bonus
+		modifier = has_fief_num_cities_bonus
 		trigger = {
 			NOT = {
 				num_of_cities = 2
@@ -48,25 +49,58 @@ fief = {
 		expiration_message_overlord = FIEFTOOLARGE
 		expiration_message_subject = FIEFTOOLARGEUS
 	}
+	modifier_overlord = {
+		modifier = has_fief_province_dev_bonus
+		trigger = {
+			any_owned_province = {
+				development = 15
+			}
+		}
+	}
+	modifier_overlord = {
+		modifier = has_fief_province_trade_bonus
+		trigger = {
+			any_owned_province = {
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					has_river_estuary_trigger = yes
+				}
+			}
+		}
+	}
 	# Subject Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
 		modifier = is_fief_nation
 	}
 	modifier_subject = {
-		modifier = is_fief_bonus
+		modifier = is_fief_num_cities_bonus
 		trigger = {
-			OR = {
-				NOT = {
-					num_of_cities = 2
-				}
-				NOT = {
-					development_of_overlord_fraction = 0.05
-				}
+			NOT = {
+				num_of_cities = 2
 			}
 		}
 		expiration_message_overlord = FIEFTOOLARGE
 		expiration_message_subject = FIEFTOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = is_fief_province_dev_bonus
+		trigger = {
+			any_owned_province = {
+				development = 15
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = is_fief_province_trade_bonus
+		trigger = {
+			any_owned_province = {
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					has_river_estuary_trigger = yes
+				}
+			}
+		}
 	}
 	modifier_subject = {
 		modifier = subject_tax_modifier

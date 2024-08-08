@@ -21,17 +21,17 @@ designate_fief = {
 					num_subjects_of_type_with_liberty_desire = {
 						type = fief
 						liberty_desire = 0
-						value = 10
+						value = 3
 					}
 					num_subjects_of_type_with_liberty_desire = {
 						type = incorporated_fief
 						liberty_desire = 0
-						value = 10
+						value = 3
 					}
 					num_subjects_of_type_with_liberty_desire = {
 						type = consolidated_fief
 						liberty_desire = 0
-						value = 10
+						value = 3
 					}
 				}
 			}

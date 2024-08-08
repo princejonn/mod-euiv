@@ -23,7 +23,7 @@ country_decisions = {
 				ai = no
 				AND = {
 					ai = yes
-					num_of_cities = 2
+					num_of_cities = 4
 				}
 			}
 		}

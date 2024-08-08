@@ -15,8 +15,14 @@ In this mod I'm aiming to fix and rebalance a couple of things that deal with su
   [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
 [/list]
 
-[h2]Fiefdoms[/h2]
-New subject type that is a subset of vassals, only with heavy requirements on being small. This is to simulate the small fiefdoms that were common in the middle ages.
+[h2]Fiefs[/h2]
+New subject type that is a subset of vassals, only with heavy requirements on being small. This is to simulate the small fiefdoms that were common in the middle ages. The following bonuses are awarded fiefs:
+
+[list]
+  [*] +25 Governing Capacity (when your Fief has 1 and only 1 province)
+  [*] +1 Diplomatic Relations (when your Fief has 15+ development in its province)
+  [*] +5% increased Global Trade Power (when your Fief is landed in an Estuary or Trade Center
+[/list]
 
 [h2]Protectorates[/h2]
 New subject type that is a subset of vassals, kind of like the opposite of marches. They have a weak military presence, so they instead have a strong economic potency.
@@ -55,5 +61,3 @@ I've added a trigger on monarch death that makes Incorporated Personal Unions mo
 
 [h2]Forming Unions with Vassals[/h2]
 There's now a path to forming a union with your vassal. You will have to form your vassal into a client state first, and after that you can form a personal union with them. It is also possible to form a client state from a personal union.
-
-(this line added to stop vscode from formatting this file weirdly)
