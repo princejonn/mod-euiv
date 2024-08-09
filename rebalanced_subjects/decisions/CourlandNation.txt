@@ -83,7 +83,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -213,7 +214,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

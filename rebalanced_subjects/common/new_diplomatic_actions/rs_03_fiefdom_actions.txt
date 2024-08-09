@@ -1,0 +1,88 @@
+designate_fiefdom = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		government = monarchy
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = consolidated_vassal
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		custom_trigger_tooltip = {
+			tooltip = NUM_FIEFDOMS_ALLOWED_TOOLTIP
+			NOT = {
+				num_subjects_of_type_with_liberty_desire = {
+					type = fiefdom
+					liberty_desire = 0
+					value = 5
+				}
+			}
+		}
+		FROM = {
+			NOT = {
+				government_rank = 2
+			}
+		}
+		FROM = {
+			NOT = {
+				num_of_cities = 2
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = fiefdom
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_fiefdom = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = fiefdom
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_liberty_desire = 25
+			add_opinion = {
+				who = ROOT
+				modifier = broke_fiefdom
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

@@ -1,0 +1,123 @@
+designate_bishopric = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		OR = {
+			government = monarchy
+			government = theocracy
+			government = republic
+		}
+		OR = {
+			religion = catholic
+			religion = orthodox
+			religion = protestant
+		}
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = consolidated_vassal
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		custom_trigger_tooltip = {
+			tooltip = NUM_BISHOPRICS_ALLOWED_TOOLTIP
+			NOT = {
+				num_subjects_of_type_with_liberty_desire = {
+					type = bishopric
+					liberty_desire = 0
+					value = 3
+				}
+			}
+		}
+		FROM = {
+			NOT = {
+				government_rank = 2
+			}
+		}
+		FROM = {
+			NOT = {
+				num_of_cities = 4
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = bishopric
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		hidden_effect = {
+			FROM = {
+				change_religion = ROOT
+				change_government = theocracy
+				set_government_rank = 1
+				if = {
+					limit = {
+						ROOT = {
+							religion = orthodox
+						}
+					}
+					add_government_reform = orthodox_patriarchate_reform
+				}
+				else = {
+					add_government_reform = leading_clergy_reform
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							has_building = cathedral
+						}
+					}
+					add_building = cathedral
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_bishopric = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = bishopric
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_liberty_desire = 25
+			add_opinion = {
+				who = ROOT
+				modifier = broke_bishopric
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

@@ -1,4 +1,4 @@
-fief = {
+fiefdom = {
 	copy_from = vassal
 	count = vassal
 	# Graphics
@@ -14,8 +14,9 @@ fief = {
 	liberty_desire_same_dynasty = -50
 	max_government_rank = 1
 	military_focus = 0
-	relative_power_class = 1
+	relative_power_class = 0
 	should_quit_wars_on_activation = yes
+	takes_diplo_slot = no
 	transfer_trade_if_merchant_republic = yes
 	# Overlord Properties:
 	forcelimit_to_overlord = 1
@@ -29,18 +30,17 @@ fief = {
 	divert_trade = yes
 	scutage = yes
 	# Immediate Subject Interactions:
+	enforce_culture = yes
 	place_relative_on_throne = yes
-	sacrifice_heir = yes
-	sacrifice_ruler = yes
-	seize_territory = yes
+	seize_territory = no
 	# War Interactions:
 	restoration_cb = cb_disloyal_vassal
 	# Overlord Modifiers:
 	modifier_overlord = {
-		modifier = has_fief_subject
+		modifier = has_fiefdom_subject
 	}
 	modifier_overlord = {
-		modifier = has_fief_num_cities_bonus
+		modifier = has_fiefdom_num_cities_bonus
 		trigger = {
 			NOT = {
 				num_of_cities = 2
@@ -50,15 +50,15 @@ fief = {
 		expiration_message_subject = FIEFTOOLARGEUS
 	}
 	modifier_overlord = {
-		modifier = has_fief_province_dev_bonus
+		modifier = has_fiefdom_province_dev_bonus
 		trigger = {
 			any_owned_province = {
-				development = 15
+				development = 30
 			}
 		}
 	}
 	modifier_overlord = {
-		modifier = has_fief_province_trade_bonus
+		modifier = has_fiefdom_province_trade_bonus
 		trigger = {
 			any_owned_province = {
 				OR = {
@@ -71,28 +71,26 @@ fief = {
 	# Subject Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
-		modifier = is_fief_nation
+		modifier = is_fiefdom_nation
 	}
 	modifier_subject = {
-		modifier = is_fief_num_cities_bonus
+		modifier = is_fiefdom_num_cities_bonus
 		trigger = {
 			NOT = {
 				num_of_cities = 2
 			}
 		}
-		expiration_message_overlord = FIEFTOOLARGE
-		expiration_message_subject = FIEFTOOLARGEUS
 	}
 	modifier_subject = {
-		modifier = is_fief_province_dev_bonus
+		modifier = is_fiefdom_province_dev_bonus
 		trigger = {
 			any_owned_province = {
-				development = 15
+				development = 30
 			}
 		}
 	}
 	modifier_subject = {
-		modifier = is_fief_province_trade_bonus
+		modifier = is_fiefdom_province_trade_bonus
 		trigger = {
 			any_owned_province = {
 				OR = {
@@ -127,50 +125,6 @@ fief = {
 			}
 		}
 	}
-	overlord_opinion_modifier = is_fief
-	subject_opinion_modifier = is_fief
-}
-
-incorporated_fief = {
-	copy_from = fief
-	count = fief
-	# Properties:
-	takes_diplo_slot = no
-	# Immediate Subject Interactions:
-	enforce_culture = yes
-	# Modifiers (Overlord):
-	modifier_overlord = {
-		modifier = has_incorporated_fief_bonus
-		trigger = {
-			NOT = {
-				num_of_cities = 2
-			}
-		}
-		expiration_message_overlord = FIEFTOOLARGE
-		expiration_message_subject = FIEFTOOLARGEUS
-	}
-	# Opinion:
-	overlord_opinion_modifier = is_incorporated_fief
-	subject_opinion_modifier = is_incorporated_fief
-}
-
-consolidated_fief = {
-	copy_from = incorporated_fief
-	count = fief
-	# Properties:
-	relative_power_class = 0
-	# Modifiers (Overlord):
-	modifier_overlord = {
-		modifier = has_consolidated_fief_bonus
-		trigger = {
-			NOT = {
-				num_of_cities = 2
-			}
-		}
-		expiration_message_overlord = FIEFTOOLARGE
-		expiration_message_subject = FIEFTOOLARGEUS
-	}
-	# Opinion:
-	overlord_opinion_modifier = is_consolidated_fief
-	subject_opinion_modifier = is_consolidated_fief
+	overlord_opinion_modifier = is_fiefdom
+	subject_opinion_modifier = is_fiefdom
 }

@@ -4,7 +4,9 @@ In this mod I'm aiming to fix and rebalance a couple of things that deal with su
 
 [h2]Features[/h2]
 [list]
-  [*] Fiefs
+  [*] Bishoprics
+  [*] Crusader Orders
+  [*] Fiefdoms
   [*] Protectorates
   [*] Client States
   [*] Viceroyalties
@@ -15,11 +17,33 @@ In this mod I'm aiming to fix and rebalance a couple of things that deal with su
   [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
 [/list]
 
-[h2]Fiefs[/h2]
-New subject type that is a subset of vassals, only with heavy requirements on being small. This is to simulate the small fiefdoms that were common in the middle ages. The following bonuses are awarded fiefs:
+[h2]Bishoprics[/h2]
+New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence and cannot be annexed. The following bonuses are awarded bishoprics if they stay at 1 province:
 
 [list]
-  [*] +25 Governing Capacity (when your Fief has 1 and only 1 province)
+  [*] +1% Missionary Strength
+  [*] -10% Missionary Maintenance Cost
+  [*] +5% Global Tax Modifier
+[/list]
+
+[h2]Crusader Orders[/h2]
+New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. The following bonuses are awarded crusader orders if they stay at 1 province:
+
+[list]
+  [*] +10% Discipline
+  [*] +10% Morale Damage
+  [*] +10% Morale Damage Received
+  [*] +25% Land Forcelimit
+  [*] +25% Land Maintenance Cost
+  [*] +25% Manpower
+  [*] +25% Manpower Recovery Speed
+[/list]
+
+[h2]Fiefdoms[/h2]
+New subject type that is a subset of vassals, only with heavy requirements on being small. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. The following bonuses are awarded fiefs if they stay at 1 province:
+
+[list]
+  [*] +100 Governing Capacity (when your Fief has 1 and only 1 province)
   [*] +1 Diplomatic Relations (when your Fief has 15+ development in its province)
   [*] +5% increased Global Trade Power (when your Fief is landed in an Estuary or Trade Center
 [/list]

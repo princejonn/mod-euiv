@@ -1,25 +1,19 @@
 sovereign_personal_union = {
 	copy_from = personal_union
 	count = personal_union
-	# Graphics:
-	sprite = GFX_court_union
-	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
-	diplomacy_subject_sprite = GFX_diplomacy_inunion
-	# Properties:
-	base_liberty_desire = -25
-	can_be_annexed = no
-	can_be_integrated = no
-	can_union_break = no
-	disable_inheritance = yes
-	liberty_desire_negative_prestige = 0.25
-	takes_diplo_slot = no
-	# Interactions (Continuous):
-	divert_trade = yes
-	send_officers = yes
-	subsidize_armies = yes
-	# Interactions (Immediate):
-	enforce_culture = yes
-	press_sailors = yes
-	send_additional_troops = yes
-	siphon_income = yes
+}
+
+fief = {
+	copy_from = fiefdom
+	count = vassal
+}
+
+incorporated_fief = {
+	copy_from = fiefdom
+	count = vassal
+}
+
+consolidated_fief = {
+	copy_from = fiefdom
+	count = vassal
 }

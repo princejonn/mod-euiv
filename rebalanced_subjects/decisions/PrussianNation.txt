@@ -161,7 +161,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			random_owned_province = {
 				limit = {
@@ -474,7 +475,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -711,7 +713,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

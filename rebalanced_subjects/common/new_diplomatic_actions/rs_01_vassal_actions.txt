@@ -109,7 +109,6 @@ incorporate_vassal = {
 			OR = {
 				is_subject_of_type = vassal
 				is_subject_of_type = march
-				is_subject_of_type = fief
 				is_subject_of_type = protectorate
 				is_subject_of_type = client_state
 			}
@@ -184,18 +183,6 @@ incorporate_vassal = {
 		else_if = {
 			limit = {
 				FROM = {
-					is_subject_of_type = fief
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_fief
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
 					is_subject_of_type = protectorate
 				}
 			}
@@ -243,7 +230,6 @@ consolidate_vassal = {
 			OR = {
 				is_subject_of_type = incorporated_vassal
 				is_subject_of_type = incorporated_march
-				is_subject_of_type = incorporated_fief
 				is_subject_of_type = incorporated_protectorate
 				is_subject_of_type = incorporated_client_state
 			}
@@ -311,18 +297,6 @@ consolidate_vassal = {
 			}
 			create_subject = {
 				subject_type = consolidated_march
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_fief
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_fief
 				subject = FROM
 				keep_liberty_desire = yes
 			}

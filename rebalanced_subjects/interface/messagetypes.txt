@@ -4015,7 +4015,7 @@ MARCHTOOLARGEUS = {
 	}
 }
 
-FIEFTOOLARGE = {
+BISHOPRICTOOLARGE = {
 	msg_icontype = "gov"
 	category = "cat_government"
 	option = yes
@@ -4028,7 +4028,59 @@ FIEFTOOLARGE = {
 	}
 }
 
-FIEFTOOLARGEUS = {
+BISHOPRICTOOLARGEUS = {
+	msg_icontype = "gov"
+	category = "cat_government"
+	option = yes
+	to_me = {
+		log = yes
+		onmap = no
+		popup = yes
+		pausepopup = no
+		icon = no
+	}
+}
+
+CRUSADERORDERTOOLARGE = {
+	msg_icontype = "gov"
+	category = "cat_government"
+	option = yes
+	to_me = {
+		log = yes
+		onmap = no
+		popup = yes
+		pausepopup = no
+		icon = no
+	}
+}
+
+CRUSADERORDERTOOLARGEUS = {
+	msg_icontype = "gov"
+	category = "cat_government"
+	option = yes
+	to_me = {
+		log = yes
+		onmap = no
+		popup = yes
+		pausepopup = no
+		icon = no
+	}
+}
+
+FIEFDOMTOOLARGE = {
+	msg_icontype = "gov"
+	category = "cat_government"
+	option = yes
+	to_me = {
+		log = yes
+		onmap = no
+		popup = yes
+		pausepopup = no
+		icon = no
+	}
+}
+
+FIEFDOMTOOLARGEUS = {
 	msg_icontype = "gov"
 	category = "cat_government"
 	option = yes

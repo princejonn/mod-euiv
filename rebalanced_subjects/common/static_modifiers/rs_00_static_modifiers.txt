@@ -37,31 +37,85 @@ is_march_bonus = {
 	naval_maintenance_modifier = -0.2
 }
 
-# Fief
-has_fief_subject = {
+# Bishopric
+has_bishopric_subject = {
+	tolerance_own = 1
+}
+
+has_bishopric_num_cities_bonus = {
+	global_missionary_strength = 0.01
+	global_tax_modifier = 0.025
+	missionary_maintenance_cost = -0.05
+}
+
+is_bishopric_nation = {
+	global_tax_income = 4
+	land_forcelimit = -6
+	naval_forcelimit = -12
+}
+
+is_bishopric_num_cities_bonus = {
+	global_trade_goods_size_modifier = 0.2
+	local_production_efficiency = 0.2
+	local_prosperity_growth = 0.2
+	local_tax_modifier = 0.2
+}
+
+# Crusader Order
+has_crusader_order_subject = {
+	global_manpower_modifier = -0.05
+	land_forcelimit = -4
+}
+
+has_crusader_order_num_cities_bonus = {
+	discipline = 0.05
+	land_maintenance_modifier = -0.05
+	manpower_recovery_speed = 0.05
+	morale_damage = 0.05
+	morale_damage_received = -0.05
+}
+
+is_crusader_order_nation = {
+	global_tax_income = 2
+	land_forcelimit = 6
+	naval_forcelimit = 6
+}
+
+is_crusader_order_num_cities_bonus = {
+	discipline = 0.1
+	morale_damage = 0.1
+	morale_damage_received = -0.1
+	land_forcelimit_modifier = 0.25
+	land_maintenance_modifier = -0.25
+	global_manpower_modifier = 0.25
+	manpower_recovery_speed = 0.25
+}
+
+# Fiefdom
+has_fiefdom_subject = {
 	land_forcelimit = 2
 	naval_forcelimit = 2
 }
 
-has_fief_num_cities_bonus = {
-	governing_capacity = 25
+has_fiefdom_num_cities_bonus = {
+	governing_capacity = 100
 }
 
-has_fief_province_dev_bonus = {
+has_fiefdom_province_dev_bonus = {
 	diplomatic_reputation = 1
 }
 
-has_fief_province_trade_bonus = {
+has_fiefdom_province_trade_bonus = {
 	global_trade_power = 0.05
 }
 
-is_fief_nation = {
+is_fiefdom_nation = {
 	global_tax_income = -6
 	land_forcelimit = -2
 	naval_forcelimit = -2
 }
 
-is_fief_num_cities_bonus = {
+is_fiefdom_num_cities_bonus = {
 	global_manpower_modifier = 0.1
 	land_forcelimit_modifier = 0.1
 	land_maintenance_modifier = -0.1
@@ -70,20 +124,12 @@ is_fief_num_cities_bonus = {
 	naval_maintenance_modifier = -0.1
 }
 
-is_fief_province_dev_bonus = {
+is_fiefdom_province_dev_bonus = {
 	global_tax_income = 2
 }
 
-is_fief_province_trade_bonus = {
+is_fiefdom_province_trade_bonus = {
 	global_trade_power = 0.1
-}
-
-has_incorporated_fief_bonus = {
-	governing_capacity = 25
-}
-
-has_consolidated_fief_bonus = {
-	governing_capacity = 25
 }
 
 # Protectorate

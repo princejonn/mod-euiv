@@ -16,22 +16,36 @@ in_consolidated_union = {
 	opinion = 30
 }
 
-# Fief
-is_fief = {
+# Bishopric
+is_bishopric = {
 	opinion = 60
 }
 
-is_incorporated_fief = {
-	opinion = 70
-}
-
-is_consolidated_fief = {
-	opinion = 80
-}
-
-broke_fief = {
-	opinion = -50
+broke_bishopric = {
+	opinion = -100
 	yearly_decay = 3
+}
+
+# Fiefdom
+is_fiefdom = {
+	opinion = 60
+}
+
+broke_fiefdom = {
+	opinion = -100
+	yearly_decay = 3
+	min = -200
+}
+
+# Crusader Order
+is_crusader_order = {
+	opinion = 60
+}
+
+broke_crusader_order = {
+	opinion = -100
+	yearly_decay = 3
+	min = -200
 }
 
 # Protectorate
@@ -50,6 +64,7 @@ is_consolidated_protectorate = {
 broke_protectorate = {
 	opinion = -50
 	yearly_decay = 3
+	min = -200
 }
 
 # Client State
@@ -72,6 +87,6 @@ is_viceroyalty = {
 
 broke_viceroyalty = {
 	opinion = -50
-	yearly_decay = 5
+	yearly_decay = 3
 	min = -100
 }

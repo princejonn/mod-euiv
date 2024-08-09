@@ -4,7 +4,9 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_livonia_flag }
+			NOT = {
+				has_country_flag = formed_livonia_flag
+			}
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -13,7 +15,9 @@ country_decisions = {
 				tag = RIG
 				tag = LIV
 			}
-			NOT = { exists = LVA }
+			NOT = {
+				exists = LVA
+			}
 			OR = {
 				ai = no
 				is_religion_enabled = protestant
@@ -24,18 +28,22 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 37	 # Liefland
-				province_id = 4241	 # Wenden
-				province_id = 273	 # Letgallen
+				province_id = 37				# Liefland
+				province_id = 4241				# Wenden
+				province_id = 273				# Letgallen
 			}
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					is_core = ROOT
+				}
 			}
 		}
 		allow = {
 			adm_tech = 10
-			is_nomad = no			
+			is_nomad = no
 			is_at_war = no
 			OR = {
 				religion = protestant
@@ -43,37 +51,47 @@ country_decisions = {
 				religion = hussite
 				religion = anglican
 			}
-			owns_core_province = 37		 # Liefland
-			owns_core_province = 4241	 # Wenden
-			owns_core_province = 273	 # Letgallen
-			37 = { 					# Liefland
+			owns_core_province = 37			# Liefland
+			owns_core_province = 4241			# Wenden
+			owns_core_province = 273			# Letgallen
+			37 = {
+				# Liefland
 				is_state = yes
 			}
 		}
 		effect = {
-			37 = { # Semigallia
+			37 = {
+				# Semigallia
 				move_capital_effect = yes
 			}
 			change_tag = LVA
 			on_change_tag_effect = yes
 			if = {
 				limit = {
-					NOT = { accepted_culture = latvian }
+					NOT = {
+						accepted_culture = latvian
+					}
 				}
 				add_accepted_culture = latvian
 			}
 			if = {
 				limit = {
-					NOT = { accepted_culture = estonian }
+					NOT = {
+						accepted_culture = estonian
+					}
 				}
 				add_accepted_culture = estonian
 			}
 			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
-			add_prestige = 10	
+			add_prestige = 10
 			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = {
+					id = ideagroups.1
+				}				#Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -86,8 +104,13 @@ country_decisions = {
 				change_government = monarchy
 				#set_legacy_government = feudal_monarchy
 				every_neighbor_country = {
-					limit = { government = monarchy }
-					add_opinion = { who = ROOT modifier = secularized_monastic_order }
+					limit = {
+						government = monarchy
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = secularized_monastic_order
+					}
 				}
 			}
 			set_country_flag = formed_livonia_flag
@@ -96,19 +119,26 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { owns_core_province = 37 }
-				NOT = { owns_core_province = 4241 }
-				NOT = { owns_core_province = 273 }
+				NOT = {
+					owns_core_province = 37
+				}
+				NOT = {
+					owns_core_province = 4241
+				}
+				NOT = {
+					owns_core_province = 273
+				}
 			}
 		}
 	}
-
 	livonian_nation_batlic_german = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_livonia_flag }
+			NOT = {
+				has_country_flag = formed_livonia_flag
+			}
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -120,7 +150,9 @@ country_decisions = {
 				}
 			}
 			primary_culture = baltic_german
-			NOT = { exists = LVA }
+			NOT = {
+				exists = LVA
+			}
 			OR = {
 				ai = no
 				is_religion_enabled = protestant
@@ -131,18 +163,22 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 37	 # Liefland
-				province_id = 4241	 # Wenden
-				province_id = 273	 # Letgallen
+				province_id = 37				# Liefland
+				province_id = 4241				# Wenden
+				province_id = 273				# Letgallen
 			}
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					is_core = ROOT
+				}
 			}
 		}
 		allow = {
 			adm_tech = 10
-			is_nomad = no			
+			is_nomad = no
 			is_at_war = no
 			OR = {
 				religion = protestant
@@ -150,15 +186,17 @@ country_decisions = {
 				religion = hussite
 				religion = anglican
 			}
-			owns_core_province = 37		 # Liefland
-			owns_core_province = 4241	 # Wenden
-			owns_core_province = 273	 # Letgallen
-			37 = { 					# Liefland
+			owns_core_province = 37			# Liefland
+			owns_core_province = 4241			# Wenden
+			owns_core_province = 273			# Letgallen
+			37 = {
+				# Liefland
 				is_state = yes
 			}
 		}
 		effect = {
-			37 = { # Semigallia
+			37 = {
+				# Semigallia
 				move_capital_effect = yes
 			}
 			if = {
@@ -174,25 +212,35 @@ country_decisions = {
 			on_change_tag_effect = yes
 			if = {
 				limit = {
-					NOT = { accepted_culture = latvian }
+					NOT = {
+						accepted_culture = latvian
+					}
 				}
 				add_accepted_culture = latvian
 			}
 			if = {
 				limit = {
-					NOT = { accepted_culture = estonian }
+					NOT = {
+						accepted_culture = estonian
+					}
 				}
 				add_accepted_culture = estonian
 			}
 			restore_country_name_effect = yes
 			if = {
-				limit = { has_dlc = "Lions of the North" }
+				limit = {
+					has_dlc = "Lions of the North"
+				}
 				swap_non_generic_missions = yes
 			}
-			add_prestige = 10	
+			add_prestige = 10
 			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = {
+					id = ideagroups.1
+				}				#Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -205,8 +253,13 @@ country_decisions = {
 				change_government = monarchy
 				#set_legacy_government = feudal_monarchy
 				every_neighbor_country = {
-					limit = { government = monarchy }
-					add_opinion = { who = ROOT modifier = secularized_monastic_order }
+					limit = {
+						government = monarchy
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = secularized_monastic_order
+					}
 				}
 			}
 			set_country_flag = formed_livonia_flag
@@ -215,9 +268,15 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { owns_core_province = 37 }
-				NOT = { owns_core_province = 4241 }
-				NOT = { owns_core_province = 273 }
+				NOT = {
+					owns_core_province = 37
+				}
+				NOT = {
+					owns_core_province = 4241
+				}
+				NOT = {
+					owns_core_province = 273
+				}
 			}
 		}
 	}
