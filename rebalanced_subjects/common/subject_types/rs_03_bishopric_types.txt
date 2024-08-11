@@ -2,9 +2,9 @@ bishopric = {
 	copy_from = vassal
 	count = vassal
 	# Graphics
-	sprite = GFX_icon_appanage
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+	sprite = GFX_icon_hereditary_pronoia_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_hereditary_pronoia_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_hereditary_pronoia_subject_type
 	# Properties
 	base_liberty_desire = -15
 	forms_trade_companies = no

@@ -2,9 +2,9 @@ crusader_order = {
 	copy_from = vassal
 	count = vassal
 	# Graphics
-	sprite = GFX_icon_appanage
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
 	# Properties
 	base_liberty_desire = -15
 	forms_trade_companies = no
