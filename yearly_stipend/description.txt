@@ -1,4 +1,4 @@
-Sometimes you want to have a really chill run, with no pressure, no stress, no worries. This is the run for you.
+Sometimes you want to have a really chill run, with no pressure, no stress, no worries. This is the run for you. It also works as a sort of handicap for multiplayer sessions since it's specific for countries.
 
 This mod gives you the decision to grant your nation a yearly stipend. It comes in flavours of x1, x2, x3, x5, x10, and x25.
 
