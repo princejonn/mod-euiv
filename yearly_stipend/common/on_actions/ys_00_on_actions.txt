@@ -1,0 +1,3 @@
+on_yearly_pulse = {
+	give_yearly_stipend = yes
+}

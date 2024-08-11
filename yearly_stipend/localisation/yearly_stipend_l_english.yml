@@ -1,0 +1,26 @@
+﻿l_english:
+  # decisions
+
+  enable_yearly_stipend_title: "ENABLE: Yearly Stipend"
+  enable_yearly_stipend_desc: "The yearly stipend will give your nation a yearly boost of §YDucats§!, §YYearly Income§!, §YMilitary Tradition§!, §YMonarch Points§!, §YLegitimacy§!, §YPrestige§!, and Estates §YLand Share§! as well as Estates §YLoyalty§!."
+
+  disable_yearly_stipend_title: "DISABLE: Yearly Stipend"
+  disable_yearly_stipend_desc: "The yearly stipend will no longer be paid to your nation."
+
+  # events
+
+  yearly_stipend.1.title: "Yearly Stipend"
+  yearly_stipend.1.desc: "The stipend will give your nation a yearly boost of:\n§G+100§! Ducats.\n§G+100 Monarch Points.\n§G+10 Legitimacy.\n§G+10 Prestige.\n§G+1 Yearly Income\n§G+1 Military Tradition.\n§G+1 Crownland.\n§G+1 Estates Loyalty."
+  yearly_stipend.1.a: "Grant Yearly Stipend (x1)"
+  yearly_stipend.1.a.tt: "Example: §G+100! §YDucats§!"
+  yearly_stipend.1.b: "Increase Yearly Stipend (x2)"
+  yearly_stipend.1.b.tt: "Example: §G+200! §YDucats§!"
+  yearly_stipend.1.c: "Increase Yearly Stipend (x3)"
+  yearly_stipend.1.c.tt: "Example: §G+300! §YDucats§!"
+  yearly_stipend.1.d: "Increase Yearly Stipend (x5)"
+  yearly_stipend.1.d.tt: "Example: §G+500! §YDucats§!"
+  yearly_stipend.1.e: "Increase Yearly Stipend (x10)"
+  yearly_stipend.1.e.tt: "Example: §G+1000! §YDucats§!"
+  yearly_stipend.1.f: "Increase Yearly Stipend (x25)"
+  yearly_stipend.1.f.tt: "Example: §G+2500! §YDucats§!"
+  yearly_stipend.1.g: "Nevermind"
