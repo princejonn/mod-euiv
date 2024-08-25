@@ -23,15 +23,8 @@ designate_bishopric = {
 	}
 	is_allowed = {
 		is_at_war = no
-		custom_trigger_tooltip = {
-			tooltip = NUM_BISHOPRICS_ALLOWED_TOOLTIP
-			NOT = {
-				num_subjects_of_type_with_liberty_desire = {
-					type = bishopric
-					liberty_desire = 0
-					value = 3
-				}
-			}
+		NOT = {
+			bishopric = 3
 		}
 		FROM = {
 			NOT = {

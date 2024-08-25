@@ -4,23 +4,13 @@ form_client_state_from_vassal = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = consolidated_vassal
-			}
+			is_subject_of_type = vassal
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 25
-			}
 		}
 		FROM = {
 			has_opinion = {
@@ -30,55 +20,21 @@ form_client_state_from_vassal = {
 		}
 		FROM = {
 			NOT = {
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 		}
-		# OR = {
-		# 	NOT = {
-		# 		has_country_flag = changed_subject_type_cooldown_flag
-		# 	}
-		# 	had_country_flag = {
-		# 		flag = changed_subject_type_cooldown_flag
-		# 		days = 3650
-		# 	}
-		# }
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+			}
+		}
 	}
 	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = vassal
-				}
-			}
-			create_subject = {
-				subject_type = client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_vassal
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = consolidated_vassal
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
+		create_subject = {
+			subject_type = client_state
+			subject = FROM
+			keep_liberty_desire = yes
 		}
 		FROM = {
 			capital_scope = {
@@ -87,7 +43,6 @@ form_client_state_from_vassal = {
 			add_liberty_desire = 10
 			add_stability = -1
 		}
-		set_country_flag = changed_subject_type_cooldown_flag
 	}
 	on_decline = {
 	}
@@ -102,25 +57,13 @@ form_client_state_from_personal_union = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = personal_union
-				is_subject_of_type = incorporated_personal_union
-				is_subject_of_type = consolidated_personal_union
-				is_subject_of_type = integrated_personal_union
-				is_subject_of_type = theodoro_personal_union
-			}
+			is_subject_of_type = personal_union
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
 			truce_with = FROM
-		}
-		FROM = {
-			years_in_union_under = {
-				who = ROOT
-				years = 25
-			}
 		}
 		FROM = {
 			has_opinion = {
@@ -130,61 +73,21 @@ form_client_state_from_personal_union = {
 		}
 		FROM = {
 			NOT = {
-				liberty_desire = 25
+				liberty_desire = 10
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
+		FROM = {
+			years_in_union_under = {
+				who = ROOT
+				years = 25
 			}
 		}
 	}
 	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						is_subject_of_type = personal_union
-						is_subject_of_type = theodoro_personal_union
-					}
-				}
-			}
-			create_subject = {
-				subject_type = client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					OR = {
-						is_subject_of_type = incorporated_personal_union
-						is_subject_of_type = integrated_personal_union
-					}
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = consolidated_personal_union
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
+		create_subject = {
+			subject_type = client_state
+			subject = FROM
+			keep_liberty_desire = yes
 		}
 		FROM = {
 			define_ruler = {
@@ -203,6 +106,9 @@ form_client_state_from_personal_union = {
 				max_random_adm = 6
 				max_random_dip = 6
 				max_random_mil = 6
+				culture = ROOT
+				dynasty = ROOT
+				religion = ROOT
 				male = yes
 				age = 0
 			}
@@ -212,7 +118,116 @@ form_client_state_from_personal_union = {
 			add_liberty_desire = 10
 			add_stability = -1
 		}
-		set_country_flag = changed_subject_type_cooldown_flag
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+incorporate_client_state = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		can_incorporate_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = client_state
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			incorporated_client_state = 5
+		}
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = incorporated_client_state
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+consolidate_client_state = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		can_consolidate_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = incorporated_client_state
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			consolidated_client_state = 5
+		}
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = consolidated_client_state
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+		FROM = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+				}
+				add_core = ROOT
+			}
+		}
 	}
 	on_decline = {
 	}

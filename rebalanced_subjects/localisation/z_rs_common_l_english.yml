@@ -24,9 +24,9 @@
   CRUSADER_ORDER_FEMALE_HEIR: "Commander"
 
   FIEFDOM: "Fiefdom"
-  FIEFDOM_MALE_LEADER: "Earl"
+  FIEFDOM_MALE_LEADER: "Count"
   FIEFDOM_FEMALE_LEADER: "Countess"
-  FIEFDOM_CONSORT_MALE: "Earl-Consort"
+  FIEFDOM_CONSORT_MALE: "Count-Consort"
   FIEFDOM_CONSORT_FEMALE: "Countess"
   FIEFDOM_MALE_HEIR: "Baron"
   FIEFDOM_FEMALE_HEIR: "Baroness"
@@ -60,30 +60,20 @@
   VICEROYALTY_HEIR: "Captain General"
 
   # new diplomatic actions
-  form_vassal_from_client_state: "Form Vassal"
-  form_vassal_from_client_state_title: "Form Vassal"
-  form_vassal_from_client_state_tooltip: "Convert [From.GetName] to a Vassal.\nCreating a §YVassal§! from a §YClient State§! is generally not recommended, and should only be done if you want to do something special with them, like making them a §YFiefdom§!, §YMarch§!, or §YProtectorate§!."
-  form_vassal_from_client_state_desc: "Convert [From.GetName] to a Vassal.\nCreating a §YVassal§! from a §YClient State§! is generally not recommended, and should only be done if you want to do something special with them, like making them a §YFiefdom§!, §YMarch§!, or §YProtectorate§!."
 
-  incorporate_vassal: "Incorporate"
-  incorporate_vassal_title: "Incorporate"
+  ## vassal actions
+
+  incorporate_vassal: "Incorporate Vassal"
+  incorporate_vassal_title: "Incorporate Vassal"
   incorporate_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal. This will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other vassals when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!."
-  incorporate_vassal_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Vassal§!.\n\nThis will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other vassals when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nIncorporation §Y[From.GetName]§! cannot be undone."
+  incorporate_vassal_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Vassal§!.\n\nThis will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other vassals when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
 
-  consolidate_vassal: "Consolidate"
-  consolidate_vassal_title: "Consolidate"
+  consolidate_vassal: "Consolidate Vassal"
+  consolidate_vassal_title: "Consolidate Vassal"
   consolidate_vassal_tooltip: "Convert [From.GetName] to a Consolidated Vassal. This will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-75§!."
-  consolidate_vassal_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Vassal§!.\n\nThis will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-75§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nConsolidation §Y[From.GetName]§! cannot be undone."
+  consolidate_vassal_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Vassal§!.\n\nThis will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
 
-  designate_incorporated_march: "Designate March"
-  designate_incorporated_march_title: "Designate March"
-  designate_incorporated_march_tooltip: "Convert [From.GetName] to a March. A border territory granted to a noble with greater military autonomy to defend against external threats. Marches had more autonomy in military matters but still owed loyalty to the overlord. Marches cannot be annexed."
-  designate_incorporated_march_desc: "Convert [From.GetName] to a March. A border territory granted to a noble with greater military autonomy to defend against external threats. Marches had more autonomy in military matters but still owed loyalty to the overlord. Marches cannot be annexed."
-
-  revoke_incorporated_march: "Revoke March"
-  revoke_incorporated_march_title: "Revoke March"
-  revoke_incorporated_march_tooltip: "Convert [From.GetName] to a Vassal."
-  revoke_incorporated_march_desc: "Convert [From.GetName] to a Vassal."
+  ## bishopric actions
 
   designate_bishopric: "Designate Bishopric"
   designate_bishopric_title: "Designate Bishopric"
@@ -95,6 +85,10 @@
   revoke_bishopric_tooltip: "Convert [From.GetName] to a Vassal."
   revoke_bishopric_desc: "Convert [From.GetName] to a Vassal."
 
+  TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP: "You need to fully §YAnnex§! or §YVassalize§! and §YDesignate§! one of the existing Monastic Orders (Knights, Teutonic, or Livonian) to be able to designate a Crusader Order."
+
+  ## crusader order actions
+
   designate_crusader_order: "Designate Crusader Order"
   designate_crusader_order_title: "Designate Crusader Order"
   designate_crusader_order_tooltip: "Convert [From.GetName] to a Crusader Order. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed."
@@ -104,6 +98,8 @@
   revoke_crusader_order_title: "Revoke Crusader Order"
   revoke_crusader_order_tooltip: "Convert [From.GetName] to a Vassal."
   revoke_crusader_order_desc: "Convert [From.GetName] to a Vassal."
+
+  ## fiefdom actions
 
   designate_fiefdom: "Designate Fiefdom"
   designate_fiefdom_title: "Designate Fiefdom"
@@ -115,6 +111,8 @@
   revoke_fiefdom_tooltip: "Convert [From.GetName] to a Vassal."
   revoke_fiefdom_desc: "Convert [From.GetName] to a Vassal."
 
+  ## protectorate actions
+
   designate_protectorate: "Designate Protectorate"
   designate_protectorate_title: "Designate Protectorate"
   designate_protectorate_tooltip: "Convert [From.GetName] to a Protectorate. A state that manages its own domestic affairs but relies on the protecting overlord for defense and foreign relations. Protectorates cannot be annexed."
@@ -125,40 +123,51 @@
   revoke_protectorate_tooltip: "Convert [From.GetName] to a Vassal."
   revoke_protectorate_desc: "Convert [From.GetName] to a Vassal."
 
-  form_personal_union_from_client_state: "Form Union"
-  form_personal_union_from_client_state_title: "Form Union"
-  form_personal_union_from_client_state_tooltip: "Convert [From.GetName] to a Personal Union. Personal Unions are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
-  form_personal_union_from_client_state_desc: "Convert [From.GetName] to a Personal Union. Personal Unions are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
-
-  incorporate_personal_union: "Incorporate Union"
-  incorporate_personal_union_title: "Incorporate Union"
-  incorporate_personal_union_tooltip: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no §YDiplomatic Relations§!. They will however reduce our §YGoverning Capacity§!."
-  incorporate_personal_union_desc: "Convert [From.GetName] to an Incorporated Personal Union, which will make them easier to Integrate and make them cost no §YDiplomatic Relations§!. They will however reduce our §YGoverning Capacity§!."
+  ## client state actions
 
   form_client_state_from_vassal: "Form Client State"
   form_client_state_from_vassal_title: "Form Client State"
   form_client_state_from_vassal_tooltip: "Convert [From.GetName] to a Client State. Client States are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
-  form_client_state_from_vassal_desc: "Convert [From.GetName] to a Client State. Client States are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
+  form_client_state_from_vassal_desc: "Convert [From.GetName] to a Client State. Client States are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country.\n\nForming a Client State from §Y[From.GetName]§! cannot be undone."
 
   form_client_state_from_personal_union: "Form Client State"
   form_client_state_from_personal_union_title: "Form Client State"
   form_client_state_from_personal_union_tooltip: "Convert [From.GetName] to a Client State. Client States are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
-  form_client_state_from_personal_union_desc: "Convert [From.GetName] to a Client State. Client States are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
+  form_client_state_from_personal_union_desc: "Convert [From.GetName] to a Client State. Client States are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country.\n\nForming a Client State from §Y[From.GetName]§! cannot be undone."
+
+  incorporate_client_state: "Incorporate Client State"
+  incorporate_client_state_title: "Incorporate Client State"
+  incorporate_client_state_tooltip: "Convert [From.GetName] to an Incorporated Client State. This will make them §G-33.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other client States when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!."
+  incorporate_client_state_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Client State§!.\n\nThis will make them §G-33.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other client States when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Client State.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
+
+  consolidate_client_state: "Consolidate Client State"
+  consolidate_client_state_title: "Consolidate Client State"
+  consolidate_client_state_tooltip: "Convert [From.GetName] to a Consolidated Client State. This will make them §G-66.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!."
+  consolidate_client_state_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Client State§!.\n\nThis will make them §G-66.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
+
+  ## personal union actions
+
+  incorporate_personal_union: "Incorporate Union"
+  incorporate_personal_union_title: "Incorporate Union"
+  incorporate_personal_union_tooltip: "Convert [From.GetName] to an Incorporated Union. This will make them §G-25.00%§! easier to §YDiplomatically Integrate§!. They will not consider the power of other unions when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots."
+  incorporate_personal_union_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Union§!.\n\nThis will make them §G-25.00%§! easier to §YDiplomatically Integrate§!. They will not consider the power of other Unions when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y50§! Years to §YDiplomatically Integrate§! the Union.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
+
+  consolidate_personal_union: "Consolidate Union"
+  consolidate_personal_union_title: "Consolidate Union"
+  consolidate_personal_union_tooltip: "Convert [From.GetName] to a Consolidated Union. This will make them §G-50.00%§! easier to §YDiplomatically Integrate§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots."
+  consolidate_personal_union_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Union§!.\n\nThis will make them §G-50.00%§! easier to §YDiplomatically Integrate§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y50§! Years to §YDiplomatically Integrate§! the Union.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
+
+  ## viceroyalty actions
 
   revoke_viceroyalty: "Revoke Viceroyalty"
   revoke_viceroyalty_title: "Revoke Viceroyalty"
   revoke_viceroyalty_tooltip: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
   revoke_viceroyalty_desc: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
 
-  # tooltips
-  NUM_BISHOPRICS_ALLOWED_TOOLTIP: "You can only have 3 Bishoprics at a time."
-  NUM_CRUSADER_ORDERS_ALLOWED_TOOLTIP: "You can only have 1 Crusader Order at a time."
-  NUM_FIEFDOMS_ALLOWED_TOOLTIP: "You can only have 5 Fiefdoms at a time."
-  TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP: "You need to fully §YAnnex§! or §YVassalize§! and §YDesignate§! one of the existing Monastic Orders (Knights, Teutonic, or Livonian) to be able to designate a Crusader Order."
-
   # opinion modifiers
+
   in_incorporated_union: "Incorporated Union"
-  in_consolidated_union: "Incorporated Union"
+  in_consolidated_union: "Consolidated Union"
   is_client_state: "Client State"
   is_incorporated_client_state: "Incorporated Client State"
   is_consolidated_client_state: "Consolidated Client State"
@@ -177,59 +186,64 @@
   broke_fiefdom: "Revoked Fiefdom Status"
   broke_protectorate: "Revoked Protectorate Status"
 
-  # cooldown flags
-  changed_subject_incorporation_cooldown_flag: "Incorporated a Subject"
-  changed_subject_type_cooldown_flag: "Changed Subject Type"
-  establish_viceroyalty_cooldown_flag: "Established a Viceroyalty"
-  inherit_incorporated_personal_union_cooldown_flag: "Inherited Incorporated Personal Union Cooldown"
-  revoke_viceroyalty_cooldown_flag: "Revoked a Viceroyalty"
-
   # static modifiers
+
+  ## bishopric
+
   has_bishopric_subject: "Has Bishopric"
   has_bishopric_num_cities_bonus: "Bishopric City Bonus"
   has_bishopric_province_dev_bonus: "Bishopric Development Bonus"
+
   is_bishopric_nation: "Is a Bishopric"
   is_bishopric_num_cities_bonus: "Bishopric City Bonus"
   is_bishopric_province_dev_bonus: "Bishopric Development Bonus"
 
+  ## crusader order
+
   has_crusader_order_subject: "Has Crusader Order"
   has_crusader_order_num_cities_bonus: "Crusader Order City Bonus"
+
   is_crusader_order_nation: "Is a Crusader Order"
   is_crusader_order_num_cities_bonus: "Crusader Order City Bonus"
+
+  ## fiefdom
 
   has_fiefdom_subject: "Has Fiefdom"
   has_fiefdom_num_cities_bonus: "Fiefdom City Bonus"
   has_fiefdom_province_dev_bonus: "Fiefdom Development Bonus"
   has_fiefdom_province_trade_bonus: "Fiefdom Trade Bonus"
+
   is_fiefdom_nation: "Is a Fiefdom"
   is_fiefdom_num_cities_bonus: "Fiefdom City Bonus"
   is_fiefdom_province_dev_bonus: "Fiefdom Development Bonus"
   is_fiefdom_province_trade_bonus: "Fiefdom Trade Bonus"
 
-  has_vassal_subject: "Has Vassal"
-  is_vassal_nation: "Is a Vassal"
-  incorporated_vassal_governing_capacity_cost: "Incorporated Vassal"
-  consolidated_vassal_governing_capacity_cost: "Consolidated Vassal"
-
-  has_march_subject: "Has March"
-  is_march_nation: "Is a March"
-  is_march_bonus: "Is a Loyal March"
+  ## protectorate
 
   has_protectorate_subject: "Has Protectorate"
+
   is_protectorate_nation: "Is a Protectorate"
   is_protectorate_bonus: "Is a Loyal Protectorate"
 
+  ## client state
+
   has_client_state_subject: "Has Client State"
+
   is_client_state_nation: "Is a Client State"
 
-  has_union_subject: "In Personal Union"
-  is_union_nation: "In Personal Union"
+  ## viceroyalty
 
   has_viceroyalty_subject: "Has Viceroyalty"
   has_viceroyalty_subject_bonus: "Large Viceroyalty"
-  viceroyalty_governing_capacity_cost: "Viceroyalty"
+
   is_viceroyalty_subject: "Is a Viceroyalty"
   is_viceroyalty_subject_bonus: "Is a Large Viceroyalty"
+
+  ## governing cost
+
+  incorporated_vassal_governing_capacity_cost: "Incorporated Vassal"
+  consolidated_vassal_governing_capacity_cost: "Consolidated Vassal"
+  viceroyalty_governing_capacity_cost: "Viceroyalty"
 
   # subject types
   incorporated_vassal: "Incorporated Vassal"
@@ -262,35 +276,11 @@
   fiefdom_is_our: "§Y$NAME$§! is our Fiefdom."
   fiefdom_long_desc: "Fiefdoms must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. Depending on location and size, they increase the overlord's §YGoverning Capacity§!, §YDiplomatic Reputation§!, and §YGlobal Trade Power§!."
 
-  incorporated_march: "Incorporated March"
-  incorporated_march_title: "Incorporated March"
-  incorporated_march_title_plural: "Incorporated Marches"
-  incorporated_march_is_our: "§Y$NAME$§! is our Incorporated March."
-  incorporated_march_long_desc: "An Incorporated March must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  consolidated_march: "Consolidated March"
-  consolidated_march_title: "Consolidated March"
-  consolidated_march_title_plural: "Consolidated Marches"
-  consolidated_march_is_our: "§Y$NAME$§! is our Consolidated March."
-  consolidated_march_long_desc: "A Consolidated March must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
   protectorate: "Protectorate"
   protectorate_title: "Protectorate"
   protectorate_title_plural: "Protectorates"
   protectorate_is_our: "§Y$NAME$§! is our Protectorate."
   protectorate_long_desc: "Protectorates cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. "
-
-  incorporated_protectorate: "Incorporated Protectorate"
-  incorporated_protectorate_title: "Incorporated Protectorate"
-  incorporated_protectorate_title_plural: "Incorporated Protectorates"
-  incorporated_protectorate_is_our: "§Y$NAME$§! is our Incorporated Protectorate."
-  incorporated_protectorate_long_desc: "An Incorporated Protectorate cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  consolidated_protectorate: "Consolidated Protectorate"
-  consolidated_protectorate_title: "Consolidated Protectorate"
-  consolidated_protectorate_title_plural: "Consolidated Protectorates"
-  consolidated_protectorate_is_our: "§Y$NAME$§! is our Consolidated Protectorate."
-  consolidated_protectorate_long_desc: "A Consolidated Protectorate cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
 
   client_state: "Client State"
   client_state_title: "Client State"

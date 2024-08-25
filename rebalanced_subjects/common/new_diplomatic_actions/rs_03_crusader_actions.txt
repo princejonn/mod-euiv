@@ -24,15 +24,8 @@ designate_crusader_order = {
 	is_allowed = {
 		is_defender_of_faith = yes
 		is_at_war = no
-		custom_trigger_tooltip = {
-			tooltip = NUM_CRUSADER_ORDERS_ALLOWED_TOOLTIP
-			NOT = {
-				num_subjects_of_type_with_liberty_desire = {
-					type = crusader_order
-					liberty_desire = 0
-					value = 1
-				}
-			}
+		NOT = {
+			crusader_order = 5
 		}
 		custom_trigger_tooltip = {
 			tooltip = TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP

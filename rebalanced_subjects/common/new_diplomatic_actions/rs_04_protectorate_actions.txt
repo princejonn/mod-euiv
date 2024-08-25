@@ -4,11 +4,7 @@ designate_protectorate = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = consolidated_vassal
-			}
+			is_subject_of_type = vassal
 		}
 	}
 	is_allowed = {
@@ -25,41 +21,10 @@ designate_protectorate = {
 		}
 	}
 	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = vassal
-				}
-			}
-			create_subject = {
-				subject_type = protectorate
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_vassal
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_protectorate
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = consolidated_vassal
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_protectorate
-				subject = FROM
-				keep_liberty_desire = yes
-			}
+		create_subject = {
+			subject_type = protectorate
+			subject = FROM
+			keep_liberty_desire = yes
 		}
 	}
 	on_decline = {
@@ -75,11 +40,7 @@ revoke_protectorate = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = protectorate
-				is_subject_of_type = incorporated_protectorate
-				is_subject_of_type = consolidated_protectorate
-			}
+			is_subject_of_type = protectorate
 		}
 	}
 	is_allowed = {
@@ -91,41 +52,10 @@ revoke_protectorate = {
 		}
 	}
 	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = protectorate
-				}
-			}
-			create_subject = {
-				subject_type = vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_protectorate
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = consolidated_protectorate
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
 		}
 		FROM = {
 			add_liberty_desire = 25

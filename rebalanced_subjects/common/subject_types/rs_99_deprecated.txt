@@ -17,3 +17,23 @@ consolidated_fief = {
 	copy_from = fiefdom
 	count = vassal
 }
+
+incorporated_march = {
+	copy_from = march
+	count = vassal
+}
+
+consolidated_march = {
+	copy_from = march
+	count = vassal
+}
+
+incorporated_protectorate = {
+	copy_from = protectorate
+	count = vassal
+}
+
+consolidated_protectorate = {
+	copy_from = protectorate
+	count = vassal
+}

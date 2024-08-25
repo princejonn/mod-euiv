@@ -750,9 +750,16 @@ estate_nobles_french_strong_duchies = {
 				is_subject_of_type = incorporated_vassal
 				is_subject_of_type = integrated_personal_union
 				## Added by Rebalanced Subjects
-				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = bishopric
+				is_subject_of_type = client_state
+				is_subject_of_type = consolidated_client_state
 				is_subject_of_type = consolidated_personal_union
-				is_subject_of_type = sovereign_personal_union
+				is_subject_of_type = consolidated_vassal
+				is_subject_of_type = crusader_order
+				is_subject_of_type = fiefdom
+				is_subject_of_type = incorporated_client_state
+				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = protectorate
 			}
 			capital_scope = {
 				region = france_region
@@ -776,9 +783,16 @@ estate_nobles_french_strong_duchies = {
 						is_subject_of_type = incorporated_vassal
 						is_subject_of_type = integrated_personal_union
 						## Added by Rebalanced Subjects
-						is_subject_of_type = incorporated_personal_union
+						is_subject_of_type = bishopric
+						is_subject_of_type = client_state
+						is_subject_of_type = consolidated_client_state
 						is_subject_of_type = consolidated_personal_union
-						is_subject_of_type = sovereign_personal_union
+						is_subject_of_type = consolidated_vassal
+						is_subject_of_type = crusader_order
+						is_subject_of_type = fiefdom
+						is_subject_of_type = incorporated_client_state
+						is_subject_of_type = incorporated_personal_union
+						is_subject_of_type = protectorate
 					}
 				}
 			}
@@ -1355,9 +1369,16 @@ estate_nobles_strong_duchies = {
 				is_subject_of_type = incorporated_vassal
 				is_subject_of_type = integrated_personal_union
 				## Added by Rebalanced Subjects
-				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = bishopric
+				is_subject_of_type = client_state
+				is_subject_of_type = consolidated_client_state
 				is_subject_of_type = consolidated_personal_union
-				is_subject_of_type = sovereign_personal_union
+				is_subject_of_type = consolidated_vassal
+				is_subject_of_type = crusader_order
+				is_subject_of_type = fiefdom
+				is_subject_of_type = incorporated_client_state
+				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = protectorate
 			}
 		}
 		NOT = {
@@ -1379,9 +1400,16 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = incorporated_vassal
 						is_subject_of_type = integrated_personal_union
 						## Added by Rebalanced Subjects
-						is_subject_of_type = incorporated_personal_union
+						is_subject_of_type = bishopric
+						is_subject_of_type = client_state
+						is_subject_of_type = consolidated_client_state
 						is_subject_of_type = consolidated_personal_union
-						is_subject_of_type = sovereign_personal_union
+						is_subject_of_type = consolidated_vassal
+						is_subject_of_type = crusader_order
+						is_subject_of_type = fiefdom
+						is_subject_of_type = incorporated_client_state
+						is_subject_of_type = incorporated_personal_union
+						is_subject_of_type = protectorate
 					}
 				}
 			}
@@ -1762,9 +1790,16 @@ estate_nobles_better_integration = {
 				is_subject_of_type = incorporated_vassal
 				is_subject_of_type = integrated_personal_union
 				## Added by Rebalanced Subjects
-				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = bishopric
+				is_subject_of_type = client_state
+				is_subject_of_type = consolidated_client_state
 				is_subject_of_type = consolidated_personal_union
-				is_subject_of_type = sovereign_personal_union
+				is_subject_of_type = consolidated_vassal
+				is_subject_of_type = crusader_order
+				is_subject_of_type = fiefdom
+				is_subject_of_type = incorporated_client_state
+				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = protectorate
 			}
 		}
 	}

@@ -14,15 +14,8 @@ designate_fiefdom = {
 	}
 	is_allowed = {
 		is_at_war = no
-		custom_trigger_tooltip = {
-			tooltip = NUM_FIEFDOMS_ALLOWED_TOOLTIP
-			NOT = {
-				num_subjects_of_type_with_liberty_desire = {
-					type = fiefdom
-					liberty_desire = 0
-					value = 5
-				}
-			}
+		NOT = {
+			fiefdom = 5
 		}
 		FROM = {
 			NOT = {
