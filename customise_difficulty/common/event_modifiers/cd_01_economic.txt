@@ -1,0 +1,55 @@
+customised_economic_modifier_easier_1 = {
+	advisor_cost = -0.1
+	global_tax_income = 120
+	global_tax_modifier = 0.1
+	global_trade_goods_size = 0.5
+	global_trade_goods_size_modifier = 0.1
+	global_trade_power = 0.1
+	gold_depletion_chance_modifier = -0.5
+	land_maintenance_modifier = -0.1
+	naval_maintenance_modifier = -0.1
+	production_efficiency = 0.1
+	vassal_income = 0.1
+}
+
+customised_economic_modifier_easier_2 = {
+	advisor_cost = -0.2
+	global_tax_income = 240
+	global_tax_modifier = 0.2
+	global_trade_goods_size = 1
+	global_trade_goods_size_modifier = 0.2
+	global_trade_power = 0.2
+	gold_depletion_chance_modifier = -0.6
+	land_maintenance_modifier = -0.2
+	naval_maintenance_modifier = -0.2
+	production_efficiency = 0.2
+	vassal_income = 0.2
+}
+
+customised_economic_modifier_easier_3 = {
+	advisor_cost = -0.3
+	global_tax_income = 360
+	global_tax_modifier = 0.3
+	global_trade_goods_size = 1
+	global_trade_goods_size_modifier = 0.3
+	global_trade_power = 0.3
+	gold_depletion_chance_modifier = -0.8
+	land_maintenance_modifier = -0.3
+	naval_maintenance_modifier = -0.3
+	production_efficiency = 0.3
+	vassal_income = 0.3
+}
+
+customised_economic_modifier_easier_4 = {
+	advisor_cost = -0.4
+	global_tax_income = 480
+	global_tax_modifier = 0.4
+	global_trade_goods_size = 1
+	global_trade_goods_size_modifier = 0.4
+	global_trade_power = 0.4
+	gold_depletion_chance_modifier = -1
+	land_maintenance_modifier = -0.4
+	naval_maintenance_modifier = -0.4
+	production_efficiency = 0.4
+	vassal_income = 0.4
+}

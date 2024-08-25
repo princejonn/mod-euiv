@@ -1,0 +1,215 @@
+﻿l_english:
+  # events
+
+  ## selection
+
+  customise_difficulty_event.0.title: "Customise Difficulty"
+  customise_difficulty_event.0.desc: "Select which area you wish to customise:\n(Hint: You can scroll down in the options list)"
+  customise_difficulty_event.0.a: "Economy"
+  customise_difficulty_event.0.b: "Monarch Points"
+  customise_difficulty_event.0.c: "Religion & Culture"
+  customise_difficulty_event.0.d: "Nation & Government"
+  customise_difficulty_event.0.e: "Estates"
+  customise_difficulty_event.0.f: "Diplomacy"
+  customise_difficulty_event.0.g: "Colonialism"
+  customise_difficulty_event.0.h: "Military (Selection)"
+  customise_difficulty_event.0.i: "Leaders (Selection)"
+  customise_difficulty_event.0.x: "<< Reset All >>"
+  customise_difficulty_event.0.z: "<< Done >>"
+
+  ## economic
+
+  customise_economic_difficulty_event.1.title: "Customise: Economy"
+  customise_economic_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_economic_difficulty_event.1.a: "Easier (x1)"
+  customise_economic_difficulty_event.1.b: "Easier (x2)"
+  customise_economic_difficulty_event.1.c: "Easier (x3)"
+  customise_economic_difficulty_event.1.d: "Easier (x4)"
+  customise_economic_difficulty_event.1.x: "<< Reset >>"
+  customise_economic_difficulty_event.1.z: "<< Return >>"
+
+  ## monarch
+
+  customise_monarch_difficulty_event.1.title: "Customise: Monarch Points"
+  customise_monarch_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_monarch_difficulty_event.1.a: "Easier (x1)"
+  customise_monarch_difficulty_event.1.b: "Easier (x2)"
+  customise_monarch_difficulty_event.1.c: "Easier (x3)"
+  customise_monarch_difficulty_event.1.d: "Easier (x4)"
+  customise_monarch_difficulty_event.1.x: "<< Reset >>"
+  customise_monarch_difficulty_event.1.z: "<< Return >>"
+
+  ## religious
+
+  customise_religious_difficulty_event.1.title: "Customise: Religion & Culture"
+  customise_religious_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_religious_difficulty_event.1.a: "Easier (x1)"
+  customise_religious_difficulty_event.1.b: "Easier (x2)"
+  customise_religious_difficulty_event.1.c: "Easier (x3)"
+  customise_religious_difficulty_event.1.d: "Easier (x4)"
+  customise_religious_difficulty_event.1.x: "<< Reset >>"
+  customise_religious_difficulty_event.1.z: "<< Return >>"
+
+  ## national
+
+  customise_national_difficulty_event.1.title: "Customise: Nation & Government"
+  customise_national_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_national_difficulty_event.1.a: "Easier (x1)"
+  customise_national_difficulty_event.1.b: "Easier (x2)"
+  customise_national_difficulty_event.1.c: "Easier (x3)"
+  customise_national_difficulty_event.1.d: "Easier (x4)"
+  customise_national_difficulty_event.1.x: "<< Reset >>"
+  customise_national_difficulty_event.1.z: "<< Return >>"
+
+  ## estates
+
+  customise_estates_difficulty_event.1.title: "Customise: Estates"
+  customise_estates_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_estates_difficulty_event.1.a: "Easier (x1)"
+  customise_estates_difficulty_event.1.b: "Easier (x2)"
+  customise_estates_difficulty_event.1.c: "Easier (x3)"
+  customise_estates_difficulty_event.1.d: "Easier (x4)"
+  customise_estates_difficulty_event.1.x: "<< Reset >>"
+  customise_estates_difficulty_event.1.z: "<< Return >>"
+
+  ## diplomatic
+
+  customise_diplomatic_difficulty_event.1.title: "Customise: Diplomacy"
+  customise_diplomatic_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_diplomatic_difficulty_event.1.a: "Easier (x1)"
+  customise_diplomatic_difficulty_event.1.b: "Easier (x2)"
+  customise_diplomatic_difficulty_event.1.c: "Easier (x3)"
+  customise_diplomatic_difficulty_event.1.d: "Easier (x4)"
+  customise_diplomatic_difficulty_event.1.x: "<< Reset >>"
+  customise_diplomatic_difficulty_event.1.z: "<< Return >>"
+
+  ## colonial
+
+  customise_colonial_difficulty_event.1.title: "Customise: Colonial"
+  customise_colonial_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_colonial_difficulty_event.1.a: "Easier (x1)"
+  customise_colonial_difficulty_event.1.b: "Easier (x2)"
+  customise_colonial_difficulty_event.1.c: "Easier (x3)"
+  customise_colonial_difficulty_event.1.d: "Easier (x4)"
+  customise_colonial_difficulty_event.1.x: "<< Reset >>"
+  customise_colonial_difficulty_event.1.z: "<< Return >>"
+
+  ## military selection
+
+  customise_military_difficulty_event.0.title: "Customise: Military"
+  customise_military_difficulty_event.0.desc: "Select which area you wish to customise:"
+  customise_military_difficulty_event.0.a: "Army"
+  customise_military_difficulty_event.0.b: "Navy"
+  customise_military_difficulty_event.0.c: "Generals"
+  customise_military_difficulty_event.0.d: "Admirals"
+  customise_military_difficulty_event.0.z: "<< Return >>"
+
+  ## army
+
+  customise_military_difficulty_event.1.title: "Customise: Army"
+  customise_military_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_military_difficulty_event.1.a: "Easier (x1)"
+  customise_military_difficulty_event.1.b: "Easier (x3)"
+  customise_military_difficulty_event.1.c: "Easier (x5)"
+  customise_military_difficulty_event.1.d: "Easier (x8)"
+  customise_military_difficulty_event.1.x: "<< Reset >>"
+  customise_military_difficulty_event.1.z: "<< Return >>"
+
+  ## navy
+
+  customise_military_difficulty_event.2.title: "Customise: Navy"
+  customise_military_difficulty_event.2.desc: "Select which bonuses you wish to add:"
+  customise_military_difficulty_event.2.a: "Easier (x1)"
+  customise_military_difficulty_event.2.b: "Easier (x3)"
+  customise_military_difficulty_event.2.c: "Easier (x5)"
+  customise_military_difficulty_event.2.d: "Easier (x8)"
+  customise_military_difficulty_event.2.x: "<< Reset >>"
+  customise_military_difficulty_event.2.z: "<< Return >>"
+
+  ## generals
+
+  customise_military_difficulty_event.3.title: "Customise: Generals"
+  customise_military_difficulty_event.3.desc: "Select which bonuses you wish to add:"
+  customise_military_difficulty_event.3.a: "Easier (x1)"
+  customise_military_difficulty_event.3.b: "Easier (x2)"
+  customise_military_difficulty_event.3.c: "Easier (x3)"
+  customise_military_difficulty_event.3.d: "Easier (x4)"
+  customise_military_difficulty_event.3.x: "<< Reset >>"
+  customise_military_difficulty_event.3.z: "<< Return >>"
+
+  ## admirals
+
+  customise_military_difficulty_event.4.title: "Customise: Admirals"
+  customise_military_difficulty_event.4.desc: "Select which bonuses you wish to add:"
+  customise_military_difficulty_event.4.a: "Easier (x1)"
+  customise_military_difficulty_event.4.b: "Easier (x2)"
+  customise_military_difficulty_event.4.c: "Easier (x3)"
+  customise_military_difficulty_event.4.d: "Easier (x4)"
+  customise_military_difficulty_event.4.x: "<< Reset >>"
+  customise_military_difficulty_event.4.z: "<< Return >>"
+
+  ## leaders selection
+
+  customise_leaders_difficulty_event.0.title: "Customise: Leaders"
+  customise_leaders_difficulty_event.0.desc: "Select which area you wish to customise:"
+  customise_leaders_difficulty_event.0.a: "Colonists"
+  customise_leaders_difficulty_event.0.b: "Diplomats"
+  customise_leaders_difficulty_event.0.c: "Merchants"
+  customise_leaders_difficulty_event.0.d: "Missionaries"
+  customise_leaders_difficulty_event.0.e: "Ruler"
+  customise_leaders_difficulty_event.0.z: "<< Return >>"
+
+  ## colonists
+
+  customise_leaders_difficulty_event.1.title: "Customise: Colonists"
+  customise_leaders_difficulty_event.1.desc: "Select which bonuses you wish to add:"
+  customise_leaders_difficulty_event.1.a: "Easier (x1)"
+  customise_leaders_difficulty_event.1.b: "Easier (x2)"
+  customise_leaders_difficulty_event.1.c: "Easier (x3)"
+  customise_leaders_difficulty_event.1.d: "Easier (x4)"
+  customise_leaders_difficulty_event.1.x: "<< Reset >>"
+  customise_leaders_difficulty_event.1.z: "<< Return >>"
+
+  ## diplomats
+
+  customise_leaders_difficulty_event.2.title: "Customise: Diplomats"
+  customise_leaders_difficulty_event.2.desc: "Select which bonuses you wish to add:"
+  customise_leaders_difficulty_event.2.a: "Easier (x1)"
+  customise_leaders_difficulty_event.2.b: "Easier (x2)"
+  customise_leaders_difficulty_event.2.c: "Easier (x3)"
+  customise_leaders_difficulty_event.2.d: "Easier (x4)"
+  customise_leaders_difficulty_event.2.x: "<< Reset >>"
+  customise_leaders_difficulty_event.2.z: "<< Return >>"
+
+  ## merchants
+
+  customise_leaders_difficulty_event.3.title: "Customise: Merchants"
+  customise_leaders_difficulty_event.3.desc: "Select which bonuses you wish to add:"
+  customise_leaders_difficulty_event.3.a: "Easier (x1)"
+  customise_leaders_difficulty_event.3.b: "Easier (x2)"
+  customise_leaders_difficulty_event.3.c: "Easier (x3)"
+  customise_leaders_difficulty_event.3.d: "Easier (x4)"
+  customise_leaders_difficulty_event.3.x: "<< Reset >>"
+  customise_leaders_difficulty_event.3.z: "<< Return >>"
+
+  ## missionaries
+
+  customise_leaders_difficulty_event.4.title: "Customise: Missionaries"
+  customise_leaders_difficulty_event.4.desc: "Select which bonuses you wish to add:"
+  customise_leaders_difficulty_event.4.a: "Easier (x1)"
+  customise_leaders_difficulty_event.4.b: "Easier (x2)"
+  customise_leaders_difficulty_event.4.c: "Easier (x3)"
+  customise_leaders_difficulty_event.4.d: "Easier (x4)"
+  customise_leaders_difficulty_event.4.x: "<< Reset >>"
+  customise_leaders_difficulty_event.4.z: "<< Return >>"
+
+  ## ruler
+
+  customise_leaders_difficulty_event.5.title: "Customise: Ruler"
+  customise_leaders_difficulty_event.5.desc: "Select which bonuses you wish to add:"
+  customise_leaders_difficulty_event.5.a: "Easier (x1)"
+  customise_leaders_difficulty_event.5.b: "Easier (x2)"
+  customise_leaders_difficulty_event.5.c: "Easier (x3)"
+  customise_leaders_difficulty_event.5.d: "Easier (x4)"
+  customise_leaders_difficulty_event.5.x: "<< Reset >>"
+  customise_leaders_difficulty_event.5.z: "<< Return >>"

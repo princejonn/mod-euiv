@@ -1,0 +1,51 @@
+customised_national_modifier_easier_1 = {
+	advisor_pool = 1
+	global_unrest = -1
+	institution_spread_from_true_faith = 0.1
+	prestige_decay = -0.1
+	reduced_liberty_desire = 10
+	yearly_absolutism = 1
+	yearly_authority = 1
+	yearly_corruption = -0.1
+	yearly_government_power = 10
+	yearly_innovativeness = 1
+}
+
+customised_national_modifier_easier_2 = {
+	advisor_pool = 2
+	global_unrest = -2
+	institution_spread_from_true_faith = 0.2
+	prestige_decay = -0.2
+	reduced_liberty_desire = 20
+	yearly_absolutism = 2
+	yearly_authority = 2
+	yearly_corruption = -0.2
+	yearly_government_power = 20
+	yearly_innovativeness = 2
+}
+
+customised_national_modifier_easier_3 = {
+	advisor_pool = 3
+	global_unrest = -3
+	institution_spread_from_true_faith = 0.3
+	prestige_decay = -0.3
+	reduced_liberty_desire = 30
+	yearly_absolutism = 3
+	yearly_authority = 3
+	yearly_corruption = -0.3
+	yearly_government_power = 30
+	yearly_innovativeness = 3
+}
+
+customised_national_modifier_easier_4 = {
+	advisor_pool = 4
+	global_unrest = -4
+	institution_spread_from_true_faith = 0.4
+	prestige_decay = -0.4
+	reduced_liberty_desire = 40
+	yearly_absolutism = 4
+	yearly_authority = 4
+	yearly_corruption = -0.4
+	yearly_government_power = 40
+	yearly_innovativeness = 4
+}

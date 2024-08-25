@@ -1,0 +1,13 @@
+So you have a pretty good handle of the economy, but you're awful at land battles? Or you're great at land battles, but keep forgetting how to navy? Or is the economy way too rough? Maybe you want to show the game to a friend via Multiplayer, and still have a challenge for yourself?
+
+With this mod you can customise and add country modifiers that will give you bonuses to many different areas.
+
+The different bonuses include (but are not limited to)
+[list]
+	[*] Economy (tax/trade/...)
+	[*] Monarch Points
+	[*] Religion (conversion/tolerance/...)
+	[*] Nation (unrest/prestige/...)
+	[*] Estates (influence/loyalty)
+	[*] Diplomacy (ae/reputation/...)
+[/list]

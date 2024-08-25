@@ -1,0 +1,569 @@
+namespace = customise_military_difficulty_event
+# Selection
+country_event = {
+	id = customise_military_difficulty_event.0
+	title = customise_military_difficulty_event.0.title
+	desc = customise_military_difficulty_event.0.desc
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_military_difficulty_event.0.a
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.0.b
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.2
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.0.c
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.3
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.0.d
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.4
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.0.z
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Army
+country_event = {
+	id = customise_military_difficulty_event.1
+	title = customise_military_difficulty_event.1.title
+	desc = customise_military_difficulty_event.1.desc
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_military_difficulty_event.1.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_army_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_army_modifier_easier_1
+			remove_country_modifier = customised_army_modifier_easier_2
+			remove_country_modifier = customised_army_modifier_easier_3
+			remove_country_modifier = customised_army_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_army_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.1.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_army_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_army_modifier_easier_1
+			remove_country_modifier = customised_army_modifier_easier_2
+			remove_country_modifier = customised_army_modifier_easier_3
+			remove_country_modifier = customised_army_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_army_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.1.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_army_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_army_modifier_easier_1
+			remove_country_modifier = customised_army_modifier_easier_2
+			remove_country_modifier = customised_army_modifier_easier_3
+			remove_country_modifier = customised_army_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_army_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.1.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_army_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_army_modifier_easier_1
+			remove_country_modifier = customised_army_modifier_easier_2
+			remove_country_modifier = customised_army_modifier_easier_3
+			remove_country_modifier = customised_army_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_army_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.1.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_army_modifier_easier_1
+				has_country_modifier = customised_army_modifier_easier_2
+				has_country_modifier = customised_army_modifier_easier_3
+				has_country_modifier = customised_army_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_army_modifier_easier_1
+			remove_country_modifier = customised_army_modifier_easier_2
+			remove_country_modifier = customised_army_modifier_easier_3
+			remove_country_modifier = customised_army_modifier_easier_4
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.1.z
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Navy
+country_event = {
+	id = customise_military_difficulty_event.2
+	title = customise_military_difficulty_event.2.title
+	desc = customise_military_difficulty_event.2.desc
+	picture = SHIP_SAILING_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_military_difficulty_event.2.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_navy_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_navy_modifier_easier_1
+			remove_country_modifier = customised_navy_modifier_easier_2
+			remove_country_modifier = customised_navy_modifier_easier_3
+			remove_country_modifier = customised_navy_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_navy_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.2.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_navy_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_navy_modifier_easier_1
+			remove_country_modifier = customised_navy_modifier_easier_2
+			remove_country_modifier = customised_navy_modifier_easier_3
+			remove_country_modifier = customised_navy_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_navy_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.2.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_navy_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_navy_modifier_easier_1
+			remove_country_modifier = customised_navy_modifier_easier_2
+			remove_country_modifier = customised_navy_modifier_easier_3
+			remove_country_modifier = customised_navy_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_navy_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.2.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_navy_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_navy_modifier_easier_1
+			remove_country_modifier = customised_navy_modifier_easier_2
+			remove_country_modifier = customised_navy_modifier_easier_3
+			remove_country_modifier = customised_navy_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_navy_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.2.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_navy_modifier_easier_1
+				has_country_modifier = customised_navy_modifier_easier_2
+				has_country_modifier = customised_navy_modifier_easier_3
+				has_country_modifier = customised_navy_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_navy_modifier_easier_1
+			remove_country_modifier = customised_navy_modifier_easier_2
+			remove_country_modifier = customised_navy_modifier_easier_3
+			remove_country_modifier = customised_navy_modifier_easier_4
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.2.z
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Generals
+country_event = {
+	id = customise_military_difficulty_event.3
+	title = customise_military_difficulty_event.3.title
+	desc = customise_military_difficulty_event.3.desc
+	picture = DISCIPLINED_SOLDIERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_military_difficulty_event.3.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_generals_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_generals_modifier_easier_1
+			remove_country_modifier = customised_generals_modifier_easier_2
+			remove_country_modifier = customised_generals_modifier_easier_3
+			remove_country_modifier = customised_generals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_generals_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.3.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_generals_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_generals_modifier_easier_1
+			remove_country_modifier = customised_generals_modifier_easier_2
+			remove_country_modifier = customised_generals_modifier_easier_3
+			remove_country_modifier = customised_generals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_generals_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.3.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_generals_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_generals_modifier_easier_1
+			remove_country_modifier = customised_generals_modifier_easier_2
+			remove_country_modifier = customised_generals_modifier_easier_3
+			remove_country_modifier = customised_generals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_generals_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.3.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_generals_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_generals_modifier_easier_1
+			remove_country_modifier = customised_generals_modifier_easier_2
+			remove_country_modifier = customised_generals_modifier_easier_3
+			remove_country_modifier = customised_generals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_generals_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.3.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_generals_modifier_easier_1
+				has_country_modifier = customised_generals_modifier_easier_2
+				has_country_modifier = customised_generals_modifier_easier_3
+				has_country_modifier = customised_generals_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_generals_modifier_easier_1
+			remove_country_modifier = customised_generals_modifier_easier_2
+			remove_country_modifier = customised_generals_modifier_easier_3
+			remove_country_modifier = customised_generals_modifier_easier_4
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.3.z
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Admirals
+country_event = {
+	id = customise_military_difficulty_event.4
+	title = customise_military_difficulty_event.4.title
+	desc = customise_military_difficulty_event.4.desc
+	picture = SHIP_SAILING_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_military_difficulty_event.4.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_admirals_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_admirals_modifier_easier_1
+			remove_country_modifier = customised_admirals_modifier_easier_2
+			remove_country_modifier = customised_admirals_modifier_easier_3
+			remove_country_modifier = customised_admirals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_admirals_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.4.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_admirals_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_admirals_modifier_easier_1
+			remove_country_modifier = customised_admirals_modifier_easier_2
+			remove_country_modifier = customised_admirals_modifier_easier_3
+			remove_country_modifier = customised_admirals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_admirals_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.4.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_admirals_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_admirals_modifier_easier_1
+			remove_country_modifier = customised_admirals_modifier_easier_2
+			remove_country_modifier = customised_admirals_modifier_easier_3
+			remove_country_modifier = customised_admirals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_admirals_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.4.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_admirals_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_admirals_modifier_easier_1
+			remove_country_modifier = customised_admirals_modifier_easier_2
+			remove_country_modifier = customised_admirals_modifier_easier_3
+			remove_country_modifier = customised_admirals_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_admirals_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.4.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_admirals_modifier_easier_1
+				has_country_modifier = customised_admirals_modifier_easier_2
+				has_country_modifier = customised_admirals_modifier_easier_3
+				has_country_modifier = customised_admirals_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_admirals_modifier_easier_1
+			remove_country_modifier = customised_admirals_modifier_easier_2
+			remove_country_modifier = customised_admirals_modifier_easier_3
+			remove_country_modifier = customised_admirals_modifier_easier_4
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.4.z
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+customised_ruler_modifier_easier_1 = {
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+}
+
+customised_ruler_modifier_easier_2 = {
+	monarch_admin_power = 2
+	monarch_diplomatic_power = 2
+	monarch_military_power = 2
+}
+
+customised_ruler_modifier_easier_3 = {
+	monarch_admin_power = 3
+	monarch_diplomatic_power = 3
+	monarch_military_power = 3
+}
+
+customised_ruler_modifier_easier_4 = {
+	monarch_admin_power = 4
+	monarch_diplomatic_power = 4
+	monarch_military_power = 4
+}

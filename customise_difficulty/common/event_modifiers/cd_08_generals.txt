@@ -1,0 +1,31 @@
+customised_generals_modifier_easier_1 = {
+	free_land_leader_pool = 2
+	leader_land_fire = 1
+	leader_land_manuever = 1
+	leader_land_shock = 1
+	leader_siege = 1
+}
+
+customised_generals_modifier_easier_2 = {
+	free_land_leader_pool = 4
+	leader_land_fire = 2
+	leader_land_manuever = 2
+	leader_land_shock = 2
+	leader_siege = 2
+}
+
+customised_generals_modifier_easier_3 = {
+	free_land_leader_pool = 6
+	leader_land_fire = 3
+	leader_land_manuever = 3
+	leader_land_shock = 3
+	leader_siege = 3
+}
+
+customised_generals_modifier_easier_4 = {
+	free_land_leader_pool = 8
+	leader_land_fire = 4
+	leader_land_manuever = 4
+	leader_land_shock = 4
+	leader_siege = 4
+}

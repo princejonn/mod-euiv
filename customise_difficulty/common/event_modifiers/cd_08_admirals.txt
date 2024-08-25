@@ -1,0 +1,27 @@
+customised_admirals_modifier_easier_1 = {
+	free_navy_leader_pool = 2
+	leader_naval_fire = 1
+	leader_naval_manuever = 1
+	leader_naval_shock = 1
+}
+
+customised_admirals_modifier_easier_2 = {
+	free_navy_leader_pool = 4
+	leader_naval_fire = 2
+	leader_naval_manuever = 2
+	leader_naval_shock = 2
+}
+
+customised_admirals_modifier_easier_3 = {
+	free_navy_leader_pool = 6
+	leader_naval_fire = 3
+	leader_naval_manuever = 3
+	leader_naval_shock = 3
+}
+
+customised_admirals_modifier_easier_4 = {
+	free_navy_leader_pool = 8
+	leader_naval_fire = 4
+	leader_naval_manuever = 4
+	leader_naval_shock = 4
+}
