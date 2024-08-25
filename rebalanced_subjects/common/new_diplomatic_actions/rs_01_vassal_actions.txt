@@ -1,26 +1,23 @@
-form_vassal_from_client_state = {
+incorporate_vassal = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		OR = {
+			can_incorporate_subject = yes
+			can_have_incorporated_vassals = yes
+		}
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = client_state
-				is_subject_of_type = incorporated_client_state
-				is_subject_of_type = consolidated_client_state
-			}
+			is_subject_of_type = vassal
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			truce_with = FROM
+			incorporated_vassal = 5
 		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 25
-			}
+		NOT = {
+			truce_with = FROM
 		}
 		FROM = {
 			has_opinion = {
@@ -32,92 +29,6 @@ form_vassal_from_client_state = {
 			NOT = {
 				liberty_desire = 25
 			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-	}
-	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = client_state
-				}
-			}
-			create_subject = {
-				subject_type = vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_client_state
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = consolidated_client_state
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		FROM = {
-			capital_scope = {
-				add_unrest = 2
-			}
-			add_liberty_desire = 10
-			add_stability = -1
-		}
-		set_country_flag = changed_subject_type_cooldown_flag
-	}
-	on_decline = {
-	}
-	ai_will_do = {
-		always = no
-	}
-}
-
-incorporate_vassal = {
-	category = influence
-	require_acceptance = no
-	is_visible = {
-		OR = {
-			adm_tech = 12
-			can_have_incorporated_vassals = yes
-		}
-		FROM = {
-			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = march
-				is_subject_of_type = protectorate
-				is_subject_of_type = client_state
-			}
-		}
-	}
-	is_allowed = {
-		is_at_war = no
-		NOT = {
-			truce_with = FROM
 		}
 		FROM = {
 			years_in_vassalage_under = {
@@ -125,84 +36,12 @@ incorporate_vassal = {
 				years = 10
 			}
 		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 190
-			}
-		}
-		FROM = {
-			NOT = {
-				liberty_desire = 25
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_incorporation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_incorporation_cooldown_flag
-				days = 365
-			}
-		}
 	}
 	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = vassal
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = march
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_march
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = protectorate
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_protectorate
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = client_state
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
+		create_subject = {
+			subject_type = incorporated_vassal
+			subject = FROM
+			keep_liberty_desire = yes
 		}
 		FROM = {
 			capital_scope = {
@@ -211,7 +50,6 @@ incorporate_vassal = {
 			add_liberty_desire = 10
 			add_stability = -1
 		}
-		set_country_flag = changed_subject_incorporation_cooldown_flag
 	}
 	on_decline = {
 	}
@@ -224,27 +62,19 @@ consolidate_vassal = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		adm_tech = 15
+		can_consolidate_subject = yes
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = incorporated_march
-				is_subject_of_type = incorporated_protectorate
-				is_subject_of_type = incorporated_client_state
-			}
+			is_subject_of_type = incorporated_vassal
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			truce_with = FROM
+			consolidated_vassal = 5
 		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 25
-			}
+		NOT = {
+			truce_with = FROM
 		}
 		FROM = {
 			has_opinion = {
@@ -257,73 +87,12 @@ consolidate_vassal = {
 				liberty_desire = 25
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_incorporation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_incorporation_cooldown_flag
-				days = 365
-			}
-		}
 	}
 	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_vassal
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_vassal
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_march
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_march
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_protectorate
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_protectorate
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_client_state
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_client_state
-				subject = FROM
-				keep_liberty_desire = yes
-			}
+		create_subject = {
+			subject_type = consolidated_vassal
+			subject = FROM
+			keep_liberty_desire = yes
 		}
 		FROM = {
 			capital_scope = {
@@ -340,7 +109,6 @@ consolidate_vassal = {
 				add_core = ROOT
 			}
 		}
-		set_country_flag = changed_subject_incorporation_cooldown_flag
 	}
 	on_decline = {
 	}

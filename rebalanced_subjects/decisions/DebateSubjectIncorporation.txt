@@ -1,0 +1,61 @@
+country_decisions = {
+	## Incorporation
+	debate_subject_incorporation = {
+		major = yes
+		potential = {
+			ai = no
+			adm_tech = 10
+			OR = {
+				has_subject_of_type = client_state
+				has_subject_of_type = personal_union
+				has_subject_of_type = vassal
+			}
+			NOT = {
+				has_country_flag = debate_subject_incorporation_flag
+			}
+		}
+		allow = {
+			full_idea_group = influence_ideas
+			full_idea_group = diplomatic_ideas
+			dip_power = 300
+		}
+		effect = {
+			custom_tooltip = debate_subject_incorporation_tooltip
+			set_country_flag = debate_subject_incorporation_flag
+			add_dip_power = -300
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	## Consolidation
+	debate_subject_consolidation = {
+		major = yes
+		potential = {
+			ai = no
+			adm_tech = 15
+			OR = {
+				has_subject_of_type = incorporated_client_state
+				has_subject_of_type = incorporated_personal_union
+				has_subject_of_type = incorporated_vassal
+			}
+			NOT = {
+				has_country_flag = debate_subject_consolidation_flag
+			}
+		}
+		allow = {
+			full_idea_group = influence_ideas
+			full_idea_group = diplomatic_ideas
+			full_idea_group = administrative_ideas
+			dip_power = 500
+		}
+		effect = {
+			custom_tooltip = debate_subject_consolidation_tooltip
+			set_country_flag = debate_subject_consolidation_flag
+			add_dip_power = -500
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

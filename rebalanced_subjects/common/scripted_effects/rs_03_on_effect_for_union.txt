@@ -5,25 +5,12 @@ on_monarch_death_incorporated_union_effect = {
 			ai = no
 			has_heir = yes
 			has_subject_of_type = incorporated_personal_union
-			OR = {
-				NOT = {
-					has_country_flag = inherit_incorporated_personal_union_cooldown_flag
-				}
-				had_country_flag = {
-					flag = inherit_incorporated_personal_union_cooldown_flag
-					days = 3650
-				}
-			}
 		}
 		every_subject_country = {
 			limit = {
 				is_subject_of_type = incorporated_personal_union
 				NOT = {
 					liberty_desire = 10
-				}
-				years_in_union_under = {
-					who = ROOT
-					years = 25
 				}
 			}
 			random = {
@@ -34,8 +21,6 @@ on_monarch_death_incorporated_union_effect = {
 						estate = all
 						share = -1
 					}
-					clr_country_flag = inherit_incorporated_personal_union_cooldown_flag
-					set_country_flag = inherit_incorporated_personal_union_cooldown_flag
 				}
 			}
 		}
@@ -49,25 +34,12 @@ on_monarch_death_consolidated_union_effect = {
 			ai = no
 			has_heir = yes
 			has_subject_of_type = consolidated_personal_union
-			OR = {
-				NOT = {
-					has_country_flag = inherit_incorporated_personal_union_cooldown_flag
-				}
-				had_country_flag = {
-					flag = inherit_incorporated_personal_union_cooldown_flag
-					days = 3650
-				}
-			}
 		}
 		every_subject_country = {
 			limit = {
 				is_subject_of_type = consolidated_personal_union
 				NOT = {
 					liberty_desire = 10
-				}
-				years_in_union_under = {
-					who = ROOT
-					years = 25
 				}
 			}
 			random = {
@@ -78,8 +50,6 @@ on_monarch_death_consolidated_union_effect = {
 						estate = all
 						share = -1
 					}
-					clr_country_flag = inherit_incorporated_personal_union_cooldown_flag
-					set_country_flag = inherit_incorporated_personal_union_cooldown_flag
 				}
 			}
 		}

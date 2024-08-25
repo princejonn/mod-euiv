@@ -36,3 +36,27 @@
   consolidated_fief_title_plural: "Consolidated Fiefs"
   consolidated_fief_is_our: "§Y$NAME$§! is our Consolidated Fief."
   consolidated_fief_long_desc: "A Consolidated Fief must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They are easier to §YDiplomatically Annex§!, do not use §YDiplomatic Relations§! slots, and increase the overlord's §YGoverning Capacity§!."
+
+  incorporated_march: "Incorporated March"
+  incorporated_march_title: "Incorporated March"
+  incorporated_march_title_plural: "Incorporated Marches"
+  incorporated_march_is_our: "§Y$NAME$§! is our Incorporated March."
+  incorporated_march_long_desc: "An Incorporated March must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
+
+  consolidated_march: "Consolidated March"
+  consolidated_march_title: "Consolidated March"
+  consolidated_march_title_plural: "Consolidated Marches"
+  consolidated_march_is_our: "§Y$NAME$§! is our Consolidated March."
+  consolidated_march_long_desc: "A Consolidated March must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
+
+  incorporated_protectorate: "Incorporated Protectorate"
+  incorporated_protectorate_title: "Incorporated Protectorate"
+  incorporated_protectorate_title_plural: "Incorporated Protectorates"
+  incorporated_protectorate_is_our: "§Y$NAME$§! is our Incorporated Protectorate."
+  incorporated_protectorate_long_desc: "An Incorporated Protectorate cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
+
+  consolidated_protectorate: "Consolidated Protectorate"
+  consolidated_protectorate_title: "Consolidated Protectorate"
+  consolidated_protectorate_title_plural: "Consolidated Protectorates"
+  consolidated_protectorate_is_our: "§Y$NAME$§! is our Consolidated Protectorate."
+  consolidated_protectorate_long_desc: "A Consolidated Protectorate cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."

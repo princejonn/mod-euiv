@@ -2,9 +2,9 @@ client_state = {
 	copy_from = default
 	count = vassal
 	# Graphics:
-	sprite = GFX_icon_cultural_sphere_of_influence_subject
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_cultural_sphere_of_influence_subject
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_cultural_sphere_of_influence_subject
+	sprite = GFX_court_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+	diplomacy_subject_sprite = GFX_diplomacy_inunion
 	# Properties:
 	annex_cost_per_development = 6
 	can_concentrate_development = yes
@@ -21,10 +21,10 @@ client_state = {
 	should_quit_wars_on_activation = yes
 	transfer_subjects_when_made = yes
 	# Overlord Properties:
-	manpower_to_overlord = 0.15
-	naval_forcelimit_to_overlord = 0.15
-	sailors_to_overlord = 0.15
-	pays_overlord = 0.15
+	manpower_to_overlord = 0.05
+	naval_forcelimit_to_overlord = 0.05
+	sailors_to_overlord = 0.05
+	pays_overlord = 0.05
 	# Diplomatic Actions:
 	can_be_annexed = yes
 	# Continuous Subject Interactions:
@@ -80,6 +80,10 @@ client_state = {
 incorporated_client_state = {
 	copy_from = client_state
 	count = vassal
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
 	# Properties:
 	annex_cost_per_development = 4
 	takes_diplo_slot = no
@@ -88,6 +92,15 @@ incorporated_client_state = {
 	subsidize_armies = yes
 	# Immediate Subject Interactions:
 	seize_territory = yes
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = incorporated_vassal_governing_capacity_cost
+	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_incorporated_client_state
 	subject_opinion_modifier = is_incorporated_client_state
@@ -99,6 +112,15 @@ consolidated_client_state = {
 	# Properties:
 	annex_cost_per_development = 2
 	relative_power_class = 0
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = consolidated_vassal_governing_capacity_cost
+	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_consolidated_client_state
 	subject_opinion_modifier = is_consolidated_client_state

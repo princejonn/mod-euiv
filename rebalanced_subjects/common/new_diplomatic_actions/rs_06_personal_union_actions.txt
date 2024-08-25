@@ -1,132 +1,23 @@
-form_personal_union_from_client_state = {
-	category = influence
-	require_acceptance = no
-	is_visible = {
-		government = monarchy
-		FROM = {
-			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = client_state
-				is_subject_of_type = incorporated_client_state
-				is_subject_of_type = consolidated_client_state
-			}
-		}
-	}
-	is_allowed = {
-		is_at_war = no
-		marriage_with = FROM
-		NOT = {
-			truce_with = FROM
-		}
-		FROM = {
-			dynasty = ROOT
-		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 25
-			}
-		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 190
-			}
-		}
-		FROM = {
-			NOT = {
-				liberty_desire = 25
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-	}
-	on_accept = {
-		if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = client_state
-				}
-			}
-			create_subject = {
-				subject_type = personal_union
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = incorporated_client_state
-				}
-			}
-			create_subject = {
-				subject_type = incorporated_personal_union
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		else_if = {
-			limit = {
-				FROM = {
-					is_subject_of_type = consolidated_client_state
-				}
-			}
-			create_subject = {
-				subject_type = consolidated_personal_union
-				subject = FROM
-				keep_liberty_desire = yes
-			}
-		}
-		FROM = {
-			capital_scope = {
-				add_unrest = 2
-			}
-			add_liberty_desire = 10
-			add_stability = -1
-		}
-		set_country_flag = changed_subject_type_cooldown_flag
-	}
-	on_decline = {
-	}
-	ai_will_do = {
-		always = no
-	}
-}
-
 incorporate_personal_union = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
 		OR = {
-			adm_tech = 12
+			can_incorporate_subject = yes
 			has_country_flag = hab_integrated_vassals_flag
 		}
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = personal_union
-				is_subject_of_type = theodoro_personal_union
-			}
+			is_subject_of_type = personal_union
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			truce_with = FROM
+			incorporated_personal_union = 5
 		}
-		FROM = {
-			years_in_union_under = {
-				who = ROOT
-				years = 10
-			}
+		NOT = {
+			truce_with = FROM
 		}
 		FROM = {
 			has_opinion = {
@@ -139,22 +30,10 @@ incorporate_personal_union = {
 				liberty_desire = 25
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_incorporation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_incorporation_cooldown_flag
-				days = 365
+		FROM = {
+			years_in_union_under = {
+				who = ROOT
+				years = 50
 			}
 		}
 	}
@@ -171,7 +50,6 @@ incorporate_personal_union = {
 			add_liberty_desire = 10
 			add_stability = -1
 		}
-		set_country_flag = changed_subject_incorporation_cooldown_flag
 	}
 	on_decline = {
 	}
@@ -184,10 +62,7 @@ consolidate_personal_union = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		OR = {
-			adm_tech = 12
-			has_country_flag = hab_integrated_vassals_flag
-		}
+		can_consolidate_subject = yes
 		FROM = {
 			is_subject_of = ROOT
 			OR = {
@@ -199,13 +74,10 @@ consolidate_personal_union = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			truce_with = FROM
+			consolidated_personal_union = 5
 		}
-		FROM = {
-			years_in_union_under = {
-				who = ROOT
-				years = 25
-			}
+		NOT = {
+			truce_with = FROM
 		}
 		FROM = {
 			has_opinion = {
@@ -216,24 +88,6 @@ consolidate_personal_union = {
 		FROM = {
 			NOT = {
 				liberty_desire = 25
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_type_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_type_cooldown_flag
-				days = 3650
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = changed_subject_incorporation_cooldown_flag
-			}
-			had_country_flag = {
-				flag = changed_subject_incorporation_cooldown_flag
-				days = 365
 			}
 		}
 	}
@@ -258,7 +112,6 @@ consolidate_personal_union = {
 				add_core = ROOT
 			}
 		}
-		set_country_flag = changed_subject_incorporation_cooldown_flag
 	}
 	on_decline = {
 	}
