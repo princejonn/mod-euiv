@@ -1,6 +1,10 @@
 country_decisions = {
 	enable_colonial_merging = {
-		major = yes
+		color = {
+			100
+			210
+			250
+		}
 		potential = {
 			ai = no
 			NOT = {
