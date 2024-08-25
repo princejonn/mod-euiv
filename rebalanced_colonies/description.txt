@@ -1,0 +1,7 @@
+The colonial regions can quite quickly become a bordergore of colonial provinces, and the steady encroachment of colonial nations into where they do not belong.
+
+[h2]Features[/h2]
+[list]
+[*] Once every year, your colonial subjects will cede provinces that are outside of their colonial region to you. If you have colonial subjects in that region, the game should merge these provinces into the correct colonial subject.
+[*] When you have subjects that have small colonial subjects (fewer than 15 provinces), they will automatically be ceded to you and merge with your own colonies.
+[/list]
