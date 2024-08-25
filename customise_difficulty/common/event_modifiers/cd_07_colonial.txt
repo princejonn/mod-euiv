@@ -1,0 +1,39 @@
+customised_colonial_modifier_easier_1 = {
+	colonist_placement_chance = 0.1
+	colony_cost_modifier = -0.1
+	colony_development_boost = 1
+	global_colonial_growth = 10
+	native_assimilation = 0.1
+	native_uprising_chance = -0.1
+	settle_cost = -0.1
+}
+
+customised_colonial_modifier_easier_2 = {
+	colonist_placement_chance = 0.2
+	colony_cost_modifier = -0.2
+	colony_development_boost = 2
+	global_colonial_growth = 20
+	native_assimilation = 0.2
+	native_uprising_chance = -0.2
+	settle_cost = -0.2
+}
+
+customised_colonial_modifier_easier_3 = {
+	colonist_placement_chance = 0.3
+	colony_cost_modifier = -0.3
+	colony_development_boost = 3
+	global_colonial_growth = 30
+	native_assimilation = 0.3
+	native_uprising_chance = -0.3
+	settle_cost = -0.3
+}
+
+customised_colonial_modifier_easier_4 = {
+	colonist_placement_chance = 0.4
+	colony_cost_modifier = -0.4
+	colony_development_boost = 4
+	global_colonial_growth = 40
+	native_assimilation = 0.4
+	native_uprising_chance = -0.4
+	settle_cost = -0.4
+}

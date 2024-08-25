@@ -1,0 +1,15 @@
+customised_missionaries_modifier_easier_1 = {
+	missionaries = 1
+}
+
+customised_missionaries_modifier_easier_2 = {
+	missionaries = 2
+}
+
+customised_missionaries_modifier_easier_3 = {
+	missionaries = 3
+}
+
+customised_missionaries_modifier_easier_4 = {
+	missionaries = 4
+}

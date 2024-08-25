@@ -1,0 +1,35 @@
+customised_monarch_modifier_easier_1 = {
+	country_admin_power = 10
+	country_diplomatic_power = 10
+	country_military_power = 10
+	development_cost = -0.1
+	idea_cost = -0.1
+	technology_cost = -0.1
+}
+
+customised_monarch_modifier_easier_2 = {
+	country_admin_power = 20
+	country_diplomatic_power = 20
+	country_military_power = 20
+	development_cost = -0.2
+	idea_cost = -0.2
+	technology_cost = -0.2
+}
+
+customised_monarch_modifier_easier_3 = {
+	country_admin_power = 30
+	country_diplomatic_power = 30
+	country_military_power = 30
+	development_cost = -0.3
+	idea_cost = -0.3
+	technology_cost = -0.3
+}
+
+customised_monarch_modifier_easier_4 = {
+	country_admin_power = 40
+	country_diplomatic_power = 40
+	country_military_power = 40
+	development_cost = -0.4
+	idea_cost = -0.4
+	technology_cost = -0.4
+}

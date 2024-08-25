@@ -1,0 +1,129 @@
+namespace = customise_national_difficulty_event
+country_event = {
+	id = customise_national_difficulty_event.1
+	title = customise_national_difficulty_event.1.title
+	desc = customise_national_difficulty_event.1.desc
+	picture = TRADE_GOODS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_national_difficulty_event.1.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_national_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_national_modifier_easier_1
+			remove_country_modifier = customised_national_modifier_easier_2
+			remove_country_modifier = customised_national_modifier_easier_3
+			remove_country_modifier = customised_national_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_national_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_national_difficulty_event.1.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_national_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_national_modifier_easier_1
+			remove_country_modifier = customised_national_modifier_easier_2
+			remove_country_modifier = customised_national_modifier_easier_3
+			remove_country_modifier = customised_national_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_national_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_national_difficulty_event.1.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_national_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_national_modifier_easier_1
+			remove_country_modifier = customised_national_modifier_easier_2
+			remove_country_modifier = customised_national_modifier_easier_3
+			remove_country_modifier = customised_national_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_national_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_national_difficulty_event.1.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_national_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_national_modifier_easier_1
+			remove_country_modifier = customised_national_modifier_easier_2
+			remove_country_modifier = customised_national_modifier_easier_3
+			remove_country_modifier = customised_national_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_national_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_national_difficulty_event.1.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_national_modifier_easier_1
+				has_country_modifier = customised_national_modifier_easier_2
+				has_country_modifier = customised_national_modifier_easier_3
+				has_country_modifier = customised_national_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_national_modifier_easier_1
+			remove_country_modifier = customised_national_modifier_easier_2
+			remove_country_modifier = customised_national_modifier_easier_3
+			remove_country_modifier = customised_national_modifier_easier_4
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_national_difficulty_event.1.z
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+}

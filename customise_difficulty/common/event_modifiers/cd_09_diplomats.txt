@@ -1,0 +1,16 @@
+
+customised_diplomats_modifier_easier_1 = {
+	diplomats = 1
+}
+
+customised_diplomats_modifier_easier_2 = {
+	diplomats = 2
+}
+
+customised_diplomats_modifier_easier_3 = {
+	diplomats = 3
+}
+
+customised_diplomats_modifier_easier_4 = {
+	diplomats = 4
+}

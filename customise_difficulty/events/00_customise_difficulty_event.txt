@@ -1,0 +1,225 @@
+namespace = customise_difficulty_event
+# Selection
+country_event = {
+	id = customise_difficulty_event.0
+	title = customise_difficulty_event.0.title
+	desc = customise_difficulty_event.0.desc
+	picture = UNIVERSITY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_difficulty_event.0.a
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.b
+		hidden_effect = {
+			country_event = {
+				id = customise_monarch_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.c
+		hidden_effect = {
+			country_event = {
+				id = customise_religious_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.d
+		hidden_effect = {
+			country_event = {
+				id = customise_national_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.e
+		hidden_effect = {
+			country_event = {
+				id = customise_estates_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.f
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.g
+		hidden_effect = {
+			country_event = {
+				id = customise_colonial_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.h
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.i
+		hidden_effect = {
+			country_event = {
+				id = customise_leaders_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_economic_modifier_easier_1
+				has_country_modifier = customised_economic_modifier_easier_2
+				has_country_modifier = customised_economic_modifier_easier_3
+				has_country_modifier = customised_economic_modifier_easier_4
+				has_country_modifier = customised_monarch_modifier_easier_1
+				has_country_modifier = customised_monarch_modifier_easier_2
+				has_country_modifier = customised_monarch_modifier_easier_3
+				has_country_modifier = customised_monarch_modifier_easier_4
+				has_country_modifier = customised_religious_modifier_easier_1
+				has_country_modifier = customised_religious_modifier_easier_2
+				has_country_modifier = customised_religious_modifier_easier_3
+				has_country_modifier = customised_religious_modifier_easier_4
+				has_country_modifier = customised_national_modifier_easier_1
+				has_country_modifier = customised_national_modifier_easier_2
+				has_country_modifier = customised_national_modifier_easier_3
+				has_country_modifier = customised_national_modifier_easier_4
+				has_country_modifier = customised_estates_modifier_easier_1
+				has_country_modifier = customised_estates_modifier_easier_2
+				has_country_modifier = customised_estates_modifier_easier_3
+				has_country_modifier = customised_estates_modifier_easier_4
+				has_country_modifier = customised_diplomatic_modifier_easier_1
+				has_country_modifier = customised_diplomatic_modifier_easier_2
+				has_country_modifier = customised_diplomatic_modifier_easier_3
+				has_country_modifier = customised_diplomatic_modifier_easier_4
+				has_country_modifier = customised_colonial_modifier_easier_1
+				has_country_modifier = customised_colonial_modifier_easier_2
+				has_country_modifier = customised_colonial_modifier_easier_3
+				has_country_modifier = customised_colonial_modifier_easier_4
+				has_country_modifier = customised_admirals_modifier_easier_1
+				has_country_modifier = customised_admirals_modifier_easier_2
+				has_country_modifier = customised_admirals_modifier_easier_3
+				has_country_modifier = customised_admirals_modifier_easier_4
+				has_country_modifier = customised_army_modifier_easier_1
+				has_country_modifier = customised_army_modifier_easier_2
+				has_country_modifier = customised_army_modifier_easier_3
+				has_country_modifier = customised_army_modifier_easier_4
+				has_country_modifier = customised_generals_modifier_easier_1
+				has_country_modifier = customised_generals_modifier_easier_2
+				has_country_modifier = customised_generals_modifier_easier_3
+				has_country_modifier = customised_generals_modifier_easier_4
+				has_country_modifier = customised_navy_modifier_easier_1
+				has_country_modifier = customised_navy_modifier_easier_2
+				has_country_modifier = customised_navy_modifier_easier_3
+				has_country_modifier = customised_navy_modifier_easier_4
+				has_country_modifier = customised_colonists_modifier_easier_1
+				has_country_modifier = customised_colonists_modifier_easier_2
+				has_country_modifier = customised_colonists_modifier_easier_3
+				has_country_modifier = customised_colonists_modifier_easier_4
+				has_country_modifier = customised_diplomats_modifier_easier_1
+				has_country_modifier = customised_diplomats_modifier_easier_2
+				has_country_modifier = customised_diplomats_modifier_easier_3
+				has_country_modifier = customised_diplomats_modifier_easier_4
+				has_country_modifier = customised_merchants_modifier_easier_1
+				has_country_modifier = customised_merchants_modifier_easier_2
+				has_country_modifier = customised_merchants_modifier_easier_3
+				has_country_modifier = customised_merchants_modifier_easier_4
+				has_country_modifier = customised_missionaries_modifier_easier_1
+				has_country_modifier = customised_missionaries_modifier_easier_2
+				has_country_modifier = customised_missionaries_modifier_easier_3
+				has_country_modifier = customised_missionaries_modifier_easier_4
+				has_country_modifier = customised_ruler_modifier_easier_1
+				has_country_modifier = customised_ruler_modifier_easier_2
+				has_country_modifier = customised_ruler_modifier_easier_3
+				has_country_modifier = customised_ruler_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_economic_modifier_easier_1
+			remove_country_modifier = customised_economic_modifier_easier_2
+			remove_country_modifier = customised_economic_modifier_easier_3
+			remove_country_modifier = customised_economic_modifier_easier_4
+			remove_country_modifier = customised_monarch_modifier_easier_1
+			remove_country_modifier = customised_monarch_modifier_easier_2
+			remove_country_modifier = customised_monarch_modifier_easier_3
+			remove_country_modifier = customised_monarch_modifier_easier_4
+			remove_country_modifier = customised_religious_modifier_easier_1
+			remove_country_modifier = customised_religious_modifier_easier_2
+			remove_country_modifier = customised_religious_modifier_easier_3
+			remove_country_modifier = customised_religious_modifier_easier_4
+			remove_country_modifier = customised_national_modifier_easier_1
+			remove_country_modifier = customised_national_modifier_easier_2
+			remove_country_modifier = customised_national_modifier_easier_3
+			remove_country_modifier = customised_national_modifier_easier_4
+			remove_country_modifier = customised_estates_modifier_easier_1
+			remove_country_modifier = customised_estates_modifier_easier_2
+			remove_country_modifier = customised_estates_modifier_easier_3
+			remove_country_modifier = customised_estates_modifier_easier_4
+			remove_country_modifier = customised_diplomatic_modifier_easier_1
+			remove_country_modifier = customised_diplomatic_modifier_easier_2
+			remove_country_modifier = customised_diplomatic_modifier_easier_3
+			remove_country_modifier = customised_diplomatic_modifier_easier_4
+			remove_country_modifier = customised_colonial_modifier_easier_1
+			remove_country_modifier = customised_colonial_modifier_easier_2
+			remove_country_modifier = customised_colonial_modifier_easier_3
+			remove_country_modifier = customised_colonial_modifier_easier_4
+			remove_country_modifier = customised_admirals_modifier_easier_1
+			remove_country_modifier = customised_admirals_modifier_easier_2
+			remove_country_modifier = customised_admirals_modifier_easier_3
+			remove_country_modifier = customised_admirals_modifier_easier_4
+			remove_country_modifier = customised_army_modifier_easier_1
+			remove_country_modifier = customised_army_modifier_easier_2
+			remove_country_modifier = customised_army_modifier_easier_3
+			remove_country_modifier = customised_army_modifier_easier_4
+			remove_country_modifier = customised_generals_modifier_easier_1
+			remove_country_modifier = customised_generals_modifier_easier_2
+			remove_country_modifier = customised_generals_modifier_easier_3
+			remove_country_modifier = customised_generals_modifier_easier_4
+			remove_country_modifier = customised_navy_modifier_easier_1
+			remove_country_modifier = customised_navy_modifier_easier_2
+			remove_country_modifier = customised_navy_modifier_easier_3
+			remove_country_modifier = customised_navy_modifier_easier_4
+			remove_country_modifier = customised_colonists_modifier_easier_1
+			remove_country_modifier = customised_colonists_modifier_easier_2
+			remove_country_modifier = customised_colonists_modifier_easier_3
+			remove_country_modifier = customised_colonists_modifier_easier_4
+			remove_country_modifier = customised_diplomats_modifier_easier_1
+			remove_country_modifier = customised_diplomats_modifier_easier_2
+			remove_country_modifier = customised_diplomats_modifier_easier_3
+			remove_country_modifier = customised_diplomats_modifier_easier_4
+			remove_country_modifier = customised_merchants_modifier_easier_1
+			remove_country_modifier = customised_merchants_modifier_easier_2
+			remove_country_modifier = customised_merchants_modifier_easier_3
+			remove_country_modifier = customised_merchants_modifier_easier_4
+			remove_country_modifier = customised_missionaries_modifier_easier_1
+			remove_country_modifier = customised_missionaries_modifier_easier_2
+			remove_country_modifier = customised_missionaries_modifier_easier_3
+			remove_country_modifier = customised_missionaries_modifier_easier_4
+			remove_country_modifier = customised_ruler_modifier_easier_1
+			remove_country_modifier = customised_ruler_modifier_easier_2
+			remove_country_modifier = customised_ruler_modifier_easier_3
+			remove_country_modifier = customised_ruler_modifier_easier_4
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_difficulty_event.0.z
+	}
+}

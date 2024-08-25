@@ -1,0 +1,15 @@
+customised_colonists_modifier_easier_1 = {
+	colonists = 1
+}
+
+customised_colonists_modifier_easier_2 = {
+	colonists = 2
+}
+
+customised_colonists_modifier_easier_3 = {
+	colonists = 3
+}
+
+customised_colonists_modifier_easier_4 = {
+	colonists = 4
+}

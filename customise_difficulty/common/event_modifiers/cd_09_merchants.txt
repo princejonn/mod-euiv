@@ -1,0 +1,15 @@
+customised_merchants_modifier_easier_1 = {
+	merchants = 1
+}
+
+customised_merchants_modifier_easier_2 = {
+	merchants = 2
+}
+
+customised_merchants_modifier_easier_3 = {
+	merchants = 3
+}
+
+customised_merchants_modifier_easier_4 = {
+	merchants = 4
+}
