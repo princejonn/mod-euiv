@@ -963,8 +963,7 @@ exploration_ideas = {
 			primitives = yes
 		}
 		modifier = {
-			## Modified
-			factor = 0.5
+			factor = 0.1
 			current_age = age_of_revolutions
 		}
 		modifier = {
@@ -1056,15 +1055,16 @@ exploration_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0.1
-			OR = {
-				tag = ARA
-				tag = MAM
-				tag = TUR
+			factor = 0.01
+			NOT = {
+				OR = {
+					technology_group = western
+					technology_group = eastern
+				}
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			NOT = {
 				is_year = 1490
 			}
@@ -1099,7 +1099,6 @@ exploration_ideas = {
 			factor = 1000
 			OR = {
 				tag = CAS
-				tag = NED
 				tag = POR
 				tag = SPA
 			}
@@ -1112,6 +1111,7 @@ exploration_ideas = {
 				tag = FRA
 				tag = GBR
 				tag = KUR
+				tag = NED
 				tag = SWE
 			}
 		}
@@ -1434,7 +1434,7 @@ expansion_ideas = {
 	ai_will_do = {
 		factor = 0.5
 		modifier = {
-			factor = 10
+			factor = 1000
 			OR = {
 				has_idea_group = exploration_ideas
 				is_colonial_nation = yes
@@ -1475,22 +1475,12 @@ expansion_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			NOT = {
 				OR = {
 					technology_group = western
 					technology_group = eastern
-					technology_group = muslim
 				}
-			}
-		}
-		# Modified
-		modifier = {
-			factor = 0.1
-			OR = {
-				tag = ARA
-				tag = MAM
-				tag = TUR
 			}
 		}
 	}
