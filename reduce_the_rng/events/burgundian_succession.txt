@@ -15,15 +15,15 @@ country_event = {
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			is_year = 1463
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.05
 			is_year = 1473
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.1
 			OR = {
 				CAS = {
 					ai = no
@@ -55,6 +55,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			kill_heir = {
+				allow_new_heir = no
 			}
 			kill_ruler = yes
 		}
