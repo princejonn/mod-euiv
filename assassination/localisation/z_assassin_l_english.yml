@@ -1,0 +1,26 @@
+﻿l_english:
+  # new diplomatic actions
+
+  assassinate_ruler: "Assassinate Ruler"
+  assassinate_ruler_title: "Assassinate Ruler"
+  assassinate_ruler_tooltip: "With this action you can attempt to assassinate the ruler of [From.GetName]. It has a §Y90.00%§! chance of success."
+  assassinate_ruler_desc: "Are you sure you want to assassinate [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G90.00%§! chance of success. It also has a §R10.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you §Y-90.00§! Spy Network Strength and §Y-500.00§! Ducats no matter the outcome."
+  
+  assassinate_heir: "Assassinate Heir"
+  assassinate_heir_title: "Assassinate Heir"
+  assassinate_heir_tooltip: "With this action you can attempt to assassinate the ruler of [From.GetName]. It has a §Y90.00%§! chance of success."
+  assassinate_heir_desc: "Are you sure you want to assassinate [From.Heir.GetTitle] [From.Heir.GetName], child of [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G90.00%§! chance of success. It also has a §R10.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you §Y-90.00§! Spy Network Strength and §Y-500.00§! Ducats no matter the outcome."
+  
+  assassinate_general: "Assassinate General"
+  assassinate_general_title: "Assassinate General"
+  assassinate_general_tooltip: "With this action you can attempt to assassinate a general of [From.GetName]. It has a §Y85.00%§! chance of success."
+  assassinate_general_desc: "Are you sure you want to assassinate a general of [From.GetName]?\nIt has a §G85.00%§! chance of success. It also has a §R15.00§! chance of discovery, which will make [From.GetName] upset with you.\n\nThis action will cost you §Y-75.00§! Spy Network Strength and §Y-100.00§! Ducats no matter the outcome."
+
+  # opinion modifiers
+
+  ruler_assassination: "Assassinated our Ruler"
+  ruler_assassination_attempt: "Attempted Assassination of our Ruler"
+  heir_assassination: "Assassinated our Heir"
+  heir_assassination_attempt: "Attempted Assassination of our Heir"
+  general_assassination: "Assassinated our General"
+  general_assassination_attempt: "Attempted Assassination of our General"

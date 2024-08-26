@@ -1,0 +1,11 @@
+With ths mod I'm adding a little bit of murderous intrigue into our Covert diplomacy actions. I wanted to add a path to expansion by infiltrating dynasties and then murdering your way to the crown.
+
+When you complete your Espionage Ideas, you will have access to three new diplomatic actions:
+
+[list]
+	[*] Assassinate Ruler
+	[*] Assassinate Heir
+	[*] Assassinate General (sadly random. the game doesn't allow for targeting specific generals)
+[/list]
+
+Each action has a chance of success and a chance of failure. If you fail, the country will become very upset with you. If you succeed, there's still a chance they get extremely upset with you (who knows? they might even declare war if they get hostile enough?). This is to add a little bit of excitement and danger to your decision, beyond the regular cost of spy network and ducats.

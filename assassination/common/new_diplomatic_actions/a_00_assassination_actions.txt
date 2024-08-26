@@ -1,0 +1,198 @@
+assassinate_ruler = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			ai = yes
+		}
+	}
+	is_allowed = {
+		full_idea_group = spy_ideas
+		has_spy_network_in = {
+			who = FROM
+			value = 90
+		}
+		treasury = 500
+	}
+	on_accept = {
+		add_spy_network_in = {
+			who = FROM
+			value = -90
+		}
+		add_treasury = -500
+		random_list = {
+			90 = {
+				FROM = {
+					kill_ruler = yes
+					add_stability = -1
+				}
+				random = {
+					chance = 10
+					FROM = {
+						add_opinion = {
+							who = ROOT
+							modifier = ruler_assassination
+						}
+						set_ai_attitude = {
+							attitude = attitude_hostile
+							who = ROOT
+							locked = no
+						}
+						add_casus_belli = {
+							target = ROOT
+							type = cb_humiliate
+							months = 240
+						}
+					}
+				}
+			}
+			10 = {
+				FROM = {
+					add_opinion = {
+						who = ROOT
+						modifier = ruler_assassination_attempt
+					}
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+assassinate_heir = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			ai = yes
+		}
+		FROM = {
+			has_heir = yes
+		}
+	}
+	is_allowed = {
+		full_idea_group = spy_ideas
+		has_spy_network_in = {
+			who = FROM
+			value = 90
+		}
+		treasury = 500
+	}
+	on_accept = {
+		add_spy_network_in = {
+			who = FROM
+			value = -90
+		}
+		add_treasury = -500
+		random_list = {
+			90 = {
+				FROM = {
+					kill_heir = {
+						allow_new_heir = no
+					}
+					add_stability = -1
+				}
+				random = {
+					chance = 10
+					FROM = {
+						add_opinion = {
+							who = ROOT
+							modifier = heir_assassination
+						}
+						set_ai_attitude = {
+							attitude = attitude_hostile
+							who = ROOT
+							locked = no
+						}
+						add_casus_belli = {
+							target = ROOT
+							type = cb_humiliate
+							months = 240
+						}
+					}
+				}
+			}
+			10 = {
+				FROM = {
+					add_opinion = {
+						who = ROOT
+						modifier = heir_assassination_attempt
+					}
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+assassinate_general = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			ai = yes
+		}
+	}
+	is_allowed = {
+		full_idea_group = spy_ideas
+		has_spy_network_in = {
+			who = FROM
+			value = 75
+		}
+		treasury = 100
+	}
+	on_accept = {
+		add_spy_network_in = {
+			who = FROM
+			value = -75
+		}
+		add_treasury = -100
+		random_list = {
+			85 = {
+				FROM = {
+					kill_leader = {
+						type = general
+					}
+				}
+				random = {
+					chance = 15
+					FROM = {
+						add_opinion = {
+							who = ROOT
+							modifier = general_assassination
+						}
+						set_ai_attitude = {
+							attitude = attitude_outraged
+							who = ROOT
+							locked = no
+						}
+					}
+				}
+			}
+			15 = {
+				FROM = {
+					add_opinion = {
+						who = ROOT
+						modifier = general_assassination_attempt
+					}
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
