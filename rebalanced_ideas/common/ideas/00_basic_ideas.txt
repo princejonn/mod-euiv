@@ -453,7 +453,7 @@ spy_ideas = {
 		can_transfer_vassal_wargoal = yes
 	}
 	state_propaganda = {
-		ae_impact = -0.2
+		ae_impact = -0.3
 	}
 	efficient_spies = {
 		spy_offence = 0.5
