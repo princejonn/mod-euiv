@@ -12,6 +12,7 @@ So you want to play as the HRE, but there are a few things that just don't feel 
   [*] When you click Erbkaisertum, you will be allowed to select if you want to enforce your Catholicism (or protestantism), or if you wish to enact religious peace.
   [*] Vassals join the HRE more consistently.
   [*] You will get an event for a Personal Union casus belli on Byzantium as player Austria (Feels like it makes sense for your ambitions to restore the Eastern Roman Empire).
+  [*] You will have a decision to instantly guarantee all non-subject HRE members (For when you want to play as a benevolent guardian of all the principalities).
 [/list]
 
 [h3]Vassals joining the HRE[/h3]

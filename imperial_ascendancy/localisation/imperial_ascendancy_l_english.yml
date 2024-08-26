@@ -1,10 +1,54 @@
 ﻿l_english:
-  hre_pu_event.1.title:0 "The Eastern Empire"
-  hre_pu_event.1.desc:0 "The Eastern Empire has been in a state of decline for centuries, and the time has come for the Holy Roman Empire to take control of the region. The Imperial Parliament has convened in a Diet to proclaim the Eastern Empire to be a part of the Holy Roman Empire. The Emperor is given broad authority to enforce Imperial control over the region."
-  hre_pu_event.1.a:0 "We shall once again be united"
 
-  select_hre_religion.1.title:0 "Erbkaisertum Diet"
-  select_hre_religion.1.desc:0 "The Treaty of Westphalia has been signed. The Imperial Parliament has convened in a Diet to proclaim the sole confessional faith of the Holy Roman Empire. Will you enforce your own religious conviction on the other member states, forcing Electors who follow a different confession to be stripped of their privileges? Is it time to lay down our arms and proclaim religious peace within the Empire?"
-  select_hre_religion.1.a:0 "Catholicism is the true faith"
-  select_hre_religion.1.b:0 "Protestantism is the true faith"
-  select_hre_religion.1.c:0 "Religious peace will be maintained"
+  # decisions
+
+  emperor_guarantees_all_title: "The Emperor Guarantees All"
+  emperor_guarantees_all_desc: "The Emperor has declared that all member states of the Holy Roman Empire are under his protection. This will ensure that the Empire remains united and that the Emperor's authority is respected."
+  emperor_guarantees_all_tooltip: "All members of the Holy Roman Empire will be guaranteed by the Emperor."
+
+  # event modifiers
+
+  ia_ega_modifier_80: "Emperor Guarantees All"
+  desc_ia_ega_modifier_80: "Emperor Guarantees All"
+  ia_ega_modifier_75: "Emperor Guarantees All"
+  desc_ia_ega_modifier_75: "Emperor Guarantees All"
+  ia_ega_modifier_70: "Emperor Guarantees All"
+  desc_ia_ega_modifier_70: "Emperor Guarantees All"
+  ia_ega_modifier_65: "Emperor Guarantees All"
+  desc_ia_ega_modifier_65: "Emperor Guarantees All"
+  ia_ega_modifier_60: "Emperor Guarantees All"
+  desc_ia_ega_modifier_60: "Emperor Guarantees All"
+  ia_ega_modifier_55: "Emperor Guarantees All"
+  desc_ia_ega_modifier_55: "Emperor Guarantees All"
+  ia_ega_modifier_50: "Emperor Guarantees All"
+  desc_ia_ega_modifier_50: "Emperor Guarantees All"
+  ia_ega_modifier_45: "Emperor Guarantees All"
+  desc_ia_ega_modifier_45: "Emperor Guarantees All"
+  ia_ega_modifier_40: "Emperor Guarantees All"
+  desc_ia_ega_modifier_40: "Emperor Guarantees All"
+  ia_ega_modifier_35: "Emperor Guarantees All"
+  desc_ia_ega_modifier_35: "Emperor Guarantees All"
+  ia_ega_modifier_30: "Emperor Guarantees All"
+  desc_ia_ega_modifier_30: "Emperor Guarantees All"
+  ia_ega_modifier_25: "Emperor Guarantees All"
+  desc_ia_ega_modifier_25: "Emperor Guarantees All"
+  ia_ega_modifier_20: "Emperor Guarantees All"
+  desc_ia_ega_modifier_20: "Emperor Guarantees All"
+  ia_ega_modifier_15: "Emperor Guarantees All"
+  desc_ia_ega_modifier_15: "Emperor Guarantees All"
+  ia_ega_modifier_10: "Emperor Guarantees All"
+  desc_ia_ega_modifier_10: "Emperor Guarantees All"
+  ia_ega_modifier_5: "Emperor Guarantees All"
+  desc_ia_ega_modifier_5: "Emperor Guarantees All"
+
+  # events
+
+  hre_pu_event.1.title: "The Eastern Empire"
+  hre_pu_event.1.desc: "The Eastern Empire has been in a state of decline for centuries, and the time has come for the Holy Roman Empire to take control of the region. The Imperial Parliament has convened in a Diet to proclaim the Eastern Empire to be a part of the Holy Roman Empire. The Emperor is given broad authority to enforce Imperial control over the region."
+  hre_pu_event.1.a: "We shall once again be united"
+
+  select_hre_religion.1.title: "Erbkaisertum Diet"
+  select_hre_religion.1.desc: "The Treaty of Westphalia has been signed. The Imperial Parliament has convened in a Diet to proclaim the sole confessional faith of the Holy Roman Empire. Will you enforce your own religious conviction on the other member states, forcing Electors who follow a different confession to be stripped of their privileges? Is it time to lay down our arms and proclaim religious peace within the Empire?"
+  select_hre_religion.1.a: "Catholicism is the true faith"
+  select_hre_religion.1.b: "Protestantism is the true faith"
+  select_hre_religion.1.c: "Religious peace will be maintained"

@@ -1,0 +1,3 @@
+on_yearly_pulse = {
+	emperor_guarantees_all_pulse_effect = yes
+}

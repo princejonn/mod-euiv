@@ -1,0 +1,35 @@
+country_decisions = {
+	emperor_guarantees_all = {
+		major = yes
+		potential = {
+			ai = no
+			is_emperor = yes
+			is_subject = no
+			any_country = {
+				is_hre_guarantee_member = yes
+				NOT = {
+					guaranteed_by = emperor
+				}
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = emperor_guarantees_all_tooltip
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_hre_guarantee_member = yes
+					}
+					emperor = {
+						create_guarantee = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

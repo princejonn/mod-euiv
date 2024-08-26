@@ -1,0 +1,63 @@
+ia_ega_modifier_80 = {
+	country_diplomatic_power = 80
+}
+
+ia_ega_modifier_75 = {
+	country_diplomatic_power = 75
+}
+
+ia_ega_modifier_70 = {
+	country_diplomatic_power = 70
+}
+
+ia_ega_modifier_65 = {
+	country_diplomatic_power = 65
+}
+
+ia_ega_modifier_60 = {
+	country_diplomatic_power = 60
+}
+
+ia_ega_modifier_55 = {
+	country_diplomatic_power = 55
+}
+
+ia_ega_modifier_50 = {
+	country_diplomatic_power = 50
+}
+
+ia_ega_modifier_45 = {
+	country_diplomatic_power = 45
+}
+
+ia_ega_modifier_40 = {
+	country_diplomatic_power = 40
+}
+
+ia_ega_modifier_35 = {
+	country_diplomatic_power = 35
+}
+
+ia_ega_modifier_30 = {
+	country_diplomatic_power = 30
+}
+
+ia_ega_modifier_25 = {
+	country_diplomatic_power = 25
+}
+
+ia_ega_modifier_20 = {
+	country_diplomatic_power = 20
+}
+
+ia_ega_modifier_15 = {
+	country_diplomatic_power = 15
+}
+
+ia_ega_modifier_10 = {
+	country_diplomatic_power = 10
+}
+
+ia_ega_modifier_5 = {
+	country_diplomatic_power = 5
+}
