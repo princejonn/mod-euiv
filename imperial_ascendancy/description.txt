@@ -2,6 +2,7 @@ So you want to play as the HRE, but there are a few things that just don't feel 
 
 [h2]Features[/h2]
 [list]
+  [*] Both Imperial Reform branches are unlocked to the player. They are no longer exclusive to each other. You can do both!
   [*] You get a larger authority penalty for provinces outside HRE control (from 0.005 to 0.02). You're going to want to start bringing everyone into the fold as soon as possible.
   [*] Revoking a reform has a higher cost (from 50 to 75).
   [*] The amount of princes required in the HRE to keep authority has been changed (from 25 to 20).

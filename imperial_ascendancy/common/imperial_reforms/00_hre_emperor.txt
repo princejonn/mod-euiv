@@ -151,7 +151,7 @@ emperor_landfriede = {
 emperor_reichstag_collegia = {
 	empire = hre
 	required_reform = emperor_perpetual_diet
-	disabled_by = emperor_hofgericht
+	# disabled_by = emperor_hofgericht
 	gui_container = left_branch
 	ai_acceptance_decentralize = yes
 	potential = {
@@ -240,11 +240,10 @@ emperor_hofgericht = {
 		has_dlc = "Emperor"
 	}
 	emperor = {
-		core_creation = -0.1
-		max_free_cities = 3
+		core_creation = -0.15
 	}
 	required_reform = emperor_perpetual_diet
-	disabled_by = emperor_reichstag_collegia
+	# disabled_by = emperor_reichstag_collegia
 	gui_container = right_branch
 	ai_acceptance_centralize = yes
 }
