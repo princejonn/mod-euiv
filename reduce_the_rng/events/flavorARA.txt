@@ -388,7 +388,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1
+		months = 30
 	}
 	immediate = {
 		set_country_flag = alfonso_died_yes_really
@@ -413,8 +413,13 @@ country_event = {
 				factor = 1000
 			}
 			modifier = {
-				BYZ = {
-					ai = no
+				OR = {
+					BYZ = {
+						ai = no
+					}
+					HAB = {
+						ai = no
+					}
 				}
 				factor = 1000
 			}
@@ -452,9 +457,6 @@ country_event = {
 						ai = no
 					}
 					SPA = {
-						ai = no
-					}
-					HAB = {
 						ai = no
 					}
 				}

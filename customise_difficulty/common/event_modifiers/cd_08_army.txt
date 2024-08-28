@@ -21,7 +21,7 @@ customised_army_modifier_easier_1 = {
 	shock_damage = 0.1
 	shock_damage_received = -0.1
 	siege_ability = 0.1
-	yearly_army_professionalism = 1
+	yearly_army_professionalism = 0.01
 }
 
 customised_army_modifier_easier_2 = {
@@ -47,7 +47,7 @@ customised_army_modifier_easier_2 = {
 	shock_damage = 0.3
 	shock_damage_received = -0.3
 	siege_ability = 0.3
-	yearly_army_professionalism = 3
+	yearly_army_professionalism = 0.03
 }
 
 customised_army_modifier_easier_3 = {
@@ -73,7 +73,7 @@ customised_army_modifier_easier_3 = {
 	shock_damage = 0.5
 	shock_damage_received = -0.5
 	siege_ability = 0.5
-	yearly_army_professionalism = 5
+	yearly_army_professionalism = 0.05
 }
 
 customised_army_modifier_easier_4 = {
@@ -99,5 +99,5 @@ customised_army_modifier_easier_4 = {
 	shock_damage = 0.8
 	shock_damage_received = -0.8
 	siege_ability = 0.8
-	yearly_army_professionalism = 8
+	yearly_army_professionalism = 0.08
 }
