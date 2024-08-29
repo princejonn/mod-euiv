@@ -26,7 +26,6 @@ country_event = {
 				has_heir = no
 				is_year = 1457
 			}
-			## Modded
 			AND = {
 				NOT = {
 					heir_age = 15
@@ -89,7 +88,6 @@ country_event = {
 	option = {
 		name = "incidents_bur_inheritance.0.b"
 		ai_chance = {
-			## Modded
 			factor = 0
 		}
 		add_legitimacy = 20
@@ -151,26 +149,6 @@ country_event = {
 		name = "incidents_bur_inheritance.1.a"
 		ai_chance = {
 			factor = 1
-			## Modded
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						has_saved_event_target = bur_strongest_ally
-						event_target:bur_strongest_ally = {
-							ai = no
-						}
-					}
-					emperor = {
-						exists = yes
-						ai = no
-					}
-					FRA = {
-						exists = yes
-						ai = no
-					}
-				}
-			}
 			modifier = {
 				factor = 5
 				is_great_power = yes
@@ -293,26 +271,6 @@ country_event = {
 		name = "incidents_bur_inheritance.1.b"
 		ai_chance = {
 			factor = 1
-			## Modded
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						has_saved_event_target = bur_strongest_ally
-						event_target:bur_strongest_ally = {
-							ai = no
-						}
-					}
-					emperor = {
-						exists = yes
-						ai = no
-					}
-					FRA = {
-						exists = yes
-						ai = no
-					}
-				}
-			}
 			modifier = {
 				factor = 1.2
 				army_strength = {
@@ -377,16 +335,14 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 10
-			## Modded
 			modifier = {
-				factor = 1000
+				factor = 10000
 				emperor = {
 					ai = no
 				}
 			}
-			## Modded
 			modifier = {
-				factor = 1000
+				factor = 2
 				has_opinion = {
 					who = emperor
 					value = 100
@@ -402,7 +358,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 99
+				factor = 2
 				alliance_with = emperor
 			}
 			modifier = {
@@ -421,25 +377,25 @@ country_event = {
 		}
 		custom_tooltip = marry_the_emperor_tt
 		#Absorb subjects
-		# if = {
-		# 	limit = {
-		# 		NEV = {
-		# 			is_subject_of = BUR
-		# 		}
-		# 		FRA = {
-		# 			exists = yes
-		# 		}
-		# 	}
-		# 	FRA = {
-		# 		vassalize = NEV
-		# 	}
-		# }
+		if = {
+			limit = {
+				NEV = {
+					is_subject_of = BUR
+				}
+				FRA = {
+					exists = yes
+				}
+			}
+			FRA = {
+				vassalize = NEV
+			}
+		}
 		every_subject_country = {
 			limit = {
 				ai = yes
-				# NOT = {
-				# 	tag = NEV
-				# }
+				NOT = {
+					tag = NEV
+				}
 				capital_scope = {
 					OR = {
 						region = france_region
@@ -508,7 +464,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				factor = 1000
+				factor = 10000
 				event_target:bur_strongest_ally = {
 					ai = no
 				}
@@ -560,25 +516,9 @@ country_event = {
 		}
 		custom_tooltip = marry_strong_ally_tt
 		#Absorb subjects
-		# if = {
-		# 	limit = {
-		# 		NEV = {
-		# 			is_subject_of = ROOT
-		# 		}
-		# 		FRA = {
-		# 			exists = yes
-		# 		}
-		# 	}
-		# 	FRA = {
-		# 		vassalize = NEV
-		# 	}
-		# }
 		every_subject_country = {
 			limit = {
 				ai = yes
-				# NOT = {
-				# 	tag = NEV
-				# }
 				capital_scope = {
 					OR = {
 						region = france_region
@@ -642,7 +582,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				factor = 1000
+				factor = 10000
 				FRA = {
 					ai = no
 				}

@@ -23,6 +23,17 @@ country_event = {
 			is_year = 1473
 		}
 		modifier = {
+			factor = 0.05
+			OR = {
+				HAB = {
+					ai = no
+					is_subject = no
+					alliance_with = BUR
+					marriage_with = BUR
+				}
+			}
+		}
+		modifier = {
 			factor = 0.1
 			OR = {
 				CAS = {
@@ -32,12 +43,6 @@ country_event = {
 					marriage_with = BUR
 				}
 				ENG = {
-					ai = no
-					is_subject = no
-					alliance_with = BUR
-					marriage_with = BUR
-				}
-				HAB = {
 					ai = no
 					is_subject = no
 					alliance_with = BUR
