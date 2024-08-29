@@ -41,6 +41,57 @@ country_event = {
 	}
 	option = {
 		name = select_hre_religion.1.c
+		trigger = {
+			emperor = {
+				religion = reformed
+			}
+		}
+		hidden_effect = {
+			set_hre_religion_treaty = yes
+			set_hre_heretic_religion = catholic
+			set_hre_religion = reformed
+			set_hre_religion_locked = yes
+		}
+		tooltip = {
+			set_hre_religion_locked = yes
+		}
+	}
+	option = {
+		name = select_hre_religion.1.d
+		trigger = {
+			emperor = {
+				religion = hussite
+			}
+		}
+		hidden_effect = {
+			set_hre_religion_treaty = yes
+			set_hre_heretic_religion = catholic
+			set_hre_religion = hussite
+			set_hre_religion_locked = yes
+		}
+		tooltip = {
+			set_hre_religion_locked = yes
+		}
+	}
+	option = {
+		name = select_hre_religion.1.e
+		trigger = {
+			emperor = {
+				religion = anglican
+			}
+		}
+		hidden_effect = {
+			set_hre_religion_treaty = yes
+			set_hre_heretic_religion = catholic
+			set_hre_religion = anglican
+			set_hre_religion_locked = yes
+		}
+		tooltip = {
+			set_hre_religion_locked = yes
+		}
+	}
+	option = {
+		name = select_hre_religion.1.z
 		hidden_effect = {
 			set_hre_religion_treaty = yes
 		}

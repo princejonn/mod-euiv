@@ -4,7 +4,12 @@ country_decisions = {
 		potential = {
 			ai = no
 			is_emperor = yes
-			is_subject = no
+			NOT = {
+				hre_reform_passed = emperor_landfriede
+			}
+			NOT = {
+				hre_reform_passed = emperor_privilegia_de_non_appelando
+			}
 			any_country = {
 				is_hre_guarantee_member = yes
 				NOT = {
@@ -24,6 +29,45 @@ country_decisions = {
 					}
 					emperor = {
 						create_guarantee = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	emperor_guarantees_all_revoke = {
+		major = yes
+		potential = {
+			ai = no
+			is_emperor = yes
+			OR = {
+				hre_reform_passed = emperor_landfriede
+				hre_reform_passed = emperor_privilegia_de_non_appelando
+			}
+			any_country = {
+				is_hre_guarantee_member = yes
+				guaranteed_by = emperor
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = emperor_guarantees_all_revoke_tooltip
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_hre_guarantee_member = yes
+						guaranteed_by = emperor
+					}
+					emperor = {
+						remove_guarantee = PREV
+					}
+				}
+				every_country = {
+					limit = {
 					}
 				}
 			}

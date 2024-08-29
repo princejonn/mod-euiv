@@ -6,8 +6,16 @@
   emperor_guarantees_all_desc: "The Emperor has declared that all member states of the Holy Roman Empire are under his protection. This will ensure that the Empire remains united and that the Emperor's authority is respected."
   emperor_guarantees_all_tooltip: "All members of the Holy Roman Empire will be guaranteed by the Emperor."
 
+  emperor_guarantees_all_revoke_title: "Enact Ewiger Landfriede"
+  emperor_guarantees_all_revoke_desc: "With the passing of the Ewiger Landfriede reform, the Emperor no longer needs to explicitly guarantee the security of all member states of the Holy Roman Empire. This will allow the Emperor to focus on other matters."
+  emperor_guarantees_all_revoke_tooltip: "All members of the Holy Roman Empire currently guaranteed by the Emperor will no longer be guaranteed."
+
   # event modifiers
 
+  ia_ega_modifier_90: "Emperor Guarantees All"
+  desc_ia_ega_modifier_90: "Emperor Guarantees All"
+  ia_ega_modifier_85: "Emperor Guarantees All"
+  desc_ia_ega_modifier_85: "Emperor Guarantees All"
   ia_ega_modifier_80: "Emperor Guarantees All"
   desc_ia_ega_modifier_80: "Emperor Guarantees All"
   ia_ega_modifier_75: "Emperor Guarantees All"
@@ -41,6 +49,17 @@
   ia_ega_modifier_5: "Emperor Guarantees All"
   desc_ia_ega_modifier_5: "Emperor Guarantees All"
 
+  # new diplomatic actions
+
+  emperor_force_release_nations: "Release Nations"
+  emperor_force_release_nations_title: "Release Nations"
+  emperor_force_release_nations_tooltip: "This forces [From.GetName] to release all possible nations, starting from smallest to biggest if possible, otherwise randomly."
+  emperor_force_release_nations_desc: "Are you sure you want to force [From.GetName] to release all possible nations?\nThis forces the scoped country to release all possible nations, starting from smallest to biggest if possible, otherwise randomly.\nWe will lose §R-25.00§! §YImperial Authority§!, and [From.GetName] will lose §R-50.00§! opinion of us."
+
+  # opinion modifiers  
+
+  forced_release_nations: "Forced us to release nations"
+
   # events
 
   hre_pu_event.1.title: "The Eastern Empire"
@@ -51,4 +70,7 @@
   select_hre_religion.1.desc: "The Treaty of Westphalia has been signed. The Imperial Parliament has convened in a Diet to proclaim the sole confessional faith of the Holy Roman Empire. Will you enforce your own religious conviction on the other member states, forcing Electors who follow a different confession to be stripped of their privileges? Is it time to lay down our arms and proclaim religious peace within the Empire?"
   select_hre_religion.1.a: "Catholicism is the true faith"
   select_hre_religion.1.b: "Protestantism is the true faith"
-  select_hre_religion.1.c: "Religious peace will be maintained"
+  select_hre_religion.1.c: "Reformed Catholicism is the true faith"
+  select_hre_religion.1.d: "Hussitism is the true faith"
+  select_hre_religion.1.e: "Anglicanism is the true faith"
+  select_hre_religion.1.z: "Religious peace will be maintained"

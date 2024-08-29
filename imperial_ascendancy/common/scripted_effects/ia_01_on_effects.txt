@@ -1,4 +1,6 @@
 remove_all_dip_modifiers = {
+	remove_country_modifier = ia_ega_modifier_90
+	remove_country_modifier = ia_ega_modifier_85
 	remove_country_modifier = ia_ega_modifier_80
 	remove_country_modifier = ia_ega_modifier_75
 	remove_country_modifier = ia_ega_modifier_70
@@ -24,6 +26,30 @@ emperor_guarantees_all_pulse_effect = {
 				is_emperor = yes
 			}
 			if = {
+				limit = {
+					num_emperor_guarantees = {
+						amount = 90
+					}
+				}
+				remove_all_dip_modifiers = yes
+				add_country_modifier = {
+					name = ia_ega_modifier_90
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					num_emperor_guarantees = {
+						amount = 85
+					}
+				}
+				remove_all_dip_modifiers = yes
+				add_country_modifier = {
+					name = ia_ega_modifier_85
+					duration = -1
+				}
+			}
+			else_if = {
 				limit = {
 					num_emperor_guarantees = {
 						amount = 80

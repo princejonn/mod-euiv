@@ -3,6 +3,7 @@ So you want to play as the HRE, but there are a few things that just don't feel 
 [h2]Features[/h2]
 [list]
   [*] Both Imperial Reform branches are unlocked to the player. They are no longer exclusive to each other. You can do both!
+  [*] When you have enacted Ewige Landsfried or Revoked the Privilegia, you will gain a diplomatic action be able to force members of the empire to release all possible nations, making the empire neat and cluttered and have the insane bordergore that we all love.
   [*] You get a larger authority penalty for provinces outside HRE control (from 0.005 to 0.02). You're going to want to start bringing everyone into the fold as soon as possible.
   [*] Revoking a reform has a higher cost (from 50 to 75).
   [*] The amount of princes required in the HRE to keep authority has been changed (from 25 to 20).
@@ -16,10 +17,10 @@ So you want to play as the HRE, but there are a few things that just don't feel 
   [*] You will have a decision to instantly guarantee all non-subject HRE members (For when you want to play as a benevolent guardian of all the principalities).
 [/list]
 
-[h3]Vassals joining the HRE[/h3]
+[h2]Vassals joining the HRE[/h2]
 The base game has a trigger that allows vassals to join the HRE, but sometimes it doesn't fire correctly (imo), so I've created a new event that will definitely fire if you meet the requirements.
 
-[h4]Requirements[/h4]
+[h3]Requirements[/h3]
 [list]
     [*] You need to be emperor.
     [*] You need to have at least 10 Imperial Authority.

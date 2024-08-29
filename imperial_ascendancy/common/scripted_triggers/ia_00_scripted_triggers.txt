@@ -15,9 +15,9 @@ num_emperor_guarantees = {
 			is_part_of_hre = yes
 			OR = {
 				guaranteed_by = emperor
-				emperor = {
-					is_supporting_independence_of = PREV
-				}
+				marriage_with = emperor
+				is_subject_of = emperor
+				alliance_with = emperor
 			}
 		}
 		amount = $amount$

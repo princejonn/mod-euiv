@@ -1,3 +1,11 @@
+ia_ega_modifier_90 = {
+	country_diplomatic_power = 90
+}
+
+ia_ega_modifier_85 = {
+	country_diplomatic_power = 85
+}
+
 ia_ega_modifier_80 = {
 	country_diplomatic_power = 80
 }
