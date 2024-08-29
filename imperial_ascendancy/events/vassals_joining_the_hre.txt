@@ -16,12 +16,19 @@ country_event = {
 				who = FROM
 				value = 100
 			}
-			any_province = {
+			capital_scope = {
 				is_part_of_hre = no
 			}
 			OR = {
 				any_neighbor_country = {
+					is_subject = no
 					is_part_of_hre = yes
+				}
+				any_neighbor_country = {
+					is_subject = yes
+					overlord = {
+						is_part_of_hre = yes
+					}
 				}
 				capital_scope = {
 					is_island = yes
@@ -30,12 +37,12 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	immediate = {
 		hidden_effect = {
 			emperor = {
-				add_imperial_influence = 1
+				add_imperial_influence = 10
 			}
 			random_subject_country = {
 				limit = {
@@ -47,30 +54,32 @@ country_event = {
 						who = FROM
 						value = 100
 					}
-					any_province = {
+					capital_scope = {
 						is_part_of_hre = no
 					}
 					OR = {
 						any_neighbor_country = {
+							is_subject = no
 							is_part_of_hre = yes
+						}
+						any_neighbor_country = {
+							is_subject = yes
+							overlord = {
+								is_part_of_hre = yes
+							}
 						}
 						capital_scope = {
 							is_island = yes
 						}
 					}
 				}
-				set_in_empire = yes
-				random_province = {
-					limit = {
-						owned_by = FROM
-						is_core = FROM
-						is_part_of_hre = no
-						any_neighbor_province = {
-							is_part_of_hre = yes
-						}
+				save_event_target_as = hre_applicant
+				event_target:hre_applicant = {
+					capital_scope = {
+						set_in_empire = yes
 					}
-					set_in_empire = yes
 				}
+				set_in_empire = yes
 			}
 		}
 	}
