@@ -24,224 +24,211 @@ emperor_guarantees_all_pulse_effect = {
 		if = {
 			limit = {
 				is_emperor = yes
-				NOT = {
-					hre_reform_passed = privilegia_de_non_appelando
-				}
 			}
+			remove_all_dip_modifiers = yes
 			if = {
 				limit = {
-					num_emperor_guarantees = {
-						amount = 90
+					NOT = {
+						hre_reform_passed = privilegia_de_non_appelando
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_90
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 85
+				if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 90
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_90
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_85
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 80
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 85
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_85
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_80
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 75
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 80
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_80
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_75
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 70
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 75
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_75
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_70
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 65
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 70
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_70
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_65
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 60
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 65
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_65
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_60
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 55
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 60
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_60
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_55
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 50
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 55
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_55
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_50
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 45
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 50
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_50
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_45
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 40
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 45
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_45
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_40
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 35
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 40
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_40
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_35
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 30
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 35
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_35
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_30
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 25
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 30
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_30
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_25
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 20
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 25
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_25
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_20
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 15
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 20
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_20
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_15
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 10
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 15
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_15
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_10
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					num_emperor_guarantees = {
-						amount = 5
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 10
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_10
+						duration = -1
 					}
 				}
-				remove_all_dip_modifiers = yes
-				add_country_modifier = {
-					name = ia_ega_modifier_5
-					duration = -1
+				else_if = {
+					limit = {
+						num_emperor_guarantees = {
+							amount = 5
+						}
+					}
+					add_country_modifier = {
+						name = ia_ega_modifier_5
+						duration = -1
+					}
 				}
 			}
 		}
