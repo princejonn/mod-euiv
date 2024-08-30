@@ -9,6 +9,7 @@ form_client_state_from_vassal = {
 	}
 	is_allowed = {
 		is_at_war = no
+		full_idea_group = influence_ideas
 		NOT = {
 			truce_with = FROM
 		}
@@ -62,6 +63,7 @@ form_client_state_from_personal_union = {
 	}
 	is_allowed = {
 		is_at_war = no
+		full_idea_group = influence_ideas
 		NOT = {
 			truce_with = FROM
 		}
