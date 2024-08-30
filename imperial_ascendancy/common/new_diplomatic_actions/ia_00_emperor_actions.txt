@@ -40,11 +40,11 @@ emperor_force_release_nations = {
 			}
 		}
 		custom_trigger_tooltip = {
-			tooltip = emperor_has_more_cities_than_target_tooltip
-			num_of_cities = FROM
+			tooltip = emperor_has_more_dev_than_target_tooltip
+			total_development = FROM
 			NOT = {
 				FROM = {
-					num_of_cities = ROOT
+					total_development = ROOT
 				}
 			}
 		}

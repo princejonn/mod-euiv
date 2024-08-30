@@ -24,6 +24,9 @@ emperor_guarantees_all_pulse_effect = {
 		if = {
 			limit = {
 				is_emperor = yes
+				NOT = {
+					hre_reform_passed = privilegia_de_non_appelando
+				}
 			}
 			if = {
 				limit = {

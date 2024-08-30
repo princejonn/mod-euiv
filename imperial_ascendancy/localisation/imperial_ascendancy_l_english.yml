@@ -56,7 +56,7 @@
   emperor_force_release_nations_tooltip: "This forces [From.GetName] to release all possible nations, starting from smallest to biggest if possible, otherwise randomly."
   emperor_force_release_nations_desc: "Are you sure you want to force [From.GetName] to release all possible nations?\nThis forces the [From.GetName] to release all possible nations, starting from smallest to biggest if possible, otherwise randomly.\nWe will lose §R-25.00§! §YImperial Authority§!, and [From.GetName] will lose §R-75.00§! opinion of us."
   target_has_releasable_nations_tooltip: "[From.GetName] has releasable nations"
-  emperor_has_more_cities_than_target_tooltip: "[Root.GetName] has more provinces than [From.GetName]"
+  emperor_has_more_dev_than_target_tooltip: "[Root.GetName] has more development than [From.GetName]"
 
   # opinion modifiers  
 
