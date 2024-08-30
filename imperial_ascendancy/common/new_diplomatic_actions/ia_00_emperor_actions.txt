@@ -22,10 +22,19 @@ emperor_force_release_nations = {
 		custom_trigger_tooltip = {
 			tooltip = target_has_releasable_nations_tooltip
 			FROM = {
-				any_province = {
+				num_of_cities = 2
+				any_owned_province = {
 					is_part_of_hre = yes
 					any_core_country = {
 						exists = no
+					}
+				}
+				any_owned_province = {
+					is_part_of_hre = yes
+					NOT = {
+						any_core_country = {
+							exists = no
+						}
 					}
 				}
 			}
