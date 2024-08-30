@@ -377,19 +377,6 @@ country_event = {
 		}
 		custom_tooltip = marry_the_emperor_tt
 		#Absorb subjects
-		if = {
-			limit = {
-				NEV = {
-					is_subject_of = BUR
-				}
-				FRA = {
-					exists = yes
-				}
-			}
-			FRA = {
-				vassalize = NEV
-			}
-		}
 		every_subject_country = {
 			limit = {
 				ai = yes
