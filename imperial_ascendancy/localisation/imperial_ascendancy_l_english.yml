@@ -64,6 +64,11 @@
 
   # events
 
+  vassal_petitioning_emperor.2.title: "Vassal Petitioning Emperor"
+  vassal_petitioning_emperor.2.desc: "Our vassal [vassal_petitioning_emperor_target.GetName] is petitioning the Emperor to join the Holy Roman Empire. They claim that they are a rightful member of the Empire and that they should be granted the privileges of an Imperial State. Should we allow them to join the Empire?"
+  vassal_petitioning_emperor.2.a: "Welcome!"
+  vassal_petitioning_emperor.2.b: "No."
+
   hre_pu_event.1.title: "The Eastern Empire"
   hre_pu_event.1.desc: "The Eastern Empire has been in a state of decline for centuries, and the time has come for the Holy Roman Empire to take control of the region. The Imperial Parliament has convened in a Diet to proclaim the Eastern Empire to be a part of the Holy Roman Empire. The Emperor is given broad authority to enforce Imperial control over the region."
   hre_pu_event.1.a: "We shall once again be united"

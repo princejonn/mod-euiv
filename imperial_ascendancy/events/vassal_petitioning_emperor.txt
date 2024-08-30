@@ -1,0 +1,67 @@
+namespace = vassal_petitioning_emperor
+country_event = {
+	id = vassal_petitioning_emperor.1
+	hidden = yes
+	trigger = {
+		ai = yes
+		is_part_of_hre = no
+		is_subject_of = emperor
+		emperor = {
+			imperial_influence = 10
+		}
+		NOT = {
+			total_development = 800
+		}
+		has_opinion = {
+			who = emperor
+			value = 190
+		}
+		OR = {
+			any_neighbor_country = {
+				is_part_of_hre = yes
+			}
+			capital_scope = {
+				is_island = yes
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	immediate = {
+		save_global_event_target_as = vassal_petitioning_emperor_target
+		emperor = {
+			country_event = {
+				id = vassal_petitioning_emperor.2
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = vassal_petitioning_emperor.2
+	title = vassal_petitioning_emperor.2.title
+	desc = vassal_petitioning_emperor.2.desc
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = vassal_petitioning_emperor.2.a
+		event_target:vassal_petitioning_emperor_target = {
+			set_in_empire = yes
+		}
+		emperor = {
+			add_imperial_influence = 10
+		}
+	}
+	option = {
+		name = vassal_petitioning_emperor.2.b
+	}
+	after = {
+		clear_global_event_target = vassal_petitioning_emperor_target
+	}
+}

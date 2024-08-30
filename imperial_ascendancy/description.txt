@@ -28,5 +28,5 @@ The base game has a trigger that allows vassals to join the HRE, but sometimes i
     [*] Your vassal must have less than 800 total development.
     [*] Your vassal must have 190 opinion of you.
     [*] Your vassal must have a neighbour country that is already in the HRE - or be an island nation.
-    [*] Mean time to happen: 12 months.
+    [*] Mean time to happen: 36 months.
 [/list]
