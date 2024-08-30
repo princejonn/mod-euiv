@@ -1,5 +1,5 @@
 forced_release_nations = {
-	opinion = -25
+	opinion = -75
 	yearly_decay = 1
 	min = -100
 }

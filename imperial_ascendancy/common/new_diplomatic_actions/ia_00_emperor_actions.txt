@@ -12,16 +12,30 @@ emperor_force_release_nations = {
 	}
 	is_allowed = {
 		imperial_influence = 25
-		is_subject_of = emperor
-		OR = {
-			hre_reform_passed = emperor_landfriede
-			hre_reform_passed = emperor_privilegia_de_non_appelando
-		}
+		hre_reform_passed = emperor_reichsstabilitaet
 		FROM = {
-			any_province = {
-				is_part_of_hre = yes
-				any_core_country = {
-					exists = no
+			has_opinion = {
+				who = ROOT
+				value = 150
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = target_has_releasable_nations_tooltip
+			FROM = {
+				any_province = {
+					is_part_of_hre = yes
+					any_core_country = {
+						exists = no
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = emperor_has_more_cities_than_target_tooltip
+			num_of_cities = FROM
+			NOT = {
+				FROM = {
+					num_of_cities = ROOT
 				}
 			}
 		}
