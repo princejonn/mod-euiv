@@ -1,0 +1,31 @@
+customised_culture_modifier_easier_1 = {
+	culture_conversion_cost = -0.1
+	culture_conversion_time = -0.1
+	promote_culture_cost = -0.1
+	num_accepted_cultures = 1
+	relation_with_same_culture_group = 10
+}
+
+customised_culture_modifier_easier_2 = {
+	culture_conversion_cost = -0.2
+	culture_conversion_time = -0.2
+	promote_culture_cost = -0.2
+	num_accepted_cultures = 2
+	relation_with_same_culture_group = 20
+}
+
+customised_culture_modifier_easier_3 = {
+	culture_conversion_cost = -0.3
+	culture_conversion_time = -0.3
+	promote_culture_cost = -0.3
+	num_accepted_cultures = 3
+	relation_with_same_culture_group = 30
+}
+
+customised_culture_modifier_easier_4 = {
+	culture_conversion_cost = -0.4
+	culture_conversion_time = -0.4
+	promote_culture_cost = -0.4
+	num_accepted_cultures = 4
+	relation_with_same_culture_group = 40
+}

@@ -3,6 +3,7 @@ customised_navy_modifier_easier_1 = {
 	capture_ship_chance = 0.1
 	flagship_durability = 0.1
 	global_naval_engagement_modifier = 0.1
+	global_sailors_modifier = 0.1
 	max_flagships = 1
 	naval_attrition = -0.1
 	naval_forcelimit_modifier = 0.1
@@ -12,6 +13,7 @@ customised_navy_modifier_easier_1 = {
 	navy_tradition_decay = -0.1
 	privateer_efficiency = 0.1
 	recover_navy_morale_speed = 0.1
+	sailors_recovery_speed = 0.1
 	ship_durability = 0.1
 }
 
@@ -20,15 +22,17 @@ customised_navy_modifier_easier_2 = {
 	capture_ship_chance = 0.3
 	flagship_durability = 0.3
 	global_naval_engagement_modifier = 0.3
+	global_sailors_modifier = 0.3
 	max_flagships = 3
 	naval_attrition = -0.3
 	naval_forcelimit_modifier = 0.3
 	naval_morale = 0.3
-	navy_tradition = 0.3
 	naval_tradition_from_battle = 0.3
+	navy_tradition = 0.3
 	navy_tradition_decay = -0.3
 	privateer_efficiency = 0.3
 	recover_navy_morale_speed = 0.3
+	sailors_recovery_speed = 0.3
 	ship_durability = 0.3
 }
 
@@ -37,15 +41,17 @@ customised_navy_modifier_easier_3 = {
 	capture_ship_chance = 0.5
 	flagship_durability = 0.5
 	global_naval_engagement_modifier = 0.5
+	global_sailors_modifier = 0.5
 	max_flagships = 5
 	naval_attrition = -0.5
 	naval_forcelimit_modifier = 0.5
 	naval_morale = 0.5
-	navy_tradition = 0.5
 	naval_tradition_from_battle = 0.5
+	navy_tradition = 0.5
 	navy_tradition_decay = -0.5
 	privateer_efficiency = 0.5
 	recover_navy_morale_speed = 0.5
+	sailors_recovery_speed = 0.5
 	ship_durability = 0.5
 }
 
@@ -54,14 +60,16 @@ customised_navy_modifier_easier_4 = {
 	capture_ship_chance = 0.8
 	flagship_durability = 0.8
 	global_naval_engagement_modifier = 0.8
+	global_sailors_modifier = 0.8
 	max_flagships = 8
 	naval_attrition = -0.8
 	naval_forcelimit_modifier = 0.8
 	naval_morale = 0.8
-	navy_tradition = 0.8
 	naval_tradition_from_battle = 0.8
+	navy_tradition = 0.8
 	navy_tradition_decay = -0.8
 	privateer_efficiency = 0.8
 	recover_navy_morale_speed = 0.8
+	sailors_recovery_speed = 0.8
 	ship_durability = 0.8
 }

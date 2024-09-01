@@ -1,43 +1,47 @@
 customised_religious_modifier_easier_1 = {
-	culture_conversion_cost = -0.1
-	culture_conversion_time = -0.1
+	church_power_modifier = 0.01
 	global_missionary_strength = 0.01
 	missionary_maintenance_cost = -0.1
+	monthly_fervor_increase = 0.01
+	papal_influence = 1
 	prestige_per_development_from_conversion = 0.1
-	tolerance_heathen = 1
-	tolerance_heretic = 1
-	tolerance_own = 1
+	relation_with_same_religion = 10
+	yearly_authority = 1
+	yearly_patriarch_authority = 1
 }
 
 customised_religious_modifier_easier_2 = {
-	culture_conversion_cost = -0.2
-	culture_conversion_time = -0.2
+	church_power_modifier = 0.02
 	global_missionary_strength = 0.02
 	missionary_maintenance_cost = -0.2
+	monthly_fervor_increase = 0.02
+	papal_influence = 2
 	prestige_per_development_from_conversion = 0.2
-	tolerance_heathen = 2
-	tolerance_heretic = 2
-	tolerance_own = 2
+	relation_with_same_religion = 20
+	yearly_authority = 2
+	yearly_patriarch_authority = 2
 }
 
 customised_religious_modifier_easier_3 = {
-	culture_conversion_cost = -0.3
-	culture_conversion_time = -0.3
+	church_power_modifier = 0.03
 	global_missionary_strength = 0.03
 	missionary_maintenance_cost = -0.3
+	monthly_fervor_increase = 0.03
+	papal_influence = 3
 	prestige_per_development_from_conversion = 0.3
-	tolerance_heathen = 3
-	tolerance_heretic = 3
-	tolerance_own = 3
+	relation_with_same_religion = 30
+	yearly_authority = 3
+	yearly_patriarch_authority = 3
 }
 
 customised_religious_modifier_easier_4 = {
-	culture_conversion_cost = -0.4
-	culture_conversion_time = -0.4
+	church_power_modifier = 0.04
 	global_missionary_strength = 0.04
 	missionary_maintenance_cost = -0.4
+	monthly_fervor_increase = 0.04
+	papal_influence = 4
 	prestige_per_development_from_conversion = 0.4
-	tolerance_heathen = 4
-	tolerance_heretic = 4
-	tolerance_own = 4
+	relation_with_same_religion = 40
+	yearly_authority = 4
+	yearly_patriarch_authority = 4
 }

@@ -2,6 +2,7 @@ customised_estates_modifier_easier_1 = {
 	all_estate_influence_modifier = -0.1
 	all_estate_loyalty_equilibrium = 0.1
 	all_estate_possible_privileges = 1
+	crown
 }
 
 customised_estates_modifier_easier_2 = {

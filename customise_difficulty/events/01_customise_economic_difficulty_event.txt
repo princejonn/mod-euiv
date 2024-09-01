@@ -1,4 +1,46 @@
 namespace = customise_economic_difficulty_event
+# Selection
+country_event = {
+	id = customise_economic_difficulty_event.0
+	title = customise_economic_difficulty_event.0.title
+	desc = customise_economic_difficulty_event.0.desc
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_economic_difficulty_event.0.a
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.1
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.0.b
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.2
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.0.c
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.3
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.0.z
+		hidden_effect = {
+			country_event = {
+				id = customise_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Economic
 country_event = {
 	id = customise_economic_difficulty_event.1
 	title = customise_economic_difficulty_event.1.title
@@ -24,7 +66,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = customise_difficulty_event.0
+				id = customise_economic_difficulty_event.0
 			}
 		}
 	}
@@ -47,7 +89,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = customise_difficulty_event.0
+				id = customise_economic_difficulty_event.0
 			}
 		}
 	}
@@ -70,7 +112,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = customise_difficulty_event.0
+				id = customise_economic_difficulty_event.0
 			}
 		}
 	}
@@ -93,7 +135,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = customise_difficulty_event.0
+				id = customise_economic_difficulty_event.0
 			}
 		}
 	}
@@ -114,7 +156,7 @@ country_event = {
 			remove_country_modifier = customised_economic_modifier_easier_3
 			remove_country_modifier = customised_economic_modifier_easier_4
 			country_event = {
-				id = customise_difficulty_event.0
+				id = customise_economic_difficulty_event.0
 			}
 		}
 	}
@@ -122,7 +164,267 @@ country_event = {
 		name = customise_economic_difficulty_event.1.z
 		hidden_effect = {
 			country_event = {
-				id = customise_difficulty_event.0
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Maintenance
+country_event = {
+	id = customise_economic_difficulty_event.2
+	title = customise_economic_difficulty_event.2.title
+	desc = customise_economic_difficulty_event.2.desc
+	picture = FEAST_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_economic_difficulty_event.2.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_maintenance_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_maintenance_modifier_easier_1
+			remove_country_modifier = customised_maintenance_modifier_easier_2
+			remove_country_modifier = customised_maintenance_modifier_easier_3
+			remove_country_modifier = customised_maintenance_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_maintenance_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.2.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_maintenance_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_maintenance_modifier_easier_1
+			remove_country_modifier = customised_maintenance_modifier_easier_2
+			remove_country_modifier = customised_maintenance_modifier_easier_3
+			remove_country_modifier = customised_maintenance_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_maintenance_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.2.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_maintenance_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_maintenance_modifier_easier_1
+			remove_country_modifier = customised_maintenance_modifier_easier_2
+			remove_country_modifier = customised_maintenance_modifier_easier_3
+			remove_country_modifier = customised_maintenance_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_maintenance_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.2.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_maintenance_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_maintenance_modifier_easier_1
+			remove_country_modifier = customised_maintenance_modifier_easier_2
+			remove_country_modifier = customised_maintenance_modifier_easier_3
+			remove_country_modifier = customised_maintenance_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_maintenance_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.2.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_maintenance_modifier_easier_1
+				has_country_modifier = customised_maintenance_modifier_easier_2
+				has_country_modifier = customised_maintenance_modifier_easier_3
+				has_country_modifier = customised_maintenance_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_maintenance_modifier_easier_1
+			remove_country_modifier = customised_maintenance_modifier_easier_2
+			remove_country_modifier = customised_maintenance_modifier_easier_3
+			remove_country_modifier = customised_maintenance_modifier_easier_4
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.2.z
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Trade
+country_event = {
+	id = customise_economic_difficulty_event.3
+	title = customise_economic_difficulty_event.3.title
+	desc = customise_economic_difficulty_event.3.desc
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_economic_difficulty_event.3.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_trade_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_trade_modifier_easier_1
+			remove_country_modifier = customised_trade_modifier_easier_2
+			remove_country_modifier = customised_trade_modifier_easier_3
+			remove_country_modifier = customised_trade_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_trade_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.3.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_trade_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_trade_modifier_easier_1
+			remove_country_modifier = customised_trade_modifier_easier_2
+			remove_country_modifier = customised_trade_modifier_easier_3
+			remove_country_modifier = customised_trade_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_trade_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.3.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_trade_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_trade_modifier_easier_1
+			remove_country_modifier = customised_trade_modifier_easier_2
+			remove_country_modifier = customised_trade_modifier_easier_3
+			remove_country_modifier = customised_trade_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_trade_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.3.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_trade_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_trade_modifier_easier_1
+			remove_country_modifier = customised_trade_modifier_easier_2
+			remove_country_modifier = customised_trade_modifier_easier_3
+			remove_country_modifier = customised_trade_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_trade_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.3.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_trade_modifier_easier_1
+				has_country_modifier = customised_trade_modifier_easier_2
+				has_country_modifier = customised_trade_modifier_easier_3
+				has_country_modifier = customised_trade_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_trade_modifier_easier_1
+			remove_country_modifier = customised_trade_modifier_easier_2
+			remove_country_modifier = customised_trade_modifier_easier_3
+			remove_country_modifier = customised_trade_modifier_easier_4
+			country_event = {
+				id = customise_economic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_economic_difficulty_event.3.z
+		hidden_effect = {
+			country_event = {
+				id = customise_economic_difficulty_event.0
 			}
 		}
 	}

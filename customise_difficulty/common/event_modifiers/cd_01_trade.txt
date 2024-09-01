@@ -1,0 +1,43 @@
+customised_trade_modifier_easier_1 = {
+	caravan_power = 0.1
+	global_trade_power = 0.1
+	mercantilism_cost = -0.1
+	placed_merchant_power_modifier = 0.1
+	ship_trade_power_modifier = 0.1
+	trade_efficiency = 0.1
+	trade_range_modifier = 0.1
+	trade_steering = 0.1
+}
+
+customised_trade_modifier_easier_2 = {
+	caravan_power = 0.3
+	global_trade_power = 0.3
+	mercantilism_cost = -0.3
+	placed_merchant_power_modifier = 0.3
+	ship_trade_power_modifier = 0.3
+	trade_efficiency = 0.3
+	trade_range_modifier = 0.3
+	trade_steering = 0.3
+}
+
+customised_trade_modifier_easier_3 = {
+	caravan_power = 0.5
+	global_trade_power = 0.5
+	mercantilism_cost = -0.5
+	placed_merchant_power_modifier = 0.5
+	ship_trade_power_modifier = 0.5
+	trade_efficiency = 0.5
+	trade_range_modifier = 0.5
+	trade_steering = 0.5
+}
+
+customised_trade_modifier_easier_4 = {
+	caravan_power = 0.8
+	global_trade_power = 0.8
+	mercantilism_cost = -0.8
+	placed_merchant_power_modifier = 0.8
+	ship_trade_power_modifier = 0.8
+	trade_efficiency = 0.8
+	trade_range_modifier = 0.8
+	trade_steering = 0.8
+}

@@ -15,6 +15,34 @@
   customised_economic_modifier_easier_4: "Customise Difficulty: Economic"
   desc_customised_economic_modifier_easier_4: "Difficulty Level: §G4§!"
 
+  ## maintenance
+
+  customised_maintenance_modifier_easier_1: "Customise Difficulty: Maintenance"
+  desc_customised_maintenance_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_maintenance_modifier_easier_2: "Customise Difficulty: Maintenance"
+  desc_customised_maintenance_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_maintenance_modifier_easier_3: "Customise Difficulty: Maintenance"
+  desc_customised_maintenance_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_maintenance_modifier_easier_4: "Customise Difficulty: Maintenance"
+  desc_customised_maintenance_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## trade
+
+  customised_trade_modifier_easier_1: "Customise Difficulty: Trade"
+  desc_customised_trade_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_trade_modifier_easier_2: "Customise Difficulty: Trade"
+  desc_customised_trade_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_trade_modifier_easier_3: "Customise Difficulty: Trade"
+  desc_customised_trade_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_trade_modifier_easier_4: "Customise Difficulty: Trade"
+  desc_customised_trade_modifier_easier_4: "Difficulty Level: §G4§!"
+
   ## monarch
 
   customised_monarch_modifier_easier_1: "Customise Difficulty: Monarch"
@@ -29,19 +57,47 @@
   customised_monarch_modifier_easier_4: "Customise Difficulty: Monarch"
   desc_customised_monarch_modifier_easier_4: "Difficulty Level: §G4§!"
 
+  ## culture
+
+  customised_culture_modifier_easier_1: "Customise Difficulty: Culture"
+  desc_customised_culture_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_culture_modifier_easier_2: "Customise Difficulty: Culture"
+  desc_customised_culture_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_culture_modifier_easier_3: "Customise Difficulty: Culture"
+  desc_customised_culture_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_culture_modifier_easier_4: "Customise Difficulty: Culture"
+  desc_customised_culture_modifier_easier_4: "Difficulty Level: §G4§!"
+
   ## religious
 
-  customised_religious_modifier_easier_1: "Customise Difficulty: Religion & Culture"
+  customised_religious_modifier_easier_1: "Customise Difficulty: Missionaries"
   desc_customised_religious_modifier_easier_1: "Difficulty Level: §G1§!"
 
-  customised_religious_modifier_easier_2: "Customise Difficulty: Religion & Culture"
+  customised_religious_modifier_easier_2: "Customise Difficulty: Missionaries"
   desc_customised_religious_modifier_easier_2: "Difficulty Level: §G2§!"
 
-  customised_religious_modifier_easier_3: "Customise Difficulty: Religion & Culture"
+  customised_religious_modifier_easier_3: "Customise Difficulty: Missionaries"
   desc_customised_religious_modifier_easier_3: "Difficulty Level: §G3§!"
 
-  customised_religious_modifier_easier_4: "Customise Difficulty: Religion & Culture"
+  customised_religious_modifier_easier_4: "Customise Difficulty: Missionaries"
   desc_customised_religious_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## tolerance
+
+  customised_tolerance_modifier_easier_1: "Customise Difficulty: Tolerance"
+  desc_customised_tolerance_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_tolerance_modifier_easier_2: "Customise Difficulty: Tolerance"
+  desc_customised_tolerance_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_tolerance_modifier_easier_3: "Customise Difficulty: Tolerance"
+  desc_customised_tolerance_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_tolerance_modifier_easier_4: "Customise Difficulty: Tolerance"
+  desc_customised_tolerance_modifier_easier_4: "Difficulty Level: §G4§!"
 
   ## national
 
@@ -84,6 +140,34 @@
 
   customised_diplomatic_modifier_easier_4: "Customise Difficulty: Diplomatic"
   desc_customised_diplomatic_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## espionage
+
+  customised_espionage_modifier_easier_1: "Customise Difficulty: Espionage"
+  desc_customised_espionage_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_espionage_modifier_easier_2: "Customise Difficulty: Espionage"
+  desc_customised_espionage_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_espionage_modifier_easier_3: "Customise Difficulty: Espionage"
+  desc_customised_espionage_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_espionage_modifier_easier_4: "Customise Difficulty: Espionage"
+  desc_customised_espionage_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## warfare
+
+  customised_warfare_modifier_easier_1: "Customise Difficulty: Warfare"
+  desc_customised_warfare_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_warfare_modifier_easier_2: "Customise Difficulty: Warfare"
+  desc_customised_warfare_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_warfare_modifier_easier_3: "Customise Difficulty: Warfare"
+  desc_customised_warfare_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_warfare_modifier_easier_4: "Customise Difficulty: Warfare"
+  desc_customised_warfare_modifier_easier_4: "Difficulty Level: §G4§!"
 
   ## colonial
 
