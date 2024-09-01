@@ -23,11 +23,12 @@ emperor_guarantees_all_pulse_effect = {
 	emperor = {
 		if = {
 			limit = {
-				is_emperor = yes
+				ai = no
 			}
 			remove_all_dip_modifiers = yes
 			if = {
 				limit = {
+					is_emperor = yes
 					NOT = {
 						hre_reform_passed = privilegia_de_non_appelando
 					}
