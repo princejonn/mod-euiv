@@ -12,27 +12,37 @@
 #
 # TRIGGERED - Triggered from within the code or by event effects
 # --------------------------------------------------------------
-cb_restore_client_state = {
+cb_restore_principality = {
 	valid_for_subject = no
 	is_triggered_only = yes
 	months = 300
 	prerequisites_self = {
-		OR = {
-			government = monarchy
-			government = republic
-		}
+		government = monarchy
 		is_revolutionary = no
 	}
 	prerequisites = {
 		FROM = {
-			OR = {
-				government = monarchy
-				government = republic
-			}
+			government = monarchy
 			is_subject = no
 		}
 	}
-	war_goal = take_capital_client_state
+	war_goal = take_capital_principality
+}
+
+cb_restore_sister_republic = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 300
+	prerequisites_self = {
+		government = republic
+	}
+	prerequisites = {
+		FROM = {
+			government = republic
+			is_subject = no
+		}
+	}
+	war_goal = take_capital_sister_republic
 }
 
 cb_restore_viceroyalty = {

@@ -1,0 +1,37 @@
+resolve_deprecated_subject = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = sovereign_personal_union
+				is_subject_of_type = fief
+				is_subject_of_type = incorporated_fief
+				is_subject_of_type = consolidated_fief
+				is_subject_of_type = incorporated_march
+				is_subject_of_type = consolidated_march
+				is_subject_of_type = incorporated_protectorate
+				is_subject_of_type = consolidated_protectorate
+				is_subject_of_type = client_state
+				is_subject_of_type = incorporated_client_state
+				is_subject_of_type = consolidated_client_state
+			}
+		}
+	}
+	is_allowed = {
+		always = yes
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

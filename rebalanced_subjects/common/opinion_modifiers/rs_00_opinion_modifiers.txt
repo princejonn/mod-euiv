@@ -8,11 +8,11 @@ is_consolidated_vassal = {
 }
 
 # Personal Union
-in_incorporated_union = {
+is_incorporated_union = {
 	opinion = 20
 }
 
-in_consolidated_union = {
+is_consolidated_union = {
 	opinion = 30
 }
 
@@ -67,16 +67,29 @@ broke_protectorate = {
 	min = -200
 }
 
-# Client State
-is_client_state = {
+# Principality
+is_principality = {
 	opinion = 20
 }
 
-is_incorporated_client_state = {
+is_incorporated_principality = {
 	opinion = 30
 }
 
-is_consolidated_client_state = {
+is_consolidated_principality = {
+	opinion = 40
+}
+
+# Sister Republic
+is_sister_republic = {
+	opinion = 20
+}
+
+is_incorporated_sister_republic = {
+	opinion = 30
+}
+
+is_consolidated_sister_republic = {
 	opinion = 40
 }
 

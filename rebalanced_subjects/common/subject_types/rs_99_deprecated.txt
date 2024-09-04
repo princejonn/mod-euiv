@@ -37,3 +37,18 @@ consolidated_protectorate = {
 	copy_from = protectorate
 	count = vassal
 }
+
+client_state = {
+	copy_from = vassal
+	count = vassal
+}
+
+incorporated_client_state = {
+	copy_from = client_state
+	count = vassal
+}
+
+consolidated_client_state = {
+	copy_from = incorporated_client_state
+	count = vassal
+}

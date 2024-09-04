@@ -1,13 +1,26 @@
-form_client_state_from_vassal = {
+form_principality = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		government = monarchy
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = vassal
+			OR = {
+				# vassal
+				is_subject_of_type = vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = consolidated_vassal
+				# union
+				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = consolidated_personal_union
+				is_subject_of_type = integrated_personal_union
+				is_subject_of_type = theodoro_personal_union
+			}
 		}
 	}
 	is_allowed = {
+		government_rank = 3
 		is_at_war = no
 		full_idea_group = influence_ideas
 		NOT = {
@@ -24,87 +37,54 @@ form_client_state_from_vassal = {
 				liberty_desire = 10
 			}
 		}
-		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 10
+		OR = {
+			FROM = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 10
+				}
+			}
+			FROM = {
+				years_in_union_under = {
+					who = ROOT
+					years = 25
+				}
 			}
 		}
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = client_state
+			subject_type = principality
 			subject = FROM
 			keep_liberty_desire = yes
 		}
 		FROM = {
-			capital_scope = {
-				add_unrest = 2
+			if = {
+				limit = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
 			}
-			add_liberty_desire = 10
-			add_stability = -1
-		}
-	}
-	on_decline = {
-	}
-	ai_will_do = {
-		always = no
-	}
-}
-
-form_client_state_from_personal_union = {
-	category = influence
-	require_acceptance = no
-	is_visible = {
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = personal_union
-		}
-	}
-	is_allowed = {
-		is_at_war = no
-		full_idea_group = influence_ideas
-		NOT = {
-			truce_with = FROM
-		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 190
+			set_country_flag = has_overriden_color_flag
+			change_country_color = {
+				country = ROOT
 			}
-		}
-		FROM = {
-			NOT = {
-				liberty_desire = 10
-			}
-		}
-		FROM = {
-			years_in_union_under = {
-				who = ROOT
-				years = 25
-			}
-		}
-	}
-	on_accept = {
-		create_subject = {
-			subject_type = client_state
-			subject = FROM
-			keep_liberty_desire = yes
-		}
-		FROM = {
 			define_ruler = {
 				name = "Alexander"
-				change_adm = 6
-				change_dip = 6
-				change_mil = 6
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
 				culture = ROOT
 				dynasty = ROOT
 				religion = ROOT
 				male = yes
 				min_age = 30
+				max_age = 50
 			}
 			define_heir = {
-				name = "Alexander"
 				max_random_adm = 6
 				max_random_dip = 6
 				max_random_mil = 6
@@ -128,20 +108,22 @@ form_client_state_from_personal_union = {
 	}
 }
 
-incorporate_client_state = {
+incorporate_principality = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		government = monarchy
+		government_rank = 3
 		can_incorporate_subject = yes
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = client_state
+			is_subject_of_type = principality
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			incorporated_client_state = 5
+			incorporated_principality = 10
 		}
 		NOT = {
 			truce_with = FROM
@@ -160,7 +142,7 @@ incorporate_client_state = {
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = incorporated_client_state
+			subject_type = incorporated_principality
 			subject = FROM
 			keep_liberty_desire = yes
 		}
@@ -179,20 +161,22 @@ incorporate_client_state = {
 	}
 }
 
-consolidate_client_state = {
+consolidate_principality = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		government = monarchy
+		government_rank = 3
 		can_consolidate_subject = yes
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = incorporated_client_state
+			is_subject_of_type = incorporated_principality
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			consolidated_client_state = 5
+			consolidated_principality = 5
 		}
 		NOT = {
 			truce_with = FROM
@@ -211,7 +195,7 @@ consolidate_client_state = {
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = consolidated_client_state
+			subject_type = consolidated_principality
 			subject = FROM
 			keep_liberty_desire = yes
 		}

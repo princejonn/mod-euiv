@@ -3,8 +3,8 @@ protectorate = {
 	count = vassal
 	# Graphics:
 	sprite = GFX_subject_tributary_state
-	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
-	diplomacy_subject_sprite = GFX_diplomacy_amtributary
+	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorates
+	diplomacy_subject_sprite = GFX_diplomacy_inprotectorate
 	# Properties:
 	base_liberty_desire = -15
 	forcelimit_to_overlord = 1

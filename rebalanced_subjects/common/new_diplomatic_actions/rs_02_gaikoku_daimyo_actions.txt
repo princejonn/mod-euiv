@@ -1,0 +1,65 @@
+form_gaikoku_daimyo = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		culture_group = japanese_g
+		capital_scope = {
+			region = japan_region
+		}
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = consolidated_vassal
+			}
+			NOT = {
+				capital_scope = {
+					region = japan_region
+				}
+			}
+		}
+	}
+	is_allowed = {
+		government_rank = 3
+		is_at_war = no
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = gaikoku_daimyo
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
+			}
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 5
+			add_stability = -1
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

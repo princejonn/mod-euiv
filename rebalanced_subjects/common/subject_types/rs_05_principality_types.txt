@@ -1,10 +1,10 @@
-client_state = {
+principality = {
 	copy_from = default
 	count = vassal
 	# Graphics:
-	sprite = GFX_court_union
-	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
-	diplomacy_subject_sprite = GFX_diplomacy_inunion
+	sprite = GFX_icon_incorporated_vassal_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
 	# Properties:
 	annex_cost_per_development = 6
 	can_concentrate_development = yes
@@ -28,22 +28,28 @@ client_state = {
 	# Diplomatic Actions:
 	can_be_annexed = yes
 	# Continuous Subject Interactions:
+	divert_trade = yes
 	placate_rulers = yes
 	siphon_income = yes
+	subsidize_armies = yes
 	support_loyalists = yes
 	# Immediate Subject Interactions:
+	conscript_general = yes
+	contribute_to_capital = yes
 	enforce_culture = yes
+	grant_core_claim = yes
 	place_relative_on_throne = yes
+	seize_territory = yes
 	# War Interactions:
-	restoration_cb = cb_restore_client_state
+	restoration_cb = cb_restore_principality
 	# Overlord Modifiers:
 	modifier_overlord = {
-		modifier = has_client_state_subject
+		modifier = has_principality_subject
 	}
 	modifier_overlord = {
 		trigger = {
 			overlord = {
-				has_government_attribute = client_state_war_contribution
+				has_government_attribute = principality_war_contribution
 			}
 		}
 		modifier = pu_overlord_bonus
@@ -62,7 +68,7 @@ client_state = {
 	}
 	# Subject Modifiers:
 	modifier_subject = {
-		modifier = is_client_state_nation
+		modifier = is_principality_nation
 	}
 	modifier_subject = {
 		trigger = {
@@ -73,25 +79,16 @@ client_state = {
 		modifier = pu_subject_bonus
 	}
 	# Opinion Modifiers:
-	overlord_opinion_modifier = is_client_state
-	subject_opinion_modifier = is_client_state
+	overlord_opinion_modifier = is_principality
+	subject_opinion_modifier = is_principality
 }
 
-incorporated_client_state = {
-	copy_from = client_state
+incorporated_principality = {
+	copy_from = principality
 	count = vassal
-	# Graphics:
-	sprite = GFX_icon_integrated_personal_union_subject_type
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
 	# Properties:
 	annex_cost_per_development = 4
 	takes_diplo_slot = no
-	# Continuous Subject Interactions:
-	divert_trade = yes
-	subsidize_armies = yes
-	# Immediate Subject Interactions:
-	seize_territory = yes
 	# Modifiers (Overlord):
 	modifier_overlord = {
 		trigger = {
@@ -102,12 +99,12 @@ incorporated_client_state = {
 		modifier = incorporated_vassal_governing_capacity_cost
 	}
 	# Opinion Modifiers:
-	overlord_opinion_modifier = is_incorporated_client_state
-	subject_opinion_modifier = is_incorporated_client_state
+	overlord_opinion_modifier = is_incorporated_principality
+	subject_opinion_modifier = is_incorporated_principality
 }
 
-consolidated_client_state = {
-	copy_from = incorporated_client_state
+consolidated_principality = {
+	copy_from = incorporated_principality
 	count = vassal
 	# Properties:
 	annex_cost_per_development = 2
@@ -122,6 +119,6 @@ consolidated_client_state = {
 		modifier = consolidated_vassal_governing_capacity_cost
 	}
 	# Opinion Modifiers:
-	overlord_opinion_modifier = is_consolidated_client_state
-	subject_opinion_modifier = is_consolidated_client_state
+	overlord_opinion_modifier = is_consolidated_principality
+	subject_opinion_modifier = is_consolidated_principality
 }

@@ -11,14 +11,6 @@
   sovereign_personal_union_is_our: "§Y$NAME$§! is our Sovereign Personal Union."
   sovereign_personal_union_long_desc: "Sovereign Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
 
-  FIEF: "Fief"
-  FIEF_MALE_LEADER: "Earl"
-  FIEF_FEMALE_LEADER: "Countess"
-  FIEF_CONSORT_MALE: "Earl-Consort"
-  FIEF_CONSORT_FEMALE: "Countess"
-  FIEF_MALE_HEIR: "Baron"
-  FIEF_FEMALE_HEIR: "Baroness"
-
   fief: "Fief"
   fief_title: "Fief"
   fief_title_plural: "Fiefs"
@@ -60,3 +52,21 @@
   consolidated_protectorate_title_plural: "Consolidated Protectorates"
   consolidated_protectorate_is_our: "§Y$NAME$§! is our Consolidated Protectorate."
   consolidated_protectorate_long_desc: "A Consolidated Protectorate cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
+
+  client_state: "Client State"
+  client_state_title: "Client State"
+  client_state_title_plural: "Principalities"
+  client_state_is_our: "§Y$NAME$§! is our Client State."
+  client_state_long_desc: "Principalities must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord."
+
+  incorporated_client_state: "Incorporated Client State"
+  incorporated_client_state_title: "Incorporated Client State"
+  incorporated_client_state_title_plural: "Incorporated Principalities"
+  incorporated_client_state_is_our: "§Y$NAME$§! is our Incorporated Client State."
+  incorporated_client_state_long_desc: "An Incorporated Client State must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
+
+  consolidated_client_state: "Consolidated Client State"
+  consolidated_client_state_title: "Consolidated Client State"
+  consolidated_client_state_title_plural: "Consolidated Principalities"
+  consolidated_client_state_is_our: "§Y$NAME$§! is our Consolidated Client State."
+  consolidated_client_state_long_desc: "An Consolidated Client State must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."

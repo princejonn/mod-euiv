@@ -1,0 +1,71 @@
+gaikoku_daimyo = {
+}
+
+gaikoku_daimyo = {
+	copy_from = vassal
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+	# Properties:
+	allows_taking_land_without_independence = yes
+	can_concentrate_development = yes
+	can_use_claims = no
+	forms_trade_companies = yes
+	gets_help_with_rebels = yes
+	gives_daimyo_bonuses = yes
+	has_power_projection = yes
+	max_government_rank = 2
+	military_focus = 1
+	relative_power_class = 1
+	separatists_become_subjects = yes
+	should_quit_wars_on_activation = yes
+	takes_diplo_slot = no
+	# Diplomatic Actions:
+	can_be_annexed = yes
+	# Continuous Subject Interactions:
+	divert_trade = yes
+	placate_rulers = yes
+	scutage = yes
+	siphon_income = yes
+	subsidize_armies = yes
+	# Immediate Subject Interactions:
+	conscript_general = yes
+	contribute_to_capital = yes
+	enforce_culture = yes
+	enforce_religion = yes
+	expel_ronin = yes
+	force_isolation = yes
+	force_seppuku = yes
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	return_land = yes
+	sankin_kotai = yes
+	seize_territory = yes
+	sword_hunt = yes
+	# War
+	can_fight = {
+		same_overlord = gaikoku_daimyo
+	}
+	can_rival = {
+		same_overlord = gaikoku_daimyo
+	}
+	can_ally = {
+		same_overlord = gaikoku_daimyo
+	}
+	can_marry = {
+		same_overlord = gaikoku_daimyo
+	}
+	# Overlord Modifiers:
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = daimyo_subject
+	}
+	# Subject Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+}

@@ -30,6 +30,7 @@ crusader_order = {
 	subsidize_armies = yes
 	support_loyalists = yes
 	# Immediate Subject Interactions:
+	conscript_general = yes
 	enforce_culture = yes
 	place_relative_on_throne = no
 	seize_territory = no

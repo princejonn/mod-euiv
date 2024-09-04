@@ -14,8 +14,8 @@ incorporated_personal_union = {
 	# Immediate Subject Interactions:
 	seize_territory = yes
 	# Opinion Modifiers:
-	overlord_opinion_modifier = in_incorporated_union
-	subject_opinion_modifier = in_incorporated_union
+	overlord_opinion_modifier = is_incorporated_union
+	subject_opinion_modifier = is_incorporated_union
 }
 
 consolidated_personal_union = {
@@ -29,6 +29,6 @@ consolidated_personal_union = {
 	annex_cost_per_development = 4
 	relative_power_class = 0
 	# Opinion Modifiers:
-	overlord_opinion_modifier = in_consolidated_union
-	subject_opinion_modifier = in_consolidated_union
+	overlord_opinion_modifier = is_consolidated_union
+	subject_opinion_modifier = is_consolidated_union
 }

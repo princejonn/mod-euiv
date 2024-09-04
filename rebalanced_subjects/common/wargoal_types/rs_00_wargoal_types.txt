@@ -47,7 +47,7 @@
 #	- blockade_ports
 #
 # --------------------------------------------------------------
-take_capital_client_state = {
+take_capital_principality = {
 	type = take_capital
 	attacker = {
 		badboy_factor = 1
@@ -69,7 +69,32 @@ take_capital_client_state = {
 			po_demand_provinces
 		}
 	}
-	war_name = CLIENT_STATE_WAR_NAME
+	war_name = PRINCIPALITY_WAR_NAME
+}
+
+take_capital_sister_republic = {
+	type = take_capital
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		required_treaty_to_take_provinces = {
+			po_form_personal_union
+		}
+		peace_options = {
+			po_demand_provinces
+			po_form_personal_union
+		}
+	}
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 2
+		peace_cost_factor = 1
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	war_name = SISTER_REPUBLIC_WAR_NAME
 }
 
 take_capital_viceroyalty = {

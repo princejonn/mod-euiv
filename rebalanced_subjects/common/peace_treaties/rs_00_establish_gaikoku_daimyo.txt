@@ -1,0 +1,77 @@
+po_establish_gaikoku_daimyo = {
+	category = 6
+	power_projection = vassalized_rival
+	power_cost_base = 1
+	prestige_base = 1
+	ae_base = 1
+	warscore_cost = {
+		all_provinces = 0.75
+		no_provinces = 0
+		owner_keeps = 0
+		conquered = 0
+		returned_core = 0
+		released_nation = 0
+		cancelled_subject = 0
+		concede_colonial_region = 0
+	}
+	requires_demand_independence = yes
+	is_make_subject = yes
+	is_visible = {
+		can_be_overlord = gaikoku_daimyo
+		is_subject = no
+		culture_group = japanese_g
+		capital_scope = {
+			region = japan_region
+		}
+		FROM = {
+			OR = {
+				is_subject = no
+				is_subject_of_type = tributary_state
+			}
+			NOT = {
+				capital_scope = {
+					region = japan_region
+				}
+			}
+		}
+	}
+	effect = {
+		FROM = {
+			every_ally = {
+				FROM = {
+					break_alliance = PREV
+				}
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				ROOT = {
+					create_subject = {
+						subject = PREV
+						subject_type = gaikoku_daimyo
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
+			}
+		}
+		create_subject = {
+			subject_type = gaikoku_daimyo
+			subject = FROM
+		}
+		join_all_defensive_wars_of = FROM
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 50
+		}
+	}
+}

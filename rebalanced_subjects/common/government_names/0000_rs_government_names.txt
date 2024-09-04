@@ -1,3 +1,44 @@
+default_gaikoku_daimyo = {
+	rank = {
+		1 = GAIKOKU_DAIMYO
+		2 = GAIKOKU_DAIMYO
+		3 = GAIKOKU_DAIMYO
+	}
+	ruler_male = {
+		1 = GAIKOKU_DAIMYO_MALE_LEADER
+		2 = GAIKOKU_DAIMYO_MALE_LEADER
+		3 = GAIKOKU_DAIMYO_MALE_LEADER
+	}
+	ruler_female = {
+		1 = GAIKOKU_DAIMYO_FEMALE_LEADER
+		2 = GAIKOKU_DAIMYO_FEMALE_LEADER
+		3 = GAIKOKU_DAIMYO_FEMALE_LEADER
+	}
+	consort_male = {
+		1 = GAIKOKU_DAIMYO_CONSORT_MALE
+		2 = GAIKOKU_DAIMYO_CONSORT_MALE
+		3 = GAIKOKU_DAIMYO_CONSORT_MALE
+	}
+	consort_female = {
+		1 = GAIKOKU_DAIMYO_CONSORT_FEMALE
+		2 = GAIKOKU_DAIMYO_CONSORT_FEMALE
+		3 = GAIKOKU_DAIMYO_CONSORT_FEMALE
+	}
+	heir_male = {
+		1 = GAIKOKU_DAIMYO_MALE_HEIR
+		2 = GAIKOKU_DAIMYO_MALE_HEIR
+		3 = GAIKOKU_DAIMYO_MALE_HEIR
+	}
+	heir_female = {
+		1 = GAIKOKU_DAIMYO_FEMALE_HEIR
+		2 = GAIKOKU_DAIMYO_FEMALE_HEIR
+		3 = GAIKOKU_DAIMYO_FEMALE_HEIR
+	}
+	trigger = {
+		is_subject_of_type = gaikoku_daimyo
+	}
+}
+
 default_bishopric = {
 	rank = {
 		1 = BISHOPRIC
@@ -162,47 +203,92 @@ default_protectorate = {
 	}
 }
 
-default_client_state = {
+default_principality = {
 	rank = {
-		1 = CLIENT_STATE
-		2 = CLIENT_STATE
-		3 = CLIENT_STATE
+		1 = PRINCIPALITY
+		2 = PRINCIPALITY
+		3 = PRINCIPALITY
 	}
 	ruler_male = {
-		1 = CLIENT_STATE_MALE_LEADER
-		2 = CLIENT_STATE_MALE_LEADER
-		3 = CLIENT_STATE_MALE_LEADER
+		1 = PRINCIPALITY_MALE_LEADER
+		2 = PRINCIPALITY_MALE_LEADER
+		3 = PRINCIPALITY_MALE_LEADER
 	}
 	ruler_female = {
-		1 = CLIENT_STATE_FEMALE_LEADER
-		2 = CLIENT_STATE_FEMALE_LEADER
-		3 = CLIENT_STATE_FEMALE_LEADER
+		1 = PRINCIPALITY_FEMALE_LEADER
+		2 = PRINCIPALITY_FEMALE_LEADER
+		3 = PRINCIPALITY_FEMALE_LEADER
 	}
 	consort_male = {
-		1 = CLIENT_STATE_CONSORT_MALE
-		2 = CLIENT_STATE_CONSORT_MALE
-		3 = CLIENT_STATE_CONSORT_MALE
+		1 = PRINCIPALITY_CONSORT_MALE
+		2 = PRINCIPALITY_CONSORT_MALE
+		3 = PRINCIPALITY_CONSORT_MALE
 	}
 	consort_female = {
-		1 = CLIENT_STATE_CONSORT_FEMALE
-		2 = CLIENT_STATE_CONSORT_FEMALE
-		3 = CLIENT_STATE_CONSORT_FEMALE
+		1 = PRINCIPALITY_CONSORT_FEMALE
+		2 = PRINCIPALITY_CONSORT_FEMALE
+		3 = PRINCIPALITY_CONSORT_FEMALE
 	}
 	heir_male = {
-		1 = CLIENT_STATE_MALE_HEIR
-		2 = CLIENT_STATE_MALE_HEIR
-		3 = CLIENT_STATE_MALE_HEIR
+		1 = PRINCIPALITY_MALE_HEIR
+		2 = PRINCIPALITY_MALE_HEIR
+		3 = PRINCIPALITY_MALE_HEIR
 	}
 	heir_female = {
-		1 = CLIENT_STATE_FEMALE_HEIR
-		2 = CLIENT_STATE_FEMALE_HEIR
-		3 = CLIENT_STATE_FEMALE_HEIR
+		1 = PRINCIPALITY_FEMALE_HEIR
+		2 = PRINCIPALITY_FEMALE_HEIR
+		3 = PRINCIPALITY_FEMALE_HEIR
 	}
 	trigger = {
 		OR = {
-			is_subject_of_type = client_state
-			is_subject_of_type = incorporated_client_state
-			is_subject_of_type = consolidated_client_state
+			is_subject_of_type = principality
+			is_subject_of_type = incorporated_principality
+			is_subject_of_type = consolidated_principality
+		}
+	}
+}
+
+default_sister_republic = {
+	rank = {
+		1 = SISTER_REPUBLIC
+		2 = SISTER_REPUBLIC
+		3 = SISTER_REPUBLIC
+	}
+	ruler_male = {
+		1 = SISTER_REPUBLIC_MALE_LEADER
+		2 = SISTER_REPUBLIC_MALE_LEADER
+		3 = SISTER_REPUBLIC_MALE_LEADER
+	}
+	ruler_female = {
+		1 = SISTER_REPUBLIC_FEMALE_LEADER
+		2 = SISTER_REPUBLIC_FEMALE_LEADER
+		3 = SISTER_REPUBLIC_FEMALE_LEADER
+	}
+	consort_male = {
+		1 = SISTER_REPUBLIC_CONSORT_MALE
+		2 = SISTER_REPUBLIC_CONSORT_MALE
+		3 = SISTER_REPUBLIC_CONSORT_MALE
+	}
+	consort_female = {
+		1 = SISTER_REPUBLIC_CONSORT_FEMALE
+		2 = SISTER_REPUBLIC_CONSORT_FEMALE
+		3 = SISTER_REPUBLIC_CONSORT_FEMALE
+	}
+	heir_male = {
+		1 = SISTER_REPUBLIC_MALE_HEIR
+		2 = SISTER_REPUBLIC_MALE_HEIR
+		3 = SISTER_REPUBLIC_MALE_HEIR
+	}
+	heir_female = {
+		1 = SISTER_REPUBLIC_FEMALE_HEIR
+		2 = SISTER_REPUBLIC_FEMALE_HEIR
+		3 = SISTER_REPUBLIC_FEMALE_HEIR
+	}
+	trigger = {
+		OR = {
+			is_subject_of_type = sister_republic
+			is_subject_of_type = incorporated_sister_republic
+			is_subject_of_type = consolidated_sister_republic
 		}
 	}
 }

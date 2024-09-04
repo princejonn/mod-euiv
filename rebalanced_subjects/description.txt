@@ -1,23 +1,29 @@
-I'm kind of a sucker for having subjects. They are fun to play around with, and add some depth to the gameplay. It's fun to use them in wars, and it's fun to see them grow. But I feel like they are a bit underwhelming. They are not as powerful as they should be, and they are not as fun to play around with as they could be.
-
-In this mod I'm aiming to fix and rebalance a couple of things that deal with subjects.
+I love subject mechanics. Subjects are fun to play around with, and add some needed depth to the gameplay. It's fun to get autonomous help in wars, and it's fun to feed your subjects and see them grow. There are some things I would like to add though. In this mod I'm aiming to fix and rebalance a couple of things that deal with subjects.
 
 [h2]Features[/h2]
 [list]
-  [*] Bishoprics
-  [*] Crusader Orders
-  [*] Fiefdoms
-  [*] Protectorates
-  [*] Client States
-  [*] Viceroyalties
+  [*] New Subject Types
   [*] Subject Incorporation
-  [*] Forming Unions with Vassals
-  [*] Allowing subjects to form new nations
   [*] Subjects are now allowed to use the decisions to form new nations when they are eligible to do so.
   [*] Changing the burgher estate so that your subjects don't add Orthodox tolerance, making it possible to finally convert your subjects.
 [/list]
 
-[h2]Bishoprics[/h2]
+[h2]New Subject Types[/h2]
+[list]
+  [*] Gaikoku Daimyos
+  [*] Bishoprics
+  [*] Crusader Orders
+  [*] Fiefdoms
+  [*] Protectorates
+  [*] Principalities
+  [*] Sister Republics
+  [*] Viceroyalties
+[/list]
+
+[h3]Gaikoku Daimyo[/h3]
+New subject type for Japan players. It's very much like the current Daimyo subject type, except you get to establish them in regions outside of Japan. It's basically just a bit of flavour. Why would Japan suddenly stop establishing Daimyos and just create Vassals?
+
+[h3]Bishopric[/h3]
 New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence and cannot be annexed. The following bonuses are awarded bishoprics if they stay at 1 province:
 
 [list]
@@ -26,7 +32,7 @@ New subject type that is a subset of vassals, only with heavy requirements on be
   [*] +5% Global Tax Modifier
 [/list]
 
-[h2]Crusader Orders[/h2]
+[h3]Crusader Order[/h3]
 New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. The following bonuses are awarded crusader orders if they stay at 1 province:
 
 [list]
@@ -39,7 +45,7 @@ New subject type that is a subset of vassals, only with heavy requirements on be
   [*] +25% Manpower Recovery Speed
 [/list]
 
-[h2]Fiefdoms[/h2]
+[h3]Fiefdom[/h3]
 New subject type that is a subset of vassals, only with heavy requirements on being small. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. The following bonuses are awarded fiefs if they stay at 1 province:
 
 [list]
@@ -48,37 +54,31 @@ New subject type that is a subset of vassals, only with heavy requirements on be
   [*] +5% increased Global Trade Power (when your Fief is landed in an Estuary or Trade Center
 [/list]
 
-[h2]Protectorates[/h2]
+[h3]Protectorate[/h3]
 New subject type that is a subset of vassals, kind of like the opposite of marches. They have a weak military presence, so they instead have a strong economic potency.
 
-[h2]Client States[/h2]
-New subject type that sits somewhere between a Personal Union and a Vassal. Their primary strengh lies in being very cheap to eventually annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself.
+[h3]Principality[/h3]
+New subject type for monarchies. It's something of a mix between a Personal Union and a Vassal. It's pretty great though, so you can't do it immediately. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself. Once you Land a Prince of your dynasty, the country colour will also be changed to yours.
 
-[h2]Viceroyalty[/h2]
+[h3]Sister Republic[/h3]
+New subject type for republics (Much like Principalities). It's something of a mix between a Personal Union and a Vassal. It's pretty great though, so you can't do it immediately. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself. Once you establish a Sister Republic, the country colour will also be changed to yours.
+
+[h3]Viceroyalty[/h3]
 New subject type that is kind of an autonomous region. My primary idea behind this subject type was that they should be established once you're kind of finished and want to move on, leaving a subject behind that is yours in all but name. They can be fully integrated with the click of a button. You create viceroyalties from decisions.
 
 [h2]Subject Incorporation[/h2]
 I'm also adding the base game ability to further incorporate them into your realm, making them cheaper to annex, and cost no diplomatic relations. Instead they cost a little bit of governing capacity. I've "unlocked" this ability for existing subjects.
 
 [h3]Levels[/h3]
-The following incorporation levels are available:
-
 [list]
-  [*] Incorporated: Reduced Annexation/Integration cost, no Diplomatic Relations cost, (50 Governing Capacity cost for Vassals and Client States), (25% chance of inheritance on monarch death for Personal Unions).
-  [*] Consolidated: Reduced Annexation/Integration cost, no Diplomatic Relations cost, (100 Governing Capacity cost for Vassals and Client States), (50% chance of inheritance on monarch death for Personal Unions).
+  [*] Incorporated: Reduced Annexation/Integration cost, no Diplomatic Relations cost, (Capacity cost for Vassals and Client States), (25% chance of inheritance on monarch death for Personal Unions).
+  [*] Consolidated: Reduced Annexation/Integration cost, no Diplomatic Relations cost, (Governing Capacity cost for Vassals and Client States), (50% chance of inheritance on monarch death for Personal Unions).
 [/list]
 
-[h3]Subject Types[/h3]
-The following subjects are affected by these changes:
-
+[h3]Affected Subject Types[/h3]
 [list]
   [*] Vassals
-  [*] Client States
   [*] Personal Unions
+  [*] Principalities
+  [*] Sister Republics
 [/list]
-
-[h3]Incorporated Personal Union[/h3]
-I've added a trigger on monarch death that makes Incorporated Personal Unions more likely to be inherited as long as the normal requirements are met. It's now more of a coinflip if you get the inheritance or not.
-
-[h2]Forming Unions with Vassals[/h2]
-There's now a path to forming a union with your vassal. You will have to form your vassal into a client state first, and after that you can form a personal union with them. It is also possible to form a client state from a personal union.

@@ -1,0 +1,201 @@
+form_sister_republic = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		government = republic
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				# vassal
+				is_subject_of_type = vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = consolidated_vassal
+				# union
+				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_personal_union
+				is_subject_of_type = consolidated_personal_union
+				is_subject_of_type = integrated_personal_union
+				is_subject_of_type = theodoro_personal_union
+			}
+		}
+	}
+	is_allowed = {
+		government_rank = 3
+		is_at_war = no
+		full_idea_group = influence_ideas
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 10
+			}
+		}
+		OR = {
+			FROM = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 10
+				}
+			}
+			FROM = {
+				years_in_union_under = {
+					who = ROOT
+					years = 25
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = sister_republic
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						government = republic
+					}
+				}
+				change_government = republic
+				add_government_reform = noble_elite_reform
+			}
+			set_country_flag = has_overriden_color_flag
+			change_country_color = {
+				country = ROOT
+			}
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+incorporate_sister_republic = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		government = monarchy
+		government_rank = 3
+		can_incorporate_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = sister_republic
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			incorporated_sister_republic = 10
+		}
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = incorporated_sister_republic
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+consolidate_sister_republic = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		government = monarchy
+		government_rank = 3
+		can_consolidate_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = incorporated_sister_republic
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			consolidated_sister_republic = 5
+		}
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 25
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = consolidated_sister_republic
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+		}
+		FROM = {
+			every_owned_province = {
+				limit = {
+					is_core = FROM
+				}
+				add_core = ROOT
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

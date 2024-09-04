@@ -1,0 +1,124 @@
+sister_republic = {
+	copy_from = default
+	count = vassal
+	# Graphics:
+	sprite = GFX_icon_incorporated_vassal_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
+	# Properties:
+	annex_cost_per_development = 6
+	can_concentrate_development = yes
+	can_have_subjects_of_other_types = yes
+	disable_inheritance = yes
+	extend_trading_range = yes
+	gets_help_with_rebels = yes
+	has_power_projection = no
+	liberty_desire_development_ratio = 0
+	liberty_desire_negative_prestige = 1
+	military_focus = 0.75
+	overlord_can_attack = no
+	relative_power_class = 1
+	separatists_become_subjects = yes
+	should_quit_wars_on_activation = yes
+	transfer_subjects_when_made = yes
+	# Overlord Properties:
+	manpower_to_overlord = 0.05
+	naval_forcelimit_to_overlord = 0.05
+	sailors_to_overlord = 0.05
+	pays_overlord = 0.05
+	# Diplomatic Actions:
+	can_be_annexed = yes
+	# Continuous Subject Interactions:
+	divert_trade = yes
+	placate_rulers = yes
+	siphon_income = yes
+	subsidize_armies = yes
+	support_loyalists = yes
+	# Immediate Subject Interactions:
+	conscript_general = yes
+	contribute_to_capital = yes
+	enforce_culture = yes
+	place_relative_on_throne = no
+	seize_territory = yes
+	# War Interactions:
+	restoration_cb = cb_restore_sister_republic
+	# Overlord Modifiers:
+	modifier_overlord = {
+		modifier = has_sister_republic_subject
+	}
+	modifier_overlord = {
+		trigger = {
+			overlord = {
+				has_government_attribute = sister_republic_war_contribution
+			}
+		}
+		modifier = pu_overlord_bonus
+	}
+	modifier_overlord = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+			overlord = {
+				has_country_flag = ned_man_o_wars_from_pu_flag
+			}
+		}
+		modifier = ned_man_o_war_modifier
+	}
+	# Subject Modifiers:
+	modifier_subject = {
+		modifier = is_sister_republic_nation
+	}
+	modifier_subject = {
+		trigger = {
+			overlord = {
+				has_government_attribute = personal_union_war_contribution
+			}
+		}
+		modifier = pu_subject_bonus
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_sister_republic
+	subject_opinion_modifier = is_sister_republic
+}
+
+incorporated_sister_republic = {
+	copy_from = sister_republic
+	count = vassal
+	# Properties:
+	annex_cost_per_development = 4
+	takes_diplo_slot = no
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = incorporated_vassal_governing_capacity_cost
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_incorporated_sister_republic
+	subject_opinion_modifier = is_incorporated_sister_republic
+}
+
+consolidated_sister_republic = {
+	copy_from = incorporated_sister_republic
+	count = vassal
+	# Properties:
+	annex_cost_per_development = 2
+	relative_power_class = 0
+	# Modifiers (Overlord):
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = consolidated_vassal_governing_capacity_cost
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_consolidated_sister_republic
+	subject_opinion_modifier = is_consolidated_sister_republic
+}
