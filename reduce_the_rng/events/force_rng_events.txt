@@ -24,7 +24,7 @@ country_event = {
 				ai = no
 			}
 		}
-		is_year = 1444
+		is_year = 1447
 	}
 	mean_time_to_happen = {
 		months = 9
