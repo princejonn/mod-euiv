@@ -1,4 +1,4 @@
-po_establish_sister_republic = {
+po_establish_viceroyalty = {
 	category = 6
 	power_projection = vassalized_rival
 	power_cost_base = 1
@@ -17,21 +17,31 @@ po_establish_sister_republic = {
 	requires_demand_independence = yes
 	is_make_subject = yes
 	is_visible = {
-		can_be_overlord = sister_republic
-		can_be_sister_republic_subject = yes
+		can_be_overlord = viceroyalty
+		can_be_viceroyalty_subject = yes
 		FROM = {
 			OR = {
 				is_subject = no
 				is_subject_of_type = tributary_state
 			}
 		}
+		NOT = {
+			any_subject_country = {
+				is_any_viceroyalty_type = yes
+				capital_scope = {
+					region_for_scope_province = {
+						is_capital_of = FROM
+					}
+				}
+			}
+		}
 	}
 	effect = {
 		create_subject = {
-			subject_type = sister_republic
+			subject_type = viceroyalty
 			subject = FROM
 		}
-		create_sister_republic = yes
+		create_viceroyalty = yes
 		join_all_defensive_wars_of = FROM
 	}
 	ai_weight = {

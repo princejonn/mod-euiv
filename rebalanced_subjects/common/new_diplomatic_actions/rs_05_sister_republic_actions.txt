@@ -16,7 +16,6 @@ form_sister_republic = {
 		}
 	}
 	is_allowed = {
-		government_rank = 3
 		is_at_war = no
 		FROM = {
 			NOT = {
@@ -30,38 +29,13 @@ form_sister_republic = {
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		hidden_effect = {
-			FROM = {
-				if = {
-					limit = {
-						NOT = {
-							government = republic
-						}
-					}
-					change_government = republic
-					add_government_reform = noble_elite_reform
-				}
-				set_country_flag = has_overriden_color_flag
-				change_country_color = {
-					country = ROOT
-				}
-				define_ruler = {
-					name = "Alexander"
-					change_adm = 5
-					change_dip = 5
-					change_mil = 5
-					culture = FROM
-					religion = FROM
-					male = yes
-					min_age = 40
-					max_age = 50
-				}
-				capital_scope = {
-					add_unrest = 2
-				}
-				add_liberty_desire = 10
-				add_stability = -1
+		create_sister_republic = yes
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
 			}
+			add_liberty_desire = 10
+			add_stability = -1
 		}
 	}
 	on_decline = {

@@ -38,52 +38,13 @@ form_viceroyalty = {
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		every_owned_province = {
-			limit = {
-				region_for_scope_province = {
-					is_capital_of = FROM
-				}
+		create_viceroyalty = yes
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
 			}
-			remove_core = ROOT
-			add_core = FROM
-			cede_province = FROM
-		}
-		hidden_effect = {
-			FROM = {
-				if = {
-					limit = {
-						government_rank = 3
-					}
-					set_government_rank = 2
-				}
-				if = {
-					limit = {
-						NOT = {
-							government = republic
-						}
-					}
-					change_government = republic
-				}
-				add_government_reform = military_dictatorship_reform
-				set_country_flag = has_overriden_color_flag
-				change_country_color = {
-					country = ROOT
-				}
-				change_religion = ROOT
-				change_primary_culture = ROOT
-				define_ruler = {
-					name = "Alexander"
-					change_adm = 5
-					change_dip = 5
-					change_mil = 5
-					culture = ROOT
-					dynasty = ROOT
-					religion = ROOT
-					male = yes
-					min_age = 40
-					max_age = 50
-				}
-			}
+			add_liberty_desire = 10
+			add_stability = -1
 		}
 	}
 	on_decline = {

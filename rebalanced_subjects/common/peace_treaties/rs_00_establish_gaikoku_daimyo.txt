@@ -5,7 +5,7 @@ po_establish_gaikoku_daimyo = {
 	prestige_base = 1
 	ae_base = 1
 	warscore_cost = {
-		all_provinces = 0.75
+		all_provinces = 0.8
 		no_provinces = 0
 		owner_keeps = 0
 		conquered = 0
@@ -18,8 +18,8 @@ po_establish_gaikoku_daimyo = {
 	is_make_subject = yes
 	is_visible = {
 		can_be_overlord = gaikoku_daimyo
+		can_be_gaikoku_daimyo_subject = yes
 		FROM = {
-			can_be_gaikoku_subject = yes
 			OR = {
 				is_subject = no
 				is_subject_of_type = tributary_state
@@ -44,20 +44,12 @@ po_establish_gaikoku_daimyo = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						government = monarchy
-					}
-				}
-				change_government = monarchy
-				add_government_reform = feudalism_reform
-			}
 		}
 		create_subject = {
 			subject_type = gaikoku_daimyo
 			subject = FROM
 		}
+		create_gaikoku_daimyo = yes
 		join_all_defensive_wars_of = FROM
 	}
 	ai_weight = {

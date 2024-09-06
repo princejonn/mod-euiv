@@ -51,51 +51,13 @@ form_principality = {
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		hidden_effect = {
-			FROM = {
-				if = {
-					limit = {
-						NOT = {
-							government = monarchy
-						}
-					}
-					change_government = monarchy
-				}
-				add_government_reform = feudalism_reform
-				set_country_flag = has_overriden_color_flag
-				change_country_color = {
-					country = ROOT
-				}
-				change_primary_culture = ROOT
-				change_religion = ROOT
-				define_ruler = {
-					name = "Alexander"
-					change_adm = 5
-					change_dip = 5
-					change_mil = 5
-					culture = ROOT
-					dynasty = ROOT
-					religion = ROOT
-					male = yes
-					min_age = 30
-					max_age = 50
-				}
-				define_heir = {
-					max_random_adm = 6
-					max_random_dip = 6
-					max_random_mil = 6
-					culture = ROOT
-					dynasty = ROOT
-					religion = ROOT
-					male = yes
-					age = 0
-				}
-				capital_scope = {
-					add_unrest = 2
-				}
-				add_liberty_desire = 10
-				add_stability = -1
+		create_principality = yes
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
 			}
+			add_liberty_desire = 10
+			add_stability = -1
 		}
 	}
 	on_decline = {

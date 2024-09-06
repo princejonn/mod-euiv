@@ -1,0 +1,148 @@
+# ROOT = overlord, FROM = subject
+create_gaikoku_daimyo = {
+	FROM = {
+		if = {
+			limit = {
+				NOT = {
+					government = monarchy
+				}
+			}
+			change_government = monarchy
+		}
+		add_government_reform = feudalism_reform
+	}
+}
+
+# ROOT = overlord, FROM = subject
+create_principality = {
+	FROM = {
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				NOT = {
+					government = monarchy
+				}
+			}
+			change_government = monarchy
+		}
+		add_government_reform = feudalism_reform
+		set_country_flag = has_overriden_color_flag
+		change_country_color = {
+			country = ROOT
+		}
+		change_primary_culture = ROOT
+		change_religion = ROOT
+		define_ruler = {
+			name = "Alexander"
+			change_adm = 5
+			change_dip = 5
+			change_mil = 5
+			culture = ROOT
+			dynasty = ROOT
+			religion = ROOT
+			male = yes
+			min_age = 30
+			max_age = 50
+		}
+		define_heir = {
+			max_random_adm = 6
+			max_random_dip = 6
+			max_random_mil = 6
+			culture = ROOT
+			dynasty = ROOT
+			religion = ROOT
+			male = yes
+			age = 0
+		}
+	}
+}
+
+# ROOT = overlord, FROM = subject
+create_sister_republic = {
+	FROM = {
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				NOT = {
+					government = republic
+				}
+			}
+			change_government = republic
+		}
+		add_government_reform = noble_elite_reform
+		set_country_flag = has_overriden_color_flag
+		change_country_color = {
+			country = ROOT
+		}
+		define_ruler = {
+			name = "Alexander"
+			change_adm = 5
+			change_dip = 5
+			change_mil = 5
+			culture = FROM
+			religion = FROM
+			male = yes
+			min_age = 40
+			max_age = 50
+		}
+	}
+}
+
+# ROOT = overlord, FROM = subject
+create_viceroyalty = {
+	FROM = {
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				NOT = {
+					government = republic
+				}
+			}
+			change_government = republic
+		}
+		add_government_reform = military_dictatorship_reform
+		set_country_flag = has_overriden_color_flag
+		change_country_color = {
+			country = ROOT
+		}
+		change_religion = ROOT
+		change_primary_culture = ROOT
+		define_ruler = {
+			name = "Alexander"
+			change_adm = 5
+			change_dip = 5
+			change_mil = 5
+			culture = ROOT
+			dynasty = ROOT
+			religion = ROOT
+			male = yes
+			min_age = 40
+			max_age = 50
+		}
+	}
+	every_owned_province = {
+		limit = {
+			region_for_scope_province = {
+				is_capital_of = FROM
+			}
+		}
+		remove_core = ROOT
+		add_core = FROM
+		cede_province = FROM
+	}
+}

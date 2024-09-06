@@ -3,7 +3,7 @@ form_gaikoku_daimyo = {
 	require_acceptance = no
 	is_visible = {
 		can_be_overlord = gaikoku_daimyo
-		can_be_gaikoku_subject = yes
+		can_be_gaikoku_daimyo_subject = yes
 		FROM = {
 			is_subject_of = ROOT
 			is_any_vassal_type = yes
@@ -30,23 +30,13 @@ form_gaikoku_daimyo = {
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		hidden_effect = {
-			FROM = {
-				if = {
-					limit = {
-						NOT = {
-							government = monarchy
-						}
-					}
-					change_government = monarchy
-					add_government_reform = feudalism_reform
-				}
-				capital_scope = {
-					add_unrest = 2
-				}
-				add_liberty_desire = 5
-				add_stability = -1
+		create_gaikoku_daimyo = yes
+		FROM = {
+			capital_scope = {
+				add_unrest = 2
 			}
+			add_liberty_desire = 10
+			add_stability = -1
 		}
 	}
 	on_decline = {
