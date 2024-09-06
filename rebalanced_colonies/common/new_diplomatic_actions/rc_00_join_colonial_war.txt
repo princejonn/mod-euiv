@@ -1,0 +1,38 @@
+join_colonial_war = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_colonial_subject = yes
+			is_at_war = yes
+		}
+	}
+	is_allowed = {
+		NOT = {
+			war_with = ROOT
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		ROOT = {
+			join_all_defensive_wars_of = FROM
+		}
+		ROOT = {
+			join_all_offensive_wars_of = FROM
+		}
+		FROM = {
+			add_war_exhaustion = -2
+			add_liberty_desire = -5
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

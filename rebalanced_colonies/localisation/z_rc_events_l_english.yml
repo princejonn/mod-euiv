@@ -1,0 +1,7 @@
+﻿l_english:
+  join_colonial_war.2.title: "Colonial Nation calls for Aid"
+  join_colonial_war.2.desc: "Our Colonial Subject [colonial_nation_asks_for_aid.GetName] is in dire need of help in their war. They have called for aid!"
+  join_colonial_war.2.a: "And [Root.GetName] will answer!"
+  join_colonial_war.2.b: "A few ducats should suffice"
+  join_colonial_war.2.c: "We shall send our men to help"
+  join_colonial_war.2.d: "What have they done for us?"

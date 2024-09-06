@@ -1,0 +1,4 @@
+﻿l_english:
+  join_colonial_war_title: "Join Colonial War"
+  join_colonial_war_tooltip: "Join [From.GetName]'s Current Wars."
+  join_colonial_war_desc: "Join [From.GetName]'s Current Wars."
