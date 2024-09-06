@@ -1,36 +1,35 @@
 sister_republic = {
+}
+
+sister_republic = {
 	copy_from = default
-	count = vassal
+	count = sister_republic
 	# Graphics:
 	sprite = GFX_icon_incorporated_vassal_subject_type
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
 	# Properties:
-	annex_cost_per_development = 6
-	can_concentrate_development = yes
+	base_liberty_desire = -25
+	can_be_co_belligerented = yes
+	can_gain_favors = yes
 	can_have_subjects_of_other_types = yes
 	disable_inheritance = yes
 	extend_trading_range = yes
+	favors_cost_to_join_defensive_wars = 10
+	favors_cost_to_join_offensive_wars = 20
 	gets_help_with_rebels = yes
-	has_power_projection = no
-	liberty_desire_development_ratio = 0
+	joins_overlords_wars = no
+	liberty_desire_development_ratio = 0.05
 	liberty_desire_negative_prestige = 1
+	max_government_rank = 2
 	military_focus = 0.75
+	must_accept_cta_from_overlord = no
+	opinion_on_subject_integration = 0
 	overlord_can_attack = no
 	relative_power_class = 1
-	separatists_become_subjects = yes
-	should_quit_wars_on_activation = yes
-	transfer_subjects_when_made = yes
-	# Overlord Properties:
-	manpower_to_overlord = 0.05
-	naval_forcelimit_to_overlord = 0.05
-	sailors_to_overlord = 0.05
-	pays_overlord = 0.05
-	# Diplomatic Actions:
-	can_be_annexed = yes
+	transfer_subjects_when_made = no
+	transfer_trade_power = yes
 	# Continuous Subject Interactions:
-	divert_trade = yes
-	placate_rulers = yes
 	siphon_income = yes
 	subsidize_armies = yes
 	support_loyalists = yes
@@ -38,10 +37,15 @@ sister_republic = {
 	conscript_general = yes
 	contribute_to_capital = yes
 	enforce_culture = yes
-	place_relative_on_throne = no
 	seize_territory = yes
+	send_additional_troops = yes
 	# War Interactions:
 	restoration_cb = cb_restore_sister_republic
+	# Overlord Properties:
+	manpower_to_overlord = 0.2
+	naval_forcelimit_to_overlord = 0.2
+	pays_overlord = 0.5
+	sailors_to_overlord = 0.2
 	# Overlord Modifiers:
 	modifier_overlord = {
 		modifier = has_sister_republic_subject
@@ -78,6 +82,34 @@ sister_republic = {
 		}
 		modifier = pu_subject_bonus
 	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	# Wars:
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = sister_republic
+		other_overlord = all
+	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		government = republic
+		government_rank = 3
+		is_subject = no
+	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_sister_republic
 	subject_opinion_modifier = is_sister_republic
@@ -85,18 +117,25 @@ sister_republic = {
 
 incorporated_sister_republic = {
 	copy_from = sister_republic
-	count = vassal
+	count = sister_republic
 	# Properties:
 	annex_cost_per_development = 4
 	takes_diplo_slot = no
-	# Modifiers (Overlord):
+	# Overlord Properties:
+	manpower_to_overlord = 0.3
+	naval_forcelimit_to_overlord = 0.3
+	sailors_to_overlord = 0.3
+	pays_overlord = 1
+	# Diplomatic Actions:
+	can_be_annexed = yes
+	# Overlord Modifiers:
 	modifier_overlord = {
 		trigger = {
 			NOT = {
 				has_country_flag = free_incorporated_vassal
 			}
 		}
-		modifier = incorporated_vassal_governing_capacity_cost
+		modifier = incorporated_sister_republic_governing_capacity_cost
 	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_incorporated_sister_republic
@@ -105,18 +144,24 @@ incorporated_sister_republic = {
 
 consolidated_sister_republic = {
 	copy_from = incorporated_sister_republic
-	count = vassal
+	count = sister_republic
 	# Properties:
 	annex_cost_per_development = 2
+	must_accept_cta_from_overlord = yes
 	relative_power_class = 0
-	# Modifiers (Overlord):
+	# Overlord Properties:
+	manpower_to_overlord = 0.4
+	naval_forcelimit_to_overlord = 0.4
+	sailors_to_overlord = 0.4
+	pays_overlord = 1.5
+	# Overlord Modifiers:
 	modifier_overlord = {
 		trigger = {
 			NOT = {
 				has_country_flag = free_incorporated_vassal
 			}
 		}
-		modifier = consolidated_vassal_governing_capacity_cost
+		modifier = consolidated_sister_republic_governing_capacity_cost
 	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_consolidated_sister_republic

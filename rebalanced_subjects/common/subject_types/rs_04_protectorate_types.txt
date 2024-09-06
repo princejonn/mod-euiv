@@ -1,14 +1,14 @@
 protectorate = {
 	copy_from = vassal
-	count = vassal
+	count = protectorate
 	# Graphics:
 	sprite = GFX_subject_tributary_state
 	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorates
 	diplomacy_subject_sprite = GFX_diplomacy_inprotectorate
 	# Properties:
 	base_liberty_desire = -15
+	extend_trading_range = yes
 	forcelimit_to_overlord = 1
-	forms_trade_companies = yes
 	gets_help_with_rebels = yes
 	has_power_projection = no
 	joins_overlords_wars = no
@@ -18,19 +18,14 @@ protectorate = {
 	max_government_rank = 1
 	military_focus = 0
 	relative_power_class = 1
-	should_quit_wars_on_activation = yes
-	transfer_trade_if_merchant_republic = yes
+	transfer_trade_power = yes
+	# Immediate Subject Interactions:
+	press_sailors = yes
 	# Overlord Properties:
 	manpower_to_overlord = 0.33
 	naval_forcelimit_to_overlord = 0.33
 	pays_overlord = 1.5
 	sailors_to_overlord = 0.33
-	# Diplomatic Actions:
-	can_be_annexed = no
-	# Continuous Subject Interactions:
-	scutage = no
-	# Immediate Subject Interactions:
-	press_sailors = yes
 	# Overlord Modifiers:
 	modifier_overlord = clear
 	modifier_overlord = {
@@ -76,6 +71,7 @@ protectorate = {
 			}
 		}
 	}
+	# Opinion Modifiers:
 	overlord_opinion_modifier = is_protectorate
 	subject_opinion_modifier = is_protectorate
 }

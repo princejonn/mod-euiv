@@ -1,12 +1,13 @@
 fiefdom = {
 	copy_from = vassal
-	count = vassal
+	count = fiefdom
 	# Graphics
 	sprite = GFX_icon_appanage
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
 	# Properties
 	base_liberty_desire = -15
+	extend_trading_range = yes
 	forms_trade_companies = no
 	gets_help_with_rebels = yes
 	has_power_projection = no
@@ -15,26 +16,22 @@ fiefdom = {
 	max_government_rank = 1
 	military_focus = 0
 	relative_power_class = 0
-	should_quit_wars_on_activation = yes
 	takes_diplo_slot = no
 	transfer_trade_if_merchant_republic = yes
-	# Overlord Properties:
-	forcelimit_to_overlord = 1
-	manpower_to_overlord = 0.5
-	naval_forcelimit_to_overlord = 0.5
-	pays_overlord = 2
-	sailors_to_overlord = 0.5
-	# Diplomatic Actions:
-	can_be_annexed = no
 	# Continuous Subject Interactions:
 	divert_trade = yes
 	scutage = yes
 	# Immediate Subject Interactions:
 	enforce_culture = yes
 	place_relative_on_throne = yes
-	seize_territory = no
 	# War Interactions:
 	restoration_cb = cb_disloyal_vassal
+	# Overlord Properties:
+	forcelimit_to_overlord = 1
+	manpower_to_overlord = 0.5
+	naval_forcelimit_to_overlord = 0.5
+	pays_overlord = 2
+	sailors_to_overlord = 0.5
 	# Overlord Modifiers:
 	modifier_overlord = {
 		modifier = has_fiefdom_subject
@@ -43,7 +40,7 @@ fiefdom = {
 		modifier = has_fiefdom_num_cities_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 2
+				num_of_cities = 3
 			}
 		}
 		expiration_message_overlord = FIEFTOOLARGE
@@ -77,7 +74,7 @@ fiefdom = {
 		modifier = is_fiefdom_num_cities_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 2
+				num_of_cities = 3
 			}
 		}
 	}
@@ -125,6 +122,12 @@ fiefdom = {
 			}
 		}
 	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		government = monarchy
+		government_rank = 2
+	}
+	# Opinion Modifiers:
 	overlord_opinion_modifier = is_fiefdom
 	subject_opinion_modifier = is_fiefdom
 }

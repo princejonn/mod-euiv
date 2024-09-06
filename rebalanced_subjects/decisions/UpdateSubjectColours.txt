@@ -1,0 +1,55 @@
+country_decisions = {
+	update_subject_colours = {
+		color = {
+			100
+			210
+			250
+		}
+		potential = {
+			ai = no
+			OR = {
+				# minor
+				has_subject_of_type = bishopric
+				has_subject_of_type = crusader_order
+				has_subject_of_type = fiefdom
+				# principality
+				has_subject_of_type = principality
+				has_subject_of_type = incorporated_principality
+				has_subject_of_type = consolidated_principality
+				# principality
+				has_subject_of_type = sister_republic
+				has_subject_of_type = incorporated_sister_republic
+				has_subject_of_type = consolidated_sister_republic
+				# viceroyalty
+				has_subject_of_type = viceroyalty
+				has_subject_of_type = incorporated_viceroyalty
+				has_subject_of_type = consolidated_viceroyalty
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					OR = {
+						# minor
+						is_subject_of_type = bishopric
+						is_subject_of_type = crusader_order
+						is_subject_of_type = fiefdom
+						# aggregated
+						is_any_principality_type = yes
+						is_any_sister_republic_type = yes
+						is_any_viceroyalty_type = yes
+					}
+				}
+				change_country_color = {
+					country = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

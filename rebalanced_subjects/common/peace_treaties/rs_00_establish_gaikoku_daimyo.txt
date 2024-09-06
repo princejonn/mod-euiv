@@ -18,20 +18,11 @@ po_establish_gaikoku_daimyo = {
 	is_make_subject = yes
 	is_visible = {
 		can_be_overlord = gaikoku_daimyo
-		is_subject = no
-		culture_group = japanese_g
-		capital_scope = {
-			region = japan_region
-		}
 		FROM = {
+			can_be_gaikoku_subject = yes
 			OR = {
 				is_subject = no
 				is_subject_of_type = tributary_state
-			}
-			NOT = {
-				capital_scope = {
-					region = japan_region
-				}
 			}
 		}
 	}
@@ -60,6 +51,7 @@ po_establish_gaikoku_daimyo = {
 					}
 				}
 				change_government = monarchy
+				add_government_reform = feudalism_reform
 			}
 		}
 		create_subject = {

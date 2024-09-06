@@ -2,34 +2,17 @@ designate_bishopric = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		OR = {
-			government = monarchy
-			government = theocracy
-			government = republic
-		}
-		OR = {
-			religion = catholic
-			religion = orthodox
-			religion = protestant
-		}
+		can_be_overlord = bishopric
+		can_be_bishopric_subject = yes
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = consolidated_vassal
-			}
+			is_any_vassal_type = yes
 		}
 	}
 	is_allowed = {
 		is_at_war = no
 		NOT = {
 			bishopric = 3
-		}
-		FROM = {
-			NOT = {
-				government_rank = 2
-			}
 		}
 		FROM = {
 			NOT = {
@@ -45,7 +28,6 @@ designate_bishopric = {
 		}
 		hidden_effect = {
 			FROM = {
-				change_religion = ROOT
 				change_government = theocracy
 				set_government_rank = 1
 				if = {
@@ -58,6 +40,12 @@ designate_bishopric = {
 				}
 				else = {
 					add_government_reform = leading_clergy_reform
+				}
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
 				}
 				random_owned_province = {
 					limit = {
@@ -105,6 +93,9 @@ revoke_bishopric = {
 			add_opinion = {
 				who = ROOT
 				modifier = broke_bishopric
+			}
+			change_country_color = {
+				country = FROM
 			}
 		}
 	}

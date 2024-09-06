@@ -2,25 +2,18 @@ form_principality = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		government = monarchy
+		can_be_overlord = principality
+		can_be_principality_subject = yes
 		FROM = {
 			is_subject_of = ROOT
 			OR = {
-				# vassal
-				is_subject_of_type = vassal
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = consolidated_vassal
-				# union
-				is_subject_of_type = personal_union
-				is_subject_of_type = incorporated_personal_union
-				is_subject_of_type = consolidated_personal_union
-				is_subject_of_type = integrated_personal_union
-				is_subject_of_type = theodoro_personal_union
+				is_any_vassal_type = yes
+				is_any_personal_union_type = yes
+				is_any_sister_republic_type = yes
 			}
 		}
 	}
 	is_allowed = {
-		government_rank = 3
 		is_at_war = no
 		full_idea_group = influence_ideas
 		NOT = {
@@ -58,47 +51,51 @@ form_principality = {
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		FROM = {
-			if = {
-				limit = {
-					NOT = {
-						government = monarchy
+		hidden_effect = {
+			FROM = {
+				if = {
+					limit = {
+						NOT = {
+							government = monarchy
+						}
 					}
+					change_government = monarchy
 				}
-				change_government = monarchy
 				add_government_reform = feudalism_reform
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
+				}
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				define_ruler = {
+					name = "Alexander"
+					change_adm = 5
+					change_dip = 5
+					change_mil = 5
+					culture = ROOT
+					dynasty = ROOT
+					religion = ROOT
+					male = yes
+					min_age = 30
+					max_age = 50
+				}
+				define_heir = {
+					max_random_adm = 6
+					max_random_dip = 6
+					max_random_mil = 6
+					culture = ROOT
+					dynasty = ROOT
+					religion = ROOT
+					male = yes
+					age = 0
+				}
+				capital_scope = {
+					add_unrest = 2
+				}
+				add_liberty_desire = 10
+				add_stability = -1
 			}
-			set_country_flag = has_overriden_color_flag
-			change_country_color = {
-				country = ROOT
-			}
-			define_ruler = {
-				name = "Alexander"
-				change_adm = 5
-				change_dip = 5
-				change_mil = 5
-				culture = ROOT
-				dynasty = ROOT
-				religion = ROOT
-				male = yes
-				min_age = 30
-				max_age = 50
-			}
-			define_heir = {
-				max_random_adm = 6
-				max_random_dip = 6
-				max_random_mil = 6
-				culture = ROOT
-				dynasty = ROOT
-				religion = ROOT
-				male = yes
-				age = 0
-			}
-			capital_scope = {
-				add_unrest = 2
-			}
-			add_liberty_desire = 10
-			add_stability = -1
 		}
 	}
 	on_decline = {

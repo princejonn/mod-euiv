@@ -1,0 +1,122 @@
+namespace = join_subject_war
+country_event = {
+	id = join_subject_war.1
+	hidden = yes
+	trigger = {
+		ai = yes
+		OR = {
+			is_any_sister_republic_type = yes
+			is_any_viceroyalty_type = yes
+		}
+		is_at_war = yes
+		war_exhaustion = 2
+		NOT = {
+			war_score = -20
+		}
+		overlord = {
+			is_at_war = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			NOT = {
+				war_score = -35
+			}
+		}
+		modifier = {
+			factor = 0.05
+			NOT = {
+				war_score = -50
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = {
+				war_score = -75
+			}
+		}
+	}
+	immediate = {
+		save_event_target_as = subject_nation_asks_for_aid
+		overlord = {
+			country_event = {
+				id = join_subject_war.2
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = join_subject_war.2
+	title = join_subject_war.2.title
+	desc = join_subject_war.2.desc
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = join_subject_war.2.a
+		join_all_defensive_wars_of = event_target:subject_nation_asks_for_aid
+		join_all_offensive_wars_of = event_target:subject_nation_asks_for_aid
+		event_target:subject_nation_asks_for_aid = {
+			add_war_exhaustion = -2
+			add_liberty_desire = -10
+		}
+		add_favors = {
+			who = event_target:subject_nation_asks_for_aid
+			amount = 10
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = join_subject_war.2.b
+		trigger = {
+			treasury = 500
+		}
+		add_treasury = -500
+		event_target:subject_nation_asks_for_aid = {
+			add_treasury = 500
+			add_war_exhaustion = -1
+			add_liberty_desire = -1
+		}
+		add_favors = {
+			who = event_target:subject_nation_asks_for_aid
+			amount = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = join_subject_war.2.c
+		trigger = {
+			manpower = 10000
+		}
+		add_manpower = -10000
+		event_target:subject_nation_asks_for_aid = {
+			add_manpower = 10000
+			add_war_exhaustion = -1
+			add_liberty_desire = -1
+		}
+		add_favors = {
+			who = event_target:subject_nation_asks_for_aid
+			amount = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = join_subject_war.2.d
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

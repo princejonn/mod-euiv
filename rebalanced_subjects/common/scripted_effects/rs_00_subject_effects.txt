@@ -1,0 +1,20 @@
+stop_subject_bickering = {
+	every_country = {
+		limit = {
+			ai = no
+		}
+		save_event_target_as = ssb_overlord
+		every_subject_country = {
+			save_event_target_as = ssb_subject
+			every_claimed_province = {
+				limit = {
+					owned_by_subject_of = event_target:ssb_overlord
+				}
+				save_event_target_as = ssb_province
+				event_target:ssb_province = {
+					remove_claim = event_target:ssb_subject
+				}
+			}
+		}
+	}
+}

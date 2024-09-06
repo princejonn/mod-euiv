@@ -2,30 +2,18 @@ designate_crusader_order = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		OR = {
-			government = monarchy
-			government = theocracy
-			government = republic
-		}
-		OR = {
-			religion = catholic
-			religion = orthodox
-			religion = protestant
-		}
+		can_be_overlord = crusader_order
+		can_be_crusader_order_subject = yes
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = consolidated_vassal
-			}
+			is_any_vassal_type = yes
 		}
 	}
 	is_allowed = {
 		is_defender_of_faith = yes
 		is_at_war = no
 		NOT = {
-			crusader_order = 5
+			crusader_order = 3
 		}
 		custom_trigger_tooltip = {
 			tooltip = TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP
@@ -48,16 +36,17 @@ designate_crusader_order = {
 				LIV = {
 					exists = no
 				}
+				FROM = {
+					tag = ACH
+				}
+				ACH = {
+					exists = no
+				}
 			}
 		}
 		FROM = {
 			NOT = {
-				government_rank = 2
-			}
-		}
-		FROM = {
-			NOT = {
-				num_of_cities = 6
+				num_of_cities = 4
 			}
 		}
 	}
@@ -69,14 +58,19 @@ designate_crusader_order = {
 		}
 		hidden_effect = {
 			FROM = {
-				change_religion = ROOT
-				change_primary_culture = ROOT
 				change_government = theocracy
-				set_government_rank = 1
-				add_government_reform = monastic_order_reform
+				set_government_rank = 2
+				add_government_reform = crusading_kingdom_reform
 				add_government_reform = external_mission_reform
 				add_government_reform = education_of_the_missionaries_reform
-				add_government_reform = secure_clergy_power_reform
+				add_government_reform = strengthen_clergy_reform
+				add_government_reform = organized_military_staff_reform
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
+				}
 				random_owned_province = {
 					limit = {
 						NOT = {
@@ -91,6 +85,7 @@ designate_crusader_order = {
 							tag = KNI
 							tag = TEU
 							tag = LIV
+							tag = ACH
 						}
 					}
 					add_liberty_desire = -10
@@ -118,6 +113,14 @@ designate_crusader_order = {
 						}
 					}
 					change_tag = LIV
+				}
+				else_if = {
+					limit = {
+						ACH = {
+							exists = no
+						}
+					}
+					change_tag = ACH
 				}
 			}
 		}
@@ -157,6 +160,9 @@ revoke_crusader_order = {
 			add_opinion = {
 				who = ROOT
 				modifier = broke_crusader_order
+			}
+			change_country_color = {
+				country = FROM
 			}
 		}
 	}

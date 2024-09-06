@@ -11,7 +11,7 @@ incorporated_vassal = {
 	takes_diplo_slot = no
 	# Immediate Subject Interactions:
 	enforce_culture = yes
-	# Modifiers (Overlord):
+	# Overlord Modifiers:
 	modifier_overlord = {
 		trigger = {
 			NOT = {
@@ -35,7 +35,7 @@ consolidated_vassal = {
 	# Properties:
 	annex_cost_per_development = 4
 	relative_power_class = 0
-	# Modifiers (Overlord):
+	# Overlord Modifiers:
 	modifier_overlord = {
 		trigger = {
 			NOT = {

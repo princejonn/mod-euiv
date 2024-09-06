@@ -23,10 +23,29 @@ resolve_deprecated_subject = {
 		always = yes
 	}
 	on_accept = {
-		create_subject = {
-			subject_type = vassal
-			subject = FROM
-			keep_liberty_desire = yes
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						is_subject_of_type = sovereign_personal_union
+						is_subject_of_type = client_state
+						is_subject_of_type = incorporated_client_state
+						is_subject_of_type = consolidated_client_state
+					}
+				}
+			}
+			create_subject = {
+				subject_type = personal_union
+				subject = FROM
+				keep_liberty_desire = yes
+			}
+		}
+		else = {
+			create_subject = {
+				subject_type = vassal
+				subject = FROM
+				keep_liberty_desire = yes
+			}
 		}
 	}
 	on_decline = {

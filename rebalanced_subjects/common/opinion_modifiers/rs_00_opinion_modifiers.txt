@@ -95,11 +95,13 @@ is_consolidated_sister_republic = {
 
 # Viceroyalty
 is_viceroyalty = {
-	opinion = 75
+	opinion = 20
 }
 
-broke_viceroyalty = {
-	opinion = -50
-	yearly_decay = 3
-	min = -100
+is_incorporated_viceroyalty = {
+	opinion = 30
+}
+
+is_consolidated_viceroyalty = {
+	opinion = 40
 }

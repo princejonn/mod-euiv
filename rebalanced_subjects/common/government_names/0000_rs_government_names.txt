@@ -240,11 +240,7 @@ default_principality = {
 		3 = PRINCIPALITY_FEMALE_HEIR
 	}
 	trigger = {
-		OR = {
-			is_subject_of_type = principality
-			is_subject_of_type = incorporated_principality
-			is_subject_of_type = consolidated_principality
-		}
+		is_any_principality_type = yes
 	}
 }
 
@@ -285,11 +281,7 @@ default_sister_republic = {
 		3 = SISTER_REPUBLIC_FEMALE_HEIR
 	}
 	trigger = {
-		OR = {
-			is_subject_of_type = sister_republic
-			is_subject_of_type = incorporated_sister_republic
-			is_subject_of_type = consolidated_sister_republic
-		}
+		is_any_sister_republic_type = yes
 	}
 }
 
@@ -320,6 +312,6 @@ default_viceroyalty = {
 		3 = VICEROYALTY_HEIR
 	}
 	trigger = {
-		is_subject_of_type = viceroyalty
+		is_any_viceroyalty_type = yes
 	}
 }

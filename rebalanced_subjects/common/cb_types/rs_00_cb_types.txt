@@ -54,6 +54,10 @@ cb_restore_viceroyalty = {
 			government = monarchy
 			government = republic
 		}
+		OR = {
+			religion_group = christian
+			religion = norse_pagan_reformed
+		}
 		is_revolutionary = no
 	}
 	prerequisites = {

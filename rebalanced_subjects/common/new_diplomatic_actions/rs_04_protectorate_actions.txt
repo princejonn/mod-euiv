@@ -2,9 +2,10 @@ designate_protectorate = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		can_be_overlord = protectorate
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = vassal
+			is_any_vassal_type = yes
 		}
 	}
 	is_allowed = {

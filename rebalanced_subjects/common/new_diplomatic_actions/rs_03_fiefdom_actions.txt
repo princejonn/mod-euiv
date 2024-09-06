@@ -2,14 +2,11 @@ designate_fiefdom = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
-		government = monarchy
+		can_be_overlord = fiefdom
+		can_be_fiefdom_subject = yes
 		FROM = {
 			is_subject_of = ROOT
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = incorporated_vassal
-				is_subject_of_type = consolidated_vassal
-			}
+			is_any_vassal_type = yes
 		}
 	}
 	is_allowed = {
@@ -19,12 +16,7 @@ designate_fiefdom = {
 		}
 		FROM = {
 			NOT = {
-				government_rank = 2
-			}
-		}
-		FROM = {
-			NOT = {
-				num_of_cities = 2
+				num_of_cities = 3
 			}
 		}
 	}
@@ -33,6 +25,14 @@ designate_fiefdom = {
 			subject_type = fiefdom
 			subject = FROM
 			keep_liberty_desire = yes
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
+				}
+			}
 		}
 	}
 	on_decline = {
@@ -70,6 +70,9 @@ revoke_fiefdom = {
 			add_opinion = {
 				who = ROOT
 				modifier = broke_fiefdom
+			}
+			change_country_color = {
+				country = FROM
 			}
 		}
 	}

@@ -1,0 +1,88 @@
+po_establish_sister_republic = {
+	category = 6
+	power_projection = vassalized_rival
+	power_cost_base = 1
+	prestige_base = 1
+	ae_base = 1
+	warscore_cost = {
+		all_provinces = 0.66
+		no_provinces = 0
+		owner_keeps = 0
+		conquered = 0
+		returned_core = 0
+		released_nation = 0
+		cancelled_subject = 0
+		concede_colonial_region = 0
+	}
+	requires_demand_independence = yes
+	is_make_subject = yes
+	is_visible = {
+		can_be_overlord = sister_republic
+		is_subject = no
+		government = republic
+		FROM = {
+			OR = {
+				is_subject = no
+				is_subject_of_type = tributary_state
+			}
+			capital_scope = {
+				continent = ROOT
+			}
+			NOT = {
+				has_reform = papacy_reform
+			}
+			NOT = {
+				has_reform = celestial_empire
+			}
+			NOT = {
+				has_reform = shogunate
+			}
+		}
+	}
+	effect = {
+		FROM = {
+			every_ally = {
+				FROM = {
+					break_alliance = PREV
+				}
+			}
+		}
+		create_subject = {
+			subject_type = sister_republic
+			subject = FROM
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						government = republic
+					}
+				}
+				change_government = republic
+				add_government_reform = noble_elite_reform
+			}
+			set_country_flag = has_overriden_color_flag
+			change_country_color = {
+				country = ROOT
+			}
+			define_ruler = {
+				name = "Alexander"
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				culture = FROM
+				religion = FROM
+				male = yes
+				min_age = 40
+				max_age = 50
+			}
+		}
+		join_all_defensive_wars_of = FROM
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 50
+		}
+	}
+}

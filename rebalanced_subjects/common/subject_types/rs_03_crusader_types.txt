@@ -1,39 +1,28 @@
 crusader_order = {
 	copy_from = vassal
-	count = vassal
+	count = crusader_order
 	# Graphics
 	sprite = GFX_icon_march
 	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
 	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
 	# Properties
 	base_liberty_desire = -15
+	extend_trading_range = yes
 	forms_trade_companies = no
 	gets_help_with_rebels = yes
 	has_power_projection = no
 	liberty_desire_development_ratio = 0.5
-	max_government_rank = 1
+	max_government_rank = 2
 	military_focus = 2
 	relative_power_class = 0
-	should_quit_wars_on_activation = yes
 	takes_diplo_slot = no
-	# Overlord Properties:
-	forcelimit_to_overlord = 0
-	manpower_to_overlord = 0
-	naval_forcelimit_to_overlord = 0
-	pays_overlord = 0
-	sailors_to_overlord = 0
-	# Diplomatic Actions:
-	can_be_annexed = no
 	# Continuous Subject Interactions:
-	divert_trade = no
-	scutage = no
+	send_officers = yes
 	subsidize_armies = yes
-	support_loyalists = yes
 	# Immediate Subject Interactions:
 	conscript_general = yes
 	enforce_culture = yes
-	place_relative_on_throne = no
-	seize_territory = no
+	fortify_march = yes
 	send_additional_troops = yes
 	# War Interactions:
 	restoration_cb = cb_disloyal_vassal
@@ -45,7 +34,7 @@ crusader_order = {
 		modifier = has_crusader_order_num_cities_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 6
+				num_of_cities = 4
 			}
 		}
 		expiration_message_overlord = CRUSADERORDERTOOLARGE
@@ -60,7 +49,7 @@ crusader_order = {
 		modifier = is_crusader_order_num_cities_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 6
+				num_of_cities = 4
 			}
 		}
 	}
@@ -89,6 +78,17 @@ crusader_order = {
 			}
 		}
 	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		OR = {
+			government = monarchy
+			government = theocracy
+			government = republic
+		}
+		religion_group = christian
+		government_rank = 2
+	}
+	# Opinion Modifiers:
 	overlord_opinion_modifier = is_crusader_order
 	subject_opinion_modifier = is_crusader_order
 }

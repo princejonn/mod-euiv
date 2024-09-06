@@ -78,116 +78,6 @@
   VICEROYALTY_LEADER: "Viceroy"
   VICEROYALTY_HEIR: "Captain General"
 
-  # new diplomatic actions
-
-  ## gaikoku daimyo actions
-
-  form_gaikoku_daimyo_title: "Establish Gaikoku Daimyo"
-  form_gaikoku_daimyo_tooltip: "Convert [From.GetName] into a Gaikoku Daimyo. A Gaikoku Daimyo is a powerful foreign lord who governs a semi-autonomous territory under the authority of the Japanese overlord. They are granted the right to rule in exchange for loyalty, military support, and maintaining local stability. As a Gaikoku Daimyo, the vassal is expected to uphold Japanese interests abroad while enjoying a degree of internal autonomy."
-  form_gaikoku_daimyo_desc: "Convert [From.GetName] into a Gaikoku Daimyo. A Gaikoku Daimyo is a foreign vassal lord who rules a region outside of Japan with the backing of the Japanese shogunate or ruling authority. These daimyos are entrusted with the governance of their territories, responsible for collecting taxes, maintaining order, and raising military forces when called upon by their overlord. In return for their loyalty and service, Gaikoku Daimyos enjoy a significant level of autonomy, allowing them to manage internal affairs according to local customs while promoting Japanese influence. Establishing a Gaikoku Daimyo strengthens diplomatic ties, extends Japan's reach, and secures strategic footholds in foreign lands, furthering the interests of the Japanese state. Gaikoku Daimyos play a crucial role in expanding Japan's sphere of influence and securing its geopolitical ambitions."
-
-  ## vassal actions
-
-  incorporate_vassal_title: "Incorporate Vassal"
-  incorporate_vassal_tooltip: "Convert [From.GetName] to an Incorporated Vassal. This will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other vassals when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!."
-  incorporate_vassal_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Vassal§!.\n\nThis will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other vassals when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
-
-  consolidate_vassal_title: "Consolidate Vassal"
-  consolidate_vassal_tooltip: "Convert [From.GetName] to a Consolidated Vassal. This will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-75§!."
-  consolidate_vassal_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Vassal§!.\n\nThis will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Vassal.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
-
-  ## bishopric actions
-
-  designate_bishopric_title: "Designate Bishopric"
-  designate_bishopric_tooltip: "Convert [From.GetName] to a Bishopric. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence. Bishoprics cannot be annexed."
-  designate_bishopric_desc: "Convert [From.GetName] to a Bishopric. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence. Bishoprics cannot be annexed. Bishoprics cannot be incorporated and will reset incorporation status. You can only have 3 Bishoprics.\n\nIf the Bishopric has 3 or less provinces, they will give the following bonuses to their overlord:\n§G+1.00%§! Missionary Strength\n§G-5.00%§! Missionary Maintenance\n§G+2.50%§! Global Tax\n\nDesignating [From.GetName] to a Bishopric §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Bishopric once revoked."
-
-  revoke_bishopric_title: "Revoke Bishopric"
-  revoke_bishopric_tooltip: "Convert [From.GetName] to a Vassal."
-  revoke_bishopric_desc: "Convert [From.GetName] to a Vassal."
-
-  TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP: "You need to fully §YAnnex§! or §YVassalize§! and §YDesignate§! one of the existing Monastic Orders (Knights, Teutonic, or Livonian) to be able to designate a Crusader Order."
-
-  ## crusader order actions
-
-  designate_crusader_order_title: "Designate Crusader Order"
-  designate_crusader_order_tooltip: "Convert [From.GetName] to a Crusader Order. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed."
-  designate_crusader_order_desc: "Convert [From.GetName] to a Crusader Order. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. Crusader Orders cannot be incorporated and will reset incorporation status. You can only have 1 Crusader Order.\n\nIf the Crusader Order has 5 or less provinces, they will give the following bonuses to their overlord:\n§G+5.00%§! Discipline\n§G+5.00%§! Morale Damage\n§G-5.00%§! Morale Damage Received\n§G-5.00%§! Land Maintenance\n§G+5.00%§! Manpower Recovery Speed\n\nDesignating [From.GetName] to a Crusader Order §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Crusader Order once revoked."
-
-  revoke_crusader_order_title: "Revoke Crusader Order"
-  revoke_crusader_order_tooltip: "Convert [From.GetName] to a Vassal."
-  revoke_crusader_order_desc: "Convert [From.GetName] to a Vassal."
-
-  ## fiefdom actions
-
-  designate_fiefdom_title: "Designate Fiefdom"
-  designate_fiefdom_tooltip: "Convert [From.GetName] to a Fiefdom. A territory granted by an overlord to an Earl in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed."
-  designate_fiefdom_desc: "Convert [From.GetName] to a Fiefdom. A territory granted by an overlord to an Earl in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. Fiefdoms cannot be incorporated and will reset incorporation status. You can only have 5 Fiefdoms.\n\nIf the Fiefdom has only one province, you will get §G+50§! §YGovernment Capacity§!.\nIf the fiefdom has 15 development, you will get §G+1§! §YDiplomatic Reputation§!.\nIf the Fiefdom is located in a trade node, you will get §G+5%§! §YGlobal Trade Power§!\n\nDesignating [From.GetName] to a Fiefdom §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Fiefdom once revoked."
-
-  revoke_fiefdom_title: "Revoke Fiefdom"
-  revoke_fiefdom_tooltip: "Convert [From.GetName] to a Vassal."
-  revoke_fiefdom_desc: "Convert [From.GetName] to a Vassal."
-
-  ## protectorate actions
-
-  designate_protectorate_title: "Designate Protectorate"
-  designate_protectorate_tooltip: "Convert [From.GetName] to a Protectorate. A state that manages its own domestic affairs but relies on the protecting overlord for defense and foreign relations. Protectorates cannot be annexed."
-  designate_protectorate_desc: "Convert [From.GetName] to a Protectorate. A state that manages its own domestic affairs but relies on the protecting overlord for defense and foreign relations. Protectorates cannot be annexed. Protectorates cannot be annexed.\nIf the total Development of the Protectorate is smaller than §Y25.0%§! of their Overlord they also get bonuses.\n\nDesignating [From.GetName] to a Protectorate §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Protectorate once revoked."
-
-  revoke_protectorate_title: "Revoke Protectorate"
-  revoke_protectorate_tooltip: "Convert [From.GetName] to a Vassal."
-  revoke_protectorate_desc: "Convert [From.GetName] to a Vassal."
-
-  ## principality actions
-
-  form_principality_title: "Land Prince"
-  form_principality_tooltip: "Convert [From.GetName] to a Principality. Established under the supremacy of an §YEmpire§!, it is a semi-autonomous region ruled by a §YPrince§! of the same dynasty as §Y[Root.Monarch.GetName]§!."
-  form_principality_desc: "Convert [From.GetName] to a Principality. Established under the supremacy of an §YEmpire§!, it is a semi-autonomous region ruled by a prince of the same dynasty as §Y[Root.Monarch.GetName]§!. They manage their own internal affairs but are aligned with the overlord's interests, especially in matters of defense and foreign policy. Incorporation status will reset upon designation.\n\nForming a Principality from §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Principality.\n\nForming a Principality from §Y[From.GetName]§! cannot be undone."
-
-  incorporate_principality_title: "Incorporate Principality"
-  incorporate_principality_tooltip: "Convert [From.GetName] to an Incorporated Principality. This will make them §G-33.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other principalities when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!."
-  incorporate_principality_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Principality§!.\n\nThis will make them §G-33.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other principalities when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Principality.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
-
-  consolidate_principality_title: "Consolidate Principality"
-  consolidate_principality_tooltip: "Convert [From.GetName] to a Consolidated Principality. This will make them §G-66.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!."
-  consolidate_principality_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Principality§!.\n\nThis will make them §G-66.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Principality.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
-
-  ## sister republic actions
-
-  form_sister_republic_title: "Form Sister Republic"
-  form_sister_republic_tooltip: "Convert [From.GetName] to a Sister Republic. Sister Republics are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country."
-  form_sister_republic_desc: "Convert [From.GetName] to a Sister Republic. Sister Republics are a form of diplomatic relationship where one nation is ruled by the same monarch as another nation, but they are not the same country.\n\nForming a Sister Republic from §Y[From.GetName]§! cannot be undone."
-
-  incorporate_sister_republic_title: "Incorporate Sister Republic"
-  incorporate_sister_republic_tooltip: "Convert [From.GetName] to an Incorporated Sister Republic. This will make them §G-33.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other Sister Republics when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!."
-  incorporate_sister_republic_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Sister Republic§!.\n\nThis will make them §G-33.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other Sister Republics when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-50§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Sister Republic.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
-
-  consolidate_sister_republic_title: "Consolidate Sister Republic"
-  consolidate_sister_republic_tooltip: "Convert [From.GetName] to a Consolidated Sister Republic. This will make them §G-66.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!."
-  consolidate_sister_republic_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Sister Republic§!.\n\nThis will make them §G-66.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots. They will reduce our §YGoverning Capacity§! by §R-100§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Sister Republic.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
-
-  ## personal union actions
-
-  incorporate_personal_union_title: "Incorporate Union"
-  incorporate_personal_union_tooltip: "Convert [From.GetName] to an Incorporated Union. This will make them §G-25.00%§! easier to §YDiplomatically Integrate§!. They will not consider the power of other unions when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots."
-  incorporate_personal_union_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Union§!.\n\nThis will make them §G-25.00%§! easier to §YDiplomatically Integrate§!. They will not consider the power of other Unions when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y50§! Years to §YDiplomatically Integrate§! the Union.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
-
-  consolidate_personal_union_title: "Consolidate Union"
-  consolidate_personal_union_tooltip: "Convert [From.GetName] to a Consolidated Union. This will make them §G-50.00%§! easier to §YDiplomatically Integrate§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots."
-  consolidate_personal_union_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Union§!.\n\nThis will make them §G-50.00%§! easier to §YDiplomatically Integrate§!. They will not consider their own power when calculating §YLiberty Desire§!. They will not use §YDiplomatic Relations§! slots.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y50§! Years to §YDiplomatically Integrate§! the Union.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
-
-  ## viceroyalty actions
-
-  revoke_viceroyalty_title: "Revoke Viceroyalty"
-  revoke_viceroyalty_tooltip: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
-  revoke_viceroyalty_desc: "Revoke the Viceroyalty status of [From.GetName]. All provinces will be ceded back to us."
-
-  ## deprecated actions
-
-  resolve_deprecated_subject_title: "Resolve Deprecated Subject"
-  resolve_deprecated_subject_tooltip: "Convert [From.GetName] to a Vassal."
-  resolve_deprecated_subject_desc: "Sorry for moving fast and deprecating subject types. This will convert [From.GetName] to a Vassal. From there you will eventually be able to convert to new subject types."
-
   # opinion modifiers
 
   is_incorporated_union: "Incorporated Union"
@@ -208,6 +98,8 @@
   is_incorporated_vassal: "Incorporated Vassal"
   is_consolidated_vassal: "Consolidated Vassal"
   is_viceroyalty: "Viceroyalty"
+  is_incorporated_viceroyalty: "Incorporated Viceroyalty"
+  is_consolidated_viceroyalty: "Consolidated Viceroyalty"
 
   broke_bishopric: "Revoked Bishopric Status"
   broke_fiefdom: "Revoked Fiefdom Status"
@@ -218,6 +110,12 @@
   po_establish_gaikoku_daimyo: "Establish Gaikoku Daimyo"
   po_establish_gaikoku_daimyo_desc: "[From.GetName] becomes a §YGaikoku Daimyo§! under [Root.GetName]."
   PEACE_po_establish_gaikoku_daimyo: "Establish Gaikoku Daimyo"
+  CB_ALLOWED_po_establish_gaikoku_daimyo: "Establish Gaikoku Daimyo"
+
+  po_establish_sister_republic: "Establish Sister Republic"
+  po_establish_sister_republic_desc: "[From.GetName] becomes a §YSister Republic§! under [Root.GetName]."
+  PEACE_po_establish_sister_republic: "Establish Sister Republic"
+  CB_ALLOWED_po_establish_sister_republic: "Establish Sister Republic"
 
   # static modifiers
 
@@ -282,105 +180,9 @@
 
   incorporated_vassal_governing_capacity_cost: "Incorporated Vassal"
   consolidated_vassal_governing_capacity_cost: "Consolidated Vassal"
+  incorporated_sister_republic_governing_capacity_cost: "Incorporated Sister Republic"
+  consolidated_sister_republic_governing_capacity_cost: "Consolidated Sister Republic"
   viceroyalty_governing_capacity_cost: "Viceroyalty"
-
-  # subject types
-
-  gaikoku_daimyo: "Gaikoku Daimyo"
-  gaikoku_daimyo_title: "Gaikoku Daimyo"
-  gaikoku_daimyo_title_plural: "Gaikoku Daimyos"
-  gaikoku_daimyo_is_our: "$NAME|Y$ is our Gaikoku Daimyo"
-  gaikoku_daimyo_long_desc: "A Gaikoku Daimyo is a powerful foreign lord who governs a semi-autonomous territory under the authority of the Japanese overlord. They are granted the right to rule in exchange for loyalty, military support, and maintaining local stability. As a Gaikoku Daimyo, the vassal is expected to uphold Japanese interests abroad while enjoying a degree of internal autonomy. They do not use §YDiplomatic Relations§! slots."
-
-  incorporated_vassal: "Incorporated Vassal"
-  incorporated_vassal_title: "Incorporated Vassal"
-  incorporated_vassal_title_plural: "Incorporated Vassals"
-  incorporated_vassal_is_our: "$NAME|Y$ is our Incorporated Vassal"
-  incorporated_vassal_long_desc: "An Incorporated Vassal must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They are easier to §YDiplomatically Annex§!, do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  consolidated_vassal: "Consolidated Vassal"
-  consolidated_vassal_title: "Consolidated Vassal"
-  consolidated_vassal_title_plural: "Consolidated Vassals"
-  consolidated_vassal_is_our: "$NAME|Y$ is our Consolidated Vassal"
-  consolidated_vassal_long_desc: "A Consolidated Vassal must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They are easier to §YDiplomatically Annex§!, do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  bishopric: "Bishopric"
-  bishopric_title: "Bishopric"
-  bishopric_title_plural: "Bishoprics"
-  bishopric_is_our: "§Y$NAME$§! is our Bishopric."
-  bishopric_long_desc: "Bishoprics must follow their overlord to war, cannot make certain diplomatic actions, and will pay a large fraction of their income to their overlord. Depending on location and size, they increase the overlord's §YTax Modifier§!, and §YTolerance of the True Faith§!."
-
-  crusader_order: "Crusader Order"
-  crusader_order_title: "Crusader Order"
-  crusader_order_title_plural: "Crusader Orders"
-  crusader_order_is_our: "§Y$NAME$§! is our Crusader Order."
-  crusader_order_long_desc: "Crusader Orders must follow their overlord to war, cannot make certain diplomatic actions, and will pay a minimal fraction of their income to their overlord. Depending on location and size, they increase the overlord's military bonuses."
-
-  fiefdom: "Fiefdom"
-  fiefdom_title: "Fiefdom"
-  fiefdom_title_plural: "Fiefdoms"
-  fiefdom_is_our: "§Y$NAME$§! is our Fiefdom."
-  fiefdom_long_desc: "Fiefdoms must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. Depending on location and size, they increase the overlord's §YGoverning Capacity§!, §YDiplomatic Reputation§!, and §YGlobal Trade Power§!."
-
-  protectorate: "Protectorate"
-  protectorate_title: "Protectorate"
-  protectorate_title_plural: "Protectorates"
-  protectorate_is_our: "§Y$NAME$§! is our Protectorate."
-  protectorate_long_desc: "Protectorates cannot follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. "
-
-  principality: "Principality"
-  principality_title: "Principality"
-  principality_title_plural: "Principalities"
-  principality_is_our: "§Y$NAME$§! is our Principality."
-  principality_long_desc: "Principalities must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord."
-
-  incorporated_principality: "Incorporated Principality"
-  incorporated_principality_title: "Incorporated Principality"
-  incorporated_principality_title_plural: "Incorporated Principalities"
-  incorporated_principality_is_our: "§Y$NAME$§! is our Incorporated Principality."
-  incorporated_principality_long_desc: "An Incorporated Principality must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  consolidated_principality: "Consolidated Principality"
-  consolidated_principality_title: "Consolidated Principality"
-  consolidated_principality_title_plural: "Consolidated Principalities"
-  consolidated_principality_is_our: "§Y$NAME$§! is our Consolidated Principality."
-  consolidated_principality_long_desc: "An Consolidated Principality must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  sister_republic: "Sister Republic"
-  sister_republic_title: "Sister Republic"
-  sister_republic_title_plural: "Sister Republics"
-  sister_republic_is_our: "§Y$NAME$§! is our Sister Republic."
-  sister_republic_long_desc: "Sister Republics must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord."
-
-  incorporated_sister_republic: "Incorporated Sister Republic"
-  incorporated_sister_republic_title: "Incorporated Sister Republic"
-  incorporated_sister_republic_title_plural: "Incorporated Sister Republics"
-  incorporated_sister_republic_is_our: "§Y$NAME$§! is our Incorporated Sister Republic."
-  incorporated_sister_republic_long_desc: "An Incorporated Sister Republic must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  consolidated_sister_republic: "Consolidated Sister Republic"
-  consolidated_sister_republic_title: "Consolidated Sister Republic"
-  consolidated_sister_republic_title_plural: "Consolidated Sister Republics"
-  consolidated_sister_republic_is_our: "§Y$NAME$§! is our Consolidated Sister Republic."
-  consolidated_sister_republic_long_desc: "An Consolidated Sister Republic must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. They do not use §YDiplomatic Relations§! slots, but also reduce the overlord's §YGoverning Capacity§!."
-
-  incorporated_personal_union: "Incorporated Personal Union"
-  incorporated_personal_union_title: "Incorporated Personal Union"
-  incorporated_personal_union_title_plural: "Incorporated Personal Unions"
-  incorporated_personal_union_is_our: "§Y$NAME$§! is our Incorporated Personal Union."
-  incorporated_personal_union_long_desc: "Incorporated Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
-
-  consolidated_personal_union: "Consolidated Personal Union"
-  consolidated_personal_union_title: "Consolidated Personal Union"
-  consolidated_personal_union_title_plural: "Consolidated Personal Unions"
-  consolidated_personal_union_is_our: "§Y$NAME$§! is our Consolidated Personal Union."
-  consolidated_personal_union_long_desc: "Consolidated Personal Unions are easier to annex and cost no §YDiplomatic Slot§!."
-
-  viceroyalty: "Viceroyalty"
-  viceroyalty_title: "Viceroyalty"
-  viceroyalty_title_plural: "Viceroyalties"
-  viceroyalty_is_our: "§Y$NAME$§! is our Viceroyalty."
-  viceroyalty_long_desc: "A large territory ruled by a viceroy appointed by the overlord, exercising direct control on behalf of the overlord, but with significant autonomy in day-to-day governance."
 
   # wargoal types
   take_capital_principality: "Take the capital"
@@ -396,75 +198,3 @@
   PRINCIPALITY_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Principality Unification War"
   SISTER_REPUBLIC_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Sister Republic Unification War"
   VICEROYALTY_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Viceroyalty Unification War"
-
-  # overridden country names
-  viceroyalty_name_arabia: "Viceroyalty of Arabia"
-  viceroyalty_name_arabia_ADJ: "Viceregal"
-  viceroyalty_name_armenia: "Viceroyalty of Armenia"
-  viceroyalty_name_armenia_ADJ: "Viceregal"
-  viceroyalty_name_britain: "Viceroyalty of Britain"
-  viceroyalty_name_britain_ADJ: "Viceregal"
-  viceroyalty_name_burma: "Viceroyalty of Burma"
-  viceroyalty_name_burma_ADJ: "Viceregal"
-  viceroyalty_name_carpathia: "Viceroyalty of Carpathia"
-  viceroyalty_name_carpathia_ADJ: "Viceregal"
-  viceroyalty_name_china: "Viceroyalty of China"
-  viceroyalty_name_china_ADJ: "Viceregal"
-  viceroyalty_name_dalmatia: "Viceroyalty of Dalmatia"
-  viceroyalty_name_dalmatia_ADJ: "Viceregal"
-  viceroyalty_name_egypt: "Viceroyalty of Egypt"
-  viceroyalty_name_egypt_ADJ: "Viceregal"
-  viceroyalty_name_france: "Viceroyalty of France"
-  viceroyalty_name_france_ADJ: "Viceregal"
-  viceroyalty_name_germany: "Viceroyalty of Germany"
-  viceroyalty_name_germany_ADJ: "Viceregal"
-  viceroyalty_name_greece: "Viceroyalty of Greece"
-  viceroyalty_name_greece_ADJ: "Viceregal"
-  viceroyalty_name_iceland: "Viceroyalty of Iceland"
-  viceroyalty_name_iceland_ADJ: "Viceregal"
-  viceroyalty_name_india: "Viceroyalty of India"
-  viceroyalty_name_india_ADJ: "Viceregal"
-  viceroyalty_name_indochina: "Viceroyalty of Indochina"
-  viceroyalty_name_indochina_ADJ: "Viceregal"
-  viceroyalty_name_ireland: "Viceroyalty of Ireland"
-  viceroyalty_name_ireland_ADJ: "Viceregal"
-  viceroyalty_name_italy: "Viceroyalty of Italy"
-  viceroyalty_name_italy_ADJ: "Viceregal"
-  viceroyalty_name_japan: "Viceroyalty of Japan"
-  viceroyalty_name_japan_ADJ: "Viceregal"
-  viceroyalty_name_kiev: "Viceroyalty of Kiev"
-  viceroyalty_name_kiev_ADJ: "Viceregal"
-  viceroyalty_name_korea: "Viceroyalty of Korea"
-  viceroyalty_name_korea_ADJ: "Viceregal"
-  viceroyalty_name_livonia: "Viceroyalty of Livonia"
-  viceroyalty_name_livonia_ADJ: "Viceregal"
-  viceroyalty_name_maghreb: "Viceroyalty of Maghreb"
-  viceroyalty_name_maghreb_ADJ: "Viceregal"
-  viceroyalty_name_manchuria: "Viceroyalty of Manchuria"
-  viceroyalty_name_manchuria_ADJ: "Viceregal"
-  viceroyalty_name_mongolia: "Viceroyalty of Mongolia"
-  viceroyalty_name_mongolia_ADJ: "Viceregal"
-  viceroyalty_name_netherlands: "Viceroyalty of Netherlands"
-  viceroyalty_name_netherlands_ADJ: "Viceregal"
-  viceroyalty_name_persia: "Viceroyalty of Persia"
-  viceroyalty_name_persia_ADJ: "Viceregal"
-  viceroyalty_name_poland: "Viceroyalty of Poland"
-  viceroyalty_name_poland_ADJ: "Viceregal"
-  viceroyalty_name_portugal: "Viceroyalty of Portugal"
-  viceroyalty_name_portugal_ADJ: "Viceregal"
-  viceroyalty_name_russia: "Viceroyalty of Russia"
-  viceroyalty_name_russia_ADJ: "Viceregal"
-  viceroyalty_name_scandinavia: "Viceroyalty of Scandinavia"
-  viceroyalty_name_scandinavia_ADJ: "Viceregal"
-  viceroyalty_name_siam: "Viceroyalty of Siam"
-  viceroyalty_name_siam_ADJ: "Viceregal"
-  viceroyalty_name_spain: "Viceroyalty of Spain"
-  viceroyalty_name_spain_ADJ: "Viceregal"
-  viceroyalty_name_syria: "Viceroyalty of Syria"
-  viceroyalty_name_syria_ADJ: "Viceregal"
-  viceroyalty_name_tibet: "Viceroyalty of Tibet"
-  viceroyalty_name_tibet_ADJ: "Viceregal"
-  viceroyalty_name_transcaspia: "Viceroyalty of Transcaspia"
-  viceroyalty_name_transcaspia_ADJ: "Viceregal"
-  viceroyalty_name_turkey: "Viceroyalty of Turkey"
-  viceroyalty_name_turkey_ADJ: "Viceregal"

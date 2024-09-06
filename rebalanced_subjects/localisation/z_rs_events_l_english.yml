@@ -1,0 +1,7 @@
+﻿l_english:
+  join_subject_war.2.title: "Subject Nation calls for Aid"
+  join_subject_war.2.desc: "Our Subject Subject [subject_nation_asks_for_aid.GetName] is in dire need of help in their war. They have called for aid!"
+  join_subject_war.2.a: "And [Root.GetName] will answer!"
+  join_subject_war.2.b: "A few ducats should suffice"
+  join_subject_war.2.c: "We shall send our men to help"
+  join_subject_war.2.d: "What have they done for us?"

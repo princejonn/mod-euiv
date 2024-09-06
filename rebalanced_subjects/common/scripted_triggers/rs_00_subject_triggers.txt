@@ -1,30 +1,165 @@
+is_special_government_type = {
+	OR = {
+		has_reform = papacy_reform
+		has_reform = celestial_empire
+		has_reform = shogunate
+	}
+}
+
+is_any_vassal_type = {
+	OR = {
+		is_subject_of_type = vassal
+		is_subject_of_type = incorporated_vassal
+		is_subject_of_type = consolidated_vassal
+	}
+}
+
+is_any_personal_union_type = {
+	OR = {
+		is_subject_of_type = personal_union
+		is_subject_of_type = incorporated_personal_union
+		is_subject_of_type = consolidated_personal_union
+		is_subject_of_type = integrated_personal_union
+		is_subject_of_type = theodoro_personal_union
+	}
+}
+
+is_any_principality_type = {
+	OR = {
+		is_subject_of_type = principality
+		is_subject_of_type = incorporated_principality
+		is_subject_of_type = consolidated_principality
+	}
+}
+
+is_any_sister_republic_type = {
+	OR = {
+		is_subject_of_type = sister_republic
+		is_subject_of_type = incorporated_sister_republic
+		is_subject_of_type = consolidated_sister_republic
+	}
+}
+
+is_any_viceroyalty_type = {
+	OR = {
+		is_subject_of_type = viceroyalty
+		is_subject_of_type = incorporated_viceroyalty
+		is_subject_of_type = consolidated_viceroyalty
+	}
+}
+
+is_any_incorporated_type = {
+	OR = {
+		is_subject_of_type = incorporated_personal_union
+		is_subject_of_type = incorporated_principality
+		is_subject_of_type = incorporated_sister_republic
+		is_subject_of_type = incorporated_vassal
+		is_subject_of_type = incorporated_viceroyalty
+	}
+}
+
+is_any_consolidated_type = {
+	OR = {
+		is_subject_of_type = consolidated_personal_union
+		is_subject_of_type = consolidated_principality
+		is_subject_of_type = consolidated_sister_republic
+		is_subject_of_type = consolidated_vassal
+		is_subject_of_type = consolidated_viceroyalty
+	}
+}
+
 is_free_or_union_vassal_tributary_trigger = {
 	# Tags that are allowed to form new nations
 	custom_trigger_tooltip = {
 		tooltip = is_free_or_tributary_trigger_tooltip
 		OR = {
 			is_subject = no
-			# default
-			is_subject_of_type = cultural_sphere_of_influence_subject
-			is_subject_of_type = integrated_personal_union
-			is_subject_of_type = theodoro_personal_union
-			is_subject_of_type = tributary_state
-			# client state
-			is_subject_of_type = client_state
-			is_subject_of_type = incorporated_client_state
-			is_subject_of_type = consolidated_client_state
-			# march
+			# aggregators
+			is_any_vassal_type = yes
+			is_any_personal_union_type = yes
+			is_any_principality_type = yes
+			is_any_sister_republic_type = yes
+			is_any_viceroyalty_type = yes
+			# subjects
 			is_subject_of_type = march
-			# personal unions
-			is_subject_of_type = personal_union
-			is_subject_of_type = incorporated_personal_union
-			is_subject_of_type = consolidated_personal_union
-			# protectorates
+			is_subject_of_type = tributary_state
+			is_subject_of_type = cultural_sphere_of_influence_subject
+			is_subject_of_type = gaikoku_daimyo
 			is_subject_of_type = protectorate
-			# vassals
-			is_subject_of_type = vassal
-			is_subject_of_type = incorporated_vassal
-			is_subject_of_type = consolidated_vassal
 		}
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_gaikoku_subject = {
+	FROM = {
+		NOT = {
+			capital_scope = {
+				region = japan_region
+			}
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_bishopric_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_crusader_order_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_fiefdom_subject = {
+	FROM = {
+		capital_scope = {
+			region = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_principality_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_sister_republic_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_viceroyalty_subject = {
+	FROM = {
+		NOT = {
+			capital_scope = {
+				continent = ROOT
+			}
+		}
+		is_special_government_type = no
 	}
 }

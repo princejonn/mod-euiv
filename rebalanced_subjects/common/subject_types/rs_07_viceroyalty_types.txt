@@ -1,45 +1,43 @@
 viceroyalty = {
+}
+
+viceroyalty = {
 	copy_from = default
-	count = personal_union
+	count = viceroyalty
 	# Graphics:
 	sprite = GFX_icon_crown_colony
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_crown_colony
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_crown_colony
 	# Properties:
 	base_liberty_desire = -25
+	can_be_co_belligerented = yes
+	can_gain_favors = yes
 	can_have_subjects_of_other_types = yes
 	cities_required_for_bonuses = 20
 	extend_trading_range = yes
-	forms_trade_companies = yes
+	favors_cost_to_join_defensive_wars = 10
+	favors_cost_to_join_offensive_wars = 20
 	gets_help_with_rebels = yes
-	has_power_projection = yes
-	liberty_desire_development_ratio = 0
+	joins_overlords_wars = no
+	liberty_desire_development_ratio = 0.1
 	liberty_desire_negative_prestige = 1
 	liberty_desire_same_dynasty = -5
-	military_focus = 1
+	max_government_rank = 2
+	must_accept_cta_from_overlord = no
+	opinion_cost_to_join_defensive_wars = 20
+	opinion_cost_to_join_offensive_wars = 40
+	opinion_on_subject_integration = 0
 	overlord_can_attack = no
-	relative_power_class = 1
-	should_quit_wars_on_activation = yes
+	relative_power_class = 2
 	takes_diplo_slot = no
-	transfer_subjects_when_made = yes
-	transfer_trade_if_merchant_republic = no
-	trust_on_start = 50
-	# Overlord Properties:
-	forcelimit_to_overlord = 0.5
-	manpower_to_overlord = 0.5
-	naval_forcelimit_to_overlord = 0.5
-	pays_overlord = 0.5
-	sailors_to_overlord = 0.5
-	#	Diplomatic Actions:
-	can_be_annexed = no
-	can_be_integrated = no
+	transfer_subjects_when_made = no
+	transfer_trade_power = yes
 	# Continuous Subject Interactions:
-	divert_trade = yes
-	scutage = yes
 	send_officers = yes
 	subsidize_armies = yes
 	support_loyalists = yes
 	# Immediate Subject Interactions:
+	conscript_general = yes
 	enforce_culture = yes
 	place_relative_on_throne = yes
 	press_sailors = yes
@@ -48,6 +46,12 @@ viceroyalty = {
 	siphon_income = yes
 	# War Interactions:
 	restoration_cb = cb_restore_viceroyalty
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.1
+	manpower_to_overlord = 0.1
+	naval_forcelimit_to_overlord = 0.1
+	pays_overlord = 1.25
+	sailors_to_overlord = 0.1
 	# Overlord Modifiers:
 	modifier_overlord = clear
 	modifier_overlord = {
@@ -58,14 +62,6 @@ viceroyalty = {
 			num_of_cities = 20
 		}
 		modifier = has_viceroyalty_subject_bonus
-	}
-	modifier_overlord = {
-		trigger = {
-			NOT = {
-				has_country_flag = free_incorporated_vassal
-			}
-		}
-		modifier = viceroyalty_governing_capacity_cost
 	}
 	# Subject Modifiers:
 	modifier_subject = clear
@@ -78,6 +74,23 @@ viceroyalty = {
 		}
 		modifier = is_viceroyalty_subject_bonus
 	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
 	# Wars:
 	can_fight = {
 		independent_nations = yes
@@ -88,9 +101,70 @@ viceroyalty = {
 		other_overlord = all
 	}
 	can_ally = {
+		independent_nations = yes
 		same_overlord = viceroyalty
+		other_overlord = all
+	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		OR = {
+			government = monarchy
+			government = republic
+		}
+		# government_rank = 3
+		OR = {
+			religion_group = christian
+			religion = norse_pagan_reformed
+		}
+		is_subject = no
 	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_viceroyalty
 	subject_opinion_modifier = is_viceroyalty
+}
+
+incorporated_viceroyalty = {
+	copy_from = viceroyalty
+	count = viceroyalty
+	# Properties:
+	annex_cost_per_development = 6
+	relative_power_class = 1
+	# Diplomatic Actions:
+	can_be_annexed = yes
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.25
+	manpower_to_overlord = 0.25
+	naval_forcelimit_to_overlord = 0.25
+	pays_overlord = 1.5
+	sailors_to_overlord = 0.25
+	# Overlord Modifiers:
+	modifier_overlord = {
+		trigger = {
+			NOT = {
+				has_country_flag = free_incorporated_vassal
+			}
+		}
+		modifier = viceroyalty_governing_capacity_cost
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_incorporated_viceroyalty
+	subject_opinion_modifier = is_incorporated_viceroyalty
+}
+
+consolidated_viceroyalty = {
+	copy_from = incorporated_viceroyalty
+	count = viceroyalty
+	# Properties:
+	annex_cost_per_development = 4
+	must_accept_cta_from_overlord = yes
+	relative_power_class = 0
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.33
+	manpower_to_overlord = 0.33
+	naval_forcelimit_to_overlord = 0.33
+	pays_overlord = 1.75
+	sailors_to_overlord = 0.33
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_consolidated_viceroyalty
+	subject_opinion_modifier = is_consolidated_viceroyalty
 }

@@ -10,7 +10,7 @@ on_monarch_death_incorporated_union_effect = {
 			limit = {
 				is_subject_of_type = incorporated_personal_union
 				NOT = {
-					liberty_desire = 10
+					liberty_desire = 25
 				}
 			}
 			random = {
@@ -39,7 +39,7 @@ on_monarch_death_consolidated_union_effect = {
 			limit = {
 				is_subject_of_type = consolidated_personal_union
 				NOT = {
-					liberty_desire = 10
+					liberty_desire = 25
 				}
 			}
 			random = {

@@ -1,35 +1,30 @@
 principality = {
 	copy_from = default
-	count = vassal
+	count = principality
 	# Graphics:
 	sprite = GFX_icon_incorporated_vassal_subject_type
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
 	# Properties:
 	annex_cost_per_development = 6
-	can_concentrate_development = yes
+	base_liberty_desire = -15
 	can_have_subjects_of_other_types = yes
 	disable_inheritance = yes
 	extend_trading_range = yes
+	forms_trade_companies = no
 	gets_help_with_rebels = yes
 	has_power_projection = no
-	liberty_desire_development_ratio = 0
+	liberty_desire_development_ratio = 0.05
 	liberty_desire_negative_prestige = 1
+	max_government_rank = 2
 	military_focus = 0.75
 	overlord_can_attack = no
 	relative_power_class = 1
-	should_quit_wars_on_activation = yes
-	transfer_subjects_when_made = yes
-	# Overlord Properties:
-	manpower_to_overlord = 0.05
-	naval_forcelimit_to_overlord = 0.05
-	sailors_to_overlord = 0.05
-	pays_overlord = 0.05
+	transfer_subjects_when_made = no
+	transfer_trade_power = yes
 	# Diplomatic Actions:
 	can_be_annexed = yes
 	# Continuous Subject Interactions:
-	divert_trade = yes
-	placate_rulers = yes
 	siphon_income = yes
 	subsidize_armies = yes
 	support_loyalists = yes
@@ -37,11 +32,16 @@ principality = {
 	conscript_general = yes
 	contribute_to_capital = yes
 	enforce_culture = yes
-	grant_core_claim = yes
 	place_relative_on_throne = yes
+	send_additional_troops = yes
 	seize_territory = yes
 	# War Interactions:
 	restoration_cb = cb_restore_principality
+	# Overlord Properties:
+	manpower_to_overlord = 0.05
+	naval_forcelimit_to_overlord = 0.05
+	sailors_to_overlord = 0.05
+	pays_overlord = 0.5
 	# Overlord Modifiers:
 	modifier_overlord = {
 		modifier = has_principality_subject
@@ -78,6 +78,20 @@ principality = {
 		}
 		modifier = pu_subject_bonus
 	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		government = monarchy
+		government_rank = 3
+		is_subject = no
+	}
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_principality
 	subject_opinion_modifier = is_principality
@@ -85,11 +99,11 @@ principality = {
 
 incorporated_principality = {
 	copy_from = principality
-	count = vassal
+	count = principality
 	# Properties:
 	annex_cost_per_development = 4
 	takes_diplo_slot = no
-	# Modifiers (Overlord):
+	# Overlord Modifiers:
 	modifier_overlord = {
 		trigger = {
 			NOT = {
@@ -105,11 +119,11 @@ incorporated_principality = {
 
 consolidated_principality = {
 	copy_from = incorporated_principality
-	count = vassal
+	count = principality
 	# Properties:
 	annex_cost_per_development = 2
 	relative_power_class = 0
-	# Modifiers (Overlord):
+	# Overlord Modifiers:
 	modifier_overlord = {
 		trigger = {
 			NOT = {

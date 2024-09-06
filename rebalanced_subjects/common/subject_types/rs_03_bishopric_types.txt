@@ -1,12 +1,13 @@
 bishopric = {
 	copy_from = vassal
-	count = vassal
+	count = bishopric
 	# Graphics
 	sprite = GFX_icon_hereditary_pronoia_subject_type
 	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_hereditary_pronoia_subject_type
 	diplomacy_subject_sprite = GFX_icon_diplomacy_am_hereditary_pronoia_subject_type
 	# Properties
 	base_liberty_desire = -15
+	extend_trading_range = yes
 	forms_trade_companies = no
 	gets_help_with_rebels = yes
 	has_power_projection = no
@@ -15,25 +16,13 @@ bishopric = {
 	max_government_rank = 1
 	military_focus = 0
 	relative_power_class = 0
-	should_quit_wars_on_activation = yes
 	takes_diplo_slot = no
-	# Overlord Properties:
-	forcelimit_to_overlord = 0
-	manpower_to_overlord = 0
-	naval_forcelimit_to_overlord = 0
-	pays_overlord = 3
-	sailors_to_overlord = 0
-	# Diplomatic Actions:
-	can_be_annexed = no
-	# Continuous Subject Interactions:
-	divert_trade = no
-	scutage = no
 	# Immediate Subject Interactions:
 	enforce_culture = yes
-	place_relative_on_throne = no
-	seize_territory = no
 	# War Interactions:
 	restoration_cb = cb_disloyal_vassal
+	# Overlord Properties:
+	pays_overlord = 3
 	# Overlord Modifiers:
 	modifier_overlord = {
 		modifier = has_bishopric_subject
@@ -86,6 +75,17 @@ bishopric = {
 			}
 		}
 	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		OR = {
+			government = monarchy
+			government = theocracy
+			government = republic
+		}
+		religion_group = christian
+		government_rank = 2
+	}
+	# Opinion Modifiers:
 	overlord_opinion_modifier = is_bishopric
 	subject_opinion_modifier = is_bishopric
 }

@@ -25,10 +25,10 @@ is_bishopric_nation = {
 }
 
 is_bishopric_num_cities_bonus = {
-	global_trade_goods_size_modifier = 0.2
-	local_production_efficiency = 0.2
-	local_prosperity_growth = 0.2
-	local_tax_modifier = 0.2
+	global_trade_goods_size_modifier = 0.25
+	local_production_efficiency = 0.25
+	local_prosperity_growth = 0.25
+	local_tax_modifier = 0.25
 }
 
 # Crusader Order
@@ -46,9 +46,10 @@ has_crusader_order_num_cities_bonus = {
 }
 
 is_crusader_order_nation = {
+	global_manpower_modifier = 0.1
 	global_tax_income = 2
-	land_forcelimit = 6
-	naval_forcelimit = 6
+	land_forcelimit = 8
+	naval_forcelimit = 8
 }
 
 is_crusader_order_num_cities_bonus = {
@@ -142,14 +143,22 @@ is_sister_republic_nation = {
 	naval_forcelimit = 2
 }
 
+incorporated_sister_republic_governing_capacity_cost = {
+	governing_capacity = -15
+}
+
+consolidated_sister_republic_governing_capacity_cost = {
+	governing_capacity = -15
+}
+
 # Viceroyalty
 has_viceroyalty_subject = {
 	land_forcelimit = 2
-	naval_forcelimit = 4
+	naval_forcelimit = 2
 }
 
 has_viceroyalty_subject_bonus = {
-	global_colonial_growth = 20
+	global_colonial_growth = 10
 	global_trade_power = 0.1
 	land_forcelimit = 10
 	merchants = 1
@@ -157,11 +166,15 @@ has_viceroyalty_subject_bonus = {
 }
 
 viceroyalty_governing_capacity_cost = {
-	governing_capacity = -100
+	governing_capacity = -25
 }
 
 is_viceroyalty_subject = {
+	army_tradition_decay = -0.5
 	development_cost = -0.15
+	global_manpower = -5
+	land_forcelimit = -5
+	navy_tradition_decay = -0.5
 }
 
 is_viceroyalty_subject_bonus = {

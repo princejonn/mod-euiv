@@ -10,61 +10,39 @@ I love subject mechanics. Subjects are fun to play around with, and add some nee
 
 [h2]New Subject Types[/h2]
 [list]
-  [*] Gaikoku Daimyos
-  [*] Bishoprics
-  [*] Crusader Orders
-  [*] Fiefdoms
-  [*] Protectorates
-  [*] Principalities
-  [*] Sister Republics
-  [*] Viceroyalties
+  [*] Gaikoku Daimyo
+  [*] Bishopric
+  [*] Crusader Order
+  [*] Fiefdom
+  [*] Protectorate
+  [*] Principality
+  [*] Sister Republic
+  [*] Viceroyalty
 [/list]
 
 [h3]Gaikoku Daimyo[/h3]
 New subject type for Japan players. It's very much like the current Daimyo subject type, except you get to establish them in regions outside of Japan. It's basically just a bit of flavour. Why would Japan suddenly stop establishing Daimyos and just create Vassals?
 
 [h3]Bishopric[/h3]
-New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence and cannot be annexed. The following bonuses are awarded bishoprics if they stay at 1 province:
-
-[list]
-  [*] +1% Missionary Strength
-  [*] -10% Missionary Maintenance Cost
-  [*] +5% Global Tax Modifier
-[/list]
+New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence and cannot be annexed. You can only establish Bishoprics on the same continent as the capital. When Bishoprics own 3 or fewer provinces, they award the overlord economid and religious bonuses.
 
 [h3]Crusader Order[/h3]
-New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. The following bonuses are awarded crusader orders if they stay at 1 province:
-
-[list]
-  [*] +10% Discipline
-  [*] +10% Morale Damage
-  [*] +10% Morale Damage Received
-  [*] +25% Land Forcelimit
-  [*] +25% Land Maintenance Cost
-  [*] +25% Manpower
-  [*] +25% Manpower Recovery Speed
-[/list]
+New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. You can only establish Crusader Orders when you are the Defender of Faith. You can only establish Crusader Orders in the same region as the capital. When Crusader Orders own 3 or fewer provinces, they award the overlord military bonuses.
 
 [h3]Fiefdom[/h3]
-New subject type that is a subset of vassals, only with heavy requirements on being small. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. The following bonuses are awarded fiefs if they stay at 1 province:
-
-[list]
-  [*] +100 Governing Capacity (when your Fief has 1 and only 1 province)
-  [*] +1 Diplomatic Relations (when your Fief has 15+ development in its province)
-  [*] +5% increased Global Trade Power (when your Fief is landed in an Estuary or Trade Center
-[/list]
+New subject type that is a subset of vassals, only with heavy requirements on being small. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. You can only establish Crusader Orders in the same region as the capital. When Fiefdoms own 2 or fewer provinces, they award the overlord administrative and diplomatic bonuses.
 
 [h3]Protectorate[/h3]
 New subject type that is a subset of vassals, kind of like the opposite of marches. They have a weak military presence, so they instead have a strong economic potency.
 
 [h3]Principality[/h3]
-New subject type for monarchies. It's something of a mix between a Personal Union and a Vassal. It's pretty great though, so you can't do it immediately. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself. Once you Land a Prince of your dynasty, the country colour will also be changed to yours.
+New subject type for monarchies. It's something of a mix between a Personal Union and a Vassal. You cannot establish a Principality outside of the continent of your capital. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself. Once you Land a Prince of your dynasty, the country colour will also be changed to yours.
 
 [h3]Sister Republic[/h3]
-New subject type for republics (Much like Principalities). It's something of a mix between a Personal Union and a Vassal. It's pretty great though, so you can't do it immediately. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself. Once you establish a Sister Republic, the country colour will also be changed to yours.
+New subject type for republics. When it comes to subjects, I find that republics have fewer things going for them (in relation to monarchies) so I wanted to add something spicy and fun to the mix. Sister Republics are somewhat reminiscent of Vassals and an Eyalets. They will not automatically join your wars, but you can call them in for favors. You can either diplomatically establish vassals as sister republics, or you can establish them via warfare at a discounted development cost. You cannot establish a Sister Republic outside of the continent of your capital. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. Once you establish a Sister Republic, the country colour will also be changed to yours. You can call your Sister Republics into your wars for favors. You can join your Sister Republic wars and gain favours.
 
 [h3]Viceroyalty[/h3]
-New subject type that is kind of an autonomous region. My primary idea behind this subject type was that they should be established once you're kind of finished and want to move on, leaving a subject behind that is yours in all but name. They can be fully integrated with the click of a button. You create viceroyalties from decisions.
+New subject type for monarchies and republics. It's very close to how an eyalet and a colony works, but with a few differences. You can only establish a Viceroyalty outside of the continent of your capital. They will not automatically join your wars, but you can call them in for favors. All provinces conquered or gained in the Viceroyalty's region will be ceded to the Viceroyalty. You can only have one viceroyalty per region. You can call your Viceroyalties into your wars for favors. You can join your Viceroyalty wars and gain favours.
 
 [h2]Subject Incorporation[/h2]
 I'm also adding the base game ability to further incorporate them into your realm, making them cheaper to annex, and cost no diplomatic relations. Instead they cost a little bit of governing capacity. I've "unlocked" this ability for existing subjects.
@@ -81,4 +59,5 @@ I'm also adding the base game ability to further incorporate them into your real
   [*] Personal Unions
   [*] Principalities
   [*] Sister Republics
+  [*] Viceroyalty
 [/list]
