@@ -85,7 +85,10 @@ crusader_order = {
 			government = theocracy
 			government = republic
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion = norse_pagan_reformed
+		}
 		government_rank = 2
 	}
 	# Opinion Modifiers:
