@@ -196,3 +196,71 @@ assassinate_general = {
 		always = no
 	}
 }
+
+forge_claim_on_throne = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		government = monarchy
+		FROM = {
+			government = monarchy
+		}
+	}
+	is_allowed = {
+		full_idea_group = spy_ideas
+		has_spy_network_in = {
+			who = FROM
+			value = 85
+		}
+		treasury = 200
+		FROM = {
+			dynasty = ROOT
+		}
+		custom_trigger_tooltip = {
+			tooltip = forge_claim_marriage_tooltip
+			OR = {
+				marriage_with = FROM
+				FROM = {
+					marriage_with = ROOT
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = forge_claim_heir_tooltip
+			OR = {
+				has_heir = no
+				NOT = {
+					heir_claim = 50
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = forge_claim_prestige_tooltip
+			AND = {
+				prestige = FROM
+				NOT = {
+					FROM = {
+						prestige = ROOT
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		add_treasury = -200
+		add_spy_network_in = {
+			who = FROM
+			value = -85
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			target = FROM
+			months = 240
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

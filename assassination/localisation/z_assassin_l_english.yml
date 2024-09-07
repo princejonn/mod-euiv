@@ -1,20 +1,24 @@
 ﻿l_english:
   # new diplomatic actions
 
-  assassinate_ruler: "Assassinate Ruler"
   assassinate_ruler_title: "Assassinate Ruler"
   assassinate_ruler_tooltip: "With this action you can attempt to assassinate the ruler of [From.GetName]. It has a §Y90.00%§! chance of success."
   assassinate_ruler_desc: "Are you sure you want to assassinate [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G90.00%§! chance of success. It also has a §R10.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you §Y-90.00§! Spy Network Strength and §Y-500.00§! Ducats no matter the outcome."
   
-  assassinate_heir: "Assassinate Heir"
   assassinate_heir_title: "Assassinate Heir"
   assassinate_heir_tooltip: "With this action you can attempt to assassinate the ruler of [From.GetName]. It has a §Y90.00%§! chance of success."
   assassinate_heir_desc: "Are you sure you want to assassinate [From.Heir.GetTitle] [From.Heir.GetName], child of [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G90.00%§! chance of success. It also has a §R10.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you §Y-90.00§! Spy Network Strength and §Y-500.00§! Ducats no matter the outcome."
   
-  assassinate_general: "Assassinate General"
   assassinate_general_title: "Assassinate General"
   assassinate_general_tooltip: "With this action you can attempt to assassinate a general of [From.GetName]. It has a §Y85.00%§! chance of success."
   assassinate_general_desc: "Are you sure you want to assassinate a general of [From.GetName]?\nIt has a §G85.00%§! chance of success. It also has a §R15.00§! chance of discovery, which will make [From.GetName] upset with you.\n\nThis action will cost you §Y-75.00§! Spy Network Strength and §Y-100.00§! Ducats no matter the outcome."
+
+  forge_claim_on_throne_title: "Forge Claim on Throne"
+  forge_claim_on_throne_tooltip: "With this action you can forge a claim on the throne of §Y[From.GetName]§!."
+  forge_claim_on_throne_desc: "Are you sure you want to forge a claim on the throne of §Y[From.GetName]§!?\nThis action will cost you §Y-85.00§! Spy Network Strength and §Y-200.00§! Ducats."
+  forge_claim_marriage_tooltip: "Royal Marriage with §Y[From.GetName]§!"
+  forge_claim_heir_tooltip: "§Y[From.GetName]§! requires a heir with a §Rweak claim§! (below §Y50.00§!) or §Rno§! heir"
+  forge_claim_prestige_tooltip: "§Y[Root.GetName]§! requires more prestige than §Y[From.GetName]§!"
 
   # opinion modifiers
 
