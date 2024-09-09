@@ -2,6 +2,7 @@ form_gaikoku_daimyo = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		can_be_overlord = gaikoku_daimyo
 		can_be_gaikoku_daimyo_subject = yes
 		FROM = {

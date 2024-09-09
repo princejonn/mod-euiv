@@ -17,6 +17,7 @@ po_establish_viceroyalty = {
 	requires_demand_independence = yes
 	is_make_subject = yes
 	is_visible = {
+		ai = no
 		can_be_overlord = viceroyalty
 		can_be_viceroyalty_subject = yes
 		FROM = {

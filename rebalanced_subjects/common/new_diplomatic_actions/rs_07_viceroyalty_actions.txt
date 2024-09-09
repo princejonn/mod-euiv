@@ -4,6 +4,7 @@ form_viceroyalty = {
 	alert_index = 5
 	alert_tooltip = form_viceroyalty_alert_tooltip
 	is_visible = {
+		ai = no
 		can_be_overlord = viceroyalty
 		can_be_viceroyalty_subject = yes
 		FROM = {
@@ -115,15 +116,12 @@ incorporate_viceroyalty = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		can_be_overlord = viceroyalty
 		can_incorporate_subject = yes
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = viceroyalty
-			OR = {
-				num_of_provinces_in_states = 20
-				num_of_provinces_in_territories = 20
-			}
 		}
 	}
 	is_allowed = {
@@ -143,6 +141,18 @@ incorporate_viceroyalty = {
 		FROM = {
 			NOT = {
 				liberty_desire = 25
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = incorporate_viceroyalty_num_cities_tooltip
+			FROM = {
+				OR = {
+					num_of_provinces_in_states = 20
+					AND = {
+						num_of_provinces_in_states = 10
+						num_of_provinces_in_territories = 10
+					}
+				}
 			}
 		}
 	}
@@ -171,6 +181,7 @@ consolidate_viceroyalty = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		can_be_overlord = viceroyalty
 		can_consolidate_subject = yes
 		FROM = {
@@ -199,6 +210,18 @@ consolidate_viceroyalty = {
 		FROM = {
 			NOT = {
 				liberty_desire = 25
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = consolidate_viceroyalty_num_cities_tooltip
+			FROM = {
+				OR = {
+					num_of_provinces_in_states = 30
+					AND = {
+						num_of_provinces_in_states = 15
+						num_of_provinces_in_territories = 15
+					}
+				}
 			}
 		}
 	}
@@ -235,6 +258,7 @@ transfer_vassals_to_viceroyalty = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		FROM = {
 			is_subject_of = ROOT
 			is_any_viceroyalty_type = yes
@@ -288,6 +312,7 @@ call_viceroyalty_into_wars = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		FROM = {
 			is_subject_of = ROOT
 			is_any_viceroyalty_type = yes
@@ -391,6 +416,7 @@ join_viceroyalty_war = {
 	category = influence
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		FROM = {
 			is_subject_of = ROOT
 			is_any_viceroyalty_type = yes

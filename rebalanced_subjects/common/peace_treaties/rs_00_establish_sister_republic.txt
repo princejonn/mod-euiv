@@ -17,6 +17,7 @@ po_establish_sister_republic = {
 	requires_demand_independence = yes
 	is_make_subject = yes
 	is_visible = {
+		ai = no
 		can_be_overlord = sister_republic
 		can_be_sister_republic_subject = yes
 		FROM = {

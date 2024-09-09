@@ -11,24 +11,26 @@ assassinate_ruler = {
 		full_idea_group = spy_ideas
 		has_spy_network_in = {
 			who = FROM
-			value = 90
+			value = 80
 		}
-		treasury = 500
+		dip_power = 125
+		treasury = 250
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -90
+			value = -80
 		}
-		add_treasury = -500
+		add_dip_power = -125
+		add_treasury = -250
 		random_list = {
-			90 = {
+			95 = {
 				FROM = {
 					kill_ruler = yes
 					add_stability = -1
 				}
 				random = {
-					chance = 10
+					chance = 5
 					FROM = {
 						add_opinion = {
 							who = ROOT
@@ -47,7 +49,7 @@ assassinate_ruler = {
 					}
 				}
 			}
-			10 = {
+			5 = {
 				FROM = {
 					add_opinion = {
 						who = ROOT
@@ -80,18 +82,20 @@ assassinate_heir = {
 		full_idea_group = spy_ideas
 		has_spy_network_in = {
 			who = FROM
-			value = 90
+			value = 80
 		}
-		treasury = 500
+		dip_power = 125
+		treasury = 250
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -90
+			value = -80
 		}
-		add_treasury = -500
+		add_dip_power = -125
+		add_treasury = -250
 		random_list = {
-			90 = {
+			95 = {
 				FROM = {
 					kill_heir = {
 						allow_new_heir = no
@@ -99,7 +103,7 @@ assassinate_heir = {
 					add_stability = -1
 				}
 				random = {
-					chance = 10
+					chance = 5
 					FROM = {
 						add_opinion = {
 							who = ROOT
@@ -118,7 +122,7 @@ assassinate_heir = {
 					}
 				}
 			}
-			10 = {
+			5 = {
 				FROM = {
 					add_opinion = {
 						who = ROOT
@@ -148,25 +152,27 @@ assassinate_general = {
 		full_idea_group = spy_ideas
 		has_spy_network_in = {
 			who = FROM
-			value = 75
+			value = 80
 		}
-		treasury = 100
+		dip_power = 75
+		treasury = 150
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -75
+			value = -80
 		}
-		add_treasury = -100
+		add_dip_power = -75
+		add_treasury = -150
 		random_list = {
-			85 = {
+			95 = {
 				FROM = {
 					kill_leader = {
 						type = general
 					}
 				}
 				random = {
-					chance = 15
+					chance = 5
 					FROM = {
 						add_opinion = {
 							who = ROOT
@@ -180,7 +186,7 @@ assassinate_general = {
 					}
 				}
 			}
-			15 = {
+			5 = {
 				FROM = {
 					add_opinion = {
 						who = ROOT
@@ -201,6 +207,7 @@ forge_claim_on_throne = {
 	category = covert
 	require_acceptance = no
 	is_visible = {
+		ai = no
 		government = monarchy
 		FROM = {
 			government = monarchy
@@ -210,9 +217,10 @@ forge_claim_on_throne = {
 		full_idea_group = spy_ideas
 		has_spy_network_in = {
 			who = FROM
-			value = 85
+			value = 80
 		}
-		treasury = 200
+		dip_power = 125
+		treasury = 250
 		FROM = {
 			dynasty = ROOT
 		}
@@ -227,10 +235,15 @@ forge_claim_on_throne = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = forge_claim_heir_tooltip
-			OR = {
-				has_heir = no
-				NOT = {
-					heir_claim = 50
+			FROM = {
+				OR = {
+					has_heir = no
+					AND = {
+						has_heir = yes
+						NOT = {
+							heir_claim = 50
+						}
+					}
 				}
 			}
 		}
@@ -247,10 +260,11 @@ forge_claim_on_throne = {
 		}
 	}
 	on_accept = {
-		add_treasury = -200
+		add_dip_power = -125
+		add_treasury = -250
 		add_spy_network_in = {
 			who = FROM
-			value = -85
+			value = -80
 		}
 		add_casus_belli = {
 			type = cb_restore_personal_union

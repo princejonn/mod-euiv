@@ -17,6 +17,7 @@ po_establish_gaikoku_daimyo = {
 	requires_demand_independence = yes
 	is_make_subject = yes
 	is_visible = {
+		ai = no
 		can_be_overlord = gaikoku_daimyo
 		can_be_gaikoku_daimyo_subject = yes
 		FROM = {

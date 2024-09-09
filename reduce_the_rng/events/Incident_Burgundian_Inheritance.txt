@@ -380,9 +380,6 @@ country_event = {
 		every_subject_country = {
 			limit = {
 				ai = yes
-				NOT = {
-					tag = NEV
-				}
 				capital_scope = {
 					OR = {
 						region = france_region

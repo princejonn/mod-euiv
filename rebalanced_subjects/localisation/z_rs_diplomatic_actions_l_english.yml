@@ -117,10 +117,12 @@
   incorporate_viceroyalty_title: "Incorporate Viceroyalty"
   incorporate_viceroyalty_tooltip: "Convert [From.GetName] to an Incorporated Viceroyalty. This will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other viceregal subjects when calculating §YLiberty Desire§!."
   incorporate_viceroyalty_desc: "Are you sure you want to Incorporate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into an §YIncorporated Viceroyalty§!.\n\nThis will make them §G-25.00%§! easier to §YDiplomatically Annex§!. They will not consider the power of other viceregal subjects when calculating §YLiberty Desire§!. They will reduce our §YGoverning Capacity§! by §R-25§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will be able to §YDiplomatically Annex§! the Viceroyalty after §Y10§! Years.\n\nIncorporating §Y[From.GetName]§! cannot be undone."
+  incorporate_viceroyalty_num_cities_tooltip: "§Y[From.GetName]§! needs to have at least §Y20§! cities to incorporate"
 
   consolidate_viceroyalty_title: "Consolidate Viceroyalty"
   consolidate_viceroyalty_tooltip: "Convert [From.GetName] to a Consolidated Viceroyalty. This will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!."
   consolidate_viceroyalty_desc: "Are you sure you want to Consolidate [From.GetName] into the Administration? This will turn §Y[From.GetName]§! into a §YConsolidated Viceroyalty§!.\n\nThis will make them §G-50.00%§! easier to §YDiplomatically Annex§!. They will not consider their own power when calculating §YLiberty Desire§!.\n\nIncorporating §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Viceroyalty.\n\nConsolidating §Y[From.GetName]§! cannot be undone."
+  consolidate_viceroyalty_num_cities_tooltip: "§Y[From.GetName]§! needs to have at least §Y30§! cities to consolidate"
 
   transfer_vassals_to_viceroyalty_title: "Transfer Vassals"
   transfer_vassals_to_viceroyalty_tooltip: "Transfer all of your Vassals in the region to [From.GetName]."
