@@ -44,10 +44,6 @@ designate_bishopric = {
 				}
 				change_primary_culture = ROOT
 				change_religion = ROOT
-				set_country_flag = has_overriden_color_flag
-				change_country_color = {
-					country = ROOT
-				}
 				random_owned_province = {
 					limit = {
 						NOT = {
@@ -95,9 +91,6 @@ revoke_bishopric = {
 			add_opinion = {
 				who = ROOT
 				modifier = broke_bishopric
-			}
-			change_country_color = {
-				country = FROM
 			}
 		}
 	}

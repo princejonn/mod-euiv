@@ -128,6 +128,7 @@ incorporated_viceroyalty = {
 	count = viceroyalty
 	# Properties:
 	annex_cost_per_development = 6
+	must_accept_cta_from_overlord = yes
 	relative_power_class = 1
 	# Diplomatic Actions:
 	can_be_annexed = yes
@@ -156,7 +157,10 @@ consolidated_viceroyalty = {
 	count = viceroyalty
 	# Properties:
 	annex_cost_per_development = 4
-	must_accept_cta_from_overlord = yes
+	can_be_co_belligerented = no
+	can_gain_favors = no
+	joins_overlords_wars = yes
+	must_accept_cta_from_overlord = no
 	relative_power_class = 0
 	# Overlord Properties:
 	forcelimit_to_overlord = 0.33

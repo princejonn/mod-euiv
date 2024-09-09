@@ -1,0 +1,58 @@
+change_subject_colour = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = bishopric
+				is_subject_of_type = crusader_order
+				is_subject_of_type = fiefdom
+				is_any_viceroyalty_type = yes
+			}
+		}
+	}
+	is_allowed = {
+		always = yes
+	}
+	on_accept = {
+		FROM = {
+			set_country_flag = has_overriden_color_flag
+			change_country_color = {
+				country = ROOT
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+reset_subject_colour = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			has_country_flag = has_overriden_color_flag
+		}
+	}
+	is_allowed = {
+		always = yes
+	}
+	on_accept = {
+		FROM = {
+			restore_country_color = yes
+			clr_country_flag = has_overriden_color_flag
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

@@ -27,14 +27,6 @@ designate_fiefdom = {
 			subject = FROM
 			keep_liberty_desire = yes
 		}
-		hidden_effect = {
-			FROM = {
-				set_country_flag = has_overriden_color_flag
-				change_country_color = {
-					country = ROOT
-				}
-			}
-		}
 	}
 	on_decline = {
 	}
@@ -72,9 +64,6 @@ revoke_fiefdom = {
 			add_opinion = {
 				who = ROOT
 				modifier = broke_fiefdom
-			}
-			change_country_color = {
-				country = FROM
 			}
 		}
 	}

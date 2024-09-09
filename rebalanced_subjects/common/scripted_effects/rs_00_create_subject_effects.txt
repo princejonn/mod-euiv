@@ -31,10 +31,6 @@ create_principality = {
 			change_government = monarchy
 		}
 		add_government_reform = feudalism_reform
-		set_country_flag = has_overriden_color_flag
-		change_country_color = {
-			country = ROOT
-		}
 		change_primary_culture = ROOT
 		change_religion = ROOT
 		define_ruler = {
@@ -80,10 +76,6 @@ create_sister_republic = {
 			change_government = republic
 		}
 		add_government_reform = noble_elite_reform
-		set_country_flag = has_overriden_color_flag
-		change_country_color = {
-			country = ROOT
-		}
 		define_ruler = {
 			name = "Alexander"
 			change_adm = 5
@@ -116,10 +108,6 @@ create_viceroyalty = {
 			change_government = republic
 		}
 		add_government_reform = military_dictatorship_reform
-		set_country_flag = has_overriden_color_flag
-		change_country_color = {
-			country = ROOT
-		}
 		change_religion = ROOT
 		change_primary_culture = ROOT
 		define_ruler = {

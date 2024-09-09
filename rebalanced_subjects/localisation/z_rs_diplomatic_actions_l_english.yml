@@ -1,4 +1,5 @@
 ﻿l_english:
+
   # gaikoku daimyo actions
 
   form_gaikoku_daimyo_title: "Establish Gaikoku Daimyo"
@@ -141,3 +142,13 @@
   resolve_deprecated_subject_title: "Resolve Deprecated Subject"
   resolve_deprecated_subject_tooltip: "Convert [From.GetName] to a Vassal."
   resolve_deprecated_subject_desc: "Sorry for moving fast and deprecating subject types. This will convert [From.GetName] to a Vassal. From there you will eventually be able to convert to new subject types."
+
+  # generic subject actions
+
+  change_subject_colour_title: "Change Colour"
+  change_subject_colour_tooltip: "Changes the colour of the Subject to ours."
+  change_subject_colour_desc: "This will change the colour of the Subject to ours."
+
+  reset_subject_colour_title: "Reset Colour"
+  reset_subject_colour_tooltip: "Changes the colour of the Subject to the default."
+  reset_subject_colour_desc: "This will change the colour of the Subject to the default."
