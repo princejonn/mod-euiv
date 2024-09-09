@@ -120,6 +120,7 @@ incorporated_sister_republic = {
 	count = sister_republic
 	# Properties:
 	annex_cost_per_development = 4
+	must_accept_cta_from_overlord = yes
 	takes_diplo_slot = no
 	# Overlord Properties:
 	manpower_to_overlord = 0.3
@@ -147,7 +148,10 @@ consolidated_sister_republic = {
 	count = sister_republic
 	# Properties:
 	annex_cost_per_development = 2
-	must_accept_cta_from_overlord = yes
+	can_be_co_belligerented = no
+	can_gain_favors = no
+	joins_overlords_wars = yes
+	must_accept_cta_from_overlord = no
 	relative_power_class = 0
 	# Overlord Properties:
 	manpower_to_overlord = 0.4

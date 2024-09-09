@@ -224,7 +224,10 @@ call_sister_republic_into_wars = {
 		ai = no
 		FROM = {
 			is_subject_of = ROOT
-			is_any_sister_republic_type = yes
+			OR = {
+				is_subject_of_type = sister_republic
+				is_subject_of_type = incorporated_sister_republic
+			}
 		}
 	}
 	is_allowed = {
@@ -328,7 +331,10 @@ join_sister_republic_war = {
 		ai = no
 		FROM = {
 			is_subject_of = ROOT
-			is_any_sister_republic_type = yes
+			OR = {
+				is_subject_of_type = sister_republic
+				is_subject_of_type = incorporated_sister_republic
+			}
 			is_at_war = yes
 		}
 	}

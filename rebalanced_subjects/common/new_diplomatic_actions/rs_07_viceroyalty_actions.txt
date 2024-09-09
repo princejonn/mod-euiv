@@ -315,7 +315,10 @@ call_viceroyalty_into_wars = {
 		ai = no
 		FROM = {
 			is_subject_of = ROOT
-			is_any_viceroyalty_type = yes
+			OR = {
+				is_subject_of_type = viceroyalty
+				is_subject_of_type = incorporated_viceroyalty
+			}
 		}
 	}
 	is_allowed = {
@@ -419,7 +422,10 @@ join_viceroyalty_war = {
 		ai = no
 		FROM = {
 			is_subject_of = ROOT
-			is_any_viceroyalty_type = yes
+			OR = {
+				is_subject_of_type = viceroyalty
+				is_subject_of_type = incorporated_viceroyalty
+			}
 			is_at_war = yes
 		}
 	}
