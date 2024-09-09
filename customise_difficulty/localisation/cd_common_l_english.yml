@@ -101,17 +101,45 @@
 
   ## national
 
-  customised_national_modifier_easier_1: "Customise Difficulty: Nation & Government"
+  customised_national_modifier_easier_1: "Customise Difficulty: National"
   desc_customised_national_modifier_easier_1: "Difficulty Level: §G1§!"
 
-  customised_national_modifier_easier_2: "Customise Difficulty: Nation & Government"
+  customised_national_modifier_easier_2: "Customise Difficulty: National"
   desc_customised_national_modifier_easier_2: "Difficulty Level: §G2§!"
 
-  customised_national_modifier_easier_3: "Customise Difficulty: Nation & Government"
+  customised_national_modifier_easier_3: "Customise Difficulty: National"
   desc_customised_national_modifier_easier_3: "Difficulty Level: §G3§!"
 
-  customised_national_modifier_easier_4: "Customise Difficulty: Nation & Government"
+  customised_national_modifier_easier_4: "Customise Difficulty: National"
   desc_customised_national_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## prestige
+
+  customised_prestige_modifier_easier_1: "Customise Difficulty: Prestige"
+  desc_customised_prestige_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_prestige_modifier_easier_2: "Customise Difficulty: Prestige"
+  desc_customised_prestige_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_prestige_modifier_easier_3: "Customise Difficulty: Prestige"
+  desc_customised_prestige_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_prestige_modifier_easier_4: "Customise Difficulty: Prestige"
+  desc_customised_prestige_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## subject
+
+  customised_subject_modifier_easier_1: "Customise Difficulty: Subject"
+  desc_customised_subject_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_subject_modifier_easier_2: "Customise Difficulty: Subject"
+  desc_customised_subject_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_subject_modifier_easier_3: "Customise Difficulty: Subject"
+  desc_customised_subject_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_subject_modifier_easier_4: "Customise Difficulty: Subject"
+  desc_customised_subject_modifier_easier_4: "Difficulty Level: §G4§!"
 
   ## estates
 

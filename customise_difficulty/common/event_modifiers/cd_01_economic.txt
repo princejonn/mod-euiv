@@ -1,5 +1,5 @@
 customised_economic_modifier_easier_1 = {
-	global_tax_income = 100
+	global_tax_income = 120
 	global_tax_modifier = 0.1
 	global_trade_goods_size = 0.1
 	global_trade_goods_size_modifier = 0.1
@@ -11,7 +11,7 @@ customised_economic_modifier_easier_1 = {
 }
 
 customised_economic_modifier_easier_2 = {
-	global_tax_income = 300
+	global_tax_income = 360
 	global_tax_modifier = 0.3
 	global_trade_goods_size = 0.3
 	global_trade_goods_size_modifier = 0.3
@@ -23,7 +23,7 @@ customised_economic_modifier_easier_2 = {
 }
 
 customised_economic_modifier_easier_3 = {
-	global_tax_income = 500
+	global_tax_income = 600
 	global_tax_modifier = 0.5
 	global_trade_goods_size = 0.5
 	global_trade_goods_size_modifier = 0.5
@@ -35,7 +35,7 @@ customised_economic_modifier_easier_3 = {
 }
 
 customised_economic_modifier_easier_4 = {
-	global_tax_income = 800
+	global_tax_income = 960
 	global_tax_modifier = 0.8
 	global_trade_goods_size = 0.8
 	global_trade_goods_size_modifier = 0.8

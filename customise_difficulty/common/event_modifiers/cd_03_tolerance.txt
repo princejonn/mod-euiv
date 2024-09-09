@@ -1,22 +1,26 @@
 customised_tolerance_modifier_easier_1 = {
+	global_unrest = -1
 	tolerance_heathen = 1
 	tolerance_heretic = 1
 	tolerance_own = 1
 }
 
 customised_tolerance_modifier_easier_2 = {
+	global_unrest = -3
 	tolerance_heathen = 3
 	tolerance_heretic = 3
 	tolerance_own = 3
 }
 
 customised_tolerance_modifier_easier_3 = {
+	global_unrest = -5
 	tolerance_heathen = 5
 	tolerance_heretic = 5
 	tolerance_own = 5
 }
 
 customised_tolerance_modifier_easier_4 = {
+	global_unrest = -8
 	tolerance_heathen = 8
 	tolerance_heretic = 8
 	tolerance_own = 8

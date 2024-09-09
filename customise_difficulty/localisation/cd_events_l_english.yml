@@ -5,12 +5,12 @@
 
   customise_difficulty_event.0.title: "Customise Difficulty"
   customise_difficulty_event.0.desc: "Select which area you wish to customise:\n(Hint: You can scroll down in the options list)"
-  customise_difficulty_event.0.a: "Economy"
+  customise_difficulty_event.0.a: "Economy (Selection)"
   customise_difficulty_event.0.b: "Monarch Points"
-  customise_difficulty_event.0.c: "Religion & Culture"
-  customise_difficulty_event.0.d: "Nation & Government"
+  customise_difficulty_event.0.c: "Religion & Culture (Selection)"
+  customise_difficulty_event.0.d: "National (Selection)"
   customise_difficulty_event.0.e: "Estates"
-  customise_difficulty_event.0.f: "Diplomacy"
+  customise_difficulty_event.0.f: "Diplomacy (Selection)"
   customise_difficulty_event.0.g: "Colonialism"
   customise_difficulty_event.0.h: "Military (Selection)"
   customise_difficulty_event.0.i: "Leaders (Selection)"
@@ -112,16 +112,47 @@
   customise_religious_difficulty_event.3.x: "<< Reset >>"
   customise_religious_difficulty_event.3.z: "<< Return >>"
 
+  ## national selection
+
+  customise_national_difficulty_event.0.title: "Customise: National"
+  customise_national_difficulty_event.0.desc: "Select which area you wish to customise:"
+  customise_national_difficulty_event.0.a: "National"
+  customise_national_difficulty_event.0.b: "Prestige"
+  customise_national_difficulty_event.0.c: "Subjects"
+  customise_national_difficulty_event.0.z: "<< Return >>"
+
   ## national
 
-  customise_national_difficulty_event.1.title: "Customise: Nation & Government"
+  customise_national_difficulty_event.1.title: "Customise: National"
   customise_national_difficulty_event.1.desc: "Select which bonuses you wish to add:"
   customise_national_difficulty_event.1.a: "Easier (x1)"
-  customise_national_difficulty_event.1.b: "Easier (x2)"
-  customise_national_difficulty_event.1.c: "Easier (x3)"
-  customise_national_difficulty_event.1.d: "Easier (x4)"
+  customise_national_difficulty_event.1.b: "Easier (x3)"
+  customise_national_difficulty_event.1.c: "Easier (x5)"
+  customise_national_difficulty_event.1.d: "Easier (x8)"
   customise_national_difficulty_event.1.x: "<< Reset >>"
   customise_national_difficulty_event.1.z: "<< Return >>"
+
+  ## prestige
+
+  customise_national_difficulty_event.2.title: "Customise: Prestige"
+  customise_national_difficulty_event.2.desc: "Select which bonuses you wish to add:"
+  customise_national_difficulty_event.2.a: "Easier (x1)"
+  customise_national_difficulty_event.2.b: "Easier (x3)"
+  customise_national_difficulty_event.2.c: "Easier (x5)"
+  customise_national_difficulty_event.2.d: "Easier (x8)"
+  customise_national_difficulty_event.2.x: "<< Reset >>"
+  customise_national_difficulty_event.2.z: "<< Return >>"
+
+  ## subject
+
+  customise_national_difficulty_event.3.title: "Customise: Subjects"
+  customise_national_difficulty_event.3.desc: "Select which bonuses you wish to add:"
+  customise_national_difficulty_event.3.a: "Easier (x1)"
+  customise_national_difficulty_event.3.b: "Easier (x3)"
+  customise_national_difficulty_event.3.c: "Easier (x5)"
+  customise_national_difficulty_event.3.d: "Easier (x8)"
+  customise_national_difficulty_event.3.x: "<< Reset >>"
+  customise_national_difficulty_event.3.z: "<< Return >>"
 
   ## estates
 

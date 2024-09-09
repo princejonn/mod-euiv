@@ -1,0 +1,23 @@
+customised_prestige_modifier_easier_1 = {
+	prestige_decay = -0.1
+	prestige_from_land = 0.1
+	prestige_from_naval = 0.1
+}
+
+customised_prestige_modifier_easier_2 = {
+	prestige_decay = -0.3
+	prestige_from_land = 0.3
+	prestige_from_naval = 0.3
+}
+
+customised_prestige_modifier_easier_3 = {
+	prestige_decay = -0.5
+	prestige_from_land = 0.5
+	prestige_from_naval = 0.5
+}
+
+customised_prestige_modifier_easier_4 = {
+	prestige_decay = -0.8
+	prestige_from_land = 0.8
+	prestige_from_naval = 0.8
+}

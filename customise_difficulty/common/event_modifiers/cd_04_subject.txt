@@ -1,0 +1,27 @@
+customised_subject_modifier_easier_1 = {
+	annexation_relations_impact = -0.1
+	diplomatic_annexation_cost = -0.1
+	diplomatic_upkeep = 1
+	reduced_liberty_desire = 0.1
+}
+
+customised_subject_modifier_easier_2 = {
+	annexation_relations_impact = -0.3
+	diplomatic_annexation_cost = -0.3
+	diplomatic_upkeep = 3
+	reduced_liberty_desire = 0.3
+}
+
+customised_subject_modifier_easier_3 = {
+	annexation_relations_impact = -0.5
+	diplomatic_annexation_cost = -0.5
+	diplomatic_upkeep = 5
+	reduced_liberty_desire = 0.5
+}
+
+customised_subject_modifier_easier_4 = {
+	annexation_relations_impact = -0.8
+	diplomatic_annexation_cost = -0.8
+	diplomatic_upkeep = 8
+	reduced_liberty_desire = 0.8
+}
