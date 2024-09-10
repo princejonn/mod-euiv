@@ -1,5 +1,6 @@
-on_yearly_pulse = {
+on_monthly_pulse = {
 	cede_non_colonial_provinces_to_overlord = yes
 	cede_small_colonial_territories_to_overlord = yes
 	cede_small_colonial_subjects_to_overlord = yes
+	cede_trade_company_provinces_to_overlord = yes
 }

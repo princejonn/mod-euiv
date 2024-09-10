@@ -23,4 +23,52 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	enable_colonial_takeover = {
+		color = {
+			100
+			210
+			250
+		}
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = enabled_colonial_takeover_global_flag
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			hidden_effect = {
+				set_global_flag = enabled_colonial_takeover_global_flag
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	enable_trade_company_takeover = {
+		color = {
+			100
+			210
+			250
+		}
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = enabled_trade_company_takeover_global_flag
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			hidden_effect = {
+				set_global_flag = enabled_trade_company_takeover_global_flag
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

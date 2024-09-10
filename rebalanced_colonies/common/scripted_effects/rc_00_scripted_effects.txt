@@ -32,7 +32,6 @@ cede_small_colonial_territories_to_overlord = {
 			limit = {
 				ai = no
 				is_subject = no
-				has_colonial_subjects = yes
 			}
 			save_event_target_as = csctto_overlord
 			every_subject_country = {
@@ -63,13 +62,12 @@ cede_small_colonial_territories_to_overlord = {
 cede_small_colonial_subjects_to_overlord = {
 	if = {
 		limit = {
-			has_global_flag = enabled_colonial_merging_global_flag
+			has_global_flag = enabled_colonial_takeover_global_flag
 		}
 		every_country = {
 			limit = {
 				ai = no
 				is_subject = no
-				has_colonial_subjects = yes
 			}
 			save_event_target_as = cscsto_overlord
 			every_subject_country = {
@@ -93,6 +91,38 @@ cede_small_colonial_subjects_to_overlord = {
 						add_core = event_target:cscsto_overlord
 						cede_province = event_target:cscsto_overlord
 					}
+				}
+			}
+		}
+	}
+}
+
+cede_trade_company_provinces_to_overlord = {
+	if = {
+		limit = {
+			has_global_flag = enabled_trade_company_takeover_global_flag
+		}
+		every_country = {
+			limit = {
+				ai = no
+				is_subject = no
+			}
+			save_event_target_as = ctcpto_overlord
+			every_subject_country = {
+				limit = {
+					ai = yes
+					is_colonial_subject = no
+				}
+				save_event_target_as = ctcpto_subject
+				every_owned_province = {
+					limit = {
+						is_city = yes
+						is_owned_by_trade_company = yes
+					}
+					remove_claim = event_target:ctcpto_subject
+					remove_core = event_target:ctcpto_subject
+					add_core = event_target:ctcpto_overlord
+					cede_province = event_target:ctcpto_overlord
 				}
 			}
 		}

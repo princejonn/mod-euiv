@@ -1,3 +1,9 @@
 ﻿l_english:
   enable_colonial_merging_title: "ENABLE: Automatic colonial merging"
-  enable_colonial_merging_desc: "All subjects with fewer than §Y5§! provinces in colonial regions will automatically cede these to their overlord.\n\nAll subjects with colonial nations with fewer than §Y15§! provinces will automatically merge them with their overlord's colonial nations."
+  enable_colonial_merging_desc: "All subjects with fewer than §Y5§! provinces in colonial regions will automatically cede these to their overlord."
+
+  enable_colonial_takeover_title: "ENABLE: Automatic colonial takeover"
+  enable_colonial_takeover_desc: "All subjects with colonial nations with fewer than §Y15§! provinces will automatically merge them with their overlord's colonial nations."
+
+  enable_trade_company_takeover_title: "ENABLE: Automatic trade company takeover"
+  enable_trade_company_takeover_desc: "All subjects will automatically cede their trade company provinces to their overlord's trade companies."
