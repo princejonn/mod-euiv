@@ -141,6 +141,7 @@
 
   is_crusader_order_nation: "Is a Crusader Order"
   is_crusader_order_num_cities_bonus: "Crusader Order City Bonus"
+  is_crusader_order_development_bonus: "Crusader Order Development Bonus"
 
   ## fiefdom
 

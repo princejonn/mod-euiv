@@ -62,6 +62,17 @@ is_crusader_order_num_cities_bonus = {
 	manpower_recovery_speed = 0.25
 }
 
+is_crusader_order_development_bonus = {
+	development_cost_modifier = -0.25
+	global_manpower = 6
+	global_sailors = 5000
+	land_forcelimit = 20
+	naval_forcelimit = 20
+	state_governing_cost = -0.25
+	tax_income = 60
+	trade_goods_size = 3
+}
+
 # Fiefdom
 has_fiefdom_subject = {
 	land_forcelimit = 2
