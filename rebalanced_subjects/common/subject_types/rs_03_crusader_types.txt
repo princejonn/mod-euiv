@@ -34,7 +34,7 @@ crusader_order = {
 		modifier = has_crusader_order_num_cities_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 4
+				num_of_cities = 3
 			}
 		}
 		expiration_message_overlord = CRUSADERORDERTOOLARGE
@@ -49,7 +49,7 @@ crusader_order = {
 		modifier = is_crusader_order_num_cities_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 4
+				num_of_cities = 3
 			}
 		}
 	}
@@ -57,7 +57,7 @@ crusader_order = {
 		modifier = is_crusader_order_development_bonus
 		trigger = {
 			NOT = {
-				num_of_cities = 4
+				num_of_cities = 3
 			}
 			capital_scope = {
 				development = 40

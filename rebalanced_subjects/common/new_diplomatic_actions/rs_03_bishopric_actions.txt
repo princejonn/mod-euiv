@@ -13,7 +13,7 @@ designate_bishopric = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			bishopric = 3
+			bishopric = 2
 		}
 		FROM = {
 			NOT = {
@@ -87,7 +87,7 @@ revoke_bishopric = {
 			keep_liberty_desire = yes
 		}
 		FROM = {
-			add_liberty_desire = 25
+			add_liberty_desire = 75
 			add_opinion = {
 				who = ROOT
 				modifier = broke_bishopric

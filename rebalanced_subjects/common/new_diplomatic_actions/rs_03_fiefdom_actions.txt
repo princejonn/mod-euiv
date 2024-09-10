@@ -13,7 +13,7 @@ designate_fiefdom = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			fiefdom = 5
+			fiefdom = 3
 		}
 		FROM = {
 			NOT = {
@@ -60,7 +60,7 @@ revoke_fiefdom = {
 			keep_liberty_desire = yes
 		}
 		FROM = {
-			add_liberty_desire = 25
+			add_liberty_desire = 50
 			add_opinion = {
 				who = ROOT
 				modifier = broke_fiefdom

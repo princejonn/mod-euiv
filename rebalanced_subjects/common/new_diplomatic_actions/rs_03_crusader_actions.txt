@@ -14,7 +14,7 @@ designate_crusader_order = {
 		is_defender_of_faith = yes
 		is_at_war = no
 		NOT = {
-			crusader_order = 3
+			crusader_order = 1
 		}
 		custom_trigger_tooltip = {
 			tooltip = TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP
@@ -47,7 +47,7 @@ designate_crusader_order = {
 		}
 		FROM = {
 			NOT = {
-				num_of_cities = 4
+				num_of_cities = 3
 			}
 		}
 	}
@@ -154,7 +154,7 @@ revoke_crusader_order = {
 			keep_liberty_desire = yes
 		}
 		FROM = {
-			add_liberty_desire = 25
+			add_liberty_desire = 75
 			add_opinion = {
 				who = ROOT
 				modifier = broke_crusader_order
