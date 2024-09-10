@@ -123,6 +123,7 @@ cede_trade_company_provinces_to_overlord = {
 					remove_core = event_target:ctcpto_subject
 					add_core = event_target:ctcpto_overlord
 					cede_province = event_target:ctcpto_overlord
+					add_to_trade_company = event_target:ctcpto_overlord
 				}
 			}
 		}
