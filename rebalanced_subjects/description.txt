@@ -47,6 +47,10 @@ New subject type for monarchies and republics. It's very close to how an eyalet 
 [h2]Subject Incorporation[/h2]
 I'm also adding the base game ability to further incorporate them into your realm, making them cheaper to annex, and cost no diplomatic relations. Instead they cost a little bit of governing capacity. I've "unlocked" this ability for existing subjects.
 
+You acquire the ability to Incorporate subjects via a decision once you have full Influence and Administrative Ideas. You can then choose to either Incorporate your subjects. The decision will cost you 300 Diplomatic Power.
+
+You acquire the ability to Consolidate subjects via a decision once you have full Influence, Administrative, and either Aristocratic or Plutocratic Ideas. You can then choose to either Consolidate your subjects. The decision will cost you 500 Diplomatic Power.
+
 [h3]Levels[/h3]
 [list]
   [*] Incorporated: Reduced Annexation/Integration cost, no Diplomatic Relations cost, (Capacity cost for Vassals and Client States), (25% chance of inheritance on monarch death for Personal Unions).
