@@ -56,7 +56,7 @@ MEE_BYZ_conquest_1 = {
 				"
 				first_effect = "add_country_modifier = {
 						name = EPI_epirote_forces
-						duration = 5475
+						duration = -1
 					}
 				"
 				second_custom_tooltip = BYZ_if_done_via_vassalization
@@ -269,7 +269,7 @@ MEE_BYZ_conquest_1 = {
 			custom_tooltip = ""
 			add_country_modifier = {
 				name = BYZ_africa_proconsularis
-				duration = 10950
+				duration = -1
 			}
 		}
 	}
@@ -317,7 +317,7 @@ MEE_BYZ_conquest_2 = {
 		effect = {
 			add_country_modifier = {
 				name = BYZ_dreams_of_restoration
-				duration = 5475
+				duration = -1
 			}
 			give_claims = {
 				area = hudavendigar_area
@@ -343,7 +343,7 @@ MEE_BYZ_conquest_2 = {
 					hidden_effect = {
 						add_country_modifier = {
 							name = BYZ_extra_mercenary_cost_for_union
-							duration = 5475
+							duration = -1
 							hidden = yes
 						}
 					}
@@ -392,14 +392,14 @@ MEE_BYZ_conquest_2 = {
 				id = MEE_Byzantine_Events.1
 				option_1 = "add_country_modifier = {
 						name = MEE_strong_example_against_the_serbian_aristocrats
-						duration = 10950
+						duration = -1
 					}
 					
 					add_mil_power = 100
 				"
 				option_2 = "add_country_modifier = {
 						name = MEE_amiable_treatment
-						duration = 9125
+						duration = -1
 					}
 					
 					add_dip_power = 100
@@ -727,7 +727,7 @@ MEE_BYZ_conquest_3 = {
 				id = MEE_Byzantine_Events.6
 				effect = "add_country_modifier = {
 						name = BYZ_reversal_of_downfall
-						duration = 10950 
+						duration = -1 
 					}
 					
 					add_power_projection_mission = {
@@ -866,7 +866,7 @@ MEE_BYZ_conquest_3 = {
 					capital_scope = {
 						add_province_modifier = {
 							name = byzantine_treasures_returned
-							duration = 7300
+							duration = -1
 						}
 					}
 				"
@@ -1259,7 +1259,7 @@ MEE_BYZ_conquest_4 = {
 					tooltip = {
 						add_province_modifier = {
 							name = BYZ_janissary_recruitment
-							duration = 9125
+							duration = -1
 						}
 					}
 					
@@ -1627,7 +1627,7 @@ MEE_BYZ_defense_5 = {
 				first_limit = "num_of_hired_mercenary_companies = 3"
 				first_effect = "add_country_modifier = {
 						name = BYZ_reliance_on_mercenaries
-						duration = 7300
+						duration = -1
 					}
 				"
 				second_custom_tooltip = BYZ_if_done_via_army_size
@@ -1636,7 +1636,7 @@ MEE_BYZ_defense_5 = {
 				"
 				second_effect = "add_country_modifier = {
 						name = BYZ_paroikoi_recruimtnet
-						duration = 5475
+						duration = -1
 					}
 				"
 				third_custom_tooltip = BYZ_if_done_via_upgrading_walls
@@ -1647,7 +1647,7 @@ MEE_BYZ_defense_5 = {
 				"
 				third_effect = "add_country_modifier = {
 						name = BYZ_spirit_of_resistance
-						duration = 7300
+						duration = -1
 					}
 				"
 			}
@@ -1814,7 +1814,7 @@ MEE_BYZ_conquest_5 = {
 		effect = {
 			add_country_modifier = {
 				name = BYZ_champions_of_the_east
-				duration = 14600
+				duration = -1
 			}
 			add_permanent_power_projection = {
 				type = byz_permanent_power_projection
@@ -1900,7 +1900,7 @@ MEE_BYZ_conquest_5 = {
 			tooltip = {
 				add_province_modifier = {
 					name = BYZ_fertile_valleys
-					duration = 9125
+					duration = -1
 				}
 			}
 			hidden_effect = {
@@ -1910,7 +1910,7 @@ MEE_BYZ_conquest_5 = {
 					}
 					add_province_modifier = {
 						name = BYZ_fertile_valleys
-						duration = 9125
+						duration = -1
 					}
 				}
 				iraq_arabi_area = {
@@ -1919,7 +1919,7 @@ MEE_BYZ_conquest_5 = {
 					}
 					add_province_modifier = {
 						name = BYZ_fertile_valleys
-						duration = 9125
+						duration = -1
 					}
 				}
 				basra_area = {
@@ -1928,7 +1928,7 @@ MEE_BYZ_conquest_5 = {
 					}
 					add_province_modifier = {
 						name = BYZ_fertile_valleys
-						duration = 9125
+						duration = -1
 					}
 				}
 			}
@@ -2134,7 +2134,7 @@ MEE_BYZ_economy_1 = {
 				"
 				first_effect = "add_country_modifier = {
 						name = BYZ_dominance
-						duration = 7300
+						duration = -1
 					}
 				"
 				second_custom_tooltip = BYZ_if_done_via_trade_share
@@ -2147,7 +2147,7 @@ MEE_BYZ_economy_1 = {
 				"
 				second_effect = "add_country_modifier = {
 						name = BYZ_maintaining_relations
-						duration = 5475
+						duration = -1
 					}
 				"
 			}
@@ -2257,7 +2257,7 @@ MEE_BYZ_economy_1 = {
 			custom_tooltip = ""
 			add_country_modifier = {
 				name = BYZ_coin_of_pure_gold
-				duration = 10950
+				duration = -1
 			}
 			add_years_of_trade_income = {
 				years = 2
@@ -2388,7 +2388,7 @@ MEE_BYZ_economy_2 = {
 		effect = {
 			add_country_modifier = {
 				name = BYZ_reversing_the_decline
-				duration = 7300
+				duration = -1
 			}
 			custom_tooltip = ""
 			custom_tooltip = BYZ_revoking_disorganization_of_the_military
@@ -2453,7 +2453,7 @@ MEE_BYZ_economy_2 = {
 		effect = {
 			add_country_modifier = {
 				name = BYZ_supporting_the_guilds
-				duration = 9125
+				duration = -1
 			}
 			add_mercantilism = 3
 			custom_tooltip = ""
@@ -2536,13 +2536,13 @@ MEE_BYZ_economy_2 = {
 					}
 					add_country_modifier = {
 						name = BYZ_mosaicists_Leviathan
-						duration = 3650
+						duration = -1
 					}
 				}
 				else = {
 					add_country_modifier = {
 						name = BYZ_mosaicists
-						duration = 3650
+						duration = -1
 					}
 				}
 			}
@@ -2772,13 +2772,13 @@ MEE_BYZ_economy_3 = {
 				}
 				add_country_modifier = {
 					name = BYZ_born_in_the_purple
-					duration = 10950
+					duration = -1
 				}
 			}
 			else = {
 				add_country_modifier = {
 					name = BYZ_born_in_the_purple_no_dlc
-					duration = 10950
+					duration = -1
 				}
 			}
 			146 = {
@@ -3011,7 +3011,7 @@ MEE_BYZ_economy_5 = {
 				first_limit = "has_institution = renaissance"
 				first_effect = "add_country_modifier = {
 						name = BYZ_origins_of_renaissance
-						duration = 3650
+						duration = -1
 					}
 				"
 				second_custom_tooltip = BYZ_if_done_via_development
@@ -3307,7 +3307,7 @@ MEE_BYZ_religion_1 = {
 		effect = {
 			add_country_modifier = {
 				name = BYZ_restoring_faith_in_the_monarchs
-				duration = 7300
+				duration = -1
 			}
 			if = {
 				limit = {
@@ -3321,7 +3321,7 @@ MEE_BYZ_religion_1 = {
 						}
 						add_country_modifier = {
 							name = BYZ_icon_eleusa
-							duration = 5475
+							duration = -1
 						}
 					}
 					else_if = {
@@ -3330,7 +3330,7 @@ MEE_BYZ_religion_1 = {
 						}
 						add_country_modifier = {
 							name = BYZ_icon_pancreator
-							duration = 5475
+							duration = -1
 						}
 					}
 					else_if = {
@@ -3339,7 +3339,7 @@ MEE_BYZ_religion_1 = {
 						}
 						add_country_modifier = {
 							name = BYZ_icon_nicholas
-							duration = 5475
+							duration = -1
 						}
 					}
 					else_if = {
@@ -3348,7 +3348,7 @@ MEE_BYZ_religion_1 = {
 						}
 						add_country_modifier = {
 							name = BYZ_icon_climacus
-							duration = 5475
+							duration = -1
 						}
 					}
 					else_if = {
@@ -3357,7 +3357,7 @@ MEE_BYZ_religion_1 = {
 						}
 						add_country_modifier = {
 							name = BYZ_icon_michael
-							duration = 5475
+							duration = -1
 						}
 					}
 					else = {
@@ -3542,7 +3542,7 @@ MEE_BYZ_religion_1 = {
 					}
 					add_country_modifier = {
 						name = conversion_of_rome
-						duration = 7300
+						duration = -1
 					}
 					custom_tooltip = \" \"
 					define_advisor = {
@@ -3801,7 +3801,7 @@ MEE_BYZ_military_3 = {
 			custom_tooltip = ""
 			add_country_modifier = {
 				name = BYZ_indepenence_from_the_west
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -3847,7 +3847,7 @@ MEE_BYZ_military_3 = {
 				"
 				first_effect = "add_country_modifier = {
 						name = BYZ_dominance_of_the_dromon
-						duration = 7300 
+						duration = -1 
 					}
 				"
 			}
@@ -4095,7 +4095,7 @@ MEE_BYZ_military_centralized_4 = {
 			custom_tooltip = ""
 			add_country_modifier = {
 				name = BYZ_elite_forces
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
