@@ -3,10 +3,6 @@ incorporated_vassal_governing_capacity_cost = {
 	governing_capacity = -50
 }
 
-consolidated_vassal_governing_capacity_cost = {
-	governing_capacity = -50
-}
-
 # Bishopric
 has_bishopric_subject = {
 	tolerance_own = 1
@@ -80,6 +76,7 @@ has_fiefdom_subject = {
 }
 
 has_fiefdom_num_cities_bonus = {
+	governing_capacity_modifier = 0.1
 	governing_capacity = 100
 }
 
@@ -155,10 +152,6 @@ is_sister_republic_nation = {
 }
 
 incorporated_sister_republic_governing_capacity_cost = {
-	governing_capacity = -15
-}
-
-consolidated_sister_republic_governing_capacity_cost = {
 	governing_capacity = -15
 }
 

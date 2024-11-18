@@ -246,7 +246,7 @@ dh_tim_india = {
 		effect = {
 			add_country_modifier = {
 				name = "mug_formation_hope"
-				duration = -1
+				duration = -1				#25 years
 			}
 			if = {
 				limit = {
@@ -400,7 +400,7 @@ dh_tim_india = {
 		effect = {
 			add_country_modifier = {
 				name = "mug_looting"
-				duration = -1
+				duration = -1				#25 years
 			}
 			sirhind_area = {
 				limit = {
@@ -456,7 +456,7 @@ dh_tim_india = {
 		effect = {
 			add_country_modifier = {
 				name = "mug_fall_of_delhi"
-				duration = -1
+				duration = -1				#25 years
 			}
 			add_treasury = 500
 			add_prestige = 20

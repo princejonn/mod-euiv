@@ -171,7 +171,7 @@ consolidate_sister_republic = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			consolidated_sister_republic = 10
+			consolidated_sister_republic = 20
 		}
 		NOT = {
 			truce_with = FROM

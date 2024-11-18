@@ -397,7 +397,7 @@ kor_military_missions = {
 		effect = {
 			add_country_modifier = {
 				name = "thriving_arms_industry"
-				duration = -1
+				duration = -1				#25 years
 			}
 			if = {
 				limit = {
@@ -1453,7 +1453,7 @@ korea_economic_social_political_path_0 = {
 		effect = {
 			add_country_modifier = {
 				name = "kor_growing_economy"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}

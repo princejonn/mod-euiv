@@ -33,7 +33,7 @@ ardabil_missions_1 = {
 					add_base_manpower = 1
 					add_province_modifier = {
 						name = "growth_of_capital"
-						duration = -1
+						duration = -1						#25 years
 					}
 				}
 			}
@@ -51,7 +51,7 @@ ardabil_missions_1 = {
 		effect = {
 			add_country_modifier = {
 				name = "expansionist_country"
-				duration = -1
+				duration = -1				#25 years
 			}
 			if = {
 				limit = {
@@ -180,7 +180,7 @@ ardabil_missions_2 = {
 			add_mil_power = 50
 			add_country_modifier = {
 				name = "hegemonic_ambition"
-				duration = -1
+				duration = -1				#25 years
 			}
 			add_power_projection = {
 				type = mission_rewards_power_projection

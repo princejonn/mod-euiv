@@ -333,7 +333,7 @@ french_missions_colonial = {
 		effect = {
 			add_country_modifier = {
 				name = "naval_enthusiasm_mission"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}
@@ -508,7 +508,7 @@ french_missions_colonial = {
 		effect = {
 			add_country_modifier = {
 				name = "east_india_trade_rush"
-				duration = -1
+				duration = -1				#25 years
 			}
 			golconda_area = {
 				limit = {

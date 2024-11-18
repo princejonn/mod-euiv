@@ -15,7 +15,7 @@ incorporate_personal_union = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			incorporated_personal_union = 5
+			incorporated_personal_union = 10
 		}
 		NOT = {
 			truce_with = FROM
@@ -76,7 +76,7 @@ consolidate_personal_union = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			consolidated_personal_union = 5
+			consolidated_personal_union = 10
 		}
 		NOT = {
 			truce_with = FROM

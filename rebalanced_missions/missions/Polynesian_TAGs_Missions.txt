@@ -134,7 +134,7 @@ fijian_missions = {
 			}
 			add_country_modifier = {
 				name = "expansionist_country"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}

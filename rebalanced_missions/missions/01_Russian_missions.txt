@@ -21,7 +21,8 @@ consolidate_expand_russia_missions = {
 	invade_novgorod_mission = {
 		icon = mission_build_up_to_force_limit
 		required_missions = {
-		}		#None
+		}
+		#None
 		completed_by = 1478.1.15
 		provinces_to_highlight = {
 			OR = {

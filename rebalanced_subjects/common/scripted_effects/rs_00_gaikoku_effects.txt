@@ -1,0 +1,298 @@
+bestow_daimyo_title_effect = {
+	if = {
+		limit = {
+			AKM = {
+				exists = no
+			}
+		}
+		change_tag = AKM
+	}
+	else_if = {
+		limit = {
+			AKT = {
+				exists = no
+			}
+		}
+		change_tag = AKT
+	}
+	else_if = {
+		limit = {
+			AMA = {
+				exists = no
+			}
+		}
+		change_tag = AMA
+	}
+	else_if = {
+		limit = {
+			ASA = {
+				exists = no
+			}
+		}
+		change_tag = ASA
+	}
+	else_if = {
+		limit = {
+			ASK = {
+				exists = no
+			}
+		}
+		change_tag = ASK
+	}
+	else_if = {
+		limit = {
+			CBA = {
+				exists = no
+			}
+		}
+		change_tag = CBA
+	}
+	else_if = {
+		limit = {
+			CSK = {
+				exists = no
+			}
+		}
+		change_tag = CSK
+	}
+	else_if = {
+		limit = {
+			DTE = {
+				exists = no
+			}
+		}
+		change_tag = DTE
+	}
+	else_if = {
+		limit = {
+			HJO = {
+				exists = no
+			}
+		}
+		change_tag = HJO
+	}
+	else_if = {
+		limit = {
+			HSK = {
+				exists = no
+			}
+		}
+		change_tag = HSK
+	}
+	else_if = {
+		limit = {
+			HTK = {
+				exists = no
+			}
+		}
+		change_tag = HTK
+	}
+	else_if = {
+		limit = {
+			IKE = {
+				exists = no
+			}
+		}
+		change_tag = IKE
+	}
+	else_if = {
+		limit = {
+			IMG = {
+				exists = no
+			}
+		}
+		change_tag = IMG
+	}
+	else_if = {
+		limit = {
+			ISK = {
+				exists = no
+			}
+		}
+		change_tag = ISK
+	}
+	else_if = {
+		limit = {
+			ITO = {
+				exists = no
+			}
+		}
+		change_tag = ITO
+	}
+	else_if = {
+		limit = {
+			KKC = {
+				exists = no
+			}
+		}
+		change_tag = KKC
+	}
+	else_if = {
+		limit = {
+			KNO = {
+				exists = no
+			}
+		}
+		change_tag = KNO
+	}
+	else_if = {
+		limit = {
+			KTB = {
+				exists = no
+			}
+		}
+		change_tag = KTB
+	}
+	else_if = {
+		limit = {
+			MAE = {
+				exists = no
+			}
+		}
+		change_tag = MAE
+	}
+	else_if = {
+		limit = {
+			MRI = {
+				exists = no
+			}
+		}
+		change_tag = MRI
+	}
+	else_if = {
+		limit = {
+			ODA = {
+				exists = no
+			}
+		}
+		change_tag = ODA
+	}
+	else_if = {
+		limit = {
+			OGS = {
+				exists = no
+			}
+		}
+		change_tag = OGS
+	}
+	else_if = {
+		limit = {
+			OTM = {
+				exists = no
+			}
+		}
+		change_tag = OTM
+	}
+	else_if = {
+		limit = {
+			OUC = {
+				exists = no
+			}
+		}
+		change_tag = OUC
+	}
+	else_if = {
+		limit = {
+			RFR = {
+				exists = no
+			}
+		}
+		change_tag = RFR
+	}
+	else_if = {
+		limit = {
+			SBA = {
+				exists = no
+			}
+		}
+		change_tag = SBA
+	}
+	else_if = {
+		limit = {
+			SHN = {
+				exists = no
+			}
+		}
+		change_tag = SHN
+	}
+	else_if = {
+		limit = {
+			SMZ = {
+				exists = no
+			}
+		}
+		change_tag = SMZ
+	}
+	else_if = {
+		limit = {
+			SOO = {
+				exists = no
+			}
+		}
+		change_tag = SOO
+	}
+	else_if = {
+		limit = {
+			STK = {
+				exists = no
+			}
+		}
+		change_tag = STK
+	}
+	else_if = {
+		limit = {
+			TKD = {
+				exists = no
+			}
+		}
+		change_tag = TKD
+	}
+	else_if = {
+		limit = {
+			TKG = {
+				exists = no
+			}
+		}
+		change_tag = TKG
+	}
+	else_if = {
+		limit = {
+			TKI = {
+				exists = no
+			}
+		}
+		change_tag = TKI
+	}
+	else_if = {
+		limit = {
+			TTI = {
+				exists = no
+			}
+		}
+		change_tag = TTI
+	}
+	else_if = {
+		limit = {
+			UES = {
+				exists = no
+			}
+		}
+		change_tag = UES
+	}
+	else_if = {
+		limit = {
+			UTN = {
+				exists = no
+			}
+		}
+		change_tag = UTN
+	}
+	else_if = {
+		limit = {
+			YMN = {
+				exists = no
+			}
+		}
+		change_tag = YMN
+	}
+}

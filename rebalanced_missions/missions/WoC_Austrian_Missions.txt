@@ -718,8 +718,7 @@ WoC_austria_1_1 = {
 				}
 				country_event = {
 					id = new_flavour_hun.3
-				}
-				#event used by Hungary too
+				}				#event used by Hungary too
 			}
 		}
 		ai_weight = {
@@ -1041,7 +1040,7 @@ WoC_austria_2 = {
 			custom_tooltip = SEPERATOR_TOOLTIP
 			add_country_modifier = {
 				name = "succesful_bid_for_imperial_crown"
-				duration = -1
+				duration = -1				#15 years
 			}
 		}
 		ai_weight = {

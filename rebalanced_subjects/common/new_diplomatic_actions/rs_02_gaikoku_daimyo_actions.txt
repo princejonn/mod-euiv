@@ -46,3 +46,34 @@ form_gaikoku_daimyo = {
 		always = no
 	}
 }
+
+bestow_daimyo_title = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = gaikoku_daimyo
+		}
+		is_daimyo_title_available = yes
+	}
+	is_allowed = {
+		FROM = {
+			NOT = {
+				has_country_flag = daimyo_title_bestowed
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			set_country_flag = daimyo_title_bestowed
+			bestow_daimyo_title_effect = yes
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

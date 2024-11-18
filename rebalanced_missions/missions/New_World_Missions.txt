@@ -261,7 +261,7 @@ new_world_natives_missions_slot1 = {
 		effect = {
 			add_country_modifier = {
 				name = "growing_economy"
-				duration = -1
+				duration = -1				#25 years
 			}
 			define_advisor = {
 				type = treasurer
@@ -399,7 +399,7 @@ new_world_natives_missions_slot2 = {
 					}
 					add_province_modifier = {
 						name = "growth_of_capital"
-						duration = -1
+						duration = -1						#25 years
 					}
 				}
 			}
@@ -527,7 +527,7 @@ new_world_natives_missions_slot4 = {
 		effect = {
 			add_country_modifier = {
 				name = "influential_diplomacy"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}
@@ -543,7 +543,7 @@ new_world_natives_missions_slot4 = {
 		effect = {
 			add_country_modifier = {
 				name = "obedient_subjects"
-				duration = -1
+				duration = -1				#25 years
 			}
 			every_subject_country = {
 				add_liberty_desire = -10
@@ -584,7 +584,7 @@ new_world_natives_missions_slot4 = {
 			add_mil_power = 50
 			add_country_modifier = {
 				name = "hegemonic_ambition"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}
@@ -623,7 +623,7 @@ new_world_natives_missions_slot4 = {
 			}
 			add_country_modifier = {
 				name = "hegemonic_ambition"
-				duration = -1
+				duration = -1				#25 years
 			}
 			custom_tooltip = home_region_generic_reward
 			tooltip = {
@@ -717,7 +717,7 @@ new_world_natives_missions_slot5 = {
 		effect = {
 			add_country_modifier = {
 				name = "thriving_arms_industry"
-				duration = -1
+				duration = -1				#25 years
 			}
 			custom_tooltip = claim_neighbor_province
 			hidden_effect = {
@@ -755,7 +755,7 @@ new_world_natives_missions_slot5 = {
 			}
 			add_country_modifier = {
 				name = "army_enthusiasm"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}

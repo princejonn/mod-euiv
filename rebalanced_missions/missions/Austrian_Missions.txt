@@ -15,8 +15,7 @@ hab_holy_roman_ambitions = {
 	secure_the_imperial_crown = {
 		icon = mission_alliances
 		required_missions = {
-		}
-		#None
+		}		#None
 		completed_by = 1526.8.30
 		provinces_to_highlight = {
 			OR = {
@@ -126,7 +125,7 @@ hab_holy_roman_ambitions = {
 			}
 			add_country_modifier = {
 				name = "succesful_bid_for_imperial_crown"
-				duration = -1
+				duration = -1				#15 years
 			}
 		}
 		ai_weight = {
@@ -180,7 +179,7 @@ hab_holy_roman_ambitions = {
 		effect = {
 			add_country_modifier = {
 				name = "habsburg_bohemia"
-				duration = -1
+				duration = -1				#15 years
 			}
 			silesia_area = {
 				add_permanent_claim = ROOT
@@ -420,8 +419,7 @@ hab_protect_the_balkans = {
 		#Decline of Hungary
 		icon = mission_eastern_european_city
 		required_missions = {
-		}
-		#None
+		}		#None
 		completed_by = 1490.1.1
 		trigger = {
 			if = {

@@ -89,7 +89,7 @@ hab_reform_austria = {
 		effect = {
 			add_country_modifier = {
 				name = "austria_reunited"
-				duration = -1
+				duration = -1				#15 years
 			}
 		}
 	}

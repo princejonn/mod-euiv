@@ -945,7 +945,7 @@ emp_mlo_security_branch = {
 				}
 				add_country_modifier = {
 					name = mlo_successful_ambrosian_republic
-					duration = -1
+					duration = -1					#special
 				}
 			}
 			else = {

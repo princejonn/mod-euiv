@@ -176,7 +176,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -195,7 +195,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -214,7 +214,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -233,7 +233,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -252,7 +252,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -271,7 +271,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -290,7 +290,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -309,7 +309,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -328,7 +328,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -347,7 +347,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -366,7 +366,7 @@ mal_mansa_musa_visit_effect = {
 				}
 				add_country_modifier = {
 					name = mal_the_gold_inflation
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -387,7 +387,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -401,7 +401,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -415,7 +415,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -429,7 +429,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -443,7 +443,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -457,7 +457,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -471,7 +471,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -485,7 +485,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -499,7 +499,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -513,7 +513,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -527,7 +527,7 @@ mal_invest_in_own_provinces_effect = {
 				}
 				add_province_modifier = {
 					name = mal_investing_in_own_provinces
-					duration = 1825
+					duration = -1
 				}
 			}
 		}
@@ -1152,7 +1152,7 @@ tur_address_firman_effect_b = {
 			}
 			add_province_modifier = {
 				name = tur_morisco_refugees_modifier
-				duration = 7300
+				duration = -1
 			}
 		}
 		define_advisor = { 
@@ -1463,13 +1463,13 @@ BYZ_offer_mosaicists = {
 			}
 			add_country_modifier = {
 				name = BYZ_mosaicists_Leviathan
-				duration = 3650
+				duration = -1
 			}
 		}
 		else = {
 			add_country_modifier = {
 				name = BYZ_mosaicists
-				duration = 3650
+				duration = -1
 			}
 		}
 	}
@@ -1511,7 +1511,7 @@ ARB_flavor_event_6_effect = {
 	else = {
 		add_country_modifier = {
 			name = ARB_second_islamic_golden_age_modifier
-			duration = 18250
+			duration = -1
 		}
 	}
 	custom_tooltip = ARB_permanent_claims_on_all_muslim_provinces
@@ -1864,7 +1864,7 @@ feo_conflicts_in_lithuania_event_opt_1 = {
 		custom_tooltip = ""
 		add_country_modifier = {
 			name = feo_plains_of_ruthenia
-			duration = 7300
+			duration = -1
 		}
 		hidden_effect = {
 			every_owned_province = {
@@ -3686,7 +3686,7 @@ yua_mutual_trade_effect_1 = {
 	custom_tooltip = SEPERATOR_TOOLTIP
 	add_country_modifier = {
 		name = mng_foreign_merchant_influx_modifier
-		duration = 7300
+		duration = -1
 	}
 	custom_tooltip = YUA_ALL_ALLIES_THAT_MEET_REQUIREMENTS_GAIN_THE_FOLLOWING
 	tooltip = {
@@ -3742,7 +3742,7 @@ yua_mutual_trade_effect_1 = {
 			}
 			add_country_modifier = {
 				name = mng_foreign_merchant_influx_modifier
-				duration = 7300
+				duration = -1
 			}
 			if = {
 				limit = {
@@ -3864,7 +3864,7 @@ yua_single_whip_law_effect = {
 			}
 			add_country_modifier = {
 				name = mng_silver_trade_china_modifier
-				duration = 7300
+				duration = -1
 			}
 		}
 	}

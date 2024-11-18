@@ -1145,7 +1145,7 @@ WoC_maya_generic_5 = {
 				"
 				second_effect = "add_country_modifier = {
                         name = MAY_marriage_and_intimidation
-                      	duration = -1
+                        duration = -1
                     }
                     if = {
                         limit = { has_dlc = \"The Cossacks\" }

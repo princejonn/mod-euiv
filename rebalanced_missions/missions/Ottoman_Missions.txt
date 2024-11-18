@@ -42,8 +42,7 @@ tur_conquerors_of_the_near_east = {
 		#City of Worlds Desire
 		icon = mission_conquer_50_development
 		required_missions = {
-		}
-		#None
+		}		#None
 		completed_by = 1453.5.30
 		trigger = {
 			owns = 151
@@ -1391,7 +1390,7 @@ tur_eastern_mediterrenean_missions = {
 			add_claim = 142
 			add_country_modifier = {
 				name = "mediterranean_ambition"
-				duration = -1
+				duration = -1				#20 Years
 			}
 		}
 		ai_weight = {

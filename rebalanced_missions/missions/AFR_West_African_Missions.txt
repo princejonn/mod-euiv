@@ -14,12 +14,10 @@ west_africa_military_missions = {
 		}
 		NOT = {
 			tag = MAL
-		}
-		# Not Mali
+		}		# Not Mali
 		NOT = {
 			tag = SON
-		}
-		# Not Songhai
+		}		# Not Songhai
 		capital_scope = {
 			OR = {
 				region = sahel_region
@@ -43,7 +41,7 @@ west_africa_military_missions = {
 		effect = {
 			add_country_modifier = {
 				name = "warband_assembled"				#Reduced mercenary maintenance cost
-				duration = -1
+				duration = -1				#25 years
 			}
 			custom_tooltip = claim_neighbor_province
 			hidden_effect = {
@@ -168,7 +166,7 @@ west_africa_military_missions = {
 			}
 			add_country_modifier = {
 				name = "hegemonic_ambition"
-				duration = -1
+				duration = -1				#25 years
 			}
 			custom_tooltip = home_region_generic_reward
 			tooltip = {
@@ -324,12 +322,10 @@ west_africa_economic_missions = {
 		}
 		NOT = {
 			tag = MAL
-		}
-		# Not Mali
+		}		# Not Mali
 		NOT = {
 			tag = SON
-		}
-		# Not Songhai
+		}		# Not Songhai
 		capital_scope = {
 			OR = {
 				region = sahel_region
@@ -606,12 +602,10 @@ west_africa_religious_missions_fetishist = {
 		}
 		NOT = {
 			tag = MAL
-		}
-		# Not Mali
+		}		# Not Mali
 		NOT = {
 			tag = SON
-		}
-		# Not Songhai
+		}		# Not Songhai
 		capital_scope = {
 			OR = {
 				region = sahel_region
@@ -853,12 +847,10 @@ west_africa_religious_missions_sunni = {
 		}
 		NOT = {
 			tag = MAL
-		}
-		# Not Mali
+		}		# Not Mali
 		NOT = {
 			tag = SON
-		}
-		# Not Songhai
+		}		# Not Songhai
 		capital_scope = {
 			OR = {
 				region = sahel_region

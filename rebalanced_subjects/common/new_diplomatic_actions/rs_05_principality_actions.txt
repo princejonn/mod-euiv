@@ -83,7 +83,7 @@ incorporate_principality = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			incorporated_principality = 10
+			incorporated_principality = 20
 		}
 		NOT = {
 			truce_with = FROM
@@ -136,7 +136,7 @@ consolidate_principality = {
 	is_allowed = {
 		is_at_war = no
 		NOT = {
-			consolidated_principality = 5
+			consolidated_principality = 20
 		}
 		NOT = {
 			truce_with = FROM

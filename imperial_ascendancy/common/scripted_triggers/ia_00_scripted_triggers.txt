@@ -1,6 +1,7 @@
 is_hre_guarantee_member = {
 	is_part_of_hre = yes
 	is_subject = no
+	## as austria you want to attack these nations
 	NOT = {
 		tag = BOH
 	}
@@ -13,8 +14,27 @@ num_emperor_guarantees = {
 	calc_true_if = {
 		all_known_country = {
 			is_part_of_hre = yes
-			OR = {
-				guaranteed_by = emperor
+			guaranteed_by = emperor
+			NOT = {
+				alliance_with = emperor
+			}
+			NOT = {
+				marriage_with = emperor
+			}
+			NOT = {
+				is_subject_of = emperor
+			}
+			NOT = {
+				gives_fleet_basing_rights_to = emperor
+			}
+			NOT = {
+				receives_fleet_basing_rights_from = emperor
+			}
+			NOT = {
+				gives_military_access_to = emperor
+			}
+			NOT = {
+				receives_military_access_from = emperor
 			}
 		}
 		amount = $amount$

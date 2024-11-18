@@ -42,10 +42,10 @@ sister_republic = {
 	# War Interactions:
 	restoration_cb = cb_restore_sister_republic
 	# Overlord Properties:
-	manpower_to_overlord = 0.2
-	naval_forcelimit_to_overlord = 0.2
-	pays_overlord = 0.5
-	sailors_to_overlord = 0.2
+	manpower_to_overlord = 0.25
+	naval_forcelimit_to_overlord = 0.25
+	pays_overlord = 1
+	sailors_to_overlord = 0.25
 	# Overlord Modifiers:
 	modifier_overlord = {
 		modifier = has_sister_republic_subject
@@ -123,10 +123,10 @@ incorporated_sister_republic = {
 	must_accept_cta_from_overlord = yes
 	takes_diplo_slot = no
 	# Overlord Properties:
-	manpower_to_overlord = 0.3
-	naval_forcelimit_to_overlord = 0.3
-	sailors_to_overlord = 0.3
-	pays_overlord = 1
+	manpower_to_overlord = 0.33
+	naval_forcelimit_to_overlord = 0.33
+	sailors_to_overlord = 0.33
+	pays_overlord = 2
 	# Diplomatic Actions:
 	can_be_annexed = yes
 	# Overlord Modifiers:
@@ -154,19 +154,10 @@ consolidated_sister_republic = {
 	must_accept_cta_from_overlord = no
 	relative_power_class = 0
 	# Overlord Properties:
-	manpower_to_overlord = 0.4
-	naval_forcelimit_to_overlord = 0.4
-	sailors_to_overlord = 0.4
-	pays_overlord = 1.5
-	# Overlord Modifiers:
-	modifier_overlord = {
-		trigger = {
-			NOT = {
-				has_country_flag = free_incorporated_vassal
-			}
-		}
-		modifier = consolidated_sister_republic_governing_capacity_cost
-	}
+	manpower_to_overlord = 0.5
+	naval_forcelimit_to_overlord = 0.5
+	sailors_to_overlord = 0.5
+	pays_overlord = 3
 	# Opinion Modifiers:
 	overlord_opinion_modifier = is_consolidated_sister_republic
 	subject_opinion_modifier = is_consolidated_sister_republic

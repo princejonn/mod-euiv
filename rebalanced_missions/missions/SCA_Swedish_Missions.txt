@@ -3717,7 +3717,7 @@ swe_swedish_military_mission_slot = {
 						marriage_with = PLC
 					}
 					PLC = {
-						total_development = 600
+						total_own_and_non_tributary_subject_development = 600
 					}
 				}
 				else_if = {
@@ -3747,7 +3747,7 @@ swe_swedish_military_mission_slot = {
 						marriage_with = POL
 					}
 					POL = {
-						total_development = 600
+						total_own_and_non_tributary_subject_development = 600
 					}
 				}
 				else = {
@@ -5915,7 +5915,7 @@ swe_sca_hre_slot = {
 				}
 				add_country_modifier = {
 					name = "succesful_bid_for_imperial_crown"
-					duration = -1
+					duration = -1					#15 years
 				}
 			}
 			else_if = {

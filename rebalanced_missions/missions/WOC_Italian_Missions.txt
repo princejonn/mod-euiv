@@ -3646,7 +3646,8 @@ ITA_non_conquest_4 = {
 				province_event = {
 					id = MEE_Byzantine_Events.23
 					days = 180
-				}				#the events cannot be fired at the same time
+				}
+				#the events cannot be fired at the same time
 			}
 			custom_tooltip = ""
 			add_years_of_trade_income = {

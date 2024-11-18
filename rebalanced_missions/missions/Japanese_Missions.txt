@@ -1206,7 +1206,7 @@ japanse_missions_economic = {
 		effect = {
 			add_country_modifier = {
 				name = "growing_economy"
-				duration = -1
+				duration = -1				#25 years
 			}
 		}
 	}

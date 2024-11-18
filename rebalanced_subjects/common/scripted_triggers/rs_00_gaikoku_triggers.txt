@@ -1,0 +1,115 @@
+is_daimyo_title_available = {
+	OR = {
+		AKM = {
+			exists = no
+		}
+		AKT = {
+			exists = no
+		}
+		AMA = {
+			exists = no
+		}
+		ASA = {
+			exists = no
+		}
+		ASK = {
+			exists = no
+		}
+		CBA = {
+			exists = no
+		}
+		CSK = {
+			exists = no
+		}
+		DTE = {
+			exists = no
+		}
+		HJO = {
+			exists = no
+		}
+		HSK = {
+			exists = no
+		}
+		HTK = {
+			exists = no
+		}
+		IKE = {
+			exists = no
+		}
+		IMG = {
+			exists = no
+		}
+		ISK = {
+			exists = no
+		}
+		ITO = {
+			exists = no
+		}
+		KKC = {
+			exists = no
+		}
+		KNO = {
+			exists = no
+		}
+		KTB = {
+			exists = no
+		}
+		MAE = {
+			exists = no
+		}
+		MRI = {
+			exists = no
+		}
+		ODA = {
+			exists = no
+		}
+		OGS = {
+			exists = no
+		}
+		OTM = {
+			exists = no
+		}
+		OUC = {
+			exists = no
+		}
+		RFR = {
+			exists = no
+		}
+		SBA = {
+			exists = no
+		}
+		SHN = {
+			exists = no
+		}
+		SMZ = {
+			exists = no
+		}
+		SOO = {
+			exists = no
+		}
+		STK = {
+			exists = no
+		}
+		TKD = {
+			exists = no
+		}
+		TKG = {
+			exists = no
+		}
+		TKI = {
+			exists = no
+		}
+		TTI = {
+			exists = no
+		}
+		UES = {
+			exists = no
+		}
+		UTN = {
+			exists = no
+		}
+		YMN = {
+			exists = no
+		}
+	}
+}

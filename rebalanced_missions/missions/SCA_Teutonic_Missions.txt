@@ -6826,7 +6826,7 @@ teu_crusader_development_mission_slot = {
 					}
 					add_province_modifier = {
 						name = "growth_of_capital"
-						duration = -1
+						duration = -1						#25 years
 					}
 				}
 			}
@@ -8964,7 +8964,7 @@ teu_dummy_mission_slot_5 = {
 					}
 					add_province_modifier = {
 						name = "growth_of_capital"
-						duration = -1
+						duration = -1						#25 years
 					}
 				}
 			}

@@ -126,12 +126,6 @@ incorporate_viceroyalty = {
 	}
 	is_allowed = {
 		is_at_war = no
-		NOT = {
-			incorporated_viceroyalty = 10
-		}
-		NOT = {
-			truce_with = FROM
-		}
 		FROM = {
 			has_opinion = {
 				who = ROOT
@@ -195,12 +189,6 @@ consolidate_viceroyalty = {
 	}
 	is_allowed = {
 		is_at_war = no
-		NOT = {
-			consolidated_viceroyalty = 5
-		}
-		NOT = {
-			truce_with = FROM
-		}
 		FROM = {
 			has_opinion = {
 				who = ROOT

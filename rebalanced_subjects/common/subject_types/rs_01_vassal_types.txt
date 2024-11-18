@@ -35,15 +35,6 @@ consolidated_vassal = {
 	# Properties:
 	annex_cost_per_development = 4
 	relative_power_class = 0
-	# Overlord Modifiers:
-	modifier_overlord = {
-		trigger = {
-			NOT = {
-				has_country_flag = free_incorporated_vassal
-			}
-		}
-		modifier = consolidated_vassal_governing_capacity_cost
-	}
 	# Opinion:
 	overlord_opinion_modifier = is_consolidated_vassal
 	subject_opinion_modifier = is_consolidated_vassal
