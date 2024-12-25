@@ -1,26 +1,22 @@
 customised_warfare_modifier_easier_1 = {
-	ae_impact = -0.1
 	core_creation = -0.1
 	province_warscore_cost = -0.1
 	unjustified_demands = -0.1
 }
 
 customised_warfare_modifier_easier_2 = {
-	ae_impact = -0.3
 	core_creation = -0.3
 	province_warscore_cost = -0.3
 	unjustified_demands = -0.3
 }
 
 customised_warfare_modifier_easier_3 = {
-	ae_impact = -0.5
 	core_creation = -0.5
 	province_warscore_cost = -0.5
 	unjustified_demands = -0.5
 }
 
 customised_warfare_modifier_easier_4 = {
-	ae_impact = -0.8
 	core_creation = -0.8
 	province_warscore_cost = -0.8
 	unjustified_demands = -0.8

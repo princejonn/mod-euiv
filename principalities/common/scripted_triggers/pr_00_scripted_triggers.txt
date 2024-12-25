@@ -1,0 +1,40 @@
+is_special_government_type = {
+	OR = {
+		has_reform = papacy_reform
+		has_reform = celestial_empire
+		has_reform = shogunate
+	}
+}
+
+# ROOT = country
+is_any_principality_type = {
+	OR = {
+		is_subject_of_type = principality
+		is_subject_of_type = core_principality
+	}
+}
+
+# ROOT = country
+can_be_principality_overlord = {
+	OR = {
+		AND = {
+			government = monarchy
+			government_rank = 3
+		}
+		is_emperor = yes
+	}
+	is_subject = no
+	NOT = {
+		tag = TUR
+	}
+	NOT = {
+		tag = RUM
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_principality_subject = {
+	FROM = {
+		is_special_government_type = no
+	}
+}

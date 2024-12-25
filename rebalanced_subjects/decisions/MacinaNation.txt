@@ -12,7 +12,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {
@@ -67,7 +67,7 @@ country_decisions = {
 				exists = ZAF
 			}
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			massina_area = {
 				is_core = ROOT

@@ -1267,7 +1267,7 @@ rig_develop_and_teuton_mission_slot = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = LIV
-					months = 300
+					months = 600
 				}
 			}
 			else = {
@@ -1357,7 +1357,7 @@ rig_develop_and_teuton_mission_slot = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = TEU
-					months = 300
+					months = 600
 				}
 			}
 			else = {

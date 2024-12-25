@@ -1,0 +1,13 @@
+# Sister Republic
+has_sister_republic_subject = {
+	land_forcelimit = 2
+	naval_forcelimit = 2
+}
+
+is_sister_republic_nation = {
+	global_manpower = -4
+	global_tax_income = 6
+	global_unrest = -10
+	land_forcelimit = -2
+	naval_forcelimit = -2
+}

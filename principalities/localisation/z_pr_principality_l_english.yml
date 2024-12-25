@@ -1,0 +1,112 @@
+﻿l_english:
+
+  # cb types
+
+  cb_create_principality: "Campaign of Imperial Expansion"
+  cb_create_principality_desc: "Their people clamor for local governance. We shall heed the call and establish a Principality."
+
+  cb_restore_principality: "Restore Principality"
+  cb_restore_principality_desc: "They broke off from our Principality."
+
+  # government names
+
+  PRINCIPALITY: "Principality"
+  PRINCIPALITY_MALE_LEADER: "Consul"
+  PRINCIPALITY_FEMALE_LEADER: "Consul"
+  PRINCIPALITY_CONSORT_MALE: "Consort"
+  PRINCIPALITY_CONSORT_FEMALE: "Consort"
+  PRINCIPALITY_MALE_HEIR: "Deputy Consul"
+  PRINCIPALITY_FEMALE_HEIR: "Deputy Consul"
+
+  # new diplomatic actions
+
+  FROM_HAS_TRUCE_WITH_ROOT_TT: "§R- §Y[From.GetName]§! has a truce with §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_100_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y100§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_150_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y150§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_190_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y190§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_50_TRUST_TT: "§R- §Y[From.GetName]§! does not have above §Y50§! trust of §Y[Root.GetName]§!.§!"
+  FROM_MUST_OWE_10_FAVORS_TT: "§R- §Y[From.GetName]§! does not owe §Y10§! favors to §Y[Root.GetName]§!.§!"
+  FROM_MUST_OWE_20_FAVORS_TT: "§R- §Y[From.GetName]§! does not owe §Y20§! favors to §Y[Root.GetName]§!.§!"
+
+  fabricate_principality_cb: "Justify Campaign"
+  fabricate_principality_cb_title: "Justify Campaign"
+  fabricate_principality_cb_desc: "Justify Campaign will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YCampaign of Imperial Expansion§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into a §YPrincipality§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y10 years§!.\n\n§YPrincipalities can be turned into Core Principalities which can be annexed for 4 £dip£ per development.§!"
+  fabricate_principality_cb_tooltip: "Justify an campaign against the target country and gain the 'Campaign of Imperial Expansion' casus belli against them."
+  HAS_PRINCIPALITY_CB_ALREADY_TT: "§R- §Y[Root.GetName]§! already has an §YCampaign of Imperial Expansion§! casus belli against §Y[From.GetName]§!.§!"
+
+  promote_vassal_to_principality_title: "Form Principality"
+  promote_vassal_to_principality_tooltip: "Convert [From.GetName] into a Principality. A Principality is an autonomous vassal state, aligned politically and ideologically with its protector, while maintaining local governance in support of the empire."
+  promote_vassal_to_principality_desc: "Convert [From.GetName] into a Principality. A Principality is a foreign state modeled after the ideals of the overlord's governance, granted autonomy while remaining loyal to its protector, promoting shared values and strategic interests abroad. Principalities cannot be Annexed but they provide their overlord powerful bonuses."
+  promote_vassal_to_principality_alert_tooltip: "An offer to turn us into a §YPrincipality§!"
+  promote_vassal_to_principality_dialog: "[This.GetName] wants to turn us into their §YPrincipality§!."
+
+  promote_union_to_principality_title: "Form Principality"
+  promote_union_to_principality_tooltip: "Convert [From.GetName] into a Principality. A Principality is an autonomous vassal state, aligned politically and ideologically with its protector, while maintaining local governance in support of the empire."
+  promote_union_to_principality_desc: "Convert [From.GetName] into a Principality. A Principality is a foreign state modeled after the ideals of the overlord's governance, granted autonomy while remaining loyal to its protector, promoting shared values and strategic interests abroad. Principalities cannot be Annexed but they provide their overlord powerful bonuses."
+  promote_union_to_principality_alert_tooltip: "An offer to turn us into a §YPrincipality§!"
+  promote_union_to_principality_dialog: "[This.GetName] wants to turn us into their §YPrincipality§!."
+
+  demote_principality_to_vassal_title: "Revoke Principality Status"
+  demote_principality_to_vassal_tooltip: "Convert [From.GetName] into a Vassal."
+  demote_principality_to_vassal_desc: "Convert [From.GetName] into a Vassal. A Vassal is a subject state that is directly controlled by its overlord, with no autonomy or local governance. Vassals can be integrated into the overlord's realm, but they do not provide the same bonuses as a Principality."
+  demote_principality_to_vassal_alert_tooltip: "An offer to turn us into a §YVassal§!"
+  demote_principality_to_vassal_dialog: "[This.GetName] wants to turn us into their §YVassal§!."
+
+  rein_in_principality_title: "Rein in Principality"
+  rein_in_principality_desc: "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Principality§!. This will allow us to integrate §Y[From.GetName]§!, but we will not be able to call §Y[From.GetName]§! into any wars.\n\n§YCore Principalities can be annexed for 4 £dip£ per development.§!"
+  rein_in_principality_tooltip: "Rein in the target from Principality to Core Principality status, allowing us to integrate the target, but disabling our ability to call them in our wars."
+  rein_in_principality_alert_tooltip: "An offer to turn us into a §YCore Principality§!"
+  rein_in_principality_dialog: "[This.GetName] wants to turn us into their Core Principality, exempting us from their wars, but allowing them to integrate us."
+
+  call_principality_into_wars_title: "Call into Wars"
+  call_principality_into_wars_tooltip: "Call [From.GetName] into our current wars."
+  call_principality_into_wars_desc: "Call [From.GetName] into our current wars."
+
+  join_principality_wars_title: "Join Wars"
+  join_principality_wars_tooltip: "Join [From.GetName]'s Current Wars."
+  join_principality_wars_desc: "Join [From.GetName]'s Current Wars."
+
+  grant_autonomy_to_core_principality_title: "Grant Autonomy"
+  grant_autonomy_to_core_principality_tooltip: "Grant autonomy to our Core Principality and turn it into a normal Principality."
+  grant_autonomy_to_core_principality_desc: "Do you wish to grant autonomy to §Y[From.GetName]§! and turn them into a §YPrincipality§!?\n§YPrincipalities§! can be called into wars, but cannot be integrated."
+
+  # opinion modifiers
+
+  is_principality: "Principality"
+  promoted_principality: "They promoted us to §YPrincipality§!"
+  demoted_principality: "They demoted us from §YPrincipality§!"
+
+  # peace treaties
+
+  po_establish_principality: "Establish Principality"
+  po_establish_principality_desc: "[From.GetName] becomes a §YPrincipality§! under [Root.GetName]."
+  PEACE_po_establish_principality: "Establish Principality"
+  CB_ALLOWED_po_establish_principality: "Establish Principality"
+
+  # static modifiers
+
+  has_principality_subject: "Has Principality"
+  is_principality_nation: "Is a Principality"
+
+  # subject types
+
+  principality: "Principality"
+  principality_title: "Principality"
+  principality_title_plural: "Principalities"
+  principality_is_our: "§Y$NAME$§! is our Principality."
+  principality_long_desc: "Principalities are special Imperial subjects which focuses purely on governing the land and allowing democratic rule for its people. Unlike other subject types, a Principality will not join any wars on its own unless directly ordered by its overlord."
+
+  core_principality: "Core Principality"
+  core_principality_title: "Core Principality"
+  core_principality_title_plural: "Core Principalities"
+  core_principality_is_our: "§Y$NAME$§! is our Core Principality."
+  core_principality_long_desc: "A Core Principality behaves like any other Principality, but is much closer tied to its overlord and is barely any different from directly controlled territory. Unlike normal Principalities, a Core Principality cannot be called into any wars and can be annexed."
+
+  # wargoal types
+
+  take_capital_principality: "Take the capital"
+  take_capital_principality_desc: "War goal is to take the capital."
+
+  # war names
+
+  PRINCIPALITY_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Principality Unification War"

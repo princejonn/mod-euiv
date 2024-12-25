@@ -1,0 +1,15 @@
+customised_relations_modifier_easier_1 = {
+	diplomatic_upkeep = 1
+}
+
+customised_relations_modifier_easier_2 = {
+	diplomatic_upkeep = 3
+}
+
+customised_relations_modifier_easier_3 = {
+	diplomatic_upkeep = 5
+}
+
+customised_relations_modifier_easier_4 = {
+	diplomatic_upkeep = 8
+}

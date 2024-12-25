@@ -450,7 +450,7 @@ emp_bohemia_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = HUN
 				}
 			}
@@ -749,7 +749,7 @@ emp_bohemia_3 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = PLC
 				}
 			}
@@ -763,7 +763,7 @@ emp_bohemia_3 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = POL
 				}
 			}
@@ -1003,7 +1003,7 @@ emp_bohemia_4 = {
 				add_casus_belli = {
 					target = BRA
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -1085,7 +1085,7 @@ emp_bohemia_4 = {
 				add_casus_belli = {
 					target = SAX
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {

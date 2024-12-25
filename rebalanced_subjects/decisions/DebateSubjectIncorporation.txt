@@ -4,17 +4,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
+			adm_tech = 12
 			full_idea_group = influence_ideas
 			full_idea_group = administrative_ideas
 			OR = {
 				has_subject_of_type = personal_union
-				has_subject_of_type = principality
-				has_subject_of_type = sister_republic
 				has_subject_of_type = vassal
-				has_subject_of_type = viceroyalty
 			}
 			NOT = {
-				has_country_flag = debate_subject_incorporation_flag
+				has_country_flag = hab_integrated_vassals_flag
 			}
 		}
 		allow = {
@@ -22,7 +20,7 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = debate_subject_incorporation_tooltip
-			set_country_flag = debate_subject_incorporation_flag
+			set_country_flag = hab_integrated_vassals_flag
 			add_dip_power = -300
 		}
 		ai_will_do = {
@@ -34,6 +32,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
+			adm_tech = 18
 			full_idea_group = influence_ideas
 			full_idea_group = administrative_ideas
 			OR = {
@@ -41,14 +40,12 @@ country_decisions = {
 				full_idea_group = plutocracy_ideas
 			}
 			OR = {
-				has_subject_of_type = incorporated_personal_union
-				has_subject_of_type = incorporated_principality
-				has_subject_of_type = incorporated_sister_republic
+				has_subject_of_type = integrated_personal_union
 				has_subject_of_type = incorporated_vassal
-				has_subject_of_type = incorporated_viceroyalty
 			}
+			has_country_flag = hab_integrated_vassals_flag
 			NOT = {
-				has_country_flag = debate_subject_consolidation_flag
+				has_country_flag = free_incorporated_vassal
 			}
 		}
 		allow = {
@@ -56,7 +53,7 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = debate_subject_consolidation_tooltip
-			set_country_flag = debate_subject_consolidation_flag
+			set_country_flag = free_incorporated_vassal
 			add_dip_power = -500
 		}
 		ai_will_do = {

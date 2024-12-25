@@ -780,7 +780,7 @@ ajuuran_defense_slot = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = DGL
-					months = 120
+					months = 600
 				}
 				add_permanent_claim = 1248
 			}

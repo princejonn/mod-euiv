@@ -3,16 +3,19 @@ stop_subject_bickering = {
 		limit = {
 			ai = no
 		}
-		save_event_target_as = ssb_overlord
+		save_event_target_as = bickering_overlord_target
 		every_subject_country = {
-			save_event_target_as = ssb_subject
+			save_event_target_as = bickering_subject_target
 			every_claimed_province = {
 				limit = {
-					owned_by_subject_of = event_target:ssb_overlord
+					OR = {
+						owned_by = event_target:bickering_overlord_target
+						owned_by_subject_of = event_target:bickering_overlord_target
+					}
 				}
-				save_event_target_as = ssb_province
-				event_target:ssb_province = {
-					remove_claim = event_target:ssb_subject
+				save_event_target_as = bickering_province_target
+				event_target:bickering_province_target = {
+					remove_claim = event_target:bickering_subject_target
 				}
 			}
 		}

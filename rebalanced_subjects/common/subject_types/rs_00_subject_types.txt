@@ -1,0 +1,30 @@
+dynastic_union = {
+	copy_from = personal_union
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_integrated_personal_union_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_integrated_personal_union_subject_type
+	# Properties:
+	base_liberty_desire = -25
+	can_be_annexed = no
+	can_be_integrated = no
+	can_union_break = no
+	counts_for_borders = yes
+	created_by_overlord = yes
+	disable_inheritance = yes
+	takes_diplo_slot = no
+	# Continuous Subject Interactions:
+	divert_trade = yes
+	scutage = yes
+	# Immediate Subject Interactions:
+	seize_territory = yes
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.1
+	manpower_to_overlord = 0.1
+	naval_forcelimit_to_overlord = 0.1
+	pays_overlord = 0.1
+	sailors_to_overlord = 0.1
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_dynastic_union
+	subject_opinion_modifier = is_dynastic_union
+}

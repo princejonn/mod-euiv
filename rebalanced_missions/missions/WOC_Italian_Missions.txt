@@ -476,7 +476,7 @@ JHC_ITA_gallia_branch = {
 				add_casus_belli = {
 					target = emperor
 					type = cb_ita_dismantle_hre
-					months = 240
+					months = 600
 				}
 				custom_tooltip = ITA_how_cb_works
 			}

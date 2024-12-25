@@ -66,7 +66,7 @@ mnd_mlc_1 = {
 				add_casus_belli = {
 					target = KEL
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			if = {
@@ -79,7 +79,7 @@ mnd_mlc_1 = {
 				add_casus_belli = {
 					target = PAT
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			if = {
@@ -92,7 +92,7 @@ mnd_mlc_1 = {
 				add_casus_belli = {
 					target = KED
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			if = {
@@ -229,7 +229,7 @@ mnd_mlc_1 = {
 				add_casus_belli = {
 					target = JMB
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -255,7 +255,7 @@ mnd_mlc_1 = {
 				add_casus_belli = {
 					target = DLI
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -311,7 +311,7 @@ mnd_mlc_1 = {
 						add_casus_belli = {
 							target = PREV
 							type = cb_vassalize_mission
-							months = 120
+							months = 600
 						}
 					}
 				}
@@ -615,7 +615,7 @@ mnd_mlc_2 = {
 				add_casus_belli = {
 					target = DAI
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {

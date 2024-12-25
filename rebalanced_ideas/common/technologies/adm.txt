@@ -121,6 +121,7 @@ technology = {
 		renaissance = 0.5
 	}
 	courthouse = yes
+	allowed_idea_groups = 3
 	governing_capacity = 100
 }
 
@@ -135,7 +136,6 @@ technology = {
 	}
 	#The Scythe
 	production_efficiency = 0.02
-	allowed_idea_groups = 3
 }
 
 technology = {
@@ -147,8 +147,8 @@ technology = {
 		renaissance = 0.5
 		new_world_i = 0.3
 	}
-	theocratic_government = yes
 	allowed_idea_groups = 4
+	theocratic_government = yes
 }
 
 technology = {
@@ -233,6 +233,7 @@ technology = {
 		printing_press = 0.5
 	}
 	mills = yes
+	allowed_idea_groups = 7
 	production_efficiency = 0.02
 }
 
@@ -251,7 +252,6 @@ technology = {
 	governing_capacity = 250
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
-	allowed_idea_groups = 7
 }
 
 technology = {
@@ -294,9 +294,9 @@ technology = {
 		printing_press = 0.5
 		global_trade = 0.5
 	}
+	allowed_idea_groups = 9
 	republican_dictatorship = yes
 	governing_capacity = 250
-	allowed_idea_groups = 9
 }
 
 technology = {
@@ -328,6 +328,7 @@ technology = {
 		global_trade = 0.5
 		manufactories = 0.3
 	}
+	allowed_idea_groups = 10
 	constitutional_monarchy = yes
 	constitutional_republic = yes
 	town_hall = yes
@@ -347,7 +348,6 @@ technology = {
 	}
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
-	allowed_idea_groups = 10
 }
 
 technology = {

@@ -143,7 +143,7 @@ country_decisions = {
 				always = yes
 			}
 			else = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 			}
 			is_nomad = no
 			is_at_war = no
@@ -237,7 +237,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_russia_flag
 			add_prestige = 25

@@ -569,7 +569,7 @@ emp_france_missions_2 = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = BRI
-					months = 120
+					months = 600
 				}
 			}
 		}
@@ -833,7 +833,7 @@ emp_france_missions_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = NAP
 				}
 			}
@@ -947,7 +947,7 @@ emp_france_missions_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = SPA
 				}
 			}
@@ -961,7 +961,7 @@ emp_france_missions_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = CAS
 				}
 			}
@@ -1997,7 +1997,7 @@ emp_france_missions_4 = {
 				add_casus_belli = {
 					target = PLC
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else_if = {
@@ -2007,7 +2007,7 @@ emp_france_missions_4 = {
 				add_casus_belli = {
 					target = POL
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {

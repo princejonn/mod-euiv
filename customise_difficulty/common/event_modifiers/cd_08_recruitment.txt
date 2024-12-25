@@ -1,0 +1,19 @@
+customised_recruitment_modifier_easier_1 = {
+	global_regiment_recruit_speed = -0.1
+	global_ship_recruit_speed = -0.1
+}
+
+customised_recruitment_modifier_easier_2 = {
+	global_regiment_recruit_speed = -0.3
+	global_ship_recruit_speed = -0.3
+}
+
+customised_recruitment_modifier_easier_3 = {
+	global_regiment_recruit_speed = -0.5
+	global_ship_recruit_speed = -0.5
+}
+
+customised_recruitment_modifier_easier_4 = {
+	global_regiment_recruit_speed = -0.8
+	global_ship_recruit_speed = -0.8
+}

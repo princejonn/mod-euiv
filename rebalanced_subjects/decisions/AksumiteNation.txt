@@ -29,7 +29,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			OR = {
@@ -86,7 +86,7 @@ country_decisions = {
 				exists = AKS
 			}
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			owns_core_province = 387			# Mukha
 			owns_core_province = 4279			# Zabid
@@ -165,7 +165,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_aksumite_empire_flag
 			clr_country_flag = eth_can_form_aksumite

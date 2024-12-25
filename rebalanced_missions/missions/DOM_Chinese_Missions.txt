@@ -4916,7 +4916,7 @@ DOM_Qing_Missions_3_b = {
 				add_casus_belli = {
 					target = YUE
 					type = cb_vassalize_mission
-					months = 180
+					months = 600
 				}
 			}
 			else = {
@@ -4943,7 +4943,7 @@ DOM_Qing_Missions_3_b = {
 				add_casus_belli = {
 					target = WUU
 					type = cb_vassalize_mission
-					months = 180
+					months = 600
 				}
 			}
 			if = {
@@ -4966,7 +4966,7 @@ DOM_Qing_Missions_3_b = {
 				add_casus_belli = {
 					target = CDL
 					type = cb_vassalize_mission
-					months = 180
+					months = 600
 				}
 				if = {
 					limit = {
@@ -6946,7 +6946,7 @@ ming_missions_5 = {
 							reverse_add_casus_belli = {
 								target = MNG
 								type = cb_force_tributary_mission
-								months = 120
+								months = 600
 							}
 						}
 					}
@@ -6968,7 +6968,7 @@ ming_missions_5 = {
 							reverse_add_casus_belli = {
 								target = ROOT
 								type = cb_vassalize_mission
-								months = 120
+								months = 600
 							}
 						}
 					}
@@ -7055,7 +7055,7 @@ ming_missions_5 = {
 								reverse_add_casus_belli = {
 									target = MNG
 									type = cb_force_tributary_mission
-									months = 120
+									months = 600
 								}
 							}
 						}
@@ -7074,7 +7074,7 @@ ming_missions_5 = {
 								reverse_add_casus_belli = {
 									target = MNG
 									type = cb_vassalize_mission
-									months = 120
+									months = 600
 								}
 							}
 						}

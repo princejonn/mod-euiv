@@ -1,0 +1,69 @@
+# ROOT = country
+is_special_government_type = {
+	OR = {
+		has_reform = papacy_reform
+		has_reform = celestial_empire
+		has_reform = shogunate
+	}
+}
+
+# ROOT = country
+can_be_bishopric_overlord = {
+	OR = {
+		government = monarchy
+		government = theocracy
+		government = republic
+	}
+	religion_group = christian
+	government_rank = 2
+}
+
+# ROOT = overlord, FROM = subject
+can_be_bishopric_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = country
+can_be_crusader_order_overlord = {
+	OR = {
+		government = monarchy
+		government = theocracy
+		government = republic
+	}
+	OR = {
+		religion_group = christian
+		religion = norse_pagan_reformed
+	}
+	government_rank = 2
+}
+
+# ROOT = overlord, FROM = subject
+can_be_crusader_order_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = country
+can_be_fiefdom_overlord = {
+	government = monarchy
+	government_rank = 2
+}
+
+# ROOT = overlord, FROM = subject
+can_be_fiefdom_subject = {
+	FROM = {
+		capital_scope = {
+			superregion = ROOT
+		}
+		is_special_government_type = no
+	}
+}

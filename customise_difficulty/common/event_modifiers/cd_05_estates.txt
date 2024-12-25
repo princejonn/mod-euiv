@@ -1,23 +1,23 @@
 customised_estates_modifier_easier_1 = {
-	all_estate_influence_modifier = -0.1
+	all_estate_influence_modifier = -0.05
 	all_estate_loyalty_equilibrium = 0.1
 	all_estate_possible_privileges = 1
 }
 
 customised_estates_modifier_easier_2 = {
-	all_estate_influence_modifier = -0.2
+	all_estate_influence_modifier = -0.1
 	all_estate_loyalty_equilibrium = 0.2
 	all_estate_possible_privileges = 2
 }
 
 customised_estates_modifier_easier_3 = {
-	all_estate_influence_modifier = -0.3
+	all_estate_influence_modifier = -0.15
 	all_estate_loyalty_equilibrium = 0.3
 	all_estate_possible_privileges = 3
 }
 
 customised_estates_modifier_easier_4 = {
-	all_estate_influence_modifier = -0.4
+	all_estate_influence_modifier = -0.2
 	all_estate_loyalty_equilibrium = 0.4
 	all_estate_possible_privileges = 4
 }

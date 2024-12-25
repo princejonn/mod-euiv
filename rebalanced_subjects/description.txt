@@ -1,3 +1,5 @@
+
+
 I love subject mechanics. Subjects are fun to play around with, and add some needed depth to the gameplay. It's fun to get autonomous help in wars, and it's fun to feed your subjects and see them grow. There are some things I would like to add though. In this mod I'm aiming to fix and rebalance a couple of things that deal with subjects.
 
 [h2]Features[/h2]
@@ -10,18 +12,15 @@ I love subject mechanics. Subjects are fun to play around with, and add some nee
 
 [h2]New Subject Types[/h2]
 [list]
-  [*] Gaikoku Daimyo
   [*] Bishopric
   [*] Crusader Order
+  [*] Federation
   [*] Fiefdom
-  [*] Protectorate
+  [*] Gaikoku Daimyo
   [*] Principality
   [*] Sister Republic
   [*] Viceroyalty
 [/list]
-
-[h3]Gaikoku Daimyo[/h3]
-New subject type for Japan players. It's very much like the current Daimyo subject type, except you get to establish them in regions outside of Japan. It's basically just a bit of flavour. Why would Japan suddenly stop establishing Daimyos and just create Vassals?
 
 [h3]Bishopric[/h3]
 New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence and cannot be annexed. You can only establish Bishoprics on the same continent as the capital. When Bishoprics own 3 or fewer provinces, they award the overlord economid and religious bonuses. You can have 2 Bishoprics.
@@ -29,11 +28,14 @@ New subject type that is a subset of vassals, only with heavy requirements on be
 [h3]Crusader Order[/h3]
 New subject type that is a subset of vassals, only with heavy requirements on being small. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. You can only establish Crusader Orders when you are the Defender of Faith. You can only establish Crusader Orders in the same region as the capital. When Crusader Orders own 3 or fewer provinces, they award the overlord military bonuses. When Crusader Orders have a capital development of 40 and have the Highest Level Fort available, a Tax Building, a Trade Building, a Production Building, and a Manpower Building, they will gain very strong bonuses to their nation. You can have 1 Crusader Order.
 
+[h3]Federation[/h3]
+New subject type for mid- to lategame. It's a subject that cedes most of its military capacity and taxes to its overlord, but it takes no diplomatic slot. While it's technically still a subject, it should probably be considered more of a partnership, where the army and navy have been consolidated into a singular entity under your control. Federations will not automatically join your wars, but you can call them in.
+
 [h3]Fiefdom[/h3]
 New subject type that is a subset of vassals, only with heavy requirements on being small. A territory granted by an overlord to a duke in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. You can only establish Crusader Orders in the same region as the capital. When Fiefdoms own 2 or fewer provinces, they award the overlord administrative and diplomatic bonuses. You can have 3 Fiefdoms.
 
-[h3]Protectorate[/h3]
-New subject type that is a subset of vassals, kind of like the opposite of marches. They have a weak military presence, so they instead have a strong economic potency.
+[h3]Gaikoku Daimyo[/h3]
+New subject type for Japan players. It's very much like the current Daimyo subject type, except you get to establish them in regions outside of Japan. It's basically just a bit of flavour. Why would Japan suddenly stop establishing Daimyos and just create Vassals?
 
 [h3]Principality[/h3]
 New subject type for monarchies. It's something of a mix between a Personal Union and a Vassal. You cannot establish a Principality outside of the continent of your capital. Hover the button to see what is required. They are cheaper in cost to Diplomatically Annex. They will not be inherited automatically, making them a good way to keep your favourite vassals or unions around until you decide to annex them yourself. Once you Land a Prince of your dynasty, the country colour will also be changed to yours.

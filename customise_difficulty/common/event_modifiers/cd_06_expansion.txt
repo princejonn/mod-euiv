@@ -1,0 +1,15 @@
+customised_expansion_modifier_easier_1 = {
+	ae_impact = -0.1
+}
+
+customised_expansion_modifier_easier_2 = {
+	ae_impact = -0.2
+}
+
+customised_expansion_modifier_easier_3 = {
+	ae_impact = -0.3
+}
+
+customised_expansion_modifier_easier_4 = {
+	ae_impact = -0.4
+}

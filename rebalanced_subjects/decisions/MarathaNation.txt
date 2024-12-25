@@ -63,7 +63,7 @@ country_decisions = {
 			}
 			is_at_war = no
 			adm_tech = 18
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			owns_core_province = 546			#Nagpur
 			owns_core_province = 1946			#Satar
 			owns_core_province = 2033			#Savanur
@@ -113,7 +113,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_maratha_flag
 		}

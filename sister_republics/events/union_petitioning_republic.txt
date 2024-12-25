@@ -1,0 +1,69 @@
+namespace = union_petitioning_republic
+country_event = {
+	id = union_petitioning_republic.1
+	hidden = yes
+	trigger = {
+		ai = yes
+		is_lesser_in_union = yes
+		overlord = {
+			can_be_sister_republic_overlord = yes
+		}
+		NOT = {
+			total_development = 150
+		}
+		NOT = {
+			liberty_desire = 50
+		}
+		has_opinion = {
+			who = overlord
+			value = 100
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	immediate = {
+		save_event_target_as = personal_union_petitioning_target
+		overlord = {
+			country_event = {
+				id = union_petitioning_republic.2
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = union_petitioning_republic.2
+	title = union_petitioning_republic.2.title
+	desc = union_petitioning_republic.2.desc
+	picture = DIET_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = union_petitioning_republic.2.a
+		ai_chance = {
+			factor = 25
+		}
+		create_subject = {
+			subject_type = sister_republic
+			subject = event_target:personal_union_petitioning_target
+			keep_liberty_desire = yes
+		}
+		hidden_effect = {
+			create_sister_republic = {
+				overlord = ROOT
+				subject = event_target:personal_union_petitioning_target
+			}
+		}
+	}
+	option = {
+		name = union_petitioning_republic.2.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

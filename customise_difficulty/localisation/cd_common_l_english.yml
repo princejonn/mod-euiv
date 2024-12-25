@@ -15,6 +15,20 @@
   customised_economic_modifier_easier_4: "Customise Difficulty: Economic"
   desc_customised_economic_modifier_easier_4: "Difficulty Level: §G4§!"
 
+  ## gold
+
+  customised_gold_modifier_easier_1: "Customise Difficulty: Gold"
+  desc_customised_gold_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_gold_modifier_easier_2: "Customise Difficulty: Gold"
+  desc_customised_gold_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_gold_modifier_easier_3: "Customise Difficulty: Gold"
+  desc_customised_gold_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_gold_modifier_easier_4: "Customise Difficulty: Gold"
+  desc_customised_gold_modifier_easier_4: "Difficulty Level: §G4§!"
+
   ## maintenance
 
   customised_maintenance_modifier_easier_1: "Customise Difficulty: Maintenance"
@@ -98,6 +112,34 @@
 
   customised_tolerance_modifier_easier_4: "Customise Difficulty: Tolerance"
   desc_customised_tolerance_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## building
+
+  customised_building_modifier_easier_1: "Customise Difficulty: Building"
+  desc_customised_building_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_building_modifier_easier_2: "Customise Difficulty: Building"
+  desc_customised_building_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_building_modifier_easier_3: "Customise Difficulty: Building"
+  desc_customised_building_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_building_modifier_easier_4: "Customise Difficulty: Building"
+  desc_customised_building_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## capacity
+
+  customised_capacity_modifier_easier_1: "Customise Difficulty: Capacity"
+  desc_customised_capacity_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_capacity_modifier_easier_2: "Customise Difficulty: Capacity"
+  desc_customised_capacity_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_capacity_modifier_easier_3: "Customise Difficulty: Capacity"
+  desc_customised_capacity_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_capacity_modifier_easier_4: "Customise Difficulty: Capacity"
+  desc_customised_capacity_modifier_easier_4: "Difficulty Level: §G4§!"
 
   ## national
 
@@ -183,6 +225,34 @@
   customised_espionage_modifier_easier_4: "Customise Difficulty: Espionage"
   desc_customised_espionage_modifier_easier_4: "Difficulty Level: §G4§!"
 
+  ## expansion
+
+  customised_expansion_modifier_easier_1: "Customise Difficulty: Expansion"
+  desc_customised_expansion_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_expansion_modifier_easier_2: "Customise Difficulty: Expansion"
+  desc_customised_expansion_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_expansion_modifier_easier_3: "Customise Difficulty: Expansion"
+  desc_customised_expansion_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_expansion_modifier_easier_4: "Customise Difficulty: Expansion"
+  desc_customised_expansion_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## relations
+
+  customised_relations_modifier_easier_1: "Customise Difficulty: Relations"
+  desc_customised_relations_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_relations_modifier_easier_2: "Customise Difficulty: Relations"
+  desc_customised_relations_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_relations_modifier_easier_3: "Customise Difficulty: Relations"
+  desc_customised_relations_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_relations_modifier_easier_4: "Customise Difficulty: Relations"
+  desc_customised_relations_modifier_easier_4: "Difficulty Level: §G4§!"
+
   ## warfare
 
   customised_warfare_modifier_easier_1: "Customise Difficulty: Warfare"
@@ -267,19 +337,33 @@
   customised_navy_modifier_easier_4: "Customise Difficulty: Navy"
   desc_customised_navy_modifier_easier_4: "Difficulty Level: §G4§!"
 
-  ## navy
+  ## recruitment
 
-  customised_navy_modifier_easier_1: "Customise Difficulty: Navy"
-  desc_customised_navy_modifier_easier_1: "Difficulty Level: §G1§!"
+  customised_recruitment_modifier_easier_1: "Customise Difficulty: Recruitment"
+  desc_customised_recruitment_modifier_easier_1: "Difficulty Level: §G1§!"
 
-  customised_navy_modifier_easier_2: "Customise Difficulty: Navy"
-  desc_customised_navy_modifier_easier_2: "Difficulty Level: §G2§!"
+  customised_recruitment_modifier_easier_2: "Customise Difficulty: Recruitment"
+  desc_customised_recruitment_modifier_easier_2: "Difficulty Level: §G2§!"
 
-  customised_navy_modifier_easier_3: "Customise Difficulty: Navy"
-  desc_customised_navy_modifier_easier_3: "Difficulty Level: §G3§!"
+  customised_recruitment_modifier_easier_3: "Customise Difficulty: Recruitment"
+  desc_customised_recruitment_modifier_easier_3: "Difficulty Level: §G3§!"
 
-  customised_navy_modifier_easier_4: "Customise Difficulty: Navy"
-  desc_customised_navy_modifier_easier_4: "Difficulty Level: §G4§!"
+  customised_recruitment_modifier_easier_4: "Customise Difficulty: Recruitment"
+  desc_customised_recruitment_modifier_easier_4: "Difficulty Level: §G4§!"
+
+  ## tradition
+
+  customised_tradition_modifier_easier_1: "Customise Difficulty: Tradition"
+  desc_customised_tradition_modifier_easier_1: "Difficulty Level: §G1§!"
+
+  customised_tradition_modifier_easier_2: "Customise Difficulty: Tradition"
+  desc_customised_tradition_modifier_easier_2: "Difficulty Level: §G2§!"
+
+  customised_tradition_modifier_easier_3: "Customise Difficulty: Tradition"
+  desc_customised_tradition_modifier_easier_3: "Difficulty Level: §G3§!"
+
+  customised_tradition_modifier_easier_4: "Customise Difficulty: Tradition"
+  desc_customised_tradition_modifier_easier_4: "Difficulty Level: §G4§!"
 
   ## colonists
 

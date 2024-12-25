@@ -783,7 +783,7 @@ mnd_dai_4 = {
 				add_casus_belli = {
 					target = KHM
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -887,7 +887,7 @@ mnd_dai_5 = {
 				add_casus_belli = {
 					target = LXA
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -967,7 +967,7 @@ mnd_dai_5 = {
 				add_casus_belli = {
 					target = LNA
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -1013,7 +1013,7 @@ mnd_dai_5 = {
 				add_casus_belli = {
 					target = AYU
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {

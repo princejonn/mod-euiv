@@ -1,0 +1,62 @@
+country_decisions = {
+	remove_rng_rivals_fra = {
+		potential = {
+			ai = no
+			tag = FRA
+			any_country = {
+				ai = yes
+				is_rival = FRA
+				OR = {
+					tag = BUR
+					tag = CAS
+				}
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					BUR = {
+						ai = yes
+						is_rival = FRA
+					}
+				}
+				BUR = {
+					remove_rival = FRA
+					set_ai_attitude = {
+						attitude = attitude_friendly
+						who = FRA
+					}
+					add_opinion = {
+						who = FRA
+						modifier = visit_of_the_four_kings
+					}
+				}
+			}
+			if = {
+				limit = {
+					CAS = {
+						ai = yes
+						is_rival = FRA
+					}
+				}
+				CAS = {
+					remove_rival = FRA
+					set_ai_attitude = {
+						attitude = attitude_friendly
+						who = FRA
+					}
+					add_opinion = {
+						who = FRA
+						modifier = visit_of_the_four_kings
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

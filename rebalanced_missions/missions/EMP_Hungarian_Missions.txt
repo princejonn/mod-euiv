@@ -143,7 +143,7 @@ emp_hun_poland_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = PLC
 				}
 			}
@@ -157,7 +157,7 @@ emp_hun_poland_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = POL
 				}
 			}
@@ -678,7 +678,7 @@ emp_hun_bohemia_austria_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = BOH
 				}
 			}
@@ -848,7 +848,7 @@ emp_hun_bohemia_austria_branch_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = HAB
 				}
 			}

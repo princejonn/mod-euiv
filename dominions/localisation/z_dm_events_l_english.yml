@@ -1,0 +1,7 @@
+﻿l_english:
+  join_dominion_war.2.title: "Dominion calls for Aid"
+  join_dominion_war.2.desc: "Our Dominion [dominion_aid_target.GetName] is in dire need of help in their war. They have called for aid!"
+  join_dominion_war.2.a: "And [Root.GetName] will answer!"
+  join_dominion_war.2.b: "A few ducats should suffice"
+  join_dominion_war.2.c: "We shall send our men to help"
+  join_dominion_war.2.d: "What have they done for us?"

@@ -334,7 +334,7 @@ got_monarchy_slot_2 = {
 				add_casus_belli = {
 					type = cb_restore_personal_union
 					target = DAN
-					months = 240
+					months = 600
 				}
 			}
 			else = {
@@ -522,7 +522,7 @@ got_monarchy_slot_2 = {
 							add_casus_belli = {
 								type = cb_restore_personal_union
 								target = DAN
-								months = 240
+								months = 600
 							}
 						}
 						if = {
@@ -534,7 +534,7 @@ got_monarchy_slot_2 = {
 							add_casus_belli = {
 								type = cb_restore_personal_union
 								target = NOR
-								months = 240
+								months = 600
 							}
 						}
 						if = {
@@ -546,7 +546,7 @@ got_monarchy_slot_2 = {
 							add_casus_belli = {
 								type = cb_restore_personal_union
 								target = SWE
-								months = 240
+								months = 600
 							}
 						}
 					}

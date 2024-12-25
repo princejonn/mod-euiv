@@ -31,6 +31,22 @@ country_event = {
 		}
 	}
 	option = {
+		name = customise_diplomatic_difficulty_event.0.d
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.4
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.0.e
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.5
+			}
+		}
+	}
+	option = {
 		name = customise_diplomatic_difficulty_event.0.z
 		hidden_effect = {
 			country_event = {
@@ -300,15 +316,275 @@ country_event = {
 	}
 }
 
-# Warfare
+# Expansion
 country_event = {
 	id = customise_diplomatic_difficulty_event.3
 	title = customise_diplomatic_difficulty_event.3.title
 	desc = customise_diplomatic_difficulty_event.3.desc
-	picture = REFORM_eventPicture
+	picture = IMPALED_SOLDIERS_eventPicture
 	is_triggered_only = yes
 	option = {
 		name = customise_diplomatic_difficulty_event.3.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_expansion_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_expansion_modifier_easier_1
+			remove_country_modifier = customised_expansion_modifier_easier_2
+			remove_country_modifier = customised_expansion_modifier_easier_3
+			remove_country_modifier = customised_expansion_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_expansion_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.3.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_expansion_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_expansion_modifier_easier_1
+			remove_country_modifier = customised_expansion_modifier_easier_2
+			remove_country_modifier = customised_expansion_modifier_easier_3
+			remove_country_modifier = customised_expansion_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_expansion_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.3.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_expansion_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_expansion_modifier_easier_1
+			remove_country_modifier = customised_expansion_modifier_easier_2
+			remove_country_modifier = customised_expansion_modifier_easier_3
+			remove_country_modifier = customised_expansion_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_expansion_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.3.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_expansion_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_expansion_modifier_easier_1
+			remove_country_modifier = customised_expansion_modifier_easier_2
+			remove_country_modifier = customised_expansion_modifier_easier_3
+			remove_country_modifier = customised_expansion_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_expansion_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.3.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_expansion_modifier_easier_1
+				has_country_modifier = customised_expansion_modifier_easier_2
+				has_country_modifier = customised_expansion_modifier_easier_3
+				has_country_modifier = customised_expansion_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_expansion_modifier_easier_1
+			remove_country_modifier = customised_expansion_modifier_easier_2
+			remove_country_modifier = customised_expansion_modifier_easier_3
+			remove_country_modifier = customised_expansion_modifier_easier_4
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.3.z
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Relations
+country_event = {
+	id = customise_diplomatic_difficulty_event.4
+	title = customise_diplomatic_difficulty_event.4.title
+	desc = customise_diplomatic_difficulty_event.4.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_diplomatic_difficulty_event.4.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_relations_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_relations_modifier_easier_1
+			remove_country_modifier = customised_relations_modifier_easier_2
+			remove_country_modifier = customised_relations_modifier_easier_3
+			remove_country_modifier = customised_relations_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_relations_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.4.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_relations_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_relations_modifier_easier_1
+			remove_country_modifier = customised_relations_modifier_easier_2
+			remove_country_modifier = customised_relations_modifier_easier_3
+			remove_country_modifier = customised_relations_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_relations_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.4.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_relations_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_relations_modifier_easier_1
+			remove_country_modifier = customised_relations_modifier_easier_2
+			remove_country_modifier = customised_relations_modifier_easier_3
+			remove_country_modifier = customised_relations_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_relations_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.4.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_relations_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_relations_modifier_easier_1
+			remove_country_modifier = customised_relations_modifier_easier_2
+			remove_country_modifier = customised_relations_modifier_easier_3
+			remove_country_modifier = customised_relations_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_relations_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.4.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_relations_modifier_easier_1
+				has_country_modifier = customised_relations_modifier_easier_2
+				has_country_modifier = customised_relations_modifier_easier_3
+				has_country_modifier = customised_relations_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_relations_modifier_easier_1
+			remove_country_modifier = customised_relations_modifier_easier_2
+			remove_country_modifier = customised_relations_modifier_easier_3
+			remove_country_modifier = customised_relations_modifier_easier_4
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_diplomatic_difficulty_event.4.z
+		hidden_effect = {
+			country_event = {
+				id = customise_diplomatic_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Warfare
+country_event = {
+	id = customise_diplomatic_difficulty_event.5
+	title = customise_diplomatic_difficulty_event.5.title
+	desc = customise_diplomatic_difficulty_event.5.desc
+	picture = REFORM_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_diplomatic_difficulty_event.5.a
 		trigger = {
 			NOT = {
 				has_country_modifier = customised_warfare_modifier_easier_1
@@ -331,7 +607,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = customise_diplomatic_difficulty_event.3.b
+		name = customise_diplomatic_difficulty_event.5.b
 		trigger = {
 			NOT = {
 				has_country_modifier = customised_warfare_modifier_easier_2
@@ -354,7 +630,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = customise_diplomatic_difficulty_event.3.c
+		name = customise_diplomatic_difficulty_event.5.c
 		trigger = {
 			NOT = {
 				has_country_modifier = customised_warfare_modifier_easier_3
@@ -377,7 +653,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = customise_diplomatic_difficulty_event.3.d
+		name = customise_diplomatic_difficulty_event.5.d
 		trigger = {
 			NOT = {
 				has_country_modifier = customised_warfare_modifier_easier_4
@@ -400,7 +676,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = customise_diplomatic_difficulty_event.3.x
+		name = customise_diplomatic_difficulty_event.5.x
 		highlight = yes
 		trigger = {
 			OR = {
@@ -421,7 +697,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = customise_diplomatic_difficulty_event.3.z
+		name = customise_diplomatic_difficulty_event.5.z
 		hidden_effect = {
 			country_event = {
 				id = customise_diplomatic_difficulty_event.0

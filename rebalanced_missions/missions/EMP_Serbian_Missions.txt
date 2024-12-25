@@ -479,7 +479,7 @@ emp_ser_west_balkan_branch = {
 			else = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
-					months = 300
+					months = 600
 					target = BOS
 				}
 			}

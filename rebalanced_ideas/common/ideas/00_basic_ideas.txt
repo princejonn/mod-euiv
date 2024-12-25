@@ -507,7 +507,7 @@ diplomatic_ideas = {
 		dip_advisor_cost = -0.25
 	}
 	cabinet = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 	}
 	benign_diplomats = {
 		improve_relation_modifier = 0.25
@@ -963,8 +963,8 @@ exploration_ideas = {
 			primitives = yes
 		}
 		modifier = {
-			factor = 0.1
-			current_age = age_of_revolutions
+			factor = 0
+			current_age = age_of_revolutions			#too late
 		}
 		modifier = {
 			factor = 0
@@ -1042,12 +1042,10 @@ exploration_ideas = {
 			factor = 0.1
 			capital_scope = {
 				NOT = {
-					OR = {
-						region = france_region
-						region = iberia_region
-						region = british_isles_region
-						region = low_countries_region
-					}
+					region = france_region
+					region = iberia_region
+					region = british_isles_region
+					region = low_countries_region
 				}
 			}
 			NOT = {
@@ -1055,16 +1053,11 @@ exploration_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0.01
-			NOT = {
-				OR = {
-					technology_group = western
-					technology_group = eastern
-				}
-			}
+			factor = 0.5
+			tag = ARA
 		}
 		modifier = {
-			factor = 0.01
+			factor = 0.1
 			NOT = {
 				is_year = 1490
 			}
@@ -1091,25 +1084,25 @@ exploration_ideas = {
 			num_of_ports = 15
 		}
 		modifier = {
-			factor = 10
+			factor = 2
 			num_of_ports = 20
 		}
 		modifier = {
-			## Modified
 			factor = 1000
 			OR = {
-				tag = CAS
 				tag = POR
+				tag = CAS
 				tag = SPA
 			}
 		}
 		modifier = {
-			## Modified
 			factor = 100
 			OR = {
 				tag = ENG
 				tag = FRA
 				tag = GBR
+				tag = HOL
+				tag = ICE
 				tag = KUR
 				tag = NED
 				tag = SWE
@@ -1434,7 +1427,7 @@ expansion_ideas = {
 	ai_will_do = {
 		factor = 0.5
 		modifier = {
-			factor = 1000
+			factor = 10
 			OR = {
 				has_idea_group = exploration_ideas
 				is_colonial_nation = yes
@@ -1496,7 +1489,7 @@ administrative_ideas = {
 		adm_advisor_cost = -0.25
 	}
 	local_rule = {
-		advisor_pool = 1
+		advisor_pool = 2
 		num_of_pronoiars = 2
 	}
 	adaptability = {

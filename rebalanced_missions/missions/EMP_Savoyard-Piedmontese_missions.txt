@@ -112,7 +112,7 @@ emp_sav_missions_conquest = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = COR
 				}
 			}
@@ -126,7 +126,7 @@ emp_sav_missions_conquest = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = SAR
 				}
 			}
@@ -232,7 +232,7 @@ emp_sav_missions_conquest = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = SIC
 				}
 			}
@@ -310,7 +310,7 @@ emp_sav_missions_conquest = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = TTS
 				}
 			}
@@ -324,7 +324,7 @@ emp_sav_missions_conquest = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = NAP
 				}
 			}
@@ -978,7 +978,7 @@ emp_sav_missions_conquest_west = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = FRA
 				}
 			}

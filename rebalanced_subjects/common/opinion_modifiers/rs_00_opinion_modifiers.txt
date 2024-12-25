@@ -1,107 +1,15 @@
-# Vassal
-is_incorporated_vassal = {
-	opinion = 60
+is_dynastic_union = {
+	opinion = 25
 }
 
-is_consolidated_vassal = {
-	opinion = 70
+promoted_dynastic_union = {
+	opinion = 25
+	yearly_decay = 2
+	max = 100
 }
 
-# Personal Union
-is_incorporated_union = {
-	opinion = 20
-}
-
-is_consolidated_union = {
-	opinion = 30
-}
-
-# Bishopric
-is_bishopric = {
-	opinion = 60
-}
-
-broke_bishopric = {
+demoted_dynastic_union = {
 	opinion = -100
-	yearly_decay = 3
-}
-
-# Fiefdom
-is_fiefdom = {
-	opinion = 60
-}
-
-broke_fiefdom = {
-	opinion = -100
-	yearly_decay = 3
+	yearly_decay = 5
 	min = -200
-}
-
-# Crusader Order
-is_crusader_order = {
-	opinion = 60
-}
-
-broke_crusader_order = {
-	opinion = -100
-	yearly_decay = 3
-	min = -200
-}
-
-# Protectorate
-is_protectorate = {
-	opinion = 60
-}
-
-is_incorporated_protectorate = {
-	opinion = 70
-}
-
-is_consolidated_protectorate = {
-	opinion = 80
-}
-
-broke_protectorate = {
-	opinion = -50
-	yearly_decay = 3
-	min = -200
-}
-
-# Principality
-is_principality = {
-	opinion = 20
-}
-
-is_incorporated_principality = {
-	opinion = 30
-}
-
-is_consolidated_principality = {
-	opinion = 40
-}
-
-# Sister Republic
-is_sister_republic = {
-	opinion = 20
-}
-
-is_incorporated_sister_republic = {
-	opinion = 30
-}
-
-is_consolidated_sister_republic = {
-	opinion = 40
-}
-
-# Viceroyalty
-is_viceroyalty = {
-	opinion = 20
-}
-
-is_incorporated_viceroyalty = {
-	opinion = 30
-}
-
-is_consolidated_viceroyalty = {
-	opinion = 40
 }

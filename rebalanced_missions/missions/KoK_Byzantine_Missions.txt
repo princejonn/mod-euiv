@@ -77,7 +77,7 @@ MEE_BYZ_conquest_1 = {
 			}
 			add_casus_belli = {
 				type = cb_vassalize_mission
-				months = 240
+				months = 600
 				target = NAP
 			}
 			give_cores = {

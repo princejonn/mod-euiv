@@ -1,0 +1,310 @@
+form_personal_union_from_vassal = {
+	category = dynasty
+	require_acceptance = yes
+	alert_index = 6
+	alert_tooltip = form_personal_union_from_vassal_alert_tooltip
+	is_visible = {
+		ai = no
+		government = monarchy
+		FROM = {
+			is_subject_of = ROOT
+			government = monarchy
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = incorporated_vassal
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 50
+			}
+		}
+		FROM = {
+			dynasty = ROOT
+		}
+		FROM = {
+			marriage_with = ROOT
+		}
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 190
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_190_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = personal_union
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+	ai_acceptance = {
+		add_entry = {
+			name = DIPLO_OPPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.2
+			}
+		}
+		add_entry = {
+			name = AI_TRUST_TOWARDS_ROOT
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 50
+			}
+			#1 trust = +2 ai points
+			multiply_variable = {
+				which = ai_value
+				value = 0.2
+			}
+		}
+		add_entry = {
+			name = AI_DIPLOMATIC_REPUTATION
+			export_to_variable = {
+				variable_name = ai_value
+				value = trigger_value:diplomatic_reputation
+			}
+			#1 rep = 2
+			multiply_variable = {
+				which = ai_value
+				value = 2
+			}
+		}
+		add_entry = {
+			name = AI_LIBERTY_DESIRE
+			export_to_variable = {
+				variable_name = ai_value
+				value = liberty_desire
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -4
+			}
+		}
+	}
+}
+
+promote_personal_union_to_dynastic = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_lesser_in_union = yes
+			NOT = {
+				is_subject_of_type = dynastic_union
+			}
+		}
+	}
+	is_allowed = {
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 50
+			}
+		}
+		FROM = {
+			years_in_union_under = {
+				who = ROOT
+				years = 10
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_100_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = dynastic_union
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = promoted_dynastic_union
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+demote_dynastic_union_to_personal = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = dynastic_union
+		}
+	}
+	is_allowed = {
+		FROM = {
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 50
+			}
+		}
+		FROM = {
+			years_in_union_under = {
+				who = ROOT
+				years = 10
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 190
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_190_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = demoted_dynastic_union
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

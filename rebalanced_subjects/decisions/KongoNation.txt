@@ -12,7 +12,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {
@@ -65,7 +65,7 @@ country_decisions = {
 				exists = KON
 			}
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			owns_core_province = 1170			# Mpemba
 			owns_core_province = 798			# Mbwila
@@ -122,7 +122,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_kongo_flag
 			if = {

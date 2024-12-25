@@ -1,0 +1,145 @@
+country_decisions = {
+	establish_soc = {
+		major = yes
+		potential = {
+			ai = no
+			tag = SWE
+			NOT = {
+				exists = SOC
+			}
+			west_india_region = {
+				has_discovered = ROOT
+			}
+			bengal_region = {
+				has_discovered = ROOT
+			}
+			coromandel_region = {
+				has_discovered = ROOT
+			}
+			deccan_region = {
+				has_discovered = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			superregion = india_superregion
+			has_port = yes
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				has_port = yes
+				is_city = yes
+				is_core = ROOT
+				owned_by = ROOT
+				superregion = india_superregion
+				value = 5
+			}
+			treasury = 1000
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = india_superregion
+					}
+					add_core = SOC
+					if = {
+						limit = {
+							is_core = ROOT
+						}
+						remove_core = ROOT
+					}
+				}
+			}
+			release = SOC
+			create_subject = {
+				subject_type = commercial_enterprise
+				who = SOC
+			}
+			add_treasury = -1000
+			hidden_effect = {
+				SOC = {
+					change_government = republic
+					add_government_reform = trade_company_government
+					change_religion = ROOT
+					change_primary_culture = ROOT
+					define_ruler = {
+						name = "Henrik"
+						dynasty = "König"
+						change_adm = 4
+						change_dip = 4
+						change_mil = 4
+						min_age = 40
+						max_age = 50
+					}
+					add_adm_power = 500
+					add_dip_power = 500
+					add_mil_power = 500
+					add_treasury = 1000
+					add_prestige = 50
+					add_republican_tradition = 100
+				}
+				india_superregion = {
+					limit = {
+						NOT = {
+							is_core = SOC
+						}
+						NOT = {
+							is_permanent_claim = SOC
+						}
+					}
+					add_permanent_claim = SOC
+				}
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				cost_multiplier = 0.25
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	expand_soc = {
+		major = yes
+		potential = {
+			ai = no
+			tag = SWE
+			SOC = {
+				is_subject_of_type_with_overlord = {
+					who = ROOT
+					type = commercial_enterprise
+				}
+			}
+			NOT = {
+				india_superregion = {
+					type = all
+					owned_by = SOC
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				superregion = india_superregion
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				remove_core = ROOT
+				cede_province = SOC
+				add_core = SOC
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

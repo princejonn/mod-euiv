@@ -51,23 +51,34 @@
 
   # new diplomatic actions
 
-  emperor_force_release_nations: "Release Nations"
+  emperor_has_more_dev_than_target_tooltip: "[Root.GetName] has more development than [From.GetName]"
+
+  emperor_invite_into_empire_title: "Extend Imperial Protection"
+  emperor_invite_into_empire_tooltip: "This allows [From.GetName] to become a prince of the §YHoly Roman Empire§!."
+  emperor_invite_into_empire_desc: "Are you sure you want to invite [From.GetName] into the Empire?\nThis allows [From.GetName] to become a prince of the §YHoly Roman Empire§!.\nWe will gain §G+1.00§! §YImperial Authority§!."
+
   emperor_force_release_nations_title: "Release Nations"
   emperor_force_release_nations_tooltip: "This forces [From.GetName] to release all possible nations, starting from smallest to biggest if possible, otherwise randomly."
   emperor_force_release_nations_desc: "Are you sure you want to force [From.GetName] to release all possible nations?\nThis forces the [From.GetName] to release all possible nations, starting from smallest to biggest if possible, otherwise randomly.\nWe will lose §R-25.00§! §YImperial Authority§!, and [From.GetName] will lose §R-75.00§! opinion of us."
-  target_has_releasable_nations_tooltip: "[From.GetName] has releasable nations"
-  emperor_has_more_dev_than_target_tooltip: "[Root.GetName] has more development than [From.GetName]"
+
+  emperor_land_hre_prince_title: "Land HRE Prince"
+  emperor_land_hre_prince_tooltip: "This allows [From.GetName] to become a direct subject of [Root.GetName]."
+  emperor_land_hre_prince_desc: "Are you sure you want to land [From.GetName] as an imperial prince?\nThis allows [From.GetName] to become a direct subject of [Root.GetName].\n[From.GetName] will stop being our §YPersonal Union§! and become a §YVassal§! in the HRE instead.\nWe will gain §G+1.00§! §YImperial Authority§!."
+
+  emperor_release_subject_into_empire_title: "Release Subject into Empire"
+  emperor_release_subject_into_empire_tooltip: "This allows [From.GetName] to become a more autonomous imperial prince."
+  emperor_release_subject_into_empire_desc: "Are you sure you want to release [From.GetName] into the Empire?\nThis allows [From.GetName] to become a more autonomous imperial prince, instead of the direct subject of [Root.GetName].\nWe will gain §G+1.00§! §YImperial Authority§!."
 
   # opinion modifiers  
 
   forced_release_nations: "Forced us to release nations"
 
   # events
-
-  vassal_petitioning_emperor.2.title: "Vassal Petitioning Emperor"
-  vassal_petitioning_emperor.2.desc: "Our vassal [vassal_petitioning_emperor_target.GetName] is petitioning the Emperor to join the Holy Roman Empire. They claim that they are a rightful member of the Empire and that they should be granted the privileges of an Imperial State. Should we allow them to join the Empire?"
-  vassal_petitioning_emperor.2.a: "Welcome!"
-  vassal_petitioning_emperor.2.b: "Not yet"
+ 
+  subject_petitioning_emperor.2.title: "Subject Petitioning Emperor"
+  subject_petitioning_emperor.2.desc: "Our subject [subject_petitioning_emperor_target.GetName] is petitioning the Emperor to join the Holy Roman Empire. They claim that they are a rightful member of the Empire and that they should be granted the privileges of an Imperial State. Should we allow them to join the Empire?"
+  subject_petitioning_emperor.2.a: "Welcome!"
+  subject_petitioning_emperor.2.b: "Not yet"
 
   hre_pu_event.1.title: "The Eastern Empire"
   hre_pu_event.1.desc: "The Eastern Empire has been in a state of decline for centuries, and the time has come for the Holy Roman Empire to take control of the region. The Imperial Parliament has convened in a Diet to proclaim the Eastern Empire to be a part of the Holy Roman Empire. The Emperor is given broad authority to enforce Imperial control over the region."

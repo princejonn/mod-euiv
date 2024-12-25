@@ -92,7 +92,8 @@ lubeck_missions_1 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.5
-			}			#flavor_hsa.5
+			}
+			#flavor_hsa.5
 			custom_tooltip = hsa_every_league_member_wealth_tt
 			hidden_effect = {
 				every_country = {
@@ -230,7 +231,8 @@ lubeck_missions_1 = {
 			else = {
 				country_event = {
 					id = flavor_hsa.6
-				}				#flavor_hsa.6
+				}
+				#flavor_hsa.6
 			}
 			custom_tooltip = general_tooltip_dynamic_reward
 		}
@@ -274,7 +276,8 @@ lubeck_missions_1 = {
 				}
 				country_event = {
 					id = flavor_hsa.7
-				}				#flavor_hsa.7
+				}
+				#flavor_hsa.7
 			}
 			else = {
 				23 = {
@@ -550,7 +553,8 @@ lubeck_missions_2 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.8
-			}			#flavor_hsa.8
+			}
+			#flavor_hsa.8
 			east_prussia_area = {
 				limit = {
 					NOT = {
@@ -604,7 +608,8 @@ lubeck_missions_2 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.9
-			}			#flavor_hsa.9
+			}
+			#flavor_hsa.9
 		}
 	}
 	hsa_royal_prussia = {
@@ -1359,7 +1364,8 @@ lubeck_missions_3 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.10
-			}			#flavor_hsa.10
+			}
+			#flavor_hsa.10
 			45 = {
 				add_province_modifier = {
 					name = hsa_expand_the_hansehalle_modifier
@@ -1389,7 +1395,8 @@ lubeck_missions_3 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.11
-			}			#flavor_hsa.11
+			}
+			#flavor_hsa.11
 		}
 	}
 	hsa_new_system_trade = {
@@ -1421,7 +1428,8 @@ lubeck_missions_3 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.12
-			}			#flavor_hsa.12
+			}
+			#flavor_hsa.12
 		}
 	}
 	hsa_queen_of_the_hansa = {
@@ -1507,7 +1515,8 @@ lubeck_missions_3 = {
 			custom_tooltip = hsa_based_on_the_development_of_our_capital_tt
 			country_event = {
 				id = flavor_hsa.26
-			}			#flavor_hsa.26
+			}
+			#flavor_hsa.26
 			custom_tooltip = hsa_diplomatic_upkeep_boost_tt
 			hidden_effect = {
 				if = {
@@ -2192,7 +2201,7 @@ lubeck_missions_5 = {
 			add_casus_belli = {
 				target = DTT
 				type = cb_vassalize_mission
-				months = 180
+				months = 600
 			}
 			holstein_area = {
 				limit = {
@@ -2467,7 +2476,8 @@ lubeck_missions_5 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.13
-			}			#flavor_hsa.13
+			}
+			#flavor_hsa.13
 		}
 	}
 	hsa_marine_pilots = {
@@ -2542,7 +2552,8 @@ lubeck_missions_5 = {
 		effect = {
 			country_event = {
 				id = flavor_hsa.14
-			}			#flavor_hsa.14
+			}
+			#flavor_hsa.14
 		}
 	}
 }

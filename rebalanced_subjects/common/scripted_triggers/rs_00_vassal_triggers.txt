@@ -1,8 +1,0 @@
-# ROOT = country
-can_incorporate_subject = {
-	has_country_flag = debate_subject_incorporation_flag
-}
-
-can_consolidate_subject = {
-	has_country_flag = debate_subject_consolidation_flag
-}

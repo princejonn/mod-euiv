@@ -1,0 +1,72 @@
+﻿l_english:
+
+  # message types
+
+  FIEFDOMTOOLARGE_TITLE: "Fiefdom too Large"
+  FIEFDOMTOOLARGE_SETUP: "When our subject Fiefdom grows too large and loses its bonuses."
+  FIEFDOMTOOLARGE_HEADER: "Our Governor Reports"
+  FIEFDOMTOOLARGE_1: "Inefficient Fiefdom"
+  FIEFDOMTOOLARGE_2: "$COUNTRY$ has grown too large"
+  FIEFDOMTOOLARGE_3: "to be efficiently administrated as a Fiefdom"
+  FIEFDOMTOOLARGE_4: "They will lose their special Fiefdom bonuses as a result."
+  FIEFDOMTOOLARGE_LOG: "$COUNTRY$ grew too large to and lost its Fiefdom bonuses."
+  FIEFDOMTOOLARGE_BTN1: "OK"
+  FIEFDOMTOOLARGE_BTN2: "OK"
+  FIEFDOMTOOLARGE_BTN3: "Go to"
+
+  FIEFDOMTOOLARGEUS_TITLE: "Fiefdom too Large"
+  FIEFDOMTOOLARGEUS_SETUP: "When we as a Fiefdom grows too large and loses its bonuses."
+  FIEFDOMTOOLARGEUS_HEADER: "Our Governor Reports"
+  FIEFDOMTOOLARGEUS_1: "Inefficient Fiefdom"
+  FIEFDOMTOOLARGEUS_2: "$MONARCHTITLE$, our nation has grown too large"
+  FIEFDOMTOOLARGEUS_3: "to be efficiently administrated as a Fiefdom"
+  FIEFDOMTOOLARGEUS_4: "We will lose our special Fiefdom bonuses as a result."
+  FIEFDOMTOOLARGEUS_LOG: "We grew too large to and lost our Fiefdom bonuses."
+  FIEFDOMTOOLARGEUS_BTN1: "OK"
+  FIEFDOMTOOLARGEUS_BTN2: "OK"
+  FIEFDOMTOOLARGEUS_BTN3: "Go to"
+
+  # government names
+
+  FIEFDOM: "Fiefdom"
+  FIEFDOM_MALE_LEADER: "Count"
+  FIEFDOM_FEMALE_LEADER: "Countess"
+  FIEFDOM_CONSORT_MALE: "Count-Consort"
+  FIEFDOM_CONSORT_FEMALE: "Countess"
+  FIEFDOM_MALE_HEIR: "Baron"
+  FIEFDOM_FEMALE_HEIR: "Baroness"
+
+  # new diplomatic actions
+
+  designate_fiefdom_title: "Designate Fiefdom"
+  designate_fiefdom_tooltip: "Convert [From.GetName] to a Fiefdom. A territory granted by an overlord to an Earl in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed."
+  designate_fiefdom_desc: "Convert [From.GetName] to a Fiefdom. A territory granted by an overlord to an Earl in exchange for loyalty, military service, and governance on behalf of the overlord. Fiefdoms cannot be annexed. Fiefdoms cannot be incorporated and will reset incorporation status. You can only have 5 Fiefdoms.\n\nIf the Fiefdom has only one province, you will get §G+50§! §YGovernment Capacity§!.\nIf the fiefdom has 15 development, you will get §G+1§! §YDiplomatic Reputation§!.\nIf the Fiefdom is located in a trade node, you will get §G+5%§! §YGlobal Trade Power§!\n\nDesignating [From.GetName] to a Fiefdom §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Fiefdom once revoked."
+
+  revoke_fiefdom_title: "Revoke Fiefdom"
+  revoke_fiefdom_tooltip: "Convert [From.GetName] to a Vassal."
+  revoke_fiefdom_desc: "Convert [From.GetName] to a Vassal."
+
+  # opinion modifiers
+
+  is_fiefdom: "Fiefdom"
+  broke_fiefdom: "They revoked our §YFiefdom§! status"
+
+  # static modifiers
+
+  has_fiefdom_subject: "Has Fiefdom"
+  has_fiefdom_num_cities_bonus: "Fiefdom City Bonus"
+  has_fiefdom_province_dev_bonus: "Fiefdom Development Bonus"
+  has_fiefdom_province_trade_bonus: "Fiefdom Trade Bonus"
+
+  is_fiefdom_nation: "Is a Fiefdom"
+  is_fiefdom_num_cities_bonus: "Fiefdom City Bonus"
+  is_fiefdom_province_dev_bonus: "Fiefdom Development Bonus"
+  is_fiefdom_province_trade_bonus: "Fiefdom Trade Bonus"
+
+  # subject types
+
+  fiefdom: "Fiefdom"
+  fiefdom_title: "Fiefdom"
+  fiefdom_title_plural: "Fiefdoms"
+  fiefdom_is_our: "§Y$NAME$§! is our Fiefdom."
+  fiefdom_long_desc: "Fiefdoms must follow their overlord to war, cannot make certain diplomatic actions, and will pay a fraction of their income to their overlord. Depending on location and size, they increase the overlord's §YGoverning Capacity§!, §YDiplomatic Reputation§!, and §YGlobal Trade Power§!."

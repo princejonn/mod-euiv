@@ -29,7 +29,7 @@ country_decisions = {
 			NOT = {
 				exists = JAP
 			}
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			num_of_cities = 25
@@ -93,7 +93,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			if = {
 				limit = {
@@ -133,7 +134,7 @@ country_decisions = {
 			NOT = {
 				exists = JAP
 			}
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			owns = 1020
 			owns = 1028
 			all_country = {
@@ -185,7 +186,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			if = {
 				limit = {
@@ -234,7 +236,7 @@ country_decisions = {
 			NOT = {
 				exists = JAP
 			}
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			owns = 1020
 			owns = 1028
 			all_country = {
@@ -276,7 +278,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			if = {
 				limit = {
@@ -305,7 +308,7 @@ country_decisions = {
 			has_country_modifier = western_trade
 		}
 		allow = {
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			stability = 2
 			legitimacy = 75
 			adm_power = 200

@@ -1,0 +1,24 @@
+cb_create_sister_republic = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 120
+	prerequisites_self = {
+		government = republic
+	}
+	prerequisites = {
+		FROM = {
+			is_subject = no
+		}
+	}
+	war_goal = take_capital_sister_republic
+}
+
+cb_restore_sister_republic = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 300
+	prerequisites_self = {
+		government = republic
+	}
+	war_goal = take_capital_sister_republic
+}

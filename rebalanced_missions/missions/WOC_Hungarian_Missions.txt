@@ -229,7 +229,7 @@ woc_hun_first_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = SER
 					}
 				}
@@ -239,7 +239,7 @@ woc_hun_first_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = SER
 					}
 				}
@@ -314,7 +314,7 @@ woc_hun_first_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = BOS
 					}
 				}
@@ -324,7 +324,7 @@ woc_hun_first_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = BOS
 					}
 				}
@@ -376,7 +376,7 @@ woc_hun_first_branch = {
 					}
 					add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = BOS
 					}
 				}
@@ -402,7 +402,7 @@ woc_hun_first_branch = {
 					}
 					add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = SER
 					}
 				}
@@ -844,7 +844,7 @@ woc_hun_first_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = NAP
 					}
 				}
@@ -854,7 +854,7 @@ woc_hun_first_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = NAP
 					}
 				}
@@ -870,7 +870,7 @@ woc_hun_first_branch = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = NAP
 					}
 				}
@@ -1879,7 +1879,7 @@ woc_hun_third_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = POL
 						}
 					}
@@ -1889,7 +1889,7 @@ woc_hun_third_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = POL
 						}
 					}
@@ -1911,7 +1911,7 @@ woc_hun_third_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = PLC
 						}
 					}
@@ -1921,7 +1921,7 @@ woc_hun_third_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = PLC
 						}
 					}
@@ -2044,7 +2044,7 @@ woc_hun_third_branch = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = PLC
 					}
 				}
@@ -2058,7 +2058,7 @@ woc_hun_third_branch = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = POL
 					}
 				}
@@ -2425,7 +2425,7 @@ woc_hun_third_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = BOH
 					}
 				}
@@ -2435,7 +2435,7 @@ woc_hun_third_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = BOH
 					}
 				}
@@ -2520,7 +2520,7 @@ woc_hun_third_branch = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = BOH
 					}
 				}
@@ -3579,7 +3579,7 @@ woc_hun_fifth_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = HAB
 					}
 				}
@@ -3589,7 +3589,7 @@ woc_hun_fifth_branch = {
 				tooltip = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = HAB
 					}
 				}
@@ -3671,7 +3671,7 @@ woc_hun_fifth_branch = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = HAB
 					}
 				}

@@ -1,0 +1,15 @@
+customised_gold_modifier_easier_1 = {
+	gold_depletion_chance_modifier = -0.25
+}
+
+customised_gold_modifier_easier_2 = {
+	gold_depletion_chance_modifier = -0.5
+}
+
+customised_gold_modifier_easier_3 = {
+	gold_depletion_chance_modifier = -0.75
+}
+
+customised_gold_modifier_easier_4 = {
+	gold_depletion_chance_modifier = -1
+}

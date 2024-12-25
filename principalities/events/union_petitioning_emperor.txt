@@ -1,0 +1,63 @@
+namespace = union_petitioning_emperor
+country_event = {
+	id = union_petitioning_emperor.1
+	hidden = yes
+	trigger = {
+		ai = yes
+		is_lesser_in_union = yes
+		overlord = {
+			can_be_principality_overlord = yes
+		}
+		NOT = {
+			total_development = 150
+		}
+		NOT = {
+			liberty_desire = 50
+		}
+		has_opinion = {
+			who = overlord
+			value = 100
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	immediate = {
+		save_event_target_as = personal_union_petitioning_target
+		overlord = {
+			country_event = {
+				id = union_petitioning_emperor.2
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = union_petitioning_emperor.2
+	title = union_petitioning_emperor.2.title
+	desc = union_petitioning_emperor.2.desc
+	picture = DIET_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = union_petitioning_emperor.2.a
+		ai_chance = {
+			factor = 25
+		}
+		create_subject = {
+			subject_type = principality
+			subject = event_target:personal_union_petitioning_target
+			keep_liberty_desire = yes
+		}
+	}
+	option = {
+		name = union_petitioning_emperor.2.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

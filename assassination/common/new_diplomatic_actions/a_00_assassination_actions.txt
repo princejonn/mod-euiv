@@ -3,60 +3,34 @@ assassinate_ruler = {
 	require_acceptance = no
 	is_visible = {
 		ai = no
+		government = monarchy
 		FROM = {
+			government = monarchy
 			ai = yes
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
-			value = 80
+			value = 95
 		}
-		dip_power = 125
-		treasury = 250
+		dip_power = 250
+		treasury = 500
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -80
+			value = -95
 		}
-		add_dip_power = -125
-		add_treasury = -250
-		random_list = {
-			95 = {
-				FROM = {
-					kill_ruler = yes
-					add_stability = -1
-				}
-				random = {
-					chance = 5
-					FROM = {
-						add_opinion = {
-							who = ROOT
-							modifier = ruler_assassination
-						}
-						set_ai_attitude = {
-							attitude = attitude_hostile
-							who = ROOT
-							locked = no
-						}
-						add_casus_belli = {
-							target = ROOT
-							type = cb_humiliate
-							months = 240
-						}
-					}
-				}
-			}
-			5 = {
-				FROM = {
-					add_opinion = {
-						who = ROOT
-						modifier = ruler_assassination_attempt
-					}
-				}
-			}
+		add_dip_power = -250
+		add_treasury = -500
+		FROM = {
+			kill_ruler = yes
+			add_stability = -1
 		}
 	}
 	on_decline = {
@@ -71,65 +45,37 @@ assassinate_heir = {
 	require_acceptance = no
 	is_visible = {
 		ai = no
+		government = monarchy
 		FROM = {
 			ai = yes
-		}
-		FROM = {
+			government = monarchy
 			has_heir = yes
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
-			value = 80
+			value = 95
 		}
-		dip_power = 125
-		treasury = 250
+		dip_power = 250
+		treasury = 500
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -80
+			value = -95
 		}
-		add_dip_power = -125
-		add_treasury = -250
-		random_list = {
-			95 = {
-				FROM = {
-					kill_heir = {
-						allow_new_heir = no
-					}
-					add_stability = -1
-				}
-				random = {
-					chance = 5
-					FROM = {
-						add_opinion = {
-							who = ROOT
-							modifier = heir_assassination
-						}
-						set_ai_attitude = {
-							attitude = attitude_hostile
-							who = ROOT
-							locked = no
-						}
-						add_casus_belli = {
-							target = ROOT
-							type = cb_humiliate
-							months = 240
-						}
-					}
-				}
+		add_dip_power = -250
+		add_treasury = -500
+		FROM = {
+			kill_heir = {
+				allow_new_heir = no
 			}
-			5 = {
-				FROM = {
-					add_opinion = {
-						who = ROOT
-						modifier = heir_assassination_attempt
-					}
-				}
-			}
+			add_stability = -1
 		}
 	}
 	on_decline = {
@@ -147,52 +93,29 @@ assassinate_general = {
 		FROM = {
 			ai = yes
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
-			value = 80
+			value = 50
 		}
-		dip_power = 75
-		treasury = 150
+		dip_power = 125
+		treasury = 250
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -80
+			value = -50
 		}
-		add_dip_power = -75
-		add_treasury = -150
-		random_list = {
-			95 = {
-				FROM = {
-					kill_leader = {
-						type = general
-					}
-				}
-				random = {
-					chance = 5
-					FROM = {
-						add_opinion = {
-							who = ROOT
-							modifier = general_assassination
-						}
-						set_ai_attitude = {
-							attitude = attitude_outraged
-							who = ROOT
-							locked = no
-						}
-					}
-				}
-			}
-			5 = {
-				FROM = {
-					add_opinion = {
-						who = ROOT
-						modifier = general_assassination_attempt
-					}
-				}
+		add_dip_power = -125
+		add_treasury = -250
+		FROM = {
+			kill_leader = {
+				type = general
 			}
 		}
 	}
@@ -204,7 +127,7 @@ assassinate_general = {
 }
 
 forge_claim_on_throne = {
-	category = covert
+	category = dynasty
 	require_acceptance = no
 	is_visible = {
 		ai = no
@@ -212,29 +135,25 @@ forge_claim_on_throne = {
 		FROM = {
 			government = monarchy
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
-			value = 80
+			value = 95
 		}
-		dip_power = 125
-		treasury = 250
+		dip_power = 250
+		heir_claim = 50
+		marriage_with = FROM
+		treasury = 500
 		FROM = {
 			dynasty = ROOT
 		}
 		custom_trigger_tooltip = {
-			tooltip = forge_claim_marriage_tooltip
-			OR = {
-				marriage_with = FROM
-				FROM = {
-					marriage_with = ROOT
-				}
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = forge_claim_heir_tooltip
+			tooltip = WEAK_HEIR_CLAIM_TT
 			FROM = {
 				OR = {
 					has_heir = no
@@ -248,7 +167,7 @@ forge_claim_on_throne = {
 			}
 		}
 		custom_trigger_tooltip = {
-			tooltip = forge_claim_prestige_tooltip
+			tooltip = ROOT_HAS_MORE_PRESTIGE_THAN_FROM_TT
 			AND = {
 				prestige = FROM
 				NOT = {
@@ -260,16 +179,107 @@ forge_claim_on_throne = {
 		}
 	}
 	on_accept = {
-		add_dip_power = -125
-		add_treasury = -250
+		add_dip_power = -250
+		add_treasury = -500
+		add_prestige = -25
 		add_spy_network_in = {
 			who = FROM
-			value = -80
+			value = -95
 		}
 		add_casus_belli = {
 			type = cb_restore_personal_union
 			target = FROM
-			months = 240
+			months = 300
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+slander_heir_claim = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		government = monarchy
+		FROM = {
+			government = monarchy
+		}
+		full_idea_group = spy_ideas
+	}
+	is_allowed = {
+		employed_advisor = {
+			type = spymaster
+		}
+		has_spy_network_in = {
+			who = FROM
+			value = 75
+		}
+		dip_power = 75
+		treasury = 75
+		FROM = {
+			heir_claim = 10
+		}
+	}
+	on_accept = {
+		add_dip_power = -75
+		add_treasury = -500
+		add_spy_network_in = {
+			who = FROM
+			value = -75
+		}
+		if = {
+			limit = {
+				FROM = {
+					heir_claim = 50
+				}
+			}
+			FROM = {
+				add_heir_claim = -50
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					heir_claim = 40
+				}
+			}
+			FROM = {
+				add_heir_claim = -40
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					heir_claim = 30
+				}
+			}
+			FROM = {
+				add_heir_claim = -30
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					heir_claim = 20
+				}
+			}
+			FROM = {
+				add_heir_claim = -20
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					heir_claim = 10
+				}
+			}
+			FROM = {
+				add_heir_claim = -10
+			}
 		}
 	}
 	on_decline = {

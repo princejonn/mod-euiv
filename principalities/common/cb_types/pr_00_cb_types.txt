@@ -1,0 +1,24 @@
+cb_create_principality = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 120
+	prerequisites_self = {
+		government = monarchy
+	}
+	prerequisites = {
+		FROM = {
+			is_subject = no
+		}
+	}
+	war_goal = take_capital_principality
+}
+
+cb_restore_principality = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 300
+	prerequisites_self = {
+		government = monarchy
+	}
+	war_goal = take_capital_principality
+}

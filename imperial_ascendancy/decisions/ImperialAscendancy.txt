@@ -62,6 +62,12 @@ country_decisions = {
 		allow = {
 			always = yes
 		}
+		provinces_to_highlight = {
+			owner = {
+				is_hre_guarantee_member = yes
+				guaranteed_by = emperor
+			}
+		}
 		effect = {
 			custom_tooltip = emperor_guarantees_all_revoke_tooltip
 			hidden_effect = {
@@ -72,10 +78,6 @@ country_decisions = {
 					}
 					emperor = {
 						remove_guarantee = PREV
-					}
-				}
-				every_country = {
-					limit = {
 					}
 				}
 			}

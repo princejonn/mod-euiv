@@ -1,0 +1,40 @@
+namespace = clear_rivals
+# Clear rivals for France
+country_event = {
+	id = clear_rivals.1
+	trigger = {
+		ai = no
+		tag = FRA
+		any_rival_country = {
+			ai = yes
+			OR = {
+				tag = BUR
+				tag = CAS
+			}
+		}
+	}
+	hidden = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			random_rival_country = {
+				limit = {
+					ai = yes
+					tag = BUR
+				}
+				remove_rival = FRA
+			}
+			random_rival_country = {
+				limit = {
+					ai = yes
+					tag = CAS
+				}
+				remove_rival = FRA
+			}
+		}
+	}
+	option = {
+	}
+}

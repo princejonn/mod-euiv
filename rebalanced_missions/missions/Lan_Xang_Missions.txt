@@ -32,7 +32,7 @@ lxa_1 = {
 				add_casus_belli = {
 					target = DAI
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -116,7 +116,7 @@ lxa_1 = {
 				add_casus_belli = {
 					target = AYU
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -277,7 +277,7 @@ lxa_2 = {
 				add_casus_belli = {
 					target = KHM
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {

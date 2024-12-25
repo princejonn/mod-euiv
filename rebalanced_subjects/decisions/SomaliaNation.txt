@@ -12,7 +12,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {
@@ -68,7 +68,7 @@ country_decisions = {
 				exists = SOM
 			}
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			mogadishu_area = {
 				is_core = ROOT
@@ -141,7 +141,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_somalia_flag
 			create_colony_mission_reward = {

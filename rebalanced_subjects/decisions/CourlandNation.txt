@@ -12,7 +12,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			OR = {
@@ -134,7 +134,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {

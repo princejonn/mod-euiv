@@ -1,0 +1,88 @@
+namespace = customise_difficulty_event
+country_event = {
+	id = cheat_event.101
+	title = cheat_event.101.title
+	desc = cheat_event.101.desc
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = cheat_event.101.a
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_unit_construction = {
+				type = heavy_ship
+				amount = 5
+				speed = 0.05
+				cost = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cheat_event.102
+	title = cheat_event.102.title
+	desc = cheat_event.102.desc
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = cheat_event.102.a
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.05
+				cost = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cheat_event.103
+	title = cheat_event.103.title
+	desc = cheat_event.103.desc
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = cheat_event.103.a
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.05
+				cost = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cheat_event.104
+	title = cheat_event.104.title
+	desc = cheat_event.104.desc
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = cheat_event.104.a
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_unit_construction = {
+				type = transport
+				amount = 5
+				speed = 0.05
+				cost = 0
+			}
+		}
+	}
+}

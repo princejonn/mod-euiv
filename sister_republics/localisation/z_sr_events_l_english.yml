@@ -1,0 +1,12 @@
+﻿l_english:
+  join_sister_republic_war.2.title: "Sister Republic calls for Aid"
+  join_sister_republic_war.2.desc: "Our Sister Republic [sister_republic_aid_target.GetName] is in dire need of help in their war. They have called for aid!"
+  join_sister_republic_war.2.a: "And [Root.GetName] will answer!"
+  join_sister_republic_war.2.b: "A few ducats should suffice"
+  join_sister_republic_war.2.c: "We shall send our men to help"
+  join_sister_republic_war.2.d: "What have they done for us?"
+
+  union_petitioning_republic.2.title: "Union Petitioning for Sisterhood"
+  union_petitioning_republic.2.desc: "The people of [personal_union_petitioning_target.GetName] have petitioned to become our Sister Republic. A Sister Republic is an autonomous vassal state, aligned politically and ideologically with its protector, while maintaining local governance in support of shared revolutionary or republican principles.\n\nShould we accept this change in status?"
+  union_petitioning_republic.2.a: "Yes, they shall be our Sister Republic"
+  union_petitioning_republic.2.b: "No, they shall remain a Personal Union"

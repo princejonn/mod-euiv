@@ -307,7 +307,8 @@ mnd_siam_2 = {
 					}
 					country_event = {
 						id = ideagroups.1
-					}					#Swap Ideas
+					}
+					#Swap Ideas
 				}
 			}
 			set_country_flag = siam_royal_absolutism
@@ -387,7 +388,7 @@ mnd_siam_3 = {
 				add_casus_belli = {
 					target = KHM
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -523,7 +524,7 @@ mnd_siam_3 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 120
+						months = 600
 					}
 				}
 			}
@@ -634,7 +635,7 @@ mnd_siam_3 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 120
+						months = 600
 					}
 				}
 			}
@@ -871,7 +872,7 @@ mnd_siam_4 = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = LNA
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -929,7 +930,7 @@ mnd_siam_4 = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = PEG
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -1162,7 +1163,7 @@ mnd_siam_5 = {
 				add_casus_belli = {
 					target = MLC
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {

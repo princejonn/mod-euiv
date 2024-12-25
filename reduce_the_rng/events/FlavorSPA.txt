@@ -143,8 +143,7 @@ country_event = {
 		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
 		ai_chance = {
-			## Modified to be more likely to happen
-			factor = 99
+			factor = 90
 		}
 		if = {
 			limit = {
@@ -212,7 +211,7 @@ country_event = {
 		# No let us marry a local talent instead
 		name = "flavor_spa.EVTOPTB3716"
 		ai_chance = {
-			factor = 1
+			factor = 10
 		}
 		add_stability_or_adm_power = yes
 		if = {

@@ -1,0 +1,19 @@
+customised_building_modifier_easier_1 = {
+	build_time = -0.1
+	great_project_upgrade_time = -0.1
+}
+
+customised_building_modifier_easier_2 = {
+	build_time = -0.3
+	great_project_upgrade_time = -0.3
+}
+
+customised_building_modifier_easier_3 = {
+	build_time = -0.5
+	great_project_upgrade_time = -0.5
+}
+
+customised_building_modifier_easier_4 = {
+	build_time = -0.8
+	great_project_upgrade_time = -0.8
+}

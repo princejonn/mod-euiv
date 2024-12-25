@@ -1,0 +1,13 @@
+﻿l_english:
+
+  # incorporation
+
+  debate_subject_incorporation_title: "Debate the Incorporation of Subjects"
+  debate_subject_incorporation_desc: "The subject territories have been under our control for a long time, and it is time to decide whether to incorporate them into our country or not. The decision will have a significant impact on our country's economy and military capabilities, but it may also lead to unrest and rebellion in the subject territories."
+  debate_subject_incorporation_tooltip: "Enacting this decision will enable you to §YIncorporate§! your §YVassals§! and §YPersonal Unions§! further into your adminsitration. You will find it in the §YDiplomacy§! view under the §YInfluence§! tab."
+
+  # consolidation
+
+  debate_subject_consolidation_title: "Debate the Consolidation of Subjects"
+  debate_subject_consolidation_desc: "The subject territories have been under our control for a long time, and it is time to decide whether to consolidate them into a single entity or not. The decision will have a significant impact on our country's economy and military capabilities, but it may also lead to unrest and rebellion in the subject territories."
+  debate_subject_consolidation_tooltip: "Enacting this decision will make your §YIncorporated§! subjects cost no §YGoverning Capacity§! and will allow you to §YIntegrate§! them further into your adminsitration."

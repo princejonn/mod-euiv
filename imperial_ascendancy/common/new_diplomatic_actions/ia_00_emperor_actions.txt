@@ -1,42 +1,104 @@
+emperor_invite_into_empire = {
+	category = emperor
+	require_acceptance = no
+	is_visible = {
+		hre_reform_passed = emperor_reichsstabilitaet
+		NOT = {
+			hre_reform_passed = emperor_privilegia_de_non_appelando
+		}
+		ai = no
+		is_emperor = yes
+		is_part_of_hre = yes
+		FROM = {
+			ai = yes
+			is_part_of_hre = no
+		}
+	}
+	is_allowed = {
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		OR = {
+			any_neighbor_country = {
+				is_part_of_hre = yes
+			}
+			capital_scope = {
+				is_island = yes
+			}
+		}
+		FROM = {
+			NOT = {
+				total_development = 300
+			}
+		}
+		FROM = {
+			alliance_with = ROOT
+		}
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 50
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = emperor_has_more_dev_than_target_tooltip
+			total_development = FROM
+			NOT = {
+				FROM = {
+					total_development = ROOT
+				}
+			}
+		}
+	}
+	on_accept = {
+		add_imperial_influence = 1
+		set_in_empire = yes
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
 emperor_force_release_nations = {
 	category = emperor
 	require_acceptance = no
 	is_visible = {
+		hre_reform_passed = emperor_reichsstabilitaet
 		ai = no
 		is_emperor = yes
 		is_part_of_hre = yes
 		FROM = {
 			ai = yes
 			is_part_of_hre = yes
-		}
-	}
-	is_allowed = {
-		imperial_influence = 25
-		hre_reform_passed = emperor_reichsstabilitaet
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 150
+			## Targets has releasable nations
+			num_of_cities = 2
+			any_owned_province = {
+				is_part_of_hre = yes
+				any_core_country = {
+					exists = no
+				}
 			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = target_has_releasable_nations_tooltip
-			FROM = {
-				num_of_cities = 2
-				any_owned_province = {
-					is_part_of_hre = yes
+			any_owned_province = {
+				is_part_of_hre = yes
+				NOT = {
 					any_core_country = {
 						exists = no
 					}
 				}
-				any_owned_province = {
-					is_part_of_hre = yes
-					NOT = {
-						any_core_country = {
-							exists = no
-						}
-					}
-				}
+			}
+		}
+	}
+	is_allowed = {
+		imperial_influence = 25
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 150
 			}
 		}
 		custom_trigger_tooltip = {
@@ -57,6 +119,129 @@ emperor_force_release_nations = {
 				who = ROOT
 				modifier = forced_release_nations
 			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+emperor_land_hre_prince = {
+	category = emperor
+	require_acceptance = no
+	is_visible = {
+		hre_reform_passed = emperor_privilegia_de_non_appelando
+		ai = no
+		is_emperor = yes
+		is_part_of_hre = yes
+		FROM = {
+			ai = yes
+			is_part_of_hre = yes
+			is_subject_of = ROOT
+			is_subject_of_type = personal_union
+		}
+	}
+	is_allowed = {
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 150
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			every_subject_country = {
+				limit = {
+					OR = {
+						is_subject_of_type = march
+						is_subject_of_type = vassal
+					}
+				}
+				ROOT = {
+					create_subject = {
+						subject_type = vassal
+						subject = PREV
+					}
+				}
+			}
+		}
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			set_government_rank = 1
+			add_government_reform = feudalism_reform
+			capital_scope = {
+				add_unrest = 2
+			}
+			add_liberty_desire = 10
+			add_stability = -1
+			define_ruler = {
+				name = "Alexander"
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				culture = ROOT
+				dynasty = ROOT
+				religion = ROOT
+				male = yes
+				min_age = 30
+				max_age = 50
+			}
+			define_heir = {
+				max_random_adm = 6
+				max_random_dip = 6
+				max_random_mil = 6
+				culture = ROOT
+				dynasty = ROOT
+				religion = ROOT
+				male = yes
+				age = 0
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+emperor_release_subject_into_empire = {
+	category = emperor
+	require_acceptance = no
+	is_visible = {
+		hre_reform_passed = emperor_perpetual_diet
+		NOT = {
+			hre_reform_passed = emperor_privilegia_de_non_appelando
+		}
+		ai = no
+		is_emperor = yes
+		is_part_of_hre = yes
+		FROM = {
+			ai = yes
+			is_part_of_hre = yes
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+	}
+	on_accept = {
+		add_imperial_influence = 1
+		FROM = {
+			grant_independence = yes
 		}
 	}
 	on_decline = {
