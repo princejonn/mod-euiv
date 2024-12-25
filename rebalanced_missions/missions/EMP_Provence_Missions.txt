@@ -58,7 +58,7 @@ provence_missions_1 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 1200
+					months = 6000
 					target = HUN
 				}
 			}
@@ -187,7 +187,7 @@ provence_missions_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 1200
+					months = 6000
 					target = NAP
 				}
 			}
@@ -314,7 +314,7 @@ provence_missions_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 1200
+					months = 6000
 					target = ARA
 				}
 			}

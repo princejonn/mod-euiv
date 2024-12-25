@@ -484,7 +484,7 @@ franconia_conquest_group_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = FRA
 				}
 			}
@@ -720,7 +720,7 @@ franconia_splendour_group_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = BRA
 				}
 			}
@@ -741,7 +741,7 @@ franconia_splendour_group_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = PRU
 				}
 			}

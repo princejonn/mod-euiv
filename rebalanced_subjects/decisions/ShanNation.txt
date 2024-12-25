@@ -12,7 +12,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {
@@ -59,7 +59,7 @@ country_decisions = {
 			owns_core_province = 2396			#Mong Kawng
 			owns_core_province = 2399			#Pagan
 			owns_core_province = 2400			#Hsipaw
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			is_at_war = no
 		}
@@ -94,7 +94,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_shan_flag
 		}

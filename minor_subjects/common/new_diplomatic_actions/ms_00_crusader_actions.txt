@@ -1,0 +1,179 @@
+designate_crusader_order = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		can_be_overlord = crusader_order
+		can_be_crusader_order_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		is_defender_of_faith = yes
+		is_at_war = no
+		NOT = {
+			crusader_order = 1
+		}
+		custom_trigger_tooltip = {
+			tooltip = TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP
+			OR = {
+				FROM = {
+					tag = KNI
+				}
+				KNI = {
+					exists = no
+				}
+				FROM = {
+					tag = TEU
+				}
+				TEU = {
+					exists = no
+				}
+				FROM = {
+					tag = LIV
+				}
+				LIV = {
+					exists = no
+				}
+				FROM = {
+					tag = ACH
+				}
+				ACH = {
+					exists = no
+				}
+			}
+		}
+		FROM = {
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = crusader_order
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		hidden_effect = {
+			FROM = {
+				change_government = theocracy
+				set_government_rank = 2
+				add_government_reform = crusading_kingdom_reform
+				add_government_reform = external_mission_reform
+				add_government_reform = education_of_the_missionaries_reform
+				add_government_reform = strengthen_clergy_reform
+				add_government_reform = organized_military_staff_reform
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				random_owned_province = {
+					limit = {
+						NOT = {
+							has_building = cathedral
+						}
+					}
+					add_building = cathedral
+				}
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
+				}
+				if = {
+					limit = {
+						OR = {
+							tag = KNI
+							tag = TEU
+							tag = LIV
+							tag = ACH
+						}
+					}
+					add_liberty_desire = -10
+				}
+				else_if = {
+					limit = {
+						KNI = {
+							exists = no
+						}
+					}
+					change_tag = KNI
+				}
+				else_if = {
+					limit = {
+						TEU = {
+							exists = no
+						}
+					}
+					change_tag = TEU
+				}
+				else_if = {
+					limit = {
+						LIV = {
+							exists = no
+						}
+					}
+					change_tag = LIV
+				}
+				else_if = {
+					limit = {
+						ACH = {
+							exists = no
+						}
+					}
+					change_tag = ACH
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_crusader_order = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = crusader_order
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_liberty_desire = 75
+			add_opinion = {
+				who = ROOT
+				modifier = broke_crusader_order
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				clr_country_flag = has_overriden_color_flag
+				restore_country_color = yes
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

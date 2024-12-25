@@ -1,0 +1,7 @@
+﻿l_english:
+  join_sister_republic_war.2.title: "Sister Republic calls for Aid"
+  join_sister_republic_war.2.desc: "Our Sister Republic [sister_republic_aid_target.GetName] is in dire need of help in their war. They have called for aid!"
+  join_sister_republic_war.2.a: "And [Root.GetName] will answer!"
+  join_sister_republic_war.2.b: "A few ducats should suffice"
+  join_sister_republic_war.2.c: "We shall send our men to help"
+  join_sister_republic_war.2.d: "What have they done for us?"

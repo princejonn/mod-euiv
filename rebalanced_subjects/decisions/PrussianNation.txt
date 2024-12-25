@@ -488,7 +488,7 @@ country_decisions = {
 						is_part_of_hre = no
 						is_elector = yes
 					}
-					is_free_or_union_vassal_tributary_trigger = yes
+					is_free_or_non_colonial_trigger = yes
 					NOT = {
 						government_rank = 2
 					}
@@ -588,7 +588,7 @@ country_decisions = {
 				exists = PRU
 			}
 			adm_tech = 10
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {

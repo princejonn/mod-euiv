@@ -3,56 +3,44 @@ country_event = {
 	id = burgundian_succession.1
 	fire_only_once = yes
 	trigger = {
+		is_year = 1457
 		tag = BUR
-		has_country_modifier = burgundian_succession_crisis
-		is_free_or_tributary_trigger = yes
-		government = monarchy
-		is_year = 1453
 		ai = yes
-		has_ruler = "Charles"
-		dynasty = "de Bourgogne"
 	}
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			is_year = 1463
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.25
 			is_year = 1473
 		}
 		modifier = {
-			factor = 0.05
-			OR = {
-				HAB = {
-					ai = no
-					is_subject = no
-					alliance_with = BUR
-					marriage_with = BUR
-				}
-			}
-		}
-		modifier = {
 			factor = 0.1
-			OR = {
-				CAS = {
-					ai = no
-					is_subject = no
-					alliance_with = BUR
+			any_country = {
+				ai = no
+				OR = {
+					has_country_flag = received_burgundian_marriage
 					marriage_with = BUR
 				}
-				ENG = {
-					ai = no
-					is_subject = no
-					alliance_with = BUR
-					marriage_with = BUR
-				}
-				SWE = {
-					ai = no
-					is_subject = no
-					alliance_with = BUR
-					marriage_with = BUR
+				is_free_or_tributary_trigger = yes
+				NOT = {
+					any_country = {
+						ai = yes
+						OR = {
+							has_country_flag = received_burgundian_marriage
+							marriage_with = BUR
+						}
+						is_free_or_tributary_trigger = yes
+						num_of_cities = prev
+						NOT = {
+							prev = {
+								num_of_cities = prev
+							}
+						}
+					}
 				}
 			}
 		}
@@ -63,11 +51,54 @@ country_event = {
 				allow_new_heir = no
 			}
 			kill_ruler = yes
+			country_event = {
+				id = incidents_bur_inheritance.0
+			}
+			country_event = {
+				id = incidents_bur_inheritance.1
+				days = 30
+			}
 		}
 	}
 	option = {
 		ai_chance = {
 			factor = 10
 		}
+	}
+}
+
+country_event = {
+	id = burgundian_succession.2
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		is_year = 1477
+		ai = no
+		senior_union_with = BUR
+		BUR = {
+			ai = yes
+			years_in_union_under = {
+				who = ROOT
+				years = 25
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.5
+			is_year = 1500
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			BUR = {
+				country_event = {
+					id = incidents_bur_inheritance.5
+				}
+			}
+		}
+	}
+	option = {
 	}
 }

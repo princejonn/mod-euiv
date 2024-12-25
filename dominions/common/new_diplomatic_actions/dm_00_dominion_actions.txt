@@ -1,0 +1,890 @@
+fabricate_dominion_cb = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		can_be_overlord = dominion
+		can_be_dominion_subject = yes
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		FROM = {
+			is_subject = no
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = {
+					total_development = 200
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_HAS_NOT_200_TOTAL_DEV
+				FROM = {
+					NOT = {
+						total_development = 200
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_spy_network_in = {
+						who = FROM
+						value = 30
+					}
+				}
+				NOT = {
+					full_idea_group = spy_ideas
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = REQUIRES_30_SPY_NETWORK_TT
+				has_spy_network_in = {
+					who = FROM
+					value = 30
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_spy_network_in = {
+						who = FROM
+						value = 24
+					}
+				}
+				full_idea_group = spy_ideas
+			}
+			custom_trigger_tooltip = {
+				tooltip = REQUIRES_24_SPY_NETWORK_TT
+				has_spy_network_in = {
+					who = FROM
+					value = 24
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_casus_belli = {
+					type = cb_create_dominion
+					target = FROM
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAS_DOMINION_CB_ALREADY_TT
+				NOT = {
+					has_casus_belli = {
+						type = cb_create_dominion
+						target = FROM
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_subject = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = CANNOT_DO_ACTION_TO_SUBJECTS_TT
+				FROM = {
+					is_subject = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_dominion_in_region = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAS_DOMINION_IN_REGION_TT
+				is_dominion_in_region = no
+			}
+		}
+	}
+	on_accept = {
+		if = {
+			limit = {
+				full_idea_group = spy_ideas
+			}
+			add_spy_network_in = {
+				who = FROM
+				value = -24
+			}
+		}
+		else = {
+			add_spy_network_in = {
+				who = FROM
+				value = -30
+			}
+		}
+		add_casus_belli = {
+			target = FROM
+			type = cb_create_dominion
+			months = 120
+		}
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+promote_vassal_to_dominion = {
+	category = influence
+	require_acceptance = yes
+	alert_index = 6
+	alert_tooltip = promote_vassal_to_dominion_alert_tooltip
+	is_visible = {
+		can_be_overlord = dominion
+		can_be_dominion_subject = yes
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_100_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_dominion_in_region = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAS_DOMINION_IN_REGION_TT
+				is_dominion_in_region = no
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = dominion
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		create_dominion = yes
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+	ai_acceptance = {
+		add_entry = {
+			name = DIPLO_OPPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.2
+			}
+		}
+		add_entry = {
+			name = AI_TRUST_TOWARDS_ROOT
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 50
+			}
+			#1 trust = +4 ai points
+			multiply_variable = {
+				which = ai_value
+				value = 0.4
+			}
+		}
+		add_entry = {
+			name = AI_DIPLOMATIC_REPUTATION
+			export_to_variable = {
+				variable_name = ai_value
+				value = trigger_value:diplomatic_reputation
+			}
+			#1 rep = 4
+			multiply_variable = {
+				which = ai_value
+				value = 4
+			}
+		}
+		add_entry = {
+			name = AI_LIBERTY_DESIRE
+			export_to_variable = {
+				variable_name = ai_value
+				value = liberty_desire
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -2
+			}
+		}
+	}
+}
+
+demote_dominion_to_vassal = {
+	category = influence
+	require_acceptance = yes
+	alert_index = 6
+	alert_tooltip = demote_dominion_to_vassal_alert_tooltip
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = dominion
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_150_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						owes_favors = {
+							who = ROOT
+							value = 20
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_OWE_20_FAVORS_TT
+				FROM = {
+					owes_favors = {
+						who = ROOT
+						value = 20
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = demoted_dominion
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+	ai_acceptance = {
+		add_entry = {
+			name = DIPLO_OPPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.2
+			}
+		}
+		add_entry = {
+			name = AI_TRUST_TOWARDS_ROOT
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 50
+			}
+			#1 trust = +4 ai points
+			multiply_variable = {
+				which = ai_value
+				value = 0.4
+			}
+		}
+		add_entry = {
+			name = AI_DIPLOMATIC_REPUTATION
+			export_to_variable = {
+				variable_name = ai_value
+				value = trigger_value:diplomatic_reputation
+			}
+			#1 rep = 4
+			multiply_variable = {
+				which = ai_value
+				value = 4
+			}
+		}
+		add_entry = {
+			name = AI_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			#4 dev = -1
+			multiply_variable = {
+				which = ai_value
+				value = -0.25
+			}
+		}
+		add_entry = {
+			name = AI_LIBERTY_DESIRE
+			export_to_variable = {
+				variable_name = ai_value
+				value = liberty_desire
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -2
+			}
+		}
+	}
+}
+
+rein_in_dominion = {
+	category = influence
+	require_acceptance = yes
+	alert_index = 5
+	alert_tooltip = rein_in_dominion_alert_tooltip
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = dominion
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_150_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						owes_favors = {
+							who = ROOT
+							value = 10
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_OWE_10_FAVORS_TT
+				FROM = {
+					owes_favors = {
+						who = ROOT
+						value = 10
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = core_dominion
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = yes
+	}
+	ai_acceptance = {
+		add_entry = {
+			name = DIPLO_OPPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.2
+			}
+		}
+		add_entry = {
+			name = AI_TRUST_TOWARDS_ROOT
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 50
+			}
+			#1 trust = +4 ai points
+			multiply_variable = {
+				which = ai_value
+				value = 0.4
+			}
+		}
+		add_entry = {
+			name = AI_DIPLOMATIC_REPUTATION
+			export_to_variable = {
+				variable_name = ai_value
+				value = trigger_value:diplomatic_reputation
+			}
+			#1 rep = 4
+			multiply_variable = {
+				which = ai_value
+				value = 4
+			}
+		}
+		add_entry = {
+			name = AI_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			#4 dev = -1
+			multiply_variable = {
+				which = ai_value
+				value = -0.25
+			}
+		}
+		add_entry = {
+			name = AI_LIBERTY_DESIRE
+			export_to_variable = {
+				variable_name = ai_value
+				value = liberty_desire
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -2
+			}
+		}
+	}
+}
+
+grant_autonomy_to_core_dominion = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = core_dominion
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_HAVE_POSITIVE_OPINION_TT
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						owes_favors = {
+							who = ROOT
+							value = 10
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_OWE_10_FAVORS_REIN_IN_TT
+				FROM = {
+					owes_favors = {
+						who = ROOT
+						value = 10
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = dominion
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+call_dominion_into_wars = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_any_dominion_type = yes
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_REBELLIOUS_TT
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_at_war = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = ROOT_IS_NOT_AT_WAR_TT
+				is_at_war = yes
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_at_war = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_IS_AT_WAR_TT
+				FROM = {
+					is_at_war = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						owes_favors = {
+							who = ROOT
+							value = 10
+						}
+					}
+				}
+				is_in_war = {
+					defender_leader = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_OWE_10_FAVORS_DEFENSIVE_WAR_TT
+				FROM = {
+					owes_favors = {
+						who = ROOT
+						value = 10
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						owes_favors = {
+							who = ROOT
+							value = 20
+						}
+					}
+				}
+				NOT = {
+					is_in_war = {
+						defender_leader = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FROM_MUST_OWE_20_FAVORS_TT
+				FROM = {
+					owes_favors = {
+						who = ROOT
+						value = 20
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		add_favors = {
+			who = FROM
+			amount = -10
+		}
+		FROM = {
+			join_all_defensive_wars_of = ROOT
+		}
+		if = {
+			limit = {
+				FROM = {
+					owes_favors = {
+						who = ROOT
+						value = 10
+					}
+				}
+			}
+			add_favors = {
+				who = FROM
+				amount = -10
+			}
+			FROM = {
+				join_all_offensive_wars_of = ROOT
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = yes
+	}
+}
+
+join_dominion_wars = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_any_dominion_type = yes
+			}
+			is_at_war = yes
+		}
+	}
+	is_allowed = {
+		NOT = {
+			war_with = ROOT
+		}
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		ROOT = {
+			join_all_defensive_wars_of = FROM
+		}
+		ROOT = {
+			join_all_offensive_wars_of = FROM
+		}
+		FROM = {
+			add_war_exhaustion = -5
+			add_liberty_desire = -5
+		}
+		ROOT = {
+			add_favors = {
+				who = FROM
+				amount = 10
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+transfer_vassals_to_dominion = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_any_dominion_type = yes
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+		any_subject_country = {
+			is_subject_of_type = vassal
+			capital_scope = {
+				region_for_scope_province = {
+					is_capital_of = FROM
+				}
+			}
+		}
+	}
+	on_accept = {
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = vassal
+				capital_scope = {
+					region_for_scope_province = {
+						is_capital_of = FROM
+					}
+				}
+			}
+			FROM = {
+				create_subject = {
+					subject_type = vassal
+					subject = PREV
+				}
+			}
+		}
+		FROM = {
+			add_liberty_desire = -5
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

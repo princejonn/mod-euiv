@@ -115,7 +115,7 @@ eng_british_conquest = {
 				add_casus_belli = {
 					target = SCO
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 		}

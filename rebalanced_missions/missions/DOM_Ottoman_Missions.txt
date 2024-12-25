@@ -1701,7 +1701,7 @@ tur_african_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = WAL
-					months = 240
+					months = 600
 				}
 				WAL = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT
@@ -1717,7 +1717,7 @@ tur_african_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = HUN
-					months = 240
+					months = 600
 				}
 				HUN = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT
@@ -1733,7 +1733,7 @@ tur_african_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = MOL
-					months = 240
+					months = 600
 				}
 				MOL = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT
@@ -2110,7 +2110,7 @@ tur_african_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = MOR
-					months = 240
+					months = 600
 				}
 				MOR = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT
@@ -2989,7 +2989,7 @@ tur_egyptian_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = TUN
-					months = 240
+					months = 600
 				}
 				TUN = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT
@@ -3312,7 +3312,7 @@ tur_egyptian_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = ADA
-					months = 240
+					months = 600
 				}
 				ADA = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT
@@ -4303,7 +4303,7 @@ tur_arabian_conquest = {
 				add_casus_belli = {
 					type = cb_ottoman_subjugation_war
 					target = YEM
-					months = 240
+					months = 600
 				}
 				YEM = {
 					set_country_flag = got_invasion_cb_fabricated_by_@ROOT

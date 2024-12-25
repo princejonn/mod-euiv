@@ -84,6 +84,8 @@ technology = {
 	}
 	allowed_idea_groups = 1
 	production_efficiency = 0.02
+	governing_capacity = 100
+	constable = yes	#BT More Buildings added
 }
 
 technology = {
@@ -108,6 +110,7 @@ technology = {
 		feudalism = 0.5
 		renaissance = 0.5
 	}
+	college = yes	#BT More Buildings added
 	#Noble Republic
 	allowed_idea_groups = 2
 }
@@ -122,6 +125,7 @@ technology = {
 	}
 	courthouse = yes
 	governing_capacity = 100
+	allowed_idea_groups = 3
 }
 
 technology = {
@@ -135,7 +139,7 @@ technology = {
 	}
 	#The Scythe
 	production_efficiency = 0.02
-	allowed_idea_groups = 3
+	allowed_idea_groups = 4
 }
 
 technology = {
@@ -148,7 +152,7 @@ technology = {
 		new_world_i = 0.3
 	}
 	theocratic_government = yes
-	allowed_idea_groups = 4
+	allowed_idea_groups = 5
 }
 
 technology = {
@@ -173,11 +177,12 @@ technology = {
 		renaissance = 0.5
 		new_world_i = 0.5
 	}
+	administrative_efficiency = 0.1
 	administrative_monarchy = yes
 	administrative_republic = yes
-	governing_capacity = 100
+	governing_capacity = 200
 	state_house = yes
-	allowed_idea_groups = 5
+	allowed_idea_groups = 6
 }
 
 technology = {
@@ -191,6 +196,7 @@ technology = {
 		printing_press = 0.15
 	}
 	#Improved Drainage
+	grain_depot = yes	#BT More Buildings added
 	production_efficiency = 0.02
 }
 
@@ -205,7 +211,7 @@ technology = {
 		printing_press = 0.3
 	}
 	plantations = yes
-	allowed_idea_groups = 6
+	allowed_idea_groups = 7
 }
 
 technology = {
@@ -218,8 +224,10 @@ technology = {
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
+	governing_capacity = 200
 	may_force_march = yes
 	soldier_households = yes
+	treasury_office = yes	#BT More Buildings added
 }
 
 technology = {
@@ -233,6 +241,7 @@ technology = {
 		printing_press = 0.5
 	}
 	mills = yes
+	mint = yes	#BT More Buildings added
 	production_efficiency = 0.02
 }
 
@@ -248,10 +257,10 @@ technology = {
 		global_trade = 0.15
 	}
 	university = yes
-	governing_capacity = 250
+	governing_capacity = 300
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
-	allowed_idea_groups = 7
+	allowed_idea_groups = 8
 }
 
 technology = {
@@ -265,7 +274,8 @@ technology = {
 		printing_press = 0.5
 		global_trade = 0.3
 	}
-	allowed_idea_groups = 8
+	allowed_idea_groups = 9
+	glorious_monument = yes	#BT More Buildings added
 }
 
 technology = {
@@ -295,8 +305,9 @@ technology = {
 		global_trade = 0.5
 	}
 	republican_dictatorship = yes
-	governing_capacity = 250
-	allowed_idea_groups = 9
+	governing_capacity = 300
+	allowed_idea_groups = 10
+	tax_assessor = yes	#BT More Buildings added	
 }
 
 technology = {
@@ -347,7 +358,7 @@ technology = {
 	}
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
-	allowed_idea_groups = 10
+	allowed_idea_groups = 11
 }
 
 technology = {
@@ -364,7 +375,7 @@ technology = {
 		enlightenment = 0.15
 	}
 	counting_house = yes
-	governing_capacity = 250
+	governing_capacity = 400
 }
 
 technology = {
@@ -397,7 +408,7 @@ technology = {
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	allowed_idea_groups = 11
+	allowed_idea_groups = 12
 }
 
 technology = {
@@ -415,7 +426,7 @@ technology = {
 	}
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
-	governing_capacity = 250
+	governing_capacity = 400
 }
 
 technology = {
@@ -450,7 +461,6 @@ technology = {
 		enlightenment = 1
 		industrialization = 0.5
 	}
-	allowed_idea_groups = 12
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }

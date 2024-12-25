@@ -1379,7 +1379,7 @@ geo_third_branch = {
 						}
 						reverse_add_casus_belli = {
 							type = cb_vassalize_mission
-							months = 300
+							months = 600
 							target = ROOT
 						}
 					}
@@ -2342,7 +2342,7 @@ geo_fifth_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = MOS
 						}
 					}
@@ -2352,7 +2352,7 @@ geo_fifth_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = MOS
 						}
 					}
@@ -2400,7 +2400,7 @@ geo_fifth_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = RUS
 						}
 					}
@@ -2410,7 +2410,7 @@ geo_fifth_branch = {
 					tooltip = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = RUS
 						}
 					}
@@ -2470,7 +2470,7 @@ geo_fifth_branch = {
 						}
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = MOS
 						}
 					}
@@ -2522,7 +2522,7 @@ geo_fifth_branch = {
 						}
 						add_casus_belli = {
 							type = cb_restore_personal_union
-							months = 300
+							months = 600
 							target = RUS
 						}
 					}

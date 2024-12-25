@@ -583,7 +583,7 @@ WoC_austria_1_1 = {
 				"
 				first_effect = "add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = NAP
 					}
 				"
@@ -718,7 +718,8 @@ WoC_austria_1_1 = {
 				}
 				country_event = {
 					id = new_flavour_hun.3
-				}				#event used by Hungary too
+				}
+				#event used by Hungary too
 			}
 		}
 		ai_weight = {
@@ -998,7 +999,7 @@ WoC_austria_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = BOH
 				}
 			}
@@ -1906,7 +1907,7 @@ WoC_austria_2_1 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = HUN
 				}
 			}
@@ -3247,8 +3248,6 @@ WoC_austria_4 = {
 				"
 				first_effect = "custom_tooltip = HAB_BOHEMIA_INTEGRATES_SILESIA
 
-					hidden_effect = { boh_integrate_silesian_subjects = yes }
-
 					custom_tooltip = SEPERATOR_TOOLTIP
 
 					add_country_modifier = {
@@ -4134,7 +4133,7 @@ WoC_austria_5 = {
 				add_casus_belli = {
 					type = cb_restore_personal_union
 					target = SPA
-					months = 120
+					months = 600
 				}
 				custom_tooltip = SEPERATOR_TOOLTIP
 			}
@@ -4149,7 +4148,7 @@ WoC_austria_5 = {
 				add_casus_belli = {
 					type = cb_restore_personal_union
 					target = CAS
-					months = 120
+					months = 600
 				}
 				custom_tooltip = SEPERATOR_TOOLTIP
 			}

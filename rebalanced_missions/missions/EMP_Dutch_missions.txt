@@ -1057,7 +1057,7 @@ emp_ned_slot4_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = ENG
 				}
 			}
@@ -1079,7 +1079,7 @@ emp_ned_slot4_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = GBR
 				}
 			}

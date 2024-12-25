@@ -1,5 +1,4 @@
 country_decisions = {
-
 	hsn_move_capital_to_damascus = {
 		major = yes
 		potential = {
@@ -12,13 +11,17 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { has_country_flag = relocated_capital_damascus }
+			NOT = {
+				has_country_flag = relocated_capital_damascus
+			}
 			has_country_flag = hsn_turn_against_mamluks_flag
 		}
 		allow = {
 			is_core = 382
 			owns = 382
-			NOT = { capital = 382 }
+			NOT = {
+				capital = 382
+			}
 			382 = {
 				is_state = yes
 			}
@@ -35,12 +38,12 @@ country_decisions = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
-			}	
+			}
 			382 = {
 				add_province_modifier = {
 					name = hsn_restoring_damascus
 					duration = 7300
-				}		
+				}
 			}
 		}
 		ai_will_do = {

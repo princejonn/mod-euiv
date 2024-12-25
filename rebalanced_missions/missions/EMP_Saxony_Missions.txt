@@ -1041,7 +1041,7 @@ emp_sax_missions_culture_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = PLC
 				}
 			}
@@ -1055,7 +1055,7 @@ emp_sax_missions_culture_2 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = POL
 				}
 			}

@@ -3,17 +3,22 @@ assassinate_ruler = {
 	require_acceptance = no
 	is_visible = {
 		ai = no
+		government = monarchy
 		FROM = {
+			government = monarchy
 			ai = yes
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
 			value = 80
 		}
-		dip_power = 125
+		dip_power = 80
 		treasury = 250
 	}
 	on_accept = {
@@ -21,42 +26,11 @@ assassinate_ruler = {
 			who = FROM
 			value = -80
 		}
-		add_dip_power = -125
+		add_dip_power = -80
 		add_treasury = -250
-		random_list = {
-			95 = {
-				FROM = {
-					kill_ruler = yes
-					add_stability = -1
-				}
-				random = {
-					chance = 5
-					FROM = {
-						add_opinion = {
-							who = ROOT
-							modifier = ruler_assassination
-						}
-						set_ai_attitude = {
-							attitude = attitude_hostile
-							who = ROOT
-							locked = no
-						}
-						add_casus_belli = {
-							target = ROOT
-							type = cb_humiliate
-							months = 240
-						}
-					}
-				}
-			}
-			5 = {
-				FROM = {
-					add_opinion = {
-						who = ROOT
-						modifier = ruler_assassination_attempt
-					}
-				}
-			}
+		FROM = {
+			kill_ruler = yes
+			add_stability = -1
 		}
 	}
 	on_decline = {
@@ -71,20 +45,23 @@ assassinate_heir = {
 	require_acceptance = no
 	is_visible = {
 		ai = no
+		government = monarchy
 		FROM = {
 			ai = yes
-		}
-		FROM = {
+			government = monarchy
 			has_heir = yes
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
 			value = 80
 		}
-		dip_power = 125
+		dip_power = 80
 		treasury = 250
 	}
 	on_accept = {
@@ -92,44 +69,13 @@ assassinate_heir = {
 			who = FROM
 			value = -80
 		}
-		add_dip_power = -125
+		add_dip_power = -80
 		add_treasury = -250
-		random_list = {
-			95 = {
-				FROM = {
-					kill_heir = {
-						allow_new_heir = no
-					}
-					add_stability = -1
-				}
-				random = {
-					chance = 5
-					FROM = {
-						add_opinion = {
-							who = ROOT
-							modifier = heir_assassination
-						}
-						set_ai_attitude = {
-							attitude = attitude_hostile
-							who = ROOT
-							locked = no
-						}
-						add_casus_belli = {
-							target = ROOT
-							type = cb_humiliate
-							months = 240
-						}
-					}
-				}
+		FROM = {
+			kill_heir = {
+				allow_new_heir = no
 			}
-			5 = {
-				FROM = {
-					add_opinion = {
-						who = ROOT
-						modifier = heir_assassination_attempt
-					}
-				}
-			}
+			add_stability = -1
 		}
 	}
 	on_decline = {
@@ -147,52 +93,29 @@ assassinate_general = {
 		FROM = {
 			ai = yes
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
-			value = 80
+			value = 50
 		}
-		dip_power = 75
+		dip_power = 50
 		treasury = 150
 	}
 	on_accept = {
 		add_spy_network_in = {
 			who = FROM
-			value = -80
+			value = -50
 		}
-		add_dip_power = -75
+		add_dip_power = -50
 		add_treasury = -150
-		random_list = {
-			95 = {
-				FROM = {
-					kill_leader = {
-						type = general
-					}
-				}
-				random = {
-					chance = 5
-					FROM = {
-						add_opinion = {
-							who = ROOT
-							modifier = general_assassination
-						}
-						set_ai_attitude = {
-							attitude = attitude_outraged
-							who = ROOT
-							locked = no
-						}
-					}
-				}
-			}
-			5 = {
-				FROM = {
-					add_opinion = {
-						who = ROOT
-						modifier = general_assassination_attempt
-					}
-				}
+		FROM = {
+			kill_leader = {
+				type = general
 			}
 		}
 	}
@@ -204,7 +127,7 @@ assassinate_general = {
 }
 
 forge_claim_on_throne = {
-	category = covert
+	category = dynasty
 	require_acceptance = no
 	is_visible = {
 		ai = no
@@ -212,14 +135,17 @@ forge_claim_on_throne = {
 		FROM = {
 			government = monarchy
 		}
+		full_idea_group = spy_ideas
 	}
 	is_allowed = {
-		full_idea_group = spy_ideas
+		employed_advisor = {
+			type = spymaster
+		}
 		has_spy_network_in = {
 			who = FROM
 			value = 80
 		}
-		dip_power = 125
+		dip_power = 80
 		treasury = 250
 		FROM = {
 			dynasty = ROOT
@@ -233,6 +159,7 @@ forge_claim_on_throne = {
 				}
 			}
 		}
+		heir_claim = 80
 		custom_trigger_tooltip = {
 			tooltip = forge_claim_heir_tooltip
 			FROM = {
@@ -241,12 +168,13 @@ forge_claim_on_throne = {
 					AND = {
 						has_heir = yes
 						NOT = {
-							heir_claim = 50
+							heir_claim = 100
 						}
 					}
 				}
 			}
 		}
+		prestige = 80
 		custom_trigger_tooltip = {
 			tooltip = forge_claim_prestige_tooltip
 			AND = {
@@ -260,8 +188,9 @@ forge_claim_on_throne = {
 		}
 	}
 	on_accept = {
-		add_dip_power = -125
+		add_dip_power = -80
 		add_treasury = -250
+		add_prestige = -25
 		add_spy_network_in = {
 			who = FROM
 			value = -80
@@ -269,7 +198,50 @@ forge_claim_on_throne = {
 		add_casus_belli = {
 			type = cb_restore_personal_union
 			target = FROM
-			months = 240
+			months = 300
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+slander_heir_claim = {
+	category = covert
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		government = monarchy
+		FROM = {
+			government = monarchy
+		}
+		full_idea_group = spy_ideas
+	}
+	is_allowed = {
+		employed_advisor = {
+			type = spymaster
+		}
+		has_spy_network_in = {
+			who = FROM
+			value = 50
+		}
+		dip_power = 50
+		treasury = 50
+		FROM = {
+			heir_claim = 51
+		}
+	}
+	on_accept = {
+		add_dip_power = -50
+		add_treasury = -150
+		add_spy_network_in = {
+			who = FROM
+			value = -50
+		}
+		FROM = {
+			add_heir_claim = -50
 		}
 	}
 	on_decline = {

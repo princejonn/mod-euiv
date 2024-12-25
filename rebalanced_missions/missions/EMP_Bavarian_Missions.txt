@@ -423,7 +423,7 @@ emp_bav_missions_conquest = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = BRA
 				}
 			}
@@ -1203,7 +1203,7 @@ emp_bav_missions_conquer_austria = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = HAB
 				}
 			}

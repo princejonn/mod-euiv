@@ -433,7 +433,7 @@ gc_spain_2 = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = POR
 					}
 				}
@@ -950,7 +950,7 @@ gc_spain_3 = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = POR
 					}
 				}
@@ -1701,7 +1701,7 @@ gc_spain_4 = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = NAP
 				}
 				sicily_area = {
@@ -2064,7 +2064,7 @@ gc_spain_4_b = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = GBR
 				}
 			}
@@ -2081,7 +2081,7 @@ gc_spain_4_b = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = ENG
 				}
 			}
@@ -2661,7 +2661,7 @@ gc_spain_5_a = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = HAB
 				}
 			}

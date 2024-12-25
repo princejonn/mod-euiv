@@ -1,0 +1,166 @@
+sister_republic = {
+}
+
+core_sister_republic = {
+}
+
+sister_republic = {
+	copy_from = default
+	count = sister_republic
+	# Graphics:
+	sprite = GFX_icon_incorporated_vassal_subject_type
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_incorporated_vassal_subject_type
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_incorporated_vassal_subject_type
+	# Properties:
+	base_liberty_desire = -10
+	can_be_annexed = no
+	can_be_co_belligerented = yes
+	can_gain_favors = yes
+	can_have_subjects_of_other_types = yes
+	counts_for_borders = yes
+	disable_inheritance = yes
+	extend_trading_range = yes
+	favors_cost_to_join_defensive_wars = 10
+	favors_cost_to_join_offensive_wars = 20
+	forms_trade_companies = no
+	gets_help_with_rebels = yes
+	has_power_projection = no
+	joins_overlords_wars = no
+	liberty_desire_development_ratio = 0.05
+	liberty_desire_negative_prestige = 1
+	max_government_rank = 2
+	military_focus = 1
+	must_accept_cta_from_overlord = yes
+	opinion_cost_to_join_defensive_wars = 10
+	opinion_cost_to_join_offensive_wars = 20
+	opinion_on_subject_integration = 0
+	overlord_can_attack = no
+	relative_power_class = 1
+	should_quit_wars_on_activation = yes
+	takes_diplo_slot = no
+	transfer_subjects_when_made = no
+	transfer_trade_power = yes
+	# Continuous Subject Interactions:
+	divert_trade = yes
+	subsidize_armies = yes
+	support_loyalists = yes
+	# Immediate Subject Interactions:
+	conscript_general = yes
+	contribute_to_capital = yes
+	enforce_culture = yes
+	seize_territory = yes
+	send_additional_troops = yes
+	siphon_income = yes
+	# War Interactions:
+	restoration_cb = cb_restore_sister_republic
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.15
+	manpower_to_overlord = 0.15
+	naval_forcelimit_to_overlord = 0.15
+	pays_overlord = 1.25
+	sailors_to_overlord = 0.15
+	# Overlord Modifiers:
+	modifier_overlord = {
+		modifier = has_sister_republic_subject
+	}
+	modifier_overlord = {
+		trigger = {
+			overlord = {
+				has_government_attribute = personal_union_war_contribution
+			}
+		}
+		modifier = pu_overlord_bonus
+	}
+	modifier_overlord = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		modifier = ned_man_o_war_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			OR = {
+				tag = NED
+			}
+		}
+		modifier = voc_indiamen_modifier
+	}
+	# Subject Modifiers:
+	modifier_subject = {
+		modifier = is_sister_republic_nation
+	}
+	modifier_subject = {
+		trigger = {
+			overlord = {
+				has_government_attribute = personal_union_war_contribution
+			}
+		}
+		modifier = pu_subject_bonus
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+	# Wars:
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = sister_republic
+		other_overlord = all
+	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		government = republic
+		government_rank = 2
+		is_subject = no
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_sister_republic
+	subject_opinion_modifier = is_sister_republic
+}
+
+core_sister_republic = {
+	copy_from = sister_republic
+	count = sister_republic
+	# Properties:
+	annex_cost_per_development = 4
+	can_be_co_belligerented = no
+	can_gain_favors = no
+	liberty_desire_development_ratio = 0.025
+	max_government_rank = 2
+	military_focus = 0.5
+	must_accept_cta_from_overlord = no
+	relative_power_class = 0
+	should_quit_wars_on_activation = yes
+	# Overlord Properties:
+	forcelimit_to_overlord = 0.3
+	manpower_to_overlord = 0.3
+	naval_forcelimit_to_overlord = 0.3
+	pays_overlord = 2
+	sailors_to_overlord = 0.3
+	# Diplomatic Actions:
+	can_be_annexed = yes
+}

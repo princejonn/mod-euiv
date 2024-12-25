@@ -1,0 +1,149 @@
+# ROOT = overlord, FROM = subject
+create_sister_republic = {
+	FROM = {
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				NOT = {
+					government = republic
+				}
+			}
+			change_government = republic
+			if = {
+				limit = {
+					ROOT = {
+						has_reform = plutocratic_reform
+					}
+				}
+				add_government_reform = plutocratic_reform
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = noble_elite_reform
+					}
+				}
+				add_government_reform = noble_elite_reform
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = civic_republicanism_government
+					}
+				}
+				add_government_reform = civic_republicanism_government
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = presidential_despot_reform
+					}
+				}
+				add_government_reform = presidential_despot_reform
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = pirate_republic_reform
+					}
+				}
+				add_government_reform = pirate_republic_reform
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = peasants_republic
+					}
+				}
+				add_government_reform = peasants_republic
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = revolutionary_republic_reform
+					}
+				}
+				add_government_reform = revolutionary_republic_reform
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = roman_republic_government
+					}
+				}
+				add_government_reform = roman_republic_government
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = military_dictatorship_reform
+					}
+				}
+				add_government_reform = military_dictatorship_reform
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = ambrosian_republic
+					}
+				}
+				add_government_reform = ambrosian_republic
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = american_republic
+					}
+				}
+				add_government_reform = american_republic
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = federal_republic
+					}
+				}
+				add_government_reform = federal_republic
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = constitutional_republic
+					}
+				}
+				add_government_reform = constitutional_republic
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_reform = parliamentary_republic_reform
+					}
+				}
+				add_government_reform = parliamentary_republic_reform
+			}
+			else = {
+				add_government_reform = oligarchy_reform
+			}
+			define_ruler = {
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				culture = FROM
+				religion = FROM
+				min_age = 35
+				max_age = 50
+			}
+		}
+		add_adm_power = 250
+		add_dip_power = 250
+		add_mil_power = 250
+		add_treasury = 250
+		add_prestige = 25
+		add_republican_tradition = 100
+	}
+}

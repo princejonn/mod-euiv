@@ -1,0 +1,31 @@
+# Bishopric
+is_bishopric = {
+	opinion = 60
+}
+
+broke_bishopric = {
+	opinion = -100
+	yearly_decay = 3
+}
+
+# Fiefdom
+is_fiefdom = {
+	opinion = 60
+}
+
+broke_fiefdom = {
+	opinion = -100
+	yearly_decay = 3
+	min = -200
+}
+
+# Crusader Order
+is_crusader_order = {
+	opinion = 60
+}
+
+broke_crusader_order = {
+	opinion = -100
+	yearly_decay = 3
+	min = -200
+}

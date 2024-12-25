@@ -10,10 +10,10 @@ sun_1 = {
 		}
 	}
 	has_country_shield = yes
-	
 	sun_consider_islam = {
 		icon = mission_mosque
-		required_missions = { }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -40,7 +40,9 @@ sun_1 = {
 	}
 	sun_develop_cities = {
 		icon = mission_asian_trader
-		required_missions = { sun_consider_islam }
+		required_missions = {
+			sun_consider_islam
+		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 624
@@ -48,9 +50,15 @@ sun_1 = {
 				province_id = 630
 			}
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { development = 20 }
-				NOT = { religion = ROOT }
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					development = 20
+				}
+				NOT = {
+					religion = ROOT
+				}
 			}
 		}
 		trigger = {
@@ -82,8 +90,12 @@ sun_1 = {
 			}
 			if = {
 				limit = {
-					NOT = { tag = BAN }
-					NOT = { tag = CRB }
+					NOT = {
+						tag = BAN
+					}
+					NOT = {
+						tag = CRB
+					}
 				}
 				country_event = {
 					id = flavor_sun.2
@@ -113,7 +125,8 @@ sun_1 = {
 	}
 	sun_candi_temples = {
 		icon = mission_buddhist_monk_praying
-		required_missions = {  }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -166,7 +179,9 @@ sun_1 = {
 	}
 	sun_borobudur = {
 		icon = mission_restore_pagodas
-		required_missions = { sun_candi_temples }
+		required_missions = {
+			sun_candi_temples
+		}
 		provinces_to_highlight = {
 			province_id = 2690
 		}
@@ -184,7 +199,7 @@ sun_1 = {
 						has_personal_deity = buddha
 					}
 				}
-				2690 = { 
+				2690 = {
 					has_great_project = {
 						type = borobudur_temple
 						tier = 3
@@ -215,7 +230,8 @@ sun_1 = {
 	}
 	sun_rice_production = {
 		icon = mission_rice_field
-		required_missions = { }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -247,17 +263,19 @@ sun_2 = {
 		}
 	}
 	has_country_shield = yes
-	
 	sun_majapahit_relations = {
 		icon = mission_oceania_build_army_mission
-		required_missions = { }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 			owned_by = MAJ
 		}
 		trigger = {
 			OR = {
-				NOT = { exists = MAJ }
-				MAJ = { 
+				NOT = {
+					exists = MAJ
+				}
+				MAJ = {
 					is_subject_of = ROOT
 				}
 				if = {
@@ -303,22 +321,34 @@ sun_2 = {
 			else = {
 				east_java_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				central_java_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				surabaya_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
@@ -327,7 +357,9 @@ sun_2 = {
 	}
 	sun_rule_java = {
 		icon = mission_unite_home_region
-		required_missions = { sun_majapahit_relations }
+		required_missions = {
+			sun_majapahit_relations
+		}
 		provinces_to_highlight = {
 			OR = {
 				area = east_java_area
@@ -336,28 +368,30 @@ sun_2 = {
 				area = surabaya_area
 				area = banten_area
 			}
-			NOT = { owned_by = ROOT }
+			NOT = {
+				owned_by = ROOT
+			}
 		}
 		trigger = {
 			east_java_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
 			central_java_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
 			west_java_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
 			surabaya_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
 			banten_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -369,10 +403,13 @@ sun_2 = {
 	}
 	sun_conquer_lampung = {
 		icon = mission_ne_palisades
-		required_missions = { }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 			area = south_sumatra_area
-			NOT = { owned_by = ROOT }
+			NOT = {
+				owned_by = ROOT
+			}
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -389,8 +426,8 @@ sun_2 = {
 							primary_culture = acehnese
 						}
 						is_free_or_tributary_trigger = yes
-					}		
-				}							
+					}
+				}
 				every_known_country = {
 					limit = {
 						OR = {
@@ -403,7 +440,7 @@ sun_2 = {
 						add_casus_belli = {
 							target = PREV
 							type = cb_vassalize_mission
-							months = 120
+							months = 600
 						}
 					}
 				}
@@ -411,29 +448,45 @@ sun_2 = {
 			else = {
 				north_sumatra_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				central_sumatra_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				south_sumatra_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				jambi_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
@@ -442,7 +495,9 @@ sun_2 = {
 	}
 	sun_subjugate_sumatra = {
 		icon = mission_ne_great_lakes_conquest
-		required_missions = { sun_conquer_lampung }
+		required_missions = {
+			sun_conquer_lampung
+		}
 		provinces_to_highlight = {
 			OR = {
 				area = north_sumatra_area

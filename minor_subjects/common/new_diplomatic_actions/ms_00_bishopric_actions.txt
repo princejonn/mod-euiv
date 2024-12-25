@@ -1,0 +1,112 @@
+designate_bishopric = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		can_be_overlord = bishopric
+		can_be_bishopric_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			bishopric = 2
+		}
+		FROM = {
+			NOT = {
+				num_of_cities = 4
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = bishopric
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		hidden_effect = {
+			FROM = {
+				change_government = theocracy
+				set_government_rank = 1
+				if = {
+					limit = {
+						ROOT = {
+							religion = orthodox
+						}
+					}
+					add_government_reform = orthodox_patriarchate_reform
+				}
+				else = {
+					add_government_reform = leading_clergy_reform
+				}
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				random_owned_province = {
+					limit = {
+						NOT = {
+							has_building = cathedral
+						}
+					}
+					add_building = cathedral
+				}
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_bishopric = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = bishopric
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_liberty_desire = 75
+			add_opinion = {
+				who = ROOT
+				modifier = broke_bishopric
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				clr_country_flag = has_overriden_color_flag
+				restore_country_color = yes
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

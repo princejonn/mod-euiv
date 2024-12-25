@@ -412,7 +412,7 @@ mnd_khmer_3 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 120
+						months = 600
 					}
 				}
 			}
@@ -482,7 +482,7 @@ mnd_khmer_3 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 120
+						months = 600
 					}
 				}
 			}
@@ -590,7 +590,7 @@ mnd_khmer_4 = {
 				add_casus_belli = {
 					target = AYU
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -757,7 +757,7 @@ mnd_khmer_5 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 120
+						months = 600
 					}
 				}
 			}

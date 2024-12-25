@@ -1,0 +1,136 @@
+fiefdom = {
+}
+
+fiefdom = {
+	copy_from = vassal
+	count = fiefdom
+	# Graphics
+	sprite = GFX_icon_appanage
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+	# Properties
+	base_liberty_desire = -15
+	extend_trading_range = yes
+	forms_trade_companies = no
+	gets_help_with_rebels = yes
+	has_power_projection = no
+	liberty_desire_development_ratio = 0.5
+	liberty_desire_same_dynasty = -50
+	max_government_rank = 1
+	military_focus = 0
+	relative_power_class = 0
+	takes_diplo_slot = no
+	transfer_trade_if_merchant_republic = yes
+	# Continuous Subject Interactions:
+	divert_trade = yes
+	scutage = yes
+	# Immediate Subject Interactions:
+	enforce_culture = yes
+	place_relative_on_throne = yes
+	# War Interactions:
+	restoration_cb = cb_disloyal_vassal
+	# Overlord Properties:
+	forcelimit_to_overlord = 1
+	manpower_to_overlord = 0.5
+	naval_forcelimit_to_overlord = 0.5
+	pays_overlord = 2
+	sailors_to_overlord = 0.5
+	# Overlord Modifiers:
+	modifier_overlord = {
+		modifier = has_fiefdom_subject
+	}
+	modifier_overlord = {
+		modifier = has_fiefdom_num_cities_bonus
+		trigger = {
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+		expiration_message_overlord = FIEFDOMTOOLARGE
+		expiration_message_subject = FIEFDOMTOOLARGEUS
+	}
+	modifier_overlord = {
+		modifier = has_fiefdom_province_dev_bonus
+		trigger = {
+			any_owned_province = {
+				development = 30
+			}
+		}
+	}
+	modifier_overlord = {
+		modifier = has_fiefdom_province_trade_bonus
+		trigger = {
+			any_owned_province = {
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					has_river_estuary_trigger = yes
+				}
+			}
+		}
+	}
+	# Subject Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = is_fiefdom_nation
+	}
+	modifier_subject = {
+		modifier = is_fiefdom_num_cities_bonus
+		trigger = {
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = is_fiefdom_province_dev_bonus
+		trigger = {
+			any_owned_province = {
+				development = 30
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = is_fiefdom_province_trade_bonus
+		trigger = {
+			any_owned_province = {
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					has_river_estuary_trigger = yes
+				}
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = GER_extra_prov_trade_power
+		trigger = {
+			overlord = {
+				has_estate_privilege = estate_burghers_GER_customs_union
+			}
+		}
+	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		government = monarchy
+		government_rank = 2
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_fiefdom
+	subject_opinion_modifier = is_fiefdom
+}

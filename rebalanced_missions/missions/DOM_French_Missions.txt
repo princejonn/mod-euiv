@@ -4812,7 +4812,7 @@ french_missions_4_crusader_kings = {
 					add_casus_belli = {
 						target = PREV
 						type = cb_crusade_pheasants
-						months = 120
+						months = 600
 					}
 				}
 			}
@@ -6171,8 +6171,8 @@ french_missions_5_normal = {
 					}
 					add_casus_belli = {
 						target = NAP
-						type = cb_vassalize_mission
-						months = 180
+						type = cb_restore_personal_union
+						months = 600
 					}
 				}
 				else = {
@@ -6292,8 +6292,8 @@ french_missions_5_normal = {
 						}
 						add_casus_belli = {
 							target = NAP
-							type = cb_vassalize_mission
-							months = 180
+							type = cb_restore_personal_union
+							months = 600
 						}
 					}
 					else = {

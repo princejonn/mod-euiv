@@ -21,7 +21,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {
@@ -56,7 +56,7 @@ country_decisions = {
 				exists = ZUL
 			}
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			789 = {
 				owned_by = ROOT
 				base_manpower = 8
@@ -100,7 +100,8 @@ country_decisions = {
 				factor = 0
 				NOT = {
 					is_year = 1810
-				}				#An AI should NEVER spawn the Zulu before 1810
+				}
+				#An AI should NEVER spawn the Zulu before 1810
 			}
 		}
 	}

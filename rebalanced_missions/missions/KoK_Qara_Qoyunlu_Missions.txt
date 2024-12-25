@@ -1095,7 +1095,7 @@ qara_qoyunlu_third = {
 					}
 					reverse_add_casus_belli = {
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 						target = ROOT
 					}
 				}

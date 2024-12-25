@@ -45,7 +45,11 @@ country_event = {
 	mean_time_to_happen = {
 		months = 120
 		modifier = {
-			factor = 0.5
+			factor = 0.25
+			is_year = 1463
+		}
+		modifier = {
+			factor = 0.05
 			is_year = 1473
 		}
 	}
@@ -581,8 +585,10 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 0.5				# Burgundy and France just simply don't get along 
-				always = yes
+				factor = 0.25				# Burgundy and France just simply don't get along 
+				FRA = {
+					ai = yes
+				}
 			}
 			modifier = {
 				factor = 2

@@ -1,0 +1,91 @@
+designate_fiefdom = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		can_be_overlord = fiefdom
+		can_be_fiefdom_subject = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			fiefdom = 2
+		}
+		FROM = {
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = fiefdom
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		hidden_effect = {
+			FROM = {
+				change_government = monarchy
+				set_government_rank = 1
+				set_country_flag = has_overriden_color_flag
+				change_country_color = {
+					country = ROOT
+				}
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+revoke_fiefdom = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = fiefdom
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		FROM = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+	}
+	on_accept = {
+		create_subject = {
+			subject_type = vassal
+			subject = FROM
+			keep_liberty_desire = yes
+		}
+		FROM = {
+			add_liberty_desire = 50
+			add_opinion = {
+				who = ROOT
+				modifier = broke_fiefdom
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				clr_country_flag = has_overriden_color_flag
+				restore_country_color = yes
+			}
+		}
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

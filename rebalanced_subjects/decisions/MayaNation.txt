@@ -59,7 +59,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_nomad = no
 			if = {
 				limit = {

@@ -1202,7 +1202,7 @@ emp_hab_german_expansion_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = BAV
 				}
 			}
@@ -2190,7 +2190,8 @@ emp_hab_balkans_2 = {
 				}
 				country_event = {
 					id = new_flavour_hun.3
-				}				#event used by Hungary too
+				}
+				#event used by Hungary too
 			}
 		}
 		ai_weight = {
@@ -2273,7 +2274,7 @@ emp_hab_more_italy_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = TTS
 				}
 			}
@@ -2287,7 +2288,7 @@ emp_hab_more_italy_branch = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = NAP
 				}
 			}

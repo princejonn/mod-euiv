@@ -1,0 +1,105 @@
+﻿l_english:
+
+  # cb types
+
+  cb_create_sister_republic: "Campaign of Republic Expansion"
+  cb_create_sister_republic_desc: "Their people clamor for local governance. We shall heed the call and establish a Sister Republic."
+
+  cb_restore_sister_republic: "Restore Sister Republic"
+  cb_restore_sister_republic_desc: "They broke off from our Sister Republic."
+
+  # government names
+
+  SISTER_REPUBLIC: "Sister Republic"
+  SISTER_REPUBLIC_MALE_LEADER: "Consul"
+  SISTER_REPUBLIC_FEMALE_LEADER: "Consul"
+  SISTER_REPUBLIC_CONSORT_MALE: "Consort"
+  SISTER_REPUBLIC_CONSORT_FEMALE: "Consort"
+  SISTER_REPUBLIC_MALE_HEIR: "Deputy Consul"
+  SISTER_REPUBLIC_FEMALE_HEIR: "Deputy Consul"
+
+  # new diplomatic actions
+
+  FROM_MUST_HAVE_100_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y100§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_150_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y150§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_190_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y190§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_OWE_10_FAVORS_TT: "§R- §Y[From.GetName]§! does not owe §Y10§! favors to §Y[Root.GetName]§!.§!"
+  FROM_MUST_OWE_20_FAVORS_TT: "§R- §Y[From.GetName]§! does not owe §Y20§! favors to §Y[Root.GetName]§!.§!"
+
+  fabricate_sister_republic_cb: "Justify Campaign"
+  fabricate_sister_republic_cb_title: "Justify Campaign"
+  fabricate_sister_republic_cb_desc: "Justify Campaign will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YCampaign of Republic Expansion§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into a §YSister Republic§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y10 years§!.\n\n§YSister Republics can be turned into Core Sister Republics which can be annexed for 4 £dip£ per development.§!"
+  fabricate_sister_republic_cb_tooltip: "Justify an campaign against the target country and gain the 'Campaign of Republic Expansion' casus belli against them."
+  HAS_SISTER_REPUBLIC_CB_ALREADY_TT: "§R- §Y[Root.GetName]§! already has an §YCampaign of Republic Expansion§! casus belli against §Y[From.GetName]§!.§!"
+
+  promote_vassal_to_sister_republic_title: "Form Sister Republic"
+  promote_vassal_to_sister_republic_tooltip: "Convert [From.GetName] into a Sister Republic. A Sister Republic is an autonomous vassal state, aligned politically and ideologically with its protector, while maintaining local governance in support of shared revolutionary or republican principles."
+  promote_vassal_to_sister_republic_desc: "Convert [From.GetName] into a Sister Republic. A Sister Republic is a foreign state modeled after the ideals of the overlord's governance, granted autonomy while remaining loyal to its protector, promoting shared values and strategic interests abroad. Sister Republics cannot be Annexed but they provide their overlord powerful bonuses."
+  promote_vassal_to_sister_republic_alert_tooltip: "An offer to turn us into a §YSister Republic§!"
+  promote_vassal_to_sister_republic_dialog: "[This.GetName] wants to turn us into their §YSister Republic§!."
+
+  demote_sister_republic_to_vassal_title: "Revoke Sister Republic Status"
+  demote_sister_republic_to_vassal_tooltip: "Convert [From.GetName] into a Vassal."
+  demote_sister_republic_to_vassal_desc: "Convert [From.GetName] into a Vassal. A Vassal is a subject state that is directly controlled by its overlord, with no autonomy or local governance. Vassals can be integrated into the overlord's realm, but they do not provide the same bonuses as a Sister Republic."
+  demote_sister_republic_to_vassal_alert_tooltip: "An offer to turn us into a §YVassal§!"
+  demote_sister_republic_to_vassal_dialog: "[This.GetName] wants to turn us into their §YVassal§!."
+
+  rein_in_sister_republic: "Rein in Sister Republic"
+  rein_in_sister_republic_title: "Rein in Sister Republic"
+  rein_in_sister_republic_desc: "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Sister Republic§!. This will allow us to integrate §Y[From.GetName]§!, but we will not be able to call §Y[From.GetName]§! into any wars.\n\n§YCore Sister Republics can be annexed for 4 £dip£ per development.§!"
+  rein_in_sister_republic_tooltip: "Rein in the target from Sister Republic to Core Sister Republic status, allowing us to integrate the target, but disabling our ability to call them in our wars."
+  rein_in_sister_republic_alert_tooltip: "An offer to turn us into a §YCore Sister Republic§!"
+  rein_in_sister_republic_dialog: "[This.GetName] wants to turn us into their Core Sister Republic, exempting us from their wars, but allowing them to integrate us."
+
+  call_sister_republic_into_wars_title: "Call into Wars"
+  call_sister_republic_into_wars_tooltip: "Call [From.GetName] into our current wars."
+  call_sister_republic_into_wars_desc: "Call [From.GetName] into our current wars."
+
+  join_sister_republic_wars_title: "Join Wars"
+  join_sister_republic_wars_tooltip: "Join [From.GetName]'s Current Wars."
+  join_sister_republic_wars_desc: "Join [From.GetName]'s Current Wars."
+
+  grant_autonomy_to_core_sister_republic_title: "Grant Autonomy to Core Sister Republic"
+  grant_autonomy_to_core_sister_republic_tooltip: "Grant autonomy to our Core Sister Republic and turn it into a normal Sister Republic."
+  grant_autonomy_to_core_sister_republic_desc: "Do you wish to grant autonomy to §Y[From.GetName]§! and turn them into a §YSister Republic§!?\n§YSister Republics§! can be called into wars, but cannot be integrated."
+
+  # opinion modifiers
+
+  is_sister_republic: "Sister Republic"
+  promoted_sister_republic: "They promoted us to §YSister Republic§!"
+  demoted_sister_republic: "They demoted us from §YSister Republic§!"
+
+  # peace treaties
+
+  po_establish_sister_republic: "Establish Sister Republic"
+  po_establish_sister_republic_desc: "[From.GetName] becomes a §YSister Republic§! under [Root.GetName]."
+  PEACE_po_establish_sister_republic: "Establish Sister Republic"
+  CB_ALLOWED_po_establish_sister_republic: "Establish Sister Republic"
+
+  # static modifiers
+
+  has_sister_republic_subject: "Has Sister Republic"
+  is_sister_republic_nation: "Is a Sister Republic"
+
+  # subject types
+
+  sister_republic: "Sister Republic"
+  sister_republic_title: "Sister Republic"
+  sister_republic_title_plural: "Sister Republics"
+  sister_republic_is_our: "§Y$NAME$§! is our Sister Republic."
+  sister_republic_long_desc: "Sister Republics are special Republic subjects which focuses purely on governing the land and allowing democratic rule for its people. Unlike other subject types, a Sister Republic will not join any wars on its own unless directly ordered by its overlord."
+
+  core_sister_republic: "Core Sister Republic"
+  core_sister_republic_title: "Core Sister Republic"
+  core_sister_republic_title_plural: "Core Sister Republics"
+  core_sister_republic_is_our: "§Y$NAME$§! is our Core Sister Republic."
+  core_sister_republic_long_desc: "A Core Sister Republic behaves like any other Sister Republic, but is much closer tied to its overlord and is barely any different from directly controlled territory. Unlike normal Sister Republics, a Core Sister Republic cannot be called into any wars and can be annexed."
+
+  # wargoal types
+
+  take_capital_sister_republic: "Take the capital"
+  take_capital_sister_republic_desc: "War goal is to take the capital."
+
+  # war names
+
+  SISTER_REPUBLIC_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Sister Republic Unification War"

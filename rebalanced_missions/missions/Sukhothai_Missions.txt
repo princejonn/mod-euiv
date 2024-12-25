@@ -6,15 +6,19 @@ suk_1 = {
 		tag = SUK
 	}
 	has_country_shield = yes
-	
 	suk_restore_sukhothai = {
 		icon = mission_rice_field
-		required_missions = { }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 			province_id = 601
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					is_core = ROOT
+				}
 			}
 		}
 		trigger = {
@@ -40,8 +44,12 @@ suk_1 = {
 			else = {
 				central_thai_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
@@ -50,13 +58,19 @@ suk_1 = {
 	}
 	suk_absorb_ayu = {
 		icon = mission_asian_cannon
-		required_missions = { suk_restore_sukhothai }
+		required_missions = {
+			suk_restore_sukhothai
+		}
 		provinces_to_highlight = {
 			area = central_thai_area
-			NOT = { owned_by = ROOT }
+			NOT = {
+				owned_by = ROOT
+			}
 		}
 		trigger = {
-			NOT = { exists = AYU }
+			NOT = {
+				exists = AYU
+			}
 			central_thai_area = {
 				type = all
 				owned_by = ROOT
@@ -74,14 +88,18 @@ suk_1 = {
 				add_casus_belli = {
 					type = cb_vassalize_mission
 					target = LNA
-					months = 120
+					months = 600
 				}
 			}
 			else = {
 				northern_thai_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
@@ -90,10 +108,14 @@ suk_1 = {
 	}
 	suk_conquer_chiang_mai = {
 		icon = mission_kowtow
-		required_missions = { suk_absorb_ayu }
+		required_missions = {
+			suk_absorb_ayu
+		}
 		provinces_to_highlight = {
 			area = northern_thai_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			northern_thai_area = {

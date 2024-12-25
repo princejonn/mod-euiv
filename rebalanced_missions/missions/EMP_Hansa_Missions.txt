@@ -638,7 +638,7 @@ hanseatic_sound_toll_tree = {
 				add_casus_belli = {
 					target = NOR
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			else = {
@@ -688,7 +688,7 @@ hanseatic_sound_toll_tree = {
 				add_casus_belli = {
 					target = SWE
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			add_mil_power = 50
@@ -989,7 +989,7 @@ hanseatic_britain_tree = {
 				add_casus_belli = {
 					target = SCO
 					type = cb_vassalize_mission
-					months = 120
+					months = 600
 				}
 			}
 			custom_tooltip = bre_ham_sep_prod_scot_tt

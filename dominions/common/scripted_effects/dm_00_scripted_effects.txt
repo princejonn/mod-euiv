@@ -1,0 +1,132 @@
+# ROOT = overlord, FROM = subject
+create_dominion = {
+	FROM = {
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				NOT = {
+					government = republic
+				}
+			}
+			change_government = republic
+		}
+		add_government_reform = military_dictatorship_reform
+		define_ruler = {
+			change_adm = 5
+			change_dip = 5
+			change_mil = 5
+			culture = ROOT
+			religion = ROOT
+			min_age = 35
+			max_age = 50
+		}
+		add_adm_power = 250
+		add_dip_power = 250
+		add_mil_power = 250
+		add_treasury = 250
+		add_prestige = 25
+		add_republican_tradition = 75
+	}
+}
+
+handle_dominion_borders = {
+	every_country = {
+		limit = {
+			ai = no
+			any_subject_country = {
+				is_any_dominion_type = yes
+			}
+		}
+		save_event_target_as = dominion_overlord_target
+		every_subject_country = {
+			limit = {
+				ai = yes
+				is_any_dominion_type = yes
+			}
+			save_event_target_as = dominion_subject_target
+			## Subject cedes provinces to overlord
+			every_owned_province = {
+				limit = {
+					is_city = yes
+					NOT = {
+						region_for_scope_province = {
+							is_capital_of = event_target:dominion_subject_target
+						}
+					}
+				}
+				save_event_target_as = province_target
+				event_target:province_target = {
+					add_claim = event_target:dominion_overlord_target
+					remove_claim = event_target:dominion_subject_target
+					remove_core = event_target:dominion_subject_target
+					cede_province = event_target:dominion_overlord_target
+				}
+			}
+			## Overlord cedes provinces to subject
+			event_target:dominion_overlord_target = {
+				every_owned_province = {
+					limit = {
+						NOT = {
+							has_province_flag = ceded_to_dominion
+						}
+						is_city = yes
+						region_for_scope_province = {
+							is_capital_of = event_target:dominion_subject_target
+						}
+					}
+					save_event_target_as = province_target
+					event_target:province_target = {
+						add_claim = event_target:dominion_subject_target
+						remove_claim = event_target:dominion_overlord_target
+						cede_province = event_target:dominion_subject_target
+						set_province_flag = ceded_to_dominion
+					}
+				}
+			}
+		}
+	}
+}
+
+handle_dominion_claim_fabrication = {
+	every_country = {
+		limit = {
+			ai = no
+			any_subject_country = {
+				is_any_dominion_type = yes
+			}
+		}
+		save_event_target_as = dominion_overlord_target
+		every_subject_country = {
+			limit = {
+				ai = yes
+				is_any_dominion_type = yes
+			}
+			save_event_target_as = dominion_subject_target
+			every_neighbor_province = {
+				limit = {
+					region_for_scope_province = {
+						is_capital_of = event_target:dominion_subject_target
+					}
+					NOT = {
+						is_claim = event_target:dominion_subject_target
+					}
+					NOT = {
+						owned_by_subject_of = event_target:dominion_overlord_target
+					}
+				}
+				save_event_target_as = province_target
+				random = {
+					chance = 33
+					event_target:province_target = {
+						add_claim = event_target:dominion_subject_target
+					}
+				}
+			}
+		}
+	}
+}

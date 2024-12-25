@@ -1,0 +1,22 @@
+is_special_government_type = {
+	OR = {
+		has_reform = papacy_reform
+		has_reform = celestial_empire
+		has_reform = shogunate
+	}
+}
+
+# ROOT = country
+is_any_sister_republic_type = {
+	OR = {
+		is_subject_of_type = sister_republic
+		is_subject_of_type = core_sister_republic
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_sister_republic_subject = {
+	FROM = {
+		is_special_government_type = no
+	}
+}

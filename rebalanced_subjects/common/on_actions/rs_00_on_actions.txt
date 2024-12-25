@@ -1,15 +1,3 @@
-# ROOT = province, FROM = previous owner
-on_province_owner_change = {
-	cede_province_to_viceroyalty = yes
-}
-
-# ROOT = country
-on_monarch_death = {
-	on_monarch_death_incorporated_union_effect = yes
-	on_monarch_death_consolidated_union_effect = yes
-}
-
 on_yearly_pulse = {
-	viceroyalties_fabricating_claims = yes
 	stop_subject_bickering = yes
 }

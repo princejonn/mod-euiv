@@ -1,0 +1,33 @@
+nationalise_commercial_enterprise = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = commercial_enterprise
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		NOT = {
+			truce_with = FROM
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+		}
+		treasury = 10000
+	}
+	on_accept = {
+		inherit = FROM
+		add_treasury = -10000
+	}
+	on_decline = {
+	}
+	ai_will_do = {
+		always = no
+	}
+}

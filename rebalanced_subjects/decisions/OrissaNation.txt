@@ -12,7 +12,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			OR = {
@@ -68,7 +68,7 @@ country_decisions = {
 				exists = ORI
 			}
 			is_at_war = no
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			owns_core_province = 549			#Vizianagaram
 			owns_core_province = 552			#Cuttack
 			owns_core_province = 553			#Sambalpur
@@ -127,7 +127,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_orissa_flag
 		}

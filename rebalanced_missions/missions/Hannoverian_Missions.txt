@@ -477,7 +477,7 @@ hannoverian_group_2 = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = GBR
 					}
 				}
@@ -518,7 +518,7 @@ hannoverian_group_2 = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = ENG
 					}
 				}
@@ -834,7 +834,7 @@ hannoverian_group_4 = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = GBR
 					}
 				}
@@ -875,7 +875,7 @@ hannoverian_group_4 = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = ENG
 					}
 				}

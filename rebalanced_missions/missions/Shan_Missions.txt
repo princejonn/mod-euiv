@@ -16,10 +16,10 @@ shan_1 = {
 		}
 	}
 	has_country_shield = yes
-	
 	shan_confederation = {
 		icon = mission_restore_pagodas
-		required_missions = { }
+		required_missions = {
+		}
 		provinces_to_highlight = {
 			NOT = {
 				owned_by = ROOT
@@ -37,7 +37,9 @@ shan_1 = {
 				tooltip = shan_confederation_tt
 				NOT = {
 					any_country = {
-						NOT = { tag = ROOT }
+						NOT = {
+							tag = ROOT
+						}
 						primary_culture = shan
 						NOT = {
 							OR = {
@@ -50,7 +52,9 @@ shan_1 = {
 			}
 			calc_true_if = {
 				all_province = {
-					owner = { primary_culture = shan }
+					owner = {
+						primary_culture = shan
+					}
 				}
 				amount = 15
 			}
@@ -71,7 +75,9 @@ shan_1 = {
 					primary_culture = shan
 					ai = yes
 				}
-				ROOT = { inherit = PREV }
+				ROOT = {
+					inherit = PREV
+				}
 			}
 			every_province = {
 				limit = {
@@ -79,15 +85,21 @@ shan_1 = {
 					NOT = {
 						is_core = ROOT
 					}
-					NOT = { owned_by = ROOT }
+					NOT = {
+						owned_by = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}
 			if = {
 				limit = {
 					was_never_end_game_tag_trigger = yes
-					NOT = { tag = SST }
-					NOT = { has_country_flag = formed_shan_flag }
+					NOT = {
+						tag = SST
+					}
+					NOT = {
+						has_country_flag = formed_shan_flag
+					}
 					is_colonial_nation = no
 					is_former_colonial_nation = no
 				}
@@ -107,22 +119,30 @@ shan_1 = {
 				}
 				add_casus_belli = {
 					type = cb_vassalize_mission
-					months = 300
+					months = 600
 					target = AVA
 				}
 			}
 			else = {
 				upper_burma_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				central_burma_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
@@ -131,18 +151,24 @@ shan_1 = {
 	}
 	shan_domination = {
 		icon = mission_unite_home_region
-		required_missions = { shan_confederation }
+		required_missions = {
+			shan_confederation
+		}
 		provinces_to_highlight = {
 			OR = {
 				owned_by = AVA
 				area = upper_burma_area
 				area = central_burma_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			OR = {
-				AVA = { is_subject_of = ROOT }
+				AVA = {
+					is_subject_of = ROOT
+				}
 				AND = {
 					upper_burma_area = {
 						type = all
@@ -173,8 +199,12 @@ shan_1 = {
 			}
 			burma_region = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}

@@ -1,0 +1,71 @@
+﻿l_english:
+
+  # message types
+
+  CRUSADERORDERTOOLARGE_TITLE: "Crusader Order too Large"
+  CRUSADERORDERTOOLARGE_SETUP: "When our subject Crusader Order grows too large and loses its bonuses."
+  CRUSADERORDERTOOLARGE_HEADER: "Our Governor Reports"
+  CRUSADERORDERTOOLARGE_1: "Inefficient Crusader Order"
+  CRUSADERORDERTOOLARGE_2: "$COUNTRY$ has grown too large"
+  CRUSADERORDERTOOLARGE_3: "to be efficiently administrated as a Crusader Order"
+  CRUSADERORDERTOOLARGE_4: "They will lose their special Crusader Order bonuses as a result."
+  CRUSADERORDERTOOLARGE_LOG: "$COUNTRY$ grew too large to and lost its Crusader Order bonuses."
+  CRUSADERORDERTOOLARGE_BTN1: "OK"
+  CRUSADERORDERTOOLARGE_BTN2: "OK"
+  CRUSADERORDERTOOLARGE_BTN3: "Go to"
+
+  CRUSADERORDERTOOLARGEUS_TITLE: "Crusader Order too Large"
+  CRUSADERORDERTOOLARGEUS_SETUP: "When we as a Crusader Order grows too large and loses its bonuses."
+  CRUSADERORDERTOOLARGEUS_HEADER: "Our Governor Reports"
+  CRUSADERORDERTOOLARGEUS_1: "Inefficient Crusader Order"
+  CRUSADERORDERTOOLARGEUS_2: "$MONARCHTITLE$, our nation has grown too large"
+  CRUSADERORDERTOOLARGEUS_3: "to be efficiently administrated as a Crusader Order"
+  CRUSADERORDERTOOLARGEUS_4: "We will lose our special Crusader Order bonuses as a result."
+  CRUSADERORDERTOOLARGEUS_LOG: "We grew too large to and lost our Crusader Order bonuses."
+  CRUSADERORDERTOOLARGEUS_BTN1: "OK"
+  CRUSADERORDERTOOLARGEUS_BTN2: "OK"
+  CRUSADERORDERTOOLARGEUS_BTN3: "Go to"
+
+  # government names
+
+  CRUSADER_ORDER: "Crusader Order"
+  CRUSADER_ORDER_MALE_LEADER: "Grandmaster"
+  CRUSADER_ORDER_FEMALE_LEADER: "Grandmistress"
+  CRUSADER_ORDER_CONSORT_MALE: "Consort"
+  CRUSADER_ORDER_CONSORT_FEMALE: "Consort"
+  CRUSADER_ORDER_MALE_HEIR: "Commander"
+  CRUSADER_ORDER_FEMALE_HEIR: "Commander"
+
+  # new diplomatic actions
+
+  designate_crusader_order_title: "Designate Crusader Order"
+  designate_crusader_order_tooltip: "Convert [From.GetName] to a Crusader Order. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed."
+  designate_crusader_order_desc: "Convert [From.GetName] to a Crusader Order. A territory governed by a religious military order, combining crusader and knightly duties. Granted by the overlord in exchange for loyalty, military service, and religious dedication, these orders are autonomous regions focused on defending the faith and maintaining regional security. Crusader Orders cannot be annexed. Crusader Orders cannot be incorporated and will reset incorporation status. You can only have 1 Crusader Order.\n\nIf the Crusader Order has 5 or less provinces, they will give the following bonuses to their overlord:\n§G+5.00%§! Discipline\n§G+5.00%§! Morale Damage\n§G-5.00%§! Morale Damage Received\n§G-5.00%§! Land Maintenance\n§G+5.00%§! Manpower Recovery Speed\n\nDesignating [From.GetName] to a Crusader Order §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Crusader Order once revoked."
+
+  revoke_crusader_order_title: "Revoke Crusader Order"
+  revoke_crusader_order_tooltip: "Convert [From.GetName] to a Vassal."
+  revoke_crusader_order_desc: "Convert [From.GetName] to a Vassal."
+
+  TAG_FOR_CRUSADER_ORDER_NOT_AVAILABLE_TOOLTIP: "You need to fully §YAnnex§! or §YVassalize§! and §YDesignate§! one of the existing Monastic Orders (Knights, Teutonic, or Livonian) to be able to designate a Crusader Order."
+
+  # opinion modifiers
+
+  is_crusader_order: "Crusader Order"
+  broke_crusader_order: "They revoked our §YCrusader Order§! status"
+
+  # static modifiers
+
+  has_crusader_order_subject: "Has Crusader Order"
+  has_crusader_order_num_cities_bonus: "Crusader Order City Bonus"
+
+  is_crusader_order_nation: "Is a Crusader Order"
+  is_crusader_order_num_cities_bonus: "Crusader Order City Bonus"
+  is_crusader_order_development_bonus: "Crusader Order Development Bonus"
+
+  # subject types
+
+  crusader_order: "Crusader Order"
+  crusader_order_title: "Crusader Order"
+  crusader_order_title_plural: "Crusader Orders"
+  crusader_order_is_our: "§Y$NAME$§! is our Crusader Order."
+  crusader_order_long_desc: "Crusader Orders must follow their overlord to war, cannot make certain diplomatic actions, and will pay a minimal fraction of their income to their overlord. Depending on location and size, they increase the overlord's military bonuses."

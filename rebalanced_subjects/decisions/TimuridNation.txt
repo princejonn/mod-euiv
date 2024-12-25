@@ -115,13 +115,15 @@ country_decisions = {
 				factor = 0
 				NOT = {
 					exists = MUG
-				}				#Mughals should appear instead first
+				}
+				#Mughals should appear instead first
 			}
 			modifier = {
 				factor = 0
 				NOT = {
 					exists = PER
-				}				#Same goes for Persia
+				}
+				#Same goes for Persia
 			}
 		}
 	}
@@ -138,7 +140,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				is_free_or_union_vassal_tributary_trigger = yes
+				is_free_or_non_colonial_trigger = yes
 				ai = no
 			}
 			NOT = {
@@ -202,7 +204,7 @@ country_decisions = {
 			NOT = {
 				exists = TIM
 			}
-			is_free_or_union_vassal_tributary_trigger = yes
+			is_free_or_non_colonial_trigger = yes
 			is_at_war = no
 			owns_core_province = 446			# Herat
 			owns_core_province = 454			# Samarkand
@@ -421,7 +423,8 @@ country_decisions = {
 				}
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
+				#Swap Ideas
 			}
 			set_country_flag = formed_timurids_flag
 		}
@@ -431,13 +434,15 @@ country_decisions = {
 				factor = 0
 				NOT = {
 					exists = MUG
-				}				#Mughals should appear instead first
+				}
+				#Mughals should appear instead first
 			}
 			modifier = {
 				factor = 0
 				NOT = {
 					exists = PER
-				}				#Same goes for Persia
+				}
+				#Same goes for Persia
 			}
 		}
 		ai_importance = 600

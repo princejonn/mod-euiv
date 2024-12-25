@@ -344,14 +344,14 @@ maori_missions = {
 					add_casus_belli = {
 						target = FROM
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 					}
 				}
 				else = {
 					add_casus_belli = {
 						target = FROM
 						type = cb_force_tributary_mission
-						months = 300
+						months = 600
 					}
 				}
 			}
@@ -419,14 +419,14 @@ maori_missions = {
 						reverse_add_casus_belli = {
 							target = ROOT
 							type = cb_vassalize_mission
-							months = 300
+							months = 600
 						}
 					}
 					else = {
 						reverse_add_casus_belli = {
 							target = ROOT
 							type = cb_force_tributary_mission
-							months = 300
+							months = 600
 						}
 					}
 				}
@@ -585,7 +585,7 @@ samoan_missions = {
 				add_casus_belli = {
 					target = TOG
 					type = cb_vassalize_mission
-					months = 300
+					months = 600
 				}
 			}
 			else_if = {
@@ -612,7 +612,7 @@ samoan_missions = {
 				add_casus_belli = {
 					target = TOG
 					type = cb_force_tributary_mission
-					months = 300
+					months = 600
 				}
 			}
 		}
@@ -686,14 +686,14 @@ samoan_missions = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 					}
 				}
 				else = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_force_tributary_mission
-						months = 300
+						months = 600
 					}
 				}
 			}
@@ -776,7 +776,7 @@ tongan_missions = {
 				add_casus_belli = {
 					target = SAM
 					type = cb_vassalize_mission
-					months = 300
+					months = 600
 				}
 			}
 			else_if = {
@@ -803,7 +803,7 @@ tongan_missions = {
 				add_casus_belli = {
 					target = SAM
 					type = cb_force_tributary_mission
-					months = 300
+					months = 600
 				}
 			}
 		}
@@ -847,14 +847,14 @@ tongan_missions = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 					}
 				}
 				else = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_force_tributary_mission
-						months = 300
+						months = 600
 					}
 				}
 			}
@@ -902,14 +902,14 @@ tongan_missions = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
-						months = 300
+						months = 600
 					}
 				}
 				else = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_force_tributary_mission
-						months = 300
+						months = 600
 					}
 				}
 			}

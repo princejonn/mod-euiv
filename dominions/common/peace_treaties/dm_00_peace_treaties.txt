@@ -1,0 +1,62 @@
+po_establish_dominion = {
+	category = 6
+	power_projection = humiliated_rival
+	power_cost_base = 1
+	prestige_base = 1
+	ae_base = 0.4
+	warscore_cost = {
+		all_provinces = 0.75
+		no_provinces = 0
+		owner_keeps = 0
+		conquered = 0
+		returned_core = 0
+		released_nation = 0
+		cancelled_subject = 0
+		concede_colonial_region = 0
+	}
+	warscore_cap = 75
+	requires_demand_independence = yes
+	is_make_subject = yes
+	requires_is_allowed = yes
+	applies_to_war_target = yes
+	is_visible = {
+		ai = no
+		can_be_overlord = dominion
+		can_be_dominion_subject = yes
+		FROM = {
+			OR = {
+				is_subject = no
+				is_subject_of_type = tributary_state
+			}
+		}
+		NOT = {
+			any_subject_country = {
+				is_any_dominion_type = yes
+				capital_scope = {
+					region_for_scope_province = {
+						is_capital_of = FROM
+					}
+				}
+			}
+		}
+	}
+	is_allowed = {
+		custom_trigger_tooltip = {
+			tooltip = IS_INVASION_TARGET_TT
+		}
+	}
+	effect = {
+		create_subject = {
+			subject_type = dominion
+			subject = FROM
+		}
+		create_dominion = yes
+		join_all_defensive_wars_of = FROM
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 50
+		}
+	}
+}

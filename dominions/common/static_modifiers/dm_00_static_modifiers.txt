@@ -1,0 +1,28 @@
+# Dominion
+has_dominion_subject = {
+	land_forcelimit = 2
+	naval_forcelimit = 2
+}
+
+has_dominion_subject_bonus = {
+	global_colonial_growth = 10
+	global_trade_power = 0.1
+	land_forcelimit = 10
+	merchants = 1
+	naval_forcelimit = 10
+}
+
+is_dominion_subject = {
+	army_tradition_decay = -0.5
+	development_cost = -0.15
+	global_manpower = -5
+	land_forcelimit = -5
+	navy_tradition_decay = -0.5
+}
+
+is_dominion_subject_bonus = {
+	development_cost = -0.25
+	governing_capacity = 200
+	land_forcelimit = 4
+	naval_forcelimit = 4
+}

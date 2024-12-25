@@ -1,0 +1,37 @@
+is_special_government_type = {
+	OR = {
+		has_reform = papacy_reform
+		has_reform = celestial_empire
+		has_reform = shogunate
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_bishopric_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_crusader_order_subject = {
+	FROM = {
+		capital_scope = {
+			continent = ROOT
+		}
+		is_special_government_type = no
+	}
+}
+
+# ROOT = overlord, FROM = subject
+can_be_fiefdom_subject = {
+	FROM = {
+		capital_scope = {
+			superregion = ROOT
+		}
+		is_special_government_type = no
+	}
+}

@@ -1,0 +1,116 @@
+﻿l_english:
+
+  # cb types
+
+  cb_create_dominion: "Campaign of Dominion Expansion"
+  cb_create_dominion_desc: "Their people clamor for local governance. We shall heed the call and establish a Dominion."
+
+  cb_restore_dominion: "Restoration of Dominion"
+  cb_restore_dominion_desc: "They broke off from our Dominion."
+
+  # government names
+
+  DOMINION: "Dominion"
+  DOMINION_LEADER: "Viceroy"
+  DOMINION_HEIR: "Captain General"
+
+  # new diplomatic actions
+
+  FROM_MUST_HAVE_100_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y100§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_150_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y150§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_HAVE_190_OPINION_TT: "§R- §Y[From.GetName]§! does not have above §Y190§! opinion of §Y[Root.GetName]§!.§!"
+  FROM_MUST_OWE_10_FAVORS_TT: "§R- §Y[From.GetName]§! does not owe §Y10§! favors to §Y[Root.GetName]§!.§!"
+  FROM_MUST_OWE_20_FAVORS_TT: "§R- §Y[From.GetName]§! does not owe §Y20§! favors to §Y[Root.GetName]§!.§!"
+  HAS_DOMINION_IN_REGION_TT: "§R- §Y[Root.GetName]§! already has a §YDominion§! subject in the §YRegion§!.§!"
+
+  form_dominion_title: "Land Viceroy"
+  form_dominion_tooltip: "Convert [From.GetName] to a Dominion. Established under the supremacy of an §YEmpire§!, it is a semi-autonomous region ruled by a §YViceroy§!."
+  form_dominion_desc: "Convert [From.GetName] to a Dominion. Established under the supremacy of an §YEmpire§!, it is a semi-autonomous region ruled by a Viceroy. They manage their own internal affairs but are aligned with the overlord's interests, especially in matters of defense and foreign policy. Incorporation status will reset upon designation. They will not use §YDiplomatic Relations§! slots.\n\nAn unincorporated Dominion cannot be annexed.\n\nForming a Dominion from §Y[From.GetName]§! cannot be undone."
+  form_dominion_alert_tooltip: "An offer to turn us into a §YDominion§!"
+  form_dominion_dialog: "[This.GetName] wants to turn us into their §YDominion§!."
+  form_dominion_one_per_region_tooltip: "You can only have one §YDominion§! per region."
+ 
+  fabricate_dominion_cb: "Justify Campaign"
+  fabricate_dominion_cb_title: "Justify Campaign"
+  fabricate_dominion_cb_desc: "Justify Campaign will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YCampaign of Republic Expansion§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into a §YDominion§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y10 years§!.\n\n§YViceroyalties can be turned into Core Viceroyalties which can be annexed for 4 £dip£ per development.§!"
+  fabricate_dominion_cb_tooltip: "Justify an campaign against the target country and gain the 'Campaign of Republic Expansion' casus belli against them."
+  HAS_DOMINION_CB_ALREADY_TT: "§R- §Y[Root.GetName]§! already has an §YCampaign of Republic Expansion§! casus belli against §Y[From.GetName]§!.§!"
+
+  promote_vassal_to_dominion_title: "Form Dominion"
+  promote_vassal_to_dominion_tooltip: "Convert [From.GetName] into a Dominion. A Dominion is an autonomous vassal state, appointed by the overlord, exercising direct control on behalf of the overlord, but with significant autonomy in day-to-day governance."
+
+  promote_vassal_to_dominion_desc: "Convert [From.GetName] into a Dominion. A Dominion is an autonomous vassal state, appointed by the overlord, exercising direct control on behalf of the overlord, but with significant autonomy in day-to-day governance. Viceroyalties cannot be Annexed but they provide their overlord powerful bonuses."
+  promote_vassal_to_dominion_alert_tooltip: "An offer to turn us into a §YDominion§!"
+  promote_vassal_to_dominion_dialog: "[This.GetName] wants to turn us into their §YDominion§!."
+
+  demote_dominion_to_vassal_title: "Revoke Dominion Status"
+  demote_dominion_to_vassal_tooltip: "Convert [From.GetName] into a Vassal."
+  demote_dominion_to_vassal_desc: "Convert [From.GetName] into a Vassal. A Vassal is a subject state that is directly controlled by its overlord, with no autonomy or local governance. Vassals can be integrated into the overlord's realm, but they do not provide the same bonuses as a Dominion."
+  demote_dominion_to_vassal_alert_tooltip: "An offer to turn us into a §YVassal§!"
+  demote_dominion_to_vassal_dialog: "[This.GetName] wants to turn us into their §YVassal§!."
+
+  rein_in_dominion: "Rein in Dominion"
+  rein_in_dominion_title: "Rein in Dominion"
+  rein_in_dominion_desc: "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Dominion§!. This will allow us to integrate §Y[From.GetName]§!, but we will not be able to call §Y[From.GetName]§! into any wars.\n\n§YCore Viceroyalties can be annexed for 4 £dip£ per development.§!"
+  rein_in_dominion_tooltip: "Rein in the target from Dominion to Core Dominion status, allowing us to integrate the target, but disabling our ability to call them in our wars."
+  rein_in_dominion_alert_tooltip: "An offer to turn us into a §YCore Dominion§!"
+  rein_in_dominion_dialog: "[This.GetName] wants to turn us into their Core Dominion, exempting us from their wars, but allowing them to integrate us."
+
+  call_dominion_into_wars_title: "Call into Wars"
+  call_dominion_into_wars_tooltip: "Call [From.GetName] into our current wars."
+  call_dominion_into_wars_desc: "Call [From.GetName] into our current wars."
+
+  join_dominion_wars_title: "Join Wars"
+  join_dominion_wars_tooltip: "Join [From.GetName]'s Current Wars."
+  join_dominion_wars_desc: "Join [From.GetName]'s Current Wars."
+
+  grant_autonomy_to_core_dominion_title: "Grant Autonomy to Core Dominion"
+  grant_autonomy_to_core_dominion_tooltip: "Grant autonomy to our Core Dominion and turn it into a normal Dominion."
+  grant_autonomy_to_core_dominion_desc: "Do you wish to grant autonomy to §Y[From.GetName]§! and turn them into a §YDominion§!?\n§YViceroyalties§! can be called into wars, but cannot be integrated."
+
+  transfer_vassals_to_dominion_title: "Transfer Vassals"
+  transfer_vassals_to_dominion_tooltip: "Transfer all of your Vassals in the region to [From.GetName]."
+  transfer_vassals_to_dominion_desc: "Are you sure you want to Transfer all of your Vassals in the region to [From.GetName]? It cannot be undone."
+ 
+  # opinion modifiers
+
+  is_dominion: "Dominion" 
+  promoted_sister_republic: "They promoted us to Dominion"
+  demoted_sister_republic: "They demoted us from Dominion"
+
+  # peace treaties
+
+  po_establish_dominion: "Establish Dominion"
+  po_establish_dominion_desc: "[From.GetName] becomes a §YDominion§! under [Root.GetName]."
+  PEACE_po_establish_dominion: "Establish Dominion"
+  CB_ALLOWED_po_establish_dominion: "Establish Dominion"
+
+  # static modifiers
+
+  has_dominion_subject: "Has Dominion"
+  has_dominion_subject_bonus: "Large Dominion"
+  is_dominion_subject: "Is a Dominion"
+  is_dominion_subject_bonus: "Is a Large Dominion"
+
+  # subject types
+
+  dominion: "Dominion"
+  dominion_title: "Dominion"
+  dominion_title_plural: "Viceroyalties"
+  dominion_is_our: "§Y$NAME$§! is our Dominion."
+  dominion_long_desc: "A large territory ruled by a viceroy appointed by the overlord, exercising direct control on behalf of the overlord, but with significant autonomy in day-to-day governance."
+
+  core_dominion: "Core Dominion"
+  core_dominion_title: "Core Dominion"
+  core_dominion_title_plural: "Core Viceroyalties"
+  core_dominion_is_our: "§Y$NAME$§! is our Core Dominion."
+  core_dominion_long_desc: "A large territory ruled by a viceroy appointed by the overlord, exercising direct control on behalf of the overlord, but with significant autonomy in day-to-day governance."
+
+  # wargoal types
+
+  take_capital_dominion: "Take the capital"
+  take_capital_dominion_desc: "War goal is to take the capital."
+
+  # war names
+
+  DOMINION_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Dominion Unification War"

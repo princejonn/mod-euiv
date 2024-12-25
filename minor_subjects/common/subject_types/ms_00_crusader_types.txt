@@ -1,0 +1,116 @@
+crusader_order = {
+}
+
+crusader_order = {
+	copy_from = vassal
+	count = crusader_order
+	# Graphics
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+	# Properties
+	base_liberty_desire = -15
+	extend_trading_range = yes
+	forms_trade_companies = no
+	gets_help_with_rebels = yes
+	has_power_projection = no
+	liberty_desire_development_ratio = 0.5
+	max_government_rank = 2
+	military_focus = 2
+	relative_power_class = 0
+	takes_diplo_slot = no
+	# Continuous Subject Interactions:
+	send_officers = yes
+	subsidize_armies = yes
+	# Immediate Subject Interactions:
+	conscript_general = yes
+	enforce_culture = yes
+	fortify_march = yes
+	send_additional_troops = yes
+	# War Interactions:
+	restoration_cb = cb_disloyal_vassal
+	# Overlord Modifiers:
+	modifier_overlord = {
+		modifier = has_crusader_order_subject
+	}
+	modifier_overlord = {
+		modifier = has_crusader_order_num_cities_bonus
+		trigger = {
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+		expiration_message_overlord = CRUSADERORDERTOOLARGE
+		expiration_message_subject = CRUSADERORDERTOOLARGEUS
+	}
+	# Subject Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = is_crusader_order_nation
+	}
+	modifier_subject = {
+		modifier = is_crusader_order_num_cities_bonus
+		trigger = {
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = is_crusader_order_development_bonus
+		trigger = {
+			NOT = {
+				num_of_cities = 3
+			}
+			capital_scope = {
+				development = 40
+				province_has_current_tech_fort_trigger = yes
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_manpower_building_trigger = yes
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = GER_extra_prov_trade_power
+		trigger = {
+			overlord = {
+				has_estate_privilege = estate_burghers_GER_customs_union
+			}
+		}
+	}
+	# Overlord Potential:
+	is_potential_overlord = {
+		OR = {
+			government = monarchy
+			government = theocracy
+			government = republic
+		}
+		OR = {
+			religion_group = christian
+			religion = norse_pagan_reformed
+		}
+		government_rank = 2
+	}
+	# Opinion Modifiers:
+	overlord_opinion_modifier = is_crusader_order
+	subject_opinion_modifier = is_crusader_order
+}

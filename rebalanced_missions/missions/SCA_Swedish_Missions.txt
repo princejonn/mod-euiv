@@ -103,7 +103,7 @@ swe_scandinavian_colonialism_mission_slot = {
 							reverse_add_casus_belli = {
 								type = cb_claim_norwegian_throne
 								target = ROOT
-								months = 240
+								months = 600
 							}
 						}
 					}
@@ -112,7 +112,7 @@ swe_scandinavian_colonialism_mission_slot = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						target = NOR
-						months = 240
+						months = 600
 					}
 				}
 			}
@@ -3792,7 +3792,7 @@ swe_swedish_military_mission_slot = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						target = PLC
-						months = 240
+						months = 600
 					}
 				}
 				else_if = {
@@ -3802,7 +3802,7 @@ swe_swedish_military_mission_slot = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						target = POL
-						months = 240
+						months = 600
 					}
 				}
 				else = {

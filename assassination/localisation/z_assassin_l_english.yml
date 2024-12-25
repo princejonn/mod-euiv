@@ -3,22 +3,26 @@
 
   assassinate_ruler_title: "Assassinate Ruler"
   assassinate_ruler_tooltip: "With this action you can attempt to assassinate the ruler of [From.GetName]. It has a §Y95.00%§! chance of success."
-  assassinate_ruler_desc: "Are you sure you want to assassinate [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G95.00%§! chance of success. It also has a §R5.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you:\n§R-80.00§! Spy Network Strength\n§R-250.00§! Ducats\n§R-125§! Diplomatic Power"
+  assassinate_ruler_desc: "Are you sure you want to assassinate [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G95.00%§! chance of success. It also has a §R5.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you:\n§R-75.00§! Spy Network Strength\n§R-250.00§! Ducats\n§R-75§! Diplomatic Power"
 
   assassinate_heir_title: "Assassinate Heir"
   assassinate_heir_tooltip: "With this action you can attempt to assassinate the ruler of [From.GetName]. It has a §Y95.00%§! chance of success."
-  assassinate_heir_desc: "Are you sure you want to assassinate [From.Heir.GetTitle] [From.Heir.GetName], child of [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G95.00%§! chance of success. It also has a §R5.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you:\n§R-80.00§! Spy Network Strength\n§R-250.00§! Ducats\n§R-125§! Diplomatic Power"
+  assassinate_heir_desc: "Are you sure you want to assassinate [From.Heir.GetTitle] [From.Heir.GetName], child of [From.Monarch.GetTitle] [From.Monarch.GetName], the ruler of [From.GetName]?\nIt has a §G95.00%§! chance of success. It also has a §R5.00§! chance of discovery, which will make [From.GetName] extremely upset with you.\n\nThis action will cost you:\n§R-75.00§! Spy Network Strength\n§R-250.00§! Ducats\n§R-75§! Diplomatic Power"
 
   assassinate_general_title: "Assassinate General"
   assassinate_general_tooltip: "With this action you can attempt to assassinate a general of [From.GetName]. It has a §Y95.00%§! chance of success."
-  assassinate_general_desc: "Are you sure you want to assassinate a general of [From.GetName]?\nIt has a §G95.00%§! chance of success. It also has a §R5.00§! chance of discovery, which will make [From.GetName] upset with you.\n\nThis action will cost you:\n§R-80.00§! Spy Network Strength\n§R-150.00§! Ducats\n§R-75§! Diplomatic Power"
+  assassinate_general_desc: "Are you sure you want to assassinate a general of [From.GetName]?\nIt has a §G95.00%§! chance of success. It also has a §R5.00§! chance of discovery, which will make [From.GetName] upset with you.\n\nThis action will cost you:\n§R-75.00§! Spy Network Strength\n§R-150.00§! Ducats\n§R-50§! Diplomatic Power"
 
   forge_claim_on_throne_title: "Forge Claim on Throne"
   forge_claim_on_throne_tooltip: "With this action you can forge a claim on the throne of §Y[From.GetName]§!."
-  forge_claim_on_throne_desc: "Are you sure you want to forge a claim on the throne of §Y[From.GetName]§!?\nThis action will cost you:\n§Y-80.00§! Spy Network Strength\n§Y-250.00§! Ducats\n§R-125§! Diplomatic Power"
+  forge_claim_on_throne_desc: "Are you sure you want to forge a claim on the throne of §Y[From.GetName]§!?\nThis action will cost you:\n§Y-75.00§! Spy Network Strength\n§Y-250.00§! Ducats\n§R-75§! Diplomatic Power"
   forge_claim_marriage_tooltip: "Royal Marriage with §Y[From.GetName]§!"
   forge_claim_heir_tooltip: "§Y[From.GetName]§! requires a heir with a §Rweak claim§! (below §Y50.00§!) or §Rno§! heir"
   forge_claim_prestige_tooltip: "§Y[Root.GetName]§! requires more prestige than §Y[From.GetName]§!"
+
+  slander_heir_claim_title: "Slander Heir Claim"
+  slander_heir_claim_tooltip: "With this action you can slander heir of [From.GetName] and reduce their claim to the throne."
+  slander_heir_claim_desc: "Are you sure you want to slander the heir §Y[From.Heir.GetName]§! of [From.GetName]? This will reduce their claim to the throne by §R-50.00§!.\nThis action will cost you:\n§R-50.00§! Spy Network Strength\n§R-150.00§! Ducats\n§R-50§! Diplomatic Power"
 
   # opinion modifiers
 

@@ -1,0 +1,30 @@
+default_dominion = {
+	rank = {
+		1 = DOMINION
+		2 = DOMINION
+		3 = DOMINION
+	}
+	ruler_male = {
+		1 = DOMINION_LEADER
+		2 = DOMINION_LEADER
+		3 = DOMINION_LEADER
+	}
+	ruler_female = {
+		1 = DOMINION_LEADER
+		2 = DOMINION_LEADER
+		3 = DOMINION_LEADER
+	}
+	heir_male = {
+		1 = DOMINION_HEIR
+		2 = DOMINION_HEIR
+		3 = DOMINION_HEIR
+	}
+	heir_female = {
+		1 = DOMINION_HEIR
+		2 = DOMINION_HEIR
+		3 = DOMINION_HEIR
+	}
+	trigger = {
+		is_any_dominion_type = yes
+	}
+}

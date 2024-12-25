@@ -1,0 +1,70 @@
+﻿l_english:
+
+  # message types
+
+  BISHOPRICTOOLARGE_TITLE: "Bishopric too Large"
+  BISHOPRICTOOLARGE_SETUP: "When our subject Bishopric grows too large and loses its bonuses."
+  BISHOPRICTOOLARGE_HEADER: "Our Governor Reports"
+  BISHOPRICTOOLARGE_1: "Inefficient Bishopric"
+  BISHOPRICTOOLARGE_2: "$COUNTRY$ has grown too large"
+  BISHOPRICTOOLARGE_3: "to be efficiently administrated as a Bishopric"
+  BISHOPRICTOOLARGE_4: "They will lose their special Bishopric bonuses as a result."
+  BISHOPRICTOOLARGE_LOG: "$COUNTRY$ grew too large to and lost its Bishopric bonuses."
+  BISHOPRICTOOLARGE_BTN1: "OK"
+  BISHOPRICTOOLARGE_BTN2: "OK"
+  BISHOPRICTOOLARGE_BTN3: "Go to"
+
+  BISHOPRICTOOLARGEUS_TITLE: "Bishopric too Large"
+  BISHOPRICTOOLARGEUS_SETUP: "When we as a Bishopric grows too large and loses its bonuses."
+  BISHOPRICTOOLARGEUS_HEADER: "Our Governor Reports"
+  BISHOPRICTOOLARGEUS_1: "Inefficient Bishopric"
+  BISHOPRICTOOLARGEUS_2: "$MONARCHTITLE$, our nation has grown too large"
+  BISHOPRICTOOLARGEUS_3: "to be efficiently administrated as a Bishopric"
+  BISHOPRICTOOLARGEUS_4: "We will lose our special Bishopric bonuses as a result."
+  BISHOPRICTOOLARGEUS_LOG: "We grew too large to and lost our Bishopric bonuses."
+  BISHOPRICTOOLARGEUS_BTN1: "OK"
+  BISHOPRICTOOLARGEUS_BTN2: "OK"
+  BISHOPRICTOOLARGEUS_BTN3: "Go to"
+
+  # government names
+
+  BISHOPRIC: "Bishopric"
+  BISHOPRIC_MALE_LEADER: "Bishop"
+  BISHOPRIC_FEMALE_LEADER: "Abbess"
+  BISHOPRIC_CONSORT_MALE: "Consort"
+  BISHOPRIC_CONSORT_FEMALE: "Consort"
+  BISHOPRIC_MALE_HEIR: "Coadjutor"
+  BISHOPRIC_FEMALE_HEIR: "Prioress"
+
+  # new diplomatic actions
+
+  designate_bishopric_title: "Designate Bishopric"
+  designate_bishopric_tooltip: "Convert [From.GetName] to a Bishopric. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence. Bishoprics cannot be annexed."
+  designate_bishopric_desc: "Convert [From.GetName] to a Bishopric. A territory governed by a bishop, granted by the overlord to the Church in exchange for spiritual support, loyalty, and governance. Bishoprics are autonomous regions with significant religious influence. Bishoprics cannot be annexed. Bishoprics cannot be incorporated and will reset incorporation status. You can only have 3 Bishoprics.\n\nIf the Bishopric has 3 or less provinces, they will give the following bonuses to their overlord:\n§G+1.00%§! Missionary Strength\n§G-5.00%§! Missionary Maintenance\n§G+2.50%§! Global Tax\n\nDesignating [From.GetName] to a Bishopric §Y[From.GetName]§! will also mean we will need to wait §Y10§! Years to §YDiplomatically Annex§! the Bishopric once revoked."
+
+  revoke_bishopric_title: "Revoke Bishopric"
+  revoke_bishopric_tooltip: "Convert [From.GetName] to a Vassal."
+  revoke_bishopric_desc: "Convert [From.GetName] to a Vassal."
+
+  # opinion modifiers
+
+  is_bishopric: "Bishopric"
+  broke_bishopric: "They revoked our §YBishopric§! status"
+
+  # static modifiers
+
+  has_bishopric_subject: "Has Bishopric"
+  has_bishopric_num_cities_bonus: "Bishopric City Bonus"
+  has_bishopric_province_dev_bonus: "Bishopric Development Bonus"
+
+  is_bishopric_nation: "Is a Bishopric"
+  is_bishopric_num_cities_bonus: "Bishopric City Bonus"
+  is_bishopric_province_dev_bonus: "Bishopric Development Bonus"
+
+  # subject types
+
+  bishopric: "Bishopric"
+  bishopric_title: "Bishopric"
+  bishopric_title_plural: "Bishoprics"
+  bishopric_is_our: "§Y$NAME$§! is our Bishopric."
+  bishopric_long_desc: "Bishoprics must follow their overlord to war, cannot make certain diplomatic actions, and will pay a large fraction of their income to their overlord. Depending on location and size, they increase the overlord's §YTax Modifier§!, and §YTolerance of the True Faith§!."

@@ -39,6 +39,14 @@ country_event = {
 		}
 	}
 	option = {
+		name = customise_military_difficulty_event.0.e
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.5
+			}
+		}
+	}
+	option = {
 		name = customise_military_difficulty_event.0.z
 		hidden_effect = {
 			country_event = {
@@ -560,6 +568,136 @@ country_event = {
 	}
 	option = {
 		name = customise_military_difficulty_event.4.z
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+}
+
+# Tradition
+country_event = {
+	id = customise_military_difficulty_event.5
+	title = customise_military_difficulty_event.5.title
+	desc = customise_military_difficulty_event.5.desc
+	picture = SHIP_SAILING_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = customise_military_difficulty_event.5.a
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_tradition_modifier_easier_1
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_tradition_modifier_easier_1
+			remove_country_modifier = customised_tradition_modifier_easier_2
+			remove_country_modifier = customised_tradition_modifier_easier_3
+			remove_country_modifier = customised_tradition_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_tradition_modifier_easier_1
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.5.b
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_tradition_modifier_easier_2
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_tradition_modifier_easier_1
+			remove_country_modifier = customised_tradition_modifier_easier_2
+			remove_country_modifier = customised_tradition_modifier_easier_3
+			remove_country_modifier = customised_tradition_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_tradition_modifier_easier_2
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.5.c
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_tradition_modifier_easier_3
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_tradition_modifier_easier_1
+			remove_country_modifier = customised_tradition_modifier_easier_2
+			remove_country_modifier = customised_tradition_modifier_easier_3
+			remove_country_modifier = customised_tradition_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_tradition_modifier_easier_3
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.5.d
+		trigger = {
+			NOT = {
+				has_country_modifier = customised_tradition_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_tradition_modifier_easier_1
+			remove_country_modifier = customised_tradition_modifier_easier_2
+			remove_country_modifier = customised_tradition_modifier_easier_3
+			remove_country_modifier = customised_tradition_modifier_easier_4
+		}
+		add_country_modifier = {
+			name = customised_tradition_modifier_easier_4
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.5.x
+		highlight = yes
+		trigger = {
+			OR = {
+				has_country_modifier = customised_tradition_modifier_easier_1
+				has_country_modifier = customised_tradition_modifier_easier_2
+				has_country_modifier = customised_tradition_modifier_easier_3
+				has_country_modifier = customised_tradition_modifier_easier_4
+			}
+		}
+		hidden_effect = {
+			remove_country_modifier = customised_tradition_modifier_easier_1
+			remove_country_modifier = customised_tradition_modifier_easier_2
+			remove_country_modifier = customised_tradition_modifier_easier_3
+			remove_country_modifier = customised_tradition_modifier_easier_4
+			country_event = {
+				id = customise_military_difficulty_event.0
+			}
+		}
+	}
+	option = {
+		name = customise_military_difficulty_event.5.z
 		hidden_effect = {
 			country_event = {
 				id = customise_military_difficulty_event.0

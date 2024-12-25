@@ -15,7 +15,8 @@ hab_holy_roman_ambitions = {
 	secure_the_imperial_crown = {
 		icon = mission_alliances
 		required_missions = {
-		}		#None
+		}
+		#None
 		completed_by = 1526.8.30
 		provinces_to_highlight = {
 			OR = {
@@ -84,7 +85,7 @@ hab_holy_roman_ambitions = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = BOH
 				}
 			}
@@ -330,7 +331,7 @@ hab_holy_roman_ambitions = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = PLC
 					}
 				}
@@ -344,7 +345,7 @@ hab_holy_roman_ambitions = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = POL
 					}
 				}
@@ -419,7 +420,8 @@ hab_protect_the_balkans = {
 		#Decline of Hungary
 		icon = mission_eastern_european_city
 		required_missions = {
-		}		#None
+		}
+		#None
 		completed_by = 1490.1.1
 		trigger = {
 			if = {
@@ -444,7 +446,7 @@ hab_protect_the_balkans = {
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
-					months = 300
+					months = 600
 					target = HUN
 				}
 			}
@@ -830,7 +832,7 @@ hab_italian_ambitions = {
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
-						months = 300
+						months = 600
 						target = MLO
 					}
 				}
